@@ -381,6 +381,7 @@ function setupSchoolSubjectTeacherFlow() {
   schoolSelect.addEventListener('change', refreshTeacherDropdown);
   subjectSelect.addEventListener('change', () => {
     refreshTeacherDropdown();
+    refreshSessionDropdown(subjectSelect.value);
     if (typeof checkSubjectKrsNotice === 'function') {
       checkSubjectKrsNotice(subjectSelect.value);
     }
@@ -396,6 +397,53 @@ function setupSchoolSubjectTeacherFlow() {
       customTeacherInput.required = false;
     }
   });
+
+  // Initial call for session dropdown
+  refreshSessionDropdown(subjectSelect.value);
+}
+
+function refreshSessionDropdown(subjectVal) {
+  const sessionSelect = document.getElementById('sessionSelect');
+  if (!sessionSelect) return;
+
+  let matchedDates = [];
+  if (typeof KRS_SCHEDULE !== 'undefined') {
+    const item = KRS_SCHEDULE.find(x => 
+      x.targetSubjects && x.targetSubjects.some(s => s.toLowerCase() === (subjectVal || '').toLowerCase())
+    );
+    if (item && item.dates) {
+      matchedDates = item.dates;
+    }
+  }
+
+  const prevVal = sessionSelect.value || "3";
+  sessionSelect.innerHTML = '';
+
+  for (let num = 1; num <= 12; num++) {
+    const opt = document.createElement('option');
+    opt.value = num;
+    const startQ = (num - 1) * 20 + 1;
+    const endQ = num * 20;
+    const dInfo = matchedDates.find(d => d.num === num);
+    const dateLabel = dInfo ? ` (${dInfo.label})` : '';
+
+    if (num <= 3) {
+      opt.disabled = false;
+      const statusLabel = num === 3 ? "✅ Ochiq (3-bosqich / O'tilgan)" : "✅ Ochiq (O'tilgan)";
+      opt.textContent = `${num}-mashg'ulot (${startQ}–${endQ}-savollar)${dateLabel} — ${statusLabel}`;
+      if (String(num) === String(prevVal)) {
+        opt.selected = true;
+      }
+    } else {
+      opt.disabled = true;
+      opt.textContent = `${num}-mashg'ulot (${startQ}–${endQ}-savollar)${dateLabel} — ⏳ Reja bo'yicha (Kelgusi)`;
+    }
+    sessionSelect.appendChild(opt);
+  }
+
+  if (!sessionSelect.value) {
+    sessionSelect.value = "3";
+  }
 }
 
 function mapSubjectToKrs(raw) {
@@ -812,7 +860,10 @@ async function handleValidateAndOpenPinModal() {
     return;
   }
 
-  state.teacherInfo = { name, school, subject };
+  const sessionSelect = document.getElementById('sessionSelect');
+  const session = parseInt(sessionSelect ? sessionSelect.value : 3) || 1;
+
+  state.teacherInfo = { name, school, subject, session };
 
   // Check live status from Google Sheet
   await fetchLiveControlConfig();
@@ -884,16 +935,27 @@ function startExamSession() {
   const countRequested = parseInt(document.getElementById('questionCount').value) || 20;
   state.timeLimitMinutes = parseInt(document.getElementById('timeLimit').value) || 30;
 
+  const currentSession = state.teacherInfo.session || 1;
+
   let matched = state.allQuestions.filter(q => {
-    return q.subject && q.subject.toLowerCase() === state.teacherInfo.subject.toLowerCase();
+    return q.subject && 
+           q.subject.toLowerCase() === state.teacherInfo.subject.toLowerCase() &&
+           q.session === currentSession;
   });
 
   if (matched.length === 0) {
     matched = state.allQuestions.filter(q => {
-      return q.subject && (
+      const matchSubj = q.subject && (
         q.subject.toLowerCase().includes(state.teacherInfo.subject.toLowerCase()) ||
         state.teacherInfo.subject.toLowerCase().includes(q.subject.toLowerCase())
       );
+      return matchSubj && q.session === currentSession;
+    });
+  }
+
+  if (matched.length === 0) {
+    matched = state.allQuestions.filter(q => {
+      return q.subject && q.subject.toLowerCase() === state.teacherInfo.subject.toLowerCase();
     });
   }
 
@@ -921,7 +983,7 @@ function startExamSession() {
 
   document.getElementById('examHeaderTeacher').textContent = state.teacherInfo.name;
   document.getElementById('examHeaderDetails').textContent = 
-    `${state.teacherInfo.school} • ${state.teacherInfo.subject} (KRS fan yo'nalishi)`;
+    `${state.teacherInfo.school} • ${state.teacherInfo.subject} (${currentSession}-mashg'ulot)`;
 
   saveActiveSession();
 
@@ -1114,10 +1176,11 @@ function finishExam() {
 
   const timeSpentSec = Math.max(0, Math.floor((Date.now() - state.startTimestamp) / 1000));
   const timeFormatted = formatTimeHms(timeSpentSec);
+  const sessionNum = state.teacherInfo.session || 1;
 
   document.getElementById('resTeacherName').textContent = state.teacherInfo.name;
-  document.getElementById('resSubject').textContent = state.teacherInfo.subject;
-  document.getElementById('resGrades').textContent = `${state.teacherInfo.school} • KRS fani`;
+  document.getElementById('resSubject').textContent = `${state.teacherInfo.subject} (${sessionNum}-mashg'ulot)`;
+  document.getElementById('resGrades').textContent = `${state.teacherInfo.school} • ${sessionNum}-mashg'ulot (KRS)`;
   document.getElementById('resScoreText').textContent = `${correctCount}/${total}`;
   document.getElementById('resPercentText').textContent = `${percent}%`;
   document.getElementById('resCorrectCount').textContent = correctCount;
@@ -1154,7 +1217,8 @@ function finishExam() {
   saveResultRecord({
     name: state.teacherInfo.name,
     school: state.teacherInfo.school,
-    subject: state.teacherInfo.subject,
+    subject: `${state.teacherInfo.subject} (${sessionNum}-mashg'ulot)`,
+    session: sessionNum,
     score: correctCount,
     total: total,
     percent: percent,
