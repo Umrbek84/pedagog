@@ -1,6 +1,8 @@
 /**
  * Pedagog.umamatov.uz — Pedagoglar Test Tizimi
- * JavaScript Application Logic with Daily PIN-code Protection & Anti-Cheat Proctoring
+ * JavaScript Application Logic with Daily PIN-code Protection,
+ * Active Session Resumption (Power Outage / Reload Protection),
+ * Teacher Database Selector (Tarifikatsiya) & Mobile Anti-Cheat Proctoring.
  */
 
 const PIN_CONFIG = {
@@ -8,8 +10,11 @@ const PIN_CONFIG = {
   masterPin: "2026" // Admin master PIN for Umrbek Mamatov
 };
 
+const SESSION_STORAGE_KEY = 'pedagog_active_session_2026';
+
 // Global State
 const state = {
+  teachersDb: {},
   allQuestions: [],
   activeQuestions: [],
   currentIndex: 0,
@@ -17,14 +22,13 @@ const state = {
   teacherInfo: {
     name: '',
     school: '',
-    subject: '',
-    grades: []
+    subject: ''
   },
   timeLimitMinutes: 30,
   secondsRemaining: 0,
   timerInterval: null,
-  startTime: null,
-  endTime: null,
+  startTimestamp: null,
+  endTimestamp: null,
   
   // Anti-Cheat Monitoring
   isExamActive: false,
@@ -73,7 +77,7 @@ function getTodayTashkentDate() {
   return formatter.format(now); // "YYYY-MM-DD"
 }
 
-// Deterministic hash for 4-digit PIN
+// Deterministic SHA-256 hash for 4-digit PIN
 async function calculateDailyPin(dateStr) {
   const text = `${PIN_CONFIG.salt}_${dateStr}`;
   const enc = new TextEncoder();
@@ -86,99 +90,268 @@ async function calculateDailyPin(dateStr) {
   return pin;
 }
 
-// Initialize Application
+// ==========================================
+// INITIALIZATION
+// ==========================================
 document.addEventListener('DOMContentLoaded', async () => {
-  setupGradePillEvents();
-  setupSubjectGradeHints();
   setupAntiCheatListeners();
+  await loadTeachersDatabase();
   await loadQuestionsDatabase();
+  setupSchoolTeacherSelectEvents();
 
   // Test start triggers PIN modal
-  document.getElementById('startTestBtn').addEventListener('click', handleValidateAndOpenPinModal);
+  const startBtn = document.getElementById('startTestBtn');
+  if (startBtn) {
+    startBtn.addEventListener('click', handleValidateAndOpenPinModal);
+  }
   
   // PIN Modal buttons
-  document.getElementById('pinCancelBtn').addEventListener('click', closePinModal);
-  document.getElementById('pinSubmitBtn').addEventListener('click', handlePinSubmit);
-  document.getElementById('pinInput').addEventListener('keydown', (e) => {
+  document.getElementById('pinCancelBtn')?.addEventListener('click', closePinModal);
+  document.getElementById('pinSubmitBtn')?.addEventListener('click', handlePinSubmit);
+  document.getElementById('pinInput')?.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') handlePinSubmit();
   });
 
   // Anti-cheat modal acknowledge button
-  document.getElementById('acModalAcknowledgeBtn').addEventListener('click', () => {
+  document.getElementById('acModalAcknowledgeBtn')?.addEventListener('click', () => {
     document.getElementById('antiCheatModal').classList.remove('open');
   });
 
+  // Resume Session Modal buttons
+  document.getElementById('resumeCancelBtn')?.addEventListener('click', discardSavedSession);
+  document.getElementById('resumeConfirmBtn')?.addEventListener('click', resumeSavedSession);
+
   // Exam navigation
-  document.getElementById('prevQBtn').addEventListener('click', () => navigateQuestion(-1));
-  document.getElementById('nextQBtn').addEventListener('click', () => navigateQuestion(1));
-  document.getElementById('finishTestBtn').addEventListener('click', openFinishModal);
-  document.getElementById('modalCancelBtn').addEventListener('click', closeFinishModal);
-  document.getElementById('modalConfirmBtn').addEventListener('click', () => {
+  document.getElementById('prevQBtn')?.addEventListener('click', () => navigateQuestion(-1));
+  document.getElementById('nextQBtn')?.addEventListener('click', () => navigateQuestion(1));
+  document.getElementById('finishTestBtn')?.addEventListener('click', openFinishModal);
+  document.getElementById('modalCancelBtn')?.addEventListener('click', closeFinishModal);
+  document.getElementById('modalConfirmBtn')?.addEventListener('click', () => {
     closeFinishModal();
     finishExam();
   });
-  document.getElementById('restartBtn').addEventListener('click', handleRestart);
+  document.getElementById('restartBtn')?.addEventListener('click', handleRestart);
+
+  // Check for active interrupted session (power outage / reload protection)
+  checkInterruptedSession();
 });
 
-// Load Questions from questions.json
+// ==========================================
+// TEACHERS & SCHOOLS DATABASE LOGIC
+// ==========================================
+async function loadTeachersDatabase() {
+  try {
+    const res = await fetch('teachers_db.json');
+    if (res.ok) {
+      state.teachersDb = await res.json();
+      populateSchoolDropdown();
+    }
+  } catch (err) {
+    console.warn("teachers_db.json yuklanmadi:", err);
+  }
+}
+
+function populateSchoolDropdown() {
+  const schoolSelect = document.getElementById('schoolSelect');
+  if (!schoolSelect) return;
+
+  // Clear previous options except default
+  schoolSelect.innerHTML = '<option value="">-- Maktabni tanlang --</option>';
+
+  // Sort schools naturally (1-sonli, 2-sonli, ..., 45-sonli)
+  const schoolNames = Object.keys(state.teachersDb).sort((a, b) => {
+    const numA = parseInt(a) || 999;
+    const numB = parseInt(b) || 999;
+    if (numA !== numB) return numA - numB;
+    return a.localeCompare(b);
+  });
+
+  schoolNames.forEach(sch => {
+    const opt = document.createElement('option');
+    opt.value = sch;
+    opt.textContent = `${sch} (${state.teachersDb[sch].length} nafar o'qituvchi)`;
+    schoolSelect.appendChild(opt);
+  });
+
+  // Add "Ro'yxatdan tashqari" option
+  const otherOpt = document.createElement('option');
+  otherOpt.value = 'CUSTOM_SCHOOL';
+  otherOpt.textContent = '➕ Ro\'yxatdan tashqari maktab / muassasa';
+  schoolSelect.appendChild(otherOpt);
+}
+
+function setupSchoolTeacherSelectEvents() {
+  const schoolSelect = document.getElementById('schoolSelect');
+  const teacherSelect = document.getElementById('teacherSelect');
+  const customSchoolInput = document.getElementById('customSchoolInput');
+  const customTeacherInput = document.getElementById('customTeacherInput');
+  const subjectSelect = document.getElementById('subjectSelect');
+
+  if (!schoolSelect || !teacherSelect) return;
+
+  schoolSelect.addEventListener('change', () => {
+    const val = schoolSelect.value;
+    if (val === 'CUSTOM_SCHOOL') {
+      customSchoolInput.style.display = 'block';
+      customSchoolInput.required = true;
+      customSchoolInput.focus();
+
+      // Setup teacher select for custom entry
+      teacherSelect.disabled = false;
+      teacherSelect.innerHTML = '<option value="CUSTOM_TEACHER" selected>➕ Ro\'yxatdan tashqari pedagog</option>';
+      customTeacherInput.style.display = 'block';
+      customTeacherInput.required = true;
+    } else if (val && state.teachersDb[val]) {
+      customSchoolInput.style.display = 'none';
+      customSchoolInput.required = false;
+
+      teacherSelect.disabled = false;
+      teacherSelect.innerHTML = '<option value="">-- O\'qituvchini tanlang --</option>';
+
+      const teachers = [...state.teachersDb[val]].sort((a, b) => a.name.localeCompare(b.name));
+      teachers.forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t.name;
+        opt.textContent = `${t.name} (${t.subject || 'O\'qituvchi'})`;
+        opt.dataset.subject = t.subject || '';
+        teacherSelect.appendChild(opt);
+      });
+
+      // Also add custom teacher option
+      const customTOpt = document.createElement('option');
+      customTOpt.value = 'CUSTOM_TEACHER';
+      customTOpt.textContent = '➕ Ro\'yxatdan tashqari yangi pedagog';
+      teacherSelect.appendChild(customTOpt);
+
+      customTeacherInput.style.display = 'none';
+      customTeacherInput.required = false;
+    } else {
+      customSchoolInput.style.display = 'none';
+      teacherSelect.disabled = true;
+      teacherSelect.innerHTML = '<option value="">-- Avval maktabni tanlang --</option>';
+      customTeacherInput.style.display = 'none';
+    }
+  });
+
+  teacherSelect.addEventListener('change', () => {
+    const val = teacherSelect.value;
+    if (val === 'CUSTOM_TEACHER') {
+      customTeacherInput.style.display = 'block';
+      customTeacherInput.required = true;
+      customTeacherInput.focus();
+    } else {
+      customTeacherInput.style.display = 'none';
+      customTeacherInput.required = false;
+
+      // Auto-detect and select matching KRS subject
+      const selectedOption = teacherSelect.options[teacherSelect.selectedIndex];
+      const rawSubject = (selectedOption?.dataset?.subject || '').trim();
+      if (rawSubject && subjectSelect) {
+        const mapped = mapSubjectToKrs(rawSubject);
+        if (mapped) {
+          subjectSelect.value = mapped;
+          subjectSelect.dispatchEvent(new Event('change'));
+        }
+      }
+    }
+  });
+}
+
+// Map teacher's subject string from Tarifikatsiya to the 12 KRS categories
+function mapSubjectToKrs(raw) {
+  const s = raw.toLowerCase();
+  if (s.includes('boshlang') || s.includes('savod') || s.includes('o\'qish savod')) return "Boshlang'ich ta'lim";
+  if (s.includes('matemat') || s.includes('algebra') || s.includes('geometr')) return "Matematika";
+  if (s.includes('informat') || s.includes('axborot')) return "Informatika";
+  if (s.includes('ona tili') || s.includes('adabiyot') || s.includes('ўзбек тили') || s.includes('o\'zbek tili')) return "Ona tili";
+  if (s.includes('ingliz') || s.includes('english') || s.includes('chet tili')) return "English";
+  if (s.includes('rus tili') || s.includes('русский') || s.includes('rus')) return "Rus tili";
+  if (s.includes('biolog') || s.includes('tabiiy fan') || s.includes('botan') || s.includes('zoolog')) return "Biologiya";
+  if (s.includes('fizik') || s.includes('astronom')) return "Fizika";
+  if (s.includes('kimyo')) return "Kimyo";
+  if (s.includes('geograf') || s.includes('iqtisod')) return "Geografiya";
+  if (s.includes('tarix') || s.includes('huquq') || s.includes('tarbiya') || s.includes('davlat') || s.includes('milliy g\'oya')) return "Tarix";
+  if (s.includes('texnolog') || s.includes('mehnat') || s.includes('tasviriy') || s.includes('chizma') || s.includes('musiqa') || s.includes('jismoniy')) return "Texnologiya";
+  return null;
+}
+
+// ==========================================
+// QUESTIONS DATABASE LOADER
+// ==========================================
 async function loadQuestionsDatabase() {
   try {
     const res = await fetch('questions.json');
     if (res.ok) {
       state.allQuestions = await res.json();
-      console.log(`Yuklangan savollar soni: ${state.allQuestions.length}`);
-      return;
+      console.log(`Bazada jami ${state.allQuestions.length} ta darslik test savollari yuklandi.`);
     }
   } catch (err) {
-    console.warn("questions.json yuklanmadi, zaxira savollardan foydalaniladi.");
+    console.warn("questions.json yuklanmadi:", err);
   }
 }
 
-// Anti-Cheat Tab-Switch Detection
+// ==========================================
+// MOBILE & DESKTOP ANTI-CHEAT PROCTORING
+// ==========================================
 function setupAntiCheatListeners() {
-  const handleTabSwitch = () => {
+  const handleTabSwitch = (reason) => {
     if (!state.isExamActive || state.isBlocked) return;
 
-    // Debounce multiple events within 1 second
+    // Mobile / Desktop Debounce: ignore multiple rapid events within 1500ms
     const now = Date.now();
-    if (now - state.lastBlurTime < 1000) return;
+    if (now - state.lastBlurTime < 1500) return;
     state.lastBlurTime = now;
 
     state.tabSwitchCount++;
+    saveActiveSession(); // persist updated strike count
     updateAntiCheatIndicator();
 
     if (state.tabSwitchCount === 1) {
       showAntiCheatModal(
         "⚠️",
-        "OGOHLANTIRISH (1/2)!",
-        `Siz test sahifasidan chiqib, boshqa vkladka yoki ilovaga o'tdingiz!<br>
+        "OGOHLANTIRISH (1/3)!",
+        `Siz test maydonidan chiqib, boshqa vkladka yoki ilovaga o'tdingiz!<br>
         <b>Qoidabuzarlik qayd etildi (Chiqishlar: 1).</b><br>
-        <span style="color: var(--danger); font-weight: 700;">Yana 2 marta sahifadan chiqsangiz, testingiz avtomatik BLOKLANADI!</span>`
+        <span style="color: var(--danger); font-weight: 700;">4-marta takrorlansa, testingiz avtomatik BLOKLANADI!</span>`
       );
     } else if (state.tabSwitchCount === 2) {
       showAntiCheatModal(
-        "🚨",
-        "OXIRGI OGOHLANTIRISH (2/2)!",
+        "⚠️",
+        "OGOHLANTIRISH (2/3)!",
         `Siz yana test maydonidan chiqdingiz!<br>
         <b>Qoidabuzarlik soni: 2 ta.</b><br>
+        <span style="color: var(--warning); font-weight: 700;">Iltimos, diqqatingizni testda saqlang! Yana 2 ta chiqish qoldi.</span>`
+      );
+    } else if (state.tabSwitchCount === 3) {
+      showAntiCheatModal(
+        "🚨",
+        "OXIRGI OGOHLANTIRISH (3/3)!",
+        `<b>OGOH BO'LING! Qoidabuzarlik soni 3 taga yetdi.</b><br>
         <span style="color: var(--danger); font-weight: 800; font-size: 1.05rem;">
-          YANA 1 MARTA CHIQSIZ, TEST SHU ZAHOTIYOQ BLOKLANADI VA 0 BALL QO'YILADI!
+          AGAR YANA 1 MARTA CHIQSIZ (4-marta), TEST SHU ZAHOTIYOQ BLOKLANADI VA 0 BALL BILAN BEKOR QILINADI!
         </span>`
       );
-    } else if (state.tabSwitchCount >= 3) {
-      // Automatic Block and Termination
+    } else if (state.tabSwitchCount >= 4) {
+      // 4th violation: Automatic Block and Immediate Disqualification
       blockExamDueToCheating();
     }
   };
 
+  // Modern Page Visibility API (Desktop + Mobile Chrome/Safari)
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
-      handleTabSwitch();
+      handleTabSwitch('visibilitychange');
     }
   });
 
+  // Mobile App Switch / Home button / Lock screen (iOS Safari & Android)
+  window.addEventListener('pagehide', () => {
+    handleTabSwitch('pagehide');
+  });
+
+  // Desktop window blur (switching browser window / app)
   window.addEventListener('blur', () => {
-    handleTabSwitch();
+    handleTabSwitch('blur');
   });
 }
 
@@ -191,7 +364,7 @@ function updateAntiCheatIndicator() {
     pillEl.classList.remove('safe', 'warn', 'danger');
     if (state.tabSwitchCount === 0) {
       pillEl.classList.add('safe');
-    } else if (state.tabSwitchCount === 1) {
+    } else if (state.tabSwitchCount <= 2) {
       pillEl.classList.add('warn');
     } else {
       pillEl.classList.add('danger');
@@ -210,116 +383,167 @@ function blockExamDueToCheating() {
   state.isExamActive = false;
   state.isBlocked = true;
   clearInterval(state.timerInterval);
+  clearSavedSession();
 
-  // Close any open modals
-  document.getElementById('antiCheatModal').classList.remove('open');
-  document.getElementById('confirmModal').classList.remove('open');
+  // Close warning modals
+  document.getElementById('antiCheatModal')?.classList.remove('open');
+  document.getElementById('confirmModal')?.classList.remove('open');
 
   switchView('blocked');
 }
 
-// Grade Selection Pills (Multi-Select)
-function setupGradePillEvents() {
-  const pills = document.querySelectorAll('.grade-pill');
-  pills.forEach(pill => {
-    pill.addEventListener('click', () => {
-      const checkbox = pill.querySelector('input');
-      checkbox.checked = !checkbox.checked;
-      pill.classList.toggle('selected', checkbox.checked);
-    });
-  });
-
-  document.getElementById('selectAllGrades').addEventListener('click', () => {
-    pills.forEach(pill => {
-      const cb = pill.querySelector('input');
-      cb.checked = true;
-      pill.classList.add('selected');
-    });
-  });
-
-  document.getElementById('clearGrades').addEventListener('click', () => {
-    pills.forEach(pill => {
-      const cb = pill.querySelector('input');
-      cb.checked = false;
-      pill.classList.remove('selected');
-    });
-  });
+// ==========================================
+// SESSION RESUMPTION (POWER OUTAGE / RELOAD)
+// ==========================================
+function saveActiveSession() {
+  if (!state.isExamActive || state.isBlocked) return;
+  const sessionData = {
+    teacherInfo: state.teacherInfo,
+    activeQuestions: state.activeQuestions,
+    currentIndex: state.currentIndex,
+    userAnswers: state.userAnswers,
+    timeLimitMinutes: state.timeLimitMinutes,
+    startTimestamp: state.startTimestamp,
+    endTimestamp: state.endTimestamp,
+    tabSwitchCount: state.tabSwitchCount,
+    savedAt: Date.now()
+  };
+  localStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(sessionData));
 }
 
-// Auto-filter/hint grades when subject changes
-function setupSubjectGradeHints() {
-  const subjectSelect = document.getElementById('subjectSelect');
-  subjectSelect.addEventListener('change', () => {
-    const val = subjectSelect.value;
-    const pills = document.querySelectorAll('.grade-pill');
-    
-    let suggested = [];
-    if (val === 'Ona tili' || val === 'Matematika' || val === 'English') {
-      suggested = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-    } else if (val === 'Biologiya' || val === 'Tarix' || val === 'Geografiya' || val === 'Informatika') {
-      suggested = [5, 6, 7, 8, 9, 10, 11];
-    } else if (val === 'Fizika') {
-      suggested = [6, 7, 8, 9, 10, 11];
-    } else if (val === 'Kimyo') {
-      suggested = [7, 8, 9, 10, 11];
-    } else if (val === 'Huquq') {
-      suggested = [8, 9, 10, 11];
+function clearSavedSession() {
+  localStorage.removeItem(SESSION_STORAGE_KEY);
+}
+
+function checkInterruptedSession() {
+  try {
+    const raw = localStorage.getItem(SESSION_STORAGE_KEY);
+    if (!raw) return;
+
+    const session = JSON.parse(raw);
+    const now = Date.now();
+    const remainingSec = Math.floor((session.endTimestamp - now) / 1000);
+
+    if (remainingSec > 10 && session.activeQuestions && session.activeQuestions.length > 0) {
+      // Valid active session found
+      const mins = Math.floor(remainingSec / 60);
+      const secs = remainingSec % 60;
+      const ansCount = Object.keys(session.userAnswers || {}).length;
+
+      const infoEl = document.getElementById('resumeSessionInfo');
+      if (infoEl) {
+        infoEl.innerHTML = `
+          Hurmatli <b>${session.teacherInfo.name}</b>!<br>
+          <b>${session.teacherInfo.subject}</b> fani bo'yicha boshlangan faol testingiz saqlab qolingan.<br>
+          ⏱️ Qolgan vaqtingiz: <b>${mins} daqiqa ${secs} soniya</b>.<br>
+          📝 Belgilangan javoblar: <b>${ansCount} / ${session.activeQuestions.length} ta</b>.<br>
+          Chiqishlar (qoidabuzarliklar): <b>${session.tabSwitchCount || 0} / 3</b>.
+        `;
+      }
+      document.getElementById('resumeSessionModal')?.classList.add('open');
     } else {
-      suggested = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+      // Session expired while offline
+      clearSavedSession();
+    }
+  } catch (err) {
+    console.warn("Seansni tiklashda xatolik:", err);
+    clearSavedSession();
+  }
+}
+
+function resumeSavedSession() {
+  try {
+    const raw = localStorage.getItem(SESSION_STORAGE_KEY);
+    if (!raw) return;
+    const session = JSON.parse(raw);
+    const remainingSec = Math.floor((session.endTimestamp - Date.now()) / 1000);
+
+    if (remainingSec <= 0) {
+      alert("Afsuski, ajratilgan vaqt tugagan.");
+      clearSavedSession();
+      document.getElementById('resumeSessionModal')?.classList.remove('open');
+      return;
     }
 
-    pills.forEach(pill => {
-      const grade = parseInt(pill.dataset.grade);
-      if (suggested.includes(grade)) {
-        pill.style.opacity = '1';
-        pill.style.pointerEvents = 'auto';
-      } else {
-        pill.style.opacity = '0.35';
-        const cb = pill.querySelector('input');
-        cb.checked = false;
-        pill.classList.remove('selected');
-      }
-    });
-  });
+    state.teacherInfo = session.teacherInfo;
+    state.activeQuestions = session.activeQuestions;
+    state.currentIndex = session.currentIndex || 0;
+    state.userAnswers = session.userAnswers || {};
+    state.timeLimitMinutes = session.timeLimitMinutes;
+    state.startTimestamp = session.startTimestamp;
+    state.endTimestamp = session.endTimestamp;
+    state.secondsRemaining = remainingSec;
+    state.tabSwitchCount = session.tabSwitchCount || 0;
+
+    state.isExamActive = true;
+    state.isBlocked = false;
+
+    document.getElementById('resumeSessionModal')?.classList.remove('open');
+
+    // Update Header
+    document.getElementById('examHeaderTeacher').textContent = state.teacherInfo.name;
+    document.getElementById('examHeaderDetails').textContent = 
+      `${state.teacherInfo.school} • ${state.teacherInfo.subject} (KRS)`;
+
+    updateAntiCheatIndicator();
+    renderNavigatorGrid();
+    renderQuestion();
+    startTimer();
+
+    switchView('exam');
+  } catch (err) {
+    console.error("Tiklashda xato:", err);
+    clearSavedSession();
+    document.getElementById('resumeSessionModal')?.classList.remove('open');
+  }
 }
 
-// Validate inputs before opening PIN modal
+function discardSavedSession() {
+  clearSavedSession();
+  document.getElementById('resumeSessionModal')?.classList.remove('open');
+}
+
+// ==========================================
+// VALIDATION & PIN MODAL
+// ==========================================
 function handleValidateAndOpenPinModal() {
-  const name = document.getElementById('teacherName').value.trim();
-  const school = document.getElementById('schoolName').value.trim();
-  const subject = document.getElementById('subjectSelect').value;
-  
-  const selectedPills = document.querySelectorAll('.grade-pill.selected input');
-  const selectedGrades = Array.from(selectedPills).map(cb => parseInt(cb.value));
+  const schoolSelect = document.getElementById('schoolSelect');
+  const teacherSelect = document.getElementById('teacherSelect');
+  const customSchoolInput = document.getElementById('customSchoolInput');
+  const customTeacherInput = document.getElementById('customTeacherInput');
+  const subjectSelect = document.getElementById('subjectSelect');
 
-  if (!name) {
-    alert("Iltimos, F.I.Sh. (Familiya, Ism, Sharifingiz)ni kiriting!");
-    document.getElementById('teacherName').focus();
-    return;
+  let school = schoolSelect.value;
+  if (school === 'CUSTOM_SCHOOL') {
+    school = customSchoolInput.value.trim();
   }
-
   if (!school) {
-    alert("Iltimos, maktab yoki ta'lim muassasangiz nomini kiriting!");
-    document.getElementById('schoolName').focus();
+    alert("Iltimos, ta'lim muassasasi (maktab)ni tanlang yoki nomini kiriting!");
+    schoolSelect.focus();
     return;
   }
 
+  let name = teacherSelect.value;
+  if (name === 'CUSTOM_TEACHER') {
+    name = customTeacherInput.value.trim();
+  }
+  if (!name) {
+    alert("Iltimos, o'qituvchi F.I.Sh. (Familiya Ism Sharif)ingizni tanlang yoki kiriting!");
+    teacherSelect.focus();
+    return;
+  }
+
+  const subject = subjectSelect.value;
   if (!subject) {
-    alert("Iltimos, dars beradigan faningizni tanlang!");
-    document.getElementById('subjectSelect').focus();
-    return;
-  }
-
-  if (selectedGrades.length === 0) {
-    alert("Iltimos, kamida bitta sinfni tanlang!");
+    alert("Iltimos, KRS dars beradigan faningizni tanlang!");
+    subjectSelect.focus();
     return;
   }
 
   state.teacherInfo = {
     name,
     school,
-    subject,
-    grades: selectedGrades
+    subject
   };
 
   openPinModal();
@@ -357,26 +581,33 @@ async function handlePinSubmit() {
   }
 }
 
-// Start Test Session
+// ==========================================
+// START TEST SESSION
+// ==========================================
 function startExamSession() {
   const countRequested = parseInt(document.getElementById('questionCount').value) || 20;
   state.timeLimitMinutes = parseInt(document.getElementById('timeLimit').value) || 30;
 
-  // Filter matching questions
+  // Filter 20 textbook questions matching the selected KRS subject
   let matched = state.allQuestions.filter(q => {
-    const subjMatch = q.subject.toLowerCase() === state.teacherInfo.subject.toLowerCase();
-    const gradeMatch = state.teacherInfo.grades.includes(q.grade);
-    return subjMatch && gradeMatch;
+    return q.subject && q.subject.toLowerCase() === state.teacherInfo.subject.toLowerCase();
   });
 
+  // Fallback if subject name has slight variations
   if (matched.length === 0) {
-    matched = state.allQuestions.filter(q => q.subject.toLowerCase() === state.teacherInfo.subject.toLowerCase());
+    matched = state.allQuestions.filter(q => {
+      return q.subject && (
+        q.subject.toLowerCase().includes(state.teacherInfo.subject.toLowerCase()) ||
+        state.teacherInfo.subject.toLowerCase().includes(q.subject.toLowerCase())
+      );
+    });
   }
 
   if (matched.length === 0) {
     matched = state.allQuestions;
   }
 
+  // Shuffle and pick 20 questions
   matched = shuffleArray([...matched]);
   if (matched.length > countRequested) {
     matched = matched.slice(0, countRequested);
@@ -386,7 +617,8 @@ function startExamSession() {
   state.currentIndex = 0;
   state.userAnswers = {};
   state.secondsRemaining = state.timeLimitMinutes * 60;
-  state.startTime = new Date();
+  state.startTimestamp = Date.now();
+  state.endTimestamp = state.startTimestamp + (state.secondsRemaining * 1000);
   
   // Anti-cheat state init
   state.isExamActive = true;
@@ -394,10 +626,13 @@ function startExamSession() {
   state.isBlocked = false;
   updateAntiCheatIndicator();
 
-  // Header
+  // Header display
   document.getElementById('examHeaderTeacher').textContent = state.teacherInfo.name;
   document.getElementById('examHeaderDetails').textContent = 
-    `${state.teacherInfo.school} • ${state.teacherInfo.subject} • ${state.teacherInfo.grades.map(g => g + '-sinf').join(', ')}`;
+    `${state.teacherInfo.school} • ${state.teacherInfo.subject} (KRS fan yo'nalishi)`;
+
+  // Save session state to localStorage immediately
+  saveActiveSession();
 
   renderNavigatorGrid();
   renderQuestion();
@@ -406,7 +641,9 @@ function startExamSession() {
   switchView('exam');
 }
 
-// Render Navigator Grid (Sidebar)
+// ==========================================
+// EXAM INTERACTION & RENDERING
+// ==========================================
 function renderNavigatorGrid() {
   const grid = document.getElementById('questionsNavGrid');
   grid.innerHTML = '';
@@ -420,6 +657,7 @@ function renderNavigatorGrid() {
 
     btn.addEventListener('click', () => {
       state.currentIndex = idx;
+      saveActiveSession();
       renderQuestion();
     });
 
@@ -441,12 +679,11 @@ function updateNavigatorButtons() {
   });
 }
 
-// Render Current Question
 function renderQuestion() {
   const q = state.activeQuestions[state.currentIndex];
   if (!q) return;
 
-  document.getElementById('currentQGrade').textContent = `${q.grade}-sinf`;
+  document.getElementById('currentQGrade').textContent = `${q.grade || 'Maktab'}-sinf`;
   document.getElementById('currentQTopic').textContent = `Mavzu: ${q.topic || 'Darslik bo\'yicha'}`;
   document.getElementById('qProgressText').textContent = `${state.currentIndex + 1} / ${state.activeQuestions.length}`;
   document.getElementById('questionText').textContent = `${state.currentIndex + 1}. ${q.question}`;
@@ -483,6 +720,7 @@ function renderQuestion() {
 
     card.addEventListener('click', () => {
       state.userAnswers[state.currentIndex] = letter;
+      saveActiveSession(); // Persist answer immediately
       renderQuestion();
       updateNavigatorButtons();
     });
@@ -501,6 +739,7 @@ function navigateQuestion(delta) {
   const newIndex = state.currentIndex + delta;
   if (newIndex >= 0 && newIndex < state.activeQuestions.length) {
     state.currentIndex = newIndex;
+    saveActiveSession();
     renderQuestion();
   } else if (newIndex >= state.activeQuestions.length) {
     openFinishModal();
@@ -513,7 +752,9 @@ function startTimer() {
   updateTimerDisplay();
 
   state.timerInterval = setInterval(() => {
-    state.secondsRemaining--;
+    // Calculate remaining seconds from absolute end timestamp
+    const now = Date.now();
+    state.secondsRemaining = Math.max(0, Math.floor((state.endTimestamp - now) / 1000));
     updateTimerDisplay();
 
     if (state.secondsRemaining <= 0) {
@@ -531,12 +772,14 @@ function updateTimerDisplay() {
   
   const timerEl = document.getElementById('timerDisplay');
   const timerBox = document.getElementById('timerBox');
-  timerEl.textContent = display;
+  if (timerEl) timerEl.textContent = display;
 
-  if (state.secondsRemaining <= 180) { // under 3 minutes
-    timerBox.classList.add('warning');
-  } else {
-    timerBox.classList.remove('warning');
+  if (timerBox) {
+    if (state.secondsRemaining <= 180) { // under 3 minutes
+      timerBox.classList.add('warning');
+    } else {
+      timerBox.classList.remove('warning');
+    }
   }
 }
 
@@ -564,7 +807,7 @@ function closeFinishModal() {
 function finishExam() {
   state.isExamActive = false;
   clearInterval(state.timerInterval);
-  state.endTime = new Date();
+  clearSavedSession(); // Session successfully completed
 
   const total = state.activeQuestions.length;
   let correctCount = 0;
@@ -579,21 +822,21 @@ function finishExam() {
   const wrongCount = total - correctCount;
   const percent = total > 0 ? Math.round((correctCount / total) * 100) : 0;
 
-  const timeSpentSec = (state.timeLimitMinutes * 60) - Math.max(0, state.secondsRemaining);
+  const timeSpentSec = Math.max(0, Math.floor((Date.now() - state.startTimestamp) / 1000));
   const spentMins = Math.floor(timeSpentSec / 60);
   const spentSecs = timeSpentSec % 60;
   const timeFormatted = `${spentMins} daq ${spentSecs} son`;
 
   document.getElementById('resTeacherName').textContent = state.teacherInfo.name;
   document.getElementById('resSubject').textContent = state.teacherInfo.subject;
-  document.getElementById('resGrades').textContent = state.teacherInfo.grades.map(g => g + '-sinf').join(', ');
+  document.getElementById('resGrades').textContent = `${state.teacherInfo.school} • KRS fani`;
   document.getElementById('resScoreText').textContent = `${correctCount}/${total}`;
   document.getElementById('resPercentText').textContent = `${percent}%`;
   document.getElementById('resCorrectCount').textContent = correctCount;
   document.getElementById('resWrongCount').textContent = wrongCount;
   document.getElementById('resTimeSpent').textContent = timeFormatted;
   
-  // Anti-cheat switch count
+  // Anti-cheat switch count display
   const switchEl = document.getElementById('resSwitchCount');
   if (switchEl) {
     if (state.tabSwitchCount === 0) {
@@ -643,7 +886,7 @@ function renderReviewList() {
 
     item.innerHTML = `
       <div class="review-q-header">
-        <span><b>${idx + 1}-savol</b> (${q.grade}-sinf • ${q.topic || 'Darslik'})</span>
+        <span><b>${idx + 1}-savol</b> (${q.grade || 'Maktab'}-sinf • ${q.topic || 'Darslik'})</span>
         <span style="font-weight: 700; color: ${isCorrect ? 'var(--accent)' : 'var(--danger)'};">
           ${isCorrect ? '✓ To\'g\'ri' : '✗ Noto\'g\'ri'}
         </span>
@@ -675,6 +918,7 @@ function renderReviewList() {
 
 function handleRestart() {
   if (confirm("Yangi test boshlaysizmi?")) {
+    clearSavedSession();
     switchView('setup');
   }
 }

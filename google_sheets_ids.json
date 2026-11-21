@@ -1,57 +1,67 @@
 {
-  "1": {
+  "boshlangich": {
     "id": "1mq70DFMO-X5S2Fhq7DZffPX3qc5fNwNdnVag3KIR1kg",
-    "title": "1-sinf Testlar Bazasi",
+    "title": "Boshlang'ich ta'lim Testlar Bazasi",
     "url": "https://docs.google.com/spreadsheets/d/1mq70DFMO-X5S2Fhq7DZffPX3qc5fNwNdnVag3KIR1kg/edit"
   },
-  "2": {
+  "matematika": {
     "id": "1i0ypxJs9IixXr0AnxBdPZxluJPKwWtJ6sNnr06rHqzI",
-    "title": "2-sinf Testlar Bazasi",
+    "title": "Aniq fanlar (Matematika) Testlar Bazasi",
     "url": "https://docs.google.com/spreadsheets/d/1i0ypxJs9IixXr0AnxBdPZxluJPKwWtJ6sNnr06rHqzI/edit"
   },
-  "3": {
+  "informatika": {
     "id": "1sW6BVZdM88r16t2cuz_gifsZA7eHfbKC5g_xXTUPxNM",
-    "title": "3-sinf Testlar Bazasi",
+    "title": "Aniq fanlar (Informatika) Testlar Bazasi",
     "url": "https://docs.google.com/spreadsheets/d/1sW6BVZdM88r16t2cuz_gifsZA7eHfbKC5g_xXTUPxNM/edit"
   },
-  "4": {
+  "ona_tili": {
     "id": "1yfPPdulSaHN6hkAuk4D2pEMVy-MYOODCFdAaFvzwrdQ",
-    "title": "4-sinf Testlar Bazasi",
+    "title": "Filologiya (Ona tili va adabiyot) Testlar Bazasi",
     "url": "https://docs.google.com/spreadsheets/d/1yfPPdulSaHN6hkAuk4D2pEMVy-MYOODCFdAaFvzwrdQ/edit"
   },
-  "5": {
+  "rus_tili": {
     "id": "1cVIr4zNwr3jDFy03we2Z9XO838sZMXyxmJP65piJSLQ",
-    "title": "5-sinf Testlar Bazasi",
+    "title": "Filologiya (Rus tili) Testlar Bazasi",
     "url": "https://docs.google.com/spreadsheets/d/1cVIr4zNwr3jDFy03we2Z9XO838sZMXyxmJP65piJSLQ/edit"
   },
-  "6": {
+  "ingliz_tili": {
     "id": "1Mkv1aq0DXdR13TPOe-ZFLDtIZANA7C_Gb4hZMJh6qBs",
-    "title": "6-sinf Testlar Bazasi",
+    "title": "Xorijiy tillar (Ingliz tili) Testlar Bazasi",
     "url": "https://docs.google.com/spreadsheets/d/1Mkv1aq0DXdR13TPOe-ZFLDtIZANA7C_Gb4hZMJh6qBs/edit"
   },
-  "7": {
+  "biologiya_geografiya": {
     "id": "1JKVY3vp7zCGBBPBKcklkbplR70bLESs4Fpgl6eh2y7o",
-    "title": "7-sinf Testlar Bazasi",
+    "title": "Tabiiy fanlar (Biologiya va Geografiya) Testlar Bazasi",
     "url": "https://docs.google.com/spreadsheets/d/1JKVY3vp7zCGBBPBKcklkbplR70bLESs4Fpgl6eh2y7o/edit"
   },
-  "8": {
+  "fizika_kimyo": {
     "id": "1hUiXrH9qvpEQgMvY6LpiBCOs1KM4BxxSqClv9ST4IRw",
-    "title": "8-sinf Testlar Bazasi",
+    "title": "Tabiiy fanlar (Fizika va Kimyo) Testlar Bazasi",
     "url": "https://docs.google.com/spreadsheets/d/1hUiXrH9qvpEQgMvY6LpiBCOs1KM4BxxSqClv9ST4IRw/edit"
   },
-  "9": {
+  "ijtimoiy": {
     "id": "1EKzDaad4QKKbH3uhjZ0EPHDDEnkeScqsesxkTheM6_k",
-    "title": "9-sinf Testlar Bazasi",
+    "title": "Ijtimoiy fanlar (Tarix, Huquq, Tarbiya) Testlar Bazasi",
     "url": "https://docs.google.com/spreadsheets/d/1EKzDaad4QKKbH3uhjZ0EPHDDEnkeScqsesxkTheM6_k/edit"
   },
-  "10": {
+  "amaliy": {
     "id": "1zdAC2kWuFg8-sUglRTJ8gbmQuvULP3mEUnEN-7QaITs",
-    "title": "10-sinf Testlar Bazasi",
+    "title": "Amaliy fanlar (Texnologiya, Tasviriy san'at) Testlar Bazasi",
     "url": "https://docs.google.com/spreadsheets/d/1zdAC2kWuFg8-sUglRTJ8gbmQuvULP3mEUnEN-7QaITs/edit"
   },
-  "11": {
+  "zaxira": {
     "id": "1BVlw3GQfkQCHVJXj50m2DG2jzqfSe9UvqLNjDDWEJFQ",
-    "title": "11-sinf Testlar Bazasi",
+    "title": "Maxsus va Zaxira Testlar Bazasi",
     "url": "https://docs.google.com/spreadsheets/d/1BVlw3GQfkQCHVJXj50m2DG2jzqfSe9UvqLNjDDWEJFQ/edit"
+  },
+  "pin_kod": {
+    "id": "13ig6ubfR4ogSCtBrDVOtXRUIG2gWj2sAT__uMIFIJZM",
+    "title": "PIN_KOD (Kunlik Parollar va KRS Grafigi)",
+    "url": "https://docs.google.com/spreadsheets/d/13ig6ubfR4ogSCtBrDVOtXRUIG2gWj2sAT__uMIFIJZM/edit"
+  },
+  "monitoring": {
+    "id": "1xYF0P9ZqumezUrH20qoyANjS0Hw6G-yr6hOwwwYOzAU",
+    "title": "Test_Natijalari_va_Monitoring",
+    "url": "https://docs.google.com/spreadsheets/d/1xYF0P9ZqumezUrH20qoyANjS0Hw6G-yr6hOwwwYOzAU/edit"
   }
 }
