@@ -459,8 +459,10 @@ function mapSubjectToKrs(raw) {
   if (s.includes('fizik') || s.includes('astronom')) return "Fizika";
   if (s.includes('kimyo')) return "Kimyo";
   if (s.includes('geograf') || s.includes('iqtisod') || s.includes('иқтисод')) return "Geografiya";
-  if (s.includes('tarix') || s.includes('huquq') || s.includes('tarbiya') || s.includes('тарих') || s.includes('ориентация') || s.includes('тадбиркор')) return "Tarix";
-  if (s.includes('texnolog') || s.includes('mehnat') || s.includes('tasviriy') || s.includes('chizma') || s.includes('musiqa') || s.includes('jismoniy') || s.includes('касбий') || s.includes('военная')) return "Texnologiya";
+  if (s.includes('huquq') || s.includes('давлат') || s.includes('ҳуқуқ')) return "Huquq";
+  if (s.includes('tarix') || s.includes('тарих') || s.includes('tarbiya') || s.includes('ориентация') || s.includes('тадбиркор')) return "Tarix";
+  if (s.includes('tasviriy') || s.includes('chizma') || s.includes('тасвирий') || s.includes('чизма')) return "Tasviriy san'at";
+  if (s.includes('texnolog') || s.includes('mehnat') || s.includes('технолог') || s.includes('меҳнат') || s.includes('musiqa') || s.includes('jismoniy') || s.includes('касбий') || s.includes('военная')) return "Texnologiya";
   return null;
 }
 
@@ -885,47 +887,107 @@ async function handleValidateAndOpenPinModal() {
   openPinModal();
 }
 
-const PIN_EYE_OPEN_SVG = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>`;
-const PIN_EYE_CLOSED_SVG = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>`;
+// ==========================================
+// TELEGRAM MONKEY MASCOT & PIN VISIBILITY
+// ==========================================
+function getTelegramMonkeySvgHtml(size, extraClass = '') {
+  return `
+  <svg viewBox="0 0 64 64" width="${size}" height="${size}" class="telegram-monkey-svg hidden-pin ${extraClass}">
+    <g class="monkey-ears">
+      <circle cx="10" cy="27" r="9.5" fill="#8D6E63"/>
+      <circle cx="10" cy="27" r="5.5" fill="#FFCCBC"/>
+      <circle cx="54" cy="27" r="9.5" fill="#8D6E63"/>
+      <circle cx="54" cy="27" r="5.5" fill="#FFCCBC"/>
+    </g>
+    <circle cx="32" cy="32" r="23" fill="#8D6E63" class="monkey-head"/>
+    <ellipse cx="32" cy="38" rx="16.5" ry="12.5" fill="#FDF3E7"/>
+    <ellipse cx="32" cy="27" rx="15" ry="8.5" fill="#FDF3E7"/>
+    <g class="monkey-eyes">
+      <circle cx="23.5" cy="26" r="5.2" fill="#212529"/>
+      <circle cx="22" cy="24.2" r="2" fill="#FFFFFF"/>
+      <circle cx="25.5" cy="27.5" r="0.9" fill="#FFFFFF"/>
+      <circle cx="40.5" cy="26" r="5.2" fill="#212529"/>
+      <circle cx="39" cy="24.2" r="2" fill="#FFFFFF"/>
+      <circle cx="42.5" cy="27.5" r="0.9" fill="#FFFFFF"/>
+    </g>
+    <circle cx="16.5" cy="35" r="3.2" fill="#FFAB91" opacity="0.65"/>
+    <circle cx="47.5" cy="35" r="3.2" fill="#FFAB91" opacity="0.65"/>
+    <ellipse cx="32" cy="33.5" rx="3.2" ry="2.2" fill="#4E342E"/>
+    <path d="M 26 38.5 Q 32 43.5 38 38.5" fill="none" stroke="#4E342E" stroke-width="2.2" stroke-linecap="round"/>
+    <g class="monkey-paws">
+      <g class="paw-left">
+        <ellipse cx="23.5" cy="26" rx="9" ry="7.5" fill="#6D4C41" stroke="#4E342E" stroke-width="1.3"/>
+        <circle cx="19.5" cy="25" r="2" fill="#FFCCBC"/>
+        <circle cx="23.5" cy="23.5" r="2" fill="#FFCCBC"/>
+        <circle cx="27.5" cy="25" r="2" fill="#FFCCBC"/>
+      </g>
+      <g class="paw-right">
+        <ellipse cx="40.5" cy="26" rx="9" ry="7.5" fill="#6D4C41" stroke="#4E342E" stroke-width="1.3"/>
+        <circle cx="36.5" cy="25" r="2" fill="#FFCCBC"/>
+        <circle cx="40.5" cy="23.5" r="2" fill="#FFCCBC"/>
+        <circle cx="44.5" cy="25" r="2" fill="#FFCCBC"/>
+      </g>
+    </g>
+  </svg>
+  `;
+}
+
+function updateMonkeyPinState(isRevealed) {
+  const pinInput = document.getElementById('pinInput');
+  const toggleBtn = document.getElementById('togglePinVisibilityBtn');
+  const monkeySvgs = document.querySelectorAll('.telegram-monkey-svg');
+
+  if (pinInput) {
+    pinInput.type = isRevealed ? 'text' : 'password';
+  }
+
+  monkeySvgs.forEach(svg => {
+    if (isRevealed) {
+      svg.classList.remove('hidden-pin');
+      svg.classList.add('revealed-pin');
+    } else {
+      svg.classList.remove('revealed-pin');
+      svg.classList.add('hidden-pin');
+    }
+  });
+
+  if (toggleBtn) {
+    const title = isRevealed ? "PIN-kodni yashirish (Ko'zlarni yopish)" : "PIN-kodni ko'rsatish (Ko'zlarni ochish)";
+    toggleBtn.setAttribute('title', title);
+    toggleBtn.setAttribute('aria-label', title);
+  }
+}
 
 function setupPinToggleVisibility() {
   const toggleBtn = document.getElementById('togglePinVisibilityBtn');
   const pinInput = document.getElementById('pinInput');
-  const iconContainer = document.getElementById('pinEyeIconContainer');
+  const btnContainer = document.getElementById('pinMonkeyBtnContainer');
+  const mascotContainer = document.getElementById('pinMonkeyMascot');
 
-  if (toggleBtn && pinInput && iconContainer) {
-    toggleBtn.addEventListener('click', () => {
-      if (pinInput.type === 'password') {
-        pinInput.type = 'text';
-        iconContainer.innerHTML = PIN_EYE_CLOSED_SVG;
-        toggleBtn.setAttribute('title', "PIN-kodni yashirish");
-        toggleBtn.setAttribute('aria-label', "PIN-kodni yashirish");
-      } else {
-        pinInput.type = 'password';
-        iconContainer.innerHTML = PIN_EYE_OPEN_SVG;
-        toggleBtn.setAttribute('title', "PIN-kodni ko'rsatish");
-        toggleBtn.setAttribute('aria-label', "PIN-kodni ko'rsatish");
-      }
-      pinInput.focus();
-    });
+  if (btnContainer && !btnContainer.innerHTML.trim()) {
+    btnContainer.innerHTML = getTelegramMonkeySvgHtml(30);
   }
+  if (mascotContainer && !mascotContainer.innerHTML.trim()) {
+    mascotContainer.innerHTML = getTelegramMonkeySvgHtml(72);
+  }
+
+  const toggleHandler = () => {
+    if (!pinInput) return;
+    const isCurrentlyPassword = (pinInput.type === 'password');
+    updateMonkeyPinState(isCurrentlyPassword);
+    pinInput.focus();
+  };
+
+  toggleBtn?.addEventListener('click', toggleHandler);
+  mascotContainer?.addEventListener('click', toggleHandler);
 }
 
 function openPinModal() {
   const pinInput = document.getElementById('pinInput');
-  const toggleBtn = document.getElementById('togglePinVisibilityBtn');
-  const iconContainer = document.getElementById('pinEyeIconContainer');
   if (pinInput) {
     pinInput.value = '';
-    pinInput.type = 'password';
   }
-  if (iconContainer) {
-    iconContainer.innerHTML = PIN_EYE_OPEN_SVG;
-  }
-  if (toggleBtn) {
-    toggleBtn.setAttribute('title', "PIN-kodni ko'rsatish");
-    toggleBtn.setAttribute('aria-label', "PIN-kodni ko'rsatish");
-  }
+  updateMonkeyPinState(false);
   document.getElementById('pinModal').classList.add('open');
   setTimeout(() => pinInput?.focus(), 200);
 }
