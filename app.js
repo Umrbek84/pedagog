@@ -1,6 +1,6 @@
 /**
  * Pedagog.umamatov.uz — Pedagoglar Test Tizimi
- * JavaScript Application Logic with Daily PIN-code Protection
+ * JavaScript Application Logic with Daily PIN-code Protection & Anti-Cheat Proctoring
  */
 
 const PIN_CONFIG = {
@@ -24,18 +24,27 @@ const state = {
   secondsRemaining: 0,
   timerInterval: null,
   startTime: null,
-  endTime: null
+  endTime: null,
+  
+  // Anti-Cheat Monitoring
+  isExamActive: false,
+  tabSwitchCount: 0,
+  isBlocked: false,
+  lastBlurTime: 0
 };
 
 // DOM Views
 const views = {
   setup: document.getElementById('setupView'),
   exam: document.getElementById('examView'),
-  result: document.getElementById('resultView')
+  result: document.getElementById('resultView'),
+  blocked: document.getElementById('blockedView')
 };
 
 function switchView(viewName) {
-  Object.values(views).forEach(v => v.classList.remove('active'));
+  Object.values(views).forEach(v => {
+    if (v) v.classList.remove('active');
+  });
   if (views[viewName]) {
     views[viewName].classList.add('active');
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -55,7 +64,6 @@ function scrollToSection(sectionId) {
 // Calculate Today's 4-digit PIN based on Tashkent Date
 function getTodayTashkentDate() {
   const now = new Date();
-  // Tashkent is UTC+5
   const formatter = new Intl.DateTimeFormat('en-CA', {
     timeZone: 'Asia/Tashkent',
     year: 'numeric',
@@ -65,7 +73,7 @@ function getTodayTashkentDate() {
   return formatter.format(now); // "YYYY-MM-DD"
 }
 
-// Simple deterministic hash for 4-digit PIN
+// Deterministic hash for 4-digit PIN
 async function calculateDailyPin(dateStr) {
   const text = `${PIN_CONFIG.salt}_${dateStr}`;
   const enc = new TextEncoder();
@@ -82,6 +90,7 @@ async function calculateDailyPin(dateStr) {
 document.addEventListener('DOMContentLoaded', async () => {
   setupGradePillEvents();
   setupSubjectGradeHints();
+  setupAntiCheatListeners();
   await loadQuestionsDatabase();
 
   // Test start triggers PIN modal
@@ -92,6 +101,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('pinSubmitBtn').addEventListener('click', handlePinSubmit);
   document.getElementById('pinInput').addEventListener('keydown', (e) => {
     if (e.key === 'Enter') handlePinSubmit();
+  });
+
+  // Anti-cheat modal acknowledge button
+  document.getElementById('acModalAcknowledgeBtn').addEventListener('click', () => {
+    document.getElementById('antiCheatModal').classList.remove('open');
   });
 
   // Exam navigation
@@ -118,25 +132,90 @@ async function loadQuestionsDatabase() {
   } catch (err) {
     console.warn("questions.json yuklanmadi, zaxira savollardan foydalaniladi.");
   }
+}
 
-  // Fallback questions
-  state.allQuestions = [
-    {
-      "id": "5-ot-1",
-      "subject": "Ona tili",
-      "grade": 5,
-      "topic": "Nutq va til",
-      "question": "Nutqning qanday turlari mavjud?",
-      "options": {
-        "A": "Og'zaki va yozma nutq",
-        "B": "Faqat ichki nutq",
-        "C": "Faqat dialogik nutq",
-        "D": "Faqat monologik nutq"
-      },
-      "answer": "A",
-      "explanation": "5-sinf Ona tili: Nutq og'zaki va yozma bo'ladi."
+// Anti-Cheat Tab-Switch Detection
+function setupAntiCheatListeners() {
+  const handleTabSwitch = () => {
+    if (!state.isExamActive || state.isBlocked) return;
+
+    // Debounce multiple events within 1 second
+    const now = Date.now();
+    if (now - state.lastBlurTime < 1000) return;
+    state.lastBlurTime = now;
+
+    state.tabSwitchCount++;
+    updateAntiCheatIndicator();
+
+    if (state.tabSwitchCount === 1) {
+      showAntiCheatModal(
+        "⚠️",
+        "OGOHLANTIRISH (1/2)!",
+        `Siz test sahifasidan chiqib, boshqa vkladka yoki ilovaga o'tdingiz!<br>
+        <b>Qoidabuzarlik qayd etildi (Chiqishlar: 1).</b><br>
+        <span style="color: var(--danger); font-weight: 700;">Yana 2 marta sahifadan chiqsangiz, testingiz avtomatik BLOKLANADI!</span>`
+      );
+    } else if (state.tabSwitchCount === 2) {
+      showAntiCheatModal(
+        "🚨",
+        "OXIRGI OGOHLANTIRISH (2/2)!",
+        `Siz yana test maydonidan chiqdingiz!<br>
+        <b>Qoidabuzarlik soni: 2 ta.</b><br>
+        <span style="color: var(--danger); font-weight: 800; font-size: 1.05rem;">
+          YANA 1 MARTA CHIQSIZ, TEST SHU ZAHOTIYOQ BLOKLANADI VA 0 BALL QO'YILADI!
+        </span>`
+      );
+    } else if (state.tabSwitchCount >= 3) {
+      // Automatic Block and Termination
+      blockExamDueToCheating();
     }
-  ];
+  };
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      handleTabSwitch();
+    }
+  });
+
+  window.addEventListener('blur', () => {
+    handleTabSwitch();
+  });
+}
+
+function updateAntiCheatIndicator() {
+  const counterEl = document.getElementById('switchCounter');
+  const pillEl = document.getElementById('antiCheatPill');
+  if (counterEl) counterEl.textContent = state.tabSwitchCount;
+
+  if (pillEl) {
+    pillEl.classList.remove('safe', 'warn', 'danger');
+    if (state.tabSwitchCount === 0) {
+      pillEl.classList.add('safe');
+    } else if (state.tabSwitchCount === 1) {
+      pillEl.classList.add('warn');
+    } else {
+      pillEl.classList.add('danger');
+    }
+  }
+}
+
+function showAntiCheatModal(icon, title, textHtml) {
+  document.getElementById('acModalIcon').textContent = icon;
+  document.getElementById('acModalTitle').textContent = title;
+  document.getElementById('acModalText').innerHTML = textHtml;
+  document.getElementById('antiCheatModal').classList.add('open');
+}
+
+function blockExamDueToCheating() {
+  state.isExamActive = false;
+  state.isBlocked = true;
+  clearInterval(state.timerInterval);
+
+  // Close any open modals
+  document.getElementById('antiCheatModal').classList.remove('open');
+  document.getElementById('confirmModal').classList.remove('open');
+
+  switchView('blocked');
 }
 
 // Grade Selection Pills (Multi-Select)
@@ -269,7 +348,6 @@ async function handlePinSubmit() {
   const expectedPin = await calculateDailyPin(todayStr);
 
   if (pinInput === expectedPin || pinInput === PIN_CONFIG.masterPin) {
-    // PIN correct! Start test
     closePinModal();
     startExamSession();
   } else {
@@ -309,6 +387,12 @@ function startExamSession() {
   state.userAnswers = {};
   state.secondsRemaining = state.timeLimitMinutes * 60;
   state.startTime = new Date();
+  
+  // Anti-cheat state init
+  state.isExamActive = true;
+  state.tabSwitchCount = 0;
+  state.isBlocked = false;
+  updateAntiCheatIndicator();
 
   // Header
   document.getElementById('examHeaderTeacher').textContent = state.teacherInfo.name;
@@ -478,6 +562,7 @@ function closeFinishModal() {
 
 // Finish Exam and Score
 function finishExam() {
+  state.isExamActive = false;
   clearInterval(state.timerInterval);
   state.endTime = new Date();
 
@@ -507,6 +592,16 @@ function finishExam() {
   document.getElementById('resCorrectCount').textContent = correctCount;
   document.getElementById('resWrongCount').textContent = wrongCount;
   document.getElementById('resTimeSpent').textContent = timeFormatted;
+  
+  // Anti-cheat switch count
+  const switchEl = document.getElementById('resSwitchCount');
+  if (switchEl) {
+    if (state.tabSwitchCount === 0) {
+      switchEl.innerHTML = `<span class="text-success">0 ta (Halol)</span>`;
+    } else {
+      switchEl.innerHTML = `<span class="text-warning">${state.tabSwitchCount} ta</span>`;
+    }
+  }
 
   const emojiEl = document.getElementById('resultEmoji');
   const titleEl = document.getElementById('resultTitle');

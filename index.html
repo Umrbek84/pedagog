@@ -38,6 +38,14 @@
           <p class="section-desc">O'zingiz dars o'tadigan fanni va sinf(lar)ni belgilang. Bir nechta sinfni tanlashingiz mumkin.</p>
         </div>
 
+        <!-- Anti-cheat Info Banner -->
+        <div class="proctor-notice">
+          <span style="font-size: 1.25rem;">🛡️</span>
+          <div>
+            <b>Qat'iy intizom va nazorat:</b> Test jarayonida boshqa sahifa (vkladka), brauzer yoki ilovaga o'tish taqiqlanadi. 2 martadan ortiq sahifadan chiqilsa, test <b>avtomatik bloklanadi</b>.
+          </div>
+        </div>
+
         <form id="setupForm" onsubmit="return false;">
           <div class="form-grid">
             <div class="form-group">
@@ -137,6 +145,7 @@
                 <th>Fan va Sinf</th>
                 <th>Natija</th>
                 <th>Vaqt</th>
+                <th>Chiqishlar</th>
                 <th>Sana</th>
               </tr>
             </thead>
@@ -148,6 +157,7 @@
                 <td>Ona tili (5, 6, 8-sinf)</td>
                 <td><b style="color: var(--accent);">100% (20/20)</b></td>
                 <td>16 daq 12 son</td>
+                <td><span style="color: var(--accent); font-weight: 700;">0 (Halol)</span></td>
                 <td>2026-11-21</td>
               </tr>
               <tr>
@@ -157,6 +167,7 @@
                 <td>Matematika (7, 8, 9-sinf)</td>
                 <td><b style="color: var(--accent);">100% (20/20)</b></td>
                 <td>18 daq 45 son</td>
+                <td><span style="color: var(--accent); font-weight: 700;">0 (Halol)</span></td>
                 <td>2026-11-21</td>
               </tr>
               <tr>
@@ -166,6 +177,7 @@
                 <td>Biologiya (5, 8, 10-sinf)</td>
                 <td><b style="color: var(--accent);">95% (19/20)</b></td>
                 <td>19 daq 02 son</td>
+                <td><span style="color: var(--accent); font-weight: 700;">0 (Halol)</span></td>
                 <td>2026-11-20</td>
               </tr>
               <tr>
@@ -175,6 +187,7 @@
                 <td>Fizika (6, 7, 8-sinf)</td>
                 <td><b>95% (19/20)</b></td>
                 <td>21 daq 15 son</td>
+                <td><span style="color: var(--warning); font-weight: 700;">1 ta</span></td>
                 <td>2026-11-20</td>
               </tr>
               <tr>
@@ -184,6 +197,7 @@
                 <td>Ingliz tili (5, 9, 11-sinf)</td>
                 <td><b>95% (19/20)</b></td>
                 <td>22 daq 40 son</td>
+                <td><span style="color: var(--accent); font-weight: 700;">0 (Halol)</span></td>
                 <td>2026-11-19</td>
               </tr>
               <tr>
@@ -193,6 +207,7 @@
                 <td>Tarix (5, 7, 9-sinf)</td>
                 <td><b>90% (18/20)</b></td>
                 <td>17 daq 50 son</td>
+                <td><span style="color: var(--accent); font-weight: 700;">0 (Halol)</span></td>
                 <td>2026-11-19</td>
               </tr>
               <tr>
@@ -202,6 +217,7 @@
                 <td>Kimyo (7, 8, 11-sinf)</td>
                 <td><b>90% (18/20)</b></td>
                 <td>23 daq 10 son</td>
+                <td><span style="color: var(--warning); font-weight: 700;">1 ta</span></td>
                 <td>2026-11-19</td>
               </tr>
               <tr>
@@ -211,6 +227,7 @@
                 <td>Informatika (5, 8, 10-sinf)</td>
                 <td><b>90% (18/20)</b></td>
                 <td>24 daq 05 son</td>
+                <td><span style="color: var(--accent); font-weight: 700;">0 (Halol)</span></td>
                 <td>2026-11-18</td>
               </tr>
               <tr>
@@ -220,6 +237,7 @@
                 <td>Geografiya (5, 7, 8-sinf)</td>
                 <td><b>85% (17/20)</b></td>
                 <td>20 daq 30 son</td>
+                <td><span style="color: var(--accent); font-weight: 700;">0 (Halol)</span></td>
                 <td>2026-11-18</td>
               </tr>
               <tr>
@@ -229,6 +247,7 @@
                 <td>Ona tili (9, 10, 11-sinf)</td>
                 <td><b>85% (17/20)</b></td>
                 <td>22 daq 15 son</td>
+                <td><span style="color: var(--warning); font-weight: 700;">2 ta</span></td>
                 <td>2026-11-18</td>
               </tr>
             </tbody>
@@ -240,7 +259,7 @@
       <div class="card" id="statsSection">
         <div class="section-head">
           <h2 class="section-title">📊 Rasmiy darsliklar va testlar banki holati</h2>
-          <p class="section-desc">Platformadagi 211 ta rasмий maktab darsliklari va test savollari statistikasi</p>
+          <p class="section-desc">Platformadagi 211 ta rasmiy maktab darsliklari va test savollari statistikasi</p>
         </div>
 
         <div class="stats-catalog-grid">
@@ -308,20 +327,24 @@
       </div>
     </section>
 
-    <!-- VIEW 2: EXAM SCREEN -->
+    <!-- VIEW 2: EXAM SCREEN WITH PROCTORING INDICATOR -->
     <section id="examView" class="view-section">
       <div class="exam-header">
         <div class="exam-teacher-info">
           <h3 id="examHeaderTeacher">Ustoz nomi</h3>
           <p id="examHeaderDetails">Fan • Tanlangan sinflar</p>
         </div>
-        <div class="timer-box" id="timerBox">
-          ⏱️ <span id="timerDisplay">30:00</span>
+        <div class="exam-indicators">
+          <div class="anti-cheat-pill safe" id="antiCheatPill">
+            👁️ Chiqishlar: <span id="switchCounter">0</span> / 2
+          </div>
+          <div class="timer-box" id="timerBox">
+            ⏱️ <span id="timerDisplay">30:00</span>
+          </div>
         </div>
       </div>
 
       <div class="exam-layout">
-        <!-- Main Question Area -->
         <div class="exam-main">
           <div class="question-card">
             <div class="question-meta">
@@ -336,7 +359,7 @@
               Savol yuklanmoqda...
             </h3>
 
-            <!-- Optional Question Image -->
+            <!-- Optional Image -->
             <div class="question-image-box" id="questionImageBox" style="display: none;">
               <img id="questionImage" src="" alt="Savol rasmi">
             </div>
@@ -399,6 +422,10 @@
             <div class="stat-val" id="resTimeSpent">14:22</div>
             <div class="stat-label">Sarflangan vaqt</div>
           </div>
+          <div class="stat-item">
+            <div class="stat-val" id="resSwitchCount">0 ta</div>
+            <div class="stat-label">Chiqishlar soni</div>
+          </div>
         </div>
 
         <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
@@ -417,7 +444,50 @@
       </div>
     </section>
 
+    <!-- VIEW 4: BLOCKED VIEW (AUTO-LOCKED DUE TO CHEATING) -->
+    <section id="blockedView" class="view-section">
+      <div class="card blocked-card">
+        <div class="blocked-icon">🚫</div>
+        <h2 class="blocked-title">TEST QOIDABUZARLIK TUFAYLI BLOKLANDI!</h2>
+        <p class="blocked-desc">
+          Siz test topshirish jarayonida <b>3 marta ruxsatsiz boshqa sahifaga (vkladkaga) yoki ilovaga o'tdingiz</b>.<br>
+          Nazorat tizimi tomonidan test to'xtatildi va <b>natijangiz bekor qilindi (0 ball)</b>.<br>
+          Ushbu holat monitoring hisobotiga kiritildi.
+        </p>
+
+        <div class="pin-contact-box" style="max-width: 440px; margin: 0 auto 1.5rem; text-align: center;">
+          <p style="font-weight: 700; color: #1e293b;">Qayta ruxsat olish uchun mas'ul mutaxassisga murojaat qiling:</p>
+          <div class="pin-contact-links" style="align-items: center;">
+            <a class="pin-contact-link" href="tel:+998996601415">📞 +998 99 660 14 15 (Umrbek Mamatov)</a>
+            <a class="pin-contact-link" href="https://t.me/umrbek_mamatov" target="_blank" rel="noopener">✈️ Telegram: @umrbek_mamatov</a>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-secondary" onclick="switchView('setup')">
+          🏠 Bosh sahifaga qaytish
+        </button>
+      </div>
+    </section>
+
   </main>
+
+  <!-- ANTI-CHEAT WARNING MODAL -->
+  <div class="modal-overlay" id="antiCheatModal">
+    <div class="modal-content" style="border-top: 6px solid var(--danger);">
+      <div style="font-size: 3rem; margin-bottom: 0.5rem;" id="acModalIcon">⚠️</div>
+      <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--danger); margin-bottom: 0.75rem;" id="acModalTitle">
+        QOIDABUZARLIK QAYD ETILDI!
+      </h3>
+      <p style="color: var(--text-main); font-size: 0.95rem; line-height: 1.6;" id="acModalText">
+        Siz test maydonidan chiqib, boshqa vkladka yoki ilovaga o'tdingiz!
+      </p>
+      <div class="modal-actions" style="margin-top: 1.5rem;">
+        <button type="button" class="btn btn-primary btn-block" id="acModalAcknowledgeBtn">
+          Tushundim, testni davom ettirish
+        </button>
+      </div>
+    </div>
+  </div>
 
   <!-- PIN CODE MODAL (CENTERED) -->
   <div class="modal-overlay" id="pinModal">
@@ -504,5 +574,6 @@
   </footer>
 
   <script src="app.js"></script>
+  <script src="qulaylik.js"></script>
 </body>
 </html>

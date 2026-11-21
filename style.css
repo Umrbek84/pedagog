@@ -9,8 +9,10 @@
   --accent-light: #10b981;
   --accent-subtle: #ecfdf5;
   --danger: #dc2626;
+  --danger-light: #ef4444;
   --danger-subtle: #fef2f2;
   --warning: #d97706;
+  --warning-subtle: #fffbeb;
   --bg: #f8fafc;
   --surface: #ffffff;
   --border: #e2e8f0;
@@ -36,7 +38,6 @@
 body {
   font-family: var(--font);
   background-color: var(--bg);
-  /* Faint, elegant educational background with teachers working */
   background-image: 
     linear-gradient(rgba(248, 250, 252, 0.94), rgba(248, 250, 252, 0.94)),
     url('assets/teachers-bg.jpg');
@@ -309,6 +310,20 @@ body {
   border: 1px solid var(--border);
 }
 
+/* Anti-Cheat Warning Badge */
+.proctor-notice {
+  background: #fffbeb;
+  border: 1.5px solid #fde68a;
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  color: #92400e;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
@@ -401,13 +416,51 @@ body {
   color: var(--text-muted);
 }
 
+.exam-indicators {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.anti-cheat-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: 1.5px solid var(--border);
+  background: #ffffff;
+}
+
+.anti-cheat-pill.safe {
+  border-color: #a7f3d0;
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+.anti-cheat-pill.warn {
+  border-color: #fde68a;
+  background: #fffbeb;
+  color: #92400e;
+}
+
+.anti-cheat-pill.danger {
+  border-color: #fca5a5;
+  background: #fef2f2;
+  color: #991b1b;
+  animation: pulse 1s infinite;
+}
+
 .timer-box {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   background: var(--primary-subtle);
   color: var(--primary);
-  padding: 0.6rem 1.25rem;
+  padding: 0.5rem 1.1rem;
   border-radius: var(--radius-md);
   font-size: 1.25rem;
   font-weight: 800;
@@ -644,7 +697,7 @@ body {
 .result-card {
   text-align: center;
   padding: 3.5rem 2rem;
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 auto 2rem;
 }
 
@@ -681,9 +734,15 @@ body {
 
 .result-stats-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin: 2rem 0;
+}
+
+@media(max-width: 640px) {
+  .result-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .stat-item {
@@ -705,6 +764,43 @@ body {
 
 .text-success { color: var(--accent); }
 .text-danger { color: var(--danger); }
+.text-warning { color: var(--warning); }
+
+/* Blocked Screen */
+.blocked-card {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 680px;
+  margin: 0 auto;
+  border: 2px solid #fca5a5;
+  background: #fff5f5;
+}
+
+.blocked-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-10px); }
+  40%, 80% { transform: translateX(10px); }
+}
+
+.blocked-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--danger);
+  margin-bottom: 1rem;
+}
+
+.blocked-desc {
+  font-size: 1rem;
+  color: #7f1d1d;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
 
 /* Review Answers List */
 .review-item {
@@ -939,7 +1035,7 @@ body {
 }
 
 /* ========================================================
-   OFFICIAL UMRBEK MAMATOV FOOTER (Matching olimpiada.umamatov.uz)
+   OFFICIAL UMRBEK MAMATOV FOOTER
    ======================================================== */
 .site-footer {
   background: #0f1729;
