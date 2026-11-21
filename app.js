@@ -2,27 +2,33 @@
  * Pedagog.umamatov.uz — Pedagoglar Test Tizimi
  * JavaScript Application Logic with:
  * 1. Live Google Sheets Dual PIN & Ochiq/Yopiq Status Control (BOSHQARUV varag'i)
- * 2. School -> Subject -> Teacher F.I.Sh. Smart Dynamic Filter
- * 3. Active Session Resumption (Power Outage / Reload Protection)
- * 4. 4-Strike Mobile & Desktop Anti-Cheat Proctoring
+ * 2. Cascading Selector: 1. Maktab -> 2. Fan -> 3. F.I.Sh. (O'sha fanga mos o'qituvchilar)
+ * 3. Smart Phone Call Immunity (7 soniyagacha qo'ng'iroq/xabarlarga immunitet)
+ * 4. Live Leaderboard from Google Sheet (To'qima ma'lumotlarsiz)
+ * 5. Blocked Teachers List & Admin Permission Control (Ochiq/Yopiq ruxsat)
+ * 6. Active Session Resumption (Elektr o'chishi / sahifa yangilanishiga qarshi)
  */
 
 const GOOGLE_SHEET_CONTROL_URL = "https://docs.google.com/spreadsheets/d/13ig6ubfR4ogSCtBrDVOtXRUIG2gWj2sAT__uMIFIJZM/gviz/tq?tqx=out:csv&sheet=BOSHQARUV";
+const RESULTS_SHEET_URL = "https://docs.google.com/spreadsheets/d/1xYF0P9ZqumezUrH20qoyANjS0Hw6G-yr6hOwwwYOzAU/gviz/tq?tqx=out:csv&sheet=Varaq1";
+const BLOCKED_SHEET_URL = "https://docs.google.com/spreadsheets/d/1xYF0P9ZqumezUrH20qoyANjS0Hw6G-yr6hOwwwYOzAU/gviz/tq?tqx=out:csv&sheet=BLOKLANGANLAR";
 
 const PIN_CONFIG = {
   salt: "umamatov_pedagog_2026",
-  masterPin: "2026" // Default master PIN
+  masterPin: "2026"
 };
 
-// Remote Live Control Config (Fetched from Google Sheet)
+// Remote Live Control Config
 let remoteControl = {
   pin: "2026",
-  status: "Ochiq", // "Ochiq" or "Yopiq"
+  status: "Ochiq",
   notice: "Test tizimi ochiq va faol. Muvaffaqiyat tilaymiz!",
   krsWeek1: "Ochiq"
 };
 
 const SESSION_STORAGE_KEY = 'pedagog_active_session_2026';
+const RESULTS_STORAGE_KEY = 'pedagog_results_archive_2026';
+const BLOCKED_STORAGE_KEY = 'pedagog_blocked_users_2026';
 
 // Global State
 const state = {
@@ -30,7 +36,7 @@ const state = {
   allQuestions: [],
   activeQuestions: [],
   currentIndex: 0,
-  userAnswers: {}, // index -> 'A' | 'B' | 'C' | 'D'
+  userAnswers: {},
   teacherInfo: {
     name: '',
     school: '',
@@ -42,11 +48,12 @@ const state = {
   startTimestamp: null,
   endTimestamp: null,
   
-  // Anti-Cheat Monitoring
+  // Anti-Cheat Proctoring & Phone Call Protection
   isExamActive: false,
   tabSwitchCount: 0,
   isBlocked: false,
-  lastBlurTime: 0
+  awayStartTime: 0,
+  isMobileDevice: /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
 };
 
 // DOM Views
@@ -78,34 +85,11 @@ function scrollToSection(sectionId) {
 }
 
 // ==========================================
-// LIVE GOOGLE SHEET CONTROL (OCHIQ / YOPIQ & PIN)
+// CSV PARSER HELPER
 // ==========================================
-async function fetchLiveControlConfig() {
-  try {
-    const res = await fetch(GOOGLE_SHEET_CONTROL_URL);
-    if (!res.ok) throw new Error("Google Sheet request failed");
-    const csvText = await res.text();
-    const rows = parseCsv(csvText);
-
-    if (rows.length >= 2) {
-      // Row 1 is header, Row 2 is data: [Amaldagi_PIN_Kod, Tizim_Holati, Foydalanuvchilarga_Xabar, ...]
-      const dataRow = rows[1];
-      if (dataRow[0]) remoteControl.pin = dataRow[0].trim();
-      if (dataRow[1]) remoteControl.status = dataRow[1].trim();
-      if (dataRow[2]) remoteControl.notice = dataRow[2].trim();
-      if (dataRow[3]) remoteControl.krsWeek1 = dataRow[3].trim();
-    }
-  } catch (err) {
-    console.warn("Live Google Sheet sozlamalari yuklanmadi, standart parametrlardan foydalaniladi:", err);
-  } finally {
-    updateSystemStatusBanner();
-  }
-}
-
 function parseCsv(text) {
   const lines = text.trim().split(/\r?\n/);
   return lines.map(line => {
-    // Handle CSV quoted strings cleanly
     const regex = /(?:^|,)(?:"([^"]*(?:""[^"]*)*)"|([^",]*))/g;
     const row = [];
     let match;
@@ -116,6 +100,47 @@ function parseCsv(text) {
     }
     return row;
   });
+}
+
+// ==========================================
+// TOAST NOTIFICATION HELPER
+// ==========================================
+function showToast(message, icon = "ℹ️") {
+  const existing = document.querySelector('.toast-notice');
+  if (existing) existing.remove();
+
+  const toast = document.createElement('div');
+  toast.className = 'toast-notice';
+  toast.innerHTML = `<span>${icon}</span> <span>${message}</span>`;
+  document.body.appendChild(toast);
+
+  setTimeout(() => {
+    if (toast.parentNode) toast.remove();
+  }, 4200);
+}
+
+// ==========================================
+// LIVE GOOGLE SHEET CONTROL (OCHIQ / YOPIQ & PIN)
+// ==========================================
+async function fetchLiveControlConfig() {
+  try {
+    const res = await fetch(GOOGLE_SHEET_CONTROL_URL);
+    if (!res.ok) throw new Error("Google Sheet request failed");
+    const csvText = await res.text();
+    const rows = parseCsv(csvText);
+
+    if (rows.length >= 2) {
+      const dataRow = rows[1];
+      if (dataRow[0]) remoteControl.pin = dataRow[0].trim();
+      if (dataRow[1]) remoteControl.status = dataRow[1].trim();
+      if (dataRow[2]) remoteControl.notice = dataRow[2].trim();
+      if (dataRow[3]) remoteControl.krsWeek1 = dataRow[3].trim();
+    }
+  } catch (err) {
+    console.warn("Live Google Sheet sozlamalari yuklanmadi, zaxira parametrlardan foydalaniladi:", err);
+  } finally {
+    updateSystemStatusBanner();
+  }
 }
 
 function updateSystemStatusBanner() {
@@ -142,10 +167,9 @@ function getTodayTashkentDate() {
     month: '2-digit',
     day: '2-digit'
   });
-  return formatter.format(now); // "YYYY-MM-DD"
+  return formatter.format(now);
 }
 
-// Deterministic SHA-256 hash for daily 4-digit PIN
 async function calculateDailyPin(dateStr) {
   const text = `${PIN_CONFIG.salt}_${dateStr}`;
   const enc = new TextEncoder();
@@ -166,33 +190,29 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadQuestionsDatabase();
   setupSchoolSubjectTeacherFlow();
   await fetchLiveControlConfig();
+  await loadLeaderboardFromSheet();
 
-  // Periodic poll of Google Sheet control status every 30 seconds
   setInterval(fetchLiveControlConfig, 30000);
+  setInterval(loadLeaderboardFromSheet, 60000);
 
-  // Test start triggers PIN modal (or shows Closed modal)
   const startBtn = document.getElementById('startTestBtn');
   if (startBtn) {
     startBtn.addEventListener('click', handleValidateAndOpenPinModal);
   }
   
-  // PIN Modal buttons
   document.getElementById('pinCancelBtn')?.addEventListener('click', closePinModal);
   document.getElementById('pinSubmitBtn')?.addEventListener('click', handlePinSubmit);
   document.getElementById('pinInput')?.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') handlePinSubmit();
   });
 
-  // Anti-cheat modal acknowledge button
   document.getElementById('acModalAcknowledgeBtn')?.addEventListener('click', () => {
     document.getElementById('antiCheatModal').classList.remove('open');
   });
 
-  // Resume Session Modal buttons
   document.getElementById('resumeCancelBtn')?.addEventListener('click', discardSavedSession);
   document.getElementById('resumeConfirmBtn')?.addEventListener('click', resumeSavedSession);
 
-  // Exam navigation
   document.getElementById('prevQBtn')?.addEventListener('click', () => navigateQuestion(-1));
   document.getElementById('nextQBtn')?.addEventListener('click', () => navigateQuestion(1));
   document.getElementById('finishTestBtn')?.addEventListener('click', openFinishModal);
@@ -203,7 +223,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
   document.getElementById('restartBtn')?.addEventListener('click', handleRestart);
 
-  // Check for active interrupted session (power outage / reload protection)
   checkInterruptedSession();
 });
 
@@ -248,12 +267,6 @@ function populateSchoolDropdown() {
   schoolSelect.appendChild(otherOpt);
 }
 
-/**
- * Smart Cascading Filter:
- * Step 1: Maktab tanlanadi
- * Step 2: Fan tanlanadi
- * Step 3: F.I.Sh. (O'sha maktabdagi faqat shu fandan dars beradigan o'qituvchilar chiqadi!)
- */
 function setupSchoolSubjectTeacherFlow() {
   const schoolSelect = document.getElementById('schoolSelect');
   const subjectSelect = document.getElementById('subjectSelect');
@@ -294,7 +307,6 @@ function setupSchoolSubjectTeacherFlow() {
       return;
     }
 
-    // Both School and Subject selected -> filter teachers!
     const allSchoolTeachers = state.teachersDb[schoolVal] || [];
     const matchedTeachers = allSchoolTeachers.filter(t => {
       const krs = mapSubjectToKrs(t.subject || '');
@@ -325,7 +337,6 @@ function setupSchoolSubjectTeacherFlow() {
       customTeacherInput.style.display = 'none';
       customTeacherInput.required = false;
     } else {
-      // No teacher in roster for this subject -> prompt custom input
       const customOpt = document.createElement('option');
       customOpt.value = 'CUSTOM_TEACHER';
       customOpt.textContent = `➕ Ro'yxatdan tashqari yangi pedagog (${subjectVal})`;
@@ -356,7 +367,6 @@ function setupSchoolSubjectTeacherFlow() {
   });
 }
 
-// Map teacher's raw subject from Tarifikatsiya to the 12 KRS categories
 function mapSubjectToKrs(raw) {
   const s = raw.toLowerCase();
   if (s.includes('boshlang') || s.includes('savod') || s.includes('ўқиш') || s.includes('nutq') || s.includes('нутқ') || s.includes('o‘qish') || s.includes('alifbe')) return "Boshlang'ich ta'lim";
@@ -382,7 +392,6 @@ async function loadQuestionsDatabase() {
     const res = await fetch('questions.json');
     if (res.ok) {
       state.allQuestions = await res.json();
-      console.log(`Bazada jami ${state.allQuestions.length} ta darslik test savollari mavjud.`);
     }
   } catch (err) {
     console.warn("questions.json yuklanmadi:", err);
@@ -390,26 +399,24 @@ async function loadQuestionsDatabase() {
 }
 
 // ==========================================
-// MOBILE & DESKTOP ANTI-CHEAT PROCTORING
+// SMART ANTI-CHEAT & PHONE CALL IMMUNITY
 // ==========================================
 function setupAntiCheatListeners() {
-  const handleTabSwitch = (reason) => {
+  const triggerViolation = (awayMs) => {
     if (!state.isExamActive || state.isBlocked) return;
-
-    // Debounce multiple rapid events within 1500ms
-    const now = Date.now();
-    if (now - state.lastBlurTime < 1500) return;
-    state.lastBlurTime = now;
 
     state.tabSwitchCount++;
     saveActiveSession();
     updateAntiCheatIndicator();
 
+    const awaySec = Math.round(awayMs / 1000);
+
     if (state.tabSwitchCount === 1) {
       showAntiCheatModal(
         "⚠️",
         "OGOHLANTIRISH (1/3)!",
-        `Siz test maydonidan chiqib, boshqa vkladka yoki ilovaga o'tdingiz!<br>
+        `Siz test sahifasidan chiqib, boshqa ilova yoki vkladkaga o'tdingiz!<br>
+        Uzoqlashgan vaqtingiz: <b>${awaySec} soniya</b>.<br>
         <b>Qoidabuzarlik qayd etildi (Chiqishlar: 1).</b><br>
         <span style="color: var(--danger); font-weight: 700;">4-marta takrorlansa, testingiz avtomatik BLOKLANADI!</span>`
       );
@@ -417,7 +424,7 @@ function setupAntiCheatListeners() {
       showAntiCheatModal(
         "⚠️",
         "OGOHLANTIRISH (2/3)!",
-        `Siz yana test maydonidan chiqdingiz!<br>
+        `Siz yana test maydonidan chiqdingiz (${awaySec} soniya)!<br>
         <b>Qoidabuzarlik soni: 2 ta.</b><br>
         <span style="color: var(--warning); font-weight: 700;">Iltimos, diqqatingizni testda saqlang! Yana 2 ta chiqish qoldi.</span>`
       );
@@ -425,7 +432,7 @@ function setupAntiCheatListeners() {
       showAntiCheatModal(
         "🚨",
         "OXIRGI OGOHLANTIRISH (3/3)!",
-        `<b>OGOH BO'LING! Qoidabuzarlik soni 3 taga yetdi.</b><br>
+        `<b>OGOH BO'LING! Qoidabuzarlik soni 3 taga yetdi (${awaySec} soniya).</b><br>
         <span style="color: var(--danger); font-weight: 800; font-size: 1.05rem;">
           AGAR YANA 1 MARTA CHIQSIZ (4-marta), TEST SHU ZAHOTIYOQ BLOKLANADI VA 0 BALL BILAN BEKOR QILINADI!
         </span>`
@@ -435,17 +442,38 @@ function setupAntiCheatListeners() {
     }
   };
 
+  // Visibility Change with 7-second Phone Call & Notification Immunity
   document.addEventListener('visibilitychange', () => {
-    if (document.hidden) handleTabSwitch('visibilitychange');
+    if (!state.isExamActive || state.isBlocked) return;
+
+    if (document.hidden) {
+      // User minimized/left page or received a full-screen phone call
+      state.awayStartTime = Date.now();
+    } else {
+      // User returned back to the test page
+      if (state.awayStartTime > 0) {
+        const awayMs = Date.now() - state.awayStartTime;
+        state.awayStartTime = 0;
+
+        // SMART PHONE CALL IMMUNITY: If away for less than 7 seconds, it was an incoming call / notification dismiss!
+        if (awayMs < 7000) {
+          showToast(`Qisqa uzilish (${Math.max(1, Math.round(awayMs/1000))} soniya) aniqlandi. Test davom etmoqda.`, "📞");
+          return; // Immunity granted, no violation strike!
+        }
+
+        // If away for 7 seconds or more (switched app, searching, etc.)
+        triggerViolation(awayMs);
+      }
+    }
   });
 
-  window.addEventListener('pagehide', () => {
-    handleTabSwitch('pagehide');
-  });
-
-  window.addEventListener('blur', () => {
-    handleTabSwitch('blur');
-  });
+  // Desktop only: window blur (Bypassed on mobile phones to prevent false alarms on calls/notifications)
+  if (!state.isMobileDevice) {
+    window.addEventListener('blur', () => {
+      if (!state.isExamActive || state.isBlocked) return;
+      triggerViolation(5000);
+    });
+  }
 }
 
 function updateAntiCheatIndicator() {
@@ -472,20 +500,132 @@ function showAntiCheatModal(icon, title, textHtml) {
   document.getElementById('antiCheatModal').classList.add('open');
 }
 
+// ==========================================
+// BLOCKING & SAVING BLOCKED TEACHER
+// ==========================================
 function blockExamDueToCheating() {
   state.isExamActive = false;
   state.isBlocked = true;
   clearInterval(state.timerInterval);
   clearSavedSession();
 
+  // Save to blocked local storage
+  saveTeacherToBlockedList(state.teacherInfo, state.tabSwitchCount);
+
+  // Save 0-ball record to local results archive
+  saveResultRecord({
+    name: state.teacherInfo.name,
+    school: state.teacherInfo.school,
+    subject: state.teacherInfo.subject,
+    score: 0,
+    total: state.activeQuestions.length,
+    percent: 0,
+    timeSpent: '0 daq 0 son',
+    switches: state.tabSwitchCount,
+    status: '🚫 Bloklangan (Qoidabuzarlik)',
+    timestamp: new Date().toISOString()
+  });
+
   document.getElementById('antiCheatModal')?.classList.remove('open');
   document.getElementById('confirmModal')?.classList.remove('open');
 
   switchView('blocked');
+  loadLeaderboardFromSheet();
+}
+
+function saveTeacherToBlockedList(teacherInfo, switchCount) {
+  try {
+    const raw = localStorage.getItem(BLOCKED_STORAGE_KEY);
+    const list = raw ? JSON.parse(raw) : [];
+    
+    // Check if already in list
+    const existingIdx = list.findIndex(item => item.name.toLowerCase() === teacherInfo.name.toLowerCase());
+    const record = {
+      name: teacherInfo.name,
+      school: teacherInfo.school,
+      subject: teacherInfo.subject,
+      switchCount: switchCount || 4,
+      status: '🚫 Bloklangan',
+      permission: 'Yopiq', // Admin must change to "Ochiq" to allow retake
+      blockedAt: new Date().toISOString()
+    };
+
+    if (existingIdx >= 0) {
+      list[existingIdx] = record;
+    } else {
+      list.push(record);
+    }
+
+    localStorage.setItem(BLOCKED_STORAGE_KEY, JSON.stringify(list));
+  } catch (err) {
+    console.warn("Bloklanganlar ro'yxatini saqlashda xatolik:", err);
+  }
+}
+
+/**
+ * Check if the teacher has been blocked and whether admin allowed them to retake
+ * Returns { isBlocked: boolean, allowed: boolean, reason: string }
+ */
+async function checkTeacherBlockedPermission(teacherName) {
+  const normName = teacherName.trim().toLowerCase();
+
+  // 1. Check Live Google Sheet BLOKLANGANLAR varag'i
+  try {
+    const res = await fetch(BLOCKED_SHEET_URL);
+    if (res.ok) {
+      const csvText = await res.text();
+      const rows = parseCsv(csvText);
+      // Skip header row
+      for (let i = 1; i < rows.length; i++) {
+        const row = rows[i];
+        const rowName = (row[1] || '').trim().toLowerCase();
+        if (rowName === normName) {
+          const ruxsat = (row[6] || '').trim().toLowerCase();
+          if (ruxsat === 'ochiq') {
+            // Admin granted permission from Google Sheet!
+            return { isBlocked: false, allowed: true };
+          } else {
+            // Still locked
+            return {
+              isBlocked: true,
+              allowed: false,
+              reason: "Google Sheetdagi 'BLOKLANGANLAR' ro'yxatida 'Qayta_Topshirishga_Ruxsat' holati 'Yopiq' deb belgilangan."
+            };
+          }
+        }
+      }
+    }
+  } catch (err) {
+    console.warn("BLOKLANGANLAR sheetini tekshirishda xatolik:", err);
+  }
+
+  // 2. Check local blocked storage fallback
+  try {
+    const raw = localStorage.getItem(BLOCKED_STORAGE_KEY);
+    if (raw) {
+      const list = JSON.parse(raw);
+      const found = list.find(item => item.name.toLowerCase() === normName);
+      if (found) {
+        if (found.permission && found.permission.toLowerCase() === 'ochiq') {
+          return { isBlocked: false, allowed: true };
+        } else {
+          return {
+            isBlocked: true,
+            allowed: false,
+            reason: "Siz avval ushbu qurilmada test topshirish jarayonida 4 marta qoidabuzarlik sodir etib bloklangansiz."
+          };
+        }
+      }
+    }
+  } catch (err) {
+    console.warn("Local blocked storage tekshirilmadi:", err);
+  }
+
+  return { isBlocked: false, allowed: true };
 }
 
 // ==========================================
-// SESSION RESUMPTION (POWER OUTAGE / RELOAD)
+// SESSION RESUMPTION
 // ==========================================
 function saveActiveSession() {
   if (!state.isExamActive || state.isBlocked) return;
@@ -603,9 +743,7 @@ async function handleValidateAndOpenPinModal() {
   const subjectSelect = document.getElementById('subjectSelect');
 
   let school = schoolSelect.value;
-  if (school === 'CUSTOM_SCHOOL') {
-    school = customSchoolInput.value.trim();
-  }
+  if (school === 'CUSTOM_SCHOOL') school = customSchoolInput.value.trim();
   if (!school) {
     alert("Iltimos, ta'lim muassasasi (maktab)ni tanlang yoki nomini kiriting!");
     schoolSelect.focus();
@@ -620,25 +758,34 @@ async function handleValidateAndOpenPinModal() {
   }
 
   let name = teacherSelect.value;
-  if (name === 'CUSTOM_TEACHER') {
-    name = customTeacherInput.value.trim();
-  }
+  if (name === 'CUSTOM_TEACHER') name = customTeacherInput.value.trim();
   if (!name) {
     alert("Iltimos, o'qituvchi F.I.Sh. (Familiya Ism Sharif)ingizni tanlang yoki kiriting!");
     teacherSelect.focus();
     return;
   }
 
-  state.teacherInfo = {
-    name,
-    school,
-    subject
-  };
+  // CHECK IF TEACHER IS BLOCKED AND NEEDS ADMIN PERMISSION
+  const blockCheck = await checkTeacherBlockedPermission(name);
+  if (blockCheck.isBlocked && !blockCheck.allowed) {
+    const textEl = document.getElementById('teacherBlockedText');
+    if (textEl) {
+      textEl.innerHTML = `
+        Hurmatli <b>${name}</b>!<br>
+        Siz avval test topshirish jarayonida 4 marta qoidabuzarlik qilganingiz sababli tizim tomonidan chetlatilgansiz.<br>
+        <b>Sabab:</b> ${blockCheck.reason}<br>
+        Qayta test topshirishingiz uchun mas'ul mutaxassis Umrbek Mamatov tomonidan ruxsat berilishi kerak.
+      `;
+    }
+    document.getElementById('teacherBlockedModal')?.classList.add('open');
+    return;
+  }
+
+  state.teacherInfo = { name, school, subject };
 
   // Check live status from Google Sheet
   await fetchLiveControlConfig();
 
-  // If status is YOPIQ, block test entry with modal
   if (remoteControl.status.toLowerCase() === 'yopiq') {
     const textEl = document.getElementById('systemClosedNoticeText');
     if (textEl) {
@@ -652,7 +799,6 @@ async function handleValidateAndOpenPinModal() {
     return;
   }
 
-  // System is OCHIQ -> open PIN entry modal
   openPinModal();
 }
 
@@ -667,7 +813,6 @@ function closePinModal() {
   document.getElementById('pinModal').classList.remove('open');
 }
 
-// Validate PIN Code (Checks Google Sheet PIN, Master PIN 2026, or Daily Hash)
 async function handlePinSubmit() {
   const pinInput = document.getElementById('pinInput').value.trim();
   if (!pinInput || pinInput.length !== 4) {
@@ -675,7 +820,6 @@ async function handlePinSubmit() {
     return;
   }
 
-  // Check again in case admin closed it just now
   await fetchLiveControlConfig();
   if (remoteControl.status.toLowerCase() === 'yopiq') {
     closePinModal();
@@ -709,7 +853,6 @@ function startExamSession() {
   const countRequested = parseInt(document.getElementById('questionCount').value) || 20;
   state.timeLimitMinutes = parseInt(document.getElementById('timeLimit').value) || 30;
 
-  // Filter 20 textbook questions matching the selected KRS subject
   let matched = state.allQuestions.filter(q => {
     return q.subject && q.subject.toLowerCase() === state.teacherInfo.subject.toLowerCase();
   });
@@ -742,6 +885,7 @@ function startExamSession() {
   state.isExamActive = true;
   state.tabSwitchCount = 0;
   state.isBlocked = false;
+  state.awayStartTime = 0;
   updateAntiCheatIndicator();
 
   document.getElementById('examHeaderTeacher').textContent = state.teacherInfo.name;
@@ -972,10 +1116,39 @@ function finishExam() {
     titleEl.textContent = "Darsliklarni yana bir bor takrorlash tavsiya etiladi.";
   }
 
+  // Save result to archive
+  saveResultRecord({
+    name: state.teacherInfo.name,
+    school: state.teacherInfo.school,
+    subject: state.teacherInfo.subject,
+    score: correctCount,
+    total: total,
+    percent: percent,
+    timeSpent: timeFormatted,
+    switches: state.tabSwitchCount,
+    status: 'Muvaffaqiyatli topshirdi',
+    timestamp: new Date().toISOString()
+  });
+
   renderReviewList();
   switchView('result');
+  loadLeaderboardFromSheet();
 }
 
+function saveResultRecord(record) {
+  try {
+    const raw = localStorage.getItem(RESULTS_STORAGE_KEY);
+    const list = raw ? JSON.parse(raw) : [];
+    list.unshift(record);
+    localStorage.setItem(RESULTS_STORAGE_KEY, JSON.stringify(list.slice(0, 50)));
+  } catch (err) {
+    console.warn("Natijani saqlashda xato:", err);
+  }
+}
+
+// ==========================================
+// REVIEW LIST (MOBILE RESPONSIVE & ORTHOGRAPHY)
+// ==========================================
 function renderReviewList() {
   const container = document.getElementById('reviewContainer');
   container.innerHTML = '';
@@ -1000,7 +1173,7 @@ function renderReviewList() {
         </span>
       </div>
       <div class="review-q-text">${q.question}</div>
-      ${q.image ? `<div style="margin: 0.5rem 0;"><img src="${q.image}" style="max-height: 200px; border-radius: 6px;"></div>` : ''}
+      ${q.image ? `<div style="margin: 0.5rem 0;"><img src="${q.image}" style="max-width: 100%; max-height: 220px; border-radius: 6px;"></div>` : ''}
       <div class="review-ans-row">
         <div>
           <span style="font-size: 0.8rem; color: var(--text-muted);">Sizning javobingiz:</span><br>
@@ -1037,4 +1210,160 @@ function shuffleArray(array) {
     [array[i], array[j]] = [array[j], array[i]];
   }
   return array;
+}
+
+// ==========================================
+// DYNAMIC LIVE LEADERBOARD (GOOGLE SHEET + LOCAL)
+// ==========================================
+async function loadLeaderboardFromSheet() {
+  const tbody = document.getElementById('krsLeaderboardBody');
+  if (!tbody) return;
+
+  let combinedRecords = [];
+
+  // 1. Fetch live results from Google Sheet
+  try {
+    const res = await fetch(RESULTS_SHEET_URL);
+    if (res.ok) {
+      const csvText = await res.text();
+      const rows = parseCsv(csvText);
+      for (let i = 1; i < rows.length; i++) {
+        const r = rows[i];
+        if (!r[1]) continue;
+        combinedRecords.push({
+          date: (r[0] || '').substring(0, 10),
+          name: r[1],
+          school: r[2] || '',
+          subject: r[3] || '',
+          score: parseInt(r[5]) || 0,
+          total: parseInt(r[6]) || 20,
+          percent: parseInt(r[7]) || 0,
+          switches: parseInt(r[8]) || 0,
+          status: r[9] || 'Muvaffaqiyatli topshirdi',
+          timeSpent: '20 daq'
+        });
+      }
+    }
+  } catch (err) {
+    console.warn("Google Sheet natijalarini yuklashda xatolik:", err);
+  }
+
+  // 2. Fetch blocked records from Google Sheet
+  try {
+    const resB = await fetch(BLOCKED_SHEET_URL);
+    if (resB.ok) {
+      const csvTextB = await resB.text();
+      const rowsB = parseCsv(csvTextB);
+      for (let i = 1; i < rowsB.length; i++) {
+        const r = rowsB[i];
+        if (!r[1]) continue;
+        combinedRecords.push({
+          date: (r[0] || '').substring(0, 10),
+          name: r[1],
+          school: r[2] || '',
+          subject: r[3] || '',
+          score: 0,
+          total: 20,
+          percent: 0,
+          switches: parseInt(r[4]) || 4,
+          status: '🚫 Bloklangan (Qoidabuzarlik)',
+          timeSpent: 'To\'xtatildi'
+        });
+      }
+    }
+  } catch (err) {
+    console.warn("BLOKLANGANLAR varag'ini yuklashda xatolik:", err);
+  }
+
+  // 3. Merge local recent submissions
+  try {
+    const localRaw = localStorage.getItem(RESULTS_STORAGE_KEY);
+    if (localRaw) {
+      const localList = JSON.parse(localRaw);
+      localList.forEach(loc => {
+        // Avoid duplicate by name and date
+        const exists = combinedRecords.some(c => c.name.toLowerCase() === loc.name.toLowerCase());
+        if (!exists) {
+          combinedRecords.push({
+            date: (loc.timestamp || '').substring(0, 10),
+            name: loc.name,
+            school: loc.school,
+            subject: loc.subject,
+            score: loc.score,
+            total: loc.total || 20,
+            percent: loc.percent,
+            switches: loc.switches,
+            status: loc.status || 'Muvaffaqiyatli topshirdi',
+            timeSpent: loc.timeSpent || '18 daq'
+          });
+        }
+      });
+    }
+  } catch (err) {}
+
+  if (combinedRecords.length === 0) {
+    tbody.innerHTML = `
+      <tr>
+        <td colspan="8" style="text-align: center; padding: 2.5rem 1rem; color: var(--text-muted);">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
+          <b>Hozircha test natijalari mavjud emas.</b><br>
+          Pedagoglar test topshirishi bilan natijalar avtomatik ravishda reyting jadvalida paydo bo'ladi.
+        </td>
+      </tr>
+    `;
+    return;
+  }
+
+  // Sort: Non-blocked first by score descending, then blocked at the bottom
+  combinedRecords.sort((a, b) => {
+    const aBlocked = (a.status || '').includes('Bloklangan');
+    const bBlocked = (b.status || '').includes('Bloklangan');
+    if (aBlocked && !bBlocked) return 1;
+    if (!aBlocked && bBlocked) return -1;
+    return b.score - a.score;
+  });
+
+  tbody.innerHTML = '';
+
+  combinedRecords.slice(0, 20).forEach((item, idx) => {
+    const isBlocked = (item.status || '').includes('Bloklangan');
+    const tr = document.createElement('tr');
+    if (isBlocked) {
+      tr.style.background = '#fef2f2';
+    }
+
+    let rankBadge = `<span class="rank-badge">${idx + 1}</span>`;
+    if (isBlocked) {
+      rankBadge = `<span class="rank-badge rank-blocked">🚫</span>`;
+    } else if (idx === 0) {
+      rankBadge = `<span class="rank-badge rank-1">🥇 1</span>`;
+    } else if (idx === 1) {
+      rankBadge = `<span class="rank-badge rank-2">🥈 2</span>`;
+    } else if (idx === 2) {
+      rankBadge = `<span class="rank-badge rank-3">🥉 3</span>`;
+    }
+
+    const scoreDisplay = isBlocked
+      ? `<b style="color: var(--danger);">0 ball (0%)</b>`
+      : `<b style="color: var(--accent);">${item.percent}% (${item.score}/${item.total})</b>`;
+
+    const switchDisplay = isBlocked
+      ? `<span style="color: var(--danger); font-weight: 800;">4 ta (Cheklandi)</span>`
+      : (item.switches === 0 
+          ? `<span style="color: var(--accent); font-weight: 700;">0 (Halol)</span>` 
+          : `<span style="color: var(--warning); font-weight: 700;">${item.switches} ta</span>`);
+
+    tr.innerHTML = `
+      <td>${rankBadge}</td>
+      <td><b>${item.name}</b> ${isBlocked ? '<br><small style="color: var(--danger); font-weight: 700;">[QOIDABUZARLIK TUFAYLI BLOKLANGAN]</small>' : ''}</td>
+      <td>${item.school}</td>
+      <td>${item.subject}</td>
+      <td>${scoreDisplay}</td>
+      <td>${item.timeSpent}</td>
+      <td>${switchDisplay}</td>
+      <td>${item.date || 'Bugun'}</td>
+    `;
+
+    tbody.appendChild(tr);
+  });
 }
