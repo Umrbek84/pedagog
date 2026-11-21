@@ -1159,3 +1159,482 @@ body {
     width: 100%;
   }
 }
+
+
+/* ========================================================
+   KRS (KASBIY RIVOJLANISH SOATI) JADVALI VA BUGUNGI KUN STILLARI
+   ======================================================== */
+
+/* Top Live Alert Banner (Hero) */
+.krs-live-alert {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  border: 1.5px solid #f59e0b;
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  box-shadow: 0 10px 25px rgba(245, 158, 11, 0.15), 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  animation: fadeIn 0.4s ease;
+}
+
+.krs-live-alert-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.live-pulse-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid #ef4444;
+  color: #fca5a5;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background: #ef4444;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  animation: pulse-ring 1.5s infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(239, 68, 68, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+.krs-live-alert-text h4 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #fbbf24;
+  margin-bottom: 0.35rem;
+}
+
+.krs-live-alert-text p {
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.krs-live-alert-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .krs-live-alert {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.1rem;
+  }
+  .krs-live-alert-left {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .krs-live-alert-right {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .krs-live-alert-right .btn {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* Ro'yxatdan o'tish formasida fanni tanlaganda chiquvchi eslatma */
+.subject-krs-notice {
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1.1rem;
+  margin-top: 0.75rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.subject-krs-notice.notice-today {
+  background: #fffbeb;
+  border: 1.5px solid #f59e0b;
+  color: #92400e;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.12);
+}
+
+.subject-krs-notice.notice-today b {
+  color: #b45309;
+}
+
+.subject-krs-notice.notice-next {
+  background: #f0fdf4;
+  border: 1.5px solid #86efac;
+  color: #166534;
+}
+
+.subject-krs-notice .notice-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.subject-krs-notice p {
+  margin: 0.15rem 0 0;
+  font-size: 0.82rem;
+  opacity: 0.9;
+}
+
+/* KRS Grafigi Bo'limi */
+.krs-schedule-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.krs-filter-bar {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.krs-filter-btn {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  padding: 0.45rem 0.95rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.krs-filter-btn:hover {
+  background: var(--bg);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.krs-filter-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
+}
+
+.krs-filter-btn.btn-today-highlight {
+  border-color: #f59e0b;
+  color: #b45309;
+  background: #fffbeb;
+}
+
+.krs-filter-btn.btn-today-highlight.active {
+  background: #f59e0b;
+  border-color: #f59e0b;
+  color: #ffffff;
+}
+
+/* Kartalar to'plami (Grid) */
+.krs-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .krs-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Individual Karta */
+.krs-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.krs-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: #cbd5e1;
+}
+
+/* BUGUNGI KUN BO'LGAN FAN KARTASI (AJRALIB TURADI) */
+.krs-card-active-today {
+  border: 2px solid #f59e0b !important;
+  background: linear-gradient(180deg, #fffdfa 0%, #ffffff 100%) !important;
+  box-shadow: 0 10px 30px rgba(245, 158, 11, 0.18), 0 2px 8px rgba(0,0,0,0.06) !important;
+  transform: translateY(-2px);
+}
+
+.krs-ribbon {
+  position: absolute;
+  top: 14px;
+  right: -32px;
+  background: linear-gradient(135deg, #ef4444, #f59e0b);
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 36px;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  pointer-events: none;
+}
+
+.krs-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.krs-card-icon-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.krs-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.krs-card-active-today .krs-card-icon {
+  background: #fef3c7;
+  border-color: #fde68a;
+}
+
+.krs-card-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+.krs-card-audience {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+  line-height: 1.4;
+}
+
+/* Status Tags */
+.krs-status-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.krs-status-tag.tag-today {
+  background: #fffbeb;
+  border: 1.5px solid #f59e0b;
+  color: #b45309;
+  animation: pulse 1.8s infinite;
+}
+
+.krs-status-tag.tag-next {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e40af;
+}
+
+.krs-status-tag.tag-done {
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+}
+
+/* Progress bar */
+.krs-progress-wrap {
+  margin-bottom: 1rem;
+}
+
+.krs-progress-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.krs-progress-bar {
+  height: 6px;
+  background: #f1f5f9;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.krs-progress-fill {
+  height: 100%;
+  background: var(--primary);
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.krs-card-active-today .krs-progress-fill {
+  background: linear-gradient(90deg, #f59e0b, #ef4444);
+}
+
+.krs-schedule-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.6rem;
+}
+
+/* 12 ta Mashg'ulot Pill-lari Grid */
+.krs-pills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 480px) {
+  .krs-pills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.krs-pill {
+  border-radius: 8px;
+  padding: 0.4rem 0.5rem;
+  text-align: center;
+  font-size: 0.72rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  border: 1px solid var(--border);
+  background: #f8fafc;
+  color: var(--text-muted);
+}
+
+.krs-pill .pill-num {
+  font-size: 0.65rem;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.krs-pill .pill-date {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.krs-pill .pill-dot {
+  font-size: 0.62rem;
+  margin-top: 1px;
+}
+
+/* O'tgan kunlar — oddiy, tekshirilgan sana */
+.krs-pill.krs-pill-past {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+  opacity: 0.75;
+}
+
+.krs-pill.krs-pill-past .pill-date {
+  color: #64748b;
+  text-decoration: line-through;
+  text-decoration-color: #94a3b8;
+}
+
+.krs-pill.krs-pill-past .pill-dot {
+  color: #10b981;
+  font-weight: 800;
+}
+
+/* BUGUNGI KUN — YORQIN AJRALIB TURUVCHI PILL */
+.krs-pill.krs-pill-today {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  border-color: #b45309;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.35);
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.krs-pill.krs-pill-today .pill-num,
+.krs-pill.krs-pill-today .pill-date,
+.krs-pill.krs-pill-today .pill-dot {
+  color: #ffffff !important;
+  font-weight: 800;
+}
+
+/* Navbatdagi kun — yumshoq ko'k rang */
+.krs-pill.krs-pill-next {
+  background: #eff6ff;
+  border-color: #3b82f6;
+  border-width: 1.5px;
+}
+
+.krs-pill.krs-pill-next .pill-date {
+  color: #1d4ed8;
+  font-weight: 800;
+}
+
+.krs-pill.krs-pill-next .pill-dot {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+/* Kelgusi kunlar — oddiy sana */
+.krs-pill.krs-pill-future {
+  background: #ffffff;
+  border-color: #e2e8f0;
+}
+
+.krs-card-footer {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: flex-end;
+}

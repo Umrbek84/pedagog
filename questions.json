@@ -463,5 +463,305 @@
     },
     "answer": "A",
     "explanation": "11-sinf Matematika: Aniq integralni hisoblashning asosiy formulasi: Nyuton-Leybnits integrali F(b) - F(a)."
+  },
+  {
+    "id": "bt-1-1",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 1,
+    "topic": "1-sinf Alifbe. Tovush va harf",
+    "question": "Nutq tovushlari nechta asosiy guruhga bo'linadi?",
+    "options": {
+      "A": "2 guruhga: unli va undosh tovushlar",
+      "B": "3 guruhga: jarangli, jarangsiz, portlovchi",
+      "C": "4 guruhga: qattiq, yumshoq, uzun, qisqa",
+      "D": "Faqat bir guruhga"
+    },
+    "answer": "A",
+    "explanation": "1-sinf 'Alifbe' darsligiga ko'ra, o'zbek tilidagi tovushlar 2 ta katta guruhga — unli va undosh tovushlarga bo'linadi."
+  },
+  {
+    "id": "bt-1-2",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 1,
+    "topic": "1-sinf Matematika. 20 ichida qo'shish",
+    "question": "Yig'indini toping: 8 + 7 = ?",
+    "options": {
+      "A": "15",
+      "B": "14",
+      "C": "16",
+      "D": "13"
+    },
+    "answer": "A",
+    "explanation": "1-sinf Matematika: 8 ga 7 ni qo'shganda 15 hosil bo'ladi (8 + 2 = 10, 10 + 5 = 15)."
+  },
+  {
+    "id": "bt-1-3",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 1,
+    "topic": "1-sinf Alifbe. Bo'g'in",
+    "question": "So'zdagi bo'g'inlar soni nimaga qarab aniqlanadi?",
+    "options": {
+      "A": "So'zdagi unli tovushlar (harflar) soniga qarab",
+      "B": "So'zdagi undosh harflar soniga qarab",
+      "C": "So'zning uzunligiga qarab",
+      "D": "Tutuq belgisiga qarab"
+    },
+    "answer": "A",
+    "explanation": "1-sinf Alifbe qoidasi: So'zda nechta unli tovush bo'lsa, shuncha bo'g'in bo'ladi."
+  },
+  {
+    "id": "bt-1-4",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 1,
+    "topic": "1-sinf Atrofimizdagi olam",
+    "question": "Quyidagilardan qaysi biri jonsiz tabiat jismiga kiradi?",
+    "options": {
+      "A": "Tosh va daryo suvi",
+      "B": "Tol daraxti",
+      "C": "Chumoli",
+      "D": "Lola guli"
+    },
+    "answer": "A",
+    "explanation": "1-sinf 'Atrofimizdagi olam' darsligi: Tosh, suv, havo va quyosh jonsiz tabiat jismlaridir."
+  },
+  {
+    "id": "bt-1-5",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 1,
+    "topic": "1-sinf Matematika. Geometrik shakllar",
+    "question": "Uchta tomoni va uchta burchagi bo'lgan geometrik shakl qanday ataladi?",
+    "options": {
+      "A": "Uchburchak",
+      "B": "Kvadrat",
+      "C": "Doira",
+      "D": "To'g'ri to'rtburchak"
+    },
+    "answer": "A",
+    "explanation": "1-sinf Matematika: Uchta uchi, uchta tomoni va uchta burchagi bor shakl uchburchak deyiladi."
+  },
+  {
+    "id": "bt-2-1",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 2,
+    "topic": "2-sinf Ona tili. So'z turkumlari (Ot)",
+    "question": "Shaxs, narsa va buyumlarning nomini bildirib, 'Kim?', 'Nima?' so'rog'iga javob bo'ladigan so'z turkumi qaysi?",
+    "options": {
+      "A": "Ot",
+      "B": "Sifat",
+      "C": "Fe'l",
+      "D": "Son"
+    },
+    "answer": "A",
+    "explanation": "2-sinf Ona tili darsligi: Kim? yoki Nima? so'rog'iga javob bo'lgan so'zlar ot deyiladi (masalan: o'qituvchi, kitob)."
+  },
+  {
+    "id": "bt-2-2",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 2,
+    "topic": "2-sinf Matematika. Ko'paytirish amali",
+    "question": "Quyidagi ifodaning qiymatini toping: 7 × 8 = ?",
+    "options": {
+      "A": "56",
+      "B": "54",
+      "C": "48",
+      "D": "64"
+    },
+    "answer": "A",
+    "explanation": "2-sinf Matematika ko'paytirish jadvali: 7 × 8 = 56."
+  },
+  {
+    "id": "bt-2-3",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 2,
+    "topic": "2-sinf O'qish savodxonligi. Badiiy asarlar",
+    "question": "O'zbek xalq ertaklarida aql-idrok, donolik va adolat timsoli sifatida qaysi xalq qahramoni tasvirlanadi?",
+    "options": {
+      "A": "Nasriddin Afandi (Afandi)",
+      "B": "Dev",
+      "C": "Yalmog'iz",
+      "D": "Sehrgar"
+    },
+    "answer": "A",
+    "explanation": "2-sinf O'qish kitobi: Nasriddin Afandi xalq latifalarida hozirjavoblik va adolat timsoli sanaladi."
+  },
+  {
+    "id": "bt-2-4",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 2,
+    "topic": "2-sinf Matematika. Noma'lum qo'shiluvchini topish",
+    "question": "Tenglamani yeching: X + 27 = 60. X ning qiymati nechaga teng?",
+    "options": {
+      "A": "33",
+      "B": "23",
+      "C": "87",
+      "D": "37"
+    },
+    "answer": "A",
+    "explanation": "2-sinf Matematika: Noma'lum qo'shiluvchini topish uchun yig'indidan ma'lum qo'shiluvchi ayriladi: 60 - 27 = 33."
+  },
+  {
+    "id": "bt-2-5",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 2,
+    "topic": "2-sinf Tabiiy fan. O'simlik qismlari",
+    "question": "O'simlikni tuproqda mahkam ushlab turuvchi va suv hamda ozuqa moddalarni so'rib oluvchi asosiy a'zosi nima?",
+    "options": {
+      "A": "Ildiz",
+      "B": "Poya",
+      "C": "Barg",
+      "D": "Gul"
+    },
+    "answer": "A",
+    "explanation": "2-sinf Tabiiy fan: O'simlikning ildizi uni tuproqda ushlab turadi va ozuqani shimib beradi."
+  },
+  {
+    "id": "bt-3-1",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 3,
+    "topic": "3-sinf Ona tili. Sifat",
+    "question": "Predmetning belgisini (rangi, shakli, ta'mi) bildirib, 'Qanday?', 'Qanaqa?' so'roqlariga javob bo'ladigan so'z turkumi qaysi?",
+    "options": {
+      "A": "Sifat",
+      "B": "Son",
+      "C": "Olmosh",
+      "D": "Fe'l"
+    },
+    "answer": "A",
+    "explanation": "3-sinf Ona tili: Qanday?, Qanaqa? so'roqlariga javob bo'lib, belgi bildirgan so'zlar sifat deyiladi (shirin, qizil, katta)."
+  },
+  {
+    "id": "bt-3-2",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 3,
+    "topic": "3-sinf Matematika. Qoldiqli bo'lish",
+    "question": "47 sonini 5 ga bo'lganda bo'linma va qoldiq necha bo'ladi?",
+    "options": {
+      "A": "Bo'linma 9, qoldiq 2",
+      "B": "Bo'linma 8, qoldiq 7",
+      "C": "Bo'linma 9, qoldiq 4",
+      "D": "Bo'linma 10, qoldiq 0"
+    },
+    "answer": "A",
+    "explanation": "3-sinf Matematika: 47 : 5 = 9 (qoldiq 2), chunki 5 × 9 = 45 va 45 + 2 = 47."
+  },
+  {
+    "id": "bt-3-3",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 3,
+    "topic": "3-sinf Ona tili. Fe'l zamonlari",
+    "question": "'O'quvchilar yangi darslikni o'qiyaptilar' gapidagi fe'l qaysi zamonda kelgan?",
+    "options": {
+      "A": "Hozirgi zamon",
+      "B": "O'tgan zamon",
+      "C": "Kelasi zamon",
+      "D": "Zamon bildirmaydi"
+    },
+    "answer": "A",
+    "explanation": "3-sinf Ona tili: Harakat ayni paytda bajarilayotganini ko'rsatgan fe'llar hozirgi zamon fe'li hisoblanadi."
+  },
+  {
+    "id": "bt-3-4",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 3,
+    "topic": "3-sinf Matematika. To'g'ri to'rtburchak perimetri",
+    "question": "Bo'yi 8 sm, eni 5 sm bo'lgan to'g'ri to'rtburchakning perimetri necha santimetrga teng?",
+    "options": {
+      "A": "26 sm",
+      "B": "40 sm",
+      "C": "13 sm",
+      "D": "24 sm"
+    },
+    "answer": "A",
+    "explanation": "3-sinf Matematika: P = 2 × (a + b) = 2 × (8 + 5) = 2 × 13 = 26 sm."
+  },
+  {
+    "id": "bt-3-5",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 3,
+    "topic": "3-sinf Tabiiy fan. Suvning holatlari",
+    "question": "Tabiatda suv qanday uch xil agregat holatda uchraydi?",
+    "options": {
+      "A": "Qattiq (muz), suyuq (suv), gaz (bug')",
+      "B": "Faqat suyuq va muz",
+      "C": "Issiq, iliq va sovuq",
+      "D": "Yog'ingarchilik va bulut"
+    },
+    "answer": "A",
+    "explanation": "3-sinf Tabiiy fan darsligi: Suv tabiatda qattiq (muz), suyuq (suv) va gazsimon (bug') holatida bo'ladi."
+  },
+  {
+    "id": "bt-4-1",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 4,
+    "topic": "4-sinf Ona tili. Gapning bosh bo'laklari",
+    "question": "Gapda bosh bo'laklar qaysilar hisoblanadi?",
+    "options": {
+      "A": "Ega va kesim",
+      "B": "Hol va aniqlovchi",
+      "C": "To'ldiruvchi va kesim",
+      "D": "Kirish so'zlar"
+    },
+    "answer": "A",
+    "explanation": "4-sinf Ona tili: Gapning fikrni ifodalovchi asosiy bosh bo'laklari ega va kesimdir."
+  },
+  {
+    "id": "bt-4-2",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 4,
+    "topic": "4-sinf Matematika. Harakatga doir masalalar",
+    "question": "Avtomobil 60 km/soat tezlik bilan 3 soatda necha kilometr masofani bosib o'tadi?",
+    "options": {
+      "A": "180 km",
+      "B": "120 km",
+      "C": "20 km",
+      "D": "240 km"
+    },
+    "answer": "A",
+    "explanation": "4-sinf Matematika: Masofa formulasi S = v × t = 60 × 3 = 180 km."
+  },
+  {
+    "id": "bt-4-3",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 4,
+    "topic": "4-sinf O'qish savodxonligi. Maqollar",
+    "question": "'Bilim — aql chirog'i, hunar — ...' maqolini to'g'ri so'z bilan to'ldiring:",
+    "options": {
+      "A": "omad bulog'i",
+      "B": "boylik kaliti",
+      "C": "inson ziynati",
+      "D": "ishning boshi"
+    },
+    "answer": "A",
+    "explanation": "4-sinf O'qish kitobi darsligidagi o'zbek xalq maqoli: 'Bilim — aql chirog'i, hunar — omad bulog'i'."
+  },
+  {
+    "id": "bt-4-4",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 4,
+    "topic": "4-sinf Matematika. Yuza o'lchov birliklari",
+    "question": "Kvadratning tomoni 7 dm bo'lsa, uning yuzi (S) qanchaga teng?",
+    "options": {
+      "A": "49 kvadrat dm",
+      "B": "28 dm",
+      "C": "14 kvadrat dm",
+      "D": "56 kvadrat dm"
+    },
+    "answer": "A",
+    "explanation": "4-sinf Matematika: Kvadrat yuzi S = a × a = 7 × 7 = 49 dm²."
+  },
+  {
+    "id": "bt-4-5",
+    "subject": "Boshlang'ich ta'lim",
+    "grade": 4,
+    "topic": "4-sinf Tabiatshunoslik. Quyosh sistemasi",
+    "question": "Quyosh sistemasida Quyoshga eng yaqin turuvchi sayyora qaysi?",
+    "options": {
+      "A": "Merkuriy (Utorid)",
+      "B": "Venera (Zuhro)",
+      "C": "Mars (Mirrix)",
+      "D": "Yer"
+    },
+    "answer": "A",
+    "explanation": "4-sinf Tabiatshunoslik: Quyoshga eng yaqin joylashgan sayyora Merkuriy (Utorid) hisoblanadi."
   }
 ]
