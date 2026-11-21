@@ -102,6 +102,35 @@ function parseCsv(text) {
   });
 }
 
+// Format seconds into 00:04:40 (HH:MM:SS) format
+function formatTimeHms(totalSeconds) {
+  if (isNaN(totalSeconds) || totalSeconds < 0) totalSeconds = 0;
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+  return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+}
+
+// Normalize any time string into 00:04:40 format
+function normalizeTimeToHms(str) {
+  if (!str) return "00:00:00";
+  const s = String(str).trim();
+  if (s.includes("To'xtatildi") || s.includes("Bloklangan")) return "To'xtatildi";
+  if (/^\d{2}:\d{2}:\d{2}$/.test(s)) return s;
+  if (/^\d{1,2}:\d{2}$/.test(s)) {
+    const parts = s.split(':');
+    return `00:${parts[0].padStart(2, '0')}:${parts[1].padStart(2, '0')}`;
+  }
+  let mins = 0, secs = 0, hrs = 0;
+  const hrMatch = s.match(/(\d+)\s*soat/i);
+  const minMatch = s.match(/(\d+)\s*daq/i);
+  const secMatch = s.match(/(\d+)\s*son/i);
+  if (hrMatch) hrs = parseInt(hrMatch[1]) || 0;
+  if (minMatch) mins = parseInt(minMatch[1]) || 0;
+  if (secMatch) secs = parseInt(secMatch[1]) || 0;
+  return formatTimeHms((hrs * 3600) + (mins * 60) + secs);
+}
+
 // ==========================================
 // TOAST NOTIFICATION HELPER
 // ==========================================
@@ -215,7 +244,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   document.getElementById('prevQBtn')?.addEventListener('click', () => navigateQuestion(-1));
   document.getElementById('nextQBtn')?.addEventListener('click', () => navigateQuestion(1));
-  document.getElementById('finishTestBtn')?.addEventListener('click', openFinishModal);
+  document.getElementById('finishEarlyBtn')?.addEventListener('click', openFinishModal);
   document.getElementById('modalCancelBtn')?.addEventListener('click', closeFinishModal);
   document.getElementById('modalConfirmBtn')?.addEventListener('click', () => {
     closeFinishModal();
@@ -990,7 +1019,12 @@ function renderQuestion() {
 
   document.getElementById('prevQBtn').disabled = (state.currentIndex === 0);
   const isLast = (state.currentIndex === state.activeQuestions.length - 1);
-  document.getElementById('nextQBtn').textContent = isLast ? 'Tugatish 🏁' : 'Keyingi ➡';
+  const nextBtn = document.getElementById('nextQBtn');
+  if (isLast) {
+    nextBtn.textContent = '🏁 Testni yakunlash';
+  } else {
+    nextBtn.textContent = 'Keyingi ➡';
+  }
 
   updateNavigatorButtons();
 }
@@ -1079,9 +1113,7 @@ function finishExam() {
   const percent = total > 0 ? Math.round((correctCount / total) * 100) : 0;
 
   const timeSpentSec = Math.max(0, Math.floor((Date.now() - state.startTimestamp) / 1000));
-  const spentMins = Math.floor(timeSpentSec / 60);
-  const spentSecs = timeSpentSec % 60;
-  const timeFormatted = `${spentMins} daq ${spentSecs} son`;
+  const timeFormatted = formatTimeHms(timeSpentSec);
 
   document.getElementById('resTeacherName').textContent = state.teacherInfo.name;
   document.getElementById('resSubject').textContent = state.teacherInfo.subject;
@@ -1361,7 +1393,7 @@ async function loadLeaderboardFromSheet() {
       <td>${item.school}</td>
       <td>${item.subject}</td>
       <td>${scoreDisplay}</td>
-      <td>${item.timeSpent}</td>
+      <td>${isBlocked ? "To'xtatildi" : normalizeTimeToHms(item.timeSpent)}</td>
       <td>${switchDisplay}</td>
       <td>${item.date || 'Bugun'}</td>
     `;
