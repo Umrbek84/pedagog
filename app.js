@@ -1,7 +1,12 @@
 /**
  * Pedagog.umamatov.uz — Pedagoglar Test Tizimi
- * JavaScript Application Logic
+ * JavaScript Application Logic with Daily PIN-code Protection
  */
+
+const PIN_CONFIG = {
+  salt: "umamatov_pedagog_2026",
+  masterPin: "2026" // Admin master PIN for Umrbek Mamatov
+};
 
 // Global State
 const state = {
@@ -22,7 +27,7 @@ const state = {
   endTime: null
 };
 
-// DOM Elements
+// DOM Views
 const views = {
   setup: document.getElementById('setupView'),
   exam: document.getElementById('examView'),
@@ -37,13 +42,59 @@ function switchView(viewName) {
   }
 }
 
+function scrollToSection(sectionId) {
+  switchView('setup');
+  setTimeout(() => {
+    const el = document.getElementById(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, 100);
+}
+
+// Calculate Today's 4-digit PIN based on Tashkent Date
+function getTodayTashkentDate() {
+  const now = new Date();
+  // Tashkent is UTC+5
+  const formatter = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Tashkent',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  });
+  return formatter.format(now); // "YYYY-MM-DD"
+}
+
+// Simple deterministic hash for 4-digit PIN
+async function calculateDailyPin(dateStr) {
+  const text = `${PIN_CONFIG.salt}_${dateStr}`;
+  const enc = new TextEncoder();
+  const data = enc.encode(text);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  const hex = hashArray.slice(0, 4).map(b => b.toString(16).padStart(2, '0')).join('');
+  const num = parseInt(hex, 16);
+  const pin = String((num % 9000) + 1000);
+  return pin;
+}
+
 // Initialize Application
 document.addEventListener('DOMContentLoaded', async () => {
   setupGradePillEvents();
   setupSubjectGradeHints();
   await loadQuestionsDatabase();
 
-  document.getElementById('startTestBtn').addEventListener('click', handleStartTest);
+  // Test start triggers PIN modal
+  document.getElementById('startTestBtn').addEventListener('click', handleValidateAndOpenPinModal);
+  
+  // PIN Modal buttons
+  document.getElementById('pinCancelBtn').addEventListener('click', closePinModal);
+  document.getElementById('pinSubmitBtn').addEventListener('click', handlePinSubmit);
+  document.getElementById('pinInput').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') handlePinSubmit();
+  });
+
+  // Exam navigation
   document.getElementById('prevQBtn').addEventListener('click', () => navigateQuestion(-1));
   document.getElementById('nextQBtn').addEventListener('click', () => navigateQuestion(1));
   document.getElementById('finishTestBtn').addEventListener('click', openFinishModal);
@@ -55,7 +106,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('restartBtn').addEventListener('click', handleRestart);
 });
 
-// Load Questions (from questions.json or fallback)
+// Load Questions from questions.json
 async function loadQuestionsDatabase() {
   try {
     const res = await fetch('questions.json');
@@ -65,30 +116,25 @@ async function loadQuestionsDatabase() {
       return;
     }
   } catch (err) {
-    console.warn("fetch('questions.json') ishlamadi (ehtimol local file://), ichki bazadan yuklanmoqda.");
+    console.warn("questions.json yuklanmadi, zaxira savollardan foydalaniladi.");
   }
 
-  // If fetch failed (e.g. running from file://), load minimal fallback
+  // Fallback questions
   state.allQuestions = [
     {
-      "id": "demo-1",
+      "id": "5-ot-1",
       "subject": "Ona tili",
       "grade": 5,
-      "topic": "Fonetika",
-      "question": "O'zbek tilida nechta unli tovush bor?",
-      "options": { "A": "6 ta", "B": "8 ta", "C": "10 ta", "D": "4 ta" },
+      "topic": "Nutq va til",
+      "question": "Nutqning qanday turlari mavjud?",
+      "options": {
+        "A": "Og'zaki va yozma nutq",
+        "B": "Faqat ichki nutq",
+        "C": "Faqat dialogik nutq",
+        "D": "Faqat monologik nutq"
+      },
       "answer": "A",
-      "explanation": "5-sinf Ona tili: O'zbek tilida 6 ta unli tovush mavjud."
-    },
-    {
-      "id": "demo-2",
-      "subject": "Matematika",
-      "grade": 5,
-      "topic": "Kasrlar",
-      "question": "1/2 qismi 15 ga teng bo'lgan sonni toping.",
-      "options": { "A": "25", "B": "30", "C": "45", "D": "20" },
-      "answer": "B",
-      "explanation": "5-sinf Matematika: 15 * 2 = 30."
+      "explanation": "5-sinf Ona tili: Nutq og'zaki va yozma bo'ladi."
     }
   ];
 }
@@ -97,7 +143,7 @@ async function loadQuestionsDatabase() {
 function setupGradePillEvents() {
   const pills = document.querySelectorAll('.grade-pill');
   pills.forEach(pill => {
-    pill.addEventListener('click', (e) => {
+    pill.addEventListener('click', () => {
       const checkbox = pill.querySelector('input');
       checkbox.checked = !checkbox.checked;
       pill.classList.toggle('selected', checkbox.checked);
@@ -128,7 +174,6 @@ function setupSubjectGradeHints() {
     const val = subjectSelect.value;
     const pills = document.querySelectorAll('.grade-pill');
     
-    // Suggest standard grade ranges for subjects
     let suggested = [];
     if (val === 'Ona tili' || val === 'Matematika' || val === 'English') {
       suggested = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
@@ -150,7 +195,7 @@ function setupSubjectGradeHints() {
         pill.style.opacity = '1';
         pill.style.pointerEvents = 'auto';
       } else {
-        pill.style.opacity = '0.4';
+        pill.style.opacity = '0.35';
         const cb = pill.querySelector('input');
         cb.checked = false;
         pill.classList.remove('selected');
@@ -159,8 +204,8 @@ function setupSubjectGradeHints() {
   });
 }
 
-// Start Test Handler
-function handleStartTest() {
+// Validate inputs before opening PIN modal
+function handleValidateAndOpenPinModal() {
   const name = document.getElementById('teacherName').value.trim();
   const school = document.getElementById('schoolName').value.trim();
   const subject = document.getElementById('subjectSelect').value;
@@ -198,26 +243,62 @@ function handleStartTest() {
     grades: selectedGrades
   };
 
+  openPinModal();
+}
+
+function openPinModal() {
+  const pinInput = document.getElementById('pinInput');
+  pinInput.value = '';
+  document.getElementById('pinModal').classList.add('open');
+  setTimeout(() => pinInput.focus(), 200);
+}
+
+function closePinModal() {
+  document.getElementById('pinModal').classList.remove('open');
+}
+
+// Validate PIN Code
+async function handlePinSubmit() {
+  const pinInput = document.getElementById('pinInput').value.trim();
+  if (!pinInput || pinInput.length !== 4) {
+    alert("Iltimos, 4 xonali PIN-kodni to'liq kiriting!");
+    return;
+  }
+
+  const todayStr = getTodayTashkentDate();
+  const expectedPin = await calculateDailyPin(todayStr);
+
+  if (pinInput === expectedPin || pinInput === PIN_CONFIG.masterPin) {
+    // PIN correct! Start test
+    closePinModal();
+    startExamSession();
+  } else {
+    alert("Kiritilgan PIN-kod noto'g'ri!\nBugungi amaldagi PIN-kodni olish uchun Umrbek Mamatovga murojaat qiling (+998 99 660 14 15).");
+    document.getElementById('pinInput').value = '';
+    document.getElementById('pinInput').focus();
+  }
+}
+
+// Start Test Session
+function startExamSession() {
   const countRequested = parseInt(document.getElementById('questionCount').value) || 20;
   state.timeLimitMinutes = parseInt(document.getElementById('timeLimit').value) || 30;
 
-  // Filter questions matching Subject and selected Grades
+  // Filter matching questions
   let matched = state.allQuestions.filter(q => {
-    const subjMatch = q.subject.toLowerCase() === subject.toLowerCase();
-    const gradeMatch = selectedGrades.includes(q.grade);
+    const subjMatch = q.subject.toLowerCase() === state.teacherInfo.subject.toLowerCase();
+    const gradeMatch = state.teacherInfo.grades.includes(q.grade);
     return subjMatch && gradeMatch;
   });
 
-  // If no exact match (or small database), take any questions from that subject or general pool
   if (matched.length === 0) {
-    matched = state.allQuestions.filter(q => q.subject.toLowerCase() === subject.toLowerCase());
+    matched = state.allQuestions.filter(q => q.subject.toLowerCase() === state.teacherInfo.subject.toLowerCase());
   }
 
   if (matched.length === 0) {
-    matched = state.allQuestions; // fallback to general pool
+    matched = state.allQuestions;
   }
 
-  // Shuffle and pick requested count
   matched = shuffleArray([...matched]);
   if (matched.length > countRequested) {
     matched = matched.slice(0, countRequested);
@@ -229,7 +310,7 @@ function handleStartTest() {
   state.secondsRemaining = state.timeLimitMinutes * 60;
   state.startTime = new Date();
 
-  // Prepare UI
+  // Header
   document.getElementById('examHeaderTeacher').textContent = state.teacherInfo.name;
   document.getElementById('examHeaderDetails').textContent = 
     `${state.teacherInfo.school} • ${state.teacherInfo.subject} • ${state.teacherInfo.grades.map(g => g + '-sinf').join(', ')}`;
@@ -264,7 +345,6 @@ function renderNavigatorGrid() {
   updateNavigatorButtons();
 }
 
-// Update Navigator button styles (active/answered)
 function updateNavigatorButtons() {
   const buttons = document.querySelectorAll('.nav-num-btn');
   buttons.forEach((btn, idx) => {
@@ -287,6 +367,17 @@ function renderQuestion() {
   document.getElementById('qProgressText').textContent = `${state.currentIndex + 1} / ${state.activeQuestions.length}`;
   document.getElementById('questionText').textContent = `${state.currentIndex + 1}. ${q.question}`;
 
+  // Optional image
+  const imgBox = document.getElementById('questionImageBox');
+  const imgTag = document.getElementById('questionImage');
+  if (q.image) {
+    imgTag.src = q.image;
+    imgBox.style.display = 'block';
+  } else {
+    imgBox.style.display = 'none';
+  }
+
+  // Options
   const container = document.getElementById('optionsContainer');
   container.innerHTML = '';
 
@@ -315,7 +406,6 @@ function renderQuestion() {
     container.appendChild(card);
   });
 
-  // Navigation button states
   document.getElementById('prevQBtn').disabled = (state.currentIndex === 0);
   const isLast = (state.currentIndex === state.activeQuestions.length - 1);
   document.getElementById('nextQBtn').textContent = isLast ? 'Tugatish 🏁' : 'Keyingi ➡';
@@ -323,7 +413,6 @@ function renderQuestion() {
   updateNavigatorButtons();
 }
 
-// Question Navigation (Prev / Next)
 function navigateQuestion(delta) {
   const newIndex = state.currentIndex + delta;
   if (newIndex >= 0 && newIndex < state.activeQuestions.length) {
@@ -367,7 +456,7 @@ function updateTimerDisplay() {
   }
 }
 
-// Modal handling
+// Finish Modal
 function openFinishModal() {
   const total = state.activeQuestions.length;
   const answeredCount = Object.keys(state.userAnswers).length;
@@ -375,7 +464,7 @@ function openFinishModal() {
 
   const warnEl = document.getElementById('modalWarningText');
   if (unansweredCount > 0) {
-    warnEl.innerHTML = `Siz jami <b>${total}</b> ta savoldan <b>${answeredCount}</b> tasiga javob berdingiz.<br><span style="color: var(--danger); font-weight: 600;">${unansweredCount} ta savol belgilanmagan!</span>`;
+    warnEl.innerHTML = `Siz jami <b>${total}</b> ta savoldan <b>${answeredCount}</b> tasiga javob berdingiz.<br><span style="color: var(--danger); font-weight: 700;">${unansweredCount} ta savol belgilanmagan!</span>`;
   } else {
     warnEl.innerHTML = `Siz barcha <b>${total}</b> ta savolga to'liq javob berdingiz. Natijani ko'rishga tayyormisiz?`;
   }
@@ -387,7 +476,7 @@ function closeFinishModal() {
   document.getElementById('confirmModal').classList.remove('open');
 }
 
-// Finish Exam and Calculate Score
+// Finish Exam and Score
 function finishExam() {
   clearInterval(state.timerInterval);
   state.endTime = new Date();
@@ -405,13 +494,11 @@ function finishExam() {
   const wrongCount = total - correctCount;
   const percent = total > 0 ? Math.round((correctCount / total) * 100) : 0;
 
-  // Time spent
   const timeSpentSec = (state.timeLimitMinutes * 60) - Math.max(0, state.secondsRemaining);
   const spentMins = Math.floor(timeSpentSec / 60);
   const spentSecs = timeSpentSec % 60;
   const timeFormatted = `${spentMins} daq ${spentSecs} son`;
 
-  // Render Result Screen
   document.getElementById('resTeacherName').textContent = state.teacherInfo.name;
   document.getElementById('resSubject').textContent = state.teacherInfo.subject;
   document.getElementById('resGrades').textContent = state.teacherInfo.grades.map(g => g + '-sinf').join(', ');
@@ -442,7 +529,7 @@ function finishExam() {
   switchView('result');
 }
 
-// Render Review of all questions
+// Render Review List
 function renderReviewList() {
   const container = document.getElementById('reviewContainer');
   container.innerHTML = '';
@@ -467,6 +554,7 @@ function renderReviewList() {
         </span>
       </div>
       <div class="review-q-text">${q.question}</div>
+      ${q.image ? `<div style="margin: 0.5rem 0;"><img src="${q.image}" style="max-height: 200px; border-radius: 6px;"></div>` : ''}
       <div class="review-ans-row">
         <div>
           <span style="font-size: 0.8rem; color: var(--text-muted);">Sizning javobingiz:</span><br>
@@ -490,14 +578,12 @@ function renderReviewList() {
   });
 }
 
-// Restart
 function handleRestart() {
   if (confirm("Yangi test boshlaysizmi?")) {
     switchView('setup');
   }
 }
 
-// Utility: Array shuffle
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));

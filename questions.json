@@ -1,842 +1,467 @@
 [
   {
-    "id": "ot-1-1",
+    "id": "5-ot-1",
     "subject": "Ona tili",
-    "grade": 1,
-    "topic": "Alifbe va unli tovushlar",
-    "question": "O'zbek alifbosida nechta unli harf bor?",
+    "grade": 5,
+    "topic": "1-bob. Nutq va til",
+    "question": "Nutqning qanday turlari mavjud?",
+    "options": {
+      "A": "Og'zaki va yozma nutq",
+      "B": "Faqat ichki nutq",
+      "C": "Faqat dialogik nutq",
+      "D": "Faqat monologik nutq"
+    },
+    "answer": "A",
+    "explanation": "5-sinf Ona tili darsligi: Nutq asosan ikki shaklda — og'zaki va yozma nutq shaklida namoyon bo'ladi."
+  },
+  {
+    "id": "5-ot-2",
+    "subject": "Ona tili",
+    "grade": 5,
+    "topic": "2-bob. Tovushlar va harflar",
+    "question": "O'zbek adabiy tilida nechta unli fonema (tovush) mavjud?",
     "options": {
       "A": "6 ta",
       "B": "8 ta",
       "C": "10 ta",
-      "D": "4 ta"
+      "D": "23 ta"
     },
     "answer": "A",
-    "explanation": "1-sinf Alifbe: O'zbek tilida 6 ta unli tovush va ularni ifodalovchi 6 ta harf bor (a, o, i, u, o', e)."
+    "explanation": "5-sinf Ona tili: O'zbek tilida 6 ta unli tovush bor: [a], [o], [i], [u], [o'], [e]."
   },
   {
-    "id": "ot-1-2",
-    "subject": "Ona tili",
-    "grade": 1,
-    "topic": "Bo'g'in",
-    "question": "So'zdagi bo'g'inlar soni nimaga qarab aniqlanadi?",
-    "options": {
-      "A": "Undosh harflar soniga qarab",
-      "B": "Unli harflar soniga qarab",
-      "C": "So'zning uzunligiga qarab",
-      "D": "Urg'uga qarab"
-    },
-    "answer": "B",
-    "explanation": "1-sinf Ona tili: So'zda nechta unli tovush bo'lsa, shuncha bo'g'in bo'ladi."
-  },
-  {
-    "id": "ot-2-1",
-    "subject": "Ona tili",
-    "grade": 2,
-    "topic": "Bosh harflar imlosi",
-    "question": "Quyidagi so'zlardan qaysi biri doimo bosh harf bilan yoziladi?",
-    "options": {
-      "A": "Daryo",
-      "B": "Shahar",
-      "C": "Toshkent",
-      "D": "Maktab"
-    },
-    "answer": "C",
-    "explanation": "2-sinf Ona tili: Shahar, qishloq, kishi ismlari atoqli ot bo'lib, doimo bosh harf bilan yoziladi."
-  },
-  {
-    "id": "ot-3-1",
-    "subject": "Ona tili",
-    "grade": 3,
-    "topic": "So'z turkumlari (Ot)",
-    "question": "Kim? yoki nima? so'rog'iga javob bo'lib, shaxs va narsa nomini bildiruvchi so'z turkumi qaysi?",
-    "options": {
-      "A": "Sifat",
-      "B": "Ot",
-      "C": "Fe'l",
-      "D": "Son"
-    },
-    "answer": "B",
-    "explanation": "3-sinf Ona tili: Shaxs va narsaning nomini bildirib, kim? nima? so'rog'iga javob bo'lgan so'zlar ot deyiladi."
-  },
-  {
-    "id": "ot-4-1",
-    "subject": "Ona tili",
-    "grade": 4,
-    "topic": "Gap bo'laklari",
-    "question": "Gapda bosh bo'laklar qaysilar?",
-    "options": {
-      "A": "Ega va kesim",
-      "B": "Ega va aniqlovchi",
-      "C": "Kesim va to'ldiruvchi",
-      "D": "Hol va to'ldiruvchi"
-    },
-    "answer": "A",
-    "explanation": "4-sinf Ona tili: Ega va kesim gapning asosiy fikrini shakllantiruvchi bosh bo'laklar hisoblanadi."
-  },
-  {
-    "id": "ot-5-1",
+    "id": "5-ot-3",
     "subject": "Ona tili",
     "grade": 5,
-    "topic": "Fonetika: jarangli va jarangsiz undoshlar",
-    "question": "Quyidagi juftliklardan qaysi biri jarangli-jarangsiz undoshlar juftligini to'g'ri ko'rsatgan?",
+    "topic": "3-bob. Undosh tovushlar tasnifi",
+    "question": "Quyidagi qatorda faqat jarangli undoshlar berilgan qatorni toping:",
     "options": {
-      "A": "B - P",
-      "B": "D - G",
-      "C": "Z - M",
-      "D": "V - K"
+      "A": "b, d, g, v, z, j",
+      "B": "p, t, k, f, s, sh",
+      "C": "m, n, l, r, q, x",
+      "D": "b, p, d, t, g, k"
     },
     "answer": "A",
-    "explanation": "5-sinf Ona tili: B jarangli, P esa uning jarangsiz jufti hisoblanadi."
+    "explanation": "5-sinf Ona tili: b, d, g, v, z, j tovushlari jarangli undoshlar sanaladi (ovoz va shovqindan iborat)."
   },
   {
-    "id": "ot-5-2",
+    "id": "5-ot-4",
     "subject": "Ona tili",
     "grade": 5,
-    "topic": "Leksikologiya: Sinonimlar",
-    "question": "Ma'nosi bir-biriga yaqin bo'lgan so'zlar qanday ataladi?",
+    "topic": "4-bob. Bo'g'in va uning turlari",
+    "question": "Unli tovush bilan tugagan bo'g'in qanday ataladi?",
+    "options": {
+      "A": "Ochiq bo'g'in",
+      "B": "Yopiq bo'g'in",
+      "C": "Biriktiruvchi bo'g'in",
+      "D": "Urg'uli bo'g'in"
+    },
+    "answer": "A",
+    "explanation": "5-sinf Ona tili: Unli bilan tugagan bo'g'in ochiq bo'g'in, undosh bilan tugagan bo'g'in yopiq bo'g'in deyiladi."
+  },
+  {
+    "id": "5-ot-5",
+    "subject": "Ona tili",
+    "grade": 5,
+    "topic": "5-bob. Leksikologiya: Bir ma'noli va ko'p ma'noli so'zlar",
+    "question": "Bir necha ma'noni bildirish xususiyatiga ega bo'lgan so'zlar nima deyiladi?",
+    "options": {
+      "A": "Ko'p ma'noli so'zlar (polisemiya)",
+      "B": "Bir ma'noli so'zlar",
+      "C": "Omonimlar",
+      "D": "Paronimlar"
+    },
+    "answer": "A",
+    "explanation": "5-sinf Ona tili: Bir necha ma'noga ega bo'lgan so'zlar ko'p ma'noli so'zlar (masalan: ko'z, bosh) deyiladi."
+  },
+  {
+    "id": "5-ot-6",
+    "subject": "Ona tili",
+    "grade": 5,
+    "topic": "6-bob. Omonimlar",
+    "question": "\"O't\" (o'simlik), \"o't\" (olov), \"o't\" (harakat) so'zlari o'zaro qanday so'zlar sanaladi?",
     "options": {
       "A": "Omonimlar",
       "B": "Sinonimlar",
       "C": "Antonimlar",
       "D": "Paronimlar"
     },
-    "answer": "B",
-    "explanation": "5-sinf Ona tili: Shakli har xil, lekin ma'nosi bir-biriga yaqin bo'lgan so'zlar ma'nodosh (sinonim) so'zlar deyiladi."
+    "answer": "A",
+    "explanation": "5-sinf Ona tili: Aytilishi va yozilishi bir xil, ammo ma'nolari mutlaqo boshqa-boshqa bo'lgan so'zlar shakldosh (omonim) deyiladi."
   },
   {
-    "id": "ot-6-1",
+    "id": "5-ot-7",
     "subject": "Ona tili",
-    "grade": 6,
-    "topic": "Morfologiya: Olmosh",
-    "question": "\"O'zim, o'zing, o'zi\" olmoshlari olmoshning qaysi ma'no turiga kiradi?",
+    "grade": 5,
+    "topic": "7-bob. Antonimlar",
+    "question": "Quyidagi qaysi juftlik zid ma'noli (antonim) so'zlar juftligi hisoblanadi?",
     "options": {
-      "A": "Kishilik olmoshi",
-      "B": "Ko'rsatish olmoshi",
-      "C": "O'zlik olmoshi",
-      "D": "Belgilash olmoshi"
-    },
-    "answer": "C",
-    "explanation": "6-sinf Ona tili: \"O'z\" so'zi va uning egalik qo'shimchalari olgan shakllari o'zlik olmoshi sanaladi."
-  },
-  {
-    "id": "ot-7-1",
-    "subject": "Ona tili",
-    "grade": 7,
-    "topic": "Fe'l nisbatlari",
-    "question": "Harakatning bajaruvchisi noma'lum bo'lgan fe'l nisbati qaysi?",
-    "options": {
-      "A": "Aniq nisbat",
-      "B": "Majhul nisbat",
-      "C": "O'zlik nisbat",
-      "D": "Orttirma nisbat"
-    },
-    "answer": "B",
-    "explanation": "7-sinf Ona tili: Harakat obyekt ustida bajarilib, haqiqiy bajaruvchi noaniq bo'lsa, bu majhul nisbat bo'ladi (-il, -in qo'shimchalari)."
-  },
-  {
-    "id": "ot-8-1",
-    "subject": "Ona tili",
-    "grade": 8,
-    "topic": "Sintaksis: So'z birikmasi",
-    "question": "Quyidagilardan qaysi biri so'z birikmasi hisoblanmaydi?",
-    "options": {
-      "A": "Qiziqarli kitob",
-      "B": "Maktab tomon",
-      "C": "Kuz keldi",
-      "D": "Tez yugurmoq"
-    },
-    "answer": "C",
-    "explanation": "8-sinf Ona tili: \"Kuz keldi\" ega va kesimdan iborat tugal fikrli sodda gapdir, so'z birikmasi emas."
-  },
-  {
-    "id": "ot-9-1",
-    "subject": "Ona tili",
-    "grade": 9,
-    "topic": "Qo'shma gap",
-    "question": "Teng bog'lovchilar yordamida bog'langan qo'shma gap turi qanday ataladi?",
-    "options": {
-      "A": "Bog'langan qo'shma gap",
-      "B": "Ergashgan qo'shma gap",
-      "C": "Bog'lovchisiz qo'shma gap",
-      "D": "Murakkab qo'shma gap"
+      "A": "Katta — kichik",
+      "B": "Chiroyli — go'zal",
+      "C": "Qalam — daftar",
+      "D": "Oq — oqish"
     },
     "answer": "A",
-    "explanation": "9-sinf Ona tili: Qismlari teng bog'lovchilar yordamida birikkan gaplar bog'langan qo'shma gap deyiladi."
+    "explanation": "5-sinf Ona tili: Qarama-qarshi ma'noni anglatuvchi so'zlar antonimlar deyiladi."
   },
   {
-    "id": "ot-10-1",
+    "id": "5-ot-8",
     "subject": "Ona tili",
-    "grade": 10,
-    "topic": "Nutq uslublari",
-    "question": "Ariza, tilxat, dalolatnoma qaysi nutq uslubiga mansub?",
+    "grade": 5,
+    "topic": "8-bob. Asos va qo'shimcha",
+    "question": "Yangi so'z hosil qiluvchi qo'shimchalar qanday ataladi?",
     "options": {
-      "A": "Badiiy uslub",
-      "B": "Rasmiy-idoraviy uslub",
-      "C": "Ilmiy uslub",
-      "D": "Publitsistik uslub"
-    },
-    "answer": "B",
-    "explanation": "10-sinf Ona tili: Hujjatlar, arizalar va rasmiy yozishmalar rasmiy-idoraviy uslubga kiradi."
-  },
-  {
-    "id": "ot-11-1",
-    "subject": "Ona tili",
-    "grade": 11,
-    "topic": "Matn tilshunosligi",
-    "question": "Matnning asosiy belgilari to'g'ri ko'rsatilgan qatorni toping.",
-    "options": {
-      "A": "Mazmuniy va grammatik yaxlitlik, tugallanganlik",
-      "B": "Faqat so'zlar sonining ko'pligi",
-      "C": "Faqat tinish belgilarining mavjudligi",
-      "D": "Qofiyalangan so'zlar qatori"
+      "A": "So'z yasovchi qo'shimchalar",
+      "B": "Shakl yasovchi qo'shimchalar",
+      "C": "So'z o'zgartiruvchi qo'shimchalar",
+      "D": "Egalik qo'shimchalari"
     },
     "answer": "A",
-    "explanation": "11-sinf Ona tili: Matn yaxlit mazmuniy va grammatik bog'lanishga ega bo'lgan nutqiy birlikdir."
+    "explanation": "5-sinf Ona tili: Asosga qo'shilib, yangi ma'noli so'z yasovchi qo'shimchalar so'z yasovchi qo'shimchalar (masalan: ish+chi) deyiladi."
   },
   {
-    "id": "mat-1-1",
+    "id": "5-mat-9",
+    "subject": "Matematika",
+    "grade": 5,
+    "topic": "1-bob. Natural sonlar va nol",
+    "question": "Eng kichik natural son qaysi?",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "2",
+      "D": "Cheksiz"
+    },
+    "answer": "A",
+    "explanation": "5-sinf Matematika: Sanashda ishlatiladigan sonlar natural sonlar deyiladi va ularning eng kichigi 1 dir (0 natural son emas)."
+  },
+  {
+    "id": "5-mat-10",
+    "subject": "Matematika",
+    "grade": 5,
+    "topic": "2-bob. Natural sonlarni qo'shish va ko'paytirish qonunlari",
+    "question": "a + b = b + a qoidasi qo'shishning qaysi qonuni?",
+    "options": {
+      "A": "O'rin almashtirish qonuni",
+      "B": "Guruhlash qonuni",
+      "C": "Taqsimot qonuni",
+      "D": "Nol xossasi"
+    },
+    "answer": "A",
+    "explanation": "5-sinf Matematika: Qo'shiluvchilarning o'rni almashgani bilan yig'indi o'zgarmaydi — o'rin almashtirish qonuni."
+  },
+  {
+    "id": "5-mat-11",
+    "subject": "Matematika",
+    "grade": 5,
+    "topic": "3-bob. Geometrik shakllar: Perimetr",
+    "question": "Tomonlari 7 sm va 3 sm bo'lgan to'g'ri to'rtburchakning perimetrini toping.",
+    "options": {
+      "A": "20 sm",
+      "B": "21 sm",
+      "C": "10 sm",
+      "D": "14 sm"
+    },
+    "answer": "A",
+    "explanation": "5-sinf Matematika: P = 2 × (a + b) = 2 × (7 + 3) = 20 sm."
+  },
+  {
+    "id": "5-mat-12",
+    "subject": "Matematika",
+    "grade": 5,
+    "topic": "4-bob. Kasrlar",
+    "question": "To'g'ri kasr qaysi shartni qanoatlantiradi?",
+    "options": {
+      "A": "Surati maxrajidan kichik bo'ladi",
+      "B": "Surati maxrajiga teng bo'ladi",
+      "C": "Surati maxrajidan katta bo'ladi",
+      "D": "Maxraji doimo 10 ga teng bo'ladi"
+    },
+    "answer": "A",
+    "explanation": "5-sinf Matematika: Surati maxrajidan kichik bo'lgan kasr to'g'ri kasr (masalan: 3/5) deyiladi."
+  },
+  {
+    "id": "5-bio-13",
+    "subject": "Biologiya",
+    "grade": 5,
+    "topic": "1-bob. Tirik organizmlar olami",
+    "question": "Biologiya fani nimani o'rganadi?",
+    "options": {
+      "A": "Tirik tabiat va undagi hayot qonuniyatlarini",
+      "B": "Faqat tog' jinslarini",
+      "C": "Faqat kimyoviy elementlarni",
+      "D": "Koinot sayyoralarini"
+    },
+    "answer": "A",
+    "explanation": "5-sinf Biologiya: \"Bios\" — hayot, \"logos\" — ta'limot bo'lib, tirik tabiatni o'rganuvchi fandir."
+  },
+  {
+    "id": "5-bio-14",
+    "subject": "Biologiya",
+    "grade": 5,
+    "topic": "2-bob. Kattalashtiruvchi asboblar",
+    "question": "Mikroskopning obyektivi 40x, okulyari 10x bo'lsa, u obyekti necha marta kattalashtiradi?",
+    "options": {
+      "A": "400 marta",
+      "B": "50 marta",
+      "C": "4 marta",
+      "D": "100 marta"
+    },
+    "answer": "A",
+    "explanation": "5-sinf Biologiya: Kattalashtirish darajasi = okulyar × obyektiv = 10 × 40 = 400 marta."
+  },
+  {
+    "id": "5-tar-15",
+    "subject": "Tarix",
+    "grade": 5,
+    "topic": "1-bob. Tarix fani va uning manbalari",
+    "question": "Qadimgi davrlardan qolgan tangalar, idishlar, qurol-yarog'lar qaysi manbalar turiga kiradi?",
+    "options": {
+      "A": "Moddiy (ashyoviy) manbalar",
+      "B": "Yozma manbalar",
+      "C": "Og'zaki manbalar",
+      "D": "Etnografik manbalar"
+    },
+    "answer": "A",
+    "explanation": "5-sinf Tarixdan hikoyalar: Mehnat qurollari, idishlar, binolar moddiy (ashyoviy) manbalardir."
+  },
+  {
+    "id": "5-tar-16",
+    "subject": "Tarix",
+    "grade": 5,
+    "topic": "2-bob. Kalendar va vaqt hisobi",
+    "question": "Bir asr necha yilga teng?",
+    "options": {
+      "A": "100 yil",
+      "B": "50 yil",
+      "C": "10 yil",
+      "D": "1000 yil"
+    },
+    "answer": "A",
+    "explanation": "5-sinf Tarix: Tarixda bir yuz yillik davr asr (yuz yillik) deb ataladi."
+  },
+  {
+    "id": "5-geo-17",
+    "subject": "Geografiya",
+    "grade": 5,
+    "topic": "1-bob. Geografiya fani",
+    "question": "Yer yuzining kichraytirilgan modeli nima deb ataladi?",
+    "options": {
+      "A": "Globus",
+      "B": "Xarita",
+      "C": "Plan",
+      "D": "Kompas"
+    },
+    "answer": "A",
+    "explanation": "5-sinf Geografiya: Globus — Yer sharining aniq va uch o'lchamli kichraytirilgan modelidir."
+  },
+  {
+    "id": "5-geo-18",
+    "subject": "Geografiya",
+    "grade": 5,
+    "topic": "2-bob. Gorizont tomonlari",
+    "question": "Gorizontning asosiy tomonlari to'g'ri ko'rsatilgan qatorni toping:",
+    "options": {
+      "A": "Shimol, Janub, Sharq, G'arb",
+      "B": "Shimoli-sharq, Janubi-g'arb",
+      "C": "Tog', Daryo, Dengiz, Cho'l",
+      "D": "Yuqori va past"
+    },
+    "answer": "A",
+    "explanation": "5-sinf Geografiya: Gorizontning 4 ta asosiy tomoni bor: Shimol (N), Janub (S), Sharq (E), G'arb (W)."
+  },
+  {
+    "id": "5-inf-19",
+    "subject": "Informatika",
+    "grade": 5,
+    "topic": "1-bob. Axborot turlari",
+    "question": "Inson axborotni eng ko'p qaysi sezgi organi orqali qabul qiladi?",
+    "options": {
+      "A": "Ko'rish a'zosi (ko'z) orqali (~80-90%)",
+      "B": "Eshitish orqali",
+      "C": "Ta'm bilish orqali",
+      "D": "Hid bilish orqali"
+    },
+    "answer": "A",
+    "explanation": "5-sinf Informatika: Inson atrofdagi axborotning qariyb 85-90% qismini ko'rish a'zolari orqali oladi."
+  },
+  {
+    "id": "5-eng-20",
+    "subject": "English",
+    "grade": 5,
+    "topic": "Unit 1. School life",
+    "question": "Choose the correct pronoun: \"This is My Father. _____ is a teacher.\"",
+    "options": {
+      "A": "He",
+      "B": "She",
+      "C": "It",
+      "D": "They"
+    },
+    "answer": "A",
+    "explanation": "5-sinf English: Male person (father) takes the subject pronoun 'He'."
+  },
+  {
+    "id": "1-ot-1",
+    "subject": "Ona tili",
+    "grade": 1,
+    "topic": "Alifbe",
+    "question": "O'zbek alifbosida nechta harf va nechta belgi bor?",
+    "options": {
+      "A": "29 ta harf va 1 ta tutuq belgisi",
+      "B": "28 ta harf va 2 ta belgi",
+      "C": "30 ta harf",
+      "D": "26 ta harf"
+    },
+    "answer": "A",
+    "explanation": "1-sinf Alifbe: O'zbek lotin yozuvida 29 ta harf va 1 ta tutuq belgisi (') mavjud."
+  },
+  {
+    "id": "1-mat-1",
     "subject": "Matematika",
     "grade": 1,
-    "topic": "Qo'shish va ayirish",
-    "question": "8 + 5 yig'indisi nechaga teng?",
+    "topic": "Sonlar tarkibi",
+    "question": "10 soni qaysi sonlarning yig'indisidan iborat?",
     "options": {
-      "A": "12",
-      "B": "13",
-      "C": "14",
-      "D": "15"
+      "A": "7 + 3",
+      "B": "6 + 5",
+      "C": "4 + 7",
+      "D": "8 + 3"
     },
-    "answer": "B",
-    "explanation": "1-sinf Matematika: 8 ga 5 ni qo'shganda 13 hosil bo'ladi."
+    "answer": "A",
+    "explanation": "1-sinf Matematika: 7 va 3 ning yig'indisi 10 ga teng."
   },
   {
-    "id": "mat-2-1",
+    "id": "6-fiz-1",
+    "subject": "Fizika",
+    "grade": 6,
+    "topic": "Diffuziya hodisasi",
+    "question": "Modda zarralarining o'z-o'zidan bir-biriga aralashib ketishi qanday hodisa?",
+    "options": {
+      "A": "Diffuziya",
+      "B": "Konveksiya",
+      "C": "Gravitatsiya",
+      "D": "Kondensatsiya"
+    },
+    "answer": "A",
+    "explanation": "6-sinf Fizika: Molekulalarning betartib harakati natijasida moddalarning o'zaro aralashishi diffuziya deyiladi."
+  },
+  {
+    "id": "6-mat-1",
     "subject": "Matematika",
-    "grade": 2,
-    "topic": "Ko'paytirish jadvali",
-    "question": "7 × 8 ko'paytmasi nechaga teng?",
+    "grade": 6,
+    "topic": "Proporsiya",
+    "question": "a/b = c/d proporsiyaning asosiy xossasi qaysi?",
+    "options": {
+      "A": "a × d = b × c (chetki hadlar ko'paytmasi o'rta hadlar ko'paytmasiga teng)",
+      "B": "a + d = b + c",
+      "C": "a × b = c × d",
+      "D": "a - c = b - d"
+    },
+    "answer": "A",
+    "explanation": "6-sinf Matematika: Proporsiyada chetki hadlar ko'paytmasi o'rta hadlar ko'paytmasiga teng: a·d = b·c."
+  },
+  {
+    "id": "7-kim-1",
+    "subject": "Kimyo",
+    "grade": 7,
+    "topic": "Oddiy va murakkab moddalar",
+    "question": "Faqat bir xil element atomlaridan tashkil topgan modda qanday ataladi?",
+    "options": {
+      "A": "Oddiy modda",
+      "B": "Murakkab modda",
+      "C": "Aralashma",
+      "D": "Eritma"
+    },
+    "answer": "A",
+    "explanation": "7-sinf Kimyo: Bir xil atomlardan tashkil topgan moddalar oddiy moddalar (masalan: O₂, H₂, Fe) deyiladi."
+  },
+  {
+    "id": "7-fiz-1",
+    "subject": "Fizika",
+    "grade": 7,
+    "topic": "Bosim va kuch",
+    "question": "Suyuqlik va gazlarga berilgan bosim barcha yo'nalishlarda teng uzatiladi — bu kimning qonuni?",
+    "options": {
+      "A": "Paskal qonuni",
+      "B": "Arximed qonuni",
+      "C": "Nyuton qonuni",
+      "D": "Om qonuni"
+    },
+    "answer": "A",
+    "explanation": "7-sinf Fizika: Paskal qonuniga ko'ra, tashqi bosim suyuqlik va gazning hamma nuqtasiga o'zgarishsiz uzatiladi."
+  },
+  {
+    "id": "8-fiz-1",
+    "subject": "Fizika",
+    "grade": 8,
+    "topic": "Issiqlik miqdori",
+    "question": "Jism qizdirilganda olgan issiqlik miqdori qaysi formula bilan topiladi?",
+    "options": {
+      "A": "Q = c × m × (t₂ - t₁)",
+      "B": "Q = I²Rt",
+      "C": "Q = q × m",
+      "D": "Q = λ × m"
+    },
+    "answer": "A",
+    "explanation": "8-sinf Fizika: Jismni isitish uchun sarflanadigan issiqlik miqdori: Q = cmΔt."
+  },
+  {
+    "id": "8-kim-1",
+    "subject": "Kimyo",
+    "grade": 8,
+    "topic": "Kislotalar va asoslar",
+    "question": "Kislota va ishqor o'rtasidagi neytrallanish reaksiyasi natijasida nima hosil bo'ladi?",
+    "options": {
+      "A": "Tuz va suv",
+      "B": "Faqat gaz",
+      "C": "Faqat cho'kma",
+      "D": "Oksid va vodorod"
+    },
+    "answer": "A",
+    "explanation": "8-sinf Kimyo: Kislota + Asos = Tuz + Suv (neytrallanish reaksiyasi)."
+  },
+  {
+    "id": "9-mat-1",
+    "subject": "Matematika",
+    "grade": 9,
+    "topic": "Geometrik progressiya",
+    "question": "Birinchi hadi b₁ = 2, maxraji q = 3 bo'lgan geometrik progressiyaning 4-hadi nechaga teng?",
     "options": {
       "A": "54",
-      "B": "56",
-      "C": "58",
-      "D": "64"
-    },
-    "answer": "B",
-    "explanation": "2-sinf Matematika: 7 karra 8 = 56."
-  },
-  {
-    "id": "mat-3-1",
-    "subject": "Matematika",
-    "grade": 3,
-    "topic": "To'g'ri to'rtburchak yuzi",
-    "question": "Bo'yi 8 sm, eni 5 sm bo'lgan to'g'ri to'rtburchakning yuzi necha sm²?",
-    "options": {
-      "A": "26 sm²",
-      "B": "40 sm²",
-      "C": "35 sm²",
-      "D": "45 sm²"
-    },
-    "answer": "B",
-    "explanation": "3-sinf Matematika: S = a × b = 8 × 5 = 40 sm²."
-  },
-  {
-    "id": "mat-4-1",
-    "subject": "Matematika",
-    "grade": 4,
-    "topic": "Ko'p xonali sonlar",
-    "question": "12 500 sonida jami nechta o'nlik bor?",
-    "options": {
-      "A": "50",
-      "B": "125",
-      "C": "1 250",
-      "D": "12 500"
-    },
-    "answer": "C",
-    "explanation": "4-sinf Matematika: Sonning oxirgi 1 raqami yopilsa, o'nliklar soni chiqadi: 1 250 ta o'nlik."
-  },
-  {
-    "id": "mat-5-1",
-    "subject": "Matematika",
-    "grade": 5,
-    "topic": "Oddiy kasrlar",
-    "question": "3/4 kasr qaysi o'nli kasrga teng?",
-    "options": {
-      "A": "0.34",
-      "B": "0.75",
-      "C": "0.5",
-      "D": "0.25"
-    },
-    "answer": "B",
-    "explanation": "5-sinf Matematika: 3 ni 4 ga bo'lsak, 0.75 hosil bo'ladi."
-  },
-  {
-    "id": "mat-6-1",
-    "subject": "Matematika",
-    "grade": 6,
-    "topic": "Manfiy sonlar",
-    "question": "-15 - (-8) ifodaning qiymatini toping.",
-    "options": {
-      "A": "-23",
-      "B": "-7",
-      "C": "7",
-      "D": "23"
-    },
-    "answer": "B",
-    "explanation": "6-sinf Matematika: -15 + 8 = -7."
-  },
-  {
-    "id": "mat-7-1",
-    "subject": "Matematika",
-    "grade": 7,
-    "topic": "Qisqa ko'paytirish formulalari",
-    "question": "(a + b)² formulaning to'g'ri yoyilmasini ko'rsating.",
-    "options": {
-      "A": "a² + b²",
-      "B": "a² + 2ab + b²",
-      "C": "a² - 2ab + b²",
-      "D": "a² + ab + b²"
-    },
-    "answer": "B",
-    "explanation": "7-sinf Algebra: (a + b)² = a² + 2ab + b² (yig'indining kvadrati formulasi)."
-  },
-  {
-    "id": "mat-8-1",
-    "subject": "Matematika",
-    "grade": 8,
-    "topic": "Kvadrat tenglamalar",
-    "question": "ax² + bx + c = 0 kvadrat tenglamaning diskriminant formulasi qaysi?",
-    "options": {
-      "A": "D = b² - 4ac",
-      "B": "D = b² + 4ac",
-      "C": "D = 4ac - b²",
-      "D": "D = 2b - 4ac"
+      "B": "18",
+      "C": "24",
+      "D": "81"
     },
     "answer": "A",
-    "explanation": "8-sinf Algebra: Kvadrat tenglamaning diskriminanti D = b² - 4ac formulasi bilan topiladi."
+    "explanation": "9-sinf Algebra: b₄ = b₁ × q³ = 2 × 3³ = 2 × 27 = 54."
   },
   {
-    "id": "mat-9-1",
-    "subject": "Matematika",
-    "grade": 9,
-    "topic": "Arifmetik progressiya",
-    "question": "Birinchi hadi a₁ = 3, ayirmasi d = 4 bo'lgan arifmetik progressiyaning 5-hadi nechaga teng?",
-    "options": {
-      "A": "15",
-      "B": "19",
-      "C": "23",
-      "D": "20"
-    },
-    "answer": "B",
-    "explanation": "9-sinf Algebra: a₅ = a₁ + 4d = 3 + 4×4 = 19."
-  },
-  {
-    "id": "mat-10-1",
-    "subject": "Matematika",
-    "grade": 10,
-    "topic": "Trigonometriya",
-    "question": "sin²α + cos²α ifodaning qiymati nechaga teng?",
-    "options": {
-      "A": "0",
-      "B": "1",
-      "C": "2",
-      "D": "-1"
-    },
-    "answer": "B",
-    "explanation": "10-sinf Matematika: Asosiy trigonometrik ayniyat: sin²α + cos²α = 1."
-  },
-  {
-    "id": "mat-11-1",
-    "subject": "Matematika",
-    "grade": 11,
-    "topic": "Hosila va integral",
-    "question": "f(x) = x³ funksiyaning hosilasi f'(x) ni toping.",
-    "options": {
-      "A": "3x²",
-      "B": "2x²",
-      "C": "3x",
-      "D": "x²/3"
-    },
-    "answer": "A",
-    "explanation": "11-sinf Matematika: Darajali funksiya hosilasi: (xⁿ)' = n × xⁿ⁻¹. Demak, (x³)' = 3x²."
-  },
-  {
-    "id": "bio-5-1",
-    "subject": "Biologiya",
-    "grade": 5,
-    "topic": "Hujayra tuzilishi",
-    "question": "O'simlik hujayrasida fotosintez jarayoni qaysi organoidda boradi?",
-    "options": {
-      "A": "Mitoxondriyada",
-      "B": "Xloroplastda",
-      "C": "Yadroda",
-      "D": "Vakuolada"
-    },
-    "answer": "B",
-    "explanation": "5-sinf Biologiya: Xloroplastlar xlorofill pigmentiga ega bo'lib, quyosh nuri ta'sirida fotosintez amalga oshadi."
-  },
-  {
-    "id": "bio-6-1",
-    "subject": "Biologiya",
-    "grade": 6,
-    "topic": "Botanika: Ildiz tizimi",
-    "question": "Asosiy ildiz yaxshi rivojlangan ildiz tizimi qanday ataladi?",
-    "options": {
-      "A": "Popuk ildiz",
-      "B": "O'q ildiz",
-      "C": "Qo'shimcha ildiz",
-      "D": "Yon ildiz"
-    },
-    "answer": "B",
-    "explanation": "6-sinf Botanika: Asosiy ildizi yaqqol ko'rinib turadigan ildiz tizimi o'q ildiz deyiladi."
-  },
-  {
-    "id": "bio-7-1",
-    "subject": "Biologiya",
-    "grade": 7,
-    "topic": "Zoologiya: Bo'g'imoyoqlilar",
-    "question": "Hasharotlarning tanasi nechta qismdan iborat?",
-    "options": {
-      "A": "2 qism: boshko'krak va qorin",
-      "B": "3 qism: bosh, ko'krak va qorin",
-      "C": "4 qism",
-      "D": "Faqat bosh va tana"
-    },
-    "answer": "B",
-    "explanation": "7-sinf Zoologiya: Hasharotlar tanasi 3 qismdan: bosh, ko'krak va qorindan iborat."
-  },
-  {
-    "id": "bio-8-1",
-    "subject": "Biologiya",
-    "grade": 8,
-    "topic": "Odam anatomiyasi: Qon aylanish",
-    "question": "Odam organizmida qonning kislorod bilan to'yinishi qaysi organda sodir bo'ladi?",
-    "options": {
-      "A": "Yurakda",
-      "B": "O'pkada",
-      "C": "Buyrakda",
-      "D": "Jigarda"
-    },
-    "answer": "B",
-    "explanation": "8-sinf Odam anatomiyasi: Kichik qon aylanish doirasida qon o'pka alveolalarida kislorodga to'yinadi."
-  },
-  {
-    "id": "bio-9-1",
-    "subject": "Biologiya",
-    "grade": 9,
-    "topic": "Sitologiya",
-    "question": "Hujayraning \"energiya stansiyasi\" deb qaysi organoid ataladi?",
-    "options": {
-      "A": "Ribosoma",
-      "B": "Mitoxondriya",
-      "C": "Golji majmuasi",
-      "D": "Lizosoma"
-    },
-    "answer": "B",
-    "explanation": "9-sinf Biologiya: Mitoxondriyalarda ATF (adenozintrifosfat) sintezlanib, hujayrani energiya bilan ta'minlaydi."
-  },
-  {
-    "id": "bio-10-1",
+    "id": "10-bio-1",
     "subject": "Biologiya",
     "grade": 10,
-    "topic": "Genetika qonunlari",
-    "question": "Monoduragay chatishtirishda F₂ bo'g'inda fenotip bo'yicha ajralish nisbati qanday bo'ladi?",
+    "topic": "DNK va RNK tuzilishi",
+    "question": "DNK molekulasidagi komplementarlik qoidasiga ko'ra Adenin (A) qaysi nukleotid bilan bog'lanadi?",
     "options": {
-      "A": "1 : 1",
-      "B": "3 : 1",
-      "C": "9 : 3 : 3 : 1",
-      "D": "1 : 2 : 1"
+      "A": "Timin (T)",
+      "B": "Guanin (G)",
+      "C": "Sitozin (S)",
+      "D": "Urasil (U)"
     },
-    "answer": "B",
-    "explanation": "10-sinf Biologiya: Mendelning ikkinchi qonuniga ko'ra, fenotip bo'yicha ajralish 3:1 nisbatda bo'ladi."
+    "answer": "A",
+    "explanation": "10-sinf Biologiya: DNKda doimo A=T (ikkita vodorod bog') va G≡S (uchta vodorod bog') juftlashadi."
   },
   {
-    "id": "bio-11-1",
-    "subject": "Biologiya",
+    "id": "11-mat-1",
+    "subject": "Matematika",
     "grade": 11,
-    "topic": "Evolyutsiya ta'limoti",
-    "question": "Evolyutsiyaning harakatlantiruvchi kuchlarini Ch.Darvin qanday ko'rsatgan?",
+    "topic": "Aniq integral",
+    "question": "Nyuton-Leybnits formulasi qanday yoziladi?",
     "options": {
-      "A": "Irsiyat, o'zgaruvchanlik, yashash uchun kurash va tabiiy tanlanish",
-      "B": "Faqat sun'iy tanlanish",
-      "C": "Faqat mutatsiyalar",
-      "D": "Tashqi muhitga moslashish intilishi"
+      "A": "∫[a to b] f(x)dx = F(b) - F(a)",
+      "B": "∫ f(x)dx = F(x) + C",
+      "C": "F'(x) = f(x)",
+      "D": "f(b) - f(a) = F(x)"
     },
     "answer": "A",
-    "explanation": "11-sinf Biologiya: Darvin ta'limotiga ko'ra irsiyat, o'zgaruvchanlik va tabiiy tanlanish evolyutsiya omillaridir."
-  },
-  {
-    "id": "fiz-6-1",
-    "subject": "Fizika",
-    "grade": 6,
-    "topic": "Modda tuzilishi",
-    "question": "Moddaning barcha kimyoviy xossalarini o'zida saqlovchi eng kichik zarracha nima?",
-    "options": {
-      "A": "Atom",
-      "B": "Molekula",
-      "C": "Elektron",
-      "D": "Proton"
-    },
-    "answer": "B",
-    "explanation": "6-sinf Fizika: Molekula moddaning kimyoviy xossalarini saqlovchi eng kichik zarrachadir."
-  },
-  {
-    "id": "fiz-7-1",
-    "subject": "Fizika",
-    "grade": 7,
-    "topic": "Tezlik va harakat",
-    "question": "Jism 2 soatda 120 km yo'l bosdi. Jismning o'rtacha tezligi qancha (km/soat)?",
-    "options": {
-      "A": "50 km/h",
-      "B": "60 km/h",
-      "C": "70 km/h",
-      "D": "80 km/h"
-    },
-    "answer": "B",
-    "explanation": "7-sinf Fizika: v = S / t = 120 / 2 = 60 km/soat."
-  },
-  {
-    "id": "fiz-8-1",
-    "subject": "Fizika",
-    "grade": 8,
-    "topic": "Elektr toki va Om qonuni",
-    "question": "Zanjirning bir qismi uchun Om qonuni ifodasi qaysi?",
-    "options": {
-      "A": "I = U / R",
-      "B": "I = U × R",
-      "C": "I = R / U",
-      "D": "U = I / R"
-    },
-    "answer": "A",
-    "explanation": "8-sinf Fizika: Zanjirdagi tok kuchi kuchlanishga to'g'ri, qarshilikka teskari mutanosib: I = U / R."
-  },
-  {
-    "id": "fiz-9-1",
-    "subject": "Fizika",
-    "grade": 9,
-    "topic": "Nyuton qonunlari",
-    "question": "Nyutonning ikkinchi qonuni formulasini ko'rsating.",
-    "options": {
-      "A": "F = m × a",
-      "B": "F = m / a",
-      "C": "a = F × m",
-      "D": "F = k × x"
-    },
-    "answer": "A",
-    "explanation": "9-sinf Fizika: Jismga ta'sir qiluvchi kuch uning massasi va tezlanishi ko'paytmasiga teng: F = ma."
-  },
-  {
-    "id": "fiz-10-1",
-    "subject": "Fizika",
-    "grade": 10,
-    "topic": "Molekulyar fizika: Termodinamika",
-    "question": "Ideal gaz holat tenglamasi (Mendeleyev-Klapeyron) qaysi?",
-    "options": {
-      "A": "P = nkT",
-      "B": "PV = (m/M)RT",
-      "C": "E = mc²",
-      "D": "PV = const"
-    },
-    "answer": "B",
-    "explanation": "10-sinf Fizika: PV = (m/M)RT — Mendeleyev-Klapeyron tenglamasi."
-  },
-  {
-    "id": "fiz-11-1",
-    "subject": "Fizika",
-    "grade": 11,
-    "topic": "Atom va yadro fizikasi",
-    "question": "Yorug'likning fotoeffekt hodisasi uchun Eynshteyn formulasini ko'rsating.",
-    "options": {
-      "A": "hν = A + (mv²)/2",
-      "B": "E = mgh",
-      "C": "λ = h / p",
-      "D": "F = qE"
-    },
-    "answer": "A",
-    "explanation": "11-sinf Fizika: Eynshteyn tenglamasi: tushayotgan foton energiyasi (hν) chiqish ishi (A) va elektron kinetik energiyasiga sarflanadi."
-  },
-  {
-    "id": "kim-7-1",
-    "subject": "Kimyo",
-    "grade": 7,
-    "topic": "Kimyoviy elementlar",
-    "question": "Suv molekulasining kimyoviy formulasi qaysi?",
-    "options": {
-      "A": "H₂O₂",
-      "B": "H₂O",
-      "C": "HO₂",
-      "D": "CO₂"
-    },
-    "answer": "B",
-    "explanation": "7-sinf Kimyo: Suv 2 ta vodorod va 1 ta kislorod atomidan tashkil topgan: H₂O."
-  },
-  {
-    "id": "kim-8-1",
-    "subject": "Kimyo",
-    "grade": 8,
-    "topic": "Davriy qonun",
-    "question": "Kimyoviy elementlar davriy jadvalida guruh raqami nimani ifodalaydi?",
-    "options": {
-      "A": "Energetik qavatlar sonini",
-      "B": "Tashqi qavatdagi valent elektronlar sonini",
-      "C": "Yadrodagi neytronlar sonini",
-      "D": "Atom massasini"
-    },
-    "answer": "B",
-    "explanation": "8-sinf Kimyo: Asosiy guruhchada guruh raqami tashqi qavatdagi elektronlar sonini ko'rsatadi."
-  },
-  {
-    "id": "kim-9-1",
-    "subject": "Kimyo",
-    "grade": 9,
-    "topic": "Metallmaslar",
-    "question": "Xlor (Cl₂) qaysi elementlar oilasiga kiradi?",
-    "options": {
-      "A": "Ishqoriy metallar",
-      "B": "Galogenlar",
-      "C": "Inert gazlar",
-      "D": "Xalkogenlar"
-    },
-    "answer": "B",
-    "explanation": "9-sinf Kimyo: VII-A guruh elementlari (F, Cl, Br, I) galogenlar (tuz hosil qiluvchilar) deb ataladi."
-  },
-  {
-    "id": "kim-10-1",
-    "subject": "Kimyo",
-    "grade": 10,
-    "topic": "Organik kimyo: Uglevodorodlar",
-    "question": "Metan (CH₄) qaysi gomologik qatorning birinchi vakili?",
-    "options": {
-      "A": "Alkenlar",
-      "B": "Alkinlar",
-      "C": "Alkanlar (to'yingan uglevodorodlar)",
-      "D": "Dienlar"
-    },
-    "answer": "C",
-    "explanation": "10-sinf Kimyo: Alkanlarning umumiy formulasi CnH2n+2 bo'lib, birinchi vakili metandir."
-  },
-  {
-    "id": "kim-11-1",
-    "subject": "Kimyo",
-    "grade": 11,
-    "topic": "Umumiy kimyo: Kimyoviy muvozanat",
-    "question": "Le-Shatelye prinsipi nimani tushuntiradi?",
-    "options": {
-      "A": "Atom tuzilishini",
-      "B": "Muvozanatdagi tizimga tashqi ta'sir ko'rsatilganda muvozanat siljishi yo'nalishini",
-      "C": "Molekula massasini hisoblashni",
-      "D": "Eritma konsentratsiyasini"
-    },
-    "answer": "B",
-    "explanation": "11-sinf Kimyo: Le-Shatelye prinsipiga ko'ra, tashqi ta'sir (bosim, harorat, konsentratsiya) muvozanatni shu ta'sirni kamaytiradigan tomonga siljitadi."
-  },
-  {
-    "id": "tar-5-1",
-    "subject": "Tarix",
-    "grade": 5,
-    "topic": "Tarixdan hikoyalar",
-    "question": "Buyuk Ipak yo'li qaysi davlatlar orqali o'tgan?",
-    "options": {
-      "A": "Faqat Yevropa davlatlari",
-      "B": "Xitoy, O'rta Osiyo, Eron va O'rta yer dengizi bo'yi davlatlari",
-      "C": "Faqat Afrika qit'asi",
-      "D": "Shimoliy Amerika"
-    },
-    "answer": "B",
-    "explanation": "5-sinf Tarix: Buyuk Ipak yo'li Xitoydan boshlanib, O'rta Osiyo orqali Yevropagacha borgan savdo yo'li bo'lgan."
-  },
-  {
-    "id": "tar-7-1",
-    "subject": "Tarix",
-    "grade": 7,
-    "topic": "O'zbekiston tarixi: Temuriylar davri",
-    "question": "Amir Temur qachon va qayerda tavallud topgan?",
-    "options": {
-      "A": "1336-yil 9-aprel, Xo'ja Ilg'or qishlog'ida",
-      "B": "1346-yil 1-may, Samarqandda",
-      "C": "1370-yil, Buxoroda",
-      "D": "1405-yil, O'trorda"
-    },
-    "answer": "A",
-    "explanation": "7-sinf Tarix: Sohibqiron Amir Temur 1336-yil 9-aprelda Kesh (Shahrisabz) yaqinidagi Xo'ja Ilg'or qishlog'ida tug'ilgan."
-  },
-  {
-    "id": "tar-8-1",
-    "subject": "Tarix",
-    "grade": 8,
-    "topic": "Uch xonlik davri",
-    "question": "XIX asr o'rtalarida O'zbekiston hududida mavjud bo'lgan 3 ta davlat qaysilar?",
-    "options": {
-      "A": "Buxoro amirligi, Xiva xonligi, Qo'qon xonligi",
-      "B": "Xorazm, So'g'd, Baqtriya",
-      "C": "Qoraxoniylar, Saljuqiylar, G'aznaviylar",
-      "D": "Shayboniylar, Ashtarxoniylar, Temuriylar"
-    },
-    "answer": "A",
-    "explanation": "8-sinf Tarix: O'rta Osiyoda Buxoro amirligi, Xiva va Qo'qon xonliklari mavjud bo'lgan."
-  },
-  {
-    "id": "tar-9-1",
-    "subject": "Tarix",
-    "grade": 9,
-    "topic": "Jadidchilik harakati",
-    "question": "Turkistonda birinchi yangi usul (usuli jadid) maktabini kim ochgan?",
-    "options": {
-      "A": "Mahmudxo'ja Behbudiy",
-      "B": "Munavvar qori Abdurashidxonov",
-      "C": "Abdulla Avloniy",
-      "D": "Fitrat"
-    },
-    "answer": "B",
-    "explanation": "9-sinf Tarix: 1901-yilda Toshkentda Munavvar qori Abdurashidxonov birinchi yangi usul maktabini ochgan."
-  },
-  {
-    "id": "geo-5-1",
-    "subject": "Geografiya",
-    "grade": 5,
-    "topic": "Yer yuzi: Qit'alar",
-    "question": "Yer yuzidagi eng katta qit'a (materik) qaysi?",
-    "options": {
-      "A": "Afrika",
-      "B": "Yevrosiyo",
-      "C": "Shimoliy Amerika",
-      "D": "Antarktida"
-    },
-    "answer": "B",
-    "explanation": "5-sinf Geografiya: Yevrosiyo maydoni bo'yicha dunyodagi eng katta materikdir."
-  },
-  {
-    "id": "geo-7-1",
-    "subject": "Geografiya",
-    "grade": 7,
-    "topic": "Okeanlar",
-    "question": "Dunyo okeanining eng chuqur joyi bo'lgan Mariana botig'i qaysi okeanda joylashgan?",
-    "options": {
-      "A": "Atlantika okeani",
-      "B": "Tinch okeani",
-      "C": "Hind okeani",
-      "D": "Shimoliy Muz okeani"
-    },
-    "answer": "B",
-    "explanation": "7-sinf Geografiya: Mariana botig'i (chuqurligi ~11 022 m) Tinch okeanida joylashgan."
-  },
-  {
-    "id": "geo-8-1",
-    "subject": "Geografiya",
-    "grade": 8,
-    "topic": "O'zbekiston tabiiy geografiyasi",
-    "question": "O'zbekistonning eng baland nuqtasi qaysi?",
-    "options": {
-      "A": "Hazrati Sulton cho'qqisi (4643 m)",
-      "B": "Katta Chimyon (3309 m)",
-      "C": "Adelunga cho'qqisi",
-      "D": "Minor cho'qqisi"
-    },
-    "answer": "A",
-    "explanation": "8-sinf Geografiya: Hisor tog' tizmasidagi Hazrati Sulton cho'qqisi O'zbekistonning eng baland nuqtasidir (4643 m)."
-  },
-  {
-    "id": "eng-1-1",
-    "subject": "English",
-    "grade": 1,
-    "topic": "Greetings and Colors",
-    "question": "What color is the sun?",
-    "options": {
-      "A": "Blue",
-      "B": "Yellow",
-      "C": "Green",
-      "D": "Red"
-    },
-    "answer": "B",
-    "explanation": "1-sinf English: The sun is yellow."
-  },
-  {
-    "id": "eng-5-1",
-    "subject": "English",
-    "grade": 5,
-    "topic": "Present Simple Tense",
-    "question": "Choose the correct sentence in Present Simple:",
-    "options": {
-      "A": "She play tennis every Sunday.",
-      "B": "She plays tennis every Sunday.",
-      "C": "She playing tennis every Sunday.",
-      "D": "She is play tennis every Sunday."
-    },
-    "answer": "B",
-    "explanation": "5-sinf English: He/She/It takes -s/-es ending in Present Simple: 'She plays'."
-  },
-  {
-    "id": "eng-8-1",
-    "subject": "English",
-    "grade": 8,
-    "topic": "Past Continuous vs Past Simple",
-    "question": "Choose the correct form: \"While I _____ my homework, the phone rang.\"",
-    "options": {
-      "A": "was doing",
-      "B": "did",
-      "C": "am doing",
-      "D": "have done"
-    },
-    "answer": "A",
-    "explanation": "8-sinf English: An ongoing past action interrupted by another action takes Past Continuous: 'While I was doing'."
-  },
-  {
-    "id": "eng-11-1",
-    "subject": "English",
-    "grade": 11,
-    "topic": "Conditionals (Type 2)",
-    "question": "Complete the sentence: \"If I _____ more money, I would travel around the world.\"",
-    "options": {
-      "A": "have",
-      "B": "had",
-      "C": "will have",
-      "D": "would have"
-    },
-    "answer": "B",
-    "explanation": "11-sinf English: Second Conditional: If + Past Simple, would + V1. 'If I had'."
-  },
-  {
-    "id": "inf-5-1",
-    "subject": "Informatika",
-    "grade": 5,
-    "topic": "Axborot va kompyuter",
-    "question": "Kompyuterga matnli axborotni kiritish uchun qaysi qurilma xizmat qiladi?",
-    "options": {
-      "A": "Monitor",
-      "B": "Printer",
-      "C": "Klaviatura",
-      "D": "Karnay"
-    },
-    "answer": "C",
-    "explanation": "5-sinf Informatika: Klaviatura kompyuterga belgi va matnlarni kirituvchi asosiy kiritish qurilmasidir."
-  },
-  {
-    "id": "inf-8-1",
-    "subject": "Informatika",
-    "grade": 8,
-    "topic": "Dasturlash asoslari: Python",
-    "question": "Python dasturlash tilida ekranga xabar chiqarish operatori qaysi?",
-    "options": {
-      "A": "print()",
-      "B": "input()",
-      "C": "output()",
-      "D": "echo()"
-    },
-    "answer": "A",
-    "explanation": "8-sinf Informatika: Python dasturlash tilida ma'lumotlarni ekranga chiqarish uchun print() funksiyasi qo'llaniladi."
-  },
-  {
-    "id": "inf-10-1",
-    "subject": "Informatika",
-    "grade": 10,
-    "topic": "Web texnologiyalar: HTML",
-    "question": "HTML tilida eng katta darajadagi sarlavha tegi qaysi?",
-    "options": {
-      "A": "<head>",
-      "B": "<h1>",
-      "C": "<h6>",
-      "D": "<title>"
-    },
-    "answer": "B",
-    "explanation": "10-sinf Informatika: <h1> tegi birinchi va eng katta darajadagi sarlavhani ifodalaydi."
+    "explanation": "11-sinf Matematika: Aniq integralni hisoblashning asosiy formulasi: Nyuton-Leybnits integrali F(b) - F(a)."
   }
 ]
