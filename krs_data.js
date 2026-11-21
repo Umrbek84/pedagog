@@ -347,7 +347,7 @@ function renderKrsScheduleUI(activeFilter = 'all') {
         badgeTag = '<span class="pill-dot">⚡️ Bugun</span>';
       } else if (isNext) {
         pillClass += ' krs-pill-next';
-        badgeTag = '<span class="pill-dot">Navbatdagi</span>';
+        badgeTag = '<span class="pill-dot">Navbat</span>';
       } else if (isPast) {
         pillClass += ' krs-pill-past';
         badgeTag = '<span class="pill-dot">✓</span>';
@@ -377,7 +377,7 @@ function renderKrsScheduleUI(activeFilter = 'all') {
       headerBadge = `
         <div class="krs-status-tag tag-next">
           <span>⏳</span>
-          <b>Navbatdagi: ${status.nextSession.label}</b> (${status.daysUntilNext} kundan keyin)
+          <b>Navbat: ${status.nextSession.label}</b> (${status.daysUntilNext} kundan so'ng)
         </div>
       `;
     } else {
@@ -510,9 +510,9 @@ function checkSubjectKrsNotice(subjectName) {
     noticeEl.className = 'subject-krs-notice notice-next';
     noticeEl.innerHTML = `
       <div class="notice-icon">📅</div>
-      <div>
-        <b>Navbatdagi KRS kuni: ${status.nextSession.label} (${status.nextSession.num}-mashg'ulot)</b>
-        <p>Tadbirga qadar yana <b>${status.daysUntilNext} kun</b> qoldi. Hozirdan tayyorgarlik ko'rib test topshirishingiz mumkin.</p>
+      <div style="flex: 1; min-width: 0;">
+        <b>Navbatdagi KRS: ${status.nextSession.label} (${status.nextSession.num}-mashg'ulot)</b>
+        <p>Tadbirga qadar <b>${status.daysUntilNext} kun</b> qoldi. 1-mashg'ulot testlari faol va ochiq.</p>
       </div>
     `;
     noticeEl.style.display = 'flex';

@@ -309,6 +309,8 @@ function setupSchoolSubjectTeacherFlow() {
 
     const allSchoolTeachers = state.teachersDb[schoolVal] || [];
     const matchedTeachers = allSchoolTeachers.filter(t => {
+      if (t.subject && t.subject.toLowerCase() === subjectVal.toLowerCase()) return true;
+      if (t.all_krs && t.all_krs.some(k => k.toLowerCase() === subjectVal.toLowerCase())) return true;
       const krs = mapSubjectToKrs(t.subject || '');
       return krs && krs.toLowerCase() === subjectVal.toLowerCase();
     }).sort((a, b) => a.name.localeCompare(b.name));
@@ -943,7 +945,7 @@ function renderQuestion() {
   const q = state.activeQuestions[state.currentIndex];
   if (!q) return;
 
-  document.getElementById('currentQGrade').textContent = `${q.grade || 'Maktab'}-sinf`;
+  document.getElementById('currentQGrade').textContent = `${q.grade || q.grade_span || '1-4'}-sinf`;
   document.getElementById('currentQTopic').textContent = `Mavzu: ${q.topic || 'Darslik bo\'yicha'}`;
   document.getElementById('qProgressText').textContent = `${state.currentIndex + 1} / ${state.activeQuestions.length}`;
   document.getElementById('questionText').textContent = `${state.currentIndex + 1}. ${q.question}`;
