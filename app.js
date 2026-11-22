@@ -10,8 +10,8 @@
  */
 
 const GOOGLE_SHEET_CONTROL_URL = "https://docs.google.com/spreadsheets/d/13ig6ubfR4ogSCtBrDVOtXRUIG2gWj2sAT__uMIFIJZM/gviz/tq?tqx=out:csv&sheet=BOSHQARUV";
-const RESULTS_SHEET_URL = "https://docs.google.com/spreadsheets/d/1xYF0P9ZqumezUrH20qoyANjS0Hw6G-yr6hOwwwYOzAU/gviz/tq?tqx=out:csv&sheet=Varaq1";
-const BLOCKED_SHEET_URL = "https://docs.google.com/spreadsheets/d/1xYF0P9ZqumezUrH20qoyANjS0Hw6G-yr6hOwwwYOzAU/gviz/tq?tqx=out:csv&sheet=BLOKLANGANLAR";
+const RESULTS_SHEET_URL = "https://docs.google.com/spreadsheets/d/1xYF0P9ZqumezUrH20qoyANjS0Hw6G-yr6hOwwwYOzAU/export?format=csv&gid=0";
+const BLOCKED_SHEET_URL = "https://docs.google.com/spreadsheets/d/1xYF0P9ZqumezUrH20qoyANjS0Hw6G-yr6hOwwwYOzAU/export?format=csv&gid=176295550";
 const GOOGLE_SHEET_SUBMIT_URL = window.GOOGLE_SHEET_SUBMIT_URL || "https://script.google.com/macros/s/AKfycbzzuJhhvcM3JdOLBshP4lSmZavHzRXax9jnX72Hm6jOH1cwCYaHSTKsCjGFtneYyDZg/exec";
 
 const PIN_CONFIG = {
@@ -110,6 +110,8 @@ function switchView(viewName, force = false) {
       initOrRefreshMonitoringDashboard();
     } else if (viewName === 'davomat') {
       initOrRefreshDavomat();
+    } else if (viewName === 'setup') {
+      loadLeaderboardFromSheet();
     }
   }
 }
@@ -125,6 +127,9 @@ function scrollToSection(sectionId) {
         clearSavedSession();
         document.body.classList.remove('exam-active-mode');
         switchView('setup', true);
+        if (sectionId === 'krsSection') {
+          loadLeaderboardFromSheet();
+        }
         setTimeout(() => {
           const el = document.getElementById(sectionId);
           if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -138,6 +143,9 @@ function scrollToSection(sectionId) {
     return;
   }
   switchView('setup');
+  if (sectionId === 'krsSection') {
+    loadLeaderboardFromSheet();
+  }
   setTimeout(() => {
     const el = document.getElementById(sectionId);
     if (el) {
@@ -760,27 +768,13 @@ function blockExamDueToCheating() {
   clearInterval(state.timerInterval);
   clearSavedSession();
 
-  // Save to blocked local storage
+  // Bloklanganda FAQAT 'BLOKLANGANLAR' varag'iga saqlanadi (Varaq1 asosiy natijalar varag'iga yozilmaydi!)
   saveTeacherToBlockedList(state.teacherInfo, state.tabSwitchCount);
-
-  // Save 0-ball record to local results archive
-  saveResultRecord({
-    name: state.teacherInfo.name,
-    school: state.teacherInfo.school,
-    subject: state.teacherInfo.subject,
-    score: 0,
-    total: state.activeQuestions.length,
-    percent: 0,
-    timeSpent: '0 daq 0 son',
-    switches: state.tabSwitchCount,
-    status: '🚫 Bloklangan (Qoidabuzarlik)',
-    timestamp: new Date().toISOString()
-  });
 
   document.getElementById('antiCheatModal')?.classList.remove('open');
   document.getElementById('confirmModal')?.classList.remove('open');
 
-  switchView('blocked');
+  switchView('blocked', true);
   loadLeaderboardFromSheet();
 }
 
@@ -1766,7 +1760,7 @@ function shuffleArray(array) {
 // ==========================================
 // DYNAMIC LIVE LEADERBOARD (GOOGLE SHEET + LOCAL)
 // ==========================================
-async function loadLeaderboardFromSheet() {
+async function loadLeaderboardFromSheet(isManual = false) {
   const tbody = document.getElementById('krsLeaderboardBody');
   if (!tbody) return;
 
@@ -1812,6 +1806,11 @@ async function loadLeaderboardFromSheet() {
       for (let i = 1; i < rowsB.length; i++) {
         const r = rowsB[i];
         if (!r[1]) continue;
+        const ruxsat = (r[6] || '').trim().toLowerCase();
+        // Agar ruxsat Ochiq bo'lsa yoki pedagog allaqachon muvaffaqiyatli topshirgan bo'lsa, uni blok sifatida ko'rsatmaymiz
+        if (ruxsat === 'ochiq') continue;
+        if (combinedRecords.some(c => c.name.toLowerCase() === r[1].toLowerCase())) continue;
+
         combinedRecords.push({
           date: (r[0] || '').substring(0, 10),
           name: r[1],
@@ -1828,6 +1827,10 @@ async function loadLeaderboardFromSheet() {
     }
   } catch (err) {
     console.warn("BLOKLANGANLAR varag'ini yuklashda xatolik:", err);
+  }
+
+  if (isManual) {
+    showToast("Yetakchilar reytingi yangilandi!", "🔄");
   }
 
   // If Google Sheet was fetched successfully and is empty (cleared by admin), sync local storage to empty!
@@ -1904,6 +1907,7 @@ async function loadLeaderboardFromSheet() {
     tbody.appendChild(tr);
   });
 }
+window.loadLeaderboardFromSheet = loadLeaderboardFromSheet;
 
 // ==========================================
 // KRS MONITORING & ADVANCED ANALYTICS DASHBOARD
@@ -2013,6 +2017,12 @@ async function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
         const r = rowsB[i];
         if (!r[1]) continue;
         const normN = normalizePersonName(r[1]);
+        const ruxsat = (r[6] || '').trim().toLowerCase();
+        // Agar admin Google Sheetda 'Ochiq' deb ruxsat ochgan bo'lsa, uni blok ro'yxatidan chiqaramiz
+        if (ruxsat === 'ochiq') {
+          blockedMap.delete(normN);
+          continue;
+        }
         blockedMap.set(normN, {
           name: normN,
           rawName: r[1],
@@ -2377,10 +2387,12 @@ function renderSchoolsRatingTable(teachers) {
 
     const tr = document.createElement('tr');
     tr.innerHTML = `
-      <td>${rankBadge}</td>
+      <td style="text-align: center;">${rankBadge}</td>
       <td>
-        <b>${sch.name}</b>
-        ${idx === 0 && sch.participated > 0 ? ' <span class="mon-live-badge" style="padding:0.1rem 0.4rem; font-size:0.7rem; margin-left:0.3rem;">🏆 Yetakchi</span>' : ''}
+        <div style="display: inline-flex; align-items: center; gap: 0.4rem; white-space: nowrap;">
+          <b>${sch.name}</b>
+          ${idx === 0 && sch.participated > 0 ? '<span class="mon-live-badge" style="padding:0.12rem 0.45rem; font-size:0.7rem; white-space: nowrap;">🏆 Yetakchi</span>' : ''}
+        </div>
       </td>
       <td style="text-align: center; font-weight: 600;">${total}</td>
       <td style="text-align: center; font-weight: 700; color: #059669;">${done}</td>

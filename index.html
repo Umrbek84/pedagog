@@ -261,9 +261,14 @@
 
       <!-- KRS LEADERBOARD (TOP 10 PEDAGOGLAR REYTINGI) -->
       <div class="card" id="krsSection">
-        <div class="section-head">
-          <h2 class="section-title">🏆 KRS (Kasbiy Rivojlanish Soati) — Hafta yetakchilari</h2>
-          <p class="section-desc">Darsliklar bo'yicha eng yuqori ko'rsatkich qayd etgan eng kuchli 10 ta pedagog reytingi</p>
+        <div class="section-head" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+          <div>
+            <h2 class="section-title">🏆 KRS (Kasbiy Rivojlanish Soati) — Hafta yetakchilari</h2>
+            <p class="section-desc">Darsliklar bo'yicha eng yuqori ko'rsatkich qayd etgan eng kuchli 10 ta pedagog reytingi</p>
+          </div>
+          <button type="button" class="btn btn-sm btn-secondary" onclick="loadLeaderboardFromSheet(true)">
+            🔄 Natijalarni yangilash
+          </button>
         </div>
 
         <div class="krs-table-wrap">
