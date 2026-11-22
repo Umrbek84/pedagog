@@ -873,8 +873,8 @@ async function checkTeacherBlockedPermission(teacherName) {
       sheetChecked = true;
       const csvText = await res.text();
       const rows = parseCsv(csvText);
-      // Skip header row
-      for (let i = 1; i < rows.length; i++) {
+      // Eng oxirgi (eng yangi) blok holatini tekshirish uchun pastdan yuqoriga qarab o'qiymiz
+      for (let i = rows.length - 1; i >= 1; i--) {
         const row = rows[i];
         const rowName = (row[1] || '').trim().toLowerCase();
         if (rowName && rowName === normName) {
@@ -3039,15 +3039,221 @@ async function downloadDavomatA4Jpg() {
   });
 }
 
+// ==========================================
+// MONITORING A4 RASM (JPG) EKSPORTI
+// Davomat kabi Monitoring hisobotini ham 2x Retina sifatli JPG rasm qilish
+// ==========================================
+async function downloadMonitoringA4Jpg() {
+  if (typeof html2canvas === 'undefined') {
+    showToast("html2canvas kutubxonasi yuklanmoqda...", "⏳");
+    setTimeout(downloadMonitoringA4Jpg, 500);
+    return;
+  }
+
+  showToast("📸 Monitoring A4 JPG rasm tayyorlanmoqda, kuting...", "⏳");
+
+  if (window.getSelection) {
+    try { window.getSelection().removeAllRanges(); } catch (e) {}
+  }
+
+  // A4 hisobot konteyneri
+  const container = document.createElement('div');
+  container.className = 'davomat-a4-sheet';
+  container.style.width = '960px';
+  container.style.minWidth = '960px';
+  container.style.maxWidth = '960px';
+  container.style.position = 'fixed';
+  container.style.left = '-9999px';
+  container.style.top = '0px';
+  container.style.zIndex = '-9999';
+  container.style.background = '#ffffff';
+  container.style.padding = '36px 40px';
+  container.style.boxSizing = 'border-box';
+  container.style.color = '#1e293b';
+  container.style.fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
+
+  // Joriy ko'rsatkichlarni olish
+  const total = document.getElementById('kpiTotalTeachers')?.textContent || '3 088';
+  const part = document.getElementById('kpiParticipated')?.textContent || '0';
+  const covPct = document.getElementById('kpiCoveragePercent')?.textContent || '0%';
+  const miss = document.getElementById('kpiMissing')?.textContent || '3 088';
+  const missPct = document.getElementById('kpiMissingPercent')?.textContent || '100%';
+  const avgScore = document.getElementById('kpiAvgScore')?.textContent || '0 / 25';
+  const avgPct = document.getElementById('kpiAvgPercent')?.textContent || '0%';
+  const quality = document.getElementById('kpiQualityCount')?.textContent || '0';
+  const qualPct = document.getElementById('kpiQualityPercent')?.textContent || '0%';
+  const blocked = document.getElementById('kpiBlockedCount')?.textContent || '0';
+
+  const now = new Date();
+  const monthsUz = ["yanvar", "fevral", "mart", "aprel", "may", "iyun", "iyul", "avgust", "sentabr", "oktabr", "noyabr", "dekabr"];
+  const formattedTime = `${now.getDate()}-${monthsUz[now.getMonth()]} ${now.getFullYear()}-yil, soat ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')} holatiga`;
+
+  const schFilter = document.getElementById('monSchoolFilter')?.value || 'ALL';
+  const subFilter = document.getElementById('monSubjectFilter')?.value || 'ALL';
+  let filterText = "Barcha 55 ta maktab va 16 ta fan bo'yicha tuman umumiy monitoringi";
+  if (schFilter !== 'ALL' || subFilter !== 'ALL') {
+    filterText = `Filtr: ${schFilter !== 'ALL' ? schFilter : 'Barcha maktablar'} • ${subFilter !== 'ALL' ? subFilter : 'Barcha fanlar'}`;
+  }
+
+  // Maktablar reytingi qatorlari
+  const tbodySrc = document.getElementById('schoolsRatingTableBody');
+  const tableRowsHtml = tbodySrc ? tbodySrc.innerHTML : '';
+
+  container.innerHTML = `
+    <!-- Rasmiy A4 Sarlavha -->
+    <div class="a4-header-block" style="border-bottom: 2.5px solid #1e3a8a; padding-bottom: 1.25rem; margin-bottom: 1.25rem; text-align: center;">
+      <div style="font-size: 0.88rem; font-weight: 800; color: #1e3a8a; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.25rem;">
+        O'ZBEKISTON RESPUBLIKASI TA'LIM VA ILM-FAN VAZIRLIGI
+      </div>
+      <div style="font-size: 0.82rem; font-weight: 700; color: #475569; margin-bottom: 0.6rem;">
+        XORAZM VILOYATI TA'LIM VA ILM-FAN BOSHQARMASI HUZURIDAGI QO'SHKO'PIR TUMANI TA'LIM BO'LIMI
+      </div>
+      <div style="font-size: 1.25rem; font-weight: 900; color: #0f172a; margin-bottom: 0.35rem;">
+        KASBIY RIVOJLANISH SOATI (KRS) MONITORING VA REYTING HISOBOTI
+      </div>
+      <div style="font-size: 0.85rem; color: #64748b; font-weight: 600;">
+        ${filterText}
+      </div>
+      
+      <div class="a4-meta-banner" style="display: flex; justify-content: space-between; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 0.5rem 0.85rem; margin-top: 0.85rem; font-size: 0.82rem;">
+        <div><b>🕒 Holat:</b> ${formattedTime}</div>
+        <div><b>👤 Mas'ul:</b> Bosh mutaxassis <b>Umrbek Mamatov</b></div>
+      </div>
+    </div>
+
+    <!-- Tuman KPI Ko'rsatkichlari (6 ta ixcham blok) -->
+    <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.6rem; margin-bottom: 1.25rem;">
+      <div style="background: #f0f9ff; border: 1.5px solid #bae6fd; border-radius: 8px; padding: 0.6rem 0.4rem; text-align: center;">
+        <div style="font-size: 1.2rem; font-weight: 900; color: #0369a1;">${total}</div>
+        <div style="font-size: 0.72rem; font-weight: 700; color: #0284c7;">Jami Reja</div>
+      </div>
+      <div style="background: #f0fdf4; border: 1.5px solid #bbf7d0; border-radius: 8px; padding: 0.6rem 0.4rem; text-align: center;">
+        <div style="font-size: 1.2rem; font-weight: 900; color: #15803d;">${part}</div>
+        <div style="font-size: 0.72rem; font-weight: 700; color: #16a34a;">Topshirdi (${covPct})</div>
+      </div>
+      <div style="background: #fffbeb; border: 1.5px solid #fde68a; border-radius: 8px; padding: 0.6rem 0.4rem; text-align: center;">
+        <div style="font-size: 1.2rem; font-weight: 900; color: #b45309;">${miss}</div>
+        <div style="font-size: 0.72rem; font-weight: 700; color: #d97706;">Qolgan (${missPct})</div>
+      </div>
+      <div style="background: #faf5ff; border: 1.5px solid #e9d5ff; border-radius: 8px; padding: 0.6rem 0.4rem; text-align: center;">
+        <div style="font-size: 1.2rem; font-weight: 900; color: #7e22ce;">${avgScore}</div>
+        <div style="font-size: 0.72rem; font-weight: 700; color: #9333ea;">O'rtacha ball (${avgPct})</div>
+      </div>
+      <div style="background: #fff7ed; border: 1.5px solid #fed7aa; border-radius: 8px; padding: 0.6rem 0.4rem; text-align: center;">
+        <div style="font-size: 1.2rem; font-weight: 900; color: #c2410c;">${quality}</div>
+        <div style="font-size: 0.72rem; font-weight: 700; color: #ea580c;">Sifat (20-25 ball) (${qualPct})</div>
+      </div>
+      <div style="background: #fef2f2; border: 1.5px solid #fecaca; border-radius: 8px; padding: 0.6rem 0.4rem; text-align: center;">
+        <div style="font-size: 1.2rem; font-weight: 900; color: #b91c1c;">${blocked}</div>
+        <div style="font-size: 0.72rem; font-weight: 700; color: #dc2626;">Bloklangan</div>
+      </div>
+    </div>
+
+    <!-- Maktablar Reytingi Jadvali (55 ta maktab) -->
+    <div style="margin-bottom: 1.25rem;">
+      <table class="a4-davomat-table" style="width: 100%; border-collapse: collapse; font-size: 0.78rem;">
+        <thead>
+          <tr style="background: #1e3a8a; color: #ffffff;">
+            <th style="padding: 6px 8px; border: 1px solid #1e3a8a; text-align: center; width: 40px;">№</th>
+            <th style="padding: 6px 8px; border: 1px solid #1e3a8a;">Ta'lim muassasasi (Maktab)</th>
+            <th style="padding: 6px 8px; border: 1px solid #1e3a8a; text-align: center; width: 60px;">Reja</th>
+            <th style="padding: 6px 8px; border: 1px solid #1e3a8a; text-align: center; width: 65px;">Topshirdi</th>
+            <th style="padding: 6px 8px; border: 1px solid #1e3a8a; text-align: center; width: 60px;">Qoldi</th>
+            <th style="padding: 6px 8px; border: 1px solid #1e3a8a; text-align: center; width: 75px;">Qamrov</th>
+            <th style="padding: 6px 8px; border: 1px solid #1e3a8a; text-align: center; width: 85px;">O'rtacha ball</th>
+            <th style="padding: 6px 8px; border: 1px solid #1e3a8a; text-align: center; width: 80px;">Sifat (A'lo)</th>
+            <th style="padding: 6px 8px; border: 1px solid #1e3a8a; text-align: center; width: 80px;">Holati</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${tableRowsHtml || '<tr><td colspan="9" style="text-align:center; padding: 1rem;">Ma\'lumotlar yuklanmoqda...</td></tr>'}
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Rasmiy Tasdiq va Imzo -->
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-top: 1.5rem; padding-top: 1rem; border-top: 1.5px solid #cbd5e1; font-size: 0.85rem;">
+      <div>
+        <b>Qo'shko'pir tumani ta'lim bo'limi</b><br>
+        <span style="color: #64748b;">Axborot-tahlil va monitoring tizimi</span>
+      </div>
+      <div style="text-align: right;">
+        Bosh mutaxassis: ____________________ <b>Umrbek Mamatov</b>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(container);
+  await new Promise(r => setTimeout(r, 150));
+
+  html2canvas(container, {
+    scale: 2, // 2x Retina resolution
+    useCORS: true,
+    backgroundColor: '#ffffff',
+    logging: false,
+    width: 960,
+    windowWidth: 1024,
+    scrollX: 0,
+    scrollY: 0
+  }).then(canvas => {
+    if (document.body.contains(container)) {
+      document.body.removeChild(container);
+    }
+
+    const d = new Date();
+    const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    const filename = `KRS_Monitoring_Hisoboti_${dateStr}.jpg`;
+
+    canvas.toBlob(blob => {
+      if (!blob) {
+        showToast("Rasm yaratilmadi, qayta urinib ko'ring", "⚠️");
+        return;
+      }
+
+      const blobUrl = URL.createObjectURL(blob);
+
+      // 1. Avtomatik yuklab olish
+      try {
+        const link = document.createElement('a');
+        link.download = filename;
+        link.href = blobUrl;
+        document.body.appendChild(link);
+        link.click();
+        setTimeout(() => {
+          if (document.body.contains(link)) document.body.removeChild(link);
+        }, 800);
+      } catch (e) {
+        console.warn("Avtomatik yuklashda xatolik:", e);
+      }
+
+      // 2. Telefonda ochiluvchi modal
+      showMobileDavomatModal(blobUrl, blob, filename, "KRS Monitoring Rasmi (JPG) Tayyor!");
+      showToast(`📸 Monitoring A4 Rasmi tayyor bo'ldi!`, "✅");
+    }, 'image/jpeg', 0.95);
+
+  }).catch(err => {
+    if (document.body.contains(container)) {
+      document.body.removeChild(container);
+    }
+    console.error("html2canvas xatosi:", err);
+    alert("Rasmni yaratishda xatolik yuz berdi. Iltimos qayta urinib ko'ring.");
+  });
+}
+window.downloadMonitoringA4Jpg = downloadMonitoringA4Jpg;
+
+
 // Mobile Modal Boshqaruvi
 let currentDavomatBlob = null;
 let currentDavomatFilename = '';
 let currentDavomatBlobUrl = '';
 
-function showMobileDavomatModal(blobUrl, blob, filename) {
+function showMobileDavomatModal(blobUrl, blob, filename, customTitle = "KRS Hisoboti Rasmi (JPG) Tayyor!") {
   currentDavomatBlob = blob;
   currentDavomatFilename = filename;
   currentDavomatBlobUrl = blobUrl;
+
+  const titleEl = document.getElementById('mobileModalTitle');
+  if (titleEl && customTitle) titleEl.textContent = customTitle;
 
   const previewImg = document.getElementById('davomatMobilePreviewImg');
   if (previewImg) previewImg.src = blobUrl;

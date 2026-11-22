@@ -460,8 +460,8 @@
             <button type="button" class="btn btn-sm btn-outline-mon" onclick="window.print()">
               🖨️ Chop etish
             </button>
-            <button type="button" class="btn btn-sm btn-primary-mon" id="monExportBtn" onclick="exportMonitoringReportCSV()">
-              📥 Hisobotni yuklash (CSV)
+            <button type="button" class="btn btn-sm btn-primary-mon" id="monExportJpgBtn" onclick="downloadMonitoringA4Jpg()">
+              🖼️ A4 formatda rasm (JPG) yuklab olish
             </button>
             
           </div>
@@ -1168,8 +1168,8 @@
       <button type="button" class="modal-close-btn" onclick="closeDavomatMobileModal()" aria-label="Yopish" style="position: absolute; top: 12px; right: 12px; background: #f1f5f9; border: 1.5px solid #cbd5e1; font-size: 1.3rem; line-height: 1; width: 38px; height: 38px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; color: #475569; font-weight: bold; z-index: 20; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">✕</button>
 
       <div style="font-size: 2.2rem; margin-bottom: 0.25rem;">📸</div>
-      <h3 style="font-size: 1.25rem; font-weight: 800; color: #047857; margin-bottom: 0.4rem; padding-right: 2.5rem;">
-        KRS Davomat Rasmi (JPG) Tayyor!
+      <h3 id="mobileModalTitle" style="font-size: 1.25rem; font-weight: 800; color: #047857; margin-bottom: 0.4rem; padding-right: 2.5rem;">
+        KRS Hisoboti Rasmi (JPG) Tayyor!
       </h3>
       <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1rem;">
         Hisobot A4 formatda yuqori aniqlikda (Retina 2x) shakllantirildi.
