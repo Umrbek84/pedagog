@@ -807,13 +807,16 @@ function saveTeacherToBlockedList(teacherInfo, switchCount) {
 async function checkTeacherBlockedPermission(teacherName) {
   const normName = teacherName.trim().toLowerCase();
 
-  // 1. Check Live Google Sheet BLOKLANGANLAR varag'i (tezkor 1.5s timeout bilan)
+  // 1. Check Live Google Sheet BLOKLANGANLAR varag'i (cache-bust bilan, yagona rasmiy manba)
+  let sheetChecked = false;
   try {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 1500);
-    const res = await fetch(BLOCKED_SHEET_URL, { signal: controller.signal });
+    const timeoutId = setTimeout(() => controller.abort(), 2500);
+    const cacheUrl = BLOCKED_SHEET_URL + '&_t=' + Date.now();
+    const res = await fetch(cacheUrl, { signal: controller.signal, cache: 'no-store' });
     clearTimeout(timeoutId);
     if (res.ok) {
+      sheetChecked = true;
       const csvText = await res.text();
       const rows = parseCsv(csvText);
       // Skip header row
@@ -826,7 +829,7 @@ async function checkTeacherBlockedPermission(teacherName) {
             // Admin granted permission from Google Sheet!
             return { isBlocked: false, allowed: true };
           } else {
-            // Still locked
+            // Still locked in Google Sheet
             return {
               isBlocked: true,
               allowed: false,
@@ -835,31 +838,42 @@ async function checkTeacherBlockedPermission(teacherName) {
           }
         }
       }
+      // If successfully fetched and teacher is NOT in sheet (or sheet was cleared by admin):
+      // Clean up local storage and allow them!
+      try {
+        const raw = localStorage.getItem(BLOCKED_STORAGE_KEY);
+        if (raw) {
+          let list = JSON.parse(raw);
+          list = list.filter(item => item.name && item.name.toLowerCase() !== normName);
+          localStorage.setItem(BLOCKED_STORAGE_KEY, JSON.stringify(list));
+        }
+      } catch (e) {}
+      return { isBlocked: false, allowed: true };
     }
   } catch (err) {
     console.warn("BLOKLANGANLAR sheetini tekshirishda xatolik:", err);
   }
 
-  // 2. Check local blocked storage fallback
-  try {
-    const raw = localStorage.getItem(BLOCKED_STORAGE_KEY);
-    if (raw) {
-      const list = JSON.parse(raw);
-      const found = list.find(item => item.name && item.name.toLowerCase() === normName);
-      if (found) {
-        if (found.permission && found.permission.toLowerCase() === 'ochiq') {
-          return { isBlocked: false, allowed: true };
-        } else {
-          return {
-            isBlocked: true,
-            allowed: false,
-            reason: "Siz avval ushbu qurilmada test topshirish jarayonida 4 marta qoidabuzarlik sodir etib bloklangansiz."
-          };
+  // 2. Only if Google Sheet was completely unreachable (offline), fallback to local storage
+  if (!sheetChecked) {
+    try {
+      const raw = localStorage.getItem(BLOCKED_STORAGE_KEY);
+      if (raw) {
+        const list = JSON.parse(raw);
+        const found = list.find(item => item.name && item.name.toLowerCase() === normName);
+        if (found) {
+          if (found.permission && found.permission.toLowerCase() === 'ochiq') {
+            return { isBlocked: false, allowed: true };
+          } else {
+            return {
+              isBlocked: true,
+              allowed: false,
+              reason: "Siz avval ushbu qurilmada test topshirish jarayonida 4 marta qoidabuzarlik sodir etib bloklangansiz."
+            };
+          }
         }
       }
-    }
-  } catch (err) {
-    console.warn("Local blocked storage tekshirilmadi:", err);
+    } catch (err) {}
   }
 
   return { isBlocked: false, allowed: true };
@@ -1702,11 +1716,14 @@ async function loadLeaderboardFromSheet() {
   if (!tbody) return;
 
   let combinedRecords = [];
+  let sheetLoaded = false;
 
-  // 1. Fetch live results from Google Sheet
+  // 1. Fetch live results from Google Sheet with cache-busting
   try {
-    const res = await fetch(RESULTS_SHEET_URL);
+    const cacheUrl = RESULTS_SHEET_URL + '&_t=' + Date.now();
+    const res = await fetch(cacheUrl, { cache: 'no-store' });
     if (res.ok) {
+      sheetLoaded = true;
       const csvText = await res.text();
       const rows = parseCsv(csvText);
       for (let i = 1; i < rows.length; i++) {
@@ -1730,9 +1747,10 @@ async function loadLeaderboardFromSheet() {
     console.warn("Google Sheet natijalarini yuklashda xatolik:", err);
   }
 
-  // 2. Fetch blocked records from Google Sheet
+  // 2. Fetch blocked records from Google Sheet with cache-busting
   try {
-    const resB = await fetch(BLOCKED_SHEET_URL);
+    const cacheUrlB = BLOCKED_SHEET_URL + '&_t=' + Date.now();
+    const resB = await fetch(cacheUrlB, { cache: 'no-store' });
     if (resB.ok) {
       const csvTextB = await resB.text();
       const rowsB = parseCsv(csvTextB);
@@ -1757,31 +1775,13 @@ async function loadLeaderboardFromSheet() {
     console.warn("BLOKLANGANLAR varag'ini yuklashda xatolik:", err);
   }
 
-  // 3. Merge local recent submissions
-  try {
-    const localRaw = localStorage.getItem(RESULTS_STORAGE_KEY);
-    if (localRaw) {
-      const localList = JSON.parse(localRaw);
-      localList.forEach(loc => {
-        // Avoid duplicate by name and date
-        const exists = combinedRecords.some(c => c.name.toLowerCase() === loc.name.toLowerCase());
-        if (!exists) {
-          combinedRecords.push({
-            date: (loc.timestamp || '').substring(0, 10),
-            name: loc.name,
-            school: loc.school,
-            subject: loc.subject,
-            score: loc.score,
-            total: loc.total || 25,
-            percent: loc.percent,
-            switches: loc.switches,
-            status: loc.status || 'Muvaffaqiyatli topshirdi',
-            timeSpent: loc.timeSpent || '18 daq'
-          });
-        }
-      });
-    }
-  } catch (err) {}
+  // If Google Sheet was fetched successfully and is empty (cleared by admin), sync local storage to empty!
+  if (sheetLoaded && combinedRecords.length === 0) {
+    try {
+      localStorage.removeItem(RESULTS_STORAGE_KEY);
+      localStorage.removeItem(BLOCKED_STORAGE_KEY);
+    } catch (e) {}
+  }
 
   if (combinedRecords.length === 0) {
     tbody.innerHTML = `
@@ -1913,9 +1913,12 @@ async function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
   populateMonitoringSchoolFilter();
 
   const liveResults = [];
+  let sheetFetchedResults = false;
   try {
-    const res = await fetch(RESULTS_SHEET_URL);
+    const cacheUrl = RESULTS_SHEET_URL + '&_t=' + Date.now();
+    const res = await fetch(cacheUrl, { cache: 'no-store' });
     if (res.ok) {
+      sheetFetchedResults = true;
       const csvText = await res.text();
       const rows = parseCsv(csvText);
       for (let i = 1; i < rows.length; i++) {
@@ -1943,9 +1946,12 @@ async function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
   }
 
   const blockedMap = new Map();
+  let sheetFetchedBlocked = false;
   try {
-    const resB = await fetch(BLOCKED_SHEET_URL);
+    const cacheUrlB = BLOCKED_SHEET_URL + '&_t=' + Date.now();
+    const resB = await fetch(cacheUrlB, { cache: 'no-store' });
     if (resB.ok) {
+      sheetFetchedBlocked = true;
       const csvTextB = await resB.text();
       const rowsB = parseCsv(csvTextB);
       for (let i = 1; i < rowsB.length; i++) {
@@ -1967,33 +1973,13 @@ async function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
     console.warn("Blocked fetch error:", err);
   }
 
-  // Local storage recent submissions
-  try {
-    const localRaw = localStorage.getItem(RESULTS_STORAGE_KEY);
-    if (localRaw) {
-      const localList = JSON.parse(localRaw);
-      localList.forEach(loc => {
-        const normN = normalizePersonName(loc.name);
-        const exists = liveResults.some(c => c.name === normN);
-        if (!exists) {
-          liveResults.push({
-            date: (loc.timestamp || '').substring(0, 10),
-            name: normN,
-            rawName: loc.name,
-            school: loc.school || '',
-            cleanSchool: normalizeSchoolName(loc.school),
-            subject: loc.subject || '',
-            score: loc.score || 0,
-            total: loc.total || 25,
-            percent: loc.percent || 0,
-            switches: loc.switches || 0,
-            status: loc.status || 'Muvaffaqiyatli topshirdi',
-            isBlocked: false
-          });
-        }
-      });
-    }
-  } catch (e) {}
+  // If Google Sheets is connected and empty (cleared by admin), ensure local storage is also cleared!
+  if (sheetFetchedResults && liveResults.length === 0) {
+    try { localStorage.removeItem(RESULTS_STORAGE_KEY); } catch (e) {}
+  }
+  if (sheetFetchedBlocked && blockedMap.size === 0) {
+    try { localStorage.removeItem(BLOCKED_STORAGE_KEY); } catch (e) {}
+  }
 
   lastLiveSubmissions = liveResults;
 
@@ -2742,20 +2728,6 @@ function renderDavomatReport() {
       submittedTeachers.add(normalizePersonName(sub.name));
     }
   });
-
-  // Local storage submissions check
-  try {
-    const rawLocal = localStorage.getItem(RESULTS_STORAGE_KEY);
-    if (rawLocal) {
-      const localList = JSON.parse(rawLocal);
-      localList.forEach(loc => {
-        const sNum = loc.session || 4;
-        if (sNum === sessionVal) {
-          submittedTeachers.add(normalizePersonName(loc.name));
-        }
-      });
-    }
-  } catch (e) {}
 
   // 4. Calculate per-school quotas & submissions
   const allSchoolNames = Object.keys(state.teachersDb || {}).sort(compareSchoolsNatural);
