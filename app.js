@@ -1259,14 +1259,12 @@ function closeFinishModal() {
   document.getElementById('confirmModal').classList.remove('open');
 }
 
-function finishExam() {
+function finishExam(forceSave = false) {
   state.isExamActive = false;
   clearInterval(state.timerInterval);
   clearSavedSession();
 
-  const total = state.activeQuestions.length;
   let correctCount = 0;
-
   state.activeQuestions.forEach((q, idx) => {
     const userChoice = state.userAnswers[idx];
     if (userChoice && userChoice.toUpperCase() === q.answer.toUpperCase()) {
@@ -1274,13 +1272,87 @@ function finishExam() {
     }
   });
 
+  const total = state.activeQuestions.length || 25;
   const wrongCount = total - correctCount;
-  const percent = total > 0 ? Math.round((correctCount / total) * 100) : 0;
+  const percent = Math.round((correctCount / total) * 100);
+  const timeFormatted = formatTimeHms((state.timeLimitMinutes * 60) - state.secondsRemaining);
+  const sessionNum = state.teacherInfo.session || 4;
 
-  const timeSpentSec = Math.max(0, Math.floor((Date.now() - state.startTimestamp) / 1000));
-  const timeFormatted = formatTimeHms(timeSpentSec);
-  const sessionNum = state.teacherInfo.session || 1;
+  // CHECK IF RETAKE: does this teacher already have a record for this session?
+  if (!forceSave) {
+    let existingRecord = null;
+    try {
+      const raw = localStorage.getItem(RESULTS_STORAGE_KEY);
+      if (raw) {
+        const list = JSON.parse(raw);
+        existingRecord = list.find(r => 
+          r.name && r.name.toLowerCase() === state.teacherInfo.name.toLowerCase() &&
+          r.session === sessionNum
+        );
+      }
+    } catch (e) {}
 
+    if (existingRecord) {
+      // Show retake warning modal
+      const modal = document.getElementById('retakeWarningModal');
+      const teacherEl = document.getElementById('retakeModalTeacher');
+      const sessEl = document.getElementById('retakeModalSession');
+      const oldScoreEl = document.getElementById('retakeOldScoreBadge');
+      const newScoreEl = document.getElementById('retakeNewScoreBadge');
+
+      if (modal && teacherEl && sessEl && oldScoreEl && newScoreEl) {
+        teacherEl.textContent = state.teacherInfo.name;
+        sessEl.textContent = `${sessionNum}-mashg'ulot (${state.teacherInfo.subject})`;
+        oldScoreEl.textContent = `${existingRecord.score} / ${existingRecord.total || 25} (${existingRecord.percent}%)`;
+        newScoreEl.textContent = `${correctCount} / ${total} (${percent}%)`;
+        modal.classList.add('open');
+
+        // Bind cancel and confirm
+        const cancelBtn = document.getElementById('retakeCancelBtn');
+        const confirmBtn = document.getElementById('retakeConfirmBtn');
+
+        const handleCancel = () => {
+          modal.classList.remove('open');
+          cancelBtn?.removeEventListener('click', handleCancel);
+          confirmBtn?.removeEventListener('click', handleConfirm);
+          // Show results view anyway (view-only)
+          showResultViewUI(correctCount, total, wrongCount, percent, timeFormatted, sessionNum);
+        };
+
+        const handleConfirm = () => {
+          modal.classList.remove('open');
+          cancelBtn?.removeEventListener('click', handleCancel);
+          confirmBtn?.removeEventListener('click', handleConfirm);
+          finishExam(true); // force save and overwrite
+        };
+
+        cancelBtn?.addEventListener('click', handleCancel);
+        confirmBtn?.addEventListener('click', handleConfirm);
+        return; // Wait for modal action
+      }
+    }
+  }
+
+  // Save / Overwrite result
+  saveResultRecord({
+    name: state.teacherInfo.name,
+    school: state.teacherInfo.school,
+    subject: `${state.teacherInfo.subject} (${sessionNum}-mashg'ulot)`,
+    session: sessionNum,
+    score: correctCount,
+    total: total,
+    percent: percent,
+    timeSpent: timeFormatted,
+    switches: state.tabSwitchCount,
+    status: 'Muvaffaqiyatli topshirdi',
+    timestamp: new Date().toISOString()
+  });
+
+  showResultViewUI(correctCount, total, wrongCount, percent, timeFormatted, sessionNum);
+  loadLeaderboardFromSheet();
+}
+
+function showResultViewUI(correctCount, total, wrongCount, percent, timeFormatted, sessionNum) {
   document.getElementById('resTeacherName').textContent = state.teacherInfo.name;
   document.getElementById('resSubject').textContent = `${state.teacherInfo.subject} (${sessionNum}-mashg'ulot)`;
   document.getElementById('resGrades').textContent = `${state.teacherInfo.school} • ${sessionNum}-mashg'ulot (KRS)`;
@@ -1293,7 +1365,7 @@ function finishExam() {
   const switchEl = document.getElementById('resSwitchCount');
   if (switchEl) {
     if (state.tabSwitchCount === 0) {
-      switchEl.innerHTML = `<span class="text-success">0 ta (Halol)</span>`;
+      switchEl.innerHTML = '<span class="text-success">0 ta (Halol)</span>';
     } else {
       switchEl.innerHTML = `<span class="text-warning">${state.tabSwitchCount} ta</span>`;
     }
@@ -1316,32 +1388,28 @@ function finishExam() {
     titleEl.textContent = "Darsliklarni yana bir bor takrorlash tavsiya etiladi.";
   }
 
-  // Save result to archive
-  saveResultRecord({
-    name: state.teacherInfo.name,
-    school: state.teacherInfo.school,
-    subject: `${state.teacherInfo.subject} (${sessionNum}-mashg'ulot)`,
-    session: sessionNum,
-    score: correctCount,
-    total: total,
-    percent: percent,
-    timeSpent: timeFormatted,
-    switches: state.tabSwitchCount,
-    status: 'Muvaffaqiyatli topshirdi',
-    timestamp: new Date().toISOString()
-  });
-
   renderReviewList();
   switchView('result');
-  loadLeaderboardFromSheet();
 }
 
 function saveResultRecord(record) {
   try {
     const raw = localStorage.getItem(RESULTS_STORAGE_KEY);
-    const list = raw ? JSON.parse(raw) : [];
-    list.unshift(record);
-    localStorage.setItem(RESULTS_STORAGE_KEY, JSON.stringify(list.slice(0, 50)));
+    let list = raw ? JSON.parse(raw) : [];
+
+    // Check if record for same teacher and session exists -> OVERWRITE IT!
+    const existingIdx = list.findIndex(r => 
+      r.name && r.name.toLowerCase() === record.name.toLowerCase() &&
+      r.session === record.session
+    );
+
+    if (existingIdx >= 0) {
+      list[existingIdx] = record; // Overwrite previous attempt with new latest attempt
+    } else {
+      list.unshift(record);
+    }
+
+    localStorage.setItem(RESULTS_STORAGE_KEY, JSON.stringify(list.slice(0, 100)));
     enqueueSubmissionRecord(record);
   } catch (err) {
     console.warn("Natijani saqlashda xato:", err);

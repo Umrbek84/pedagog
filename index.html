@@ -93,18 +93,37 @@
             <div class="form-group">
               <label class="form-label" for="sessionSelect">3. KRS Mashg'uloti (Mavzu / Bosqich) *</label>
               <select id="sessionSelect" class="form-select" required>
-                <option value="1">1-mashg'ulot (1–25-savollar: 20 darslik + 5 SEL) — ✅ Ochiq (O'tilgan)</option>
-                <option value="2">2-mashg'ulot (26–50-savollar: 20 darslik + 5 Kelajak soatlari) — ✅ Ochiq (O'tilgan)</option>
-                <option value="3" selected>3-mashg'ulot (51–75-savollar: 20 darslik + 5 Sun'iy intellekt) — ✅ Ochiq (Bugungi / O'tilgan)</option>
-                <option value="4" disabled>4-mashg'ulot (76–100-savollar) — ⏳ Reja bo'yicha</option>
-                <option value="5" disabled>5-mashg'ulot (101–125-savollar) — ⏳ Reja bo'yicha</option>
-                <option value="6" disabled>6-mashg'ulot (126–150-savollar) — ⏳ Reja bo'yicha</option>
-                <option value="7" disabled>7-mashg'ulot (151–175-savollar) — ⏳ Reja bo'yicha</option>
-                <option value="8" disabled>8-mashg'ulot (176–200-savollar) — ⏳ Reja bo'yicha</option>
-                <option value="9" disabled>9-mashg'ulot (201–225-savollar) — ⏳ Reja bo'yicha</option>
-                <option value="10" disabled>10-mashg'ulot (226–250-savollar) — ⏳ Reja bo'yicha</option>
-                <option value="11" disabled>11-mashg'ulot (251–275-savollar) — ⏳ Reja bo'yicha</option>
-                <option value="12" disabled>12-mashg'ulot (276–300-savollar) — ⏳ Reja bo'yicha</option>
+                <!-- O'tib ketgan mashg'ulotlar (Xiraroq / Kulrang) -->
+                <option value="1" style="color: #94a3b8; background: #f8fafc;">
+                  ⏮️ 1-mashg'ulot (12-oktabr) — ⏳ O'tib ketgan sana (25 ta savol)
+                </option>
+                <option value="2" style="color: #94a3b8; background: #f8fafc;">
+                  ⏮️ 2-mashg'ulot (26-oktabr) — ⏳ O'tib ketgan sana (25 ta savol)
+                </option>
+                <option value="3" style="color: #94a3b8; background: #f8fafc;">
+                  ⏮️ 3-mashg'ulot (09-noyabr) — ⏳ O'tib ketgan sana (25 ta savol)
+                </option>
+
+                <!-- Hozirgi Rasmiy Mashg'ulot: 4-mashg'ulot (24-noyabr) -->
+                <option value="4" selected style="font-weight: 800; color: #047857; background: #ecfdf5;">
+                  🔥 4-mashg'ulot (24-noyabr) — ✅ FAOL / ISHLASHGA OCHIQ (25 ta savol)
+                </option>
+
+                <!-- Navbatdagi mashg'ulotlar -->
+                <option value="5" style="color: #1e293b;">
+                  📅 5-mashg'ulot (07-dekabr) — ⏳ Tayyor / Navbatdagi (25 ta savol)
+                </option>
+                <option value="6" style="color: #1e293b;">
+                  📅 6-mashg'ulot (21-dekabr) — ⏳ Tayyor / Navbatdagi (25 ta savol)
+                </option>
+
+                <!-- Reja bo'yicha keyingi mashg'ulotlar -->
+                <option value="7" disabled style="color: #cbd5e1;">7-mashg'ulot (04-yanvar) — 🔒 Reja bo'yicha</option>
+                <option value="8" disabled style="color: #cbd5e1;">8-mashg'ulot (18-yanvar) — 🔒 Reja bo'yicha</option>
+                <option value="9" disabled style="color: #cbd5e1;">9-mashg'ulot (01-fevral) — 🔒 Reja bo'yicha</option>
+                <option value="10" disabled style="color: #cbd5e1;">10-mashg'ulot (15-fevral) — 🔒 Reja bo'yicha</option>
+                <option value="11" disabled style="color: #cbd5e1;">11-mashg'ulot (01-mart) — 🔒 Reja bo'yicha</option>
+                <option value="12" disabled style="color: #cbd5e1;">12-mashg'ulot (29-mart) — 🔒 Reja bo'yicha</option>
               </select>
             </div>
 
@@ -733,6 +752,46 @@
       <div class="modal-actions">
         <button type="button" class="btn btn-secondary" id="pinCancelBtn">Bekor qilish</button>
         <button type="button" class="btn btn-primary" id="pinSubmitBtn">Tasdiqlash va boshlash</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- RETAKE OVERWRITE WARNING MODAL -->
+  <div class="modal-overlay" id="retakeWarningModal">
+    <div class="modal-content" style="border-top: 6px solid #f59e0b; max-width: 480px; text-align: center;">
+      <div style="font-size: 2.8rem; margin-bottom: 0.5rem;">⚠️</div>
+      <h3 style="font-size: 1.25rem; font-weight: 800; color: #1e293b; margin-bottom: 0.5rem;">
+        Siz ushbu mashg'ulotni oldin topshirgansiz!
+      </h3>
+      <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1rem; margin: 1rem 0; text-align: left; font-size: 0.92rem;">
+        <div style="margin-bottom: 0.4rem; color: #64748b;">
+          Pedagog: <b id="retakeModalTeacher" style="color: #1e293b;">-</b>
+        </div>
+        <div style="margin-bottom: 0.4rem; color: #64748b;">
+          Mashg'ulot: <b id="retakeModalSession" style="color: #1e293b;">-</b>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed #cbd5e1;">
+          <div>
+            <span style="font-size: 0.8rem; color: #64748b;">Oldingi natijangiz:</span><br>
+            <span id="retakeOldScoreBadge" style="font-weight: 800; font-size: 1.1rem; color: #d97706;">0 / 25 (0%)</span>
+          </div>
+          <div style="text-align: right;">
+            <span style="font-size: 0.8rem; color: #64748b;">Yangi natijangiz:</span><br>
+            <span id="retakeNewScoreBadge" style="font-weight: 800; font-size: 1.1rem; color: #059669;">0 / 25 (0%)</span>
+          </div>
+        </div>
+      </div>
+      <p style="color: #475569; font-size: 0.88rem; line-height: 1.5; margin-bottom: 1.25rem;">
+        Yangi natijani yuborsangiz, oldingi natijangiz avtomatik o'chiriladi va eng so'nggi natijangiz jadvalga yoziladi.
+      </p>
+      <div class="modal-actions" style="display: flex; gap: 0.75rem;">
+        <button type="button" class="btn btn-secondary" style="flex: 1;" id="retakeCancelBtn">
+          Bekor qilish
+        </button>
+        <button type="button" class="btn btn-primary" style="flex: 1; background: #059669; border-color: #047857;" id="retakeConfirmBtn">
+          Ha, yangisini saqlash
+        </button>
       </div>
     </div>
   </div>
