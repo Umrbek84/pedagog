@@ -820,7 +820,7 @@ function saveTeacherToBlockedList(teacherInfo, switchCount) {
       switchCount: switchCount || 4,
       status: '🚫 Bloklangan',
       permission: 'Yopiq', // Admin must change to "Ochiq" to allow retake
-      blockedAt: new Date().toISOString()
+      blockedAt: getTashkentDateTimeString()
     };
 
     if (existingIdx >= 0) {
@@ -834,7 +834,7 @@ function saveTeacherToBlockedList(teacherInfo, switchCount) {
     // Real vaqtda Google Sheet BLOKLANGANLAR varag'iga jo'natish
     sendRecordToGoogleSheets({
       type: 'BLOCKED',
-      timestamp: new Date().toLocaleString('uz-UZ', { timeZone: 'Asia/Tashkent' }),
+      timestamp: getTashkentDateTimeString(),
       name: teacherInfo.name,
       school: teacherInfo.school,
       subject: teacherInfo.subject,
@@ -1596,7 +1596,7 @@ function finishExam(forceSave = false) {
     timeSpent: timeFormatted,
     switches: state.tabSwitchCount,
     status: 'Muvaffaqiyatli topshirdi',
-    timestamp: new Date().toISOString()
+    timestamp: getTashkentDateTimeString()
   });
 
   showResultViewUI(correctCount, total, wrongCount, percent, timeFormatted, sessionNum);
@@ -1666,7 +1666,7 @@ function saveResultRecord(record) {
     // Real vaqtda Google Sheet Varaq1 ga jo'natish
     sendRecordToGoogleSheets({
       type: 'RESULT',
-      timestamp: record.timestamp || new Date().toLocaleString('uz-UZ', { timeZone: 'Asia/Tashkent' }),
+      timestamp: record.timestamp || getTashkentDateTimeString(),
       name: record.name,
       school: record.school,
       subject: record.subject,
@@ -1760,6 +1760,61 @@ function shuffleArray(array) {
 // ==========================================
 // DYNAMIC LIVE LEADERBOARD (GOOGLE SHEET + LOCAL)
 // ==========================================
+
+// O'zbekiston (Toshkent, UTC+5) vaqtini olish
+function getTashkentDateTimeString(date = new Date()) {
+  try {
+    const parts = new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'Asia/Tashkent',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: false
+    }).formatToParts(date);
+    
+    const p = {};
+    parts.forEach(x => { p[x.type] = x.value; });
+    return `${p.year}-${p.month}-${p.day} ${p.hour}:${p.minute}:${p.second}`;
+  } catch (e) {
+    const d = new Date(date.getTime() + 5 * 3600 * 1000);
+    return d.toISOString().replace('T', ' ').substring(0, 19);
+  }
+}
+
+// Sana va vaqtni ajratib olish (Google Sheets Sana_Vaqt ustunidan)
+function extractDateTime(raw) {
+  if (!raw) return { date: 'Bugun', time: '—' };
+  const str = String(raw).trim();
+  
+  // ISO format: 2026-11-22T11:50:51.592Z
+  if (str.includes('T')) {
+    const d = new Date(str);
+    if (!isNaN(d.getTime())) {
+      const date = d.toLocaleDateString('en-CA', { timeZone: 'Asia/Tashkent' }); // YYYY-MM-DD
+      const time = d.toLocaleTimeString('uz-UZ', { timeZone: 'Asia/Tashkent', hour: '2-digit', minute: '2-digit', second: '2-digit' });
+      return { date, time };
+    }
+  }
+
+  // Format: YYYY-MM-DD HH:mm:ss
+  const matchIso = str.match(/(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2}(?::\d{2})?)/);
+  if (matchIso) {
+    return { date: matchIso[1], time: matchIso[2] };
+  }
+
+  // Format: DD/MM/YYYY, HH:mm:ss or DD.MM.YYYY HH:mm:ss
+  const matchRu = str.match(/(\d{1,2})[\/.](\d{1,2})[\/.](\d{4})[,\s]+(\d{2}:\d{2}(?::\d{2})?)/);
+  if (matchRu) {
+    const date = matchRu[3] + '-' + matchRu[2].padStart(2, '0') + '-' + matchRu[1].padStart(2, '0');
+    return { date, time: matchRu[4] };
+  }
+
+  return { date: str.substring(0, 10), time: str.length > 11 ? str.substring(11).trim() : '—' };
+}
+
 async function loadLeaderboardFromSheet(isManual = false) {
   const tbody = document.getElementById('krsLeaderboardBody');
   if (!tbody) return;
@@ -1778,17 +1833,20 @@ async function loadLeaderboardFromSheet(isManual = false) {
       for (let i = 1; i < rows.length; i++) {
         const r = rows[i];
         if (!r[1]) continue;
+        const dt = extractDateTime(r[0]);
         combinedRecords.push({
-          date: (r[0] || '').substring(0, 10),
+          rawDate: r[0] || '',
+          date: dt.date,
+          timeStr: dt.time,
           name: r[1],
           school: r[2] || '',
           subject: r[3] || '',
+          session: r[4] || '',
           score: parseInt(r[5]) || 0,
           total: parseInt(r[6]) || 25,
           percent: parseInt(r[7]) || 0,
           switches: parseInt(r[8]) || 0,
-          status: r[9] || 'Muvaffaqiyatli topshirdi',
-          timeSpent: '20 daq'
+          status: r[9] || 'Muvaffaqiyatli topshirdi'
         });
       }
     }
@@ -1811,8 +1869,11 @@ async function loadLeaderboardFromSheet(isManual = false) {
         if (ruxsat === 'ochiq') continue;
         if (combinedRecords.some(c => c.name.toLowerCase() === r[1].toLowerCase())) continue;
 
+        const dtB = extractDateTime(r[0]);
         combinedRecords.push({
-          date: (r[0] || '').substring(0, 10),
+          rawDate: r[0] || '',
+          date: dtB.date,
+          timeStr: dtB.time,
           name: r[1],
           school: r[2] || '',
           subject: r[3] || '',
@@ -1820,8 +1881,7 @@ async function loadLeaderboardFromSheet(isManual = false) {
           total: 25,
           percent: 0,
           switches: parseInt(r[4]) || 4,
-          status: '🚫 Bloklangan (Qoidabuzarlik)',
-          timeSpent: 'To\'xtatildi'
+          status: '🚫 Bloklangan (Qoidabuzarlik)'
         });
       }
     }
@@ -1854,13 +1914,15 @@ async function loadLeaderboardFromSheet(isManual = false) {
     return;
   }
 
-  // Sort: Non-blocked first by score descending, then blocked at the bottom
+  // Sort: Non-blocked first by score descending, then by switches ascending, then blocked at the bottom
   combinedRecords.sort((a, b) => {
     const aBlocked = (a.status || '').includes('Bloklangan');
     const bBlocked = (b.status || '').includes('Bloklangan');
     if (aBlocked && !bBlocked) return 1;
     if (!aBlocked && bBlocked) return -1;
-    return b.score - a.score;
+    if (b.score !== a.score) return b.score - a.score;
+    if (a.switches !== b.switches) return a.switches - b.switches;
+    return 0;
   });
 
   tbody.innerHTML = '';
@@ -1885,7 +1947,7 @@ async function loadLeaderboardFromSheet(isManual = false) {
 
     const scoreDisplay = isBlocked
       ? `<b style="color: var(--danger);">0 ball (0%)</b>`
-      : `<b style="color: var(--accent);">${item.percent}% (${item.score}/${item.total})</b>`;
+      : `<b style="color: #059669; font-weight: 800; font-size: 0.95rem;">${item.score} ball</b> <span style="color: #64748b; font-size: 0.82rem; font-weight: 600;">(${item.percent}%)</span>`;
 
     const switchDisplay = isBlocked
       ? `<span style="color: var(--danger); font-weight: 800;">4 ta (Cheklandi)</span>`
@@ -1893,15 +1955,19 @@ async function loadLeaderboardFromSheet(isManual = false) {
           ? `<span style="color: var(--accent); font-weight: 700;">0 (Halol)</span>` 
           : `<span style="color: var(--warning); font-weight: 700;">${item.switches} ta</span>`);
 
+    const timeDisplay = isBlocked
+      ? `<span style="color: var(--danger); font-weight: 600;">To'xtatildi</span>`
+      : `<span style="font-weight: 700; color: #1e293b; font-size: 0.88rem;">${item.timeStr || '—'}</span>`;
+
     tr.innerHTML = `
-      <td>${rankBadge}</td>
+      <td style="text-align: center;">${rankBadge}</td>
       <td><b>${item.name}</b> ${isBlocked ? '<br><small style="color: var(--danger); font-weight: 700;">[QOIDABUZARLIK TUFAYLI BLOKLANGAN]</small>' : ''}</td>
       <td>${item.school}</td>
       <td>${item.subject}</td>
-      <td>${scoreDisplay}</td>
-      <td>${isBlocked ? "To'xtatildi" : normalizeTimeToHms(item.timeSpent)}</td>
-      <td>${switchDisplay}</td>
-      <td>${item.date || 'Bugun'}</td>
+      <td style="text-align: center;">${scoreDisplay}</td>
+      <td style="text-align: center;">${timeDisplay}</td>
+      <td style="text-align: center;">${switchDisplay}</td>
+      <td style="text-align: center; color: #64748b; font-size: 0.82rem;">${item.date || 'Bugun'}</td>
     `;
 
     tbody.appendChild(tr);
@@ -3396,7 +3462,7 @@ function enqueueSubmissionRecord(record) {
     const queue = raw ? JSON.parse(raw) : [];
     queue.push({
       ...record,
-      queuedAt: new Date().toISOString(),
+      queuedAt: getTashkentDateTimeString(),
       attempts: 0
     });
     localStorage.setItem(SUBMISSION_QUEUE_KEY, JSON.stringify(queue));
