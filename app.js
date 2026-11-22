@@ -2166,7 +2166,7 @@ function renderSubjectsAnalysisTable(teachers) {
 
   const subjectOrder = [
     "Boshlang'ich ta'lim", "Matematika", "Informatika", "Ona tili",
-    "English", "Rus tili", "Biologiya", "Fizika", "Kimyo",
+    "English", "Nemis tili", "Fransuz tili", "Rus tili", "Biologiya", "Fizika", "Kimyo",
     "Geografiya", "Tarix", "Huquq", "Texnologiya", "Tasviriy san'at"
   ];
 
@@ -2708,6 +2708,13 @@ async function downloadDavomatA4Jpg() {
 
   showToast("📸 A4 JPG rasm tayyorlanmoqda, kuting...", "⏳");
 
+  // Faol matn ajratilishi (ko'k rangli matn foni) rasmga tushib qolmasligi uchun tozalaymiz:
+  if (window.getSelection) {
+    try {
+      window.getSelection().removeAllRanges();
+    } catch (e) {}
+  }
+
   // Telefondagi tor ekran va gorizontal scroll ta'sirini butunlay yo'qotish uchun
   // Elementni maxsus 960px kenglikdagi toza klon shaklida olamiz:
   const clone = sheet.cloneNode(true);
@@ -2726,6 +2733,15 @@ async function downloadDavomatA4Jpg() {
   clone.style.boxSizing = 'border-box';
   clone.style.background = '#ffffff';
   clone.style.overflow = 'visible';
+  clone.style.userSelect = 'none';
+  clone.style.webkitUserSelect = 'none';
+
+  // Klon ichidagi barcha elementlarni tanlanishdan tozalaymiz
+  clone.querySelectorAll('*').forEach(el => {
+    el.style.userSelect = 'none';
+    el.style.webkitUserSelect = 'none';
+  });
+
   document.body.appendChild(clone);
 
   // Layout hisoblanishi uchun 150ms kutamiz
@@ -2978,3 +2994,46 @@ window.addEventListener('online', () => {
   processSubmissionQueue();
   loadLeaderboardFromSheet();
 });
+
+// Escape key listener for closing mobile image modal
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeDavomatMobileModal();
+  }
+});
+
+// ==========================================
+// 10. ADMIN RESET TESTING DATA (SINOV NATIJALARINI TOZALASH)
+// ==========================================
+function resetTestingData() {
+  const confirmed = confirm(
+    "⚠️ DIQQAT!\n\n" +
+    "Barcha sinov test topshirish natijalari, saqlangan seanslar va bloklangan pedagoglar ro'yxati tozalansinmi?\n\n" +
+    "Bu amal orqali test maydoni ertangi rasmiy kunga to'liq 100% toza holatga keltiriladi."
+  );
+  if (!confirmed) return;
+
+  try {
+    localStorage.removeItem(RESULTS_STORAGE_KEY);
+    localStorage.removeItem(BLOCKED_STORAGE_KEY);
+    localStorage.removeItem(SESSION_STORAGE_KEY);
+    localStorage.removeItem(SUBMISSION_QUEUE_KEY);
+
+    state.tabSwitchCount = 0;
+    state.isBlocked = false;
+    state.isExamActive = false;
+
+    showToast("🧹 Barcha sinov natijalari va bloklar muvaffaqiyatli tozalandi!", "✅");
+
+    // Monitoring va Davomat jadvallarini qayta hisoblab yangilaymiz
+    if (typeof refreshMonitoringData === 'function') refreshMonitoringData();
+    if (typeof renderDavomatReport === 'function') renderDavomatReport();
+
+    // Agar hozir bloklangan sahifada bo'lsa, bosh sahifaga qaytaramiz
+    switchView('setup');
+  } catch (err) {
+    console.error("Tozalash xatosi:", err);
+    alert("Tozalashda xatolik yuz berdi: " + err.message);
+  }
+}
+window.resetTestingData = resetTestingData;

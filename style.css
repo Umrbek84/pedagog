@@ -2382,12 +2382,19 @@ body {
 
 .davomat-filter-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: 1.1fr 1.8fr 1.4fr;
   gap: 1.25rem;
   background: #f8fafc;
   padding: 1.1rem 1.25rem;
   border-radius: 12px;
   border: 1px solid #e2e8f0;
+  align-items: flex-end;
+}
+
+.d-filter-item {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .d-filter-item label {
@@ -2398,6 +2405,17 @@ body {
   margin-bottom: 0.4rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.d-filter-item .form-select {
+  width: 100%;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /* A4 Document Container */
@@ -2543,6 +2561,13 @@ body {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.84rem;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.a4-davomat-table *::selection {
+  background: transparent !important;
+  color: inherit !important;
 }
 
 .a4-davomat-table th {
