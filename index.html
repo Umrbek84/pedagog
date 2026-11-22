@@ -6,8 +6,7 @@
   <title>Pedagog.umamatov.uz — Maktab Darsliklari Asosida Pedagoglar Test Tizimi</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-</head>
+  </head>
 <body>
 
   <!-- Header -->
@@ -501,31 +500,6 @@
         </div>
       </div>
 
-      <!-- Charts Grid -->
-      <div class="mon-charts-grid">
-        <div class="card chart-card">
-          <div class="chart-header">
-            <h4>📊 Ishtirok va Qamrov Holati</h4>
-            <span class="chart-badge" id="chartCoverageBadge">0% qamrov</span>
-          </div>
-          <div class="chart-wrapper">
-            <canvas id="participationChart"></canvas>
-          </div>
-          <div class="chart-footer" id="chartCoverageLegend"></div>
-        </div>
-
-        <div class="card chart-card">
-          <div class="chart-header">
-            <h4>📈 Natijalar va Ballar Taqsimoti</h4>
-            <span class="chart-badge">Sifat tahlili</span>
-          </div>
-          <div class="chart-wrapper">
-            <canvas id="scoresBarChart"></canvas>
-          </div>
-          <div class="chart-footer" id="chartScoreLegend"></div>
-        </div>
-      </div>
-
       <!-- Tabbed Analytics: Maktablar Reytingi vs Fanlar Tahlili vs Pedagoglar Ro'yxati -->
       <div class="card mon-tabs-card">
         <div class="mon-tab-nav">
@@ -543,17 +517,20 @@
         <!-- TAB 1: Maktablar Reytingi -->
         <div id="monTabSchools" class="mon-tab-pane active">
           <div class="table-toolbar">
-            <span style="font-size: 0.88rem; color: var(--text-muted);">
+            <span style="font-size: 0.88rem; color: var(--text-muted); font-weight: 700;">
               Reytingni saralash:
             </span>
             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-              <button type="button" class="btn btn-sm btn-secondary" onclick="sortSchoolsRating('coverage')">
+              <button type="button" class="btn btn-sm btn-primary-mon sort-btn active" id="sortBtnScore" onclick="sortSchoolsRating('score')">
+                🎯 O'rtacha ball bo'yicha (Dinamik reyting)
+              </button>
+              <button type="button" class="btn btn-sm btn-outline-mon sort-btn" id="sortBtnNumber" onclick="sortSchoolsRating('number')">
+                🔢 Maktab raqami bo'yicha (1–55 ketma-ket)
+              </button>
+              <button type="button" class="btn btn-sm btn-outline-mon sort-btn" id="sortBtnCoverage" onclick="sortSchoolsRating('coverage')">
                 📊 Qamrov foizi bo'yicha
               </button>
-              <button type="button" class="btn btn-sm btn-secondary" onclick="sortSchoolsRating('score')">
-                🎯 O'rtacha ball bo'yicha
-              </button>
-              <button type="button" class="btn btn-sm btn-secondary" onclick="sortSchoolsRating('teachers')">
+              <button type="button" class="btn btn-sm btn-outline-mon sort-btn" id="sortBtnTeachers" onclick="sortSchoolsRating('teachers')">
                 👥 O'qituvchilar soni bo'yicha
               </button>
             </div>

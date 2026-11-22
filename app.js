@@ -284,12 +284,7 @@ function populateSchoolDropdown() {
 
   schoolSelect.innerHTML = '<option value="">-- 1. Maktabni tanlang --</option>';
 
-  const schoolNames = Object.keys(state.teachersDb).sort((a, b) => {
-    const numA = parseInt(a) || 999;
-    const numB = parseInt(b) || 999;
-    if (numA !== numB) return numA - numB;
-    return a.localeCompare(b);
-  });
+  const schoolNames = Object.keys(state.teachersDb).sort(compareSchoolsNatural);
 
   schoolNames.forEach(sch => {
     const opt = document.createElement('option');
@@ -300,7 +295,7 @@ function populateSchoolDropdown() {
 
   const otherOpt = document.createElement('option');
   otherOpt.value = 'CUSTOM_SCHOOL';
-  otherOpt.textContent = '➕ Ro\'yxatdan tashqari maktab / muassasa';
+  otherOpt.textContent = "➕ Ro'yxatdan tashqari maktab / muassasa";
   schoolSelect.appendChild(otherOpt);
 }
 
@@ -1578,487 +1573,61 @@ async function loadLeaderboardFromSheet() {
 // ==========================================
 // KRS MONITORING & ADVANCED ANALYTICS DASHBOARD
 // ==========================================
-let currentSchoolsSort = 'coverage';
-let participationChartInstance = null;
-let scoresChartInstance = null;
-let monitoringDataRaw = [];
-let monitoringFilteredList = [];
 
-// Tab switcher for Monitoring view
-function switchMonTab(tabName) {
-  const tabs = ['schools', 'subjects', 'teachers'];
-  tabs.forEach(t => {
-    const btn = document.getElementById('tabBtn' + t.charAt(0).toUpperCase() + t.slice(1));
-    const pane = document.getElementById('monTab' + t.charAt(0).toUpperCase() + t.slice(1));
-    if (btn) btn.classList.toggle('active', t === tabName);
-    if (pane) pane.classList.toggle('active', t === tabName);
-  });
+function getSchoolNumber(name) {
+  const match = (name || '').match(/\d+/);
+  return match ? parseInt(match[0], 10) : 999;
 }
 
-// Populate school dropdown in filter panel
-function populateMonitoringSchoolFilter() {
-  const select = document.getElementById('monSchoolFilter');
-  if (!select) return;
-  const currentVal = select.value;
-  select.innerHTML = '<option value="ALL">-- Barcha maktablar (55 ta) --</option>';
-
-  const schoolNames = Object.keys(state.teachersDb || {}).sort((a, b) => {
-    const numA = parseInt(a.replace(/\D/g, '')) || 0;
-    const numB = parseInt(b.replace(/\D/g, '')) || 0;
-    if (numA !== numB) return numA - numB;
-    return a.localeCompare(b);
-  });
-
-  schoolNames.forEach(sch => {
-    const opt = document.createElement('option');
-    opt.value = sch;
-    opt.textContent = `🏫 ${sch} (${(state.teachersDb[sch] || []).length} nafar)`;
-    select.appendChild(opt);
-  });
-
-  if (currentVal && schoolNames.includes(currentVal)) {
-    select.value = currentVal;
-  }
+function compareSchoolsNatural(a, b) {
+  const numA = getSchoolNumber(a);
+  const numB = getSchoolNumber(b);
+  if (numA !== numB) return numA - numB;
+  const aIsSonli = a.includes('sonli');
+  const bIsSonli = b.includes('sonli');
+  if (aIsSonli && !bIsSonli) return -1;
+  if (!aIsSonli && bIsSonli) return 1;
+  return a.localeCompare(b);
 }
 
-// Normalize person name for reliable cross-referencing
-function normalizePersonName(str) {
-  if (!str) return '';
-  return str.toUpperCase()
-    .replace(/['`ʻʼ]/g, "'")
-    .replace(/\s+/g, ' ')
-    .trim();
-}
+let currentSchoolsSort = 'score'; // Default dynamic ranking by average score
 
-// Clean school name for matching
-function normalizeSchoolName(str) {
-  if (!str) return '';
-  return str.toLowerCase().replace(/[^a-z0-9]/gi, '');
-}
-
-// Main Dashboard Loader & Refresh
-async function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
-  const updateEl = document.getElementById('monLastUpdated');
-  if (updateEl) {
-    const now = new Date();
-    updateEl.textContent = `${now.toLocaleTimeString('uz-UZ')}, ${now.toLocaleDateString('uz-UZ')}`;
-  }
-
-  if (!state.teachersDb || Object.keys(state.teachersDb).length === 0) {
-    await loadTeachersDatabase();
-  }
-  populateMonitoringSchoolFilter();
-
-  // 1. Fetch live results from Google Sheet
-  const liveResults = [];
-  try {
-    const res = await fetch(RESULTS_SHEET_URL);
-    if (res.ok) {
-      const csvText = await res.text();
-      const rows = parseCsv(csvText);
-      for (let i = 1; i < rows.length; i++) {
-        const r = rows[i];
-        if (!r[1]) continue;
-        liveResults.push({
-          date: (r[0] || '').substring(0, 10),
-          name: normalizePersonName(r[1]),
-          rawName: r[1],
-          school: r[2] || '',
-          cleanSchool: normalizeSchoolName(r[2]),
-          subject: r[3] || '',
-          score: parseInt(r[5]) || 0,
-          total: parseInt(r[6]) || 20,
-          percent: parseInt(r[7]) || 0,
-          switches: parseInt(r[8]) || 0,
-          status: r[9] || 'Muvaffaqiyatli topshirdi',
-          isBlocked: false
-        });
-      }
-    }
-  } catch (err) {
-    console.warn("Live results fetch error:", err);
-  }
-
-  // 2. Fetch live blocked records from Google Sheet
-  const blockedMap = new Map();
-  try {
-    const resB = await fetch(BLOCKED_SHEET_URL);
-    if (resB.ok) {
-      const csvTextB = await resB.text();
-      const rowsB = parseCsv(csvTextB);
-      for (let i = 1; i < rowsB.length; i++) {
-        const r = rowsB[i];
-        if (!r[1]) continue;
-        const normN = normalizePersonName(r[1]);
-        blockedMap.set(normN, {
-          name: normN,
-          rawName: r[1],
-          school: r[2] || '',
-          subject: r[3] || '',
-          switches: parseInt(r[4]) || 4,
-          isBlocked: true,
-          status: '🚫 Bloklangan'
-        });
-      }
-    }
-  } catch (err) {
-    console.warn("Blocked sheet fetch error:", err);
-  }
-
-  // 3. Local recent submissions
-  try {
-    const localRaw = localStorage.getItem(RESULTS_STORAGE_KEY);
-    if (localRaw) {
-      const localList = JSON.parse(localRaw);
-      localList.forEach(loc => {
-        const normN = normalizePersonName(loc.name);
-        const exists = liveResults.some(r => r.name === normN);
-        if (!exists) {
-          liveResults.push({
-            date: (loc.timestamp || '').substring(0, 10),
-            name: normN,
-            rawName: loc.name,
-            school: loc.school || '',
-            cleanSchool: normalizeSchoolName(loc.school),
-            subject: loc.subject || '',
-            score: loc.score || 0,
-            total: loc.total || 20,
-            percent: loc.percent || 0,
-            switches: loc.switches || 0,
-            status: loc.status || 'Muvaffaqiyatli topshirdi',
-            isBlocked: (loc.status || '').includes('Bloklangan')
-          });
-        }
-      });
-    }
-  } catch (err) {}
-
-  // 4. Build unified list for all 3,088 teachers in teachers_db.json
-  const unifiedTeachers = [];
-  const processedNames = new Set();
-
-  const resultMapByName = new Map();
-  liveResults.forEach(r => {
-    if (!resultMapByName.has(r.name) || resultMapByName.get(r.name).score < r.score) {
-      resultMapByName.set(r.name, r);
-    }
-  });
-
-  const schools = Object.keys(state.teachersDb || {});
-  schools.forEach(schName => {
-    const tList = state.teachersDb[schName] || [];
-    tList.forEach(t => {
-      const normN = normalizePersonName(t.name);
-      processedNames.add(normN);
-
-      const isBlocked = blockedMap.has(normN);
-      const examResult = resultMapByName.get(normN);
-
-      if (isBlocked) {
-        const bInfo = blockedMap.get(normN);
-        unifiedTeachers.push({
-          name: t.name,
-          normName: normN,
-          school: schName,
-          subject: t.subject || 'Umumiy',
-          hasParticipated: true,
-          isBlocked: true,
-          score: 0,
-          total: 20,
-          scorePercent: 0,
-          switches: bInfo.switches || 4,
-          statusText: '🚫 Bloklangan',
-          gradeLevel: 'Qoniqarsiz',
-          date: 'Qoidabuzarlik'
-        });
-      } else if (examResult) {
-        const pct = examResult.percent || Math.round((examResult.score / (examResult.total || 20)) * 100);
-        let grade = "Qoniqarsiz";
-        if (pct >= 86) grade = "A'lo";
-        else if (pct >= 71) grade = "Yaxshi";
-        else if (pct >= 56) grade = "Qoniqarli";
-
-        unifiedTeachers.push({
-          name: t.name,
-          normName: normN,
-          school: schName,
-          subject: t.subject || examResult.subject || 'Umumiy',
-          hasParticipated: true,
-          isBlocked: false,
-          score: examResult.score,
-          total: examResult.total || 20,
-          scorePercent: pct,
-          switches: examResult.switches || 0,
-          statusText: '✅ Topshirdi',
-          gradeLevel: grade,
-          date: examResult.date || 'Bugun'
-        });
-      } else {
-        unifiedTeachers.push({
-          name: t.name,
-          normName: normN,
-          school: schName,
-          subject: t.subject || 'Umumiy',
-          hasParticipated: false,
-          isBlocked: false,
-          score: null,
-          total: 20,
-          scorePercent: 0,
-          switches: 0,
-          statusText: '⏳ Topshirmagan',
-          gradeLevel: 'Kutilmoqda',
-          date: '-'
-        });
-      }
-    });
-  });
-
-  // Include any extra teacher submissions that were in the live sheet but not in teachersDb
-  liveResults.forEach(r => {
-    if (!processedNames.has(r.name)) {
-      const pct = r.percent || Math.round((r.score / (r.total || 20)) * 100);
-      let grade = "Qoniqarsiz";
-      if (pct >= 86) grade = "A'lo";
-      else if (pct >= 71) grade = "Yaxshi";
-      else if (pct >= 56) grade = "Qoniqarli";
-
-      unifiedTeachers.push({
-        name: r.rawName || r.name,
-        normName: r.name,
-        school: r.school || 'Boshqa',
-        subject: r.subject || 'Umumiy',
-        hasParticipated: true,
-        isBlocked: r.isBlocked,
-        score: r.score,
-        total: r.total || 20,
-        scorePercent: pct,
-        switches: r.switches || 0,
-        statusText: r.isBlocked ? '🚫 Bloklangan' : '✅ Topshirdi',
-        gradeLevel: grade,
-        date: r.date || 'Bugun'
-      });
-      processedNames.add(r.name);
-    }
-  });
-
-  monitoringDataRaw = unifiedTeachers;
-  applyMonitoringFilters();
-
-  if (isManualRefresh) {
-    showToast("Monitoring ma'lumotlari muvaffaqiyatli yangilandi!", "🔄");
-  }
-}
-
-function refreshMonitoringData() {
-  initOrRefreshMonitoringDashboard(true);
-}
-
-// Apply Filters & Update Dashboard Views
-function applyMonitoringFilters() {
-  const schoolFilter = document.getElementById('monSchoolFilter')?.value || 'ALL';
-  const subjectFilter = document.getElementById('monSubjectFilter')?.value || 'ALL';
-  const statusFilter = document.getElementById('monStatusFilter')?.value || 'ALL';
-  const searchText = (document.getElementById('monSearchInput')?.value || '').toLowerCase().trim();
-
-  const filtered = monitoringDataRaw.filter(t => {
-    // School filter
-    if (schoolFilter !== 'ALL' && t.school !== schoolFilter) return false;
-
-    // Subject filter
-    if (subjectFilter !== 'ALL') {
-      const s1 = (t.subject || '').toLowerCase();
-      const s2 = subjectFilter.toLowerCase();
-      if (!s1.includes(s2) && !s2.includes(s1)) return false;
-    }
-
-    // Status filter
-    if (statusFilter === 'PASSED' && (!t.hasParticipated || t.isBlocked)) return false;
-    if (statusFilter === 'MISSING' && t.hasParticipated) return false;
-    if (statusFilter === 'EXCELLENT' && (!t.hasParticipated || t.scorePercent < 86)) return false;
-    if (statusFilter === 'LOW' && (!t.hasParticipated || t.scorePercent > 55 || t.isBlocked)) return false;
-    if (statusFilter === 'BLOCKED' && !t.isBlocked) return false;
-
-    // Search filter
-    if (searchText) {
-      const nameMatch = (t.name || '').toLowerCase().includes(searchText);
-      const schoolMatch = (t.school || '').toLowerCase().includes(searchText);
-      if (!nameMatch && !schoolMatch) return false;
-    }
-
-    return true;
-  });
-
-  monitoringFilteredList = filtered;
-
-  // Calculate Metrics
-  const total = filtered.length;
-  const participated = filtered.filter(t => t.hasParticipated && !t.isBlocked).length;
-  const blocked = filtered.filter(t => t.isBlocked).length;
-  const missing = filtered.filter(t => !t.hasParticipated).length;
-  const coveragePct = total > 0 ? (((participated + blocked) / total) * 100) : 0;
-  const missingPct = total > 0 ? ((missing / total) * 100) : 0;
-
-  const passedTeachers = filtered.filter(t => t.hasParticipated && !t.isBlocked);
-  const totalScoreSum = passedTeachers.reduce((acc, cur) => acc + (cur.score || 0), 0);
-  const avgScore = passedTeachers.length > 0 ? (totalScoreSum / passedTeachers.length) : 0;
-  const avgPercent = passedTeachers.length > 0 
-    ? Math.round(passedTeachers.reduce((acc, cur) => acc + cur.scorePercent, 0) / passedTeachers.length) 
-    : 0;
-
-  const excellentCount = passedTeachers.filter(t => t.scorePercent >= 86).length;
-  const excellentPct = passedTeachers.length > 0 ? ((excellentCount / passedTeachers.length) * 100) : 0;
-
-  const gradeAlo = excellentCount;
-  const gradeYaxshi = passedTeachers.filter(t => t.scorePercent >= 71 && t.scorePercent < 86).length;
-  const gradeQoniqarli = passedTeachers.filter(t => t.scorePercent >= 56 && t.scorePercent < 71).length;
-  const gradeQoniqarsiz = passedTeachers.filter(t => t.scorePercent < 56).length + blocked;
-
-  // Update KPI Cards
-  const setEl = (id, val) => {
-    const el = document.getElementById(id);
-    if (el) el.textContent = val;
-  };
-
-  setEl('kpiTotalTeachers', total.toLocaleString('uz-UZ'));
-  setEl('kpiParticipated', (participated + blocked).toLocaleString('uz-UZ'));
-  setEl('kpiCoveragePercent', `${coveragePct.toFixed(1)}%`);
-  setEl('kpiMissing', missing.toLocaleString('uz-UZ'));
-  setEl('kpiMissingPercent', `${missingPct.toFixed(1)}%`);
-  setEl('kpiAvgScore', `${avgScore.toFixed(1)} / 20`);
-  setEl('kpiAvgPercent', `${avgPercent}%`);
-  setEl('kpiExcellentRate', `${excellentCount} nafar`);
-  setEl('kpiExcellentPercent', `${excellentPct.toFixed(1)}%`);
-  setEl('kpiBlockedCount', `${blocked} nafar`);
-
-  setEl('chartCoverageBadge', `${coveragePct.toFixed(1)}% qamrov`);
-  setEl('monFilterResultsCount', `Ko'rsatilmoqda: ${total.toLocaleString('uz-UZ')} nafar pedagog`);
-  setEl('teachersFilteredCount', total.toLocaleString('uz-UZ'));
-  setEl('tabTeachersCountBadge', total.toLocaleString('uz-UZ'));
-
-  // Render Charts
-  renderMonitoringCharts({
-    participated,
-    missing,
-    blocked,
-    gradeAlo,
-    gradeYaxshi,
-    gradeQoniqarli,
-    gradeQoniqarsiz
-  });
-
-  // Render Tables
-  renderSchoolsRatingTable(filtered);
-  renderSubjectsAnalysisTable(filtered);
-  renderTeachersMonitoringTable(filtered);
-}
-
-// Render Charts with Chart.js
-function renderMonitoringCharts(summary) {
-  // 1. Participation Donut Chart
-  const partCanvas = document.getElementById('participationChart');
-  const partLegend = document.getElementById('chartCoverageLegend');
-
-  if (partLegend) {
-    partLegend.innerHTML = `
-      <span style="display:inline-flex; align-items:center; gap:0.35rem; color:#047857; font-weight:600;">
-        <span style="width:10px; height:10px; border-radius:50%; background:#10b981; display:inline-block;"></span>
-        Topshirdi: <b>${summary.participated}</b>
-      </span>
-      <span style="display:inline-flex; align-items:center; gap:0.35rem; color:#b45309; font-weight:600;">
-        <span style="width:10px; height:10px; border-radius:50%; background:#f59e0b; display:inline-block;"></span>
-        Topshirmadi: <b>${summary.missing}</b>
-      </span>
-      <span style="display:inline-flex; align-items:center; gap:0.35rem; color:#b91c1c; font-weight:600;">
-        <span style="width:10px; height:10px; border-radius:50%; background:#ef4444; display:inline-block;"></span>
-        Bloklangan: <b>${summary.blocked}</b>
-      </span>
-    `;
-  }
-
-  if (partCanvas && window.Chart) {
-    try {
-      if (participationChartInstance) {
-        participationChartInstance.destroy();
-      }
-      participationChartInstance = new Chart(partCanvas, {
-        type: 'doughnut',
-        data: {
-          labels: ["Topshirdi", "Topshirmadi", "Bloklandi"],
-          datasets: [{
-            data: [summary.participated, summary.missing, summary.blocked],
-            backgroundColor: ['#10b981', '#f59e0b', '#ef4444'],
-            borderWidth: 2,
-            borderColor: '#ffffff'
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: { display: false }
-          },
-          cutout: '68%'
-        }
-      });
-    } catch (e) {
-      console.warn("Chart.js render error (doughnut):", e);
-    }
-  }
-
-  // 2. Scores Distribution Bar Chart
-  const scoreCanvas = document.getElementById('scoresBarChart');
-  const scoreLegend = document.getElementById('chartScoresLegend');
-
-  if (scoreLegend) {
-    scoreLegend.innerHTML = `
-      <span style="color:#047857; font-weight:600;">A'lo: <b>${summary.gradeAlo}</b></span>
-      <span style="color:#1d4ed8; font-weight:600;">Yaxshi: <b>${summary.gradeYaxshi}</b></span>
-      <span style="color:#b45309; font-weight:600;">Qoniqarli: <b>${summary.gradeQoniqarli}</b></span>
-      <span style="color:#b91c1c; font-weight:600;">Qoniqarsiz: <b>${summary.gradeQoniqarsiz}</b></span>
-    `;
-  }
-
-  if (scoreCanvas && window.Chart) {
-    try {
-      if (scoresChartInstance) {
-        scoresChartInstance.destroy();
-      }
-      scoresChartInstance = new Chart(scoreCanvas, {
-        type: 'bar',
-        data: {
-          labels: ["A'lo (86-100%)", "Yaxshi (71-85%)", "Qoniqarli (56-70%)", "Qoniqarsiz (0-55%)"],
-          datasets: [{
-            label: "Pedagoglar soni",
-            data: [summary.gradeAlo, summary.gradeYaxshi, summary.gradeQoniqarli, summary.gradeQoniqarsiz],
-            backgroundColor: ['#10b981', '#3b82f6', '#f59e0b', '#ef4444'],
-            borderRadius: 6
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          scales: {
-            y: { beginAtZero: true, grid: { color: '#f1f5f9' } },
-            x: { grid: { display: false } }
-          },
-          plugins: {
-            legend: { display: false }
-          }
-        }
-      });
-    } catch (e) {
-      console.warn("Chart.js render error (bar):", e);
-    }
-  }
-}
-
-// TAB 1: Maktablar Reytingi Jadvali
+// TAB 1: Maktablar Reytingi Jadvali (Dinamik o'zgaruvchan reyting va raqami bo'yicha ketma-ketlik)
 function renderSchoolsRatingTable(teachers) {
   const tbody = document.getElementById('schoolsRatingTableBody');
   if (!tbody) return;
 
+  // Update Sort Button UI Active states
+  const btnScore = document.getElementById('sortBtnScore');
+  const btnNumber = document.getElementById('sortBtnNumber');
+  const btnCov = document.getElementById('sortBtnCoverage');
+  const btnTeachers = document.getElementById('sortBtnTeachers');
+
+  [btnScore, btnNumber, btnCov, btnTeachers].forEach(btn => {
+    if (btn) {
+      btn.classList.remove('btn-primary-mon', 'active');
+      btn.classList.add('btn-outline-mon');
+    }
+  });
+
+  if (currentSchoolsSort === 'score' && btnScore) {
+    btnScore.classList.add('btn-primary-mon', 'active');
+    btnScore.classList.remove('btn-outline-mon');
+  } else if (currentSchoolsSort === 'number' && btnNumber) {
+    btnNumber.classList.add('btn-primary-mon', 'active');
+    btnNumber.classList.remove('btn-outline-mon');
+  } else if (currentSchoolsSort === 'coverage' && btnCov) {
+    btnCov.classList.add('btn-primary-mon', 'active');
+    btnCov.classList.remove('btn-outline-mon');
+  } else if (currentSchoolsSort === 'teachers' && btnTeachers) {
+    btnTeachers.classList.add('btn-primary-mon', 'active');
+    btnTeachers.classList.remove('btn-outline-mon');
+  }
+
+  // Aggregate stats for all 55 schools
   const schoolMap = new Map();
-  const allSchools = Object.keys(state.teachersDb || {});
+  const allSchools = Object.keys(state.teachersDb || {}).sort(compareSchoolsNatural);
+  
   allSchools.forEach(sch => {
     schoolMap.set(sch, {
       name: sch,
@@ -2093,23 +1662,65 @@ function renderSchoolsRatingTable(teachers) {
 
   const list = Array.from(schoolMap.values());
 
-  // Sort schools based on current sort mode
+  // SORTING ALGORITHM
   list.sort((a, b) => {
-    const covA = a.total > 0 ? (((a.participated + a.blocked) / a.total) * 100) : 0;
-    const covB = b.total > 0 ? (((b.participated + b.blocked) / b.total) * 100) : 0;
+    const doneA = a.participated + a.blocked;
+    const doneB = b.participated + b.blocked;
+    const covA = a.total > 0 ? (doneA / a.total) * 100 : 0;
+    const covB = b.total > 0 ? (doneB / b.total) * 100 : 0;
     const avgA = a.participated > 0 ? (a.scoresSum / a.participated) : 0;
     const avgB = b.participated > 0 ? (b.scoresSum / b.participated) : 0;
+    const aloA = a.participated > 0 ? (a.aloCount / a.participated) * 100 : 0;
+    const aloB = b.participated > 0 ? (b.aloCount / b.participated) * 100 : 0;
 
-    if (currentSchoolsSort === 'coverage') {
-      if (covB !== covA) return covB - covA;
-      return avgB - avgA;
-    } else if (currentSchoolsSort === 'score') {
-      if (avgB !== avgA) return avgB - avgA;
-      return covB - covA;
-    } else if (currentSchoolsSort === 'teachers') {
-      return b.total - a.total;
+    // 1. STRICT NUMBER ORDER (1-55)
+    if (currentSchoolsSort === 'number') {
+      return compareSchoolsNatural(a.name, b.name);
     }
-    return covB - covA;
+
+    // 2. DYNAMIC QUALITY & SCORE RANKING (Default)
+    if (currentSchoolsSort === 'score') {
+      const aHasDone = a.participated > 0;
+      const bHasDone = b.participated > 0;
+
+      // Participating schools come first
+      if (aHasDone && !bHasDone) return -1;
+      if (!aHasDone && bHasDone) return 1;
+
+      // Both participated: rank by highest average score!
+      if (aHasDone && bHasDone) {
+        if (Math.abs(avgB - avgA) > 0.001) {
+          return avgB - avgA; // Higher average score rises to 1st place!
+        }
+        // Tie-breaker 1: Quality / A'lo percentage
+        if (Math.abs(aloB - aloA) > 0.001) {
+          return aloB - aloA;
+        }
+        // Tie-breaker 2: Coverage percentage
+        if (Math.abs(covB - covA) > 0.001) {
+          return covB - covA;
+        }
+        return compareSchoolsNatural(a.name, b.name);
+      }
+
+      // Neither participated: sort strictly in natural school number order (1, 2, 3...)
+      return compareSchoolsNatural(a.name, b.name);
+    }
+
+    // 3. COVERAGE ORDER
+    if (currentSchoolsSort === 'coverage') {
+      if (Math.abs(covB - covA) > 0.001) return covB - covA;
+      if (Math.abs(avgB - avgA) > 0.001) return avgB - avgA;
+      return compareSchoolsNatural(a.name, b.name);
+    }
+
+    // 4. TEACHERS COUNT ORDER
+    if (currentSchoolsSort === 'teachers') {
+      if (b.total !== a.total) return b.total - a.total;
+      return compareSchoolsNatural(a.name, b.name);
+    }
+
+    return compareSchoolsNatural(a.name, b.name);
   });
 
   tbody.innerHTML = '';
@@ -2126,19 +1737,36 @@ function renderSchoolsRatingTable(teachers) {
     else if (covPct < 70) barColor = '#f59e0b';
 
     let rankBadge = `<span class="rank-badge rank-default">${idx + 1}</span>`;
-    if (idx === 0) rankBadge = `<span class="rank-badge rank-1">🥇 1</span>`;
-    else if (idx === 1) rankBadge = `<span class="rank-badge rank-2">🥈 2</span>`;
-    else if (idx === 2) rankBadge = `<span class="rank-badge rank-3">🥉 3</span>`;
+    if (sch.participated > 0) {
+      if (idx === 0) rankBadge = `<span class="rank-badge rank-1" title="1-o'rin (Eng yuqori o'rtacha ball)">🥇 1</span>`;
+      else if (idx === 1) rankBadge = `<span class="rank-badge rank-2" title="2-o'rin">🥈 2</span>`;
+      else if (idx === 2) rankBadge = `<span class="rank-badge rank-3" title="3-o'rin">🥉 3</span>`;
+    }
 
-    let statusBadge = `<span class="status-badge status-passed">Faol</span>`;
-    if (covPct === 0) statusBadge = `<span class="status-badge status-missing">Boshlanmagan</span>`;
-    else if (covPct < 50) statusBadge = `<span class="status-badge status-missing">Past qamrov</span>`;
-    else if (covPct >= 80) statusBadge = `<span class="status-badge status-passed">Yuqori qamrov</span>`;
+    let statusBadge = `<span class="status-badge status-missing">Kutilmoqda</span>`;
+    if (sch.participated > 0) {
+      if (covPct >= 80) {
+        statusBadge = `<span class="status-badge status-passed">Yuqori qamrov (${done} ta)</span>`;
+      } else {
+        statusBadge = `<span class="status-badge status-passed">Topshirmoqda (${done} ta)</span>`;
+      }
+    }
+
+    const avgScoreDisplay = avg > 0
+      ? `<span style="font-size: 1.05rem; font-weight: 800; color: #059669;">${avg.toFixed(1)} ball</span>`
+      : `<span style="color: #94a3b8; font-weight: 500;">—</span>`;
+
+    const aloDisplay = aloPct > 0
+      ? `<span style="font-weight: 700; color: #047857;">${aloPct.toFixed(1)}%</span> <small style="color: #64748b;">(${sch.aloCount} nafar)</small>`
+      : `<span style="color: #94a3b8;">—</span>`;
 
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td>${rankBadge}</td>
-      <td><b>${sch.name}</b></td>
+      <td>
+        <b>${sch.name}</b>
+        ${idx === 0 && sch.participated > 0 ? ' <span class="mon-live-badge" style="padding:0.1rem 0.4rem; font-size:0.7rem; margin-left:0.3rem;">🏆 Yetakchi</span>' : ''}
+      </td>
       <td style="text-align: center; font-weight: 600;">${total}</td>
       <td style="text-align: center; font-weight: 700; color: #059669;">${done}</td>
       <td style="text-align: center; font-weight: 700; color: #d97706;">${missing}</td>
@@ -2150,8 +1778,8 @@ function renderSchoolsRatingTable(teachers) {
           <span style="font-size: 0.82rem; font-weight: 700; min-width: 45px; text-align: right;">${covPct.toFixed(1)}%</span>
         </div>
       </td>
-      <td style="text-align: center; font-weight: 700;">${avg > 0 ? avg.toFixed(1) : '-'}</td>
-      <td style="text-align: center; font-weight: 600;">${aloPct > 0 ? aloPct.toFixed(1) + '%' : '-'}</td>
+      <td style="text-align: center;">${avgScoreDisplay}</td>
+      <td style="text-align: center;">${aloDisplay}</td>
       <td style="text-align: center;">${statusBadge}</td>
     `;
     tbody.appendChild(tr);
@@ -2162,6 +1790,7 @@ function sortSchoolsRating(criterion) {
   currentSchoolsSort = criterion;
   renderSchoolsRatingTable(monitoringFilteredList);
 }
+
 
 // TAB 2: Fanlar Kesimida Tahlil Jadvali
 function renderSubjectsAnalysisTable(teachers) {

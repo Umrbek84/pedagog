@@ -2276,3 +2276,20 @@ body {
 .status-passed { background: #ecfdf5; color: #047857; }
 .status-missing { background: #fff7ed; color: #c2410c; }
 .status-blocked { background: #fef2f2; color: #b91c1c; }
+
+/* Sort Buttons Styling */
+.sort-btn {
+  font-size: 0.82rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sort-btn.active {
+  background: #10b981 !important;
+  color: #ffffff !important;
+  border-color: #059669 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.35) !important;
+}
