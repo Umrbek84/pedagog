@@ -1741,18 +1741,19 @@ function renderReviewList() {
 }
 
 function handleRestart() {
-  showAppConfirm(
-    "Yangi test boshlashni xohlaysizmi?<br>Joriy javoblar va seans yangilanadi.",
-    () => {
-      clearSavedSession();
-      switchView('setup');
-    },
-    "Qayta boshlash",
-    "🔄",
-    "Ha, yangilash",
-    "btn btn-primary"
-  );
+  clearSavedSession();
+  state.isExamActive = false;
+  state.currentIndex = 0;
+  state.userAnswers = {};
+  state.activeQuestions = [];
+  state.tabSwitchCount = 0;
+  document.body.classList.remove('exam-active-mode');
+
+  // To'g'ridan-to'g'ri yangi test boshlash uchun setupView ga o'tkazish
+  switchView('setup', true);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+window.handleRestart = handleRestart;
 
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
