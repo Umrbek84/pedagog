@@ -62,7 +62,8 @@ const views = {
   exam: document.getElementById('examView'),
   result: document.getElementById('resultView'),
   blocked: document.getElementById('blockedView'),
-  monitoring: document.getElementById('monitoringView')
+  monitoring: document.getElementById('monitoringView'),
+  davomat: document.getElementById('davomatView')
 };
 
 function switchView(viewName) {
@@ -74,6 +75,8 @@ function switchView(viewName) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     if (viewName === 'monitoring') {
       initOrRefreshMonitoringDashboard();
+    } else if (viewName === 'davomat') {
+      initOrRefreshDavomat();
     }
   }
 }
@@ -260,6 +263,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   checkInterruptedSession();
   if (window.location.hash === '#monitoringView') {
     switchView('monitoring');
+  } else if (window.location.hash === '#davomatView') {
+    switchView('davomat');
   }
 });
 
@@ -1643,6 +1648,299 @@ async function loadLeaderboardFromSheet() {
 // KRS MONITORING & ADVANCED ANALYTICS DASHBOARD
 // ==========================================
 
+let monitoringDataRaw = [];
+let monitoringFilteredList = [];
+let lastLiveSubmissions = [];
+
+function normalizePersonName(str) {
+  if (!str) return '';
+  return str.toUpperCase()
+    .replace(/['`ʻʼ‘]/g, "'")
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function normalizeSchoolName(str) {
+  if (!str) return '';
+  return str.toLowerCase().replace(/[^a-z0-9]/gi, '');
+}
+
+function switchMonTab(tabName) {
+  const tabs = ['schools', 'subjects', 'teachers'];
+  tabs.forEach(t => {
+    const btn = document.getElementById('tabBtn' + t.charAt(0).toUpperCase() + t.slice(1));
+    const pane = document.getElementById('monTab' + t.charAt(0).toUpperCase() + t.slice(1));
+    if (btn) btn.classList.toggle('active', t === tabName);
+    if (pane) pane.classList.toggle('active', t === tabName);
+  });
+}
+
+function populateMonitoringSchoolFilter() {
+  const select = document.getElementById('monSchoolFilter');
+  if (!select) return;
+  const currentVal = select.value;
+  select.innerHTML = '<option value="ALL">-- Barcha maktablar (55 ta) --</option>';
+
+  const schoolNames = Object.keys(state.teachersDb || {}).sort(compareSchoolsNatural);
+  schoolNames.forEach(sch => {
+    const opt = document.createElement('option');
+    opt.value = sch;
+    opt.textContent = `🏫 ${sch} (${(state.teachersDb[sch] || []).length} nafar)`;
+    select.appendChild(opt);
+  });
+
+  if (currentVal && schoolNames.includes(currentVal)) {
+    select.value = currentVal;
+  }
+}
+
+async function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
+  const updateEl = document.getElementById('monLastUpdated');
+  if (updateEl) {
+    const now = new Date();
+    updateEl.textContent = `${now.toLocaleTimeString('uz-UZ')}, ${now.toLocaleDateString('uz-UZ')}`;
+  }
+
+  if (!state.teachersDb || Object.keys(state.teachersDb).length === 0) {
+    await loadTeachersDatabase();
+  }
+  populateMonitoringSchoolFilter();
+
+  const liveResults = [];
+  try {
+    const res = await fetch(RESULTS_SHEET_URL);
+    if (res.ok) {
+      const csvText = await res.text();
+      const rows = parseCsv(csvText);
+      for (let i = 1; i < rows.length; i++) {
+        const r = rows[i];
+        if (!r[1]) continue;
+        liveResults.push({
+          date: (r[0] || '').substring(0, 10),
+          name: normalizePersonName(r[1]),
+          rawName: r[1],
+          school: r[2] || '',
+          cleanSchool: normalizeSchoolName(r[2]),
+          subject: r[3] || '',
+          score: parseInt(r[5]) || 0,
+          total: parseInt(r[6]) || 25,
+          percent: parseInt(r[7]) || 0,
+          switches: parseInt(r[8]) || 0,
+          status: r[9] || 'Muvaffaqiyatli topshirdi',
+          isBlocked: false
+        });
+      }
+    }
+  } catch (err) {
+    console.warn("Live results fetch error:", err);
+  }
+
+  const blockedMap = new Map();
+  try {
+    const resB = await fetch(BLOCKED_SHEET_URL);
+    if (resB.ok) {
+      const csvTextB = await resB.text();
+      const rowsB = parseCsv(csvTextB);
+      for (let i = 1; i < rowsB.length; i++) {
+        const r = rowsB[i];
+        if (!r[1]) continue;
+        const normN = normalizePersonName(r[1]);
+        blockedMap.set(normN, {
+          name: normN,
+          rawName: r[1],
+          school: r[2] || '',
+          subject: r[3] || '',
+          switches: parseInt(r[4]) || 4,
+          isBlocked: true,
+          status: '🚫 Bloklangan'
+        });
+      }
+    }
+  } catch (err) {
+    console.warn("Blocked fetch error:", err);
+  }
+
+  // Local storage recent submissions
+  try {
+    const localRaw = localStorage.getItem(RESULTS_STORAGE_KEY);
+    if (localRaw) {
+      const localList = JSON.parse(localRaw);
+      localList.forEach(loc => {
+        const normN = normalizePersonName(loc.name);
+        const exists = liveResults.some(c => c.name === normN);
+        if (!exists) {
+          liveResults.push({
+            date: (loc.timestamp || '').substring(0, 10),
+            name: normN,
+            rawName: loc.name,
+            school: loc.school || '',
+            cleanSchool: normalizeSchoolName(loc.school),
+            subject: loc.subject || '',
+            score: loc.score || 0,
+            total: loc.total || 25,
+            percent: loc.percent || 0,
+            switches: loc.switches || 0,
+            status: loc.status || 'Muvaffaqiyatli topshirdi',
+            isBlocked: false
+          });
+        }
+      });
+    }
+  } catch (e) {}
+
+  lastLiveSubmissions = liveResults;
+
+  // Build unified teacher list for all 3088 teachers
+  const unifiedTeachers = [];
+  const processedNames = new Set();
+
+  Object.entries(state.teachersDb || {}).forEach(([school, teachers]) => {
+    teachers.forEach(t => {
+      const normN = normalizePersonName(t.name);
+      processedNames.add(normN);
+
+      const isBlk = blockedMap.has(normN);
+      const subRecord = liveResults.find(lr => lr.name === normN);
+
+      if (isBlk) {
+        unifiedTeachers.push({
+          name: t.name,
+          school: school,
+          subject: t.subject || '',
+          hasParticipated: true,
+          isBlocked: true,
+          score: 0,
+          total: 25,
+          scorePercent: 0,
+          switches: blockedMap.get(normN).switches || 4,
+          statusText: '🚫 Bloklangan',
+          gradeLevel: 'Qoniqarsiz'
+        });
+      } else if (subRecord) {
+        unifiedTeachers.push({
+          name: t.name,
+          school: school,
+          subject: t.subject || subRecord.subject || '',
+          hasParticipated: true,
+          isBlocked: false,
+          score: subRecord.score,
+          total: subRecord.total || 25,
+          scorePercent: subRecord.percent,
+          switches: subRecord.switches,
+          statusText: '✅ Topshirdi',
+          gradeLevel: subRecord.percent >= 86 ? "A'lo" : (subRecord.percent >= 71 ? "Yaxshi" : (subRecord.percent >= 56 ? "Qoniqarli" : "Qoniqarsiz"))
+        });
+      } else {
+        unifiedTeachers.push({
+          name: t.name,
+          school: school,
+          subject: t.subject || '',
+          hasParticipated: false,
+          isBlocked: false,
+          score: 0,
+          total: 25,
+          scorePercent: 0,
+          switches: 0,
+          statusText: '⏳ Topshirmagan',
+          gradeLevel: 'Topshirmagan'
+        });
+      }
+    });
+  });
+
+  monitoringDataRaw = unifiedTeachers;
+  applyMonitoringFilters();
+
+  if (isManualRefresh) {
+    showToast("Monitoring ma'lumotlari muvaffaqiyatli yangilandi!", "🔄");
+  }
+}
+
+function refreshMonitoringData() {
+  initOrRefreshMonitoringDashboard(true);
+}
+
+function applyMonitoringFilters() {
+  const schoolFilter = document.getElementById('monSchoolFilter')?.value || 'ALL';
+  const subjectFilter = document.getElementById('monSubjectFilter')?.value || 'ALL';
+  const statusFilter = document.getElementById('monStatusFilter')?.value || 'ALL';
+  const searchText = (document.getElementById('monSearchInput')?.value || '').toLowerCase().trim();
+
+  const filtered = monitoringDataRaw.filter(t => {
+    if (schoolFilter !== 'ALL' && t.school !== schoolFilter) return false;
+    if (subjectFilter !== 'ALL') {
+      const s1 = (t.subject || '').toLowerCase();
+      const s2 = subjectFilter.toLowerCase();
+      if (!s1.includes(s2) && !s2.includes(s1)) return false;
+    }
+    if (statusFilter === 'PASSED' && (!t.hasParticipated || t.isBlocked)) return false;
+    if (statusFilter === 'MISSING' && t.hasParticipated) return false;
+    if (statusFilter === 'EXCELLENT' && (!t.hasParticipated || t.scorePercent < 86)) return false;
+    if (statusFilter === 'LOW' && (!t.hasParticipated || t.scorePercent > 55 || t.isBlocked)) return false;
+    if (statusFilter === 'BLOCKED' && !t.isBlocked) return false;
+
+    if (searchText) {
+      const nameMatch = (t.name || '').toLowerCase().includes(searchText);
+      const schoolMatch = (t.school || '').toLowerCase().includes(searchText);
+      if (!nameMatch && !schoolMatch) return false;
+    }
+    return true;
+  });
+
+  monitoringFilteredList = filtered;
+
+  // Update KPI Cards
+  const total = filtered.length;
+  const participated = filtered.filter(t => t.hasParticipated && !t.isBlocked).length;
+  const blocked = filtered.filter(t => t.isBlocked).length;
+  const missing = filtered.filter(t => !t.hasParticipated).length;
+  const coveragePct = total > 0 ? (((participated + blocked) / total) * 100) : 0;
+  const missingPct = total > 0 ? ((missing / total) * 100) : 0;
+
+  const passedTeachers = filtered.filter(t => t.hasParticipated && !t.isBlocked);
+  const totalScoreSum = passedTeachers.reduce((acc, cur) => acc + (cur.score || 0), 0);
+  const avgScore = passedTeachers.length > 0 ? (totalScoreSum / passedTeachers.length) : 0;
+  const avgPercent = passedTeachers.length > 0 
+    ? Math.round(passedTeachers.reduce((acc, cur) => acc + cur.scorePercent, 0) / passedTeachers.length) 
+    : 0;
+
+  const excellentCount = passedTeachers.filter(t => t.scorePercent >= 86).length;
+  const excellentPct = passedTeachers.length > 0 ? ((excellentCount / passedTeachers.length) * 100) : 0;
+
+  const kpiTot = document.getElementById('kpiTotalTeachers');
+  const kpiPart = document.getElementById('kpiParticipated');
+  const kpiCov = document.getElementById('kpiCoveragePercent');
+  const kpiMiss = document.getElementById('kpiMissing');
+  const kpiMissPct = document.getElementById('kpiMissingPercent');
+  const kpiAvg = document.getElementById('kpiAvgScore');
+  const kpiAvgPct = document.getElementById('kpiAvgPercent');
+  const kpiQual = document.getElementById('kpiQualityCount');
+  const kpiQualPct = document.getElementById('kpiQualityPercent');
+  const kpiBlk = document.getElementById('kpiBlockedCount');
+
+  if (kpiTot) kpiTot.textContent = total.toLocaleString('uz-UZ');
+  if (kpiPart) kpiPart.textContent = (participated + blocked).toLocaleString('uz-UZ');
+  if (kpiCov) kpiCov.textContent = `${coveragePct.toFixed(1)}%`;
+  if (kpiMiss) kpiMiss.textContent = missing.toLocaleString('uz-UZ');
+  if (kpiMissPct) kpiMissPct.textContent = `${missingPct.toFixed(1)}%`;
+  if (kpiAvg) kpiAvg.textContent = `${avgScore.toFixed(1)} / 25`;
+  if (kpiAvgPct) kpiAvgPct.textContent = `${avgPercent}%`;
+  if (kpiQual) kpiQual.textContent = excellentCount.toLocaleString('uz-UZ');
+  if (kpiQualPct) kpiQualPct.textContent = `${excellentPct.toFixed(1)}%`;
+  if (kpiBlk) kpiBlk.textContent = blocked.toLocaleString('uz-UZ');
+
+  const badgeCount = document.getElementById('tabTeachersCountBadge');
+  if (badgeCount) badgeCount.textContent = total.toLocaleString('uz-UZ');
+  const resCount = document.getElementById('monFilterResultsCount');
+  if (resCount) resCount.textContent = `${total.toLocaleString('uz-UZ')} nafar pedagog tahlil qilindi`;
+  const tFilteredCount = document.getElementById('teachersFilteredCount');
+  if (tFilteredCount) tFilteredCount.textContent = total.toLocaleString('uz-UZ');
+
+  renderSchoolsRatingTable(filtered);
+  renderSubjectsAnalysisTable(filtered);
+  renderTeachersMonitoringTable(filtered);
+}
+
 function getSchoolNumber(name) {
   const match = (name || '').match(/\d+/);
   return match ? parseInt(match[0], 10) : 999;
@@ -2147,6 +2445,357 @@ function exportTeachersListCSV() {
   const dateStr = new Date().toISOString().substring(0, 10);
   downloadCSVFile(`KRS_Pedagoglar_Monitoring_Royxati_${dateStr}.csv`, csv);
   showToast("Pedagoglar ro'yxati CSV formatida yuklab olindi", "📥");
+}
+
+// ==========================================
+// KRS DAVOMAT & A4 REPORT GENERATION
+// ==========================================
+let lastDavomatSchoolList = [];
+
+const KRS_DIRECTIONS_MAP = {
+  'Ijtimoiy fanlar': ['Tarix', 'Huquq'],
+  'Filologiya': ['Ona tili'],
+  'Tabiiy fanlar': ['Biologiya', 'Kimyo', 'Fizika', 'Geografiya'],
+  'Aniq fanlar': ['Matematika', 'Informatika'],
+  'Xorijiy tillar': ['English', 'Nemis tili', 'Fransuz tili'],
+  "Boshlang'ich ta'lim": ["Boshlang'ich ta'lim", "Tasviriy san'at"],
+  'Rus tili': ['Rus tili'],
+  'Texnologiya': ['Texnologiya']
+};
+
+async function initOrRefreshDavomat(isManual = false) {
+  if (!state.teachersDb || Object.keys(state.teachersDb).length === 0) {
+    await loadTeachersDatabase();
+  }
+  if (!lastLiveSubmissions || lastLiveSubmissions.length === 0) {
+    await initOrRefreshMonitoringDashboard(false);
+  }
+  renderDavomatReport();
+  if (isManual) {
+    showToast("Davomat ma'lumotlari yangilandi!", "🔄");
+  }
+}
+
+function refreshDavomatData() {
+  initOrRefreshMonitoringDashboard(false).then(() => {
+    initOrRefreshDavomat(true);
+  });
+}
+
+function renderDavomatReport() {
+  const sessionVal = parseInt(document.getElementById('davomatSessionSelect')?.value || '4', 10);
+  const subjectVal = document.getElementById('davomatSubjectSelect')?.value || 'Ijtimoiy fanlar';
+  const sortVal = document.getElementById('davomatSortSelect')?.value || 'number';
+
+  // 1. Update A4 Document Meta Header
+  const subTitleEl = document.getElementById('a4DocSubjectTitle');
+  const sessTitleEl = document.getElementById('a4DocSessionTitle');
+  const timeEl = document.getElementById('a4DocTimestamp');
+
+  let fullSubjectName = subjectVal;
+  if (subjectVal === 'Ijtimoiy fanlar') fullSubjectName = "Ijtimoiy fanlar (Tarix, Davlat va huquq asoslari, Tarbiya)";
+  else if (subjectVal === 'Filologiya') fullSubjectName = "Filologiya (Ona tili va adabiyot)";
+  else if (subjectVal === 'Tabiiy fanlar') fullSubjectName = "Tabiiy fanlar (Biologiya, Kimyo, Fizika, Geografiya)";
+  else if (subjectVal === 'Aniq fanlar') fullSubjectName = "Aniq fanlar (Matematika, Informatika)";
+  else if (subjectVal === 'Xorijiy tillar') fullSubjectName = "Xorijiy tillar (Ingliz, Nemis, Fransuz tili)";
+  else if (subjectVal === "Boshlang'ich ta'lim") fullSubjectName = "Boshlang'ich ta'lim va Tasviriy san'at";
+  else if (subjectVal === 'Rus tili') fullSubjectName = "Rus tili va adabiyoti";
+  else if (subjectVal === 'Texnologiya') fullSubjectName = "Texnologiya (Mehnat ta'limi)";
+  else if (subjectVal === 'ALL') fullSubjectName = "Barcha fanlar (Umumiy tuman bo'yicha)";
+
+  if (subTitleEl) subTitleEl.textContent = fullSubjectName;
+  if (sessTitleEl) sessTitleEl.textContent = `${sessionVal}-mashg'ulot (2026-yil)`;
+
+  const now = new Date();
+  const monthsUz = ["yanvar", "fevral", "mart", "aprel", "may", "iyun", "iyul", "avgust", "sentabr", "oktabr", "noyabr", "dekabr"];
+  const formattedTime = `${now.getDate()}-${monthsUz[now.getMonth()]} ${now.getFullYear()}-yil, soat ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')} holatiga`;
+  if (timeEl) timeEl.textContent = formattedTime;
+
+  // 2. Filter allowed subjects
+  let allowedSubjects = [];
+  if (subjectVal === 'ALL') {
+    allowedSubjects = null; // all
+  } else if (KRS_DIRECTIONS_MAP[subjectVal]) {
+    allowedSubjects = KRS_DIRECTIONS_MAP[subjectVal];
+  } else {
+    allowedSubjects = [subjectVal];
+  }
+
+  // 3. Prepare Submissions for the chosen session
+  const submittedTeachers = new Set();
+  (lastLiveSubmissions || []).forEach(sub => {
+    let subSession = 4;
+    if (sub.session) subSession = parseInt(sub.session, 10);
+    else {
+      const match = (sub.subject || '').match(/(\d+)-mashg/i);
+      if (match) subSession = parseInt(match[1], 10);
+    }
+
+    if (subSession === sessionVal) {
+      submittedTeachers.add(normalizePersonName(sub.name));
+    }
+  });
+
+  // Local storage submissions check
+  try {
+    const rawLocal = localStorage.getItem(RESULTS_STORAGE_KEY);
+    if (rawLocal) {
+      const localList = JSON.parse(rawLocal);
+      localList.forEach(loc => {
+        const sNum = loc.session || 4;
+        if (sNum === sessionVal) {
+          submittedTeachers.add(normalizePersonName(loc.name));
+        }
+      });
+    }
+  } catch (e) {}
+
+  // 4. Calculate per-school quotas & submissions
+  const allSchoolNames = Object.keys(state.teachersDb || {}).sort(compareSchoolsNatural);
+  const schoolRows = [];
+
+  let grandTotal = 0;
+  let grandDone = 0;
+
+  allSchoolNames.forEach(schName => {
+    const allTeachers = state.teachersDb[schName] || [];
+    let eligibleTeachers = [];
+
+    if (!allowedSubjects) {
+      eligibleTeachers = allTeachers;
+    } else {
+      eligibleTeachers = allTeachers.filter(t => allowedSubjects.includes(t.subject));
+    }
+
+    const total = eligibleTeachers.length;
+    let done = 0;
+
+    eligibleTeachers.forEach(t => {
+      const normN = normalizePersonName(t.name);
+      if (submittedTeachers.has(normN)) {
+        done++;
+      }
+    });
+
+    const debt = Math.max(0, total - done);
+    const pct = total > 0 ? ((done / total) * 100) : 0;
+
+    grandTotal += total;
+    grandDone += done;
+
+    schoolRows.push({
+      name: schName,
+      total: total,
+      done: done,
+      debt: debt,
+      pct: pct
+    });
+  });
+
+  // 5. Sort Schools
+  if (sortVal === 'number') {
+    schoolRows.sort((a, b) => compareSchoolsNatural(a.name, b.name));
+  } else if (sortVal === 'percent_desc') {
+    schoolRows.sort((a, b) => {
+      if (b.pct !== a.pct) return b.pct - a.pct;
+      if (b.done !== a.done) return b.done - a.done;
+      return compareSchoolsNatural(a.name, b.name);
+    });
+  } else if (sortVal === 'percent_asc') {
+    schoolRows.sort((a, b) => {
+      if (a.pct !== b.pct) return a.pct - b.pct;
+      if (b.debt !== a.debt) return b.debt - a.debt;
+      return compareSchoolsNatural(a.name, b.name);
+    });
+  } else if (sortVal === 'debt_desc') {
+    schoolRows.sort((a, b) => {
+      if (b.debt !== a.debt) return b.debt - a.debt;
+      return compareSchoolsNatural(a.name, b.name);
+    });
+  }
+
+  lastDavomatSchoolList = schoolRows;
+
+  // 6. Update KPI summary badges
+  const grandDebt = Math.max(0, grandTotal - grandDone);
+  const grandPct = grandTotal > 0 ? ((grandDone / grandTotal) * 100) : 0;
+  const fullSchoolsCount = schoolRows.filter(s => s.total > 0 && s.done >= s.total).length;
+  const activeSchoolsCount = schoolRows.filter(s => s.total > 0).length;
+
+  const kpiTot = document.getElementById('a4KpiTotal');
+  const kpiDone = document.getElementById('a4KpiDone');
+  const kpiDebt = document.getElementById('a4KpiDebt');
+  const kpiPct = document.getElementById('a4KpiPercent');
+  const kpiFull = document.getElementById('a4KpiFullSchools');
+
+  if (kpiTot) kpiTot.textContent = grandTotal.toLocaleString('uz-UZ');
+  if (kpiDone) kpiDone.textContent = grandDone.toLocaleString('uz-UZ');
+  if (kpiDebt) kpiDebt.textContent = grandDebt.toLocaleString('uz-UZ');
+  if (kpiPct) kpiPct.textContent = `${grandPct.toFixed(1)}%`;
+  if (kpiFull) kpiFull.textContent = `${fullSchoolsCount} / ${activeSchoolsCount}`;
+
+  // 7. Render Table Rows in A4 Sheet
+  const tbody = document.getElementById('a4DavomatTableBody');
+  if (!tbody) return;
+  tbody.innerHTML = '';
+
+  schoolRows.forEach((sch, idx) => {
+    const tr = document.createElement('tr');
+
+    let barColor = '#059669';
+    let statusBadge = '';
+
+    if (sch.total === 0) {
+      statusBadge = `<span class="status-badge" style="background:#f1f5f9; color:#94a3b8;">Reja yo'q</span>`;
+    } else if (sch.done >= sch.total) {
+      barColor = '#059669';
+      statusBadge = `<span class="status-badge status-passed">✅ 100% To'liq</span>`;
+    } else if (sch.pct >= 80) {
+      barColor = '#10b981';
+      statusBadge = `<span class="status-badge status-passed">✅ Yuqori (${sch.done}/${sch.total})</span>`;
+    } else if (sch.pct >= 50) {
+      barColor = '#f59e0b';
+      statusBadge = `<span class="status-badge status-missing">⏳ O'rta (${sch.done}/${sch.total})</span>`;
+    } else if (sch.done > 0) {
+      barColor = '#ef4444';
+      statusBadge = `<span class="status-badge status-blocked">⚠️ Kam (${sch.done}/${sch.total})</span>`;
+    } else {
+      barColor = '#dc2626';
+      statusBadge = `<span class="status-badge status-blocked">❌ 0% Qarz</span>`;
+    }
+
+    let barHtml = '';
+    if (sch.total === 0) {
+      barHtml = `<span style="color:#94a3b8; font-size:0.78rem;">—</span>`;
+    } else {
+      barHtml = `
+        <div class="a4-bar-container">
+          <div class="a4-bar-track">
+            <div class="a4-bar-fill" style="width: ${sch.pct.toFixed(0)}%; background: ${barColor};"></div>
+          </div>
+          <span class="a4-pct-text" style="color: ${barColor};">${sch.pct.toFixed(0)}%</span>
+        </div>
+      `;
+    }
+
+    tr.innerHTML = `
+      <td style="text-align: center; color: #64748b; font-weight: 700; font-size: 0.8rem;">${idx + 1}</td>
+      <td><b>${sch.name}</b></td>
+      <td style="text-align: center; font-weight: 700;">${sch.total}</td>
+      <td style="text-align: center; font-weight: 800; color: #059669;">${sch.done}</td>
+      <td style="text-align: center; font-weight: 800; color: ${sch.debt > 0 ? '#dc2626' : '#64748b'};">${sch.debt}</td>
+      <td>${barHtml}</td>
+      <td style="text-align: center;">${statusBadge}</td>
+    `;
+
+    tbody.appendChild(tr);
+  });
+}
+
+// 8. Download A4 Document as High Resolution JPG
+function downloadDavomatA4Jpg() {
+  const sheet = document.getElementById('davomatA4Sheet');
+  if (!sheet) {
+    showToast("A4 hisobot konteyneri topilmadi", "⚠️");
+    return;
+  }
+
+  if (typeof html2canvas === 'undefined') {
+    showToast("html2canvas kutubxonasi yuklanmoqda...", "⏳");
+    setTimeout(downloadDavomatA4Jpg, 500);
+    return;
+  }
+
+  showToast("📸 A4 formatda yuqori sifatli JPG rasm shakllantirilmoqda...", "⏳");
+
+  html2canvas(sheet, {
+    scale: 2, // 2x Retina resolution for razor-sharp Telegram viewing
+    useCORS: true,
+    backgroundColor: '#ffffff',
+    logging: false,
+    windowWidth: 1200
+  }).then(canvas => {
+    const imgData = canvas.toDataURL('image/jpeg', 0.95);
+    const d = new Date();
+    const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    const sessionVal = document.getElementById('davomatSessionSelect')?.value || '4';
+    const subVal = (document.getElementById('davomatSubjectSelect')?.value || 'Ijtimoiy_fanlar').replace(/[^a-zA-Z0-9]/g, '_');
+    const filename = `KRS_Davomat_${sessionVal}-mashgulot_${subVal}_${dateStr}.jpg`;
+
+    const link = document.createElement('a');
+    link.download = filename;
+    link.href = imgData;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    showToast(`📸 A4 Rasm yuklab olindi: ${filename}`, "✅");
+  }).catch(err => {
+    console.error("html2canvas xatosi:", err);
+    alert("Rasmni yaratishda xatolik yuz berdi. Iltimos, qayta urinib ko'ring yoki brauzerda 'Chop etish' orqali saqlang.");
+  });
+}
+
+// 9. Copy Formatted Telegram Text for Directors Group
+function copyDavomatTelegramText() {
+  const sessionNum = document.getElementById('davomatSessionSelect')?.value || '4';
+  const subTitle = document.getElementById('a4DocSubjectTitle')?.textContent || 'Ijtimoiy fanlar';
+  const timeStr = document.getElementById('a4DocTimestamp')?.textContent || '';
+
+  const total = document.getElementById('a4KpiTotal')?.textContent || '0';
+  const done = document.getElementById('a4KpiDone')?.textContent || '0';
+  const debt = document.getElementById('a4KpiDebt')?.textContent || '0';
+  const pct = document.getElementById('a4KpiPercent')?.textContent || '0%';
+
+  const fullSchools = [];
+  const debtorSchools = [];
+
+  lastDavomatSchoolList.forEach(sch => {
+    if (sch.total > 0) {
+      if (sch.done >= sch.total) {
+        fullSchools.push(sch.name);
+      } else {
+        debtorSchools.push(`${sch.name} — ${sch.done}/${sch.total} nafar (${sch.pct.toFixed(0)}%, ${sch.debt} ta qarz)`);
+      }
+    }
+  });
+
+  let text = `📢 DIQQAT! KRS TEST TOPSHIRISH DAVOMATI\n`;
+  text += `🏛️ Fan / Yo'nalish: ${subTitle}\n`;
+  text += `📅 Bosqich: ${sessionNum}-mashg'ulot\n`;
+  text += `🕒 Vaqti: ${timeStr}\n\n`;
+  text += `📊 TUMAN BO'YICHA UMUMIY KO'RSATKICH:\n`;
+  text += `• Jami pedagoglar (Reja): ${total} nafar\n`;
+  text += `• Test topshirdi: ${done} nafar\n`;
+  text += `• Qarzdorlar: ${debt} nafar\n`;
+  text += `• Davomat ko'rsatkichi: ${pct}\n\n`;
+
+  if (fullSchools.length > 0) {
+    text += `🏆 100% BAJARGAN MAKTABLAR (${fullSchools.length} ta):\n`;
+    text += fullSchools.map((s, i) => `${i + 1}. ${s} ✅`).join('\n') + '\n\n';
+  }
+
+  if (debtorSchools.length > 0) {
+    text += `⚠️ QARZDORLIGI MAVJUD MAKTABLAR (${debtorSchools.length} ta):\n`;
+    text += debtorSchools.slice(0, 20).map((s, i) => `${i + 1}. ${s}`).join('\n');
+    if (debtorSchools.length > 20) {
+      text += `\n... va yana ${debtorSchools.length - 20} ta maktab`;
+    }
+    text += '\n\n';
+  }
+
+  text += `⚠️ Barcha maktab direktorlari va o'qituvchilari testni zudlik bilan yakunlashlari so'raladi!\n`;
+  text += `🌐 Test topshirish: https://pedagog.umamatov.uz\n`;
+  text += `👤 Mas'ul: Qo'shko'pir tumani MMTB Bosh mutaxassisi Umrbek Mamatov`;
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => {
+      showToast("Telegram uchun tahliliy matn nusxalandi!", "📋");
+    }).catch(err => {
+      prompt("Nusxalash uchun Ctrl+C bosing:", text);
+    });
+  } else {
+    prompt("Nusxalash uchun Ctrl+C bosing:", text);
+  }
 }
 
 // ==========================================
