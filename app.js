@@ -411,41 +411,55 @@ function refreshSessionDropdown(subjectVal) {
 
   let matchedDates = [];
   if (typeof KRS_SCHEDULE !== 'undefined') {
+    const krsName = mapSubjectToKrs(subjectVal || '');
     const item = KRS_SCHEDULE.find(x => 
-      x.targetSubjects && x.targetSubjects.some(s => s.toLowerCase() === (subjectVal || '').toLowerCase())
+      x.targetSubjects && x.targetSubjects.some(s => s.toLowerCase() === krsName.toLowerCase() || s.toLowerCase() === (subjectVal || '').toLowerCase())
     );
     if (item && item.dates) {
       matchedDates = item.dates;
     }
   }
 
-  const prevVal = sessionSelect.value || "3";
+  const prevVal = sessionSelect.value || "4";
   sessionSelect.innerHTML = '';
 
   for (let num = 1; num <= 12; num++) {
     const opt = document.createElement('option');
     opt.value = num;
-    const startQ = (num - 1) * 20 + 1;
-    const endQ = num * 20;
     const dInfo = matchedDates.find(d => d.num === num);
     const dateLabel = dInfo ? ` (${dInfo.label})` : '';
 
     if (num <= 3) {
+      opt.disabled = true;
+      opt.style.color = '#94a3b8';
+      opt.style.background = '#f1f5f9';
+      opt.textContent = `🔒 ${num}-mashg'ulot${dateLabel} — O'tib ketgan (Test mavjud emas)`;
+    } else if (num === 4) {
       opt.disabled = false;
-      const statusLabel = num === 3 ? "✅ Ochiq (3-bosqich / O'tilgan)" : "✅ Ochiq (O'tilgan)";
-      opt.textContent = `${num}-mashg'ulot (${startQ}–${endQ}-savollar)${dateLabel} — ${statusLabel}`;
-      if (String(num) === String(prevVal)) {
+      opt.style.fontWeight = '800';
+      opt.style.color = '#047857';
+      opt.style.background = '#ecfdf5';
+      opt.textContent = `🔥 4-mashg'ulot${dateLabel} — ✅ FAOL / ISHLASHGA OCHIQ (25 ta savol)`;
+      if (String(prevVal) === "4" || !prevVal || parseInt(prevVal) < 4) {
+        opt.selected = true;
+      }
+    } else if (num === 5 || num === 6) {
+      opt.disabled = false;
+      opt.style.color = '#1e293b';
+      opt.textContent = `📅 ${num}-mashg'ulot${dateLabel} — ⏳ Tayyor / Navbatdagi (25 ta savol)`;
+      if (String(prevVal) === String(num)) {
         opt.selected = true;
       }
     } else {
       opt.disabled = true;
-      opt.textContent = `${num}-mashg'ulot (${startQ}–${endQ}-savollar)${dateLabel} — ⏳ Reja bo'yicha (Kelgusi)`;
+      opt.style.color = '#cbd5e1';
+      opt.textContent = `${num}-mashg'ulot${dateLabel} — 🔒 Reja bo'yicha`;
     }
     sessionSelect.appendChild(opt);
   }
 
-  if (!sessionSelect.value) {
-    sessionSelect.value = "3";
+  if (!sessionSelect.value || parseInt(sessionSelect.value) < 4) {
+    sessionSelect.value = "4";
   }
 }
 
@@ -866,7 +880,7 @@ async function handleValidateAndOpenPinModal() {
   }
 
   const sessionSelect = document.getElementById('sessionSelect');
-  const session = parseInt(sessionSelect ? sessionSelect.value : 3) || 1;
+  const session = parseInt(sessionSelect ? sessionSelect.value : 4) || 4;
 
   state.teacherInfo = { name, school, subject, session };
 
@@ -1038,7 +1052,7 @@ function startExamSession() {
   const countRequested = parseInt(document.getElementById('questionCount').value) || 25;
   state.timeLimitMinutes = parseInt(document.getElementById('timeLimit').value) || 30;
 
-  const currentSession = state.teacherInfo.session || 1;
+  const currentSession = state.teacherInfo.session || 4;
 
   let matched = state.allQuestions.filter(q => {
     return q.subject && 
@@ -1047,23 +1061,8 @@ function startExamSession() {
   });
 
   if (matched.length === 0) {
-    matched = state.allQuestions.filter(q => {
-      const matchSubj = q.subject && (
-        q.subject.toLowerCase().includes(state.teacherInfo.subject.toLowerCase()) ||
-        state.teacherInfo.subject.toLowerCase().includes(q.subject.toLowerCase())
-      );
-      return matchSubj && q.session === currentSession;
-    });
-  }
-
-  if (matched.length === 0) {
-    matched = state.allQuestions.filter(q => {
-      return q.subject && q.subject.toLowerCase() === state.teacherInfo.subject.toLowerCase();
-    });
-  }
-
-  if (matched.length === 0) {
-    matched = state.allQuestions;
+    alert("Tanlangan " + currentSession + "-mashg'ulot o'tib ketgan yoki faol emas. Iltimos, amaldagi 4-mashg'ulotni tanlang!");
+    return;
   }
 
   matched = shuffleArray([...matched]);

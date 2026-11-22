@@ -1,81 +1,34 @@
 /**
  * krs_data.js — O'zbekiston Respublikasi Maktabgacha va maktab ta'limi vazirining 
  * 2026-yil 27-avgustdagi 319-sonli buyrug'iga 15-ilova:
- * "Kasbiy rivojlanish kuni" va "Kasbiy rivojlanish soati" (KRS) tadbirlari reja-jadvali.
- * pedagog.umamatov.uz portali uchun maxsus ishlab chiqilgan.
+ * "Kasbiy rivojlanish kuni" (KRK) va "Kasbiy rivojlanish soati" (KRS) tadbirlari reja-jadvali.
+ * pedagog.umamatov.uz portali uchun 15-ilovaga 100% qat'iy moslashtirilgan.
  */
 
 const KRS_SCHEDULE = [
   {
-    id: "boshlangich",
-    title: "Boshlang'ich ta'lim",
-    category: "Boshlang'ich ta'lim",
-    targetSubjects: ["Boshlang'ich ta'lim"],
-    icon: "🎒",
-    audience: "1–4-sinf boshlang'ich sinf o'qituvchilari",
-    description: "Alifbe, Ona tili, O'qish savodxonligi, Matematika, Tabiiy fanlar (1-4 sinf)",
+    id: "ijtimoiy",
+    title: "Ijtimoiy fanlar",
+    category: "Ijtimoiy fanlar",
+    targetSubjects: ["Tarix", "Huquq", "Tarbiya"],
+    icon: "📜",
+    audience: "O'zbekiston tarixi, Jahon tarixi, Davlat va huquq asoslari, Tarbiya fani pedagoglari",
+    description: "O'zbekiston tarixi (6-11), Jahon tarixi (7-11), Davlat va huquq asoslari (8-11), Tarbiya (1-11)",
     allocatedHours: "3 soat",
+    weekday: "Dushanba",
     dates: [
-      { num: 1, date: "2026-10-24", label: "24-oktabr" },
-      { num: 2, date: "2026-11-07", label: "07-noyabr" },
-      { num: 3, date: "2026-11-21", label: "21-noyabr" }, // BUGUN!
-      { num: 4, date: "2026-12-05", label: "05-dekabr" },
-      { num: 5, date: "2026-12-19", label: "19-dekabr" },
-      { num: 6, date: "2027-01-09", label: "09-yanvar" },
-      { num: 7, date: "2027-01-23", label: "23-yanvar" },
-      { num: 8, date: "2027-02-06", label: "06-fevral" },
-      { num: 9, date: "2027-02-20", label: "20-fevral" },
-      { num: 10, date: "2027-03-06", label: "06-mart" },
-      { num: 11, date: "2027-03-20", label: "20-mart" },
-      { num: 12, date: "2027-04-03", label: "03-aprel" }
-    ]
-  },
-  {
-    id: "aniq",
-    title: "Aniq fanlar",
-    category: "Aniq fanlar",
-    targetSubjects: ["Matematika", "Informatika"],
-    icon: "📐",
-    audience: "Matematika, Algebra, Geometriya, Informatika va axborot texnologiyalari o'qituvchilari",
-    description: "Matematika (1-11), Informatika va axborot texnologiyalari (5-11)",
-    allocatedHours: "3 soat",
-    dates: [
-      { num: 1, date: "2026-10-15", label: "15-oktabr" },
-      { num: 2, date: "2026-10-29", label: "29-oktabr" },
-      { num: 3, date: "2026-11-12", label: "12-noyabr" },
-      { num: 4, date: "2026-11-26", label: "26-noyabr" },
-      { num: 5, date: "2026-12-10", label: "10-dekabr" },
-      { num: 6, date: "2026-12-24", label: "24-dekabr" },
-      { num: 7, date: "2027-01-14", label: "14-yanvar" },
-      { num: 8, date: "2027-01-28", label: "28-yanvar" },
-      { num: 9, date: "2027-02-11", label: "11-fevral" },
-      { num: 10, date: "2027-02-25", label: "25-fevral" },
-      { num: 11, date: "2027-03-11", label: "11-mart" },
-      { num: 12, date: "2027-03-25", label: "25-mart" }
-    ]
-  },
-  {
-    id: "tabiiy",
-    title: "Tabiiy fanlar va iqtisodiyot",
-    category: "Tabiiy fanlar",
-    targetSubjects: ["Biologiya", "Kimyo", "Fizika", "Geografiya"],
-    icon: "🧬",
-    audience: "Biologiya, Kimyo, Fizika, Geografiya, Iqtisodiy bilim asoslari o'qituvchilari",
-    description: "Biologiya (5-11), Kimyo (7-11), Fizika va astronomiya (6-11), Geografiya (5-11)",
-    allocatedHours: "3 soat",
-    dates: [
-      { num: 1, date: "2026-10-14", label: "14-oktabr" },
-      { num: 2, date: "2026-10-28", label: "28-oktabr" },
-      { num: 3, date: "2026-11-11", label: "11-noyabr" },
-      { num: 4, date: "2026-11-25", label: "25-noyabr" },
-      { num: 5, date: "2026-12-09", label: "09-dekabr" },
-      { num: 6, date: "2026-12-23", label: "23-dekabr" },
-      { num: 7, date: "2027-01-06", label: "06-yanvar" },
-      { num: 8, date: "2027-01-20", label: "20-yanvar" },
-      { num: 9, date: "2027-02-03", label: "03-fevral" },
-      { num: 10, date: "2027-02-17", label: "17-fevral" },
-      { num: 11, date: "2027-03-03", label: "03-mart" },
-      { num: 12, date: "2027-03-17", label: "17-mart" }
+      { num: 1, krk: "05-oktabr", date: "2026-10-12", label: "12-oktabr" },
+      { num: 2, krk: "19-oktabr", date: "2026-10-26", label: "26-oktabr" },
+      { num: 3, krk: "02-noyabr", date: "2026-11-09", label: "09-noyabr" },
+      { num: 4, krk: "16-noyabr", date: "2026-11-23", label: "23-noyabr" }, // 23-noyabr faol!
+      { num: 5, krk: "30-noyabr", date: "2026-12-07", label: "07-dekabr" },
+      { num: 6, krk: "14-dekabr", date: "2026-12-21", label: "21-dekabr" },
+      { num: 7, krk: "28-dekabr", date: "2027-01-04", label: "04-yanvar" },
+      { num: 8, krk: "11-yanvar", date: "2027-01-18", label: "18-yanvar" },
+      { num: 9, krk: "25-yanvar", date: "2027-02-01", label: "01-fevral" },
+      { num: 10, krk: "08-fevral", date: "2027-02-15", label: "15-fevral" },
+      { num: 11, krk: "22-fevral", date: "2027-03-01", label: "01-mart" },
+      { num: 12, krk: "15-mart", date: "2027-03-29", label: "29-mart" }
     ]
   },
   {
@@ -87,43 +40,70 @@ const KRS_SCHEDULE = [
     audience: "Ona tili va adabiyot fani pedagoglari",
     description: "Ona tili (5-11), O'zbek adabiyoti (5-11)",
     allocatedHours: "3 soat",
+    weekday: "Seshanba",
     dates: [
-      { num: 1, date: "2026-10-13", label: "13-oktabr" },
-      { num: 2, date: "2026-10-27", label: "27-oktabr" },
-      { num: 3, date: "2026-11-10", label: "10-noyabr" },
-      { num: 4, date: "2026-11-24", label: "24-noyabr" },
-      { num: 5, date: "2026-12-15", label: "15-dekabr" },
-      { num: 6, date: "2026-12-29", label: "29-dekabr" },
-      { num: 7, date: "2027-01-12", label: "12-yanvar" },
-      { num: 8, date: "2027-01-26", label: "26-yanvar" },
-      { num: 9, date: "2027-02-09", label: "09-fevral" },
-      { num: 10, date: "2027-02-23", label: "23-fevral" },
-      { num: 11, date: "2027-03-09", label: "09-mart" },
-      { num: 12, date: "2027-03-23", label: "23-mart" }
+      { num: 1, krk: "06-oktabr", date: "2026-10-13", label: "13-oktabr" },
+      { num: 2, krk: "20-oktabr", date: "2026-10-27", label: "27-oktabr" },
+      { num: 3, krk: "03-noyabr", date: "2026-11-10", label: "10-noyabr" },
+      { num: 4, krk: "17-noyabr", date: "2026-11-24", label: "24-noyabr" },
+      { num: 5, krk: "01-dekabr", date: "2026-12-15", label: "15-dekabr" },
+      { num: 6, krk: "22-dekabr", date: "2026-12-29", label: "29-dekabr" },
+      { num: 7, krk: "05-yanvar", date: "2027-01-12", label: "12-yanvar" },
+      { num: 8, krk: "19-yanvar", date: "2027-01-26", label: "26-yanvar" },
+      { num: 9, krk: "02-fevral", date: "2027-02-09", label: "09-fevral" },
+      { num: 10, krk: "16-fevral", date: "2027-02-23", label: "23-fevral" },
+      { num: 11, krk: "02-mart", date: "2027-03-09", label: "09-mart" },
+      { num: 12, krk: "16-mart", date: "2027-03-23", label: "23-mart" }
     ]
   },
   {
-    id: "ijtimoiy",
-    title: "Ijtimoiy fanlar",
-    category: "Ijtimoiy fanlar",
-    targetSubjects: ["Tarix", "Huquq", "Tarbiya"],
-    icon: "📜",
-    audience: "O'zbekiston tarixi, Jahon tarixi, Davlat va huquq asoslari, Tarbiya fani pedagoglari",
-    description: "O'zbekiston tarixi (6-11), Jahon tarixi (7-11), Davlat va huquq asoslari (8-11), Tarbiya (1-11)",
+    id: "tabiiy",
+    title: "Tabiiy fanlar va iqtisodiyot",
+    category: "Tabiiy fanlar",
+    targetSubjects: ["Biologiya", "Kimyo", "Fizika", "Geografiya"],
+    icon: "🧬",
+    audience: "Biologiya, Kimyo, Fizika, Geografiya, Iqtisodiy bilim asoslari o'qituvchilari",
+    description: "Biologiya (5-11), Kimyo (7-11), Fizika va astronomiya (6-11), Geografiya (5-11)",
     allocatedHours: "3 soat",
+    weekday: "Chorshanba",
     dates: [
-      { num: 1, date: "2026-10-12", label: "12-oktabr" },
-      { num: 2, date: "2026-10-26", label: "26-oktabr" },
-      { num: 3, date: "2026-11-09", label: "09-noyabr" },
-      { num: 4, date: "2026-11-23", label: "23-noyabr" },
-      { num: 5, date: "2026-12-07", label: "07-dekabr" },
-      { num: 6, date: "2026-12-21", label: "21-dekabr" },
-      { num: 7, date: "2027-01-04", label: "04-yanvar" },
-      { num: 8, date: "2027-01-18", label: "18-yanvar" },
-      { num: 9, date: "2027-02-01", label: "01-fevral" },
-      { num: 10, date: "2027-02-15", label: "15-fevral" },
-      { num: 11, date: "2027-03-01", label: "01-mart" },
-      { num: 12, date: "2027-03-29", label: "29-mart" }
+      { num: 1, krk: "07-oktabr", date: "2026-10-14", label: "14-oktabr" },
+      { num: 2, krk: "21-oktabr", date: "2026-10-28", label: "28-oktabr" },
+      { num: 3, krk: "04-noyabr", date: "2026-11-11", label: "11-noyabr" },
+      { num: 4, krk: "18-noyabr", date: "2026-11-25", label: "25-noyabr" },
+      { num: 5, krk: "02-dekabr", date: "2026-12-09", label: "09-dekabr" },
+      { num: 6, krk: "16-dekabr", date: "2026-12-23", label: "23-dekabr" },
+      { num: 7, krk: "30-dekabr", date: "2027-01-06", label: "06-yanvar" },
+      { num: 8, krk: "13-yanvar", date: "2027-01-20", label: "20-yanvar" },
+      { num: 9, krk: "27-yanvar", date: "2027-02-03", label: "03-fevral" },
+      { num: 10, krk: "10-fevral", date: "2027-02-17", label: "17-fevral" },
+      { num: 11, krk: "24-fevral", date: "2027-03-03", label: "03-mart" },
+      { num: 12, krk: "10-mart", date: "2027-03-17", label: "17-mart" }
+    ]
+  },
+  {
+    id: "aniq",
+    title: "Aniq fanlar",
+    category: "Aniq fanlar",
+    targetSubjects: ["Matematika", "Informatika"],
+    icon: "📐",
+    audience: "Matematika, Algebra, Geometriya, Informatika va axborot texnologiyalari o'qituvchilari",
+    description: "Matematika (1-11), Informatika va axborot texnologiyalari (5-11)",
+    allocatedHours: "3 soat",
+    weekday: "Payshanba",
+    dates: [
+      { num: 1, krk: "08-oktabr", date: "2026-10-15", label: "15-oktabr" },
+      { num: 2, krk: "22-oktabr", date: "2026-10-29", label: "29-oktabr" },
+      { num: 3, krk: "05-noyabr", date: "2026-11-12", label: "12-noyabr" },
+      { num: 4, krk: "19-noyabr", date: "2026-11-26", label: "26-noyabr" },
+      { num: 5, krk: "03-dekabr", date: "2026-12-10", label: "10-dekabr" },
+      { num: 6, krk: "17-dekabr", date: "2026-12-24", label: "24-dekabr" },
+      { num: 7, krk: "07-yanvar", date: "2027-01-14", label: "14-yanvar" },
+      { num: 8, krk: "21-yanvar", date: "2027-01-28", label: "28-yanvar" },
+      { num: 9, krk: "04-fevral", date: "2027-02-11", label: "11-fevral" },
+      { num: 10, krk: "18-fevral", date: "2027-02-25", label: "25-fevral" },
+      { num: 11, krk: "04-mart", date: "2027-03-11", label: "11-mart" },
+      { num: 12, krk: "18-mart", date: "2027-03-25", label: "25-mart" }
     ]
   },
   {
@@ -135,67 +115,45 @@ const KRS_SCHEDULE = [
     audience: "Ingliz tili o'qituvchilari",
     description: "Ingliz tili (1-11-sinf darsliklari)",
     allocatedHours: "3 soat",
+    weekday: "Juma",
     dates: [
-      { num: 1, date: "2026-10-16", label: "16-oktabr" },
-      { num: 2, date: "2026-10-30", label: "30-oktabr" },
-      { num: 3, date: "2026-11-13", label: "13-noyabr" },
-      { num: 4, date: "2026-11-27", label: "27-noyabr" },
-      { num: 5, date: "2026-12-11", label: "11-dekabr" },
-      { num: 6, date: "2026-12-25", label: "25-dekabr" },
-      { num: 7, date: "2027-01-15", label: "15-yanvar" },
-      { num: 8, date: "2027-01-29", label: "29-yanvar" },
-      { num: 9, date: "2027-02-12", label: "12-fevral" },
-      { num: 10, date: "2027-02-26", label: "26-fevral" },
-      { num: 11, date: "2027-03-12", label: "12-mart" },
-      { num: 12, date: "2027-03-26", label: "26-mart" }
+      { num: 1, krk: "09-oktabr", date: "2026-10-16", label: "16-oktabr" },
+      { num: 2, krk: "23-oktabr", date: "2026-10-30", label: "30-oktabr" },
+      { num: 3, krk: "06-noyabr", date: "2026-11-13", label: "13-noyabr" },
+      { num: 4, krk: "20-noyabr", date: "2026-11-27", label: "27-noyabr" },
+      { num: 5, krk: "04-dekabr", date: "2026-12-11", label: "11-dekabr" },
+      { num: 6, krk: "18-dekabr", date: "2026-12-25", label: "25-dekabr" },
+      { num: 7, krk: "08-yanvar", date: "2027-01-15", label: "15-yanvar" },
+      { num: 8, krk: "22-yanvar", date: "2027-01-29", label: "29-yanvar" },
+      { num: 9, krk: "05-fevral", date: "2027-02-12", label: "12-fevral" },
+      { num: 10, krk: "19-fevral", date: "2027-02-26", label: "26-fevral" },
+      { num: 11, krk: "05-mart", date: "2027-03-12", label: "12-mart" },
+      { num: 12, krk: "19-mart", date: "2027-03-26", label: "26-mart" }
     ]
   },
   {
-    id: "filologiya-rus-tili",
-    title: "Filologiya fanlari (Rus tili)",
-    category: "Filologiya",
-    targetSubjects: ["Rus tili"],
-    icon: "🇷🇺",
-    audience: "Rus tili va adabiyoti o'qituvchilari",
-    description: "Rus tili (1-11-sinf darsliklari)",
+    id: "boshlangich",
+    title: "Boshlang'ich ta'lim",
+    category: "Boshlang'ich ta'lim",
+    targetSubjects: ["Boshlang'ich ta'lim"],
+    icon: "🎒",
+    audience: "1–4-sinf boshlang'ich sinf o'qituvchilari",
+    description: "Alifbe, Ona tili, O'qish savodxonligi, Matematika, Tabiiy fanlar (1-4 sinf)",
     allocatedHours: "3 soat",
+    weekday: "Shanba",
     dates: [
-      { num: 1, date: "2026-10-20", label: "20-oktabr" },
-      { num: 2, date: "2026-11-03", label: "03-noyabr" },
-      { num: 3, date: "2026-11-17", label: "17-noyabr" },
-      { num: 4, date: "2026-12-01", label: "01-dekabr" },
-      { num: 5, date: "2026-12-22", label: "22-dekabr" },
-      { num: 6, date: "2027-01-05", label: "05-yanvar" },
-      { num: 7, date: "2027-01-19", label: "19-yanvar" },
-      { num: 8, date: "2027-02-02", label: "02-fevral" },
-      { num: 9, date: "2027-02-16", label: "16-fevral" },
-      { num: 10, date: "2027-03-02", label: "02-mart" },
-      { num: 11, date: "2027-03-16", label: "16-mart" },
-      { num: 12, date: "2027-04-06", label: "06-aprel" }
-    ]
-  },
-  {
-    id: "amaliy-texnologiya",
-    title: "Amaliy fanlar (Texnologiya)",
-    category: "Amaliy fanlar",
-    targetSubjects: ["Texnologiya"],
-    icon: "🛠️",
-    audience: "Texnologiya (Mehnat ta'limi) fani pedagoglari",
-    description: "Texnologiya va amaliy mehnat (1-9 sinflar)",
-    allocatedHours: "3 soat",
-    dates: [
-      { num: 1, date: "2026-10-17", label: "17-oktabr" },
-      { num: 2, date: "2026-10-31", label: "31-oktabr" },
-      { num: 3, date: "2026-11-14", label: "14-noyabr" },
-      { num: 4, date: "2026-11-28", label: "28-noyabr" },
-      { num: 5, date: "2026-12-12", label: "12-dekabr" },
-      { num: 6, date: "2026-12-26", label: "26-dekabr" },
-      { num: 7, date: "2027-01-16", label: "16-yanvar" },
-      { num: 8, date: "2027-01-30", label: "30-yanvar" },
-      { num: 9, date: "2027-02-13", label: "13-fevral" },
-      { num: 10, date: "2027-02-27", label: "27-fevral" },
-      { num: 11, date: "2027-03-13", label: "13-mart" },
-      { num: 12, date: "2027-03-27", label: "27-mart" }
+      { num: 1, krk: "10-oktabr", date: "2026-10-17", label: "17-oktabr" },
+      { num: 2, krk: "24-oktabr", date: "2026-10-31", label: "31-oktabr" },
+      { num: 3, krk: "07-noyabr", date: "2026-11-14", label: "14-noyabr" },
+      { num: 4, krk: "21-noyabr", date: "2026-11-28", label: "28-noyabr" },
+      { num: 5, krk: "05-dekabr", date: "2026-12-12", label: "12-dekabr" },
+      { num: 6, krk: "19-dekabr", date: "2026-12-26", label: "26-dekabr" },
+      { num: 7, krk: "09-yanvar", date: "2027-01-16", label: "16-yanvar" },
+      { num: 8, krk: "23-yanvar", date: "2027-01-30", label: "30-yanvar" },
+      { num: 9, krk: "06-fevral", date: "2027-02-13", label: "13-fevral" },
+      { num: 10, krk: "20-fevral", date: "2027-02-27", label: "27-fevral" },
+      { num: 11, krk: "06-mart", date: "2027-03-13", label: "13-mart" },
+      { num: 12, krk: "20-mart", date: "2027-03-27", label: "27-mart" }
     ]
   },
   {
@@ -207,19 +165,70 @@ const KRS_SCHEDULE = [
     audience: "Tasviriy san'at va chizmachilik pedagoglari",
     description: "Tasviriy san'at (1-7), Chizmachilik (8-9)",
     allocatedHours: "3 soat",
+    weekday: "Shanba",
     dates: [
-      { num: 1, date: "2026-10-17", label: "17-oktabr" },
-      { num: 2, date: "2026-10-31", label: "31-oktabr" },
-      { num: 3, date: "2026-11-14", label: "14-noyabr" },
-      { num: 4, date: "2026-11-28", label: "28-noyabr" },
-      { num: 5, date: "2026-12-12", label: "12-dekabr" },
-      { num: 6, date: "2026-12-26", label: "26-dekabr" },
-      { num: 7, date: "2027-01-16", label: "16-yanvar" },
-      { num: 8, date: "2027-01-30", label: "30-yanvar" },
-      { num: 9, date: "2027-02-13", label: "13-fevral" },
-      { num: 10, date: "2027-02-27", label: "27-fevral" },
-      { num: 11, date: "2027-03-13", label: "13-mart" },
-      { num: 12, date: "2027-03-27", label: "27-mart" }
+      { num: 1, krk: "10-oktabr", date: "2026-10-17", label: "17-oktabr" },
+      { num: 2, krk: "24-oktabr", date: "2026-10-31", label: "31-oktabr" },
+      { num: 3, krk: "07-noyabr", date: "2026-11-14", label: "14-noyabr" },
+      { num: 4, krk: "21-noyabr", date: "2026-11-28", label: "28-noyabr" },
+      { num: 5, krk: "05-dekabr", date: "2026-12-12", label: "12-dekabr" },
+      { num: 6, krk: "19-dekabr", date: "2026-12-26", label: "26-dekabr" },
+      { num: 7, krk: "09-yanvar", date: "2027-01-16", label: "16-yanvar" },
+      { num: 8, krk: "23-yanvar", date: "2027-01-30", label: "30-yanvar" },
+      { num: 9, krk: "06-fevral", date: "2027-02-13", label: "13-fevral" },
+      { num: 10, krk: "20-fevral", date: "2027-02-27", label: "27-fevral" },
+      { num: 11, krk: "06-mart", date: "2027-03-13", label: "13-mart" },
+      { num: 12, krk: "20-mart", date: "2027-03-27", label: "27-mart" }
+    ]
+  },
+  {
+    id: "filologiya-rus-tili",
+    title: "Filologiya fanlari (Rus tili)",
+    category: "Filologiya",
+    targetSubjects: ["Rus tili"],
+    icon: "🇷🇺",
+    audience: "Rus tili va adabiyoti o'qituvchilari",
+    description: "Rus tili (1-11-sinf darsliklari)",
+    allocatedHours: "3 soat",
+    weekday: "Seshanba",
+    dates: [
+      { num: 1, krk: "13-oktabr", date: "2026-10-20", label: "20-oktabr" },
+      { num: 2, krk: "27-oktabr", date: "2026-11-03", label: "03-noyabr" },
+      { num: 3, krk: "10-noyabr", date: "2026-11-17", label: "17-noyabr" },
+      { num: 4, krk: "24-noyabr", date: "2026-12-01", label: "01-dekabr" },
+      { num: 5, krk: "15-dekabr", date: "2026-12-22", label: "22-dekabr" },
+      { num: 6, krk: "29-dekabr", date: "2027-01-05", label: "05-yanvar" },
+      { num: 7, krk: "12-yanvar", date: "2027-01-19", label: "19-yanvar" },
+      { num: 8, krk: "26-yanvar", date: "2027-02-02", label: "02-fevral" },
+      { num: 9, krk: "09-fevral", date: "2027-02-16", label: "16-fevral" },
+      { num: 10, krk: "23-fevral", date: "2027-03-02", label: "02-mart" },
+      { num: 11, krk: "09-mart", date: "2027-03-16", label: "16-mart" },
+      { num: 12, krk: "30-mart", date: "2027-04-06", label: "06-aprel" }
+    ]
+  },
+  {
+    id: "amaliy-texnologiya",
+    title: "Amaliy fanlar (Texnologiya)",
+    category: "Amaliy fanlar",
+    targetSubjects: ["Texnologiya"],
+    icon: "🛠️",
+    audience: "Texnologiya (Mehnat ta'limi) fani pedagoglari",
+    description: "Texnologiya va amaliy mehnat (1-9 sinflar)",
+    allocatedHours: "3 soat",
+    weekday: "Shanba",
+    dates: [
+      { num: 1, krk: "17-oktabr", date: "2026-10-24", label: "24-oktabr" },
+      { num: 2, krk: "31-oktabr", date: "2026-11-07", label: "07-noyabr" },
+      { num: 3, krk: "14-noyabr", date: "2026-11-21", label: "21-noyabr" },
+      { num: 4, krk: "28-noyabr", date: "2026-12-05", label: "05-dekabr" },
+      { num: 5, krk: "12-dekabr", date: "2026-12-19", label: "19-dekabr" },
+      { num: 6, krk: "26-dekabr", date: "2027-01-09", label: "09-yanvar" },
+      { num: 7, krk: "16-yanvar", date: "2027-01-23", label: "23-yanvar" },
+      { num: 8, krk: "30-yanvar", date: "2027-02-06", label: "06-fevral" },
+      { num: 9, krk: "13-fevral", date: "2027-02-20", label: "20-fevral" },
+      { num: 10, krk: "27-fevral", date: "2027-03-06", label: "06-mart" },
+      { num: 11, krk: "13-mart", date: "2027-03-20", label: "20-mart" },
+      { num: 12, krk: "27-mart", date: "2027-04-03", label: "03-aprel" }
     ]
   },
   {
@@ -231,19 +240,20 @@ const KRS_SCHEDULE = [
     audience: "Nemis va Fransuz tili o'qituvchilari (Onlayn shaklda)",
     description: "Nemis tili (1-11), Fransuz tili (1-11)",
     allocatedHours: "3 soat",
+    weekday: "Juma",
     dates: [
-      { num: 1, date: "2026-10-16", label: "16-oktabr" },
-      { num: 2, date: "2026-10-30", label: "30-oktabr" },
-      { num: 3, date: "2026-11-13", label: "13-noyabr" },
-      { num: 4, date: "2026-11-27", label: "27-noyabr" },
-      { num: 5, date: "2026-12-11", label: "11-dekabr" },
-      { num: 6, date: "2026-12-25", label: "25-dekabr" },
-      { num: 7, date: "2027-01-15", label: "15-yanvar" },
-      { num: 8, date: "2027-01-29", label: "29-yanvar" },
-      { num: 9, date: "2027-02-12", label: "12-fevral" },
-      { num: 10, date: "2027-02-26", label: "26-fevral" },
-      { num: 11, date: "2027-03-12", label: "12-mart" },
-      { num: 12, date: "2027-03-26", label: "26-mart" }
+      { num: 1, krk: "09-oktabr", date: "2026-10-16", label: "16-oktabr" },
+      { num: 2, krk: "23-oktabr", date: "2026-10-30", label: "30-oktabr" },
+      { num: 3, krk: "06-noyabr", date: "2026-11-13", label: "13-noyabr" },
+      { num: 4, krk: "20-noyabr", date: "2026-11-27", label: "27-noyabr" },
+      { num: 5, krk: "04-dekabr", date: "2026-12-11", label: "11-dekabr" },
+      { num: 6, krk: "18-dekabr", date: "2026-12-25", label: "25-dekabr" },
+      { num: 7, krk: "08-yanvar", date: "2027-01-15", label: "15-yanvar" },
+      { num: 8, krk: "22-yanvar", date: "2027-01-29", label: "29-yanvar" },
+      { num: 9, krk: "05-fevral", date: "2027-02-12", label: "12-fevral" },
+      { num: 10, krk: "19-fevral", date: "2027-02-26", label: "26-fevral" },
+      { num: 11, krk: "05-mart", date: "2027-03-12", label: "12-mart" },
+      { num: 12, krk: "19-mart", date: "2027-03-26", label: "26-mart" }
     ]
   }
 ];
@@ -307,7 +317,6 @@ function renderKrsScheduleUI(activeFilter = 'all') {
   if (!container) return;
 
   const todayStr = getTashkentDateString();
-  const todaySubjects = getTodayKrsSubjects(todayStr);
 
   // Filterlash
   let list = KRS_SCHEDULE;
@@ -356,7 +365,7 @@ function renderKrsScheduleUI(activeFilter = 'all') {
       }
 
       return `
-        <div class="${pillClass}" title="${d.num}-mashg'ulot: ${d.label} (3 soat)">
+        <div class="${pillClass}" title="${d.num}-mashg'ulot | KRK: ${d.krk || '-'} | KRS: ${d.label} (3 soat)">
           <span class="pill-num">${d.num}</span>
           <span class="pill-date">${d.label}</span>
           ${badgeTag}
@@ -377,7 +386,7 @@ function renderKrsScheduleUI(activeFilter = 'all') {
       headerBadge = `
         <div class="krs-status-tag tag-next">
           <span>⏳</span>
-          <b>Navbat: ${status.nextSession.label}</b> (${status.daysUntilNext} kundan so'ng)
+          <b>Navbat: ${status.nextSession.label} (${status.nextSession.num}-mashg'ulot)</b> — ${status.daysUntilNext} kun qoldi
         </div>
       `;
     } else {
@@ -399,25 +408,25 @@ function renderKrsScheduleUI(activeFilter = 'all') {
             <div class="krs-card-icon">${item.icon}</div>
             <div>
               <h3 class="krs-card-title">${item.title}</h3>
-              <p class="krs-card-audience">${item.audience}</p>
+              <div class="krs-card-meta">
+                <span>🏛 <b>${item.category}</b></span>
+                <span>•</span>
+                <span>🗓 Har <b>${item.weekday}</b></span>
+                <span>•</span>
+                <span>⏱ <b>${item.allocatedHours}</b></span>
+              </div>
             </div>
           </div>
           ${headerBadge}
         </div>
 
-        <div class="krs-progress-wrap">
-          <div class="krs-progress-meta">
-            <span>Dastur rejasi: <b>${status.pastCount + (status.isToday ? 1 : 0)} / ${status.totalSessions} mashg'ulot</b></span>
-            <span>Vaqt: <b>${item.allocatedHours}</b></span>
-          </div>
-          <div class="krs-progress-bar">
-            <div class="krs-progress-fill" style="width: ${Math.round(((status.pastCount + (status.isToday ? 1 : 0)) / status.totalSessions) * 100)}%;"></div>
-          </div>
-        </div>
+        <p class="krs-card-audience">👥 <b>Ishtirokchilar:</b> ${item.audience}</p>
+        <p class="krs-card-desc">📖 <b>Qamrab olingan fanlar:</b> ${item.description}</p>
 
-        <div class="krs-card-body">
-          <div class="krs-schedule-label">
-            <span>📅 12 ta mashg'ulot o'tkazilish jadvali (KRS soatlari):</span>
+        <div class="krs-pills-wrap">
+          <div class="krs-pills-label">
+            <span>📅 12 ta Mashg'ulot grafigi (15-ilova):</span>
+            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 500;">O'tilgan: <b>${status.pastCount}/12</b></span>
           </div>
           <div class="krs-pills-grid">
             ${pillsHtml}
@@ -425,8 +434,16 @@ function renderKrsScheduleUI(activeFilter = 'all') {
         </div>
 
         <div class="krs-card-footer">
-          <button type="button" class="btn btn-sm ${isTodayCard ? 'btn-primary' : 'btn-outline'}" onclick="selectKrsSubject('${item.targetSubjects[0]}')">
-            ${isTodayCard ? '🔥 Bugungi testni topshirish' : '✍️ Shu fandan test ishlash'}
+          <div class="krs-card-footer-info">
+            ${status.todaySession ? 
+              `<span>🔥 Bugun <b>${status.todaySession.num}-mashg'ulot (${status.todaySession.label})</b> o'tkazilmoqda!</span>` : 
+              status.nextSession ? 
+              `<span>📌 Navbatdagi KRS: <b>${status.nextSession.num}-mashg'ulot (${status.nextSession.label})</b></span>` : 
+              `<span>Mavsum yakunlangan</span>`
+            }
+          </div>
+          <button type="button" class="btn btn-primary btn-sm" onclick="selectKrsSubject('${item.targetSubjects[0]}')">
+            ⚡️ Test topshirish &rarr;
           </button>
         </div>
       </div>
@@ -434,7 +451,7 @@ function renderKrsScheduleUI(activeFilter = 'all') {
   }).join('');
 }
 
-// Bosh sahifadagi Top-Banner (Hero banner)
+// Bosh sahifadagi Top-Hero Banner
 function renderTopHeroKrsAlert() {
   const bannerContainer = document.getElementById('topKrsAlertBanner');
   if (!bannerContainer) return;
@@ -453,8 +470,8 @@ function renderTopHeroKrsAlert() {
             <b>BUGUN KRS KUNI!</b>
           </div>
           <div class="krs-live-alert-text">
-            <h4>${s.icon} ${s.title} — ${status.todaySession ? status.todaySession.num : 1}-mashg'ulot (${status.todaySession ? status.todaySession.label : todayStr})</h4>
-            <p>Bugun ushbu fan o'qituvchilari uchun Kasbiy Rivojlanish Soati bo'lib o'tmoqda. Darsliklar asosidagi testni topshirib, haftalik tuman reytingida yetakchilik qiling!</p>
+            <h4>${s.icon} ${s.title} — ${status.todaySession ? status.todaySession.num : 4}-mashg'ulot (${status.todaySession ? status.todaySession.label : todayStr})</h4>
+            <p>Bugun ushbu fan o'qituvchilari uchun Kasbiy Rivojlanish Soati bo'lib o'tmoqda. 15-ilovaga muvofiq testni topshirib, reytingda yetakchilik qiling!</p>
           </div>
         </div>
         <div class="krs-live-alert-right">
@@ -502,7 +519,7 @@ function checkSubjectKrsNotice(subjectName) {
       <div class="notice-icon">🔥</div>
       <div>
         <b>DIQQAT: Bugun ${matchedItem.title} bo'yicha KRS KUNI! (${status.todaySession.num}-mashg'ulot)</b>
-        <p>Siz topshirgan test natijasi ushbu kunning tuman reytingiga to'g'ridan-to'g'ri kiritiladi.</p>
+        <p>Siz topshirgan test natijasi ushbu kunning tuman monitoringiga to'g'ridan-to'g'ri kiritiladi.</p>
       </div>
     `;
     noticeEl.style.display = 'flex';
@@ -512,7 +529,7 @@ function checkSubjectKrsNotice(subjectName) {
       <div class="notice-icon">📅</div>
       <div style="flex: 1; min-width: 0;">
         <b>Navbatdagi KRS: ${status.nextSession.label} (${status.nextSession.num}-mashg'ulot)</b>
-        <p>Tadbirga qadar <b>${status.daysUntilNext} kun</b> qoldi. 1-mashg'ulot testlari faol va ochiq.</p>
+        <p>Tadbirga qadar <b>${status.daysUntilNext} kun</b> qoldi. 4-mashg'ulot rasmiy testlari faol va ochiq.</p>
       </div>
     `;
     noticeEl.style.display = 'flex';
