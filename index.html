@@ -731,6 +731,11 @@
         </div>
       </div>
 
+      <!-- Mobile Scroll Hint (Faqat telefonlarda ko'rinadi) -->
+      <div class="mobile-scroll-hint no-print">
+        📱 <b>Mobil ko'rinish:</b> 55 ta maktab jadvalini to'liq ko'rish uchun barmog'ingiz bilan chapga-o'ngga surishingiz mumkin 👉
+      </div>
+
       <!-- A4 DOCUMENT CONTAINER (RASMGA OLINADIGAN VA EKSPORT BO'LADIGAN BLANK) -->
       <div class="davomat-a4-wrapper">
         <div id="davomatA4Sheet" class="davomat-a4-sheet">
@@ -826,6 +831,16 @@
           </div>
 
         </div>
+      </div>
+
+      <!-- Mobil Qurilmalar uchun Tezkor Tugmalar (Pastda doimiy ko'rinib turadi) -->
+      <div class="davomat-mobile-sticky-bar no-print">
+        <button type="button" class="btn btn-davomat-jpg btn-mobile-full" onclick="downloadDavomatA4Jpg()">
+          📸 Rasm (JPG) yuklab olish
+        </button>
+        <button type="button" class="btn btn-outline-davomat btn-mobile-copy" onclick="copyDavomatTelegramText()">
+          📋 Telegram
+        </button>
       </div>
     </section>
 
@@ -1009,6 +1024,45 @@
       <div class="modal-actions" style="margin-top: 1.5rem;">
         <button type="button" class="btn btn-secondary" id="resumeCancelBtn">Yangi boshlash (Bekor qilish)</button>
         <button type="button" class="btn btn-primary" id="resumeConfirmBtn">Ha, davom ettirish ➡</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAVOMAT MOBILE JPG PREVIEW & SHARE MODAL -->
+  <div class="modal-overlay" id="davomatMobileModal">
+    <div class="modal-content" style="border-top: 6px solid #059669; max-width: 600px; width: 95%;">
+      <div style="font-size: 2.2rem; margin-bottom: 0.25rem;">📸</div>
+      <h3 style="font-size: 1.25rem; font-weight: 800; color: #047857; margin-bottom: 0.4rem;">
+        KRS Davomat Rasmi (JPG) Tayyor!
+      </h3>
+      <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1rem;">
+        Hisobot A4 formatda yuqori aniqlikda (Retina 2x) shakllantirildi.
+      </p>
+
+      <!-- Quick Action Buttons on Phone -->
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; justify-content: center;">
+        <button type="button" class="btn btn-primary" id="mobileDirectDownloadBtn" style="flex: 1; min-width: 140px; background: #059669; font-weight: 700;">
+          📥 Yuklab olish
+        </button>
+        <button type="button" class="btn btn-secondary" id="mobileShareTelegramBtn" style="flex: 1; min-width: 140px; font-weight: 700;">
+          ✈️ Telegramga yuborish
+        </button>
+      </div>
+
+      <!-- Mobile Hint -->
+      <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 0.65rem 0.85rem; font-size: 0.82rem; color: #166534; text-align: left; margin-bottom: 1rem; line-height: 1.45;">
+        💡 <b>Telefonda saqlash usuli:</b> Agar telefoningizda fayl avtomatik yuklanmasa, quyidagi rasm ustiga barmog'ingiz bilan <b>2 soniya bosib turing</b> va chiqqan menyudan <b>"Rasmni saqlash" (Сохранить изображение)</b> yoki <b>"Ulashish" (Поделиться)</b> ni tanlang.
+      </div>
+
+      <!-- Preview Image Container with Touch Zoom / Long Press -->
+      <div style="max-height: 50vh; overflow-y: auto; border: 1.5px solid #cbd5e1; border-radius: 8px; background: #f8fafc; padding: 0.35rem; margin-bottom: 1rem; -webkit-overflow-scrolling: touch;">
+        <img id="davomatMobilePreviewImg" src="" alt="KRS Davomat Rasmi" style="width: 100%; height: auto; display: block; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+      </div>
+
+      <div class="modal-actions" style="margin-top: 0.5rem;">
+        <button type="button" class="btn btn-secondary btn-block" onclick="closeDavomatMobileModal()">
+          ❌ Yopish
+        </button>
       </div>
     </div>
   </div>

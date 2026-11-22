@@ -2692,8 +2692,8 @@ function renderDavomatReport() {
   });
 }
 
-// 8. Download A4 Document as High Resolution JPG
-function downloadDavomatA4Jpg() {
+// 8. Download A4 Document as High Resolution JPG (Mobil va Kompyuter uchun to'liq moslashtirilgan)
+async function downloadDavomatA4Jpg() {
   const sheet = document.getElementById('davomatA4Sheet');
   if (!sheet) {
     showToast("A4 hisobot konteyneri topilmadi", "⚠️");
@@ -2706,33 +2706,151 @@ function downloadDavomatA4Jpg() {
     return;
   }
 
-  showToast("📸 A4 formatda yuqori sifatli JPG rasm shakllantirilmoqda...", "⏳");
+  showToast("📸 A4 JPG rasm tayyorlanmoqda, kuting...", "⏳");
 
-  html2canvas(sheet, {
-    scale: 2, // 2x Retina resolution for razor-sharp Telegram viewing
+  // Telefondagi tor ekran va gorizontal scroll ta'sirini butunlay yo'qotish uchun
+  // Elementni maxsus 960px kenglikdagi toza klon shaklida olamiz:
+  const clone = sheet.cloneNode(true);
+  clone.id = 'davomatA4SheetClone';
+  clone.style.width = '960px';
+  clone.style.minWidth = '960px';
+  clone.style.maxWidth = '960px';
+  clone.style.position = 'fixed';
+  clone.style.left = '-9999px';
+  clone.style.top = '0px';
+  clone.style.zIndex = '-9999';
+  clone.style.transform = 'none';
+  clone.style.boxShadow = 'none';
+  clone.style.margin = '0';
+  clone.style.padding = '36px 40px';
+  clone.style.boxSizing = 'border-box';
+  clone.style.background = '#ffffff';
+  clone.style.overflow = 'visible';
+  document.body.appendChild(clone);
+
+  // Layout hisoblanishi uchun 150ms kutamiz
+  await new Promise(r => setTimeout(r, 150));
+
+  html2canvas(clone, {
+    scale: 2, // 2x Retina resolution for razor-sharp text on Telegram!
     useCORS: true,
     backgroundColor: '#ffffff',
     logging: false,
-    windowWidth: 1200
+    width: 960,
+    windowWidth: 1024,
+    scrollX: 0,
+    scrollY: 0
   }).then(canvas => {
-    const imgData = canvas.toDataURL('image/jpeg', 0.95);
+    // Klonni xotiradan tozalaymiz
+    if (document.body.contains(clone)) {
+      document.body.removeChild(clone);
+    }
+
     const d = new Date();
     const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
     const sessionVal = document.getElementById('davomatSessionSelect')?.value || '4';
     const subVal = (document.getElementById('davomatSubjectSelect')?.value || 'Ijtimoiy_fanlar').replace(/[^a-zA-Z0-9]/g, '_');
     const filename = `KRS_Davomat_${sessionVal}-mashgulot_${subVal}_${dateStr}.jpg`;
 
-    const link = document.createElement('a');
-    link.download = filename;
-    link.href = imgData;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    showToast(`📸 A4 Rasm yuklab olindi: ${filename}`, "✅");
+    // Toza Blob obyektiga o'tkazish (Android / iOS / Safari xotira muammolarisiz)
+    canvas.toBlob(blob => {
+      if (!blob) {
+        showToast("Rasm yaratilmadi, qayta urinib ko'ring", "⚠️");
+        return;
+      }
+
+      const blobUrl = URL.createObjectURL(blob);
+
+      // 1. Avtomatik yuklab olishga urinish
+      try {
+        const link = document.createElement('a');
+        link.download = filename;
+        link.href = blobUrl;
+        document.body.appendChild(link);
+        link.click();
+        setTimeout(() => {
+          if (document.body.contains(link)) document.body.removeChild(link);
+        }, 800);
+      } catch (e) {
+        console.warn("Avtomatik yuklashda xatolik:", e);
+      }
+
+      // 2. Har doim telefonda qulay saqlash va Telegramga to'g'ridan-to'g'ri yuborish modalini ochish
+      showMobileDavomatModal(blobUrl, blob, filename);
+      showToast(`📸 A4 Rasm tayyor bo'ldi!`, "✅");
+    }, 'image/jpeg', 0.95);
+
   }).catch(err => {
+    if (document.body.contains(clone)) {
+      document.body.removeChild(clone);
+    }
     console.error("html2canvas xatosi:", err);
-    alert("Rasmni yaratishda xatolik yuz berdi. Iltimos, qayta urinib ko'ring yoki brauzerda 'Chop etish' orqali saqlang.");
+    alert("Rasmni yaratishda xatolik yuz berdi. Iltimos qayta urinib ko'ring yoki brauzerda 'Chop etish' orqali saqlang.");
   });
+}
+
+// Mobile Modal Boshqaruvi
+let currentDavomatBlob = null;
+let currentDavomatFilename = '';
+let currentDavomatBlobUrl = '';
+
+function showMobileDavomatModal(blobUrl, blob, filename) {
+  currentDavomatBlob = blob;
+  currentDavomatFilename = filename;
+  currentDavomatBlobUrl = blobUrl;
+
+  const previewImg = document.getElementById('davomatMobilePreviewImg');
+  if (previewImg) previewImg.src = blobUrl;
+
+  const downloadBtn = document.getElementById('mobileDirectDownloadBtn');
+  if (downloadBtn) {
+    downloadBtn.onclick = () => {
+      const link = document.createElement('a');
+      link.download = filename;
+      link.href = blobUrl;
+      document.body.appendChild(link);
+      link.click();
+      setTimeout(() => {
+        if (document.body.contains(link)) document.body.removeChild(link);
+      }, 800);
+      showToast("Fayl telefoningizga yuklanmoqda...", "📥");
+    };
+  }
+
+  const shareBtn = document.getElementById('mobileShareTelegramBtn');
+  if (shareBtn) {
+    shareBtn.onclick = async () => {
+      if (navigator.share && navigator.canShare) {
+        try {
+          const file = new File([blob], filename, { type: 'image/jpeg' });
+          if (navigator.canShare({ files: [file] })) {
+            await navigator.share({
+              title: "KRS Test Davomati",
+              text: document.getElementById('a4DocSubjectTitle')?.textContent || "Kasbiy rivojlanish soati davomati",
+              files: [file]
+            });
+            showToast("Telegramga muvaffaqiyatli ulashildi!", "✅");
+            return;
+          }
+        } catch (err) {
+          if (err.name !== 'AbortError') {
+            console.warn("Share API xatosi:", err);
+          }
+        }
+      }
+      // Agar brauzerda faylni ulashish qo'llab-quvvatlanmasa:
+      copyDavomatTelegramText();
+      showToast("Telegram uchun tahliliy matn nusxalandi! Rasmni esa pastdan saqlab oling.", "📋");
+    };
+  }
+
+  const modal = document.getElementById('davomatMobileModal');
+  if (modal) modal.classList.add('open');
+}
+
+function closeDavomatMobileModal() {
+  const modal = document.getElementById('davomatMobileModal');
+  if (modal) modal.classList.remove('open');
 }
 
 // 9. Copy Formatted Telegram Text for Directors Group
