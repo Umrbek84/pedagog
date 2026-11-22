@@ -220,20 +220,15 @@ async function calculateDailyPin(dateStr) {
 // ==========================================
 // INITIALIZATION
 // ==========================================
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', () => {
   setupAntiCheatListeners();
-  await loadTeachersDatabase();
-  await loadQuestionsDatabase();
   setupSchoolSubjectTeacherFlow();
-  await fetchLiveControlConfig();
-  await loadLeaderboardFromSheet();
+  setupPinToggleVisibility();
 
-  setInterval(fetchLiveControlConfig, 30000);
-  setInterval(loadLeaderboardFromSheet, 60000);
-
+  // Barcha tugmalarni DARHOL va sinxron ulaymiz (hech qanday tarmoq kechikishiga bog'lanmasdan!):
   const startBtn = document.getElementById('startTestBtn');
   if (startBtn) {
-    startBtn.addEventListener('click', handleValidateAndOpenPinModal);
+    startBtn.onclick = handleValidateAndOpenPinModal;
   }
   
   document.getElementById('pinCancelBtn')?.addEventListener('click', closePinModal);
@@ -241,7 +236,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('pinInput')?.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') handlePinSubmit();
   });
-  setupPinToggleVisibility();
 
   document.getElementById('acModalAcknowledgeBtn')?.addEventListener('click', () => {
     document.getElementById('antiCheatModal').classList.remove('open');
@@ -258,6 +252,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     closeFinishModal();
     finishExam();
   });
+  document.getElementById('restartBtn')?.addEventListener('click', handleRestart);
+
+  // Orqa fonda ma'lumotlarni yuklash (UI ni aslo qotirmaydi):
+  loadTeachersDatabase();
+  loadQuestionsDatabase();
+  fetchLiveControlConfig();
+  loadLeaderboardFromSheet();
+
+  setInterval(fetchLiveControlConfig, 30000);
+  setInterval(loadLeaderboardFromSheet, 60000);
   document.getElementById('restartBtn')?.addEventListener('click', handleRestart);
 
   checkInterruptedSession();
@@ -840,7 +844,9 @@ function discardSavedSession() {
 // ==========================================
 // VALIDATION & LIVE PIN VERIFICATION
 // ==========================================
-async function handleValidateAndOpenPinModal() {
+async function handleValidateAndOpenPinModal(e) {
+  if (e && e.preventDefault) e.preventDefault();
+
   const schoolSelect = document.getElementById('schoolSelect');
   const teacherSelect = document.getElementById('teacherSelect');
   const customSchoolInput = document.getElementById('customSchoolInput');
@@ -848,26 +854,26 @@ async function handleValidateAndOpenPinModal() {
   const subjectSelect = document.getElementById('subjectSelect');
   const startBtn = document.getElementById('startTestBtn');
 
-  let school = schoolSelect.value;
-  if (school === 'CUSTOM_SCHOOL') school = customSchoolInput.value.trim();
+  let school = schoolSelect ? schoolSelect.value : '';
+  if (school === 'CUSTOM_SCHOOL') school = customSchoolInput ? customSchoolInput.value.trim() : '';
   if (!school) {
     alert("Iltimos, ta'lim muassasasi (maktab)ni tanlang yoki nomini kiriting!");
-    schoolSelect.focus();
+    schoolSelect?.focus();
     return;
   }
 
-  const subject = subjectSelect.value;
+  const subject = subjectSelect ? subjectSelect.value : '';
   if (!subject) {
     alert("Iltimos, KRS dars beradigan faningizni tanlang!");
-    subjectSelect.focus();
+    subjectSelect?.focus();
     return;
   }
 
-  let name = teacherSelect.value;
-  if (name === 'CUSTOM_TEACHER') name = customTeacherInput.value.trim();
+  let name = teacherSelect ? teacherSelect.value : '';
+  if (name === 'CUSTOM_TEACHER') name = customTeacherInput ? customTeacherInput.value.trim() : '';
   if (!name) {
     alert("Iltimos, o'qituvchi F.I.Sh. (Familiya Ism Sharif)ingizni tanlang yoki kiriting!");
-    teacherSelect.focus();
+    teacherSelect?.focus();
     return;
   }
 
@@ -883,14 +889,14 @@ async function handleValidateAndOpenPinModal() {
       await loadQuestionsDatabase();
     }
 
-    // CHECK IF TEACHER IS BLOCKED AND NEEDS ADMIN PERMISSION
+    // CHECK IF TEACHER IS BLOCKED (Fast check)
     const blockCheck = await checkTeacherBlockedPermission(name);
     if (blockCheck.isBlocked && !blockCheck.allowed) {
       const textEl = document.getElementById('teacherBlockedText');
       if (textEl) {
         textEl.innerHTML = `
           Hurmatli <b>${name}</b>!<br>
-          Siz avval test topshirish jarayonida 4 marta qoidabuzarlik qilganingiz sababli tizim tomonidan chetlatilgansiz.<br>
+          Siz avval ushbu qurilmada test topshirish jarayonida 4 marta qoidabuzarlik qilganingiz sababli tizim tomonidan chetlatilgansiz.<br>
           <b>Sabab:</b> ${blockCheck.reason}<br>
           Qayta test topshirishingiz uchun bosh mutaxassis Umrbek Mamatov tomonidan ruxsat berilishi kerak.
         `;
@@ -918,6 +924,9 @@ async function handleValidateAndOpenPinModal() {
     }
 
     openPinModal();
+  } catch (err) {
+    console.error("Testni boshlash tekshiruvida xatolik:", err);
+    openPinModal(); // Xato bo'lsa ham foydalanuvchini to'xtatmaymiz!
   } finally {
     if (startBtn) {
       startBtn.disabled = false;
@@ -925,6 +934,7 @@ async function handleValidateAndOpenPinModal() {
     }
   }
 }
+window.handleValidateAndOpenPinModal = handleValidateAndOpenPinModal;
 
 // ==========================================
 // TELEGRAM MONKEY MASCOT & PIN VISIBILITY
