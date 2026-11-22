@@ -513,12 +513,103 @@ async function loadQuestionsDatabase() {
   }
 }
 
+
+// ==========================================
+// UNIVERSAL CENTERED APP DIALOGS (REPLACING NATIVE BROWSER ALERT & CONFIRM)
+// ==========================================
+let appDialogCallback = null;
+
+function showAppAlert(message, title = "Diqqat!", icon = "⚠️") {
+  const modal = document.getElementById('appDialogModal');
+  if (!modal) {
+    console.warn("Alert:", message);
+    return;
+  }
+  const iconEl = document.getElementById('appDialogIcon');
+  const titleEl = document.getElementById('appDialogTitle');
+  const msgEl = document.getElementById('appDialogMessage');
+  const cancelBtn = document.getElementById('appDialogCancelBtn');
+  const okBtn = document.getElementById('appDialogOkBtn');
+
+  if (iconEl) iconEl.textContent = icon;
+  if (titleEl) titleEl.textContent = title;
+  if (msgEl) msgEl.innerHTML = (message || '').replace(/\n/g, '<br>');
+  if (cancelBtn) cancelBtn.style.display = 'none';
+
+  if (okBtn) {
+    okBtn.textContent = "Tushundim";
+    okBtn.className = "btn btn-primary";
+  }
+  appDialogCallback = null;
+  modal.classList.add('open');
+}
+window.showAppAlert = showAppAlert;
+window.alert = function(msg) {
+  showAppAlert(msg);
+};
+
+function showAppConfirm(message, onConfirm, title = "Tasdiqlang", icon = "⚠️", confirmText = "Ha, tasdiqlayman", confirmClass = "btn btn-danger") {
+  const modal = document.getElementById('appDialogModal');
+  if (!modal) {
+    if (confirm(message)) onConfirm();
+    return;
+  }
+  const iconEl = document.getElementById('appDialogIcon');
+  const titleEl = document.getElementById('appDialogTitle');
+  const msgEl = document.getElementById('appDialogMessage');
+  const cancelBtn = document.getElementById('appDialogCancelBtn');
+  const okBtn = document.getElementById('appDialogOkBtn');
+
+  if (iconEl) iconEl.textContent = icon;
+  if (titleEl) titleEl.textContent = title;
+  if (msgEl) msgEl.innerHTML = (message || '').replace(/\n/g, '<br>');
+
+  if (cancelBtn) {
+    cancelBtn.style.display = 'inline-block';
+    cancelBtn.textContent = "Bekor qilish";
+  }
+
+  if (okBtn) {
+    okBtn.textContent = confirmText;
+    okBtn.className = confirmClass;
+  }
+  appDialogCallback = onConfirm;
+  modal.classList.add('open');
+}
+window.showAppConfirm = showAppConfirm;
+
+function handleAppDialogOk() {
+  const modal = document.getElementById('appDialogModal');
+  if (modal) modal.classList.remove('open');
+  if (typeof appDialogCallback === 'function') {
+    const cb = appDialogCallback;
+    appDialogCallback = null;
+    cb();
+  }
+}
+window.handleAppDialogOk = handleAppDialogOk;
+
+function handleAppDialogCancel() {
+  const modal = document.getElementById('appDialogModal');
+  if (modal) modal.classList.remove('open');
+  appDialogCallback = null;
+}
+window.handleAppDialogCancel = handleAppDialogCancel;
+
 // ==========================================
 // SMART ANTI-CHEAT & PHONE CALL IMMUNITY
 // ==========================================
+function closeAntiCheatModal() {
+  const modal = document.getElementById('antiCheatModal');
+  if (modal) modal.classList.remove('open');
+  state.awayStartTime = 0;
+}
+window.closeAntiCheatModal = closeAntiCheatModal;
+
 function setupAntiCheatListeners() {
   const triggerViolation = (awayMs) => {
     if (!state.isExamActive || state.isBlocked) return;
+    if (document.getElementById('antiCheatModal')?.classList.contains('open')) return;
 
     state.tabSwitchCount++;
     saveActiveSession();
@@ -557,38 +648,28 @@ function setupAntiCheatListeners() {
     }
   };
 
-  // Visibility Change with 7-second Phone Call & Notification Immunity
+  // Only track genuine tab hidden / minimize with 10-second immunity
   document.addEventListener('visibilitychange', () => {
     if (!state.isExamActive || state.isBlocked) return;
+    if (document.getElementById('antiCheatModal')?.classList.contains('open')) return;
 
     if (document.hidden) {
-      // User minimized/left page or received a full-screen phone call
       state.awayStartTime = Date.now();
     } else {
-      // User returned back to the test page
       if (state.awayStartTime > 0) {
         const awayMs = Date.now() - state.awayStartTime;
         state.awayStartTime = 0;
 
-        // SMART PHONE CALL IMMUNITY: If away for less than 7 seconds, it was an incoming call / notification dismiss!
-        if (awayMs < 7000) {
-          showToast(`Qisqa uzilish (${Math.max(1, Math.round(awayMs/1000))} soniya) aniqlandi. Test davom etmoqda.`, "📞");
-          return; // Immunity granted, no violation strike!
+        // 10 soniyadan kam bo'lsa (tasodifiy bosilish, bildirishnoma), jarima belgilanmaydi
+        if (awayMs < 10000) {
+          showToast(`Qisqa uzilish (${Math.max(1, Math.round(awayMs/1000))} soniya). Test davom etmoqda.`, "📞");
+          return;
         }
 
-        // If away for 7 seconds or more (switched app, searching, etc.)
         triggerViolation(awayMs);
       }
     }
   });
-
-  // Desktop only: window blur (Bypassed on mobile phones to prevent false alarms on calls/notifications)
-  if (!state.isMobileDevice) {
-    window.addEventListener('blur', () => {
-      if (!state.isExamActive || state.isBlocked) return;
-      triggerViolation(5000);
-    });
-  }
 }
 
 function updateAntiCheatIndicator() {
@@ -1261,6 +1342,15 @@ function navigateQuestion(delta) {
     openFinishModal();
   }
 }
+window.navigateQuestion = navigateQuestion;
+
+function confirmAndFinishExam() {
+  closeFinishModal();
+  finishExam();
+}
+window.confirmAndFinishExam = confirmAndFinishExam;
+window.openFinishModal = openFinishModal;
+window.closeFinishModal = closeFinishModal;
 
 function startTimer() {
   clearInterval(state.timerInterval);
@@ -1525,10 +1615,17 @@ function renderReviewList() {
 }
 
 function handleRestart() {
-  if (confirm("Yangi test boshlaysizmi?")) {
-    clearSavedSession();
-    switchView('setup');
-  }
+  showAppConfirm(
+    "Yangi test boshlashni xohlaysizmi?<br>Joriy javoblar va seans yangilanadi.",
+    () => {
+      clearSavedSession();
+      switchView('setup');
+    },
+    "Qayta boshlash",
+    "🔄",
+    "Ha, yangilash",
+    "btn btn-primary"
+  );
 }
 
 function shuffleArray(array) {
@@ -3057,34 +3154,34 @@ document.addEventListener('keydown', (e) => {
 // 10. ADMIN RESET TESTING DATA (SINOV NATIJALARINI TOZALASH)
 // ==========================================
 function resetTestingData() {
-  const confirmed = confirm(
-    "⚠️ DIQQAT!\n\n" +
-    "Barcha sinov test topshirish natijalari, saqlangan seanslar va bloklangan pedagoglar ro'yxati tozalansinmi?\n\n" +
-    "Bu amal orqali test maydoni ertangi rasmiy kunga to'liq 100% toza holatga keltiriladi."
+  showAppConfirm(
+    "<b>⚠️ DIQQAT!</b><br><br>" +
+    "Barcha sinov test topshirish natijalari, saqlangan seanslar va bloklangan pedagoglar ro'yxati tozalansinmi?<br><br>" +
+    "Bu amal orqali test maydoni ertangi rasmiy kunga to'liq 100% toza holatga keltiriladi.",
+    () => {
+      try {
+        localStorage.removeItem(SESSION_STORAGE_KEY);
+        localStorage.removeItem(RESULTS_STORAGE_KEY);
+        localStorage.removeItem(BLOCKED_STORAGE_KEY);
+        sessionStorage.clear();
+        state.isExamActive = false;
+        state.isBlocked = false;
+        state.tabSwitchCount = 0;
+        state.userAnswers = {};
+        state.activeQuestions = [];
+        showAppAlert("✅ Barcha sinov ma'lumotlari, bloklar va seanslar muvaffaqiyatli tozalandi! Test maydoni toza holatga keltirildi.", "Muvaffaqiyat", "✅");
+        setTimeout(() => {
+          window.location.hash = '#setupView';
+          window.location.reload();
+        }, 1200);
+      } catch (err) {
+        showAppAlert("Tozalashda xatolik yuz berdi: " + err.message, "Xatolik", "❌");
+      }
+    },
+    "Sinov blokini tozalash",
+    "🗑️",
+    "Ha, barchasini tozalash",
+    "btn btn-danger"
   );
-  if (!confirmed) return;
-
-  try {
-    localStorage.removeItem(RESULTS_STORAGE_KEY);
-    localStorage.removeItem(BLOCKED_STORAGE_KEY);
-    localStorage.removeItem(SESSION_STORAGE_KEY);
-    localStorage.removeItem(SUBMISSION_QUEUE_KEY);
-
-    state.tabSwitchCount = 0;
-    state.isBlocked = false;
-    state.isExamActive = false;
-
-    showToast("🧹 Barcha sinov natijalari va bloklar muvaffaqiyatli tozalandi!", "✅");
-
-    // Monitoring va Davomat jadvallarini qayta hisoblab yangilaymiz
-    if (typeof refreshMonitoringData === 'function') refreshMonitoringData();
-    if (typeof renderDavomatReport === 'function') renderDavomatReport();
-
-    // Agar hozir bloklangan sahifada bo'lsa, bosh sahifaga qaytaramiz
-    switchView('setup');
-  } catch (err) {
-    console.error("Tozalash xatosi:", err);
-    alert("Tozalashda xatolik yuz berdi: " + err.message);
-  }
 }
 window.resetTestingData = resetTestingData;
