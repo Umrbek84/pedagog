@@ -12,7 +12,7 @@
 const GOOGLE_SHEET_CONTROL_URL = "https://docs.google.com/spreadsheets/d/13ig6ubfR4ogSCtBrDVOtXRUIG2gWj2sAT__uMIFIJZM/gviz/tq?tqx=out:csv&sheet=BOSHQARUV";
 const RESULTS_SHEET_URL = "https://docs.google.com/spreadsheets/d/1xYF0P9ZqumezUrH20qoyANjS0Hw6G-yr6hOwwwYOzAU/gviz/tq?tqx=out:csv&sheet=Varaq1";
 const BLOCKED_SHEET_URL = "https://docs.google.com/spreadsheets/d/1xYF0P9ZqumezUrH20qoyANjS0Hw6G-yr6hOwwwYOzAU/gviz/tq?tqx=out:csv&sheet=BLOKLANGANLAR";
-const GOOGLE_SHEET_SUBMIT_URL = window.GOOGLE_SHEET_SUBMIT_URL || "https://script.google.com/macros/s/AKfycbwL_mgAQf45YSRWkYR2QL1bGJdhZWfD6YZ1q44fwal2iUclM56EWrGyclOtgEr_L6wNZQ/exec";
+const GOOGLE_SHEET_SUBMIT_URL = window.GOOGLE_SHEET_SUBMIT_URL || "https://script.google.com/macros/s/AKfycbzzuJhhvcM3JdOLBshP4lSmZavHzRXax9jnX72Hm6jOH1cwCYaHSTKsCjGFtneYyDZg/exec";
 
 const PIN_CONFIG = {
   salt: "umamatov_pedagog_2026",
@@ -1928,6 +1928,7 @@ async function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
           school: r[2] || '',
           cleanSchool: normalizeSchoolName(r[2]),
           subject: r[3] || '',
+          session: r[4] ? (parseInt(r[4], 10) || 4) : 4,
           score: parseInt(r[5]) || 0,
           total: parseInt(r[6]) || 25,
           percent: parseInt(r[7]) || 0,
@@ -2081,7 +2082,7 @@ function applyMonitoringFilters() {
     }
     if (statusFilter === 'PASSED' && (!t.hasParticipated || t.isBlocked)) return false;
     if (statusFilter === 'MISSING' && t.hasParticipated) return false;
-    if (statusFilter === 'EXCELLENT' && (!t.hasParticipated || t.scorePercent < 86)) return false;
+    if (statusFilter === 'EXCELLENT' && (!t.hasParticipated || (t.score < 20 && t.scorePercent < 80))) return false;
     if (statusFilter === 'LOW' && (!t.hasParticipated || t.scorePercent > 55 || t.isBlocked)) return false;
     if (statusFilter === 'BLOCKED' && !t.isBlocked) return false;
 
@@ -2110,7 +2111,7 @@ function applyMonitoringFilters() {
     ? Math.round(passedTeachers.reduce((acc, cur) => acc + cur.scorePercent, 0) / passedTeachers.length) 
     : 0;
 
-  const excellentCount = passedTeachers.filter(t => t.scorePercent >= 86).length;
+  const excellentCount = passedTeachers.filter(t => (t.score >= 20 || t.scorePercent >= 80)).length;
   const excellentPct = passedTeachers.length > 0 ? ((excellentCount / passedTeachers.length) * 100) : 0;
 
   const kpiTot = document.getElementById('kpiTotalTeachers');
@@ -2227,7 +2228,7 @@ function renderSchoolsRatingTable(teachers) {
     if (t.hasParticipated && !t.isBlocked) {
       item.participated++;
       item.scoresSum += (t.score || 0);
-      if (t.scorePercent >= 86) item.aloCount++;
+      if (t.score >= 20 || t.scorePercent >= 80) item.aloCount++;
     } else if (t.isBlocked) {
       item.blocked++;
     }
@@ -2408,7 +2409,7 @@ function renderSubjectsAnalysisTable(teachers) {
     if (t.hasParticipated && !t.isBlocked) {
       item.participated++;
       item.scoresSum += (t.score || 0);
-      if (t.scorePercent >= 86) item.aloCount++;
+      if (t.score >= 20 || t.scorePercent >= 80) item.aloCount++;
     } else if (t.isBlocked) {
       item.blocked++;
     }
@@ -2605,7 +2606,7 @@ function exportMonitoringReportCSV() {
     if (t.hasParticipated && !t.isBlocked) {
       item.participated++;
       item.scoresSum += (t.score || 0);
-      if (t.scorePercent >= 86) item.aloCount++;
+      if (t.score >= 20 || t.scorePercent >= 80) item.aloCount++;
     } else if (t.isBlocked) {
       item.blocked++;
     }
