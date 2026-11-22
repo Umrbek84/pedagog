@@ -32,7 +32,7 @@ const BLOCKED_STORAGE_KEY = 'pedagog_blocked_users_2026';
 
 // Global State
 const state = {
-  teachersDb: {},
+  teachersDb: (typeof window !== 'undefined' && window.TEACHERS_DB) ? window.TEACHERS_DB : {},
   allQuestions: [],
   activeQuestions: [],
   currentIndex: 0,
@@ -276,6 +276,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // TEACHERS & SCHOOLS DATABASE LOGIC
 // ==========================================
 async function loadTeachersDatabase() {
+  if (typeof window !== 'undefined' && window.TEACHERS_DB && Object.keys(window.TEACHERS_DB).length > 0) {
+    state.teachersDb = window.TEACHERS_DB;
+    populateSchoolDropdown();
+    return;
+  }
   try {
     const res = await fetch('teachers_db.json');
     if (res.ok) {
