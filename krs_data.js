@@ -1,5 +1,5 @@
 /**
- * krs_data.js — O'zbekiston Respublikasi Maktabgacha va maktab ta'limi vazirining 
+ * krs_data.js — O'zbekiston Respublikasi Ta'lim va ilm-fan vazirining 
  * 2026-yil 27-avgustdagi 319-sonli buyrug'iga 15-ilova:
  * "Kasbiy rivojlanish kuni" (KRK) va "Kasbiy rivojlanish soati" (KRS) tadbirlari reja-jadvali.
  * pedagog.umamatov.uz portali uchun 15-ilovaga 100% qat'iy moslashtirilgan.
