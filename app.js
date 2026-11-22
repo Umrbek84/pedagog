@@ -180,7 +180,7 @@ function updateSystemStatusBanner() {
   const isClosed = remoteControl.status.toLowerCase() === 'yopiq';
   if (isClosed) {
     banner.className = 'system-status-banner offline';
-    textEl.innerHTML = `<b>Test tizimi holati:</b> VAQTINCHA YOPIQ (${remoteControl.notice || "Mas'ul tomonidan to'xtatilgan"})`;
+    textEl.innerHTML = `<b>Test tizimi holati:</b> VAQTINCHA YOPIQ (${remoteControl.notice || "Bosh mutaxassis tomonidan to'xtatilgan"})`;
   } else {
     banner.className = 'system-status-banner online';
     textEl.innerHTML = `<b>Test tizimi holati:</b> OCHIQ (KRS grafigi bo'yicha test topshirish faol)`;
@@ -856,7 +856,7 @@ async function handleValidateAndOpenPinModal() {
         Hurmatli <b>${name}</b>!<br>
         Siz avval test topshirish jarayonida 4 marta qoidabuzarlik qilganingiz sababli tizim tomonidan chetlatilgansiz.<br>
         <b>Sabab:</b> ${blockCheck.reason}<br>
-        Qayta test topshirishingiz uchun mas'ul mutaxassis Umrbek Mamatov tomonidan ruxsat berilishi kerak.
+        Qayta test topshirishingiz uchun bosh mutaxassis Umrbek Mamatov tomonidan ruxsat berilishi kerak.
       `;
     }
     document.getElementById('teacherBlockedModal')?.classList.add('open');
@@ -875,7 +875,7 @@ async function handleValidateAndOpenPinModal() {
     const textEl = document.getElementById('systemClosedNoticeText');
     if (textEl) {
       textEl.innerHTML = `
-        Mas'ul mutaxassis tomonidan test topshirish vaqtincha to'xtatilgan yoki yopib qo'yilgan.<br>
+        Bosh mutaxassis Umrbek Mamatov tomonidan test topshirish vaqtincha to'xtatilgan yoki yopib qo'yilgan.<br>
         <b>Izoh:</b> ${remoteControl.notice || "Hozirda test topshirish yopiq."}<br>
         PIN-kod to'g'ri kiritilgan taqdirda ham testga kirish cheklangan.
       `;
@@ -1023,7 +1023,7 @@ async function handlePinSubmit() {
     closePinModal();
     startExamSession();
   } else {
-    alert("Kiritilgan PIN-kod noto'g'ri!\nAmaldagi PIN-kodni olish uchun mas'ul mutaxassis Umrbek Mamatovga murojaat qiling (+998 99 660 14 15).");
+    alert("Kiritilgan PIN-kod noto'g'ri!\nAmaldagi PIN-kodni olish uchun bosh mutaxassis Umrbek Mamatovga murojaat qiling (+998 99 660 14 15).");
     document.getElementById('pinInput').value = '';
     document.getElementById('pinInput').focus();
   }
