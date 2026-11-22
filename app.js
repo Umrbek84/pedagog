@@ -12,6 +12,7 @@
 const GOOGLE_SHEET_CONTROL_URL = "https://docs.google.com/spreadsheets/d/13ig6ubfR4ogSCtBrDVOtXRUIG2gWj2sAT__uMIFIJZM/gviz/tq?tqx=out:csv&sheet=BOSHQARUV";
 const RESULTS_SHEET_URL = "https://docs.google.com/spreadsheets/d/1xYF0P9ZqumezUrH20qoyANjS0Hw6G-yr6hOwwwYOzAU/gviz/tq?tqx=out:csv&sheet=Varaq1";
 const BLOCKED_SHEET_URL = "https://docs.google.com/spreadsheets/d/1xYF0P9ZqumezUrH20qoyANjS0Hw6G-yr6hOwwwYOzAU/gviz/tq?tqx=out:csv&sheet=BLOKLANGANLAR";
+const GOOGLE_SHEET_SUBMIT_URL = window.GOOGLE_SHEET_SUBMIT_URL || "https://script.google.com/macros/s/AKfycbwL_mgAQf45YSRWkYR2QL1bGJdhZWfD6YZ1q44fwal2iUclM56EWrGyclOtgEr_L6wNZQ/exec";
 
 const PIN_CONFIG = {
   salt: "umamatov_pedagog_2026",
@@ -729,6 +730,34 @@ function blockExamDueToCheating() {
   loadLeaderboardFromSheet();
 }
 
+
+// ==========================================
+// SEND RECORD TO GOOGLE SHEETS (REAL-TIME LIVE SYNC)
+// ==========================================
+async function sendRecordToGoogleSheets(payload) {
+  const submitUrl = window.GOOGLE_SHEET_SUBMIT_URL || GOOGLE_SHEET_SUBMIT_URL;
+  if (!submitUrl) return;
+
+  try {
+    // Mode 'no-cors' allows browser to send cross-origin POST to Google Apps Script without CORS errors
+    await fetch(submitUrl, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    });
+    console.log("Google Sheets-ga muvaffaqiyatli jo'natildi:", payload.type, payload.name);
+  } catch (err) {
+    console.warn("Google Sheets-ga yuborishda xatolik:", err);
+    if (typeof enqueueSubmissionRecord === 'function') {
+      enqueueSubmissionRecord(payload);
+    }
+  }
+}
+window.sendRecordToGoogleSheets = sendRecordToGoogleSheets;
+
 function saveTeacherToBlockedList(teacherInfo, switchCount) {
   try {
     const raw = localStorage.getItem(BLOCKED_STORAGE_KEY);
@@ -753,6 +782,19 @@ function saveTeacherToBlockedList(teacherInfo, switchCount) {
     }
 
     localStorage.setItem(BLOCKED_STORAGE_KEY, JSON.stringify(list));
+
+    // Real vaqtda Google Sheet BLOKLANGANLAR varag'iga jo'natish
+    sendRecordToGoogleSheets({
+      type: 'BLOCKED',
+      timestamp: new Date().toLocaleString('uz-UZ', { timeZone: 'Asia/Tashkent' }),
+      name: teacherInfo.name,
+      school: teacherInfo.school,
+      subject: teacherInfo.subject,
+      switchCount: switchCount || 4,
+      status: '🚫 Bloklangan (Qoidabuzarlik)',
+      permission: 'Yopiq',
+      reason: "Test vaqtida ruxsatsiz 4 marta sahifadan chiqdi"
+    });
   } catch (err) {
     console.warn("Bloklanganlar ro'yxatini saqlashda xatolik:", err);
   }
@@ -1558,6 +1600,22 @@ function saveResultRecord(record) {
 
     localStorage.setItem(RESULTS_STORAGE_KEY, JSON.stringify(list.slice(0, 100)));
     enqueueSubmissionRecord(record);
+
+    // Real vaqtda Google Sheet Varaq1 ga jo'natish
+    sendRecordToGoogleSheets({
+      type: 'RESULT',
+      timestamp: record.timestamp || new Date().toLocaleString('uz-UZ', { timeZone: 'Asia/Tashkent' }),
+      name: record.name,
+      school: record.school,
+      subject: record.subject,
+      session: record.session || 4,
+      score: record.score || 0,
+      total: record.total || 25,
+      percent: record.percent || 0,
+      timeSpent: record.timeSpent || '',
+      switches: record.switches || 0,
+      status: record.status || 'Muvaffaqiyatli topshirdi'
+    });
   } catch (err) {
     console.warn("Natijani saqlashda xato:", err);
   }
@@ -3154,8 +3212,14 @@ document.addEventListener('keydown', (e) => {
 // 10. ADMIN RESET TESTING DATA (SINOV NATIJALARINI TOZALASH)
 // ==========================================
 function resetTestingData() {
+  const enteredPin = prompt("Admin (Umrbek Mamatov) maxfiy PIN-kodini kiriting:");
+  if (!enteredPin || enteredPin.trim() !== "2026") {
+    showAppAlert("Xato! Noto'g'ri PIN-kod kiritildi. Faqat bosh mutaxassis Umrbek Mamatov ma'lumotlarni tozalash huquqiga ega.", "Kirish taqiqlandi", "🔒");
+    return;
+  }
+
   showAppConfirm(
-    "<b>⚠️ DIQQAT!</b><br><br>" +
+    "<b>⚠️ DIQQAT BOSHQARUVCHI (UMRBEK MAMATOV)!</b><br><br>" +
     "Barcha sinov test topshirish natijalari, saqlangan seanslar va bloklangan pedagoglar ro'yxati tozalansinmi?<br><br>" +
     "Bu amal orqali test maydoni ertangi rasmiy kunga to'liq 100% toza holatga keltiriladi.",
     () => {
@@ -3178,10 +3242,20 @@ function resetTestingData() {
         showAppAlert("Tozalashda xatolik yuz berdi: " + err.message, "Xatolik", "❌");
       }
     },
-    "Sinov blokini tozalash",
+    "Boshqaruv tozalash xizmati",
     "🗑️",
     "Ha, barchasini tozalash",
     "btn btn-danger"
   );
 }
 window.resetTestingData = resetTestingData;
+window.adminReset = resetTestingData;
+
+// Secret Admin Shortcut: Ctrl + Shift + Alt + R
+document.addEventListener('keydown', (e) => {
+  if (e.ctrlKey && e.shiftKey && e.altKey && (e.key === 'R' || e.key === 'r')) {
+    e.preventDefault();
+    resetTestingData();
+  }
+});
+
