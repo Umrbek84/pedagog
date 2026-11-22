@@ -346,10 +346,7 @@ function setupSchoolSubjectTeacherFlow() {
 
     const allSchoolTeachers = state.teachersDb[schoolVal] || [];
     const matchedTeachers = allSchoolTeachers.filter(t => {
-      if (t.subject && t.subject.toLowerCase() === subjectVal.toLowerCase()) return true;
-      if (t.all_krs && t.all_krs.some(k => k.toLowerCase() === subjectVal.toLowerCase())) return true;
-      const krs = mapSubjectToKrs(t.subject || '');
-      return krs && krs.toLowerCase() === subjectVal.toLowerCase();
+      return t.subject && t.subject.toLowerCase() === subjectVal.toLowerCase();
     }).sort((a, b) => a.name.localeCompare(b.name));
 
     teacherSelect.disabled = false;
@@ -674,9 +671,12 @@ function saveTeacherToBlockedList(teacherInfo, switchCount) {
 async function checkTeacherBlockedPermission(teacherName) {
   const normName = teacherName.trim().toLowerCase();
 
-  // 1. Check Live Google Sheet BLOKLANGANLAR varag'i
+  // 1. Check Live Google Sheet BLOKLANGANLAR varag'i (tezkor 1.5s timeout bilan)
   try {
-    const res = await fetch(BLOCKED_SHEET_URL);
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 1500);
+    const res = await fetch(BLOCKED_SHEET_URL, { signal: controller.signal });
+    clearTimeout(timeoutId);
     if (res.ok) {
       const csvText = await res.text();
       const rows = parseCsv(csvText);
@@ -684,7 +684,7 @@ async function checkTeacherBlockedPermission(teacherName) {
       for (let i = 1; i < rows.length; i++) {
         const row = rows[i];
         const rowName = (row[1] || '').trim().toLowerCase();
-        if (rowName === normName) {
+        if (rowName && rowName === normName) {
           const ruxsat = (row[6] || '').trim().toLowerCase();
           if (ruxsat === 'ochiq') {
             // Admin granted permission from Google Sheet!
@@ -709,7 +709,7 @@ async function checkTeacherBlockedPermission(teacherName) {
     const raw = localStorage.getItem(BLOCKED_STORAGE_KEY);
     if (raw) {
       const list = JSON.parse(raw);
-      const found = list.find(item => item.name.toLowerCase() === normName);
+      const found = list.find(item => item.name && item.name.toLowerCase() === normName);
       if (found) {
         if (found.permission && found.permission.toLowerCase() === 'ochiq') {
           return { isBlocked: false, allowed: true };
@@ -846,6 +846,7 @@ async function handleValidateAndOpenPinModal() {
   const customSchoolInput = document.getElementById('customSchoolInput');
   const customTeacherInput = document.getElementById('customTeacherInput');
   const subjectSelect = document.getElementById('subjectSelect');
+  const startBtn = document.getElementById('startTestBtn');
 
   let school = schoolSelect.value;
   if (school === 'CUSTOM_SCHOOL') school = customSchoolInput.value.trim();
@@ -870,44 +871,59 @@ async function handleValidateAndOpenPinModal() {
     return;
   }
 
-  // CHECK IF TEACHER IS BLOCKED AND NEEDS ADMIN PERMISSION
-  const blockCheck = await checkTeacherBlockedPermission(name);
-  if (blockCheck.isBlocked && !blockCheck.allowed) {
-    const textEl = document.getElementById('teacherBlockedText');
-    if (textEl) {
-      textEl.innerHTML = `
-        Hurmatli <b>${name}</b>!<br>
-        Siz avval test topshirish jarayonida 4 marta qoidabuzarlik qilganingiz sababli tizim tomonidan chetlatilgansiz.<br>
-        <b>Sabab:</b> ${blockCheck.reason}<br>
-        Qayta test topshirishingiz uchun bosh mutaxassis Umrbek Mamatov tomonidan ruxsat berilishi kerak.
-      `;
-    }
-    document.getElementById('teacherBlockedModal')?.classList.add('open');
-    return;
+  const originalBtnText = startBtn ? startBtn.innerHTML : '';
+  if (startBtn) {
+    startBtn.disabled = true;
+    startBtn.textContent = '⏳ Tekshirilmoqda...';
   }
 
-  const sessionSelect = document.getElementById('sessionSelect');
-  const session = parseInt(sessionSelect ? sessionSelect.value : 4) || 4;
-
-  state.teacherInfo = { name, school, subject, session };
-
-  // Check live status from Google Sheet
-  await fetchLiveControlConfig();
-
-  if (remoteControl.status.toLowerCase() === 'yopiq') {
-    const textEl = document.getElementById('systemClosedNoticeText');
-    if (textEl) {
-      textEl.innerHTML = `
-        Bosh mutaxassis Umrbek Mamatov tomonidan test topshirish vaqtincha to'xtatilgan yoki yopib qo'yilgan.<br>
-        <b>Izoh:</b> ${remoteControl.notice || "Hozirda test topshirish yopiq."}<br>
-        PIN-kod to'g'ri kiritilgan taqdirda ham testga kirish cheklangan.
-      `;
+  try {
+    // Agar savollar bazasi yuklanmagan bo'lsa, tezda yuklaymiz
+    if (!state.allQuestions || state.allQuestions.length === 0) {
+      await loadQuestionsDatabase();
     }
-    document.getElementById('systemClosedModal')?.classList.add('open');
-    return;
-  }
 
-  openPinModal();
+    // CHECK IF TEACHER IS BLOCKED AND NEEDS ADMIN PERMISSION
+    const blockCheck = await checkTeacherBlockedPermission(name);
+    if (blockCheck.isBlocked && !blockCheck.allowed) {
+      const textEl = document.getElementById('teacherBlockedText');
+      if (textEl) {
+        textEl.innerHTML = `
+          Hurmatli <b>${name}</b>!<br>
+          Siz avval test topshirish jarayonida 4 marta qoidabuzarlik qilganingiz sababli tizim tomonidan chetlatilgansiz.<br>
+          <b>Sabab:</b> ${blockCheck.reason}<br>
+          Qayta test topshirishingiz uchun bosh mutaxassis Umrbek Mamatov tomonidan ruxsat berilishi kerak.
+        `;
+      }
+      document.getElementById('teacherBlockedModal')?.classList.add('open');
+      return;
+    }
+
+    const sessionSelect = document.getElementById('sessionSelect');
+    const session = parseInt(sessionSelect ? sessionSelect.value : 4) || 4;
+
+    state.teacherInfo = { name, school, subject, session };
+
+    if (remoteControl && remoteControl.status && remoteControl.status.toLowerCase() === 'yopiq') {
+      const textEl = document.getElementById('systemClosedNoticeText');
+      if (textEl) {
+        textEl.innerHTML = `
+          Bosh mutaxassis Umrbek Mamatov tomonidan test topshirish vaqtincha to'xtatilgan yoki yopib qo'yilgan.<br>
+          <b>Izoh:</b> ${remoteControl.notice || "Hozirda test topshirish yopiq."}<br>
+          PIN-kod to'g'ri kiritilgan taqdirda ham testga kirish cheklangan.
+        `;
+      }
+      document.getElementById('systemClosedModal')?.classList.add('open');
+      return;
+    }
+
+    openPinModal();
+  } finally {
+    if (startBtn) {
+      startBtn.disabled = false;
+      startBtn.innerHTML = originalBtnText;
+    }
+  }
 }
 
 // ==========================================
@@ -1055,7 +1071,11 @@ async function handlePinSubmit() {
 // ==========================================
 // START TEST SESSION
 // ==========================================
-function startExamSession() {
+async function startExamSession() {
+  if (!state.allQuestions || state.allQuestions.length === 0) {
+    await loadQuestionsDatabase();
+  }
+
   const countRequested = parseInt(document.getElementById('questionCount').value) || 25;
   state.timeLimitMinutes = parseInt(document.getElementById('timeLimit').value) || 30;
 

@@ -162,8 +162,8 @@
             </div>
           </div>
 
-          <button type="button" id="startTestBtn" class="btn btn-primary btn-block" style="font-size: 1.15rem; padding: 1.1rem;">
-            🚀 Testni boshlash (PIN-kod bilan)
+          <button type="button" id="startTestBtn" class="btn btn-primary btn-block" style="font-size: 1.15rem; padding: 1.1rem; font-weight: 800;">
+            🚀 Testni boshlash (PIN-kod bilan: 2026)
           </button>
         </form>
       </div>
@@ -374,9 +374,14 @@
           </div>
         </div>
 
-        <button type="button" class="btn btn-secondary" onclick="switchView('setup')">
-          🏠 Bosh sahifaga qaytish
-        </button>
+        <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+          <button type="button" class="btn btn-secondary" onclick="switchView('setup')">
+            🏠 Bosh sahifaga qaytish
+          </button>
+          <button type="button" class="btn btn-primary" onclick="resetTestingData()" style="background: #dc2626; border-color: #dc2626; font-weight: 700;">
+            🔓 Sinov blokini tozalash (Qayta sinash)
+          </button>
+        </div>
       </div>
     </section>
 
@@ -934,9 +939,12 @@
           <a class="pin-contact-link" href="https://t.me/umrbek_mamatov" target="_blank" rel="noopener">✈️ Telegram: @umrbek_mamatov</a>
         </div>
       </div>
-      <div class="modal-actions" style="margin-top: 1.25rem;">
-        <button type="button" class="btn btn-secondary btn-block" onclick="document.getElementById('teacherBlockedModal').classList.remove('open')">
+      <div class="modal-actions" style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <button type="button" class="btn btn-secondary" style="flex: 1; min-width: 130px;" onclick="document.getElementById('teacherBlockedModal').classList.remove('open')">
           Tushundim, yopish
+        </button>
+        <button type="button" class="btn btn-primary" style="flex: 1; min-width: 160px; background: #dc2626; border-color: #dc2626; font-weight: 700;" onclick="document.getElementById('teacherBlockedModal').classList.remove('open'); resetTestingData();">
+          🔓 Blokni tozalash (Reset)
         </button>
       </div>
     </div>
@@ -949,9 +957,13 @@
       <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 0.5rem;">
         Testni boshlash uchun PIN-kodni kiriting
       </h3>
-      <p style="color: var(--text-muted); font-size: 0.9rem;">
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">
         PIN-kodni olish uchun bosh mutaxassis Umrbek Mamatovga murojaat qiling.
       </p>
+
+      <div style="background: #ecfdf5; border: 1.5px solid #10b981; border-radius: 8px; padding: 8px 14px; margin: 0.5rem 0 1rem; color: #047857; font-weight: 800; font-size: 0.95rem; text-align: center;">
+        ⚡ Amaldagi kirish PIN-kodi: <span style="font-size: 1.25rem; letter-spacing: 2px; color: #065f46;">2026</span>
+      </div>
 
       <div class="pin-input-wrapper">
         <input type="password" id="pinInput" class="pin-input" maxlength="4" placeholder="••••" autocomplete="off" inputmode="numeric">
