@@ -469,7 +469,9 @@ function mapSubjectToKrs(raw) {
   if (s.includes('matemat') || s.includes('algebra') || s.includes('geometr')) return "Matematika";
   if (s.includes('informat') || s.includes('axborot')) return "Informatika";
   if (s.includes('ona tili') || s.includes('adabiyot') || s.includes('ўзбек тили') || s.includes('o\'zbek tili')) return "Ona tili";
-  if (s.includes('ingliz') || s.includes('english') || s.includes('nemis') || s.includes('франсуз') || s.includes('япон') || s.includes('chet tili')) return "English";
+  if (s.includes('nemis') || s.includes('deutsch')) return "Nemis tili";
+  if (s.includes('fransuz') || s.includes('franc') || s.includes('франсуз')) return "Fransuz tili";
+  if (s.includes('ingliz') || s.includes('english') || s.includes('chet tili') || s.includes('япон')) return "English";
   if (s.includes('rus') || s.includes('рус') || s.includes('логопед')) return "Rus tili";
   if (s.includes('biolog') || s.includes('tabiiy') || s.includes('botan') || s.includes('zoolog')) return "Biologiya";
   if (s.includes('fizik') || s.includes('astronom')) return "Fizika";

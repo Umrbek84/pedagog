@@ -17848,5 +17848,2405 @@
     "answer": "A",
     "explanation": "Algoritmik tarafkashlik jamiyatdagi mavjud stereotiplarni takrorlashi mumkin. Pedagog doimo tanqidiy filtr vazifasini bajarishi shart.",
     "difficulty": "hard"
+  },
+  {
+    "id": "de-1-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Pedagogik refleksiya va DaF metodikasi",
+    "grades": "1-11",
+    "question": "Pedagogik refleksiya jarayonida J. Dyuining (John Dewey) fikricha, o'qituvchining kasbiy rivojlanishida eng muhim omil nima hisoblanadi?",
+    "options": {
+      "A": "Dars davomida yuzaga kelgan muammolarni tanqidiy tahlil qilish va ularga asoslangan yangi yondashuv ishlab chiqish",
+      "B": "Faqat darslikdagi mashqlarni ketma-ket bajarish",
+      "C": "O'quvchilarga faqat an'anaviy grammatik qoidalarni yodlatish",
+      "D": "Baholash natijalarini ma'muriyatga o'z vaqtida topshirish"
+    },
+    "correct": "A",
+    "explanation": "Dyuining reflektiv fikrlash nazariyasiga ko'ra, pedagog o'z tajribasini tanqidiy tahlil qilib, dars amaliyotini yaxshilash orqali kasbiy o'sishga erishadi."
+  },
+  {
+    "id": "de-2-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili grammatikasi: Artikllar",
+    "grades": "1-11",
+    "question": "Nemis tilida noaniq artikl (unbestimmter Artikel) ning Dativ kelishigidagi ko'plik (Plural) shakli qanday ifodalanadi?",
+    "options": {
+      "A": "Noaniq artikl ko'plikda ishlatilmaydi, otga esa -n yoki -en qo'shimchasi qo'shiladi",
+      "B": "Har doim 'einen' shaklida qo'llaniladi",
+      "C": "'Einern' shaklida qo'llaniladi",
+      "D": "Faqat 'den' aniq artikli bilan almashtiriladi"
+    },
+    "correct": "A",
+    "explanation": "Nemis tilida noaniq artiklning ko'plik shakli mavjud emas; Dativ Pluralda ot oxiriga -n/-en qo'shiladi (masalan: mit Kindern)."
+  },
+  {
+    "id": "de-3-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "DaF o'qitish metodikasi: Kommunikativ yondashuv",
+    "grades": "1-11",
+    "question": "Nemis tili darslarida kommunikativ kompetensiyani shakllantirishda qaysi faoliyat turi o'quvchilarda erkin muloqotni eng samarali rivojlantiradi?",
+    "options": {
+      "A": "Haqiqiy hayotiy vaziyatlarga asoslangan rolli o'yinlar va dialogik simulyatsiyalar",
+      "B": "Matnni ketma-ket o'zbek tiliga tarjima qilish",
+      "C": "Lug'atdagi so'zlarni alifbo tartibida daftarga ko'chirish",
+      "D": "Qoidalarni xordan baland ovozda takrorlash"
+    },
+    "correct": "A",
+    "explanation": "Kommunikativ metodika o'quvchilarni real muloqot vaziyatlarida (Rollenspiele, Simulationen) faol ishtirok etishga undaydi."
+  },
+  {
+    "id": "de-4-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili grammatikasi: Modal fe'llar",
+    "grades": "1-11",
+    "question": "\"Du darfst hier nicht parken\" jumlasi qanday ma'noni ifodalaydi?",
+    "options": {
+      "A": "Qat'iy taqiq yoki ruxsat berilmaslikni",
+      "B": "Jismoniy imkoniyat yoki qobiliyatni",
+      "C": "Majburiyat yoki buyruqni",
+      "D": "Ixtiyoriy istak yoki xohishni"
+    },
+    "correct": "A",
+    "explanation": "'Dürfen' modal fe'li inkor 'nicht' bilan qo'llanganda qat'iy taqiqni (Verbot) bildiradi."
+  },
+  {
+    "id": "de-5-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Pedagogik refleksiya: Gibbs modeli",
+    "grades": "1-11",
+    "question": "Gibbs refleksiya siklining (Gibbs Reflective Cycle) qaysi bosqichida o'qituvchi 'Agar bu holat yana takrorlansa, men nima qilgan bo'lardim?' degan savolga javob beradi?",
+    "options": {
+      "A": "Harakatlar rejasi (Action Plan)",
+      "B": "Tavsif (Description)",
+      "C": "Hissiyotlar (Feelings)",
+      "D": "Baholash (Evaluation)"
+    },
+    "correct": "A",
+    "explanation": "Gibbs siklining yakuniy 'Action Plan' (Harakatlar rejasi) bosqichida kelajakdagi shunday vaziyat uchun yangi strategiya belgilanadi."
+  },
+  {
+    "id": "de-6-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili grammatikasi: Perfekt zamoni",
+    "grades": "1-11",
+    "question": "Quyidagi fe'llardan qaysi biri Perfekt zamonida yordamchi 'sein' fe'li bilan yasaladi?",
+    "options": {
+      "A": "aufstehen (o'rnidan turmoq / harakat va holat o'zgarishi)",
+      "B": "machen (qilmoq)",
+      "C": "lesen (o'qimoq)",
+      "D": "kaufen (sotib olmoq)"
+    },
+    "correct": "A",
+    "explanation": "Harakat yo'nalishi yoki holat o'zgarishini bildiruvchi fe'llar Perfektda 'sein' bilan yasaladi (ich bin aufgestanden)."
+  },
+  {
+    "id": "de-7-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili grammatikasi: Ergash gaplar (Nebensätze)",
+    "grades": "1-11",
+    "question": "'Weil' (chunki) bog'lovchisi bilan boshlangan ergash gapda kesim (fe'l) qayerda joylashadi?",
+    "options": {
+      "A": "Gapning eng oxirida o'zgargan (tuslangan) shaklda",
+      "B": "Bog'lovchidan keyin darhol ikkinchi o'rinda",
+      "C": "Gapning boshida",
+      "D": "Ega bilan birga birinchi o'rinda"
+    },
+    "correct": "A",
+    "explanation": "Nemis tilida ergashtiruvchi bog'lovchilar (weil, dass, ob, wenn) ergash gapda tuslangan fe'lni gap oxiriga suradi."
+  },
+  {
+    "id": "de-8-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "DaF metodikasi: Tinglab tushunish",
+    "grades": "1-11",
+    "question": "Goethe-Instituti tavsiyalariga ko'ra, tinglab tushunishdan oldingi bosqichda (Vor dem Hören) qaysi usul eng samarali hisoblanadi?",
+    "options": {
+      "A": "Audio mavzusi va illyustratsiyalar bo'yicha assotsiatsiyalar tuzish (Assoziogramm)",
+      "B": "Audioning to'liq transkripsiyasini yodlash",
+      "C": "Barcha noma'lum so'zlarni lug'atdan yozib olish",
+      "D": "O'quvchilarga matnni mustaqil o'qitish"
+    },
+    "correct": "A",
+    "explanation": "Vor dem Hören bosqichida assotsiogramma va rasm asosida mavzuni taxmin qilish o'quvchining fon bilimlarini faollashtiradi."
+  },
+  {
+    "id": "de-9-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili grammatikasi: Kelishiklar boshqaruvi",
+    "grades": "1-11",
+    "question": "Qaysi predlog har doim faqat Akkusativ kelishigini talab qiladi?",
+    "options": {
+      "A": "durch, für, gegen, ohne, um",
+      "B": "mit, nach, von, seit, zu",
+      "C": "an, auf, in, über, unter",
+      "D": "wegen, während, trotz, statt"
+    },
+    "correct": "A",
+    "explanation": "'durch, für, gegen, ohne, um' predloglari har doim faqat Akkusativ kelishigi bilan qo'llanadi."
+  },
+  {
+    "id": "de-10-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Pedagogik refleksiya: Hamkasblar bilan tahlil",
+    "grades": "1-11",
+    "question": "Dars jarayonini 'Kollegiale Hospitation' (hamkasblar darsini kuzatish va tahlil qilish) orqali o'rganishning asosiy maqsadi nima?",
+    "options": {
+      "A": "O'zaro tajriba almashish va o'qitish metodikasini birgalikda takomillashtirish",
+      "B": "O'qituvchini jazolash yoki unga baho qo'yish",
+      "C": "Dars jadvalini qisqartirish",
+      "D": "Darslikdagi xatolarni aniqlash"
+    },
+    "correct": "A",
+    "explanation": "Kollegiale Hospitation bu o'zaro ishonch asosida kasbiy tajriba almashish va metodik mahoratni oshirish vositasidir."
+  },
+  {
+    "id": "de-11-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Predloglar (Wechselpräpositionen)",
+    "grades": "1-11",
+    "question": "Qaysi holatda 'Wechselpräpositionen' (an, auf, in, neben...) Dativ kelishigi bilan qo'llanadi?",
+    "options": {
+      "A": "'Wo?' (qayerda?) so'rog'iga javob berib, tinch holat yoki makonni bildirsa",
+      "B": "'Wohin?' (qayerga?) so'rog'iga javob berib, harakat yo'nalishini bildirsa",
+      "C": "Har doim zamonni ifodalaganda",
+      "D": "Faqat shaxsga nisbatan qo'llanganda"
+    },
+    "correct": "A",
+    "explanation": "O'zgaruvchan predloglar 'Wo?' (qayerda?) so'rog'iga Dativ, 'Wohin?' (qayerga?) so'rog'iga Akkusativ talab qiladi."
+  },
+  {
+    "id": "de-12-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "DaF: Leksikani o'rgatish",
+    "grades": "1-11",
+    "question": "Nemis tilida yangi so'zlarni o'rgatishda 'Wortschatznetz' (so'zlar tarmog'i) usulining afzalligi nimada?",
+    "options": {
+      "A": "So'zlarni ma'no va kontekst bog'liqligida xotirada mustahkam saqlashga yordam beradi",
+      "B": "Faqat so'zning talaffuzini to'g'rilaydi",
+      "C": "O'quvchini lug'atdan foydalanishdan butunlay ozod qiladi",
+      "D": "Qoidalarni mexanik tarzda yodlashni tezlashtiradi"
+    },
+    "correct": "A",
+    "explanation": "Wortschatznetz yangi leksikani semantik bog'liqliklar orqali uzoq muddatli xotiraga joylashtirishni ta'minlaydi."
+  },
+  {
+    "id": "de-13-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili grammatikasi: Sifat darajalari",
+    "grades": "1-11",
+    "question": "'Gut' (yaxshi) sifatining qiyosiy (Komparativ) va orttirma (Superlativ) darajalari qanday shakllanadi?",
+    "options": {
+      "A": "besser / am besten",
+      "B": "guter / am gutesten",
+      "C": "mehr gut / am meisten gut",
+      "D": "lieber / am liebsten"
+    },
+    "correct": "A",
+    "explanation": "'Gut' sifati noqonuniy o'zgaradi: gut – besser – am besten."
+  },
+  {
+    "id": "de-14-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Reflektiv dars tahlili",
+    "grades": "1-11",
+    "question": "O'qituvchi darsda rejalashtirilgan mashq kutilganidek natija bermaganini ko'rgach, reflektiv yondashuv asosida nima qilishi zarur?",
+    "options": {
+      "A": "O'quvchilarning tushunish darajasini aniqlab, tushuntirish usulini yoki topshiriq shaklini o'zgartirish",
+      "B": "O'quvchilarni ayblab, darsni to'xtatish",
+      "C": "Keyingi mavzuga shoshilinch o'tib ketish",
+      "D": "Barcha o'quvchilarga qoniqarsiz baho qo'yish"
+    },
+    "correct": "A",
+    "explanation": "Reflektiv pedagog samarasiz usulni aniqlab, uni o'quvchilar ehtiyojiga mos ravishda zudlik bilan moslashtiradi."
+  },
+  {
+    "id": "de-15-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Inkor shakllari",
+    "grades": "1-11",
+    "question": "Qaysi holatda 'kein' inkor so'zi ishlatiladi?",
+    "options": {
+      "A": "Noaniq artiklli yoki artiklsiz qo'llangan otlarni inkor qilishda",
+      "B": "Fe'llarni inkor qilishda",
+      "C": "Sifatlarni inkor qilishda",
+      "D": "Ravishlarni inkor qilishda"
+    },
+    "correct": "A",
+    "explanation": "'Kein' faqat noaniq artikl yoki nol artikl bilan kelgan otlarni inkor etadi; fe'l, sifat va ravishlar 'nicht' bilan inkor qilinadi."
+  },
+  {
+    "id": "de-16-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "DaF: O'qib tushunish turlari",
+    "grades": "1-11",
+    "question": "Nemis tili matnidan aniq sanalar, ismlar yoki faktlarni tezkor qidirib topish qaysi o'qish turiga mos keladi?",
+    "options": {
+      "A": "Selektives Lesen (Skimming / tanlab o'qish)",
+      "B": "Globales Lesen (umumiy mazmunni tushunish)",
+      "C": "Detailliertes Lesen (batafsil o'qish)",
+      "D": "Kritisches Lesen (tanqidiy o'qish)"
+    },
+    "correct": "A",
+    "explanation": "Selektives Lesen (Scanning) — matndan faqat kerakli aniq ma'lumotni (fakt, sana, ism) tezkor topish uchun qo'llaniladi."
+  },
+  {
+    "id": "de-17-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili grammatikasi: Fe'l birikmalari",
+    "grades": "1-11",
+    "question": "\"Ich interessiere mich _____ deutsche Kultur\" bo'sh o'rniga qaysi predlog mos keladi?",
+    "options": {
+      "A": "für (Akkusativ)",
+      "B": "an (Dativ)",
+      "C": "mit (Dativ)",
+      "D": "über (Akkusativ)"
+    },
+    "correct": "A",
+    "explanation": "'sich interessieren für + Akkusativ' doimiy fe'l-predlog birikmasi hisoblanadi."
+  },
+  {
+    "id": "de-18-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Pedagogik faoliyatda AKT va DaF",
+    "grades": "1-11",
+    "question": "Nemis tili darslarida raqamli doskalar (Padlet, Miro) yoki interfaol platformalardan foydalanishning asosiy metodik yutug'i nima?",
+    "options": {
+      "A": "O'quvchilarning birgalikda (kollaborativ) ishlashini va g'oyalarini vizual jamlashini ta'minlash",
+      "B": "Darsliklarni butunlay bekor qilish",
+      "C": "O'qituvchining darsdagi rolini yo'qotish",
+      "D": "Faqat individual test yechish imkonini berish"
+    },
+    "correct": "A",
+    "explanation": "Interfaol platformalar kollaborativ ta'limni kuchaytiradi va guruhda til o'rganish motivatsiyasini oshiradi."
+  },
+  {
+    "id": "de-19-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Ajraladigan old qo'shimchalar",
+    "grades": "1-11",
+    "question": "Quyidagi fe'llardan qaysi biri ajralmaydigan (untrennbare) old qo'shimchaga ega?",
+    "options": {
+      "A": "verstehen (tushunmoq)",
+      "B": "aufstehen (turmoq)",
+      "C": "mitbringen (olib kelmoq)",
+      "D": "einkaufen (bozor qilmoq)"
+    },
+    "correct": "A",
+    "explanation": "'be-, ge-, er-, ver-, zer-, emp-, ent-, miss-' old qo'shimchalari ajralmaydi (untrennbar)."
+  },
+  {
+    "id": "de-20-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "DaF: Fonetika va talaffuz",
+    "grades": "1-11",
+    "question": "Nemis tilidagi 'ch' tovushining 'ich-Laut' [ç] va 'ach-Laut' [x] talaffuzi qaysi qoidaga binoan belgilanadi?",
+    "options": {
+      "A": "'a, o, u, au' unlilaridan keyin [x] (ach-Laut), boshqa hollarda [ç] (ich-Laut) talaffuz qilinadi",
+      "B": "Faqat so'z boshida [x] aytiladi",
+      "C": "O'quvchining xohishiga ko'ra belgilanadi",
+      "D": "Har doim bir xil talaffuz qilinadi"
+    },
+    "correct": "A",
+    "explanation": "'ch' orqa qator unlilari (a, o, u, au) dan keyin chuqur [x], old qator unlilari va undoshlardan so'ng yumshoq [ç] aytiladi."
+  },
+  {
+    "id": "de-21-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Reflektiv dars tahlili: SWOT tahlili",
+    "grades": "1-11",
+    "question": "O'qituvchi o'z dars faoliyatiga nisbatan SWOT tahlilini qo'llaganda, 'T' (Threats - Xavflar) rukniga qaysi omil kiritiladi?",
+    "options": {
+      "A": "O'quvchilarning darsga tayyorgarligi pasayishi yoki texnik nosozliklar",
+      "B": "O'qituvchining chet tilini bilish darajasi",
+      "C": "Yangi metodik qo'llanmalarning yaratilishi",
+      "D": "O'quv xonasining zamonaviy jihozlanishi"
+    },
+    "correct": "A",
+    "explanation": "SWOT dagi 'Threats' — o'qituvchining bevosita nazoratidan tashqaridagi tashqi to'siqlar va xavflardir."
+  },
+  {
+    "id": "de-22-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili grammatikasi: Präteritum",
+    "grades": "1-11",
+    "question": "'Haben' va 'sein' fe'llarining 3-shaxs birlik (er/sie/es) Präteritum shakllari to'g'ri ko'rsatilgan qatorni toping:",
+    "options": {
+      "A": "hatte / war",
+      "B": "hat / ist",
+      "C": "habt / seid",
+      "D": "gehabet / gewesen"
+    },
+    "correct": "A",
+    "explanation": "'haben' fe'lining Präteritumi 'hatte', 'sein' fe'liniki esa 'war' bo'ladi."
+  },
+  {
+    "id": "de-23-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "DaF: Dialogik nutqni baholash",
+    "grades": "1-11",
+    "question": "B1 darajasidagi dialogik nutqni baholashda eng ustuvor CEFR mezoni nima?",
+    "options": {
+      "A": "Muloqotni boshlash, davom ettirish va o'z fikrini erkin dalillash (Interaktionsfähigkeit)",
+      "B": "Har bir jumlani grammatik xatosiz aytish",
+      "C": "Faqat bitta turg'un iborani takrorlash",
+      "D": "Suhbati faqat bitta savol-javob bilan cheklash"
+    },
+    "correct": "A",
+    "explanation": "CEFR B1 darajasida interaksiya, o'z fikrini bayon qilish va muloqotni mustaqil olib borish muhim mezon sanaladi."
+  },
+  {
+    "id": "de-24-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: So'z yasalishi (Komposita)",
+    "grades": "1-11",
+    "question": "Nemis tilida qo'shma otlarning (Komposita) grammatik jinsi (artikli) qanday aniqlanadi?",
+    "options": {
+      "A": "Eng oxirgi asosiy so'zning (Grundwort) jinsiga qarab",
+      "B": "Birinchi so'zning jinsiga qarab",
+      "C": "O'rtadagi bog'lovchi tovushga qarab",
+      "D": "Qo'shma otlar doimo neytral (das) bo'ladi"
+    },
+    "correct": "A",
+    "explanation": "Kompositada artikl har doim oxirgi komponent (Grundwort) tomonidan belgilanadi (masalan: die Schule + das Buch = das Schulbuch)."
+  },
+  {
+    "id": "de-25-s4",
+    "session": 4,
+    "subject": "Nemis tili",
+    "topic": "Pedagogik etika va refleksiya",
+    "grades": "1-11",
+    "question": "Kasbiy refleksiya o'qituvchiga dars jarayonida o'quvchilar bilan yuzaga keladigan nizoli vaziyatlarni qanday hal qilishga yordam beradi?",
+    "options": {
+      "A": "Nizoni keltirib chiqargan pedagogik sabablarni xolisona tahlil qilib, konstruktiv muloqot o'rnatish orqali",
+      "B": "O'quvchini darsdan chiqarib yuborish orqali",
+      "C": "Vaziyatni e'tiborsiz qoldirish orqali",
+      "D": "Faqat ma'muriy jazo qo'llash orqali"
+    },
+    "correct": "A",
+    "explanation": "Reflektiv tahlil nizolarni konstruktiv hal etish va o'quvchi bilan ishonchli psixologik aloqani saqlash imkonini beradi."
+  },
+  {
+    "id": "de-1-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "UDL va Inklyuziv ta'lim asoslari",
+    "grades": "1-11",
+    "question": "Universal ta'lim dizayni (UDL) kontseptsiyasida 'Multiple Means of Representation' (Axborotni turli shakllarda taqdim etish) tamoyili nimani anglatadi?",
+    "options": {
+      "A": "O'quv materialini matn, audio, video va vizual sxemalar orqali turli usullarda yetkazish",
+      "B": "Barcha o'quvchilarga faqat bitta darslikdan dars o'tish",
+      "C": "Faqat audio yozuvlardan foydalanish",
+      "D": "O'quvchilarga faqat yozma topshiriq berish"
+    },
+    "correct": "A",
+    "explanation": "UDL ning taqdim etish tamoyili axborotni turli idrok kanallari (ko'rish, eshitish, amaliy) orqali yetkazishni talab qiladi."
+  },
+  {
+    "id": "de-2-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "A1-A2 darajasida retseptiv ko'nikmalar",
+    "grades": "1-11",
+    "question": "Nemis tili A1-A2 darajasidagi o'quvchilarda tinglab tushunishni rivojlantirishda qanday materiallardan foydalanish tavsiya etiladi?",
+    "options": {
+      "A": "Qisqa, aniq diktsiyali, kundalik hayotga oid sodda audio dialoglar va qo'shiqlar",
+      "B": "Universitet ma'ruzalari va ilmiy munozaralar",
+      "C": "Murakkab siyosiy yangiliklar",
+      "D": "So'zlari tarjima qilinmagan qadimiy she'rlar"
+    },
+    "correct": "A",
+    "explanation": "A1-A2 darajasida kundalik mavzular, oila, maktab va do'kon dialoglari eng mos ta'limiy manbadir."
+  },
+  {
+    "id": "de-3-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Differensial ta'lim: Nemis tili",
+    "grades": "1-11",
+    "question": "Turli darajadagi o'quvchilar (Binnendifferenzierung) bo'lgan sinfda nemis tilida vazifalar qanday taqsimlanadi?",
+    "options": {
+      "A": "Murakkablik darajasi va yordamchi vositalari (Scaffolding) turlicha bo'lgan moslashtirilgan topshiriqlar orqali",
+      "B": "Hamma o'quvchiga bir xil murakkab vazifa berish orqali",
+      "C": "Kuchli o'quvchilarni darsdan ozod qilish orqali",
+      "D": "Past o'zlashtiruvchilarga umuman vazifa bermaslik orqali"
+    },
+    "correct": "A",
+    "explanation": "Binnendifferenzierung o'quvchilarning imkoniyatlariga mos bosqichma-bosqich yordam va topshiriqlar berishni ko'zda tutadi."
+  },
+  {
+    "id": "de-4-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Yozma nutq (Brief schreiben)",
+    "grades": "1-11",
+    "question": "Nemis tilida norasmiy xat (persönlicher Brief) boshlanishida qaysi murojaat shakli to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Lieber Thomas, / Liebe Anna,",
+      "B": "Sehr geehrte Damen und Herren,",
+      "C": "Mit freundlichen Grüßen,",
+      "D": "Guten Tag, Herr Müller,"
+    },
+    "correct": "A",
+    "explanation": "Do'stlar va yaqinlarga yozilgan norasmiy xat 'Lieber...' (o'g'il bolaga) yoki 'Liebe...' (qiz bolaga) bilan boshlanadi."
+  },
+  {
+    "id": "de-5-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "UDL: Jalb qilish tamoyili (Engagement)",
+    "grades": "1-11",
+    "question": "Nemis tili darsida o'quvchilarning darsga qiziqishini oshirish uchun UDL ning 'Engagement' tamoyiliga qaysi faoliyat to'liq mos keladi?",
+    "options": {
+      "A": "O'quvchilarga o'z qiziqishiga mos mavzular va taqdimot formatini mustaqil tanlash imkonini berish",
+      "B": "Faqat doskadagi matnni daftarga ko'chirishni talab qilish",
+      "C": "Har bir xato uchun jarima ballari belgilash",
+      "D": "Dars davomida savol berishni taqiqlash"
+    },
+    "correct": "A",
+    "explanation": "O'quvchiga tanlov erkinligi (Autonomie) berish ularning ichki motivatsiyasini kuchaytiradi."
+  },
+  {
+    "id": "de-6-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili leksikasi: A2 mavzulari",
+    "grades": "1-11",
+    "question": "'Wohnen' mavzusida mebel jihozlari berilgan qatorni aniqlang:",
+    "options": {
+      "A": "der Schrank, das Bett, der Tisch, der Stuhl",
+      "B": "der Apfel, das Brot, die Milch, das Fleisch",
+      "C": "der Arzt, der Lehrer, der Ingenieur",
+      "D": "der Zug, das Flugzeug, das Auto, der Bus"
+    },
+    "correct": "A",
+    "explanation": "Mebel jihozlari: der Schrank (shkaf), das Bett (karavot), der Tisch (stol), der Stuhl (stul)."
+  },
+  {
+    "id": "de-7-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Inklyuziv muhitda vizual vositalar",
+    "grades": "1-11",
+    "question": "Nemis tili darslarida maxsus ehtiyojli o'quvchilar uchun piktogramma va kartochkalar (Flashcards) nima uchun zarur?",
+    "options": {
+      "A": "So'z ma'nosini vizual bog'lash orqali tushunish va eslab qolishni osonlashtirish uchun",
+      "B": "Dars vaqtini tezroq o'tkazish uchun",
+      "C": "O'qituvchi gapirmasligi uchun",
+      "D": "Faqat rasmlarni bo'yash uchun"
+    },
+    "correct": "A",
+    "explanation": "Vizual kartochkalar kognitiv yukni kamaytiradi va leksikani tez hamda mustahkam o'zlashtirishga ko'maklashadi."
+  },
+  {
+    "id": "de-8-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Soat va vaqt ifodalari",
+    "grades": "1-11",
+    "question": "'Es ist Viertel vor acht' jumlasi qaysi vaqtni anglatadi?",
+    "options": {
+      "A": "07:45 (sakkiztakam o'n besh daqiqa)",
+      "B": "08:15 (sakkizdan o'n besh daqiqa o'tdi)",
+      "C": "07:15",
+      "D": "08:45"
+    },
+    "correct": "A",
+    "explanation": "'Viertel vor acht' — soat sakkizga 15 daqiqa qolganini (07:45) bildiradi."
+  },
+  {
+    "id": "de-9-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Interfaol metod: 'Stationenlernen'",
+    "grades": "1-11",
+    "question": "Nemis tili darslarida 'Stationenlernen' (stansiyalarda o'rganish) metodi qanday tashkil etiladi?",
+    "options": {
+      "A": "Sinfda turli topshiriqlar (o'qish, yozish, grammatika, tinglash) stansiyalari tashkil etilib, o'quvchilar o'z tezligida ularni aylanib bajaradilar",
+      "B": "Barcha o'quvchilar bitta stolda bir xil mashq bajaradilar",
+      "C": "Faqat o'qituvchi gapirib, o'quvchilar eshitadilar",
+      "D": "O'quvchilar maktab hovlisida jismoniy mashq bajaradilar"
+    },
+    "correct": "A",
+    "explanation": "Stationenlernen o'quvchilarning mustaqil, erkin va o'z qobiliyatiga mos templar bilan ishlashini ta'minlovchi ochiq ta'lim shaklidir."
+  },
+  {
+    "id": "de-10-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili grammatikasi: Qiyosiy darajadagi bog'lovchilar",
+    "grades": "1-11",
+    "question": "\"Er ist so alt _____ mein Bruder\" va \"Er ist älter _____ ich\" gaplariga mos bog'lovchilarni tanlang:",
+    "options": {
+      "A": "wie / als",
+      "B": "als / wie",
+      "C": "so / denn",
+      "D": "als / als"
+    },
+    "correct": "A",
+    "explanation": "Tenglik qiyosida 'so ... wie', ortiqlik qiyosida esa 'Komparativ + als' qo'llanadi."
+  },
+  {
+    "id": "de-11-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Inklyuziv ta'limda moslashuvchanlik",
+    "grades": "1-11",
+    "question": "Eshitishida nuqsoni bor o'quvchi uchun nemis tili audio mashg'ulotida qanday metodik qulaylik yaratiladi?",
+    "options": {
+      "A": "Audio matnning subtitrlari yoki yozma transkripsiyasini taqdim etish",
+      "B": "O'quvchini darsdan chiqarib yuborish",
+      "C": "Ovozni eng baland qilib qo'yish",
+      "D": "Faqat musiqa tinglatish"
+    },
+    "correct": "A",
+    "explanation": "Yozma skript yoki subtitrlar axborotni to'siqlarsiz idrok etish imkoniyatini yaratadi."
+  },
+  {
+    "id": "de-12-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Kelasi zamon (Futur I)",
+    "grades": "1-11",
+    "question": "Nemis tilida Futur I zamoni qaysi grammatik model asosida yasaladi?",
+    "options": {
+      "A": "werden fe'lining hozirgi zamon shakli + Infinitiv",
+      "B": "haben + Partizip II",
+      "C": "sein + Infinitiv",
+      "D": "wollen + Partizip II"
+    },
+    "correct": "A",
+    "explanation": "Futur I formulasi: 'werden' (shaxsga qarab) + gap oxiridagi fe'lning noaniq shakli (Infinitiv)."
+  },
+  {
+    "id": "de-13-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "UDL: Ifodalash tamoyili (Action & Expression)",
+    "grades": "1-11",
+    "question": "O'quvchilarning nemis tili bo'yicha olgan bilimlarini ko'rsatishida UDL tamoyili qanday amalga oshiriladi?",
+    "options": {
+      "A": "Bilimni faqat yozma insho emas, balki video, audio, rasm yoki og'zaki taqdimot ko'rinishida topshirish tanlovini berish",
+      "B": "Faqat yopiq test o'tkazish",
+      "C": "Barcha javoblarni faqat yoddan so'rash",
+      "D": "Baholashni bekor qilish"
+    },
+    "correct": "A",
+    "explanation": "O'quvchilarga o'z bilimlarini o'zlari uchun qulay va kuchli vositalar orqali ifodalash erkinligi beriladi."
+  },
+  {
+    "id": "de-14-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Predlogli Dativ birikmalari",
+    "grades": "1-11",
+    "question": "\"Ich fahre _____ dem Bus zur Schule\" bo'sh o'rniga qaysi predlog mos keladi?",
+    "options": {
+      "A": "mit",
+      "B": "auf",
+      "C": "in",
+      "D": "durch"
+    },
+    "correct": "A",
+    "explanation": "Transport vositalari bilan 'mit + Dativ' predlogi qo'llanadi (mit dem Bus, mit dem Zug)."
+  },
+  {
+    "id": "de-15-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Ko'p tillilik va tillararo integratsiya",
+    "grades": "1-11",
+    "question": "Nemis tili darslarida ingliz tili bilan qiyosiy taqqoslash (Kognaten: Haus - house, Buch - book) o'quvchiga qanday yordam beradi?",
+    "options": {
+      "A": "Yangi leksikani tezroq idrok etish va til o'rganishdagi ijobiy transferni (Transferenz) ta'minlashga",
+      "B": "Faqat chalkashlik keltirib chiqarishga",
+      "C": "O'quvchini ona tilini unutishga",
+      "D": "Grammatika qoidalarini butunlay buzishga"
+    },
+    "correct": "A",
+    "explanation": "Qardosh german tillari orasidagi o'xshash so'zlar (Kognaten) o'rganish jarayonini tezlashtiradi."
+  },
+  {
+    "id": "de-16-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Olmoshlar (Possessivpronomen)",
+    "grades": "1-11",
+    "question": "\"Das ist mein Vater und das ist _____ Mutter\" (Akkusativ emas, Nominativ) bo'sh o'rniga nima qo'yiladi?",
+    "options": {
+      "A": "meine",
+      "B": "mein",
+      "C": "meinen",
+      "D": "meiner"
+    },
+    "correct": "A",
+    "explanation": "'die Mutter' ayol jinsidagi so'z bo'lgani uchun egalik olmoshi 'meine' bo'ladi."
+  },
+  {
+    "id": "de-17-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Darsda jamoaviy muhit",
+    "grades": "1-11",
+    "question": "Inklyuziv sinfda nemis tilini o'qitishda o'quvchilar o'rtasida 'Tandem-Lernen' (juftlikda o'rganish) ning afzalligi nimada?",
+    "options": {
+      "A": "O'quvchilar bir-biriga yordam beradi, muloqot xavfsiz muhitda kechadi va til to'sig'i yo'qoladi",
+      "B": "O'qituvchining darsdagi ishtiroki nolga tushadi",
+      "C": "O'quvchilar bir-birlariga baho qo'yadilar",
+      "D": "Darsda intizom butunlay buziladi"
+    },
+    "correct": "A",
+    "explanation": "Juftlikda o'rganish (Tandem) o'quvchilarda o'zaro hamjihatlik va tildan erkin foydalanish ishonchini shakllantiradi."
+  },
+  {
+    "id": "de-18-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Buyruq mayli (Imperativ)",
+    "grades": "1-11",
+    "question": "'Lesen' fe'lining 'du' shaxsiga qaratilgan to'g'ri buyruq shakli qaysi?",
+    "options": {
+      "A": "Lies!",
+      "B": "Lese!",
+      "C": "Liest!",
+      "D": "Lesen Sie!"
+    },
+    "correct": "A",
+    "explanation": "'Lesen' fe'lida o'zak unlisi o'zgaradi va -st qo'shimchasi tushib qolib, 'Lies!' shakli hosil bo'ladi."
+  },
+  {
+    "id": "de-19-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Scaffolding texnologiyasi: Nemis tili",
+    "grades": "1-11",
+    "question": "O'quvchilarga nemis tilida matn yozishda 'Satzbausteine' (gap qurilmalari / qoliplar) berish pedagogikada qanday ataladi?",
+    "options": {
+      "A": "Scaffolding (bosqichma-bosqich metodik qo'llab-quvvatlash)",
+      "B": "Rote Learning (mexanik yodlatish)",
+      "C": "Summative Assessment (yakuniy baholash)",
+      "D": "Brainstorming (aqliy hujum)"
+    },
+    "correct": "A",
+    "explanation": "Scaffolding o'quvchiga mustaqil vazifani bajarish uchun vaqtinchalik yordamchi tayanch va andazalar berishdir."
+  },
+  {
+    "id": "de-20-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Refleksiv fe'llar",
+    "grades": "1-11",
+    "question": "\"Ich freue mich _____ die Ferien\" (kelayotgan ta'tilni intiqlik bilan kutish ma'nosida) qaysi predlog qo'yiladi?",
+    "options": {
+      "A": "auf (Akkusativ)",
+      "B": "über (Akkusativ)",
+      "C": "für (Akkusativ)",
+      "D": "an (Dativ)"
+    },
+    "correct": "A",
+    "explanation": "'sich freuen auf + Akk' kelajakdagi voqeani kutish, 'sich freuen über + Akk' esa bo'lib o'tgan yoki mavjud voqeadan xursand bo'lishdir."
+  },
+  {
+    "id": "de-21-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Differensiatsiyalashgan topshiriqlar",
+    "grades": "1-11",
+    "question": "A1 darajasidagi nemis tili o'quvchilariga matn yuzasidan topshiriq berilganda qaysi shakl eng qulay hisoblanadi?",
+    "options": {
+      "A": "Richtig / Falsch (To'g'ri / Noto'g'ri) tanlovli topshiriqlar",
+      "B": "Matn bo'yicha 500 so'zlik erkin insho yozish",
+      "C": "Matndagi barcha so'zlarning etimologiyasini tushuntirish",
+      "D": "Faqat fonetik tahlil qilish"
+    },
+    "correct": "A",
+    "explanation": "A1 darajasida 'Richtig/Falsch' yoki 'Multiple Choice' testlari tushunishni yengil va samarali tekshiradi."
+  },
+  {
+    "id": "de-22-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Kundalik so'zlashuv iboralari",
+    "grades": "1-11",
+    "question": "\"Guten Appetit!\" tilagiga nemis tilida odatda qanday javob qaytariladi?",
+    "options": {
+      "A": "Danke, gleichfalls! (Rahmat, sizga ham!)",
+      "B": "Gute Nacht!",
+      "C": "Auf Wiedersehen!",
+      "D": "Entschuldigung!"
+    },
+    "correct": "A",
+    "explanation": "'Danke, gleichfalls!' yoki 'Danke, ebenfalls!' yaxshi tilaklarga qaytariladigan madaniy me'yordir."
+  },
+  {
+    "id": "de-23-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "UDL va multimedia",
+    "grades": "1-11",
+    "question": "Nemis tili darsida yangi mavzuni tushuntirishda infografika va qisqa videoanimatsiyadan foydalanish UDL ning qaysi jihatiga xizmat qiladi?",
+    "options": {
+      "A": "Murakkab grammatik tushunchalarni vizuallashtirish orqali oson o'zlashtirishga",
+      "B": "Faqat kompyuter savodxonligini tekshirishga",
+      "C": "O'quvchilarni kitob o'qishdan to'xtatishga",
+      "D": "Dars davomiyligini qisqartirishga"
+    },
+    "correct": "A",
+    "explanation": "Vizuallashtirish abstrakt qoidalarni tushunishni osonlashtiradi va barcha o'quvchilar uchun ochiq qiladi."
+  },
+  {
+    "id": "de-24-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Savol so'zlari (W-Fragen)",
+    "grades": "1-11",
+    "question": "O'rin-joyga yo'nalishni so'rash uchun nemis tilida qaysi so'roq so'zi qo'llaniladi?",
+    "options": {
+      "A": "Wohin? (Qayerga?)",
+      "B": "Wo? (Qayerda?)",
+      "C": "Woher? (Qayerdan?)",
+      "D": "Warum? (Nega?)"
+    },
+    "correct": "A",
+    "explanation": "Yo'nalish uchun 'Wohin?' (qayerga?), manba uchun 'Woher?' (qayerdan?), joylashuv uchun 'Wo?' (qayerda?) ishlatiladi."
+  },
+  {
+    "id": "de-25-s5",
+    "session": 5,
+    "subject": "Nemis tili",
+    "topic": "Inklyuziv ta'limda ijobiy rag'bat",
+    "grades": "1-11",
+    "question": "Til o'rganishda xatolarga yo'l qo'ygan o'quvchini qo'llab-quvvatlash uchun o'qituvchi qanday munosabatda bo'lishi lozim?",
+    "options": {
+      "A": "Xatolarni tabiiy o'rganish bosqichi deb qabul qilib, konstruktiv va muloyim tarzda to'g'ri variantni ko'rsatish",
+      "B": "Butun sinf oldida o'quvchini qattiq tanqid qilish",
+      "C": "O'quvchiga boshqa so'z bermaslik",
+      "D": "O'quvchiga darhol ikki baho qo'yish"
+    },
+    "correct": "A",
+    "explanation": "Ijobiy tuzatish va xatolarga nisbatan rag'batlantiruvchi muhit o'quvchida til to'sig'ini yengishga imkon beradi."
+  },
+  {
+    "id": "de-1-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Formativ va summativ baholash farqi",
+    "grades": "1-11",
+    "question": "Nemis tili ta'limida formativ baholashning (Formative Beurteilung) asosiy maqsadi nima?",
+    "options": {
+      "A": "Ta'lim jarayonini doimiy kuzatib, o'quvchining kuchli va bo'sh tomonlarini aniqlash hamda o'z vaqtida metodik yordam ko'rsatish",
+      "B": "Chorak oxirida yakuniy reyting baholarini qo'yish",
+      "C": "O'quvchilarni taqdirlash yoki jazolash",
+      "D": "Davlat imtihonlariga rasmiy ball berish"
+    },
+    "correct": "A",
+    "explanation": "Formativ baholash ta'lim jarayonini yaxshilash, o'quvchiga rivojlanish uchun qayta aloqa (Feedback) berishga qaratilgan."
+  },
+  {
+    "id": "de-2-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "CEFR B1 darajasi deskriptorlari",
+    "grades": "1-11",
+    "question": "CEFR tizimi bo'yicha B1 darajadagi o'quvchi qanday til kompetensiyasiga ega bo'lishi kerak?",
+    "options": {
+      "A": "Tanish mavzularda mustaqil muloqot qila olish, o'z fikr-mulohazalarini, rejalari va umidlarini qisqacha asoslab bera olish",
+      "B": "Faqat bitta-bitta alohida so'zlarni tanish",
+      "C": "Murakkab ilmiy dissertatsiyalarni yozma tahlil qilish",
+      "D": "Faqat professional tarjimonlik qilish"
+    },
+    "correct": "A",
+    "explanation": "CEFR B1 mustaqil til egasi (selbstständige Sprachverwendung) bo'lib, tanish sohalarda erkin fikr bildirishni talab qiladi."
+  },
+  {
+    "id": "de-3-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Rubrikalar asosida baholash",
+    "grades": "1-11",
+    "question": "Nemis tilida yozma ishni baholash rubrikasiga qaysi mezonlar kiritilishi shart?",
+    "options": {
+      "A": "Mazmunning to'liqligi (Inhalt), matn tuzilishi (Kohärenz), leksik boylik (Wortschatz) va grammatik to'g'rilik (Korrektheit)",
+      "B": "Faqat husnixatning chiroyliligi",
+      "C": "Matnning faqat qog'ozdagi hajmi",
+      "D": "O'quvchining partada o'tirish odobi"
+    },
+    "correct": "A",
+    "explanation": "Xalqaro standartlarda rubrika mazmun, mantiqiy bog'liqlik, leksik diapazon va grammatik aniqlikni baholaydi."
+  },
+  {
+    "id": "de-4-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Passiv garov (Passiv)",
+    "grades": "1-11",
+    "question": "\"Der Brief wird vom Lehrer korrigiert\" gapi qaysi zamon va shaklda berilgan?",
+    "options": {
+      "A": "Präsens Passiv (Hozirgi zamon majhul nisbati)",
+      "B": "Perfekt Passiv",
+      "C": "Aktiv Präsens",
+      "D": "Präteritum Passiv"
+    },
+    "correct": "A",
+    "explanation": "Präsens Passiv 'werden (Präsens) + Partizip II' formulasi bilan yasaladi."
+  },
+  {
+    "id": "de-5-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Samarali qayta aloqa (Feedback)",
+    "grades": "1-11",
+    "question": "O'quvchining yozma nutqini tekshirishda qaysi fikr-mulohaza (Feedback) eng samarali sanaladi?",
+    "options": {
+      "A": "Yaxshi chiqqan jihatlarni e'tirof etib, aniq xatolarni qanday to'g'rilash bo'yicha yo'naltiruvchi maslahat berish",
+      "B": "Faqat 'Yomon' yoki 'Yaxshi' deb baho qo'yish",
+      "C": "Qizil siyoh bilan barcha so'zlarni o'chirib tashlash",
+      "D": "Hech qanday izoh bermaslik"
+    },
+    "correct": "A",
+    "explanation": "Konstruktiv fikr-mulohaza o'quvchining motivatsiyasini saqlab, xatolar ustida ishlash yo'lini ko'rsatadi."
+  },
+  {
+    "id": "de-6-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Subjunktiv II (Konjunktiv II)",
+    "grades": "1-11",
+    "question": "Istak yoki taxminni bildiruvchi \"Ich _____ gern nach Berlin reisen\" jumlasi uchun qaysi fe'l mos keladi?",
+    "options": {
+      "A": "würde",
+      "B": "werde",
+      "C": "wurde",
+      "D": "war"
+    },
+    "correct": "A",
+    "explanation": "Konjunktiv II da istak va noaniqlik 'würde + Infinitiv' shaklida yasaladi."
+  },
+  {
+    "id": "de-7-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "O'zini-o'zi baholash (Selbstevaluation)",
+    "grades": "1-11",
+    "question": "Goethe-Instituti va CEFR 'Can-Do Statements' (Qo'limdan keladi) jadvallarining vazifasi nima?",
+    "options": {
+      "A": "O'quvchiga o'z til ko'nikmalarini mustaqil tahlil qilish va maqsad qo'yish imkonini berish",
+      "B": "Darsliklarni sotish",
+      "C": "O'qituvchining dars berishini to'xtatish",
+      "D": "Imtihonlarni bekor qilish"
+    },
+    "correct": "A",
+    "explanation": "'Can-Do' deskriptorlari o'quvchining o'z-o'zini baholashini va avtonom ta'limini rivojlantiradi."
+  },
+  {
+    "id": "de-8-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Nisbiy ergash gaplar (Relativsätze)",
+    "grades": "1-11",
+    "question": "\"Das ist das Buch, _____ ich gestern gekauft habe\" bo'sh o'rniga qaysi nisbiy olmosh qo'yiladi?",
+    "options": {
+      "A": "das (Akkusativ Neutrum)",
+      "B": "die",
+      "C": "der",
+      "D": "dem"
+    },
+    "correct": "A",
+    "explanation": "'das Buch' o'rta jinsda bo'lib, ergash gapda Akkusativ (obyekt) vazifasida kelgani uchun 'das' qo'yiladi."
+  },
+  {
+    "id": "de-9-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Diagnostik baholash",
+    "grades": "1-11",
+    "question": "O'quv yili yoki yangi modul boshida o'tkaziladigan diagnostik testning asosiy vazifasi nima?",
+    "options": {
+      "A": "O'quvchilarning boshlang'ich bilim darajasini aniqlab, dars rejasini shunga mos moslashtirish",
+      "B": "O'quvchilarga choraklik yakuniy baho qo'yish",
+      "C": "Eng past baholanganlarni sinfdan chiqarish",
+      "D": "Faqat maktab reytingini aniqlash"
+    },
+    "correct": "A",
+    "explanation": "Diagnostik baholash o'quvchilarning real ehtiyojlarini aniqlash va ta'lim dasturini korreksiya qilish uchun o'tkaziladi."
+  },
+  {
+    "id": "de-10-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Infinitiv iboralar (um ... zu)",
+    "grades": "1-11",
+    "question": "\"Er lernt Deutsch, _____ in Deutschland zu studieren\" bo'sh joyga qaysi bog'lovchi qo'yiladi?",
+    "options": {
+      "A": "um",
+      "B": "ohne",
+      "C": "statt",
+      "D": "damit"
+    },
+    "correct": "A",
+    "explanation": "Maqsadni ifodalovchi infinitiv konstruksiya 'um ... zu + Infinitiv' (qilish uchun) shaklida bo'ladi."
+  },
+  {
+    "id": "de-11-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "O'zaro baholash (Peerevaluation)",
+    "grades": "1-11",
+    "question": "Nemis tili darsida o'quvchilar bir-birlarining og'zaki taqdimotlarini baholashganda qanday qoidaga amal qilishlari zarur?",
+    "options": {
+      "A": "Oldindan belgilangan aniq mezonlar (kriteriyalar) asosida xolis va do'stona fikr bildirish",
+      "B": "Faqat shaxsiy munosabatga qarab baholash",
+      "C": "Eng kichik xatoni ham masxara qilish",
+      "D": "Faqat a'lo baho qo'yish"
+    },
+    "correct": "A",
+    "explanation": "Peerevaluation oldindan aniq ishlab chiqilgan rubrika asosida adolatli va konstruktiv o'tkazilishi shart."
+  },
+  {
+    "id": "de-12-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Genitiv kelishigi",
+    "grades": "1-11",
+    "question": "\"Das Auto _____ Vaters steht in der Garage\" bo'sh o'rniga qaysi artikl qo'yiladi?",
+    "options": {
+      "A": "des",
+      "B": "dem",
+      "C": "den",
+      "D": "der"
+    },
+    "correct": "A",
+    "explanation": "Genitivda muzskoy jinsdagi 'der Vater' so'zi 'des Vaters' shaklini oladi."
+  },
+  {
+    "id": "de-13-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Summativ testlar validligi",
+    "grades": "1-11",
+    "question": "Nemis tili summativ testining validligi (Validität) nimani anglatadi?",
+    "options": {
+      "A": "Test aynan o'rganilgan va o'lchanishi kerak bo'lgan til kompetensiyalarini aniq o'lchashini",
+      "B": "Testning qog'ozga chiroyli chop etilganini",
+      "C": "Test savollari juda qisqa bo'lishini",
+      "D": "Testda hamma a'lo baho olishini"
+    },
+    "correct": "A",
+    "explanation": "Testning validligi — test maqsad qilingan bilim va ko'nikmalarni qay darajada haqqoniy o'lchashidir."
+  },
+  {
+    "id": "de-14-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Sifatlarning kuchsiz turlanishi",
+    "grades": "1-11",
+    "question": "\"Ich sehe den _____ Hund\" (alt - qari) birikmasida sifat qanday qo'shimcha oladi?",
+    "options": {
+      "A": "alten",
+      "B": "alter",
+      "C": "altes",
+      "D": "altem"
+    },
+    "correct": "A",
+    "explanation": "Akkusativ maskulin aniq artikldan (den) keyin sifat '-en' qo'shimchasini oladi (den alten Hund)."
+  },
+  {
+    "id": "de-15-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Baholashda xolislik (Objektivität)",
+    "grades": "1-11",
+    "question": "O'qituvchi o'quvchining yozma ishini baholashda subyektiv munosabatni kamaytirish uchun qaysi usuldan foydalanishi lozim?",
+    "options": {
+      "A": "Anonim tekshirish (kodlash) va aniq rubrika mezonlariga tayanish",
+      "B": "O'quvchining oldingi chorak baholariga qarab baholash",
+      "C": "Faqat xatolar sonini sanash",
+      "D": "Baholashni boshqa o'quvchiga topshirish"
+    },
+    "correct": "A",
+    "explanation": "Anonim tekshirish va kriterial rubrika baholashdagi subyektivlikni (halo effektini) bartaraf etadi."
+  },
+  {
+    "id": "de-16-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Bog'lovchi so'zlar (Konnektoren)",
+    "grades": "1-11",
+    "question": "\"Zwar ist es kalt, _____ die Sonne scheint\" bo'sh joyga qaysi zidlovchi so'z mos keladi?",
+    "options": {
+      "A": "aber",
+      "B": "weil",
+      "C": "deshalb",
+      "D": "denn"
+    },
+    "correct": "A",
+    "explanation": "'zwar ... aber' (garchi ... bo'lsa-da, lekin ...) bog'lovchi juftligi hisoblanadi."
+  },
+  {
+    "id": "de-17-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Portfel baholash (Portfolio)",
+    "grades": "1-11",
+    "question": "Nemis tili ta'limida 'Sprachenportfolio' (Til portfeli) ning asosiy pedagogik ahamiyati nimada?",
+    "options": {
+      "A": "O'quvchining butun yil davomidagi ijodiy ishlari, taraqqiyoti va erishgan natijalarini to'plab ko'rsatish",
+      "B": "Faqat imtihon varaqalarini saqlash",
+      "C": "O'quvchini darslik o'rniga ishlatish",
+      "D": "Faqat maktab arxivi uchun hisobot tayyorlash"
+    },
+    "correct": "A",
+    "explanation": "Yevropa til portfeli o'quvchining uzoq muddatli shaxsiy o'sish dinamikasini hujjatlashtirish vositasidir."
+  },
+  {
+    "id": "de-18-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Plusquamperfekt",
+    "grades": "1-11",
+    "question": "\"Nachdem er die Hausaufgaben gemacht _____, ging er spazieren\" gapiga qaysi yordamchi fe'l qo'yiladi?",
+    "options": {
+      "A": "hatte",
+      "B": "hat",
+      "C": "war",
+      "D": "habe"
+    },
+    "correct": "A",
+    "explanation": "O'tmishdagi harakatdan oldin sodir bo'lgan ish-harakat uchun Plusquamperfekt ('hatte/war + Partizip II') qo'llanadi."
+  },
+  {
+    "id": "de-19-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Xatolarni to'g'rilash (Fehlerkorrektur)",
+    "grades": "1-11",
+    "question": "O'quvchi erkin gapirayotgan paytda (Fluency / nutq ravonligi mashqida) o'qituvchi xatolarni qanday to'g'rilashi maqsadga muvofiq?",
+    "options": {
+      "A": "O'quvchining nutqini bo'lmasdan, xatolarni yozib olib, so'zlashuv yakunida umumiy muhokama qilish",
+      "B": "Har bir xatoda darhol gapni bo'lib, o'quvchini to'xtatish",
+      "C": "Xatolarga umuman e'tibor bermaslik",
+      "D": "O'quvchining o'rniga o'zi gapirib qo'yish"
+    },
+    "correct": "A",
+    "explanation": "Ravonlikka (Fluency) yo'naltirilgan dars fragmentida so'zlovchini to'xtatmaslik, tahlilni oxirida qilish tavsiya etiladi."
+  },
+  {
+    "id": "de-20-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Fe'llarning boshqaruvi (Dativ talab qiluvchi)",
+    "grades": "1-11",
+    "question": "Quyidagi fe'llardan qaysi biri doimo Dativ kelishigidagi to'ldiruvchini talab qiladi?",
+    "options": {
+      "A": "helfen, danken, gefallen, gehören",
+      "B": "sehen, hören, fragen, lieben",
+      "C": "suchen, finden, kaufen, trinken",
+      "D": "machen, schreiben, lesen, malen"
+    },
+    "correct": "A",
+    "explanation": "'helfen' (yordam bermoq), 'danken' (minnatdor bo'lmoq), 'gefallen' (yoqmoq) faqat Dativ bilan ishlatiladi."
+  },
+  {
+    "id": "de-21-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Baholash natijalaridan foydalanish",
+    "grades": "1-11",
+    "question": "Test natijalari tahlili sinfda aksariyat o'quvchilar bitta grammatik mavzuda adashganini ko'rsatsa, o'qituvchi qanday xulosa chiqarishi kerak?",
+    "options": {
+      "A": "O'sha mavzuni tushuntirish metodikasini qayta ko'rib chiqib, qo'shimcha interfaol mashqlar bilan mustahkamlash",
+      "B": "O'sha mavzuni o'quv dasturidan butunlay chiqarib tashlash",
+      "C": "Barcha o'quvchilarga jazo berish",
+      "D": "O'quvchilarga faqat mustaqil o'qishni buyurish"
+    },
+    "correct": "A",
+    "explanation": "Baholash natijalari o'qituvchi uchun o'z pedagogik faoliyatini to'g'rilash (Data-driven instruction) mayoqidir."
+  },
+  {
+    "id": "de-22-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: Sabab ergash gaplar (da / weil)",
+    "grades": "1-11",
+    "question": "'Da' va 'weil' bog'lovchilarining qo'llanishidagi nozik farq nimada?",
+    "options": {
+      "A": "'Da' ko'pincha tinglovchiga oldindan ma'lum bo'lgan sababni ifodalab, bosh gapdan oldin keladi",
+      "B": "'Da' faqat o'tgan zamonda ishlatiladi",
+      "C": "'Weil' fe'lni ikkinchi o'ringa suradi",
+      "D": "Ular orasida umuman farq yo'q"
+    },
+    "correct": "A",
+    "explanation": "'Da' ko'proq ma'lum sababni bildiradi va odatda gap boshida keladi (Da es regnet, bleiben wir zu Hause)."
+  },
+  {
+    "id": "de-23-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "O'quvchi motivatsiyasi va baho",
+    "grades": "1-11",
+    "question": "Baho qo'yish jarayonida 'Ipsative Assessment' (shaxsiy o'sishni baholash) nima?",
+    "options": {
+      "A": "O'quvchining hozirgi natijasini uning o'zining oldingi natijalari bilan taqqoslab, shaxsiy siljishini baholash",
+      "B": "O'quvchini boshqa a'lochi o'quvchilar bilan solishtirish",
+      "C": "Faqat standart davlat testlariga tayanish",
+      "D": "O'quvchining ijtimoiy kelib chiqishini baholash"
+    },
+    "correct": "A",
+    "explanation": "Ipsativ baholash o'quvchining boshqalar bilan emas, o'zining oldingi natijasi bilan taqqoslanishini ta'minlaydi."
+  },
+  {
+    "id": "de-24-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Nemis tili: So'z yasalishi (Sifat yasovchi qo'shimchalar)",
+    "grades": "1-11",
+    "question": "Quyidagi sifat yasovchi qo'shimchalardan qaysi biri fe'l o'zagiga qo'shilib 'qilish mumkin bo'lgan' ma'nosini bildiradi?",
+    "options": {
+      "A": "-bar (masalan: lesbar, essbar)",
+      "B": "-ig (masalan: sonnig)",
+      "C": "-lich (masalan: freundlich)",
+      "D": "-los (masalan: arbeitslos)"
+    },
+    "correct": "A",
+    "explanation": "'-bar' affiksi passiv imkoniyatni bildiradi: 'lesbar' — o'qisa bo'ladigan (tushunarli)."
+  },
+  {
+    "id": "de-25-s6",
+    "session": 6,
+    "subject": "Nemis tili",
+    "topic": "Metodik xulosa: Zamonaviy nemis tili o'qituvchisi",
+    "grades": "1-11",
+    "question": "Zamonaviy DaF (Deutsch als Fremdsprache) o'qituvchisining eng asosiy vazifasi qaysi qatorda to'g'ri ta'riflangan?",
+    "options": {
+      "A": "O'quvchilarda tildan real hayotiy va madaniyatlararo muloqotda erkin, mustaqil va mas'uliyatli foydalanish kompetensiyasini rivojlantirish",
+      "B": "Faqat lug'at yodlatish",
+      "C": "Dars davomida faqat o'zi monolog o'qish",
+      "D": "Qat'iy grammatik tarjima usulidan chetga chiqmaslik"
+    },
+    "correct": "A",
+    "explanation": "Zamonaviy til pedagogikasining markazida o'quvchi shaxsi va uning madaniyatlararo muloqot qobiliyati turadi."
+  },
+  {
+    "id": "fr-1-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Action Research va dalilga asoslangan ta'lim",
+    "grades": "1-11",
+    "question": "Sinf amaliyotini tadqiq etishda (Action Research) o'qituvchi qaysi ketma-ketlikka rioya qilishi lozim?",
+    "options": {
+      "A": "Muammoni aniqlash -> Dalillarni yig'ish -> Harakatlar rejasini tuzish -> Amalga oshirish -> Natijani baholash",
+      "B": "Reja tuzish -> Darsni to'xtatish -> Yangi darslik sotib olish",
+      "C": "Faqat o'quvchilarni jazolash -> Rahbariyatga xat yozish",
+      "D": "Nazorat ishi o'tkazish -> Ota-onalarni chaqirish"
+    },
+    "correct": "A",
+    "explanation": "Action Research sikli muammoni rejalashtirish, amalda sinash, kuzatish va refleksiya qilishdan iborat."
+  },
+  {
+    "id": "fr-2-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili artikllari: Partitif artikli",
+    "grades": "1-11",
+    "question": "Qaysi holatda fransuz tilida 'article partitif' (du, de la, de l', des) qo'llaniladi?",
+    "options": {
+      "A": "Sanalmaydigan, butunning bir qismini bildiruvchi modda yoki mavhum otlar bilan",
+      "B": "Aniq sanaladigan narsalar bilan",
+      "C": "Dunyoda yagona bo'lgan tushunchalar bilan",
+      "D": "Faqat shaxs ismlari bilan"
+    },
+    "correct": "A",
+    "explanation": "Article partitif sanalmaydigan moddalar va oziq-ovqatlarning bir qismini ifodalashda ishlatiladi (du pain, de l'eau)."
+  },
+  {
+    "id": "fr-3-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "FLE metodikasi: Kommunikativ yondashuv",
+    "grades": "1-11",
+    "question": "Fransuz tilini chet tili sifatida o'qitishda (FLE - Français Langue Étrangère) kommunikativ metodning bosh mezoni nima?",
+    "options": {
+      "A": "O'quvchilarni tildan real ijtimoiy va madaniy vaziyatlarda mazmunli foydalanishga o'rgatish",
+      "B": "Grammatik qoidalarni yodlatish",
+      "C": "Matnlarni so'zma-so'z ona tiliga tarjima qilish",
+      "D": "Faqat to'g'ri yozuvni (ortografiyani) tekshirish"
+    },
+    "correct": "A",
+    "explanation": "FLE kommunikativ yondashuvi tilni muloqot vositasi sifatida real vaziyatlarda o'zlashtirishga qaratilgan."
+  },
+  {
+    "id": "fr-4-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili grammatikasi: Passé Composé",
+    "grades": "1-11",
+    "question": "Quyidagi fe'llardan qaysi biri Passé Composé zamonida 'être' yordamchi fe'li bilan tuslanadi?",
+    "options": {
+      "A": "aller (bormoq)",
+      "B": "manger (yemoq)",
+      "C": "faire (qilmoq)",
+      "D": "lire (o'qimoq)"
+    },
+    "correct": "A",
+    "explanation": "Harakat yo'nalishini bildiruvchi fe'llar (aller, venir, partir, arriver...) Passé Composé da 'être' bilan yasaladi."
+  },
+  {
+    "id": "fr-5-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Dalillarga asoslangan ta'lim (Evidence-based teaching)",
+    "grades": "1-11",
+    "question": "Fransuz tili o'qituvchisi o'z darsida yangi metodikani qo'llash samaradorligini qanday dalillar asosida tekshirishi mumkin?",
+    "options": {
+      "A": "O'quvchilarning topshiriqlarni bajarish tezligi, nutq faolligi va formativ test ko'rsatkichlari tahlili orqali",
+      "B": "Faqat o'zining shaxsiy kayfiyatiga qarab",
+      "C": "Darslik muallifining fikriga tayanib",
+      "D": "Faqat dars konspektining qalinligi bilan"
+    },
+    "correct": "A",
+    "explanation": "Dalilga asoslangan pedagogika o'quvchilarning real ta'limiy ko'rsatkichlari va tahliliy natijalariga tayanadi."
+  },
+  {
+    "id": "fr-6-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Inkor shakli (La négation)",
+    "grades": "1-11",
+    "question": "Fransuz tilida oddiy inkor gap (ne ... pas) tuzilishida fe'l qayerda joylashadi?",
+    "options": {
+      "A": "'ne' va 'pas' so'zlari orasida (masalan: Je ne parle pas)",
+      "B": "'pas' so'zidan keyin",
+      "C": "'ne' so'zidan oldin",
+      "D": "Gapning eng oxirida"
+    },
+    "correct": "A",
+    "explanation": "Fransuz tilida oddiy inkor: ega + ne + fe'l + pas shaklida bo'ladi."
+  },
+  {
+    "id": "fr-7-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Yaqin kelasi zamon (Futur Proche)",
+    "grades": "1-11",
+    "question": "Futur Proche zamoni qanday formula asosida yasaladi?",
+    "options": {
+      "A": "aller fe'lining hozirgi zamon shakli + Infinitif",
+      "B": "avoir + Participe Passé",
+      "C": "être + Infinitif",
+      "D": "vouloir + Participe Passé"
+    },
+    "correct": "A",
+    "explanation": "Futur Proche formulasi: aller (Présent) + asosiy fe'lning Infinitif shakli (masalan: Je vais manger)."
+  },
+  {
+    "id": "fr-8-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Sinf amaliyoti tadqiqoti: Ma'lumot yig'ish",
+    "grades": "1-11",
+    "question": "O'qituvchi sinfda o'quvchilarning fransuz tilida gapirishdan qo'rqish sabablarini aniqlash uchun qaysi vositadan foydalanishi eng mos keladi?",
+    "options": {
+      "A": "Anonim so'rovnoma (anketa) va o'quvchilar bilan qisqa intervyular",
+      "B": "Qattiq imtihon o'tkazish",
+      "C": "Ota-onalar yig'ilishida e'lon qilish",
+      "D": "O'quvchilarga qo'shimcha vazifa yuklash"
+    },
+    "correct": "A",
+    "explanation": "Anonim so'rovnoma va intervyu o'quvchilarning psixologik to'siqlarini xolis aniqlashga xizmat qiladi."
+  },
+  {
+    "id": "fr-9-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Sifatlarning moslashuvi",
+    "grades": "1-11",
+    "question": "Fransuz tilida sifatlar otlar bilan qanday qoidalarga ko'ra moslashadi?",
+    "options": {
+      "A": "Otning jinsi (rod) va sonida (birlik/ko'plik) to'liq moslashadi",
+      "B": "Faqat ko'plikda moslashadi",
+      "C": "Hech qachon moslashmaydi",
+      "D": "Faqat shaxs otlari bilan moslashadi"
+    },
+    "correct": "A",
+    "explanation": "Fransuz tilida sifat aniqlayotgan ot bilan jinsda (masculin/féminin) va sonda (singulier/pluriel) moslashadi."
+  },
+  {
+    "id": "fr-10-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "FLE: Fonetika va bog'lanish (La liaison)",
+    "grades": "1-11",
+    "question": "Fransuz tilida 'Les amis' birikmasi qanday talaffuz qilinadi va bu qanday hodisa?",
+    "options": {
+      "A": "[le.za.mi] - oxirgi o'qilmaydigan 's' undoshi unli oldida [z] deb bog'lanadi (La liaison)",
+      "B": "[le a.mi] - bog'lanish bo'lmaydi",
+      "C": "[les a.mi]",
+      "D": "[lez a.mis]"
+    },
+    "correct": "A",
+    "explanation": "La liaison hodisasida so'z oxiridagi talaffuz qilinmaydigan 's' unli bilan boshlangan keyingi so'zga [z] tovushi bilan ulanadi."
+  },
+  {
+    "id": "fr-11-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "FLE: Tinglab tushunish strategiyalari",
+    "grades": "1-11",
+    "question": "O'quvchilarda fransuz tilida tinglab tushunishni osonlashtirish uchun darsda qaysi usul qo'llanadi?",
+    "options": {
+      "A": "Audioni tinglashdan oldin asosiy tayanch so'zlarni (mots-clés) tanishtirish va taxmin qilish topshiriqlari berish",
+      "B": "Audioni bir marta eng tez tezlikda eshittirish",
+      "C": "Hech qanday tayyorgarliksiz to'liq matnni yozdirish",
+      "D": "Faqat grammatik qoidani tushuntirish"
+    },
+    "correct": "A",
+    "explanation": "Tinglashdan oldingi tayyorgarlik va kalit so'zlar o'quvchida audio mazmunini tushunishga zamin yaratadi."
+  },
+  {
+    "id": "fr-12-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: 1-guruh fe'llari",
+    "grades": "1-11",
+    "question": "1-guruh fe'llarining (masalan: parler) hozirgi zamon (Présent) 'nous' shaxsidagi qo'shimchasi qanday bo'ladi?",
+    "options": {
+      "A": "-ons (nous parlons)",
+      "B": "-ez",
+      "C": "-ent",
+      "D": "-es"
+    },
+    "correct": "A",
+    "explanation": "1-guruh fe'llarining ko'plik 1-shaxs qo'shimchasi '-ons' hisoblanadi."
+  },
+  {
+    "id": "fr-13-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Dalillarga asoslangan dars rejalashtirish",
+    "grades": "1-11",
+    "question": "O'qituvchi o'quvchilar leksikani tez unutayotganini aniqlagach, qaysi dalilga asoslangan ta'limiy yondashuvni qo'llashi zarur?",
+    "options": {
+      "A": "Interval takrorlash (Spaced Repetition) va interfaol xotira kartochkalaridan foydalanish",
+      "B": "So'zlarni 100 martadan daftarga ko'chirtirish",
+      "C": "Yangi so'z o'rgatishni to'xtatish",
+      "D": "Barcha lug'at daftarlarini yig'ib olish"
+    },
+    "correct": "A",
+    "explanation": "Kognitiv fanga asoslangan Spaced Repetition (interval takrorlash) so'zlarning uzoq muddatli xotirada qolishini ta'minlaydi."
+  },
+  {
+    "id": "fr-14-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Egalik sifatlari (Adjectifs possessifs)",
+    "grades": "1-11",
+    "question": "Unli bilan boshlangan ayol jinsidagi ot oldida (masalan: amie) qaysi egalik sifati qo'llanadi?",
+    "options": {
+      "A": "mon (mon amie)",
+      "B": "ma",
+      "C": "mes",
+      "D": "m'"
+    },
+    "correct": "A",
+    "explanation": "Fonetik noqulaylikning oldini olish uchun unli bilan boshlangan ayol jinsidagi otlar oldida 'ma' o'rniga 'mon' ishlatiladi."
+  },
+  {
+    "id": "fr-15-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "FLE: Savol berish usullari",
+    "grades": "1-11",
+    "question": "Fransuz tilida rasmiy va yozma nutqqa xos bo'lgan savol berish usuli qaysi?",
+    "options": {
+      "A": "Inversiya usuli (fe'l va eganing o'rnini almashtirish: Parlez-vous français ?)",
+      "B": "Faqat intonatsiya usuli",
+      "C": "'Est-ce que' usuli",
+      "D": "Faqat imo-ishora usuli"
+    },
+    "correct": "A",
+    "explanation": "Inversiya usuli fransuz tilida eng adabiy va rasmiy so'roq shakli hisoblanadi."
+  },
+  {
+    "id": "fr-16-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Sinf amaliyoti tadqiqoti: O'zgarishlarni kuzatish",
+    "grades": "1-11",
+    "question": "Yangi metodika sinab ko'rilgandan so'ng, o'qituvchi o'zgarishlar ijobiy bo'lganini qanday tekshiradi?",
+    "options": {
+      "A": "Dastlabki (Pre-test) va tajribadan keyingi (Post-test) natijalarni taqqoslash orqali",
+      "B": "O'quvchilardan xursandmisiz deb so'rash bilan",
+      "C": "Faqat dars o'tilgan kunlar sonini sanash orqali",
+      "D": "Nazorat ishini bekor qilish orqali"
+    },
+    "correct": "A",
+    "explanation": "Pre-test va Post-test natijalarini qiyoslash metodikaning samaradorligini isbotlovchi asosiy dalildir."
+  },
+  {
+    "id": "fr-17-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Predloglar bilan mamlakat nomlari",
+    "grades": "1-11",
+    "question": "\"Je vais _____ France\" va \"Je vais _____ Japon\" gaplaridagi bo'sh o'rinlarga mos predloglar qaysi?",
+    "options": {
+      "A": "en / au",
+      "B": "à / en",
+      "C": "dans / à",
+      "D": "au / en"
+    },
+    "correct": "A",
+    "explanation": "Ayol jinsidagi mamlakatlar oldidan 'en' (en France), erkak jinsidagi mamlakatlar oldidan 'au' (au Japon) ishlatiladi."
+  },
+  {
+    "id": "fr-18-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "FLE: Dialogik nutqni rivojlantirish",
+    "grades": "1-11",
+    "question": "Fransuz tili darsida o'quvchilarni 'Au restaurant' (Restoranda) mavzusida gapirtirish uchun eng yaxshi pedagogik usul qaysi?",
+    "options": {
+      "A": "Rolli o'yin (Mijoz va ofitsiant rollarida dialog tuzish)",
+      "B": "Menyu ro'yxatini yodlatish",
+      "C": "O'zbekcha taomlar haqida insho yozish",
+      "D": "Faqat doskaga qarab o'tirish"
+    },
+    "correct": "A",
+    "explanation": "Rolli o'yinlar haqiqiy kommunikativ muhit yaratadi va o'quvchilarda nutq faolligini oshiradi."
+  },
+  {
+    "id": "fr-19-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili grammatikasi: Yaqinda o'tgan zamon (Passé Récent)",
+    "grades": "1-11",
+    "question": "Yaqinda sodir bo'lgan ish-harakatni ifodalovchi Passé Récent qaysi fe'l yordamida yasaladi?",
+    "options": {
+      "A": "venir + de + Infinitif (masalan: Je viens de finir)",
+      "B": "aller + de + Infinitif",
+      "C": "être + en train de",
+      "D": "avoir + Participe"
+    },
+    "correct": "A",
+    "explanation": "Passé Récent: 'venir de + Infinitif' formulasi bilan yasaladi (hozirgina tugatdim)."
+  },
+  {
+    "id": "fr-20-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Tadqiqot natijalarini hamkasblar bilan bo'lishish",
+    "grades": "1-11",
+    "question": "O'qituvchi o'tkazgan 'Action Research' natijalarini maktab uslubiy birlashmasida taqdim etishning ahamiyati nimada?",
+    "options": {
+      "A": "Ilg'or pedagogik tajribani ommalashtirish va hamkasblar bilan birgalikda ta'lim sifatini oshirish",
+      "B": "O'zini boshqalardan ustun ko'rsatish",
+      "C": "Boshqa fan o'qituvchilariga tanbeh berish",
+      "D": "Hisobotlar sonini sun'iy ko'paytirish"
+    },
+    "correct": "A",
+    "explanation": "Pedagogik topilmalarni hamjamiyatda ulashish maktab miqyosida ta'lim madaniyatini yuksaltiradi."
+  },
+  {
+    "id": "fr-21-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Ko'rsatish sifatlari (Adjectifs démonstratifs)",
+    "grades": "1-11",
+    "question": "Erkak jinsidagi unli bilan boshlangan so'z oldida (masalan: homme, arbre) qaysi ko'rsatish sifati ishlatiladi?",
+    "options": {
+      "A": "cet (cet homme)",
+      "B": "ce",
+      "C": "cette",
+      "D": "ces"
+    },
+    "correct": "A",
+    "explanation": "Erkak jinsidagi unli yoki tilsiz 'h' bilan boshlangan so'zlar oldida 'ce' emas, 'cet' qo'llanadi."
+  },
+  {
+    "id": "fr-22-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "FLE: Grammatika induktiv usulda",
+    "grades": "1-11",
+    "question": "Fransuz tili darsida grammatikani 'induktiv' o'rgatish nimani bildiradi?",
+    "options": {
+      "A": "O'quvchilarga avval misollar va matn berilib, qoidani o'zlari mustaqil chiqarib olishlariga yo'naltirish",
+      "B": "Avval tayyor qoidani aytib, keyin mashq bajartirish",
+      "C": "Qoidalarni umuman tushuntirmaslik",
+      "D": "Faqat test yechtirish"
+    },
+    "correct": "A",
+    "explanation": "Induktiv yondashuv aniq misollardan umumiy qoidaga tomon borish bo'lib, o'quvchining mantiqiy fikrlashini faollashtiradi."
+  },
+  {
+    "id": "fr-23-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: O'tgan tugallanmagan zamon (Imparfait)",
+    "grades": "1-11",
+    "question": "Fransuz tilida qaysi holatda Passé Composé emas, balki Imparfait ishlatiladi?",
+    "options": {
+      "A": "O'tmishdagi takroriy harakatlar, holat va tabiat tasvirini ifodalashda",
+      "B": "Bir marta sodir bo'lib tugallangan aniq harakatda",
+      "C": "Kelajakdagi maqsadlarda",
+      "D": "Buyruq berishda"
+    },
+    "correct": "A",
+    "explanation": "Imparfait o'tmishdagi davomiy, odatiy harakatlar va tavsiflarni (tavsifiy fon) ifodalash uchun xizmat qiladi."
+  },
+  {
+    "id": "fr-24-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "FLE: Lug'at boyligini oshirish",
+    "grades": "1-11",
+    "question": "Fransuz tilida sinonimlar va antonimlar bilan ishlash o'quvchida qaysi ko'nikmani o'stiradi?",
+    "options": {
+      "A": "Nutqning rang-barangligi va so'zlarni kontekstga mos tanlash qobiliyatini",
+      "B": "Faqat talaffuz tezligini",
+      "C": "Faqat husnixatni",
+      "D": "Grammatika qoidalarini yodlashni"
+    },
+    "correct": "A",
+    "explanation": "Sinonimik qatorlar o'quvchining leksik boyligini kengaytirib, nutqiy ifoda erkinligini oshiradi."
+  },
+  {
+    "id": "fr-25-s4",
+    "session": 4,
+    "subject": "Fransuz tili",
+    "topic": "Pedagogik etika va tadqiqot",
+    "grades": "1-11",
+    "question": "Sinf amaliyotini tadqiq qilish jarayonida o'qituvchi o'quvchilar ma'lumotlariga nisbatan qaysi etik qoidaga amal qilishi shart?",
+    "options": {
+      "A": "Maxfiylikni (konfidensiallik) saqlash va o'quvchilar shaxsiy ma'lumotlarini oshkor qilmaslik",
+      "B": "Natijalarni internetda ochiq tarqatish",
+      "C": "O'quvchilarning baholarini taxtaga osib qo'yish",
+      "D": "Faqat a'lochi o'quvchilar ma'lumotlarini tahlil qilish"
+    },
+    "correct": "A",
+    "explanation": "Pedagogik tadqiqotlarda o'quvchilarning shaxsiy ma'lumotlari maxfiyligi qat'iy himoyalanishi lozim."
+  },
+  {
+    "id": "fr-1-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Pedagogik refleksiya: Dars tahlili",
+    "grades": "1-11",
+    "question": "Dars yakunida o'qituvchi o'z-o'ziga 'Bugungi darsda qaysi usul eng yaxshi ishladi va nega?' deb savol berishi nimani ifodalaydi?",
+    "options": {
+      "A": "Pedagogik refleksiya (Reflective Teaching) orqali o'z faoliyatini tahlil qilishni",
+      "B": "Vaqtni bekorga o'tkazishni",
+      "C": "Dars o'tishdan charchaganlikni",
+      "D": "Baholashdan qochishni"
+    },
+    "correct": "A",
+    "explanation": "Refleksiya o'qituvchiga o'z yutuq va kamchiliklarini ongli tahlil qilib, kasbiy mahoratini doimiy oshirishga xizmat qiladi."
+  },
+  {
+    "id": "fr-2-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "FLE: Yozma muloqot (Production écrite)",
+    "grades": "1-11",
+    "question": "A2 darajasidagi fransuz tili o'quvchisi uchun do'stiga ta'til taassurotlari haqida 'carte postale' (ochiq xat) yozish qaysi CEFR talabiga mos keladi?",
+    "options": {
+      "A": "Shaxsiy tajriba va taassurotlar haqida qisqa, sodda va mantiqiy bog'langan xat yozish",
+      "B": "Ilmiy maqola yozish",
+      "C": "Rasmiy shikoyat xati yozish",
+      "D": "Qonun loyihasini tahlil qilish"
+    },
+    "correct": "A",
+    "explanation": "A2 darajasida shaxsiy voqealar, sayohat va kundalik hayot haqida oddiy xatlar yozish ko'nikmasi talab etiladi."
+  },
+  {
+    "id": "fr-3-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Refleksiya: Video-tahlil usuli",
+    "grades": "1-11",
+    "question": "O'qituvchi o'z darsini videoga yozib olib, keyinchalik tahlil qilishining eng katta afzalligi nima?",
+    "options": {
+      "A": "Darsdagi o'z xatti-harakati, vaqt taqsimoti va o'quvchilarning faolligini xolis chetdan ko'ra olish",
+      "B": "Videoni ijtimoiy tarmoqlarga joylash",
+      "C": "O'quvchilarni qo'rqitish",
+      "D": "Dars o'tishni video bilan almashtirish"
+    },
+    "correct": "A",
+    "explanation": "Video-refleksiya o'qituvchining o'zini chetdan obyektiv baholashi uchun eng kuchli vositadir."
+  },
+  {
+    "id": "fr-4-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Shaxsiy olmoshlar (Pronoms COD)",
+    "grades": "1-11",
+    "question": "\"Je vois ce film\" gapida 'ce film' to'g'ri to'ldiruvchisi qaysi olmosh bilan almashtiriladi?",
+    "options": {
+      "A": "le (Je le vois)",
+      "B": "lui",
+      "C": "en",
+      "D": "y"
+    },
+    "correct": "A",
+    "explanation": "'Ce film' erkak jinsidagi to'g'ridan-to'g'ri to'ldiruvchi (COD) bo'lgani sababli 'le' olmoshi bilan almashadi."
+  },
+  {
+    "id": "fr-5-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Nutqiy ko'nikmalar: Og'zaki ifoda (Production orale)",
+    "grades": "1-11",
+    "question": "Fransuz tilida erkin so'zlashuvni rivojlantirishda 'Brainstorming' (Remue-méninges) bosqichining maqsadi nima?",
+    "options": {
+      "A": "Mavzuga oid so'zlar va g'oyalarni erkin to'plab, nutq uchun baza yaratish",
+      "B": "Talaffuz xatolarini darhol jazolash",
+      "C": "Faqat grammatik qoidani yodlash",
+      "D": "Matnni jim o'qish"
+    },
+    "correct": "A",
+    "explanation": "Brainstorming mavzuga oid assotsiatsiyalarni chaqirib, gapirish uchun leksik zamin yaratadi."
+  },
+  {
+    "id": "fr-6-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Shaxsiy olmoshlar (Pronoms COI)",
+    "grades": "1-11",
+    "question": "\"Je parle à Marie\" gapida 'à Marie' qaysi olmosh bilan almashtiriladi?",
+    "options": {
+      "A": "lui (Je lui parle)",
+      "B": "la",
+      "C": "y",
+      "D": "en"
+    },
+    "correct": "A",
+    "explanation": "'à + shaxs' vositali to'ldiruvchi (COI) birlikda har doim 'lui' olmoshiga aylanadi."
+  },
+  {
+    "id": "fr-7-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Pedagogik kundalik (Journal de bord)",
+    "grades": "1-11",
+    "question": "Fransuz tili o'qituvchisining pedagogik kundalik yuritishdan ko'zlagan asosiy maqsadi nima?",
+    "options": {
+      "A": "Har darsdan keyin muvaffaqiyatlar, qiyinchiliklar va yangi g'oyalarni qayd etib, kasbiy o'sish dinamikasini kuzatish",
+      "B": "Maktab ma'muriyatiga hisobot yozish",
+      "C": "O'quvchilarning yomon xatti-harakatlarini to'plash",
+      "D": "Faqat darslikdagi qoidalarni yozib borish"
+    },
+    "correct": "A",
+    "explanation": "Pedagogik kundalik shaxsiy refleksiya va professional rivojlanishning muhim amaliyotidir."
+  },
+  {
+    "id": "fr-8-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: 'Y' va 'EN' olmoshlari",
+    "grades": "1-11",
+    "question": "\"Tu vas à l'école ? - Oui, j'_____ vais\" va \"Tu veux du café ? - Oui, j'_____ veux\" jumlalariga mos olmoshlarni toping:",
+    "options": {
+      "A": "y / en",
+      "B": "en / y",
+      "C": "le / la",
+      "D": "lui / leur"
+    },
+    "correct": "A",
+    "explanation": "'à + joy' o'rniga 'y', miqdor va partitif otlar o'rniga 'en' olmoshi qo'llanadi."
+  },
+  {
+    "id": "fr-9-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Muloqot kompetensiyalari: Madaniyatlararo muloqot",
+    "grades": "1-11",
+    "question": "Fransuz tilini o'rganishda 'Interculturalité' (madaniyatlararo muloqot) nimani o'rgatadi?",
+    "options": {
+      "A": "O'z madaniyatini chuqur anglagan holda boshqa xalqlar madaniyati va urf-odatlariga hurmat bilan yondashishni",
+      "B": "O'z milliy madaniyatidan butunlay voz kechishni",
+      "C": "Faqat chet el taomlarini tayyorlashni",
+      "D": "Faqat chet el qo'shiqlarini eshitishni"
+    },
+    "correct": "A",
+    "explanation": "Madaniyatlararo muloqot turli madaniyatlarga bag'rikenglik va hurmat bilan qarash ko'nikmasini shakllantiradi."
+  },
+  {
+    "id": "fr-10-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Şart mayli (Conditionnel Présent)",
+    "grades": "1-11",
+    "question": "Xushmuomalalik bilan iltimos qilishda (politesse) qaysi jumla to'g'ri shakllantirilgan?",
+    "options": {
+      "A": "Je voudrais un verre d'eau, s'il vous plaît.",
+      "B": "Je veux un verre d'eau !",
+      "C": "Donne-moi de l'eau !",
+      "D": "J'ai voulu de l'eau."
+    },
+    "correct": "A",
+    "explanation": "'Je voudrais...' Conditionnel Présent shakli bo'lib, xushmuomalalik bilan iltimos qilishning asosiy me'yoridir."
+  },
+  {
+    "id": "fr-11-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Reflektiv tahlil: O'quvchi qayta aloqasi",
+    "grades": "1-11",
+    "question": "Dars oxirida 'Bilet de sortie' (Chiqish bileti) orqali o'quvchilardan 'Bugun nima o'rgandingiz va nima tushunarsiz qoldi?' deb so'rash o'qituvchiga nima beradi?",
+    "options": {
+      "A": "Keyingi dars rejasini o'quvchilar tushunmagan nuqtalarga qarab to'g'irlash imkonini",
+      "B": "Darsni tezroq yakunlash imkonini",
+      "C": "Barcha o'quvchilarga baho qo'yish imkonini",
+      "D": "Darslikni o'zgartirishni"
+    },
+    "correct": "A",
+    "explanation": "Exit ticket o'quvchilarning real tushunish darajasini aniqlash va keyingi darsni moslashtirish uchun ajoyib vositadir."
+  },
+  {
+    "id": "fr-12-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Shaxssiz iboralar",
+    "grades": "1-11",
+    "question": "Majburiyatni bildiruvchi \"Il faut _____ à l'heure\" jumlasi uchun qaysi fe'l shakli mos keladi?",
+    "options": {
+      "A": "arriver (Infinitif)",
+      "B": "arrive",
+      "C": "arrivons",
+      "D": "arrivés"
+    },
+    "correct": "A",
+    "explanation": "'Il faut + Infinitif' shaxssiz konstruksiyasi umumiy majburiyat yoki zaruriyatni ifodalaydi."
+  },
+  {
+    "id": "fr-13-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "FLE: O'qib tushunish (Compréhension écrite)",
+    "grades": "1-11",
+    "question": "Matndan umumiy g'oyani tezkor ilg'ab olish (Lecture globale) mashqida o'quvchidan nima talab etiladi?",
+    "options": {
+      "A": "Sarlavha, illyustratsiyalar va asosiy xatboshilarga qarab matn nima haqida ekanini aniqlash",
+      "B": "Matndagi barcha so'zlarni lug'atdan izlash",
+      "C": "Har bir gapning grammatikasini tahlil qilish",
+      "D": "Matnni yoddan aytib berish"
+    },
+    "correct": "A",
+    "explanation": "Lecture globale butun matn mazmunini umumiy tushunishga qaratilgan bo'lib, har bir so'zni tarjima qilishni talab qilmaydi."
+  },
+  {
+    "id": "fr-14-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Sifatdosh (Gérondif)",
+    "grades": "1-11",
+    "question": "Bir vaqtda sodir bo'layotgan ikki harakatni ifodalovchi Gérondif qanday yasaladi?",
+    "options": {
+      "A": "'en' predlogi + fe'l o'zagi + -ant (masalan: en marchant)",
+      "B": "'de' + Infinitif",
+      "C": "'à' + Participe",
+      "D": "'par' + fe'l"
+    },
+    "correct": "A",
+    "explanation": "Gérondif formulasi: en + fe'lning 1-shaxs ko'plik o'zagi + -ant qo'shimchasi."
+  },
+  {
+    "id": "fr-15-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Refleksiya va o'qituvchi farovonligi",
+    "grades": "1-11",
+    "question": "Darsdagi qiyinchiliklar ustida refleksiya qilish o'qituvchining emotsional so'nishini (burnout) qanday kamaytiradi?",
+    "options": {
+      "A": "Muammolarni shaxsiy fojia emas, balki yechilishi mumkin bo'lgan professional vazifa sifatida qabul qilishga o'rgatish orqali",
+      "B": "Ishdan butunlay ketish orqali",
+      "C": "O'quvchilarga e'tibor bermaslik orqali",
+      "D": "Faqat dars soatlarini kamaytirish orqali"
+    },
+    "correct": "A",
+    "explanation": "Ongli refleksiya stressni konstruktiv boshqarish va kasbiy barqarorlikni saqlashga yordam beradi."
+  },
+  {
+    "id": "fr-16-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Ravishlar (Adverbes)",
+    "grades": "1-11",
+    "question": "Fransuz tilida ko'pchilik ravishlar sifatlarning qaysi shakliga '-ment' qo'shimchasini qo'shish bilan yasaladi?",
+    "options": {
+      "A": "Ayol jinsidagi (féminin) sifat shakliga (masalan: lente -> lentement)",
+      "B": "Erkak jinsidagi sifatga",
+      "C": "Ko'plikdagi sifatga",
+      "D": "O'rta jinsdagi sifatga"
+    },
+    "correct": "A",
+    "explanation": "Ravishlar odatda sifatning ayol jinsi shakliga '-ment' qo'shib yasaladi (facile -> facilement, heureuse -> heureusement)."
+  },
+  {
+    "id": "fr-17-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "FLE: Rolli o'yinlarni loyihalash",
+    "grades": "1-11",
+    "question": "Fransuz tili darsida rolli o'yin muvaffaqiyatli o'tishi uchun eng asosiy shart nima?",
+    "options": {
+      "A": "O'quvchilarga aniq kommunikativ vazifa, yetarli leksik tayanch va xavfsiz psixologik muhit berilishi",
+      "B": "Faqat barcha gaplarni oldindan yodlatish",
+      "C": "Faqat o'qituvchi bosh rolda bo'lishi",
+      "D": "Baholash ballarini olib tashlash"
+    },
+    "correct": "A",
+    "explanation": "Rolli o'yin aniq vazifa va erkinlik berilgandagina samarali muloqotga aylanadi."
+  },
+  {
+    "id": "fr-18-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Nisbiy olmoshlar (Pronoms relatifs)",
+    "grades": "1-11",
+    "question": "\"C'est le livre _____ j'ai acheté\" va \"C'est l'homme _____ parle\" gaplariga mos nisbiy olmoshlar qaysi?",
+    "options": {
+      "A": "que / qui",
+      "B": "qui / que",
+      "C": "où / dont",
+      "D": "dont / où"
+    },
+    "correct": "A",
+    "explanation": "To'g'ridan-to'g'ri to'ldiruvchi (obyekt) uchun 'que', ega (subyekt) uchun 'qui' qo'llanadi."
+  },
+  {
+    "id": "fr-19-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Reflektiv dars: Vaqtni boshqarish (Time management)",
+    "grades": "1-11",
+    "question": "O'qituvchi darsda mashqlarga vaqt yetmay qolganini tahlil qilgach, kelgusi darsda nimaga e'tibor qaratishi kerak?",
+    "options": {
+      "A": "Dars bosqichlari uchun aniq vaqt limitini belgilab, o'quvchilarga ko'rsatmalarni lo'nda va tushunarli berishga",
+      "B": "Tanaffus vaqtidan dars o'tishga",
+      "C": "Mashqlarning yarmini tashlab ketishga",
+      "D": "Faqat tez gapiradigan o'quvchilarni so'rashga"
+    },
+    "correct": "A",
+    "explanation": "Instruksiyalarning lo'ndaligi va har bir bosqich vaqtini to'g'ri taqsimlash dars samaradorligini oshiradi."
+  },
+  {
+    "id": "fr-20-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: O'tgan zamonlarning birikishi",
+    "grades": "1-11",
+    "question": "\"Pendant que je dormais, le téléphone _____\" gapida ikkinchi fe'l qaysi zamonda bo'lishi kerak?",
+    "options": {
+      "A": "a sonné (Passé Composé - to'satdan sodir bo'lgan aniq harakat)",
+      "B": "sonnait (Imparfait)",
+      "C": "sonne (Présent)",
+      "D": "va sonner (Futur)"
+    },
+    "correct": "A",
+    "explanation": "Davom etayotgan harakat (Imparfait: dormais) fonida to'satdan sodir bo'lgan qisqa voqea Passé Composé da bo'ladi."
+  },
+  {
+    "id": "fr-21-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "FLE: O'quvchilarda nutqiy faollikni baholash",
+    "grades": "1-11",
+    "question": "Fransuz tilida baholashda o'quvchining muloqotga kirisha olishi (Prise de parole) qanday rag'batlantiriladi?",
+    "options": {
+      "A": "O'z fikrini bildirishga intilishini, hatto kichik xatolari bo'lsa ham, ijobiy qo'llab-quvvatlash orqali",
+      "B": "Har bir xatoda uni to'xtatib tanqid qilish orqali",
+      "C": "Faqat qog'ozdagi yozuvga qarab baholash orqali",
+      "D": "Uni gapirishdan chetlatish orqali"
+    },
+    "correct": "A",
+    "explanation": "Nutq faolligi rag'batlantirilgan muhitda o'quvchilarda tilni qo'llashga bo'lgan ichki ishtiyoq ortadi."
+  },
+  {
+    "id": "fr-22-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Zidlovchi bog'lovchilar",
+    "grades": "1-11",
+    "question": "\"Il fait beau, _____ il y a du vent\" bo'sh joyga qaysi zidlovchi bog'lovchi mos keladi?",
+    "options": {
+      "A": "mais (lekin)",
+      "B": "parce que (chunki)",
+      "C": "donc (shuning uchun)",
+      "D": "ou (yoki)"
+    },
+    "correct": "A",
+    "explanation": "'mais' ikki qarama-qarshi fikrni bog'lovchi asosiy zidlovchi bog'lovchidir."
+  },
+  {
+    "id": "fr-23-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Reflektiv tahlilda hamkorlik",
+    "grades": "1-11",
+    "question": "Fransuz tili o'qituvchisining ingliz yoki nemis tili o'qituvchilari bilan qo'shma integratsion dars o'tishi va tahlil qilishi qanday nomlanadi?",
+    "options": {
+      "A": "Fanlararo integratsiya va jamoaviy refleksiya (Interdisciplinary Collaboration)",
+      "B": "O'zboshimchalik bilan dars o'tish",
+      "C": "Dars soatlarini almashtirish",
+      "D": "Faqat tajriba xatosi"
+    },
+    "correct": "A",
+    "explanation": "Chet tili o'qituvchilarining fanlararo integratsiyasi ilg'or metodik yondashuvlarni birlashtirish imkonini beradi."
+  },
+  {
+    "id": "fr-24-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Ko'plik shaklining istisnolari",
+    "grades": "1-11",
+    "question": "'-al' bilan tugaydigan erkak jinsidagi otlarning (masalan: journal, cheval) ko'pligi qanday yasaladi?",
+    "options": {
+      "A": "-aux (journaux, chevaux)",
+      "B": "-als",
+      "C": "-ales",
+      "D": "o'zgarmaydi"
+    },
+    "correct": "A",
+    "explanation": "'-al' bilan tugaydigan aksariyat otlar ko'plikda '-aux' qo'shimchasini oladi."
+  },
+  {
+    "id": "fr-25-s5",
+    "session": 5,
+    "subject": "Fransuz tili",
+    "topic": "Kasbiy mahorat va zamonaviy o'qituvchi",
+    "grades": "1-11",
+    "question": "Reflektiv o'qituvchining an'anaviy o'qituvchidan eng asosiy farqi nimada?",
+    "options": {
+      "A": "Har bir darsni o'z ustida ishlash va yangi tajriba deb bilib, o'quvchilar ehtiyojiga qarab o'zgarishga doimo tayyorligida",
+      "B": "Faqat eski konspektlar bo'yicha yillab dars o'tishida",
+      "C": "Hech qachon yangi metodlarni sinab ko'rmasligida",
+      "D": "Darsda faqat o'zi gapirishida"
+    },
+    "correct": "A",
+    "explanation": "Reflektiv o'qituvchi doimiy izlanishda bo'lib, o'quvchilarning real natijalariga qarab o'z metodikasini yangilab boradi."
+  },
+  {
+    "id": "fr-1-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Universal dizayn (UDL) va Inklyuziya",
+    "grades": "1-11",
+    "question": "Fransuz tili darslarida Universal dizayn (UDL) tamoyillarini joriy etishdan asosiy maqsad nima?",
+    "options": {
+      "A": "Har bir o'quvchining individual o'rganish xususiyatlarini inobatga olgan holda to'siqlarsiz o'quv muhitini yaratish",
+      "B": "Hamma o'quvchiga bir xil qolipdagi topshiriq berish",
+      "C": "Darsliklarni butunlay bekor qilish",
+      "D": "Faqat iqtidorli o'quvchilar bilan ishlash"
+    },
+    "correct": "A",
+    "explanation": "UDL barcha o'quvchilar, jumladan alohida ta'lim ehtiyojlari bo'lgan bolalar uchun ham o'quv jarayonini qulay va samarali qilishni ta'minlaydi."
+  },
+  {
+    "id": "fr-2-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "FLE darslarida Gamifikatsiya",
+    "grades": "1-11",
+    "question": "Fransuz tili darslarida leksika va grammatikani o'rgatishda o'yinlashtirishning (Gamification) pedagogik kuchi nimada?",
+    "options": {
+      "A": "O'quvchilarda motivatsiya va qiziqishni oshirib, til materialini stressiz, qiziqarli faoliyatda o'zlashtirishga yordam berishida",
+      "B": "Darsni intizomsiz o'yin-kulgiga aylantirishida",
+      "C": "O'qituvchining vazifasini nolga tushirishida",
+      "D": "O'quvchilarni testdan butunlay ozod qilishida"
+    },
+    "correct": "A",
+    "explanation": "Gamifikatsiya til o'rganishni musobaqadosh, qiziqarli va emotsional boy faoliyatga aylantiradi."
+  },
+  {
+    "id": "fr-3-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "DELF standartlari bo'yicha baholash",
+    "grades": "1-11",
+    "question": "Xalqaro DELF (Diplôme d'Études en Langue Française) imtihon tizimida qaysi 4 ta asosiy ko'nikma baholanadi?",
+    "options": {
+      "A": "Compréhension de l'oral, Compréhension des écrits, Production écrite, Production orale",
+      "B": "Faqat grammatika va leksika",
+      "C": "Faqat tarjima va husnixat",
+      "D": "Faqat adabiyot tarixi va yod olish"
+    },
+    "correct": "A",
+    "explanation": "DELF 4 ta nutq faoliyati turini: tinglab tushunish, o'qib tushunish, yozma va og'zaki nutqni baholaydi."
+  },
+  {
+    "id": "fr-4-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Subjonctif mayli (Le Subjonctif)",
+    "grades": "1-11",
+    "question": "\"Il faut que tu _____ tes devoirs\" gapidagi bo'sh joyga qaysi fe'l shakli mos keladi?",
+    "options": {
+      "A": "fasses (faire fe'lining Subjonctif Présent shakli)",
+      "B": "fais",
+      "C": "feras",
+      "D": "fait"
+    },
+    "correct": "A",
+    "explanation": "'Il faut que' iborasidan keyin har doim Subjonctif mayli talab qilinadi (faire -> que tu fasses)."
+  },
+  {
+    "id": "fr-5-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "UDL: Ko'p qirrali ifodalash",
+    "grades": "1-11",
+    "question": "Inklyuziv sinfda fransuz tilidagi ertak yoki hikoyani o'rgangach, o'quvchilarga qanday differensial yakuniy topshiriq berish mumkin?",
+    "options": {
+      "A": "O'z xohishiga ko'ra: rasm chizib hikoya qilish, qisqa sahna ko'rinishi qo'yish yoki yozma xulosa yozish",
+      "B": "Hamma o'quvchiga 10 sahifalik insho yozdirish",
+      "C": "Faqat matnni yoddan aytib berish",
+      "D": "Topshiriq bermaslik"
+    },
+    "correct": "A",
+    "explanation": "UDL ifodalash usullarini tanlash erkinligini beradi, bu esa har bir o'quvchiga o'z iqtidorini ko'rsatish imkonini yaratadi."
+  },
+  {
+    "id": "fr-6-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: 'Si' shart ergash gaplari",
+    "grades": "1-11",
+    "question": "\"Si j'avais de l'argent, j'_____ un voyage en France\" gapiga qaysi fe'l shakli mos keladi?",
+    "options": {
+      "A": "achèterais (Conditionnel Présent)",
+      "B": "achète (Présent)",
+      "C": "ai acheté (Passé Composé)",
+      "D": "achèterai (Futur Simple)"
+    },
+    "correct": "A",
+    "explanation": "Shart ergash gap qoidasi: Si + Imparfait bo'lsa, bosh gapda Conditionnel Présent qo'llanadi."
+  },
+  {
+    "id": "fr-7-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Gamifikatsiya vositalari: Kahoot, Quizlet",
+    "grades": "1-11",
+    "question": "FLE darslarida Kahoot, Quizlet yoki Wordwall kabi raqamli vositalarning afzalligi nimada?",
+    "options": {
+      "A": "O'quvchilarga tezkor qayta aloqa (Instant Feedback) berish va darsda interfaol raqobat muhitini yaratish",
+      "B": "Kitoblarni butunlay bekor qilish",
+      "C": "O'qituvchini o'rnini bosish",
+      "D": "O'quvchilarni sinfdan chiqarish"
+    },
+    "correct": "A",
+    "explanation": "Raqamli o'yin platformalari tezkor formativ baholash va o'quvchilar faolligini ta'minlaydi."
+  },
+  {
+    "id": "fr-8-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Passiv nisbat (Voix passive)",
+    "grades": "1-11",
+    "question": "\"La tour Eiffel a été construite par Gustave Eiffel\" gapi qaysi zamonda berilgan?",
+    "options": {
+      "A": "Passé Composé Passif",
+      "B": "Présent Passif",
+      "C": "Imparfait Passif",
+      "D": "Plus-que-parfait Passif"
+    },
+    "correct": "A",
+    "explanation": "'a été + construite' Passé Composé dagi majhul nisbat shaklidir."
+  },
+  {
+    "id": "fr-9-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Formativ baholash rubrikasi: Fransuz tili",
+    "grades": "1-11",
+    "question": "Fransuz tilida og'zaki nutqni baholashda mezonlar qanday taqsimlanadi?",
+    "options": {
+      "A": "Leksik boylik, talaffuz aniqligi, grammatik tuzilish va muloqotga kirishish qobiliyati",
+      "B": "Faqat o'quvchining ovoz balandligi",
+      "C": "Faqat kiyinish madaniyati",
+      "D": "Faqat gapirish tezligi"
+    },
+    "correct": "A",
+    "explanation": "Og'zaki nutq baholash mezonlari mazmun, talaffuz, grammatika va interaktivlikni qamrab oladi."
+  },
+  {
+    "id": "fr-10-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Nisbiy olmosh 'DONT'",
+    "grades": "1-11",
+    "question": "\"C'est le film _____ je t'ai parlé\" (parler de qch) bo'sh joyga qaysi nisbiy olmosh qo'yiladi?",
+    "options": {
+      "A": "dont",
+      "B": "que",
+      "C": "qui",
+      "D": "où"
+    },
+    "correct": "A",
+    "explanation": "'de' predlogi bilan boshqariladigan fe'llar bilan nisbiy olmosh 'dont' qo'llanadi (parler de -> dont je t'ai parlé)."
+  },
+  {
+    "id": "fr-11-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "UDL tamoyillari: Jismoniy imkoniyati cheklangan o'quvchilar",
+    "grades": "1-11",
+    "question": "Ko'rish qobiliyati zaif bo'lgan o'quvchi uchun fransuz tili darsida qanday qulaylik yaratiladi?",
+    "options": {
+      "A": "Kattalashtirilgan shriftli materiallar, yorqin kontrast va audio yozuvlar bilan ta'minlash",
+      "B": "O'quvchiga chet tilini o'rganishni taqiqlash",
+      "C": "Faqat og'zaki qat'iy savol-javob qilish",
+      "D": "Uni oxirgi partaga o'tqazish"
+    },
+    "correct": "A",
+    "explanation": "Katta shrift va audio vositalar ko'rishida nuqsoni bor o'quvchining to'siqlarsiz o'rganishini kafolatlaydi."
+  },
+  {
+    "id": "fr-12-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Qiyosiy darajalar (Le comparatif)",
+    "grades": "1-11",
+    "question": "\"Paul est _____ intelligent que Marc\" (ortiqlik qiyosi) jumlasi uchun qaysi so'z mos keladi?",
+    "options": {
+      "A": "plus",
+      "B": "aussi",
+      "C": "moins",
+      "D": "le plus"
+    },
+    "correct": "A",
+    "explanation": "Ortiq qiyosiy daraja uchun 'plus + sifat + que' shakli qo'llaniladi."
+  },
+  {
+    "id": "fr-13-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "FLE darsida 'Échafaudage' (Scaffolding)",
+    "grades": "1-11",
+    "question": "O'quvchilar mustaqil dialog tuza olishlari uchun o'qituvchi boshlang'ich bosqichda beradigan nutq qoliplari nima deb ataladi?",
+    "options": {
+      "A": "Scaffolding (Pedagogik tirgak / qo'llab-quvvatlash)",
+      "B": "Summative test",
+      "C": "Dictée (diktant)",
+      "D": "Traduction (tarjima)"
+    },
+    "correct": "A",
+    "explanation": "Scaffolding o'quvchining mustaqil qadam qo'yishi uchun beriladigan tayanch andozalardir."
+  },
+  {
+    "id": "fr-14-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: So'z yasalishi (Prefikslar)",
+    "grades": "1-11",
+    "question": "Quyidagi qaysi prefiks so'zga qarama-qarshi yoki inkor ma'no beradi?",
+    "options": {
+      "A": "in- / im- (possible -> impossible)",
+      "B": "re- / ré-",
+      "C": "pré-",
+      "D": "sur-"
+    },
+    "correct": "A",
+    "explanation": "'in-, im-, il-, ir-' prefikslari inkor yoki zid ma'nodagi so'zlarni yasaydi."
+  },
+  {
+    "id": "fr-15-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Peer Assessment (Tengdoshlar baholashi)",
+    "grades": "1-11",
+    "question": "O'quvchilar bir-birining fransuzcha yozma ishini baholaganda qanday pedagogik samara yuzaga keladi?",
+    "options": {
+      "A": "Tanqidiy fikrlash rivojlanadi, o'z xatolarini ham yaxshiroq ko'ra oladilar va baholash mezonlarini chuqur anglaydilar",
+      "B": "O'quvchilar bir-birlari bilan urishib qoladilar",
+      "C": "O'qituvchining darsdagi obro'si tushadi",
+      "D": "Hamma faqat besh baho qo'yadi"
+    },
+    "correct": "A",
+    "explanation": "Tengdoshlar baholashi o'quvchida tahliliy tafakkur va mas'uliyatni o'stiradi."
+  },
+  {
+    "id": "fr-16-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: So'roq olmoshlari (Lequel / Laquelle)",
+    "grades": "1-11",
+    "question": "\"J'ai deux stylos. _____ préfères-tu ?\" (le stylo - erkak jinsi birlik) bo'sh joyga nima qo'yiladi?",
+    "options": {
+      "A": "Lequel",
+      "B": "Laquelle",
+      "C": "Lesquels",
+      "D": "Lesquelles"
+    },
+    "correct": "A",
+    "explanation": "'stylo' erkak jinsi birlik bo'lgani sababli 'Lequel' (qaysi biri) qo'llanadi."
+  },
+  {
+    "id": "fr-17-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Gamifikatsiya: Til labirintlari (Escape Game)",
+    "grades": "1-11",
+    "question": "Fransuz tili darsida 'Jeu d'évasion' (Escape Game - jumboqli qidiruv o'yini) tashkil etish qaysi kompetensiyalarni oshiradi?",
+    "options": {
+      "A": "Jamoada ishlash, matndan mantiqiy ma'lumot izlash va muammolarni birgalikda hal qilish ko'nikmalarini",
+      "B": "Faqat yodlash qobiliyatini",
+      "C": "Faqat tez yugurishni",
+      "D": "Dars intizomini bo'shashtirishni"
+    },
+    "correct": "A",
+    "explanation": "Ta'limiy Escape Game o'quvchilarda jamoaviy hamkorlik va mantiqiy fikrlashni rivojlantiradi."
+  },
+  {
+    "id": "fr-18-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Orttirma daraja (Le superlatif)",
+    "grades": "1-11",
+    "question": "\"C'est _____ film de l'année\" (le bon film - eng yaxshi film) jumlasi qanday to'g'ri shakllanadi?",
+    "options": {
+      "A": "le meilleur",
+      "B": "le plus bon",
+      "C": "le mieux",
+      "D": "le bonest"
+    },
+    "correct": "A",
+    "explanation": "'bon' sifatining orttirma darajasi 'le meilleur / la meilleure' bo'ladi ('le plus bon' xato hisoblanadi)."
+  },
+  {
+    "id": "fr-19-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Inklyuziv ta'limda individual traektoriya",
+    "grades": "1-11",
+    "question": "Fransuz tilini juda tez yoki sekin o'zlashtiradigan o'quvchilar uchun eng yaxshi pedagogik yechim nima?",
+    "options": {
+      "A": "O'quvchilarga o'z sur'atlarida ishlash imkonini beruvchi individual va qadamma-qadam modulli topshiriqlar taqdim etish",
+      "B": "Hamma bir vaqtda bitta so'zni yodlashini talab qilish",
+      "C": "Sekin o'quvchilarni darsdan ozod qilish",
+      "D": "Faqat tez o'zlashtiruvchilar bilan ishlash"
+    },
+    "correct": "A",
+    "explanation": "Modulli va differensial topshiriqlar har bir o'quvchining o'z potensialiga mos rivojlanishiga sharoit yaratadi."
+  },
+  {
+    "id": "fr-20-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Vositali nutq (Discours indirect)",
+    "grades": "1-11",
+    "question": "To'g'ri nutq \"Il dit : 'Je suis fatigué'\" vositali nutqqa aylanganda qanday bo'ladi?",
+    "options": {
+      "A": "Il dit qu'il est fatigué.",
+      "B": "Il dit que je suis fatigué.",
+      "C": "Il dit être fatigué.",
+      "D": "Il dit s'il est fatigué."
+    },
+    "correct": "A",
+    "explanation": "Vositali nutqda 'que' bog'lovchisi qo'llanadi va olmosh shaxsga qarab o'zgaradi (qu'il est fatigué)."
+  },
+  {
+    "id": "fr-21-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Baholash natijalarining shaffofligi",
+    "grades": "1-11",
+    "question": "O'qituvchi baholash mezonlarini o'quvchilarga qachon tanishtirishi lozim?",
+    "options": {
+      "A": "Topshiriqni boshlashdan oldin (oldindan shaffof tarzda)",
+      "B": "Faqat bahoni qo'yib bo'lgandan keyin",
+      "C": "Faqat o'quvchi norozi bo'lgan taqdirda",
+      "D": "Umuman tanishtirmaslik kerak"
+    },
+    "correct": "A",
+    "explanation": "Kriterial baholashning asosiy tamoyili — mezonlarning topshiriq boshlanishidan oldin o'quvchilarga to'liq ma'lum bo'lishidir."
+  },
+  {
+    "id": "fr-22-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: Zamonlar moslashuvi (Concordance des temps)",
+    "grades": "1-11",
+    "question": "Bosh gap o'tgan zamonda bo'lsa (Il a dit que...), kelgusidagi harakat qaysi zamonda ifodalanadi?",
+    "options": {
+      "A": "Conditionnel Présent (Futur dans le passé)",
+      "B": "Futur Simple",
+      "C": "Présent",
+      "D": "Passé Composé"
+    },
+    "correct": "A",
+    "explanation": "O'tmishga nisbatan kelasi zamon (Futur dans le passé) Conditionnel Présent shaklida beriladi."
+  },
+  {
+    "id": "fr-23-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Inklyuziv baholash etikasi",
+    "grades": "1-11",
+    "question": "Alohida ta'lim ehtiyoji bo'lgan o'quvchini baholashda qaysi tamoyilga tayaniladi?",
+    "options": {
+      "A": "O'quvchining shaxsiy imkoniyati va erishgan real o'sish dinamikasini ijobiy rag'batlantirishga",
+      "B": "Qat'iy standart me'yordan zarracha chekinmaslikka",
+      "C": "Uni boshqa a'lochi o'quvchilar bilan solishtirib kamsitishga",
+      "D": "Baholashdan butunlay chetlatishga"
+    },
+    "correct": "A",
+    "explanation": "Inklyuziv baholash bolaning shaxsiy progressini, irodasini va individual o'sishini qadrlaydi."
+  },
+  {
+    "id": "fr-24-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Fransuz tili: So'z yasalishi (Ot yasovchi qo'shimchalar)",
+    "grades": "1-11",
+    "question": "Fe'llardan harakat nomi bo'lgan otlarni yasovchi fransuzcha affikslar qatorini toping:",
+    "options": {
+      "A": "-tion, -ment, -age (masalan: expliquer -> explication, changer -> changement)",
+      "B": "-able, -ible",
+      "C": "-eux, -euse",
+      "D": "-ment faqat ravish yasaydi"
+    },
+    "correct": "A",
+    "explanation": "'-tion, -ment, -age' fe'l o'zaklaridan ot yasovchi eng faol affikslardir."
+  },
+  {
+    "id": "fr-25-s6",
+    "session": 6,
+    "subject": "Fransuz tili",
+    "topic": "Zamonaviy FLE o'qituvchisi missiyasi",
+    "grades": "1-11",
+    "question": "Bugungi kunda maktabda fransuz tili o'qituvchisining eng ustuvor maqsadi nima?",
+    "options": {
+      "A": "O'quvchilarda fransuz tilini madaniyatlararo muloqot, ta'limiy izlanish va shaxsiy rivojlanish kaliti sifatida sevdirish",
+      "B": "Faqat darslikdagi matnlarni tarjima qildirish",
+      "C": "Faqat qattiqqo'llik bilan intizom saqlash",
+      "D": "O'quvchilarni xalqaro imtihonlardan qaytarish"
+    },
+    "correct": "A",
+    "explanation": "Zamonaviy chet tili o'qituvchisi o'quvchiga dunyoga yo'l ochuvchi erkin va madaniyatlararo muloqot qobiliyatini beradi."
   }
 ]
