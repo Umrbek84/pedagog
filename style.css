@@ -131,6 +131,34 @@ body {
   transform: translateY(-1px);
 }
 
+/* ====================================================
+   EXAM ACTIVE MODE: HEADER LOCK & TOUCH PROTECTION
+   Test vaqtida yuqori menyuni to'liq yashirish va logoni qulflash
+   ==================================================== */
+body.exam-active-mode .app-header .nav-menu {
+  display: none !important;
+}
+
+body.exam-active-mode .app-header .brand {
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+body.exam-active-mode .exam-live-indicator {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(239, 68, 68, 0.15);
+  color: #ffffff;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  padding: 0.45rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  user-select: none;
+}
+
 /* Main Content Layout */
 .main-content {
   flex: 1;

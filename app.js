@@ -67,10 +67,42 @@ const views = {
   davomat: document.getElementById('davomatView')
 };
 
-function switchView(viewName) {
+function switchView(viewName, force = false) {
+  // Agar test topshirish jarayoni ketayotgan bo'lsa va foydalanuvchi boshqa bo'limga chiqmoqchi bo'lsa:
+  if (state.isExamActive && viewName !== 'exam' && !force) {
+    showAppConfirm(
+      "<b>⚠️ DIQQAT! Test topshirish jarayoni davom etmoqda!</b><br><br>" +
+      "Siz hali testni yakunlamadingiz. Agar hozir boshqa bo'limga chiqsangiz, test to'xtatiladi va natijangiz bekor bo'lishi mumkin.<br><br>" +
+      "Haqiqatan ham test maydonidan chiqmoqchimisiz?",
+      () => {
+        // Chiqishni tasdiqlasa:
+        state.isExamActive = false;
+        clearInterval(state.timerInterval);
+        clearSavedSession();
+        document.body.classList.remove('exam-active-mode');
+        switchView(viewName, true);
+      },
+      "Testdan chiqishni tasdiqlang",
+      "⚠️",
+      "Ha, testdan chiqish",
+      "btn btn-danger"
+    );
+    return;
+  }
+
   Object.values(views).forEach(v => {
     if (v) v.classList.remove('active');
   });
+
+  if (viewName === 'exam') {
+    document.body.classList.add('exam-active-mode');
+    try {
+      history.pushState({ examActive: true }, document.title, location.href);
+    } catch (e) {}
+  } else {
+    document.body.classList.remove('exam-active-mode');
+  }
+
   if (views[viewName]) {
     views[viewName].classList.add('active');
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -83,6 +115,28 @@ function switchView(viewName) {
 }
 
 function scrollToSection(sectionId) {
+  if (state.isExamActive) {
+    showAppConfirm(
+      "<b>⚠️ DIQQAT! Test jarayoni ketmoqda!</b><br><br>" +
+      "Test topshirayotgan vaqtda boshqa bo'limlarga o'tish taqiqlanadi. Haqiqatan ham testdan chiqmoqchimisiz?",
+      () => {
+        state.isExamActive = false;
+        clearInterval(state.timerInterval);
+        clearSavedSession();
+        document.body.classList.remove('exam-active-mode');
+        switchView('setup', true);
+        setTimeout(() => {
+          const el = document.getElementById(sectionId);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      },
+      "Testdan chiqish",
+      "⚠️",
+      "Ha, chiqish",
+      "btn btn-danger"
+    );
+    return;
+  }
   switchView('setup');
   setTimeout(() => {
     const el = document.getElementById(sectionId);
@@ -3231,4 +3285,42 @@ document.addEventListener('keydown', (e) => {
     resetTestingData();
   }
 });
+
+// ==========================================
+// 11. SMART PHONE & ACCIDENTAL EXIT PROTECTION
+// Mobil telefon sensorida bexosdan orqaga bosib yuborishdan himoya
+// ==========================================
+window.addEventListener('popstate', (e) => {
+  if (state.isExamActive) {
+    try {
+      history.pushState({ examActive: true }, document.title, location.href);
+    } catch (err) {}
+    showAppConfirm(
+      "<b>⚠️ DIQQAT! Test topshirish jarayoni ketmoqda!</b><br><br>" +
+      "Telefoningizda yoki brauzerda 'Orqaga' amali bajarildi. Agar hozir testdan chiqsangiz, test to'xtatiladi va ball saqlanmaydi.<br><br>" +
+      "Testni davom ettirasizmi?",
+      () => {
+        // Chiqishni tasdiqlasa:
+        state.isExamActive = false;
+        clearInterval(state.timerInterval);
+        clearSavedSession();
+        document.body.classList.remove('exam-active-mode');
+        switchView('setup', true);
+      },
+      "Testdan chiqishni tasdiqlang",
+      "⚠️",
+      "Ha, testdan chiqish",
+      "btn btn-danger"
+    );
+  }
+});
+
+window.addEventListener('beforeunload', (e) => {
+  if (state.isExamActive) {
+    e.preventDefault();
+    e.returnValue = "Diqqat! Test hali yakunlanmadi. Chiqib ketsangiz, natijangiz bekor bo'lishi mumkin.";
+    return e.returnValue;
+  }
+});
+
 
