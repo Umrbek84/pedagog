@@ -1035,7 +1035,7 @@ async function handlePinSubmit() {
 // START TEST SESSION
 // ==========================================
 function startExamSession() {
-  const countRequested = parseInt(document.getElementById('questionCount').value) || 20;
+  const countRequested = parseInt(document.getElementById('questionCount').value) || 25;
   state.timeLimitMinutes = parseInt(document.getElementById('timeLimit').value) || 30;
 
   const currentSession = state.teacherInfo.session || 1;
@@ -1438,7 +1438,7 @@ async function loadLeaderboardFromSheet() {
           school: r[2] || '',
           subject: r[3] || '',
           score: parseInt(r[5]) || 0,
-          total: parseInt(r[6]) || 20,
+          total: parseInt(r[6]) || 25,
           percent: parseInt(r[7]) || 0,
           switches: parseInt(r[8]) || 0,
           status: r[9] || 'Muvaffaqiyatli topshirdi',
@@ -1465,7 +1465,7 @@ async function loadLeaderboardFromSheet() {
           school: r[2] || '',
           subject: r[3] || '',
           score: 0,
-          total: 20,
+          total: 25,
           percent: 0,
           switches: parseInt(r[4]) || 4,
           status: '🚫 Bloklangan (Qoidabuzarlik)',
@@ -1492,7 +1492,7 @@ async function loadLeaderboardFromSheet() {
             school: loc.school,
             subject: loc.subject,
             score: loc.score,
-            total: loc.total || 20,
+            total: loc.total || 25,
             percent: loc.percent,
             switches: loc.switches,
             status: loc.status || 'Muvaffaqiyatli topshirdi',
@@ -1917,7 +1917,7 @@ function renderTeachersMonitoringTable(teachers) {
 
     if (t.isBlocked) {
       statusHtml = `<span class="status-badge status-blocked">🚫 Bloklangan</span>`;
-      scoreDisplay = `<b style="color: #ef4444;">0 / 20</b>`;
+      scoreDisplay = `<b style="color: #ef4444;">0 / 25</b>`;
       pctDisplay = `<b style="color: #ef4444;">0%</b>`;
       switchDisplay = `<b style="color: #ef4444;">${t.switches} ta (Cheklandi)</b>`;
       gradeBadge = `<span class="status-badge status-blocked">Qoniqarsiz</span>`;
