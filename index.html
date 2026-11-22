@@ -151,29 +151,27 @@
 
             <div class="form-group">
               <label class="form-label" for="sessionSelect">3. KRS Mashg'uloti (Mavzu / Bosqich) *</label>
-              <select id="sessionSelect" class="form-select" required>
-                <!-- O'tib ketgan mashg'ulotlar (Yopiq / Xira) -->
+                            <select id="sessionSelect" class="form-select" required>
+                <!-- O'tib ketgan mashg'ulotlar (Xira) -->
                 <option value="1" disabled style="color: #94a3b8; background: #f1f5f9;">
-                  🔒 1-mashg'ulot (12-oktabr) — O'tib ketgan (Test mavjud emas)
+                  🔒 1-mashg'ulot (12-oktabr) — O'tib ketgan
                 </option>
                 <option value="2" disabled style="color: #94a3b8; background: #f1f5f9;">
-                  🔒 2-mashg'ulot (26-oktabr) — O'tib ketgan (Test mavjud emas)
+                  🔒 2-mashg'ulot (26-oktabr) — O'tib ketgan
                 </option>
                 <option value="3" disabled style="color: #94a3b8; background: #f1f5f9;">
-                  🔒 3-mashg'ulot (09-noyabr) — O'tib ketgan (Test mavjud emas)
+                  🔒 3-mashg'ulot (09-noyabr) — O'tib ketgan
                 </option>
 
-                <!-- Hozirgi Rasmiy Mashg'ulot: 4-mashg'ulot (23-noyabrdan boshlanadi) -->
+                <!-- Tayyor bo'lgan mashg'ulotlar (Barchasi Ochiq va Faol) -->
                 <option value="4" selected style="font-weight: 800; color: #047857; background: #ecfdf5;">
-                  🔥 4-mashg'ulot (23-noyabrdan boshlanadi) — ✅ FAOL / ISHLASHGA OCHIQ (25 ta savol)
+                  🔥 4-mashg'ulot (23–28-noyabr) — ✅ FAOL / OCHIQ (25 ta savol)
                 </option>
-
-                <!-- Navbatdagi mashg'ulotlar -->
-                <option value="5" style="color: #1e293b;">
-                  📅 5-mashg'ulot (07-dekabr) — ⏳ Tayyor / Navbatdagi (25 ta savol)
+                <option value="5" style="font-weight: 800; color: #1e40af; background: #eff6ff;">
+                  📅 5-mashg'ulot (07–12-dekabr) — ✅ TAYYOR / OCHIQ (25 ta savol)
                 </option>
-                <option value="6" style="color: #1e293b;">
-                  📅 6-mashg'ulot (21-dekabr) — ⏳ Tayyor / Navbatdagi (25 ta savol)
+                <option value="6" style="font-weight: 800; color: #1e40af; background: #eff6ff;">
+                  📅 6-mashg'ulot (21–26-dekabr) — ✅ TAYYOR / OCHIQ (25 ta savol)
                 </option>
 
                 <!-- Reja bo'yicha keyingi mashg'ulotlar -->
@@ -219,7 +217,7 @@
           </div>
 
           <button type="button" id="startTestBtn" class="btn btn-primary btn-block" onclick="handleValidateAndOpenPinModal(event)" style="font-size: 1.15rem; padding: 1.1rem; font-weight: 800; cursor: pointer;">
-            🚀 Testni boshlash (PIN-kod bilan: 2026)
+            🚀 Testni boshlash
           </button>
         </form>
       </div>
@@ -985,25 +983,68 @@
     </div>
   </div>
 
-  <!-- PIN CODE MODAL (CENTERED) -->
+    <!-- PIN CODE MODAL (CENTERED) -->
   <div class="modal-overlay" id="pinModal">
     <div class="modal-content">
-      <div class="pin-monkey-mascot" id="pinMonkeyMascot" title="Telegram maymunchasi (Ko'rish / Yashirish uchun bosing)"></div>
+      <div class="pin-monkey-mascot" id="pinMonkeyMascot" onclick="togglePinVisibility()" title="Telegram maymunchasi (Ko'rish / Yashirish uchun bosing)">
+        <svg viewBox="0 0 100 100" width="76" height="76" class="telegram-monkey-svg hidden-pin" id="mainMonkeySvg">
+          <g class="monkey-ears">
+            <circle cx="16" cy="42" r="14" fill="#8D6E63"/>
+            <circle cx="16" cy="42" r="8" fill="#FFCCBC"/>
+            <circle cx="84" cy="42" r="14" fill="#8D6E63"/>
+            <circle cx="84" cy="42" r="8" fill="#FFCCBC"/>
+          </g>
+          <circle cx="50" cy="50" r="36" fill="#8D6E63" class="monkey-head"/>
+          <ellipse cx="50" cy="58" rx="25" ry="19" fill="#FDF3E7"/>
+          <ellipse cx="50" cy="42" rx="23" ry="13" fill="#FDF3E7"/>
+          <g class="monkey-eyes">
+            <ellipse cx="37" cy="40" rx="7" ry="8" fill="#212529"/>
+            <circle cx="35" cy="37" r="3" fill="#FFFFFF"/>
+            <circle cx="40" cy="42" r="1.5" fill="#FFFFFF"/>
+            <ellipse cx="63" cy="40" rx="7" ry="8" fill="#212529"/>
+            <circle cx="61" cy="37" r="3" fill="#FFFFFF"/>
+            <circle cx="66" cy="42" r="1.5" fill="#FFFFFF"/>
+          </g>
+          <circle cx="26" cy="54" r="5" fill="#FFAB91" opacity="0.6"/>
+          <circle cx="74" cy="54" r="5" fill="#FFAB91" opacity="0.6"/>
+          <ellipse cx="50" cy="52" rx="4.5" ry="3.2" fill="#4E342E"/>
+          <path d="M 41 60 Q 50 67 59 60" fill="none" stroke="#4E342E" stroke-width="3" stroke-linecap="round"/>
+          <g class="monkey-paws">
+            <g class="paw-left">
+              <ellipse cx="37" cy="40" rx="13" ry="11" fill="#6D4C41" stroke="#4E342E" stroke-width="1.8"/>
+              <circle cx="31" cy="38" r="3" fill="#FFCCBC"/>
+              <circle cx="37" cy="36" r="3" fill="#FFCCBC"/>
+              <circle cx="43" cy="38" r="3" fill="#FFCCBC"/>
+            </g>
+            <g class="paw-right">
+              <ellipse cx="63" cy="40" rx="13" ry="11" fill="#6D4C41" stroke="#4E342E" stroke-width="1.8"/>
+              <circle cx="57" cy="38" r="3" fill="#FFCCBC"/>
+              <circle cx="63" cy="36" r="3" fill="#FFCCBC"/>
+              <circle cx="69" cy="38" r="3" fill="#FFCCBC"/>
+            </g>
+          </g>
+        </svg>
+      </div>
       <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 0.5rem;">
         Testni boshlash uchun PIN-kodni kiriting
       </h3>
-      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">
         PIN-kodni olish uchun bosh mutaxassis Umrbek Mamatovga murojaat qiling.
       </p>
 
-      <div style="background: #ecfdf5; border: 1.5px solid #10b981; border-radius: 8px; padding: 8px 14px; margin: 0.5rem 0 1rem; color: #047857; font-weight: 800; font-size: 0.95rem; text-align: center;">
-        ⚡ Amaldagi kirish PIN-kodi: <span style="font-size: 1.25rem; letter-spacing: 2px; color: #065f46;">2026</span>
-      </div>
-
       <div class="pin-input-wrapper">
         <input type="password" id="pinInput" class="pin-input" maxlength="4" placeholder="••••" autocomplete="off" inputmode="numeric">
-        <button type="button" id="togglePinVisibilityBtn" class="pin-toggle-btn" aria-label="PIN-kodni ko'rsatish" title="PIN-kodni ko'rsatish (Ko'zlarni ochish)">
-          <span id="pinMonkeyBtnContainer"></span>
+        <button type="button" id="togglePinVisibilityBtn" class="pin-toggle-btn" onclick="togglePinVisibility()" aria-label="PIN-kodni ko'rsatish" title="PIN-kodni ko'rsatish (Ko'zlarni ochish)">
+          <span id="pinEyeIcon">
+            <svg id="eyeClosedSvg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+              <line x1="1" y1="1" x2="23" y2="23"></line>
+            </svg>
+            <svg id="eyeOpenSvg" style="display: none;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#047857" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </span>
         </button>
       </div>
 
@@ -1023,8 +1064,8 @@
       </div>
 
       <div class="modal-actions">
-        <button type="button" class="btn btn-secondary" id="pinCancelBtn">Bekor qilish</button>
-        <button type="button" class="btn btn-primary" id="pinSubmitBtn">Tasdiqlash va boshlash</button>
+        <button type="button" class="btn btn-secondary" id="pinCancelBtn" onclick="closePinModal()">Bekor qilish</button>
+        <button type="button" class="btn btn-primary" id="pinSubmitBtn" onclick="handlePinSubmit()">Tasdiqlash va boshlash</button>
       </div>
     </div>
   </div>
@@ -1180,6 +1221,7 @@
   <script src="assets/html2canvas.min.js"></script>
   <script src="krs_data.js"></script>
   <script src="teachers_db.js"></script>
+  <script src="questions_db.js"></script>
   <script src="app.js"></script>
   <script src="qulaylik.js"></script>
 <script data-goatcounter="https://umamatov.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
