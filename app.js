@@ -2785,7 +2785,7 @@ function copyDavomatTelegramText() {
 
   text += `⚠️ Barcha maktab direktorlari va o'qituvchilari testni zudlik bilan yakunlashlari so'raladi!\n`;
   text += `🌐 Test topshirish: https://pedagog.umamatov.uz\n`;
-  text += `👤 Mas'ul: Qo'shko'pir tumani MMTB Bosh mutaxassisi Umrbek Mamatov`;
+  text += `👤 Mas'ul: Qo'shko'pir tumani ta'limi bo'limi Bosh mutaxassisi Umrbek Mamatov`;
 
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(text).then(() => {
