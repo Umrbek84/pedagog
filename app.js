@@ -1834,7 +1834,8 @@ async function loadLeaderboardFromSheet(isManual = false) {
         const r = rows[i];
         if (!r[1]) continue;
         const dt = extractDateTime(r[0]);
-        combinedRecords.push({
+        const normName = r[1].trim().toLowerCase();
+        const record = {
           rawDate: r[0] || '',
           date: dt.date,
           timeStr: dt.time,
@@ -1847,7 +1848,14 @@ async function loadLeaderboardFromSheet(isManual = false) {
           percent: parseInt(r[7]) || 0,
           switches: parseInt(r[8]) || 0,
           status: r[9] || 'Muvaffaqiyatli topshirdi'
-        });
+        };
+
+        const existingIdx = combinedRecords.findIndex(c => c.name.trim().toLowerCase() === normName);
+        if (existingIdx >= 0) {
+          combinedRecords[existingIdx] = record;
+        } else {
+          combinedRecords.push(record);
+        }
       }
     }
   } catch (err) {
@@ -2049,9 +2057,10 @@ async function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
       for (let i = 1; i < rows.length; i++) {
         const r = rows[i];
         if (!r[1]) continue;
-        liveResults.push({
+        const normN = normalizePersonName(r[1]);
+        const record = {
           date: (r[0] || '').substring(0, 10),
-          name: normalizePersonName(r[1]),
+          name: normN,
           rawName: r[1],
           school: r[2] || '',
           cleanSchool: normalizeSchoolName(r[2]),
@@ -2063,7 +2072,14 @@ async function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
           switches: parseInt(r[8]) || 0,
           status: r[9] || 'Muvaffaqiyatli topshirdi',
           isBlocked: false
-        });
+        };
+
+        const existingIdx = liveResults.findIndex(lr => lr.name === normN);
+        if (existingIdx >= 0) {
+          liveResults[existingIdx] = record;
+        } else {
+          liveResults.push(record);
+        }
       }
     }
   } catch (err) {
