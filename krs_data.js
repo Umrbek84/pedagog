@@ -267,12 +267,7 @@ function getTashkentDateString() {
     month: '2-digit',
     day: '2-digit'
   });
-  const actualDate = formatter.format(now);
-  // Sinov va testlash rejimi: 22-noyabrda ham 23-noyabr 4-mashg'ulot testini to'liq ochiq va faol qilib berish
-  if (actualDate === '2026-11-22') {
-    return '2026-11-23';
-  }
-  return actualDate;
+  return formatter.format(now);
 }
 
 // Har bir fanning KRS holatini aniqlash
