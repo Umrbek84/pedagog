@@ -1529,22 +1529,25 @@ body.exam-active-mode .exam-live-indicator {
   background: linear-gradient(180deg, #fffdfa 0%, #ffffff 100%) !important;
   box-shadow: 0 10px 30px rgba(245, 158, 11, 0.18), 0 2px 8px rgba(0,0,0,0.06) !important;
   transform: translateY(-2px);
+  padding-top: 2.35rem !important;
 }
 
 .krs-ribbon {
   position: absolute;
-  top: 14px;
-  right: -32px;
+  top: 0;
+  right: 0;
   background: linear-gradient(135deg, #ef4444, #f59e0b);
   color: #ffffff;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 4px 36px;
-  transform: rotate(45deg);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  letter-spacing: 0.05em;
+  padding: 5px 14px;
+  border-radius: 0 0 0 12px;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.25);
   pointer-events: none;
+  z-index: 2;
+  white-space: nowrap;
 }
 
 .krs-card-header {
