@@ -418,11 +418,10 @@ function setupSchoolSubjectTeacherFlow() {
 
     const allSchoolTeachers = state.teachersDb[schoolVal] || [];
     const matchedTeachers = allSchoolTeachers.filter(t => {
-      if (subjectVal.toLowerCase() === 'tarbiya') {
-        const s = (t.subject || '').toLowerCase();
-        return s === 'tarbiya' || s === 'tarix' || s === 'huquq';
-      }
-      return t.subject && t.subject.toLowerCase() === subjectVal.toLowerCase();
+      const sub = (subjectVal || '').toLowerCase();
+      const primarySub = (t.subject || '').toLowerCase();
+      const allSubs = Array.isArray(t.all_krs) ? t.all_krs.map(s => (s || '').toLowerCase()) : [];
+      return primarySub === sub || allSubs.includes(sub);
     }).sort((a, b) => a.name.localeCompare(b.name));
 
     teacherSelect.disabled = false;
@@ -437,7 +436,7 @@ function setupSchoolSubjectTeacherFlow() {
       matchedTeachers.forEach(t => {
         const opt = document.createElement('option');
         opt.value = t.name;
-        opt.textContent = `${t.name} (${t.subject})`;
+        opt.textContent = `${t.name} (${subjectVal})`;
         teacherSelect.appendChild(opt);
       });
 
@@ -2415,6 +2414,7 @@ async function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
           name: t.name,
           school: school,
           subject: t.subject || subRecord.subject || '',
+          all_krs: t.all_krs || [t.subject || ''],
           hasParticipated: true,
           isBlocked: false,
           score: subRecord.score,
@@ -2429,6 +2429,7 @@ async function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
           name: t.name,
           school: school,
           subject: t.subject || '',
+          all_krs: t.all_krs || [t.subject || ''],
           hasParticipated: false,
           isBlocked: false,
           score: 0,
@@ -2465,7 +2466,8 @@ function applyMonitoringFilters() {
     if (subjectFilter !== 'ALL') {
       const s1 = (t.subject || '').toLowerCase();
       const s2 = subjectFilter.toLowerCase();
-      if (!s1.includes(s2) && !s2.includes(s1)) return false;
+      const hasKrs = Array.isArray(t.all_krs) && t.all_krs.some(k => (k || '').toLowerCase() === s2);
+      if (!s1.includes(s2) && !s2.includes(s1) && !hasKrs) return false;
     }
     if (statusFilter === 'PASSED' && (!t.hasParticipated || t.isBlocked)) return false;
     if (statusFilter === 'MISSING' && t.hasParticipated) return false;
@@ -3049,7 +3051,7 @@ function exportTeachersListCSV() {
 let lastDavomatSchoolList = [];
 
 const KRS_DIRECTIONS_MAP = {
-  'Ijtimoiy fanlar': ['Tarix', 'Huquq'],
+  'Ijtimoiy fanlar': ['Tarix', 'Huquq', 'Tarbiya'],
   'Filologiya': ['Ona tili'],
   'Tabiiy fanlar': ['Biologiya', 'Kimyo', 'Fizika', 'Geografiya'],
   'Aniq fanlar': ['Matematika', 'Informatika'],
@@ -3146,7 +3148,11 @@ function renderDavomatReport() {
     if (!allowedSubjects) {
       eligibleTeachers = allTeachers;
     } else {
-      eligibleTeachers = allTeachers.filter(t => allowedSubjects.includes(t.subject));
+      eligibleTeachers = allTeachers.filter(t => {
+        if (allowedSubjects.includes(t.subject)) return true;
+        if (Array.isArray(t.all_krs) && t.all_krs.some(k => allowedSubjects.includes(k))) return true;
+        return false;
+      });
     }
 
     const total = eligibleTeachers.length;

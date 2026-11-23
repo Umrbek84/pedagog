@@ -2,9 +2,9 @@
   "1-sonli maktab": [
     {
       "name": "ABDIRIMOVA LENINZA XAYITBAYEVNA",
-      "subject": "Ona tili",
+      "subject": "Rus tili",
       "all_krs": [
-        "Ona tili"
+        "Rus tili"
       ],
       "classes": [
         "6-V класс"
@@ -14,7 +14,8 @@
       "name": "ABDISHARIFOVA GULSHAN UMARBEK QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -32,7 +33,8 @@
       "name": "ABDULLAYEVA SHOXIDA BAXTIYOROVNA",
       "subject": "Kimyo",
       "all_krs": [
-        "Kimyo"
+        "Kimyo",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -58,9 +60,9 @@
     },
     {
       "name": "ALLABERGANOVA DILFUZA SHAVKATOVNA",
-      "subject": "Ona tili",
+      "subject": "Rus tili",
       "all_krs": [
-        "Ona tili"
+        "Rus tili"
       ],
       "classes": [
         "10-B класс"
@@ -124,7 +126,8 @@
       "name": "BOBOJONOVA XOLIDA OTABOYEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": [
         "9-V класс"
@@ -176,9 +179,10 @@
     },
     {
       "name": "IBRAGIMOVA ADOLAT ZAKIRJONOVNA",
-      "subject": "Ona tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Ona tili"
+        "Boshlang'ich ta'lim",
+        "English"
       ],
       "classes": []
     },
@@ -194,7 +198,8 @@
       "name": "ISMAILOVA DILFUZA ISAQOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": [
         "5-D класс"
@@ -202,9 +207,9 @@
     },
     {
       "name": "JABBAROVA ORZU G‘AYRATOVNA",
-      "subject": "Ona tili",
+      "subject": "Rus tili",
       "all_krs": [
-        "Ona tili"
+        "Rus tili"
       ],
       "classes": []
     },
@@ -291,14 +296,6 @@
       "classes": []
     },
     {
-      "name": "MASHARIPOV ERGASHBOY JUMABOYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "MASHARIPOVA ZAYNAB SHARIPOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -347,25 +344,19 @@
       ]
     },
     {
-      "name": "NAZAROVA SALOMAT OTABOYEVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "NURULLAYEVA NAFISA KAMILOVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
     {
       "name": "OGAY TATYANA GENADEVNA",
-      "subject": "Matematika",
+      "subject": "Geografiya",
       "all_krs": [
+        "Geografiya",
         "Matematika"
       ],
       "classes": [
@@ -392,7 +383,8 @@
       "name": "OTANAZAROVA MAVLUDA ULUG‘BEK QIZI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": [
         "5-G класс"
@@ -400,29 +392,19 @@
     },
     {
       "name": "PALVANOVA ZUMRAD IBRAGIMOVNA",
-      "subject": "Ona tili",
+      "subject": "Rus tili",
       "all_krs": [
-        "Ona tili"
+        "Rus tili"
       ],
       "classes": [
         "8-A класс"
       ]
     },
     {
-      "name": "PETROSYANS ASHOT ERNSTOVICH",
-      "subject": "Boshlang'ich ta'lim",
-      "all_krs": [
-        "Boshlang'ich ta'lim"
-      ],
-      "classes": [
-        "4-G класс"
-      ]
-    },
-    {
       "name": "PETROSYANS ROKSANA SURENOVNA",
-      "subject": "Ona tili",
+      "subject": "Rus tili",
       "all_krs": [
-        "Ona tili"
+        "Rus tili"
       ],
       "classes": [
         "5-B класс"
@@ -467,16 +449,6 @@
       ]
     },
     {
-      "name": "RADJABOV DONIYOR TO‘RAVAYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "8-V класс"
-      ]
-    },
-    {
       "name": "RAJAPBOYEVA MASHHURA OLIMBOY QIZI",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -514,8 +486,9 @@
     },
     {
       "name": "RAXIMOVA MUQADDAS SHODLIKOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -532,17 +505,9 @@
     },
     {
       "name": "RO‘ZMETOVA GULNORA MADRAXIMOVNA",
-      "subject": "Ona tili",
+      "subject": "Rus tili",
       "all_krs": [
-        "Ona tili"
-      ],
-      "classes": []
-    },
-    {
-      "name": "RUSTAMBEKOVA NODIRA SHOKIROVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
+        "Rus tili"
       ],
       "classes": []
     },
@@ -597,14 +562,6 @@
       "subject": "Matematika",
       "all_krs": [
         "Matematika"
-      ],
-      "classes": []
-    },
-    {
-      "name": "TOG‘ONOV JUMANAZAR SHARIPOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     },
@@ -717,14 +674,6 @@
         "Ona tili"
       ],
       "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "10-sonli maktab": [
@@ -771,28 +720,17 @@
       "classes": []
     },
     {
-      "name": "BABADJANOVA IKBAL KUZIBAYEVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
-      "name": "BABADJANOVA SHAXNOZA KUZIBAYEVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "10-A класс"
-      ]
-    },
-    {
       "name": "BALTAYEVA ILMIRA XUDARGANOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
-        "Tasviriy san'at"
+        "Biologiya",
+        "English",
+        "Informatika",
+        "Matematika",
+        "Ona tili",
+        "Tarbiya",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": [
         "8-B класс"
@@ -800,8 +738,9 @@
     },
     {
       "name": "BEKCHANOVA MUKADDAS ERKINBAYEVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -870,9 +809,9 @@
     },
     {
       "name": "IBADULLAYEVA OZADA XAMUTJANOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -911,14 +850,6 @@
       ]
     },
     {
-      "name": "MATYAKUBOV FARXOD BAYNAZAROVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "NARBAYEVA DILDARA RAXIMBAYEVNA",
       "subject": "Texnologiya",
       "all_krs": [
@@ -951,14 +882,6 @@
       "classes": []
     },
     {
-      "name": "NORBOYEV PO‘LAT NORMATOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "NURMATOVA SOHIBA RUSTAMOVNA",
       "subject": "Biologiya",
       "all_krs": [
@@ -978,7 +901,8 @@
       "name": "NURULLAYEVA OZODA OMONBOYEVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": [
         "7-A класс"
@@ -1143,14 +1067,6 @@
       "classes": []
     },
     {
-      "name": "SULTONOVA ZARIFA RAJABBOY QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "TAJIYEVA GULZODA RAXIMBAYEVNA",
       "subject": "Texnologiya",
       "all_krs": [
@@ -1172,7 +1088,9 @@
       "name": "TAXIROVA MOMOJON O‘TKIROVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Tarbiya",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -1216,12 +1134,10 @@
       "name": "ВАКАНСИЯ",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Ona tili"
       ],
-      "classes": [
-        "5-A класс",
-        "9-B класс"
-      ]
+      "classes": []
     }
   ],
   "11-sonli maktab": [
@@ -1274,16 +1190,6 @@
       ]
     },
     {
-      "name": "BALTAYEV SHADLIK SAPARBAYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "5-D класс"
-      ]
-    },
-    {
       "name": "BALTAYEVA SAXIFA BATIRBAYEVNA",
       "subject": "Texnologiya",
       "all_krs": [
@@ -1301,8 +1207,9 @@
     },
     {
       "name": "BAYJANOVA SANOBARXON KARIMOVNA",
-      "subject": "Rus tili",
+      "subject": "Ona tili",
       "all_krs": [
+        "Ona tili",
         "Rus tili"
       ],
       "classes": [
@@ -1397,7 +1304,9 @@
       "name": "KARIMOVA MUHAYYO IBODULLA QIZI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya",
+        "Tarix"
       ],
       "classes": []
     },
@@ -1423,7 +1332,9 @@
       "name": "KURYAZOVA SHARKIYA KURANBAYEVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -1439,8 +1350,9 @@
     },
     {
       "name": "MASHARIFOVA LAYLO SHAVKAT QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Tasviriy san'at"
       ],
       "classes": [
@@ -1449,16 +1361,18 @@
     },
     {
       "name": "MASHARIPOVA NASIBA QURANBAYEVNA",
-      "subject": "Tarix",
+      "subject": "Informatika",
       "all_krs": [
-        "Tarix"
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
     {
       "name": "MATKARIMOVA FERUZAXON MANSUR QIZI",
-      "subject": "Matematika",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Matematika"
       ],
       "classes": []
@@ -1483,7 +1397,8 @@
       "name": "OLLOBERGANOVA SHAYDO NURADDIN QIZI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": [
         "7-D класс"
@@ -1493,7 +1408,8 @@
       "name": "ORTIQOVA MAVJUDA QADAMBOYEVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Rus tili"
       ],
       "classes": [
         "3-A класс"
@@ -1511,8 +1427,9 @@
     },
     {
       "name": "OZODOVA RUXSORA ISMOIL QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Ona tili",
       "all_krs": [
+        "Ona tili",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -1529,14 +1446,17 @@
       "name": "QUTLIMURATOVA MUBORAK NORBAYEVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
     {
       "name": "RADJABOVA INABAT AZATBAYEVNA",
-      "subject": "Ona tili",
+      "subject": "English",
       "all_krs": [
+        "English",
         "Ona tili"
       ],
       "classes": [
@@ -1553,9 +1473,9 @@
     },
     {
       "name": "RAXIMBERGANOVA IQBOLOY XAJIBAYEVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": [
         "10-B класс"
@@ -1589,8 +1509,9 @@
     },
     {
       "name": "SADIQOVA SHUKURJON ABDUSHARIPOVNA",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": []
@@ -1659,9 +1580,12 @@
     },
     {
       "name": "XALIQOVA ZAYNABJON YURIYEVNA",
-      "subject": "Tarix",
+      "subject": "Biologiya",
       "all_krs": [
-        "Tarix"
+        "Biologiya",
+        "Fizika",
+        "Geografiya",
+        "Kimyo"
       ],
       "classes": []
     },
@@ -1676,14 +1600,6 @@
       ]
     },
     {
-      "name": "XODJAYAZOV UMIDBEK KAMILOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "YADGAROVA QUNDUZOY ALISHER QIZI",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -1695,25 +1611,10 @@
     },
     {
       "name": "YAKUBOVA MUQADDAS XAKIMBOY QIZI",
-      "subject": "Matematika",
+      "subject": "Geografiya",
       "all_krs": [
+        "Geografiya",
         "Matematika"
-      ],
-      "classes": []
-    },
-    {
-      "name": "YAMG‘IROV MARIMBOY SHARIPOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
-      "name": "YAQUBOVA ROXATOY MATCHANOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -1722,14 +1623,6 @@
       "subject": "Matematika",
       "all_krs": [
         "Matematika"
-      ],
-      "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Ona tili",
-      "all_krs": [
-        "Ona tili"
       ],
       "classes": []
     }
@@ -1760,17 +1653,10 @@
       "classes": []
     },
     {
-      "name": "ABDULLAYEV SHERZOD ABDULLAYEVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "AMINOVA SHAXLO SHOKIROVNA",
-      "subject": "Rus tili",
+      "subject": "English",
       "all_krs": [
+        "English",
         "Rus tili"
       ],
       "classes": []
@@ -1787,9 +1673,9 @@
     },
     {
       "name": "IBRAXIMOV DILMUROD DAVRONBEKOVICH",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -1797,7 +1683,8 @@
       "name": "JUMANIYOZOV NAVRO‘ZBEK KUPALOVICH",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -1811,9 +1698,10 @@
     },
     {
       "name": "JUMANIYOZOVA DILOROM QURONBOYEVNA",
-      "subject": "Tarix",
+      "subject": "Ona tili",
       "all_krs": [
-        "Tarix"
+        "Ona tili",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -1829,8 +1717,9 @@
     },
     {
       "name": "JUMANIYOZOVA MOHIRA RAVSHANBEKOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -1923,9 +1812,11 @@
     },
     {
       "name": "OTABOYEV KAMOL RUSTAMOVICH",
-      "subject": "Fizika",
+      "subject": "Biologiya",
       "all_krs": [
-        "Fizika"
+        "Biologiya",
+        "Fizika",
+        "Matematika"
       ],
       "classes": [
         "11-A класс"
@@ -1950,24 +1841,6 @@
       "classes": [
         "2-A класс"
       ]
-    },
-    {
-      "name": "QODIROV BAHODIR OLIMBOYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "9-A класс"
-      ]
-    },
-    {
-      "name": "QODIROV MUZAFFAR OLIMBOYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     },
     {
       "name": "QURBANOVA GULNOZA BARIS QIZI",
@@ -2078,14 +1951,6 @@
       ]
     },
     {
-      "name": "SHERMATOV UMARBEK ASHIROVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "SHOMUROTOVA SHOIRA SHARIPOVNA",
       "subject": "Matematika",
       "all_krs": [
@@ -2095,8 +1960,9 @@
     },
     {
       "name": "SOLAYEVA NAFISA SHUXRATOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -2111,9 +1977,10 @@
     },
     {
       "name": "SULTONOVA NODIRA IKROMBOY QIZI",
-      "subject": "Tarix",
+      "subject": "Geografiya",
       "all_krs": [
-        "Tarix"
+        "Geografiya",
+        "Texnologiya"
       ],
       "classes": [
         "8-B класс"
@@ -2121,8 +1988,9 @@
     },
     {
       "name": "UMAROVA NAVBAXOR UMARDJANOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -2133,7 +2001,8 @@
       "name": "XAYITOVA IZZATOY MATYOQUBOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Rus tili"
       ],
       "classes": [
         "4-A класс"
@@ -2151,7 +2020,8 @@
       "name": "YAQUBOVA GAVXARJON MASHARIPOVNA",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Texnologiya"
       ],
       "classes": [
         "9-B класс"
@@ -2182,14 +2052,6 @@
       "subject": "English",
       "all_krs": [
         "English"
-      ],
-      "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     }
@@ -2259,9 +2121,9 @@
     },
     {
       "name": "EGAMOVA IQBOL EGAMBERGANOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -2297,7 +2159,8 @@
       "name": "ISKANDAROVA DILFUZA QADAMOVNA",
       "subject": "Fizika",
       "all_krs": [
-        "Fizika"
+        "Fizika",
+        "Kimyo"
       ],
       "classes": [
         "5-B Sinf"
@@ -2323,8 +2186,9 @@
     },
     {
       "name": "JABBAROVA MALIKA BAHODIROVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": [
@@ -2341,8 +2205,9 @@
     },
     {
       "name": "KURBANOVA MANZURA SATIMBAYEVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": []
@@ -2360,14 +2225,6 @@
       "subject": "Ona tili",
       "all_krs": [
         "Ona tili"
-      ],
-      "classes": []
-    },
-    {
-      "name": "MATCHANOVA MAFTUNA ODAMBOYEVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -2418,14 +2275,6 @@
       ]
     },
     {
-      "name": "QURONBOYEV MAQSUD JUMANIYOZOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "RAJABOVA DONOGUL SHUHRAT QIZI",
       "subject": "Ona tili",
       "all_krs": [
@@ -2464,14 +2313,6 @@
       ]
     },
     {
-      "name": "RUZMETOVA ZUHRA YULDASHEVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "SABIROV SABIR ALISHER O‘G‘LI",
       "subject": "Geografiya",
       "all_krs": [
@@ -2499,16 +2340,17 @@
     },
     {
       "name": "SULTONNAZIROVA SUMBULOY POLVONNAZIR QIZI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
     {
       "name": "TOXIROV ISLOMBEK O‘TKIR O‘G‘LI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": []
@@ -2533,9 +2375,11 @@
     },
     {
       "name": "XO‘JAYEVA ZIYODAJON TAIROVNA",
-      "subject": "Fizika",
+      "subject": "Biologiya",
       "all_krs": [
-        "Fizika"
+        "Biologiya",
+        "Fizika",
+        "Informatika"
       ],
       "classes": [
         "6-B Sinf"
@@ -2559,8 +2403,9 @@
     },
     {
       "name": "YOQUBOVA ROHATOY MAHMUDOVNA",
-      "subject": "Nemis tili",
+      "subject": "English",
       "all_krs": [
+        "English",
         "Nemis tili"
       ],
       "classes": [
@@ -2588,31 +2433,16 @@
   ],
   "14-sonli maktab": [
     {
-      "name": "ALLABERGANOVA SHAXLO SHONAZAROVNA",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "ATABAYEVA DILDORA KOMILOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya",
+        "Texnologiya"
       ],
       "classes": []
     },
     {
       "name": "BABAJANOV OMANBAY YUSUPOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
-      "name": "BALTAYEV BOLTABOY SHERZOD O‘G‘LI",
       "subject": "Texnologiya",
       "all_krs": [
         "Texnologiya"
@@ -2633,7 +2463,8 @@
       "name": "BEKCHANOVA SADOQAT KAMILOVNA",
       "subject": "Fransuz tili",
       "all_krs": [
-        "Fransuz tili"
+        "Fransuz tili",
+        "Rus tili"
       ],
       "classes": [
         "7-B sinf"
@@ -2706,14 +2537,6 @@
       "classes": []
     },
     {
-      "name": "JUMANAZAROVA MUNIRA ABDULLA QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "JUMANIYOZOVA SHOXSANAM BAXTIYOROVNA",
       "subject": "Ona tili",
       "all_krs": [
@@ -2761,7 +2584,8 @@
       "name": "MATNIYOZOV IXTIYOR BAXTIYOROVICH",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": [
         "9-B sinf"
@@ -2771,15 +2595,8 @@
       "name": "MATTIYEVA SHIRIN RAJABOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
-      ],
-      "classes": []
-    },
-    {
-      "name": "MATYAKUBOV DAVRONBEK BALTAYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -2823,7 +2640,8 @@
       "name": "OLLAYOROV MATCHON ABDULLAYEVICH",
       "subject": "Fizika",
       "all_krs": [
-        "Fizika"
+        "Fizika",
+        "Geografiya"
       ],
       "classes": []
     },
@@ -2975,15 +2793,8 @@
       "name": "RO‘ZMETOVA SHARIFA G‘ULOMJON QIZI",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim"
-      ],
-      "classes": []
-    },
-    {
-      "name": "SADULLAYEV NIZAMAT RAJABOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
+        "Boshlang'ich ta'lim",
+        "Tasviriy san'at"
       ],
       "classes": []
     },
@@ -3067,7 +2878,8 @@
       "name": "SARIYEVA CHAROS KURANBOYEVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -3091,9 +2903,13 @@
     },
     {
       "name": "SHAMURATOVA FARANGIZ MANSURBEK QIZI",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Biologiya",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Biologiya",
+        "Boshlang'ich ta'lim",
+        "Informatika",
+        "Ona tili",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -3152,14 +2968,6 @@
       "classes": []
     },
     {
-      "name": "YUSUPOV SHAMURAT RAZZAQOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "YUSUPOV ZOHID OLIMBAYEVICH",
       "subject": "Informatika",
       "all_krs": [
@@ -3176,14 +2984,6 @@
         "Rus tili"
       ],
       "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "15-sonli maktab": [
@@ -3191,7 +2991,9 @@
       "name": "ALLABERGANOVA SHAXLO SHONAZAROVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -3216,14 +3018,6 @@
       ]
     },
     {
-      "name": "BOBOJONOV JO‘RABEK POLVONNAZIR O‘G‘LI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "DAVLETOVA KUMUSHOY MATYAQUBOVNA",
       "subject": "Ona tili",
       "all_krs": [
@@ -3235,8 +3029,9 @@
     },
     {
       "name": "JUMANIYOZOV SHOHRUHBEK BEKCHANOVICH",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": [
@@ -3279,8 +3074,9 @@
     },
     {
       "name": "NURMETOVA IRODA RAVSHONOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": []
@@ -3289,7 +3085,8 @@
       "name": "OTAYEV OZAD IBRAXIMOVICH",
       "subject": "Fizika",
       "all_krs": [
-        "Fizika"
+        "Fizika",
+        "Matematika"
       ],
       "classes": []
     },
@@ -3320,18 +3117,12 @@
       "classes": []
     },
     {
-      "name": "QO‘ZIBOYEVA ANAPOSHSHA XASANBOY QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "RAXIMOV MUZAFFAR SAPARBOYEVICH",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Tarbiya",
+        "Tarix"
       ],
       "classes": [
         "9-A sinf"
@@ -3357,8 +3148,9 @@
     },
     {
       "name": "SAIDOV DIYORBEK DILSHOD O‘G‘LI",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": []
@@ -3368,14 +3160,6 @@
       "subject": "Huquq",
       "all_krs": [
         "Huquq"
-      ],
-      "classes": []
-    },
-    {
-      "name": "SA’DULLAYEV ISMOILXO‘JA SULTANNAZAROVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -3492,14 +3276,6 @@
       ]
     },
     {
-      "name": "YAKUBOVA ONABIBI XO‘JANIYAZOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "YOQUPOVA SHOXIDA KOMILOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -3508,14 +3284,6 @@
       "classes": [
         "2-B класс"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "16-sonli maktab": [
@@ -3531,8 +3299,9 @@
     },
     {
       "name": "ASHUROV JAMOLIDDIN QAHRAMONOVICH",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": [
@@ -3544,14 +3313,6 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya"
-      ],
-      "classes": []
-    },
-    {
-      "name": "BOYJONOV JASURBEK ALISHER O‘G‘LI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     },
@@ -3585,8 +3346,9 @@
     },
     {
       "name": "JABBERGANOVA SOHIBA HEYITOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -3611,16 +3373,6 @@
       ],
       "classes": [
         "8-A класс"
-      ]
-    },
-    {
-      "name": "MATNIYAZOV JASURBEK MATNIYAZOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "11-A класс"
       ]
     },
     {
@@ -3681,7 +3433,8 @@
       "name": "RAXIMOV ALIMARDON YULDASHEVICH",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -3700,34 +3453,19 @@
         "Tarix"
       ],
       "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "17-sonli maktab": [
     {
       "name": "ABDALOVA SOHIBA KOMILJONOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
         "5-B класс"
       ]
-    },
-    {
-      "name": "ABDULLAYEV JASURBEK RUSTAMOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     },
     {
       "name": "ABDULLAYEV UMIRBEK AMANBAYEVICH",
@@ -3799,9 +3537,9 @@
     },
     {
       "name": "ARTIQOVA SALOMAT RO‘ZMETOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -3831,16 +3569,6 @@
       ],
       "classes": [
         "11-D класс"
-      ]
-    },
-    {
-      "name": "DAVLETOVA NILUFAR QAZAKBOY QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "7-D класс"
       ]
     },
     {
@@ -3941,9 +3669,9 @@
     },
     {
       "name": "JUMANIYOZOVA UMIDA BAYRAMBEK QIZI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": [
         "10-D класс"
@@ -3990,14 +3718,6 @@
       "classes": []
     },
     {
-      "name": "MADAMINOVA SHOHSANAM SULTONBOYEVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "MADAMINOVA ZAYNAB ABDRAZZAQOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -4009,14 +3729,6 @@
     },
     {
       "name": "MADRAXIMOVA MAFTUNA RAVSHONBEKOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
-      "name": "MASHARIPOV XAMIDBEK ALIMBAYEVICH",
       "subject": "Tarix",
       "all_krs": [
         "Tarix"
@@ -4055,9 +3767,9 @@
     },
     {
       "name": "MATYOQUBOV MARDONBEK OZODOVICH",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -4065,7 +3777,9 @@
       "name": "NIYOZMETOVA BAKPOSHSHA RUSTAMBAYEVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya",
+        "Tarix"
       ],
       "classes": []
     },
@@ -4090,16 +3804,6 @@
       ]
     },
     {
-      "name": "ORTIKOV ULUG‘BEK NAZAROVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "8-D класс"
-      ]
-    },
-    {
       "name": "ORTIQOVA MASHXURA MADIRIMOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -4107,16 +3811,6 @@
       ],
       "classes": [
         "4-B класс"
-      ]
-    },
-    {
-      "name": "OTABAYEV DONIYOR QUVONDIQOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "9-D класс"
       ]
     },
     {
@@ -4281,9 +3975,10 @@
     },
     {
       "name": "SADULLAYEVA NAFISA ODILBEK QIZI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -4376,14 +4071,6 @@
       ]
     },
     {
-      "name": "VAFOYEV AZAMAT KAMOLADDINOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "XAKIMOVA SHAHNOZA EGAMBERGANOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -4397,7 +4084,9 @@
       "name": "XASANBOYEVA MUHAYYO ULUG‘BEK QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -4405,7 +4094,8 @@
       "name": "YOQUBOVA MUXLISA BAXROMOVNA",
       "subject": "Rus tili",
       "all_krs": [
-        "Rus tili"
+        "Rus tili",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -4418,14 +4108,6 @@
       "classes": [
         "10-E класс"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "18-sonli maktab": [
@@ -4485,8 +4167,9 @@
     },
     {
       "name": "BOTIROVA SARVINOZ SANJARBEK QIZI",
-      "subject": "Fransuz tili",
+      "subject": "English",
       "all_krs": [
+        "English",
         "Fransuz tili"
       ],
       "classes": []
@@ -4543,7 +4226,9 @@
       "name": "ISHCHANOVA NARGIZA ADILBEKOVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -4551,7 +4236,8 @@
       "name": "JUMANIYOZOVA IRODA ISMAILOVNA",
       "subject": "Nemis tili",
       "all_krs": [
-        "Nemis tili"
+        "Nemis tili",
+        "Rus tili"
       ],
       "classes": []
     },
@@ -4640,26 +4326,10 @@
       ]
     },
     {
-      "name": "OLLAMOV FARRUHBEK MAQSUD O‘G‘LI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "OMONOVA YOQUTJON BAXTIYAROVNA",
       "subject": "Texnologiya",
       "all_krs": [
         "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
-      "name": "PIRNAZAROVA YORQINOY SHONAZAR QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -4675,8 +4345,9 @@
     },
     {
       "name": "QO‘SHNAZAROVA SOFIYA ILXOMBEK QIZI",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": []
@@ -4693,14 +4364,16 @@
       "name": "RAJABOVA RAYXONOY RAJABOVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
     {
       "name": "RAJAPOVA SHAXLO MARIMBAYEVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": []
@@ -4772,22 +4445,6 @@
       ]
     },
     {
-      "name": "SAIDOV OMONBOY ABDULLAYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
-      "name": "SALAYEV RAXIMBOY NIYOZMATOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "SAPAYEVA IQBOL QO‘ZIBOYEVNA",
       "subject": "Kimyo",
       "all_krs": [
@@ -4827,14 +4484,6 @@
     },
     {
       "name": "YULDASHEVA DILAFRO‘Z UMIRBEK QIZI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
       "subject": "Texnologiya",
       "all_krs": [
         "Texnologiya"
@@ -4915,7 +4564,10 @@
       "name": "BOBOJONOVA GULJANOY UMIDBEK QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -4948,14 +4600,6 @@
       ]
     },
     {
-      "name": "JUMANIYAZOVA YERKIN MASHORIPOVNA",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "JUMANIYOZOVA SHAXNOZA FARXODOVNA",
       "subject": "Ona tili",
       "all_krs": [
@@ -4969,7 +4613,8 @@
       "name": "KARIMOV SHUXRAT ERKINOVICH",
       "subject": "Fransuz tili",
       "all_krs": [
-        "Fransuz tili"
+        "Fransuz tili",
+        "Rus tili"
       ],
       "classes": [
         "9-A класс"
@@ -4977,21 +4622,14 @@
     },
     {
       "name": "KARIMOVA MEXRIBON G‘AYIBNAZAROVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
         "6-A класс"
       ]
-    },
-    {
-      "name": "MASHARIPOV ASROR RAJABBAYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     },
     {
       "name": "MASHARIPOVA KOMMUNA RAJABBAYEVNA",
@@ -5126,14 +4764,6 @@
       "classes": []
     },
     {
-      "name": "SOBIROV DIYORBEK SARVAR O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "SOTIMOVA MUNIRA QUDRATBEKOVNA",
       "subject": "Tarix",
       "all_krs": [
@@ -5153,7 +4783,8 @@
       "name": "XASANOVA RAYHON RAMANOVNA",
       "subject": "Fransuz tili",
       "all_krs": [
-        "Fransuz tili"
+        "Fransuz tili",
+        "Rus tili"
       ],
       "classes": [
         "5-B класс"
@@ -5163,7 +4794,8 @@
       "name": "XUDAYAROVA SEVARA ILXOMBEKOVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": [
         "10-A класс"
@@ -5199,9 +4831,11 @@
     },
     {
       "name": "XUDAYBERGANOVA NARGIZA ABDUSHARIPOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
-        "Geografiya"
+        "Biologiya",
+        "Geografiya",
+        "Tarix"
       ],
       "classes": [
         "5-A класс"
@@ -5224,14 +4858,6 @@
       "classes": [
         "11-A класс"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "2-sonli maktab": [
@@ -5308,16 +4934,6 @@
       "classes": []
     },
     {
-      "name": "ASATOV SHAVKAT KOSIMOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": [
-        "7-A sinf"
-      ]
-    },
-    {
       "name": "ATADJANOVA XASIYATXAN MARKSOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -5331,7 +4947,9 @@
       "name": "ATAMURATOVA MAQSUDA ATANAZAROVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -5378,16 +4996,6 @@
         "Informatika"
       ],
       "classes": []
-    },
-    {
-      "name": "BARZIYEV DANIYAR SAPORBAYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "7-D sinf"
-      ]
     },
     {
       "name": "BATIROVA MADINABONU SHODLIK QIZI",
@@ -5474,17 +5082,10 @@
       "classes": []
     },
     {
-      "name": "IBADULLAYEV SHERZAD ISMAILOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "IBODULLAYEVA LATOFAT FARHOD QIZI",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": []
@@ -5496,16 +5097,6 @@
         "Rus tili"
       ],
       "classes": []
-    },
-    {
-      "name": "IBRAGIMOV BEKZOD SABUROVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "6-F класс"
-      ]
     },
     {
       "name": "IBRAGIMOVA RISOLATXON NORIMON QIZI",
@@ -5522,14 +5113,6 @@
       "subject": "English",
       "all_krs": [
         "English"
-      ],
-      "classes": []
-    },
-    {
-      "name": "IMAMOVA GULNOZA KADAMOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -5551,21 +5134,13 @@
     },
     {
       "name": "ISMOILOVA SURAYYO OLLABERGANOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": [
         "11-B sinf"
       ]
-    },
-    {
-      "name": "ISMOILOVA ZUHRAJON HAMID QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     },
     {
       "name": "JUMANIYAZOV MANSUR MURATOVICH",
@@ -5579,8 +5154,10 @@
     },
     {
       "name": "JUMANIYAZOVA DILDOR BEKDURDIYEVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
+        "Informatika",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -5723,9 +5300,9 @@
     },
     {
       "name": "MATSAPAYEVA SEVARA O‘KTAM QIZI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -5751,7 +5328,8 @@
       "name": "MATYOQUBOVA INTIZOR OTABOYEVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Tarbiya"
       ],
       "classes": [
         "9-F класс"
@@ -5853,9 +5431,9 @@
     },
     {
       "name": "OTANAZAROVA MEHRINISO ABDUSHARIF QIZI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -5886,14 +5464,6 @@
       "classes": []
     },
     {
-      "name": "QABULOV QUVONDIQ AZIMBOYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "QADAMBOYEVA MASHHURAXON ILXOMBEK QIZI",
       "subject": "Fizika",
       "all_krs": [
@@ -5919,8 +5489,11 @@
     },
     {
       "name": "QURBANBAYEVA LENINZA KARIMBERGANOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
+        "Informatika",
+        "Tarbiya",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -5984,14 +5557,6 @@
       "subject": "English",
       "all_krs": [
         "English"
-      ],
-      "classes": []
-    },
-    {
-      "name": "RAJABOV XUDOYBERGAN RAMATULLA O‘G‘LI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     },
@@ -6289,8 +5854,12 @@
     },
     {
       "name": "XODJANIYAZOVA SEVARA BAHTIYOROVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
+        "Informatika",
+        "Matematika",
+        "Tarbiya",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -6309,7 +5878,9 @@
       "name": "XODJAYEVA SOHIBA OLIMJONOVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -6339,16 +5910,6 @@
       ],
       "classes": [
         "9-E класс"
-      ]
-    },
-    {
-      "name": "XUDAYBERGANOV RUSTAM BEKBAYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "8-E sinf"
       ]
     },
     {
@@ -6422,21 +5983,14 @@
       "classes": [
         "7-E sinf"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "20-sonli maktab": [
     {
       "name": "ABDULLAYEVA JUMAGUL PULATOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": []
@@ -6487,9 +6041,9 @@
     },
     {
       "name": "ADAMBAYEVA SAYYORA KUSHIMOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": [
         "10-A класс"
@@ -6566,22 +6120,6 @@
       ]
     },
     {
-      "name": "BOLTAYEVA QURVANOY RUSTAMBOYEVNA",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
-      "name": "DAVLETOV BAXTIYOR JUMANIYOZOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "DAVLETOVA IQBOL BAXTIYOROVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -6644,14 +6182,6 @@
       ]
     },
     {
-      "name": "FAYZULLAYEV G‘AFURJON RAJABBAYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "G‘AFFAROVA ADIBAXON HAJIBOYEVNA",
       "subject": "Ona tili",
       "all_krs": [
@@ -6706,16 +6236,6 @@
       "classes": []
     },
     {
-      "name": "JUMANIYAZOVA DILRABO ABDULLAYEVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "8-B класс"
-      ]
-    },
-    {
       "name": "JUMANIYOZOVA MOXIRA SHONAZAROVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -6729,7 +6249,8 @@
       "name": "JUMANIYOZOVA RISOLAT OLIMBAYEVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": [
         "7-D класс"
@@ -6783,7 +6304,8 @@
       "name": "MATMURODOVA FOTIMA JUMABAYEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": [
         "11-B класс"
@@ -6791,9 +6313,10 @@
     },
     {
       "name": "MATMUROTOVA DILFUZA SULTANOVNA",
-      "subject": "Tarix",
+      "subject": "Informatika",
       "all_krs": [
-        "Tarix"
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -6946,14 +6469,6 @@
       "classes": []
     },
     {
-      "name": "OTAJONOV MA’RUFBEK RAVSHANBEK O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "OTAMURATOVA MADINABONU OYBEK QIZI",
       "subject": "Biologiya",
       "all_krs": [
@@ -6979,8 +6494,9 @@
     },
     {
       "name": "POLVANOVA SHAROFAT MASHARIBOVNA",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": []
@@ -7033,9 +6549,14 @@
     },
     {
       "name": "QURBANOVA SHAHNOZA AMONBAYEVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
-        "Tasviriy san'at"
+        "Biologiya",
+        "Informatika",
+        "Matematika",
+        "Ona tili",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -7049,17 +6570,10 @@
     },
     {
       "name": "RAJABBAYEV OG‘ABEK UMIDBEK O‘G‘LI",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
-      ],
-      "classes": []
-    },
-    {
-      "name": "RAJABOV TEMURBEK MANSUR O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -7115,7 +6629,8 @@
       "name": "RO‘ZMETOVA ZUBAYDA ISMAILOVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Kimyo"
       ],
       "classes": [
         "8-D класс"
@@ -7126,14 +6641,6 @@
       "subject": "English",
       "all_krs": [
         "English"
-      ],
-      "classes": []
-    },
-    {
-      "name": "SALIYEVA MAHBUBA BAXRAM QIZI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     },
@@ -7177,7 +6684,8 @@
       "name": "SHOMURATOVA NAFOSAT ERMAT QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -7227,14 +6735,16 @@
       "name": "XOLMUROTOVA XUSNIYABONU XUSANJON QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Texnologiya"
       ],
       "classes": []
     },
     {
       "name": "XO‘JANIYOZOVA ONAJON MATKARIMOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -7292,25 +6802,9 @@
         "Rus tili"
       ],
       "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "21-sonli maktab": [
-    {
-      "name": "ABDUSHARIPOVA XULKAROY BOBUR     QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
     {
       "name": "ASHIROVA INOBAT OMONBOYEVNA",
       "subject": "Boshlang'ich ta'lim",
@@ -7377,8 +6871,9 @@
     },
     {
       "name": "BAYJANOVA MUHABBAT REJABBAYEVNA",
-      "subject": "Rus tili",
+      "subject": "Ona tili",
       "all_krs": [
+        "Ona tili",
         "Rus tili"
       ],
       "classes": [
@@ -7446,7 +6941,7 @@
       "classes": []
     },
     {
-      "name": "FARHODOV AZIZBEK ANVARBEK  O‘G‘LI",
+      "name": "FARHODOV AZIZBEK ANVARBEK O‘G‘LI",
       "subject": "Matematika",
       "all_krs": [
         "Matematika"
@@ -7473,15 +6968,9 @@
       "name": "IBRAGIMOVA MUQADDAMXON NIZOMIDDIN QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
-      ],
-      "classes": []
-    },
-    {
-      "name": "IBROHIMOV XUDOYSHUKUR BAHROMBEK O‘G‘LI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -7492,16 +6981,6 @@
         "Rus tili"
       ],
       "classes": []
-    },
-    {
-      "name": "JUMANIYOZOV AKBAR OCHILOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "11-A класс"
-      ]
     },
     {
       "name": "JUMANIYOZOVA IRODA SHANAZAROVNA",
@@ -7561,8 +7040,9 @@
     },
     {
       "name": "MADAMINOVA SEVARA MADIYOROVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": []
@@ -7592,14 +7072,6 @@
       "subject": "English",
       "all_krs": [
         "English"
-      ],
-      "classes": []
-    },
-    {
-      "name": "NURLAYEVA GULISTON YUSUBOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -7641,9 +7113,9 @@
     },
     {
       "name": "OMANBAYEVA NAZIRA UMIDBEK QIZI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -7804,18 +7276,10 @@
       "classes": []
     },
     {
-      "name": "RUSTAMOVA ZEBOXON OYBEKOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "SADULLAYEVA HUSNORA QUVONCHBEK QIZI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -7823,14 +7287,18 @@
       "name": "SATTAROVA E’TIBOR OMONBOYEVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya",
+        "Texnologiya"
       ],
       "classes": []
     },
     {
       "name": "SULTONOV SHIXMUROD XURSANDBEK O‘G‘LI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": []
@@ -7922,14 +7390,6 @@
       "classes": [
         "3-D класс"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "22-sonli maktab": [
@@ -8041,19 +7501,12 @@
       "name": "OTAMUROTOVA QUVONCH MATNAZAROVNA",
       "subject": "Fizika",
       "all_krs": [
-        "Fizika"
+        "Fizika",
+        "Kimyo"
       ],
       "classes": [
         "10-A класс"
       ]
-    },
-    {
-      "name": "POLVONNAZIROV POLVONNAZIR HAMIDOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     },
     {
       "name": "QURBANBAYEVA MUHAYYO SHONAZAROVNA",
@@ -8067,9 +7520,12 @@
     },
     {
       "name": "QURBONBOYEVA NAZAKATXON QURBONBOYEVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
-        "Tasviriy san'at"
+        "Biologiya",
+        "Tarbiya",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -8077,7 +7533,8 @@
       "name": "QURBONDURDIYEVA GULZODA OMONKELDI QIZI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": [
         "7-A sinf"
@@ -8095,8 +7552,9 @@
     },
     {
       "name": "RAXIMOVA GO‘ZAL RO‘ZMETOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -8120,16 +7578,6 @@
       "classes": []
     },
     {
-      "name": "SAPAYEV SAFARBOY YUSUPOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "9-A класс"
-      ]
-    },
-    {
       "name": "XO‘JAYEVA E’TIBOR OMONBOYEVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -8144,14 +7592,6 @@
       "subject": "Matematika",
       "all_krs": [
         "Matematika"
-      ],
-      "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     }
@@ -8194,14 +7634,6 @@
       "classes": [
         "6-A sinf"
       ]
-    },
-    {
-      "name": "ASHIROVA IRODA RUSTAMOVNA",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     },
     {
       "name": "ATANAFASOVA MAHFUZA RAHMONOVNA",
@@ -8259,8 +7691,9 @@
     },
     {
       "name": "BOBONAZAROVA DURDONA SAFARBOYEVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -8343,9 +7776,15 @@
     },
     {
       "name": "JUMANIYOZOVA MUSHARRAF HAMRO QIZI",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Biologiya",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Biologiya",
+        "Boshlang'ich ta'lim",
+        "Informatika",
+        "Matematika",
+        "Ona tili",
+        "Rus tili",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -8353,7 +7792,9 @@
       "name": "JUMYOZOVA XURSHIDAXON ULUG‘BEK QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -8412,16 +7853,6 @@
       ]
     },
     {
-      "name": "OLIMOV JAVLONBEK MIRZABEK O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "10-B sinf"
-      ]
-    },
-    {
       "name": "OLIMOVA DILNURA HURRAMBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
@@ -8449,7 +7880,8 @@
       "name": "QO‘CHQAROVA MANZURA BAXTIYOROVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -8514,16 +7946,6 @@
       ]
     },
     {
-      "name": "RO‘ZIMATOV G‘ULOM SHAMURATOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "11-A sinf"
-      ]
-    },
-    {
       "name": "RO‘ZIMOVA CHAROS SHAVKATOVNA",
       "subject": "Kimyo",
       "all_krs": [
@@ -8535,9 +7957,9 @@
     },
     {
       "name": "RO‘ZMETOVA SEVARAXON SARVARBEK QIZI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -8551,8 +7973,9 @@
     },
     {
       "name": "SABIROVA SAXIBA OLEGOVNA",
-      "subject": "Rus tili",
+      "subject": "English",
       "all_krs": [
+        "English",
         "Rus tili"
       ],
       "classes": []
@@ -8596,14 +8019,6 @@
       ]
     },
     {
-      "name": "TOJIYEV MAQSUD QADAMOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "XAYITBOYEVA SOHIBA OMANBOYEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
@@ -8613,8 +8028,9 @@
     },
     {
       "name": "XAYITOV MAXSUD DJUMANIYOZOVICH",
-      "subject": "Fizika",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Fizika"
       ],
       "classes": []
@@ -8638,14 +8054,6 @@
       "classes": [
         "4-B sinf"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "24-sonli maktab": [
@@ -8685,9 +8093,9 @@
     },
     {
       "name": "ARSLANOVA JUMAGUL XUDAYOROVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -8751,7 +8159,8 @@
       "name": "BOBONAZAROV TINCHLIK TAJIBOYEVICH",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarix"
       ],
       "classes": [
         "9-B класс"
@@ -8761,14 +8170,16 @@
       "name": "BOBONIYOZOVA SEZGIRA SHAVKATOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Ona tili"
       ],
       "classes": []
     },
     {
       "name": "BOBOYOZOV ULUG‘BEK DO‘SCHONOVICH",
-      "subject": "Fizika",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Fizika"
       ],
       "classes": [
@@ -8799,31 +8210,30 @@
       "name": "ESHMURATOVA MUBORAK YULDOSHOVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarix"
       ],
       "classes": []
     },
     {
       "name": "GALDIYEV BOTIRBOY DURDIYEVICH",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
-        "Tasviriy san'at"
-      ],
-      "classes": []
-    },
-    {
-      "name": "GALDIYEV SARDORBEK BOTIRBOY O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
+        "Biologiya",
+        "Boshlang'ich ta'lim",
+        "Informatika",
+        "Matematika",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
     {
       "name": "GALDIYEVA GULNAZA OLIMBAYEVNA",
-      "subject": "Tarix",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarix"
+        "Boshlang'ich ta'lim",
+        "Ona tili"
       ],
       "classes": [
         "7-B класс"
@@ -8834,14 +8244,6 @@
       "subject": "Fransuz tili",
       "all_krs": [
         "Fransuz tili"
-      ],
-      "classes": []
-    },
-    {
-      "name": "G‘AFFAROV SHODLIK QURBONOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -8867,21 +8269,14 @@
     },
     {
       "name": "JAMALOVA ZILOLAXON RUSTAMOVNA",
-      "subject": "Fizika",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Fizika"
       ],
       "classes": [
         "10-B класс"
       ]
-    },
-    {
-      "name": "JUMANAZAROVA DILDORA ERKINBOY QIZI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     },
     {
       "name": "JUMAYAZOVA DILAFRUZ IKRAMJAN QIZI",
@@ -8893,17 +8288,19 @@
     },
     {
       "name": "KARIMOVA GULYOR SHUXRATOVNA",
-      "subject": "Fransuz tili",
+      "subject": "English",
       "all_krs": [
+        "English",
         "Fransuz tili"
       ],
       "classes": []
     },
     {
       "name": "KENJAYEVA GULNORA YANGIBOY QIZI",
-      "subject": "Tarix",
+      "subject": "Informatika",
       "all_krs": [
-        "Tarix"
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -8912,14 +8309,6 @@
       "subject": "Rus tili",
       "all_krs": [
         "Rus tili"
-      ],
-      "classes": []
-    },
-    {
-      "name": "MADAMINOVA XUSNIYA JUMANAZAROVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -9035,7 +8424,8 @@
       "name": "ORALLIYEVA HILOLA XUSAN QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -9077,7 +8467,9 @@
       "name": "RABBIMBERGANOVA ASALOY MANSURBEK QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -9137,21 +8529,14 @@
     },
     {
       "name": "SABIROVA DILFUZA OTAMAMATOVNA",
-      "subject": "Rus tili",
+      "subject": "Ona tili",
       "all_krs": [
+        "Ona tili",
         "Rus tili"
       ],
       "classes": [
         "11-B класс"
       ]
-    },
-    {
-      "name": "SALAYEVA SHOIRA RO‘ZIMATOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     },
     {
       "name": "SAMANDAROVA MAQSUDA QODOMBOYEVNA",
@@ -9183,25 +8568,29 @@
     },
     {
       "name": "TILLAYEVA GULBAXOR ASHIROVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
     {
       "name": "TOJIBAYEVA ORTIQGUL XAYRULLO QIZI",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Biologiya",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Biologiya",
+        "Boshlang'ich ta'lim",
+        "Ona tili",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
     {
       "name": "TOJIBOYEVA RUXSHONA XURSAND QIZI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -9240,14 +8629,6 @@
         "English"
       ],
       "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "25-sonli maktab": [
@@ -9279,8 +8660,9 @@
     },
     {
       "name": "JUMABOYEVA KUMUSH RASHID QIZI",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": []
@@ -9297,7 +8679,9 @@
       "name": "JUMANIYOZOVA NILUFAR EGAMBERGAN QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Tarbiya",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -9382,14 +8766,6 @@
       "classes": []
     },
     {
-      "name": "OLLABERGANOVA LAYLO SHOMURATOVNA",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "OTABAYEVA ZIYNATJON MAXSUDOVNA",
       "subject": "Biologiya",
       "all_krs": [
@@ -9403,19 +8779,11 @@
       "name": "OTANAZAROVA NAFOSAT SARDORBEK QIZI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
-      ],
-      "classes": []
-    },
-    {
-      "name": "POLVANOVA NASIBA QURANBAYEVNA",
-      "subject": "Tarix",
-      "all_krs": [
+        "Huquq",
+        "Tarbiya",
         "Tarix"
       ],
-      "classes": [
-        "7-A класс"
-      ]
+      "classes": []
     },
     {
       "name": "QARRIYEVA MARG‘UBA BALTABOYEVNA",
@@ -9444,17 +8812,10 @@
       "classes": []
     },
     {
-      "name": "RAXIMOV ALIJON QADAMBAYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "RAXIMOVA ANAMOY KOMILOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -9473,15 +8834,8 @@
       "name": "RO‘ZIMOVA MAVJUDA BOYMUROTOVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
-      ],
-      "classes": []
-    },
-    {
-      "name": "RO‘ZMETOV ILXOMBEK MADRAXIMOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -9507,7 +8861,8 @@
       "name": "SABIROVA ZUXRAJON DAVRONBEK QIZI",
       "subject": "Fizika",
       "all_krs": [
-        "Fizika"
+        "Fizika",
+        "Kimyo"
       ],
       "classes": []
     },
@@ -9539,8 +8894,9 @@
     },
     {
       "name": "SULTANOVA SAIDA QURANBAYEVNA",
-      "subject": "Rus tili",
+      "subject": "Ona tili",
       "all_krs": [
+        "Ona tili",
         "Rus tili"
       ],
       "classes": [
@@ -9569,7 +8925,8 @@
       "name": "XAYITBOYEVA INOBAT BAXTIYAROVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Kimyo"
       ],
       "classes": [
         "8-A класс"
@@ -9618,14 +8975,6 @@
         "English"
       ],
       "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "26-sonli maktab": [
@@ -9657,8 +9006,9 @@
     },
     {
       "name": "ASHURBOYEV ASADBEK RAVSHAN O‘G‘LI",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": []
@@ -9673,8 +9023,9 @@
     },
     {
       "name": "BEKJANOV BEKJONBOY OTABEK O‘G‘LI",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": []
@@ -9700,20 +9051,11 @@
       ]
     },
     {
-      "name": "GALDIYEV MANSURBEK OLIMBOYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "11-A класс"
-      ]
-    },
-    {
       "name": "ISMAILOVA SADOQAT RO‘ZIMBOY QIZI",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Texnologiya"
       ],
       "classes": [
         "7-B класс"
@@ -9759,7 +9101,8 @@
       "name": "KARIMOVA MAXSUDA QURBONBOYEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": [
         "5-V класс"
@@ -9800,18 +9143,13 @@
       "classes": []
     },
     {
-      "name": "OLLABERGANOVA CHAROSXON SAN’AT QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "OLLABERGANOVA LOBARXON SAN’AT QIZI",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
-        "Geografiya"
+        "Biologiya",
+        "Geografiya",
+        "Informatika",
+        "Ona tili"
       ],
       "classes": [
         "9-A класс"
@@ -9837,7 +9175,8 @@
       "name": "OTAJONOV MARDONBEK MATYOQUBOVICH",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Kimyo"
       ],
       "classes": [
         "5-B класс"
@@ -9876,14 +9215,6 @@
       "classes": []
     },
     {
-      "name": "QURBONBOYEV SHERZOD QURBONBOY O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "QURBONBOYEVA NILUFAR QADAMBOYEVNA",
       "subject": "Ona tili",
       "all_krs": [
@@ -9902,30 +9233,12 @@
       ]
     },
     {
-      "name": "RAHIMOV JAXONGIR BAXTIYOR O‘G‘LI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "RAHIMOVA GULMIRA XUSHNUDBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
         "Rus tili"
       ],
       "classes": []
-    },
-    {
-      "name": "RAJABOV SAITJON XAYITBAYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "11-B класс"
-      ]
     },
     {
       "name": "RAVSHANOVA SARVINOZ RAVSHANOVNA",
@@ -9941,7 +9254,8 @@
       "name": "RAXIMOVA DILNOZA SADULLAYEVNA",
       "subject": "Ona tili",
       "all_krs": [
-        "Ona tili"
+        "Ona tili",
+        "Texnologiya"
       ],
       "classes": [
         "7-A класс"
@@ -9949,14 +9263,6 @@
     },
     {
       "name": "RUZIMOVA SHOHISTA QADAM QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
-      "name": "SAIDOVA HILOLA PULATOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
         "Boshlang'ich ta'lim"
@@ -9964,9 +9270,23 @@
       "classes": []
     },
     {
-      "name": "SAIDOVA NASIBAXON SAPARBOYEVNA",
-      "subject": "Fizika",
+      "name": "SAIDOVA HILOLA PULATOVNA",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
+        "Boshlang'ich ta'lim",
+        "Informatika",
+        "Matematika",
+        "Ona tili",
+        "Tarbiya"
+      ],
+      "classes": []
+    },
+    {
+      "name": "SAIDOVA NASIBAXON SAPARBOYEVNA",
+      "subject": "Biologiya",
+      "all_krs": [
+        "Biologiya",
         "Fizika"
       ],
       "classes": [
@@ -10023,8 +9343,9 @@
     },
     {
       "name": "XUJAKULOVA ZILOLA ERALIYEVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Boshlang'ich ta'lim"
       ],
       "classes": [
@@ -10035,7 +9356,8 @@
       "name": "YORMATOV SANJARBEK MATNAZAROVICH",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": [
         "6-A класс"
@@ -10050,14 +9372,6 @@
       "classes": [
         "3-A класс"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "27-sonli maktab": [
@@ -10073,9 +9387,9 @@
     },
     {
       "name": "ABDULLAYEVA ZEBOXON MAXSUDOVNA",
-      "subject": "Ona tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Ona tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -10089,9 +9403,11 @@
     },
     {
       "name": "ASHIRBOYEVA MUAZZAM AZIZBEK QIZI",
-      "subject": "Tarix",
+      "subject": "Informatika",
       "all_krs": [
-        "Tarix"
+        "Informatika",
+        "Tarbiya",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -10140,14 +9456,6 @@
       ]
     },
     {
-      "name": "BOLTAYEV ERGASH SHARIPOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "BOLTAYEVA RAYXON SHARIPOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -10171,7 +9479,8 @@
       "name": "HAJIYEVA GULNOZA TAHIR QIZI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -10179,7 +9488,8 @@
       "name": "HASANOVA NAZOKAT BEKTURDIYEVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Ona tili"
       ],
       "classes": [
         "5-A класс"
@@ -10215,9 +9525,9 @@
     },
     {
       "name": "IBROHIMOVA YORQINOY OG‘AJONOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -10251,9 +9561,9 @@
     },
     {
       "name": "MAMATOVA FAZILAT BEKTURDIYEVNA",
-      "subject": "Tarix",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarix"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -10261,14 +9571,16 @@
       "name": "MAMATOVA SANOBAR BEKTURDIYEVNA",
       "subject": "Matematika",
       "all_krs": [
-        "Matematika"
+        "Matematika",
+        "Tarbiya"
       ],
       "classes": []
     },
     {
       "name": "MATKARIMOVA MOHIRA AHMEDOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": [
@@ -10297,16 +9609,17 @@
     },
     {
       "name": "MATYOQUBOVA RUXSORAXON MANSURBEK QIZI",
-      "subject": "Ona tili",
+      "subject": "Geografiya",
       "all_krs": [
-        "Ona tili"
+        "Geografiya"
       ],
       "classes": []
     },
     {
       "name": "MUSAYEVA SABOHAT RAVSHONBEKOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": [
@@ -10362,14 +9675,6 @@
       ]
     },
     {
-      "name": "OTAYEV SARVAR BAHROM O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "OZODBOYEVA NOZIMA BAXRAM QIZI",
       "subject": "Informatika",
       "all_krs": [
@@ -10415,7 +9720,9 @@
       "name": "QALANDAROVA ADIBA RUSTAMOVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -10429,8 +9736,9 @@
     },
     {
       "name": "QUCHQAROVA ASAL OLLAYOR QIZI",
-      "subject": "Rus tili",
+      "subject": "Ona tili",
       "all_krs": [
+        "Ona tili",
         "Rus tili"
       ],
       "classes": [
@@ -10448,14 +9756,6 @@
       ]
     },
     {
-      "name": "QUTLIYEVA MUNISAXON RAXIM QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "RAHIMOVA DILDORA IBROHIMOVNA",
       "subject": "Biologiya",
       "all_krs": [
@@ -10469,7 +9769,8 @@
       "name": "RAHIMOVA MUKADDAS QUTLIMURODOVNA",
       "subject": "Fizika",
       "all_krs": [
-        "Fizika"
+        "Fizika",
+        "Informatika"
       ],
       "classes": []
     },
@@ -10521,8 +9822,9 @@
     },
     {
       "name": "RO‘ZMETOVA HILALA KAMIL QIZI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": [
@@ -10580,14 +9882,6 @@
       "classes": []
     },
     {
-      "name": "SAPAROV POLVANNAZAR MASHARIPOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "SAPAROVA MUQADDAS MASHARIPOVNA",
       "subject": "Texnologiya",
       "all_krs": [
@@ -10599,9 +9893,9 @@
     },
     {
       "name": "SARDOROVA MAHFUZA MARAMOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -10671,7 +9965,8 @@
       "name": "XUDOYBERGANOVA ONAJON KARIMBOYEVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -10684,14 +9979,6 @@
       "classes": [
         "8-A класс"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "28-sonli maktab": [
@@ -10733,8 +10020,9 @@
     },
     {
       "name": "ASHIROVA ADIBAXON JUMANAZAROVNA",
-      "subject": "Nemis tili",
+      "subject": "English",
       "all_krs": [
+        "English",
         "Nemis tili"
       ],
       "classes": [
@@ -10783,7 +10071,8 @@
       "name": "BAXTIYOROVA GULIXON JAMOL QIZI",
       "subject": "Fizika",
       "all_krs": [
-        "Fizika"
+        "Fizika",
+        "Matematika"
       ],
       "classes": []
     },
@@ -10822,16 +10111,6 @@
         "Biologiya"
       ],
       "classes": []
-    },
-    {
-      "name": "DJUMAMURODOVA GO‘ZAL AZADOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "7-B sinf"
-      ]
     },
     {
       "name": "IBROHIMOVA ZUBAYDA MARKS QIZI",
@@ -10955,15 +10234,8 @@
       "name": "MADAMINOV QUDRAT KOMILOVICH",
       "subject": "Fizika",
       "all_krs": [
-        "Fizika"
-      ],
-      "classes": []
-    },
-    {
-      "name": "MAMATOV SUXROBBEK YUSUPOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
+        "Fizika",
+        "Informatika"
       ],
       "classes": []
     },
@@ -10977,8 +10249,11 @@
     },
     {
       "name": "MATNAZAROVA MUBORAK XUDAYBERGANOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
+        "Rus tili",
+        "Tarbiya",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -10995,7 +10270,8 @@
       "name": "MATYOQUBOV SHUHRAT OMANBOYEVICH",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -11045,7 +10321,9 @@
       "name": "OLLABERGANOVA GULNOZA QAXRAMON QIZI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya",
+        "Tarix"
       ],
       "classes": [
         "5-V sinf"
@@ -11088,14 +10366,6 @@
       ]
     },
     {
-      "name": "OTAJONOVA UMIDA DAVLATOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "OTASHEVA FATIMA SOBIROVNA",
       "subject": "Ona tili",
       "all_krs": [
@@ -11131,8 +10401,9 @@
     },
     {
       "name": "QADAMOVA XUSNIYA OMONBOY QIZI",
-      "subject": "Nemis tili",
+      "subject": "English",
       "all_krs": [
+        "English",
         "Nemis tili"
       ],
       "classes": []
@@ -11177,8 +10448,9 @@
     },
     {
       "name": "RAXIMOVA OZODA OMONBOY QIZI",
-      "subject": "Nemis tili",
+      "subject": "English",
       "all_krs": [
+        "English",
         "Nemis tili"
       ],
       "classes": []
@@ -11231,7 +10503,9 @@
       "name": "SOBIROVA HAMIDA KARIMBOYEVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya",
+        "Tarix"
       ],
       "classes": []
     },
@@ -11245,9 +10519,9 @@
     },
     {
       "name": "SULTONNAZIROVA ZAHRO OYBEK QIZI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -11261,25 +10535,10 @@
     },
     {
       "name": "TO‘RAYEVA KOMILA YULDASHEVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Tasviriy san'at"
-      ],
-      "classes": []
-    },
-    {
-      "name": "XASANOV MAQSADBEK JUMANAZAR O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
-      "name": "XO‘SINOV QO‘ZIBOY RO‘ZMATOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     },
@@ -11298,24 +10557,6 @@
       "subject": "Kimyo",
       "all_krs": [
         "Kimyo"
-      ],
-      "classes": []
-    },
-    {
-      "name": "YODGOROVA NASIBA SOBIROVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "11-A sinf"
-      ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     }
@@ -11338,18 +10579,15 @@
       "classes": []
     },
     {
-      "name": "ALLABERGANOV RAVSHONBEK DAVLATOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "BEKTURDIYEVA MASHHURAXON MAQSUDBEK QIZI",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Biologiya",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Biologiya",
+        "Boshlang'ich ta'lim",
+        "Matematika",
+        "Ona tili",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -11363,8 +10601,9 @@
     },
     {
       "name": "BOG‘BEKOVA BARNO RO‘ZMATOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": [
@@ -11375,7 +10614,8 @@
       "name": "BOG‘BEKOVA DILOROM ISMOILOVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": [
         "7-A sinf"
@@ -11611,8 +10851,9 @@
     },
     {
       "name": "OTAYEVA SHAKARJON RUSTAMOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -11657,27 +10898,9 @@
     },
     {
       "name": "QURBANBOYEVA GULAYXO SHUHRAT QIZI",
-      "subject": "Tarix",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
-      "name": "RABBIMOVA ZARNIGOR MARDONOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "6-A sinf"
-      ]
-    },
-    {
-      "name": "RAHIMOV JAXONGIR BAXTIYOR O‘G‘LI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -11748,32 +10971,12 @@
       "classes": []
     },
     {
-      "name": "TOHIROV SAYFIDDIN FAXRIDDIN O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "11-B класс"
-      ]
-    },
-    {
       "name": "TO‘YLIYEV XAMUDJON RAHIMOVICH",
       "subject": "Nemis tili",
       "all_krs": [
         "Nemis tili"
       ],
       "classes": []
-    },
-    {
-      "name": "VALNAZAROV BAXTIYOR QUMMIJONOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "5-B класс"
-      ]
     },
     {
       "name": "XAYITCHANOVA RAJABBIKA OMONBOYEVNA",
@@ -11792,14 +10995,6 @@
         "Ona tili"
       ],
       "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "3-sonli maktab": [
@@ -11813,9 +11008,9 @@
     },
     {
       "name": "AHMEDOVA GULIRA’NO OMONBOY QIZI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -11878,16 +11073,6 @@
       ]
     },
     {
-      "name": "BALTAYEVA FILURA RAJABBAYEVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "5-D sinf"
-      ]
-    },
-    {
       "name": "BAZARBAYEVA SHAXNOZA ALISHER QIZI",
       "subject": "Texnologiya",
       "all_krs": [
@@ -11933,8 +11118,9 @@
     },
     {
       "name": "DJABBAROVA NASIBA RUSTAMOVNA",
-      "subject": "Ona tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": []
@@ -11983,8 +11169,9 @@
     },
     {
       "name": "JUMANIYOZOVA DILNOZA NAZAROVNA",
-      "subject": "Ona tili",
+      "subject": "English",
       "all_krs": [
+        "English",
         "Ona tili"
       ],
       "classes": []
@@ -11999,9 +11186,11 @@
     },
     {
       "name": "KARIMOVA KOMILA SOPARBAYEVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tarbiya",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -12015,8 +11204,9 @@
     },
     {
       "name": "MASHARIPOV SHODLIK BEKMAMATOVICH",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -12070,14 +11260,6 @@
       "classes": []
     },
     {
-      "name": "MATMUROTOV DAVRONBEK YO‘LDOSHEVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "MATNIYAZOVA KAMOLA ALIMBAYEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
@@ -12102,20 +11284,12 @@
       "classes": []
     },
     {
-      "name": "MATYUSUPOV SANJARBEK KOMILJONOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "10-A класс"
-      ]
-    },
-    {
       "name": "MATYUSUPOVA RISOLAT KOMILJONOVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Biologiya",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Biologiya",
+        "Boshlang'ich ta'lim",
+        "Ona tili"
       ],
       "classes": []
     },
@@ -12131,21 +11305,12 @@
     },
     {
       "name": "MAXMUDOVA NAZOKAT SHONAZAROVNA",
-      "subject": "Ona tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": []
-    },
-    {
-      "name": "MAXMUDOVA SHARIPA OTAJONOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "8-B sinf"
-      ]
     },
     {
       "name": "NARIMOVA DILNAVOZ AZIMBOYEVNA",
@@ -12159,7 +11324,8 @@
       "name": "NIYOZMATOV MAQSUD BEKCHANOVICH",
       "subject": "Fizika",
       "all_krs": [
-        "Fizika"
+        "Fizika",
+        "Matematika"
       ],
       "classes": [
         "6-B sinf"
@@ -12169,7 +11335,9 @@
       "name": "NIYOZMETOVA GULZODA FARXODOVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya",
+        "Tarix"
       ],
       "classes": []
     },
@@ -12178,14 +11346,6 @@
       "subject": "Ona tili",
       "all_krs": [
         "Ona tili"
-      ],
-      "classes": []
-    },
-    {
-      "name": "NORIMOV UMID AZIMOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -12199,9 +11359,13 @@
     },
     {
       "name": "PALVANOVA FAROGAT ALLABERGANOVNA",
-      "subject": "Matematika",
+      "subject": "Biologiya",
       "all_krs": [
-        "Matematika"
+        "Biologiya",
+        "Boshlang'ich ta'lim",
+        "Matematika",
+        "Ona tili",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -12257,9 +11421,9 @@
     },
     {
       "name": "RAXMANOVA MA’RIFAT ALIMBAYEVNA",
-      "subject": "Tarix",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarix"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -12275,8 +11439,9 @@
     },
     {
       "name": "RAXMATULLAYEVA SAYYORA YULDASHEVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": []
@@ -12337,9 +11502,12 @@
     },
     {
       "name": "SABIROVA SAIDA ISMAILOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
-        "Tasviriy san'at"
+        "Biologiya",
+        "Matematika",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": [
         "6-A sinf"
@@ -12371,8 +11539,9 @@
     },
     {
       "name": "SHERMETOVA SALOMAT DAVLATOVNA",
-      "subject": "Ona tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -12403,27 +11572,21 @@
       "name": "SULTANOVA NAZIRA XUSINOVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Kimyo"
       ],
       "classes": [
         "11-B класс"
       ]
     },
     {
-      "name": "TAJIMURATOV ALISHER BAZAROVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "9-A класс"
-      ]
-    },
-    {
       "name": "TILLAYEVA DILRABO OLLABERGANOVNA",
-      "subject": "Fizika",
+      "subject": "Biologiya",
       "all_krs": [
-        "Fizika"
+        "Biologiya",
+        "Fizika",
+        "Geografiya",
+        "Kimyo"
       ],
       "classes": []
     },
@@ -12431,7 +11594,8 @@
       "name": "XAMRAYEVA NIGORA MATYOQUBOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -12463,7 +11627,8 @@
       "name": "XUDARGANOVA DILNOZA DUSHAMOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": [
         "6-D класс"
@@ -12478,14 +11643,6 @@
       "classes": [
         "3-D класс"
       ]
-    },
-    {
-      "name": "XUDAYBERGANOV ILHOMBEK ISKANDAROVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     },
     {
       "name": "XUDAYBERGANOVA E’TIBOR OLIMBAYEVNA",
@@ -12509,8 +11666,9 @@
     },
     {
       "name": "XUDAYBERGANOVA INTIZOR OLIMBOYEVNA",
-      "subject": "Ona tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -12574,25 +11732,9 @@
       "classes": [
         "2-A sinf"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "30-sonli maktab": [
-    {
-      "name": "ABDULLAYEV OTABEK JUMABOYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
     {
       "name": "AZIZOVA NAZOKAT NARXONOVNA",
       "subject": "Boshlang'ich ta'lim",
@@ -12672,14 +11814,6 @@
       "classes": []
     },
     {
-      "name": "JUMABOYEV DASTONBEK BAXRAMOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "JUMABOYEVA IZZATXON YO‘LDOSHEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
@@ -12691,7 +11825,8 @@
       "name": "JUMABOYEVA NAZOKAT ZAFARBEK QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika"
       ],
       "classes": []
     },
@@ -12722,14 +11857,6 @@
       "classes": [
         "1-B класс"
       ]
-    },
-    {
-      "name": "LATIPOV RUSTAMBOY JUMABOYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     },
     {
       "name": "MADIYOROVA BIBIJON ORTIQBOYEVNA",
@@ -12853,9 +11980,9 @@
     },
     {
       "name": "OTAJONOVA MUBORAK QADAMBOYEVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": [
         "9-B класс"
@@ -12900,14 +12027,6 @@
       "subject": "Matematika",
       "all_krs": [
         "Matematika"
-      ],
-      "classes": []
-    },
-    {
-      "name": "QAZOQOV AZIZBEK RO‘ZIMBOY O‘G‘LI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     },
@@ -13028,14 +12147,6 @@
       "classes": []
     },
     {
-      "name": "SOBIROV YUSUPBOY ATABAYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "SOBIROVA NILUFAR OMONBOYEVNA",
       "subject": "Huquq",
       "all_krs": [
@@ -13069,8 +12180,9 @@
     },
     {
       "name": "XASANOVA RAYHON ODAMBOY QIZI",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": []
@@ -13089,7 +12201,10 @@
       "name": "XO‘JAYEVA XURSHIDA HAJI QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -13148,14 +12263,6 @@
       "classes": [
         "1-D класс"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "31-sonli maktab": [
@@ -13250,14 +12357,6 @@
       ]
     },
     {
-      "name": "JABBAROV DONIYOR OLLABERGANOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "JOBBOROV BOBOHON UMIDBEK O‘G‘LI",
       "subject": "Matematika",
       "all_krs": [
@@ -13302,14 +12401,6 @@
       "classes": []
     },
     {
-      "name": "MASHARIPOV RASULBEK OZODOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "MASHARIPOVA BAKPOSHSHA KURBONOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -13321,9 +12412,12 @@
     },
     {
       "name": "MATKARIMOVA SHODIYA KENJABOY QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Matematika",
       "all_krs": [
-        "Tasviriy san'at"
+        "Matematika",
+        "Ona tili",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -13365,7 +12459,8 @@
       "name": "NURJONOVA ZUHRAJON UMIDJON QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -13373,7 +12468,8 @@
       "name": "NURMETOVA XOSIYAT FARXODOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": [
         "9-B класс"
@@ -13398,14 +12494,6 @@
       ]
     },
     {
-      "name": "OLLABERGANOVA GULSHAYDO QADAMOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "OLLABERGANOVA ZEBO SHARIFOVNA",
       "subject": "Tarix",
       "all_krs": [
@@ -13425,9 +12513,15 @@
     },
     {
       "name": "OTAJANOVA GULZIRA OZADOVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Biologiya",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Biologiya",
+        "Boshlang'ich ta'lim",
+        "Informatika",
+        "Matematika",
+        "Ona tili",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -13451,9 +12545,14 @@
     },
     {
       "name": "OZODOVA DILDORA HAMIDOVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Biologiya",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Biologiya",
+        "Boshlang'ich ta'lim",
+        "Informatika",
+        "Matematika",
+        "Ona tili",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -13481,7 +12580,9 @@
       "name": "QURBONOVA AZIZA BAXTIYAROVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Matematika",
+        "Ona tili"
       ],
       "classes": []
     },
@@ -13525,7 +12626,8 @@
       "name": "RAJABOVA OZODA QADAMOVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": [
         "10-B класс"
@@ -13541,8 +12643,12 @@
     },
     {
       "name": "RAXIMOVA GULASAL ALISHER QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
+        "Informatika",
+        "Matematika",
+        "Ona tili",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -13603,17 +12709,10 @@
     },
     {
       "name": "SABIROVA RO‘ZA ERKINOVNA",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
-      ],
-      "classes": []
-    },
-    {
-      "name": "SAPAROV IHLOSBEK SHERZOD O‘G‘LI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     },
@@ -13621,7 +12720,8 @@
       "name": "SOBIROVA MUHABBAT OTABOYEVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Kimyo"
       ],
       "classes": []
     },
@@ -13684,14 +12784,6 @@
         "Fransuz tili"
       ],
       "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "32-sonli maktab": [
@@ -13727,7 +12819,8 @@
       "name": "AXMEDOVA MUHBIRA KENJABOY QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -13749,31 +12842,11 @@
     },
     {
       "name": "BEKCHONOVA ZULXUMOR BOLTOBOYEVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
-    },
-    {
-      "name": "BOZOROV QAHRAMON ISMAILOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "7-B класс"
-      ]
-    },
-    {
-      "name": "DUSCHANOV XOLMURAT ADILBEKOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "11-A класс"
-      ]
     },
     {
       "name": "EGAMBERGANOVA ZAXRO ALLABERGANOVNA",
@@ -13782,16 +12855,6 @@
         "Texnologiya"
       ],
       "classes": []
-    },
-    {
-      "name": "G‘AYRATOVA TURSUNOY SHUXRATOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "9-B класс"
-      ]
     },
     {
       "name": "JUMABAYEVA DILRABO BAKPULATOVNA",
@@ -13831,8 +12894,9 @@
     },
     {
       "name": "KALANDAROV UTKIRBEK DILSHOD O‘G‘LI",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": []
@@ -13849,7 +12913,9 @@
       "name": "KURBONDURDIYEV XURSANDBEK SHAVKATOVICH",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya",
+        "Tarix"
       ],
       "classes": []
     },
@@ -13885,15 +12951,9 @@
       "name": "MATKARIMOVA DILAFRO‘Z YO‘LDOSH QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
-      ],
-      "classes": []
-    },
-    {
-      "name": "MATKARIMOVA INOBAT DOVRONBEKOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -13909,8 +12969,9 @@
     },
     {
       "name": "MIRJONOVA XURSHIDA KURBANNAZAROVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -13938,14 +12999,6 @@
       ]
     },
     {
-      "name": "OLLAZAROV KENJABOY XO‘JAYEVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "OTABOYEVA MADINA DAVRONBEK QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
@@ -13965,7 +13018,8 @@
       "name": "PIRNAFASOVA DURDONA QUZIBAYEVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -13993,7 +13047,8 @@
       "name": "QURBONBOYEVA DILAFRO‘Z QUVONDIQ QIZI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -14016,10 +13071,10 @@
       "classes": []
     },
     {
-      "name": "QURBONNAZIROVA LOBARXON QUVONDIQ  QIZI",
-      "subject": "Tarix",
+      "name": "QURBONNAZIROVA LOBARXON QUVONDIQ QIZI",
+      "subject": "Geografiya",
       "all_krs": [
-        "Tarix"
+        "Geografiya"
       ],
       "classes": []
     },
@@ -14097,9 +13152,9 @@
     },
     {
       "name": "VOISOV SHERZOD SATIMBOYEVICH",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -14111,16 +13166,6 @@
       ],
       "classes": [
         "7-D класс"
-      ]
-    },
-    {
-      "name": "XUSHNUTOV ANVAR ESHONQULI O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "8-A класс"
       ]
     },
     {
@@ -14148,14 +13193,6 @@
         "Rus tili"
       ],
       "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "33-sonli maktab": [
@@ -14163,7 +13200,8 @@
       "name": "ACHILOVA ONAJON UMIDOVNA",
       "subject": "Fizika",
       "all_krs": [
-        "Fizika"
+        "Fizika",
+        "Matematika"
       ],
       "classes": []
     },
@@ -14249,7 +13287,8 @@
       "name": "BOYNAZAROVA SABURA QODAMBOY QIZI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarix"
       ],
       "classes": [
         "8-A sinf"
@@ -14290,14 +13329,6 @@
       "classes": []
     },
     {
-      "name": "ISMOILOVA XOSIYAT OLLABERGANOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "JUMABOYEVA MA’RIFAT OYBEK QIZI",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -14309,8 +13340,9 @@
     },
     {
       "name": "JUMABOYEVA SADOQAT SHONAZAR QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Fizika",
       "all_krs": [
+        "Fizika",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -14334,20 +13366,12 @@
       "classes": []
     },
     {
-      "name": "KENJAYEV SHIHNAZAR EGAMOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "7-B класс"
-      ]
-    },
-    {
       "name": "MADAMINOVA GULZODA RUSTAMBEK QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -14355,7 +13379,8 @@
       "name": "MASHARIPOVA YULDUZ AMANOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": [
         "6-B sinf"
@@ -14373,7 +13398,8 @@
       "name": "MAXMUDOVA FERUZA QURBONDURDIYEVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarix"
       ],
       "classes": [
         "10-A sinf"
@@ -14445,8 +13471,9 @@
     },
     {
       "name": "RAJABOVA NILUFAR PO‘LATOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -14455,9 +13482,10 @@
     },
     {
       "name": "RAJABOVA ZULFIYA RAXIMBOYEVNA",
-      "subject": "Tarix",
+      "subject": "Ona tili",
       "all_krs": [
-        "Tarix"
+        "Ona tili",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -14475,7 +13503,8 @@
       "name": "SAPARBAYEVA FERUZA ALIMBOY QIZI",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Ona tili"
       ],
       "classes": []
     },
@@ -14483,7 +13512,8 @@
       "name": "SAPARDURDIYEV RUSLANBEK YO‘LDOSHEVICH",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -14526,14 +13556,6 @@
       "classes": []
     },
     {
-      "name": "SOBIROV QUDRATBEK SAN’AT O‘G‘LI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "UMAROVA MOHINUR TOHIR QIZI",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -14545,9 +13567,10 @@
     },
     {
       "name": "XOJAYEVA FAROG‘AT SHIXNAZAROVNA",
-      "subject": "Tarix",
+      "subject": "Ona tili",
       "all_krs": [
-        "Tarix"
+        "Ona tili",
+        "Tarbiya"
       ],
       "classes": [
         "7-A sinf"
@@ -14580,25 +13603,10 @@
       "classes": []
     },
     {
-      "name": "ZARIPOV ERGASH MATKARIMOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "ZARIPOV NARIMAN MATKARIMOVICH",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
-      ],
-      "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
+        "Tasviriy san'at",
         "Texnologiya"
       ],
       "classes": []
@@ -14625,8 +13633,9 @@
     },
     {
       "name": "BEKCHANOVA MASHHURA BEKTURDIYEVNA",
-      "subject": "Fransuz tili",
+      "subject": "English",
       "all_krs": [
+        "English",
         "Fransuz tili"
       ],
       "classes": []
@@ -14643,33 +13652,18 @@
       "name": "G‘AYIBOVA MEHRIBON YUSUPOVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarix"
       ],
       "classes": [
         "8-B класс"
       ]
     },
     {
-      "name": "HASANOV JAVLONBEK OTABOYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "ISMAILOVA SHOHISTA IKROMOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
         "Tasviriy san'at"
-      ],
-      "classes": []
-    },
-    {
-      "name": "JUMABOYEV OXUNJON RAVSHANBEK O‘G‘LI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     },
@@ -14737,9 +13731,13 @@
     },
     {
       "name": "LATIPOVA FAZILAT OTABAYEVNA",
-      "subject": "Tarix",
+      "subject": "Biologiya",
       "all_krs": [
-        "Tarix"
+        "Biologiya",
+        "Informatika",
+        "Matematika",
+        "Ona tili",
+        "Tarbiya"
       ],
       "classes": [
         "7-B класс"
@@ -14808,14 +13806,6 @@
       "classes": [
         "10-B класс"
       ]
-    },
-    {
-      "name": "MATYOQUBOV BAHROM OMONBOYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     },
     {
       "name": "MATYOQUBOVA GULNORA KARIMOVNA",
@@ -14912,14 +13902,6 @@
       ]
     },
     {
-      "name": "ORAZDURDIYEV SHAKIR QURBANOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "OTAJONOVA XURRIYAT KURVANNAZAROVNA",
       "subject": "Rus tili",
       "all_krs": [
@@ -14989,9 +13971,9 @@
     },
     {
       "name": "RO‘ZIMOVA MATONAT XO‘JABOYEVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -15038,14 +14020,6 @@
         "Rus tili"
       ],
       "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "35-sonli maktab": [
@@ -15059,8 +14033,9 @@
     },
     {
       "name": "ABDULLAYEVA FAROXATJON AXMEDOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": [
@@ -15132,14 +14107,6 @@
       ]
     },
     {
-      "name": "ATIYOZOV O‘TKIRBEK SHONAZAROVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "AXMEDOVA MAXBUBA QADAMOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -15169,8 +14136,9 @@
     },
     {
       "name": "BOYMUROTOVA SABOHAT ATOBOYEVNA",
-      "subject": "Nemis tili",
+      "subject": "English",
       "all_krs": [
+        "English",
         "Nemis tili"
       ],
       "classes": [
@@ -15337,8 +14305,9 @@
     },
     {
       "name": "MATYOQUBOV QADAMBOY ABDISHARIPOVICH",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": []
@@ -15370,16 +14339,6 @@
         "Geografiya"
       ],
       "classes": []
-    },
-    {
-      "name": "NURIDDINOVA NAZOKAT ABDULLAYEVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "5-A класс"
-      ]
     },
     {
       "name": "NURMETOVA SHAXNOZA SHONAZAROVNA",
@@ -15414,22 +14373,6 @@
       "subject": "Ona tili",
       "all_krs": [
         "Ona tili"
-      ],
-      "classes": []
-    },
-    {
-      "name": "OTAJONOV ABDUSHARIB YUSUPOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
-      "name": "QADAMOVA INDIRA ANVAR QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -15497,7 +14440,8 @@
       "name": "RO‘ZIMOV ZARIFBOY RAVSHONBEK O‘G‘LI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -15624,14 +14568,6 @@
       "classes": []
     },
     {
-      "name": "SULTONBOYEV OTABOY ANVAR O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "VAPAYEV BEKZOD EGAMBERGAN O‘G‘LI",
       "subject": "Matematika",
       "all_krs": [
@@ -15664,14 +14600,6 @@
       "classes": []
     },
     {
-      "name": "YUSUPOV DOSTONBEK ULUG‘BEK O‘G‘LI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "YUSUPOVA NAFISA BAXODIROVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -15690,21 +14618,14 @@
       "classes": [
         "3-A класс"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "36-sonli maktab": [
     {
       "name": "ABDULLAYEVA GULSHODA ERKINOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -15730,18 +14651,11 @@
       ]
     },
     {
-      "name": "AMINOV INOMJON JUMANAZAROVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "AMINOV QADAMBOY ALIMOVICH",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarix"
       ],
       "classes": []
     },
@@ -15757,7 +14671,8 @@
       "name": "AMINOVA SADOQAT JUMANAZAROVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -15780,30 +14695,13 @@
       "classes": []
     },
     {
-      "name": "ATAJANOV ATAJAN TAJIBAYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "ATAJANOVA MAXFUZA NORMETOVNA",
       "subject": "Informatika",
       "all_krs": [
-        "Informatika"
+        "Informatika",
+        "Kimyo"
       ],
       "classes": []
-    },
-    {
-      "name": "ATAMURATOV QAXRAMON YULDASHOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": [
-        "9-B sinf"
-      ]
     },
     {
       "name": "ATAMURATOVA DILFUZA QURVANDURDIYEVNA",
@@ -15815,16 +14713,20 @@
     },
     {
       "name": "ATAMUROTOVA ZEBO OTABEKOVNA",
-      "subject": "Matematika",
+      "subject": "Biologiya",
       "all_krs": [
-        "Matematika"
+        "Biologiya",
+        "Informatika",
+        "Matematika",
+        "Tarbiya"
       ],
       "classes": []
     },
     {
       "name": "ATAMUROTOVA ZUBAYDA FARXODOVNA",
-      "subject": "Ona tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -15895,9 +14797,9 @@
     },
     {
       "name": "ELMUROTOV ELYORBEK BOZORBOYEVICH",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -15913,7 +14815,8 @@
       "name": "IBRAGIMOV HAMROZBEK JUMANAZAROVICH",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Kimyo"
       ],
       "classes": [
         "10-B sinf"
@@ -15923,7 +14826,8 @@
       "name": "IBRAGIMOVA SHAHNOZA KAXRAMONOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Ona tili"
       ],
       "classes": []
     },
@@ -15967,8 +14871,9 @@
     },
     {
       "name": "KENJAYEVA DILFUZA RAJABBOYEVNA",
-      "subject": "Ona tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -15980,22 +14885,6 @@
       "subject": "Fransuz tili",
       "all_krs": [
         "Fransuz tili"
-      ],
-      "classes": []
-    },
-    {
-      "name": "MAMUTJONOV DOSTONBEK O‘KTAMBOY O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
-      "name": "NAZAROV MAQSUDBEK RAJAPOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -16127,16 +15016,20 @@
     },
     {
       "name": "RAXMANOVA MUQADDAS TO‘LIBOY QIZI",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Biologiya",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Biologiya",
+        "Boshlang'ich ta'lim",
+        "Informatika",
+        "Ona tili"
       ],
       "classes": []
     },
     {
       "name": "RO‘ZMETOVA QUNDUZ BAXODIROVNA",
-      "subject": "Fransuz tili",
+      "subject": "English",
       "all_krs": [
+        "English",
         "Fransuz tili"
       ],
       "classes": []
@@ -16161,7 +15054,9 @@
       "name": "SARIYEV QURONBOY SABIROVICH",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -16195,7 +15090,8 @@
       "name": "SULTANOVA GULHAYOXON JASURBEK QIZI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -16283,17 +15179,9 @@
     },
     {
       "name": "YULDOSHOVA UMIDA OMONBOY QIZI",
-      "subject": "Tarix",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     }
@@ -16421,17 +15309,22 @@
     },
     {
       "name": "JUMAMUROTOVA ZUMRAD XUSAINOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
-        "Tasviriy san'at"
+        "Biologiya",
+        "Boshlang'ich ta'lim",
+        "Matematika",
+        "Ona tili",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
     {
       "name": "JUMANIYOZOV FARRUX OTABOYEVICH",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -16445,35 +15338,17 @@
     },
     {
       "name": "JUMANIYOZOVA GULISTON RAJABOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
-    },
-    {
-      "name": "KADOMOV RASULBEK OTABEK O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "7-D класс"
-      ]
     },
     {
       "name": "MASHARIBOVA SAYYORA ABDULLAYEVNA",
       "subject": "Rus tili",
       "all_krs": [
         "Rus tili"
-      ],
-      "classes": []
-    },
-    {
-      "name": "MASHARIPOVA FAZILAT OTANAZAROVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -16591,7 +15466,8 @@
       "name": "OTABOYEVA FARANGIZ OMONBOYEVNA",
       "subject": "Matematika",
       "all_krs": [
-        "Matematika"
+        "Matematika",
+        "Ona tili"
       ],
       "classes": []
     },
@@ -16613,17 +15489,11 @@
     },
     {
       "name": "QADAMOVA DILASAL MAKSUDBEK QIZI",
-      "subject": "Matematika",
+      "subject": "Biologiya",
       "all_krs": [
-        "Matematika"
-      ],
-      "classes": []
-    },
-    {
-      "name": "QALANDAROVA ANAGUL YULDASHEVNA",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
+        "Biologiya",
+        "Matematika",
+        "Ona tili"
       ],
       "classes": []
     },
@@ -16675,7 +15545,8 @@
       "name": "ROXIMOV XUSANBOY BOTIR O‘G‘LI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -16699,9 +15570,14 @@
     },
     {
       "name": "SABIROVA SABOXAT RAXIMOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
-        "Tasviriy san'at"
+        "Biologiya",
+        "Boshlang'ich ta'lim",
+        "Matematika",
+        "Ona tili",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -16712,16 +15588,6 @@
         "Matematika"
       ],
       "classes": []
-    },
-    {
-      "name": "SAIDOV XUSHNUD XUDAYNAZAROVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "9-A sinf"
-      ]
     },
     {
       "name": "SAIDOVA SAIDA SAIDNAZAR QIZI",
@@ -16777,8 +15643,9 @@
     },
     {
       "name": "SULTANOV XAMROBEK MATNAZAROVICH",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": []
@@ -16823,13 +15690,14 @@
     },
     {
       "name": "ВАКАНСИЯ",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Informatika",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Informatika",
+        "Tarbiya",
+        "Tarix",
+        "Tasviriy san'at"
       ],
-      "classes": [
-        "1-B sinf"
-      ]
+      "classes": []
     }
   ],
   "38-sonli maktab": [
@@ -16841,16 +15709,6 @@
       ],
       "classes": [
         "9-A класс"
-      ]
-    },
-    {
-      "name": "ABDULLAYEV IXLOSBEK MATYOZOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "8-A класс"
       ]
     },
     {
@@ -16905,8 +15763,9 @@
     },
     {
       "name": "AXMEDOVA MAQSUDA JAMOLADDINOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -16970,14 +15829,6 @@
       ]
     },
     {
-      "name": "JUMANIYOZOV JUMAMUROD XAMIDBEK O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "JUMANIYOZOVA GULMIRA BAXTIYOROVNA",
       "subject": "Nemis tili",
       "all_krs": [
@@ -16987,8 +15838,9 @@
     },
     {
       "name": "KAMOLOVA MUNISA NORIMMAT QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -16997,7 +15849,8 @@
       "name": "KURYAZOVA MADINA SHERIPBAYEVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -17047,7 +15900,9 @@
       "name": "RAJABOV ABBOSBEK KOMILOVICH",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya",
+        "Tarix"
       ],
       "classes": [
         "9-B класс"
@@ -17065,9 +15920,9 @@
     },
     {
       "name": "ROXIMOV JAMOLADDIN KAMOLADDINOVICH",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -17099,8 +15954,11 @@
     },
     {
       "name": "SABIROVA RANAJON JUMABAYEVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
+        "Boshlang'ich ta'lim",
+        "Tarix",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -17119,7 +15977,8 @@
       "name": "SHAMAYEVA OZODA KURBANBAYEVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Ona tili"
       ],
       "classes": [
         "7-B класс"
@@ -17138,14 +15997,6 @@
       "subject": "Ona tili",
       "all_krs": [
         "Ona tili"
-      ],
-      "classes": []
-    },
-    {
-      "name": "TAJIYEV ISLOMBEK SHOKIROVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     },
@@ -17196,26 +16047,6 @@
       "classes": []
     },
     {
-      "name": "YUSUPOV BAXODIR SATTAROVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "11-B класс"
-      ]
-    },
-    {
-      "name": "YUSUPOV SHAHZODBEK MUXTORBEK O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "11-A класс"
-      ]
-    },
-    {
       "name": "YUSUPOVA NARGIZA BAXODIROVNA",
       "subject": "Ona tili",
       "all_krs": [
@@ -17234,14 +16065,6 @@
       "classes": [
         "3-A класс"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "39-sonli maktab": [
@@ -17267,9 +16090,9 @@
     },
     {
       "name": "ABDISHARIPOVA MATLUBA RO‘ZMETOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": [
         "5-E класс"
@@ -17314,14 +16137,6 @@
       "subject": "Tasviriy san'at",
       "all_krs": [
         "Tasviriy san'at"
-      ],
-      "classes": []
-    },
-    {
-      "name": "BAKIYEV OLIMBOY PIRNAPASOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     },
@@ -17378,14 +16193,6 @@
       ]
     },
     {
-      "name": "BOTIROV ZOHIDJON QAHRAMON O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "BOYJONOVA SHAROFAT RAJABBOYEVNA",
       "subject": "English",
       "all_krs": [
@@ -17399,7 +16206,8 @@
       "name": "ESHMETOVA MAKSUDA QURYAZOVNA",
       "subject": "Matematika",
       "all_krs": [
-        "Matematika"
+        "Matematika",
+        "Ona tili"
       ],
       "classes": []
     },
@@ -17454,20 +16262,12 @@
       ]
     },
     {
-      "name": "JABBAROVA SAYYORA OLLABERGANOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "10-A класс"
-      ]
-    },
-    {
       "name": "JUMANIYOZOVA SHAHLO ALIMBOYEVNA",
-      "subject": "Tarix",
+      "subject": "Informatika",
       "all_krs": [
-        "Tarix"
+        "Informatika",
+        "Ona tili",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -17529,8 +16329,9 @@
     },
     {
       "name": "MASHARIPOVA BAKPOSHSHA ABDULLA QIZI",
-      "subject": "Ona tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -17557,8 +16358,10 @@
     },
     {
       "name": "MATKARIMOVA GULOROM RAXIMBERGANOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
+        "Boshlang'ich ta'lim",
         "Geografiya"
       ],
       "classes": []
@@ -17572,16 +16375,6 @@
       "classes": []
     },
     {
-      "name": "MATYOKUBOV JASURBEK NURMAMATOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "9-D класс"
-      ]
-    },
-    {
       "name": "MATYOQUBOVA NODIRA BOYNAZAROVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -17590,14 +16383,6 @@
       "classes": [
         "2-A класс"
       ]
-    },
-    {
-      "name": "MEYLIYEV QURBONBOY RAXIMBOYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     },
     {
       "name": "NARIMOVA MATLUBA KAMILOVNA",
@@ -17691,29 +16476,12 @@
     },
     {
       "name": "QURBONBOYEVA GULISTON MATYOQUBOVNA",
-      "subject": "Tarix",
+      "subject": "Informatika",
       "all_krs": [
-        "Tarix"
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
-    },
-    {
-      "name": "QURYOZOVA SABOHAT KOMILJON QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
-      "name": "RAXIMOV BEKZOD ABDUSHARIPOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "10-D класс"
-      ]
     },
     {
       "name": "RAXIMOV IZZATBEK BAXTIYOROVICH",
@@ -17869,9 +16637,14 @@
     },
     {
       "name": "SHAMURATOVA JAXANGUL MAQSUDOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
-        "Tasviriy san'at"
+        "Biologiya",
+        "Boshlang'ich ta'lim",
+        "Matematika",
+        "Tarbiya",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -17927,7 +16700,8 @@
       "name": "XASANOVA SHUKURJON SHAMUROT QIZI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -17982,21 +16756,14 @@
       "classes": [
         "9-B класс"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "4-sonli maktab": [
     {
       "name": "ABDIRIMOVA TURSINOY YULDASHEVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": [
@@ -18050,32 +16817,12 @@
       ]
     },
     {
-      "name": "BAHODIROV XUSNIDDIN MUZUFFAR  O‘G‘LI",
+      "name": "BAHODIROV XUSNIDDIN MUZUFFAR O‘G‘LI",
       "subject": "Informatika",
       "all_krs": [
         "Informatika"
       ],
       "classes": []
-    },
-    {
-      "name": "BEYJANOV BUNYOD SHERZOD O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "11-B sinf"
-      ]
-    },
-    {
-      "name": "BOBOJANOV ZAYNIDDIN OTANAZAROVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": [
-        "6-B sinf"
-      ]
     },
     {
       "name": "DAVLETOVA ADIBAXON IKROMBOY QIZI",
@@ -18291,7 +17038,8 @@
       "name": "NIYOZOV SHIXNAZAR OYBEK O‘G‘LI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -18306,14 +17054,6 @@
       ]
     },
     {
-      "name": "OLLABERGANOVA SADOQAT XUDAYNAZAROVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "OLLAYOROVA AZIZA ANVARBEK QIZI",
       "subject": "Matematika",
       "all_krs": [
@@ -18326,14 +17066,6 @@
       "subject": "Tasviriy san'at",
       "all_krs": [
         "Tasviriy san'at"
-      ],
-      "classes": []
-    },
-    {
-      "name": "OZODOV TO‘RABOY SHAVKAT O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -18402,14 +17134,6 @@
       "subject": "Rus tili",
       "all_krs": [
         "Rus tili"
-      ],
-      "classes": []
-    },
-    {
-      "name": "RUSTAMBEKOVA SARVINOZ SHOKIR QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -18507,7 +17231,8 @@
       "name": "YAQUBOV ADHAMJON G‘ANIJON O‘G‘LI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -18539,9 +17264,9 @@
     },
     {
       "name": "ВАКАНСИЯ",
-      "subject": "Ona tili",
+      "subject": "Texnologiya",
       "all_krs": [
-        "Ona tili"
+        "Texnologiya"
       ],
       "classes": []
     }
@@ -18552,14 +17277,6 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya"
-      ],
-      "classes": []
-    },
-    {
-      "name": "DAVLATOV MIRSHARAF SHAVKATOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -18577,7 +17294,9 @@
       "name": "HAYITBOYEVA GULCHEHRA JUMAXON QIZI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya",
+        "Tarix"
       ],
       "classes": []
     },
@@ -18593,7 +17312,8 @@
       "name": "JUMANAZAROVA SHOXINA UMARJON QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika"
       ],
       "classes": []
     },
@@ -18611,19 +17331,10 @@
       "name": "MAMATOV EGAMBOY OTANAZAROVICH",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Tarbiya"
       ],
       "classes": []
-    },
-    {
-      "name": "MATKARIMOV SARDORBEK AHMEDOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "7-A класс"
-      ]
     },
     {
       "name": "MATKARIMOVA MALOXAT OMONOVNA",
@@ -18687,7 +17398,9 @@
       "name": "PIROV SIROJIDDIN JO‘SHIBBERGANOVICH",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya",
+        "Tarix"
       ],
       "classes": [
         "9-A класс"
@@ -18705,7 +17418,8 @@
       "name": "QO‘CHQAROV JASURBEK QO‘ZIBOYEVICH",
       "subject": "Fizika",
       "all_krs": [
-        "Fizika"
+        "Fizika",
+        "Matematika"
       ],
       "classes": [
         "8-A класс"
@@ -18733,7 +17447,8 @@
       "name": "RO‘ZIMETOVA LAYLO HAMZAYEVNA",
       "subject": "Nemis tili",
       "all_krs": [
-        "Nemis tili"
+        "Nemis tili",
+        "Rus tili"
       ],
       "classes": [
         "11-A класс"
@@ -18785,28 +17500,22 @@
     },
     {
       "name": "XUDOYBERGANOV AKBAR RAJABBOYEVICH",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": [
         "5-A класс"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "41-sonli maktab": [
     {
       "name": "ABDULLAYEVA RISOLAT SHARIPOVNA",
-      "subject": "Fizika",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Fizika"
       ],
       "classes": [
@@ -18860,24 +17569,6 @@
       "classes": []
     },
     {
-      "name": "BEKCHANOVA XURSHIDA OMANGALDIYEVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "6-A класс"
-      ]
-    },
-    {
-      "name": "EGAMOV TINCHLIK QADIROVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "G‘AFFAROVA DILFUZA QADAMBOYEVNA",
       "subject": "Ona tili",
       "all_krs": [
@@ -18914,24 +17605,6 @@
       ]
     },
     {
-      "name": "JUMANIYOZOVA NASIBA MAMATSOPA QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
-      "name": "MADRIMOVA MUYASSAR RAHIMBERGANOVNA",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": [
-        "6-B класс"
-      ]
-    },
-    {
       "name": "MADRIMOVA SALOMAT RAXIMBERGANOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -18951,9 +17624,9 @@
     },
     {
       "name": "MATIYAQUBOV SAPARBOY KAMILOVICH",
-      "subject": "Tarix",
+      "subject": "Geografiya",
       "all_krs": [
-        "Tarix"
+        "Geografiya"
       ],
       "classes": []
     },
@@ -18996,18 +17669,12 @@
       "classes": []
     },
     {
-      "name": "NAZIRBAYEV BEKZOD QURBANDURDI O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "OLLABERGANOVA XAYITGUL RAVSHAN QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tarbiya",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -19020,7 +17687,7 @@
       "classes": []
     },
     {
-      "name": "OMONOVA MAFTUNA MIRKAMOL  QIZI",
+      "name": "OMONOVA MAFTUNA MIRKAMOL QIZI",
       "subject": "Fransuz tili",
       "all_krs": [
         "Fransuz tili"
@@ -19083,8 +17750,9 @@
     },
     {
       "name": "RAXIMOVA BARCHINOY ERKINOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -19129,8 +17797,9 @@
     },
     {
       "name": "SALAYEVA SHOHISTA MAMATSALAYEVNA",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": []
@@ -19149,7 +17818,8 @@
       "name": "SAPAYEVA DILRABO ACHILOVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -19157,7 +17827,8 @@
       "name": "SHEROVA GULBAHOR DO‘SCHANOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": [
         "9-A класс"
@@ -19219,7 +17890,9 @@
       "name": "XAYITBOYEVA MALOHAT OTANAZAR QIZI",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Matematika",
+        "Ona tili"
       ],
       "classes": []
     },
@@ -19238,14 +17911,6 @@
         "Rus tili"
       ],
       "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "42-sonli maktab": [
@@ -19258,28 +17923,10 @@
       "classes": []
     },
     {
-      "name": "ABDULLAYEV ORZUBEK ERKINBOYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "6-A класс"
-      ]
-    },
-    {
       "name": "ABDURAXMONOVA GULBAXOR ABDIKARIMOVNA",
       "subject": "Ona tili",
       "all_krs": [
         "Ona tili"
-      ],
-      "classes": []
-    },
-    {
-      "name": "ABDUSHARIFOV HUSNIDDIN JAMOLADDIN O‘G‘LI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     },
@@ -19293,8 +17940,9 @@
     },
     {
       "name": "ALLABERGANOVA MOHINUR RAVSHANBEK QIZI",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": []
@@ -19311,7 +17959,8 @@
       "name": "BOBOJONOV SHUXRAT OMONOVICH",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": [
         "9-B класс"
@@ -19370,16 +18019,6 @@
       ]
     },
     {
-      "name": "FAYZULLAYEVA DANO OZIMBOY QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "5-A класс"
-      ]
-    },
-    {
       "name": "JUMANIYAZOV XUSANBEK ILXOMBAYEVICH",
       "subject": "Fransuz tili",
       "all_krs": [
@@ -19419,7 +18058,8 @@
       "name": "MASHARIPOV G‘AYRAT OLIMBOY O‘G‘LI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -19479,8 +18119,9 @@
     },
     {
       "name": "NURMATOV RASUL ZARIPOVICH",
-      "subject": "Fizika",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Fizika"
       ],
       "classes": []
@@ -19494,19 +18135,10 @@
       "classes": []
     },
     {
-      "name": "OTOBOYEVA SHOXIDA AZIMBOY QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "9-A класс"
-      ]
-    },
-    {
       "name": "RAXIMOVA NODIRAXON XUDARGANOVNA",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": [
@@ -19576,14 +18208,6 @@
       "classes": [
         "3-B класс"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "43-sonli maktab": [
@@ -19615,8 +18239,9 @@
     },
     {
       "name": "BOG‘BEKOVA GULXUMOR MARKSOVNA",
-      "subject": "Matematika",
+      "subject": "Kimyo",
       "all_krs": [
+        "Kimyo",
         "Matematika"
       ],
       "classes": [
@@ -19625,8 +18250,9 @@
     },
     {
       "name": "BOLTAYEV MURODJON DAVRONBEK O‘G‘LI",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": []
@@ -19648,22 +18274,6 @@
       "classes": [
         "10-A класс"
       ]
-    },
-    {
-      "name": "MADAMINOV SAIDMUROD BOBOJONOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
-      "name": "MATNIYAZOV ULUG‘BEK ARSLONOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     },
     {
       "name": "MATNIYOZOVA QUVONCH ARSLONOVNA",
@@ -19690,16 +18300,6 @@
         "Ona tili"
       ],
       "classes": []
-    },
-    {
-      "name": "MATYAQUBOVA DILFUZA ATABAYEVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "9-A класс"
-      ]
     },
     {
       "name": "NURJANOVA QUMRI RAXIMOVNA",
@@ -19735,7 +18335,8 @@
       "name": "QODIROVA YORQINOY SULTANOVNA",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Texnologiya"
       ],
       "classes": [
         "5-A класс"
@@ -19771,7 +18372,8 @@
       "name": "RAJABOVA GULRUX NIZOMATOVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika"
       ],
       "classes": []
     },
@@ -19855,14 +18457,17 @@
       "name": "SAPORBOYEV HIMMAT BAKPO‘LAT O‘G‘LI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya",
+        "Tarix"
       ],
       "classes": []
     },
     {
       "name": "SA’DULLAYEVA FAZILAT RAJABBAYEVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": [
@@ -19871,8 +18476,9 @@
     },
     {
       "name": "SHERMETOVA ADOLAT JUMABAY QIZI",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": [
@@ -19921,9 +18527,11 @@
     },
     {
       "name": "YULDASHOVA MUBORAK RAXIMOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tarbiya",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -19944,14 +18552,6 @@
       "classes": [
         "3-A класс"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "44-sonli maktab": [
@@ -19975,9 +18575,10 @@
     },
     {
       "name": "ABDISHERIPOVA GULMIRA MADRAXIM QIZI",
-      "subject": "Tarix",
+      "subject": "Informatika",
       "all_krs": [
-        "Tarix"
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -20046,16 +18647,6 @@
       ]
     },
     {
-      "name": "ATAYEVA MUQADDAS EGAMBERGANOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "D"
-      ]
-    },
-    {
       "name": "AZATOVA NODIRA BEKPO‘LAT QIZI",
       "subject": "Rus tili",
       "all_krs": [
@@ -20083,8 +18674,9 @@
     },
     {
       "name": "BAKDURDIYEVA ADIBAXON XAKIMBOY QIZI",
-      "subject": "Nemis tili",
+      "subject": "English",
       "all_krs": [
+        "English",
         "Nemis tili"
       ],
       "classes": []
@@ -20093,7 +18685,8 @@
       "name": "BATIROVA MAVLUDA BAXODIROVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -20200,18 +18793,12 @@
       "classes": []
     },
     {
-      "name": "JUMANIYOZOV JASURBEK MASHARIBOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "JUMANIYOZOVA MA’MURA RO‘ZMATOVNA",
       "subject": "Fizika",
       "all_krs": [
-        "Fizika"
+        "Fizika",
+        "Geografiya",
+        "Matematika"
       ],
       "classes": [
         "6-B класс"
@@ -20240,14 +18827,6 @@
       "subject": "Rus tili",
       "all_krs": [
         "Rus tili"
-      ],
-      "classes": []
-    },
-    {
-      "name": "MADAMINOVA SURAYYO RUSTAMOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -20286,14 +18865,6 @@
       "subject": "Informatika",
       "all_krs": [
         "Informatika"
-      ],
-      "classes": []
-    },
-    {
-      "name": "MATKARIMOV QUVONDIQ BEKDURDIYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -20356,42 +18927,12 @@
       "classes": []
     },
     {
-      "name": "OTABOYEV RAHMATJON SHONAZAROVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "6-D класс"
-      ]
-    },
-    {
       "name": "OTANAZAROVA GULNOZA QAXRAMON QIZI",
       "subject": "Ona tili",
       "all_krs": [
         "Ona tili"
       ],
       "classes": []
-    },
-    {
-      "name": "OTAYEVA FOTIMA AMINBOYEVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "5-B класс"
-      ]
-    },
-    {
-      "name": "OTAYEVA OYSHA AMINBOYEVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "7-D класс"
-      ]
     },
     {
       "name": "POLVANOVA NILUFAR NURADDINOVNA",
@@ -20413,7 +18954,8 @@
       "name": "QURANBAYEV QURBONBOY BAXTIYOROVICH",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": [
         "5-A класс"
@@ -20454,14 +18996,6 @@
       "classes": [
         "4-E класс"
       ]
-    },
-    {
-      "name": "RAXIMBAYEV ASADBEK UMARBEK O‘G‘LI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     },
     {
       "name": "RAXIMBOYEVA GULNURA UMARBEKOVNA",
@@ -20517,7 +19051,8 @@
       "name": "RO‘ZMETOVA GULSARO SAPAYEVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": [
         "11-A класс"
@@ -20613,9 +19148,11 @@
     },
     {
       "name": "XUDJAYEVA ARZIGUL RAXIMOVNA",
-      "subject": "Fizika",
+      "subject": "Biologiya",
       "all_krs": [
-        "Fizika"
+        "Biologiya",
+        "Fizika",
+        "Geografiya"
       ],
       "classes": [
         "5-D класс"
@@ -20623,17 +19160,10 @@
     },
     {
       "name": "YAQUBOVA GULISTON ADAMBAYEVNA",
-      "subject": "Nemis tili",
+      "subject": "English",
       "all_krs": [
+        "English",
         "Nemis tili"
-      ],
-      "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     }
@@ -20677,8 +19207,9 @@
     },
     {
       "name": "BAHODIROVA MAHBUBA JASURBEK QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -20716,16 +19247,6 @@
         "Nemis tili"
       ],
       "classes": []
-    },
-    {
-      "name": "KARIMOV OTANAZAR MATQURBANOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "6-B класс"
-      ]
     },
     {
       "name": "KARIMOVA SADOQAT ILXOMBEK QIZI",
@@ -20777,7 +19298,8 @@
       "name": "MATQURBONOV MITXUN OTANAZAROVICH",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": [
         "10-A класс"
@@ -20793,8 +19315,9 @@
     },
     {
       "name": "MATYOQUBOVA LATOFAT EGAMOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -20902,14 +19425,6 @@
       "classes": []
     },
     {
-      "name": "QALANDAROV SARVAR YO‘LDOSHEVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "QALANDAROV YO‘LDOSH XXX",
       "subject": "Tarix",
       "all_krs": [
@@ -20979,16 +19494,18 @@
     },
     {
       "name": "RAXIMOVA XURSHIDA KAMILOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Geografiya",
       "all_krs": [
+        "Geografiya",
         "Tasviriy san'at"
       ],
       "classes": []
     },
     {
       "name": "RAXMONOVA UMIDA YO‘LDOSHBOY QIZI",
-      "subject": "Fransuz tili",
+      "subject": "English",
       "all_krs": [
+        "English",
         "Fransuz tili"
       ],
       "classes": []
@@ -21026,19 +19543,10 @@
       "classes": []
     },
     {
-      "name": "SAFAROV ERKABOY O‘KTAMBAYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "6-A класс"
-      ]
-    },
-    {
       "name": "SAIDOV SHOXZODBEK QUVONDIQ O‘G‘LI",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": []
@@ -21057,7 +19565,8 @@
       "name": "SAIDOVA SHAHRIZODA QUVONDIQ QIZI",
       "subject": "Informatika",
       "all_krs": [
-        "Informatika"
+        "Informatika",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -21081,7 +19590,8 @@
       "name": "SHERMATOVA XURSHIDA AZADOVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Kimyo"
       ],
       "classes": [
         "9-A класс"
@@ -21094,16 +19604,6 @@
         "Geografiya"
       ],
       "classes": []
-    },
-    {
-      "name": "XUDAYBERGANOV RUSLONBEK HAMRO O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "11-A класс"
-      ]
     },
     {
       "name": "YAQUBOVA AZIZA BAKPO‘LAT QIZI",
@@ -21128,14 +19628,6 @@
         "Biologiya"
       ],
       "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "46-sonli maktab": [
@@ -21143,7 +19635,8 @@
       "name": "ALLAYAROVA SHOIRA ISMAILOVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarix"
       ],
       "classes": [
         "8-V класс"
@@ -21161,8 +19654,9 @@
     },
     {
       "name": "ALLAZAROVA SADOQAT RAJABBOYEVNA",
-      "subject": "Rus tili",
+      "subject": "Ona tili",
       "all_krs": [
+        "Ona tili",
         "Rus tili"
       ],
       "classes": []
@@ -21187,7 +19681,9 @@
       "name": "ASHIROVA SHOHISTA QUVONDIQ QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Ona tili"
       ],
       "classes": []
     },
@@ -21195,14 +19691,16 @@
       "name": "ASHIROVA XOLISA OTABEK QIZI",
       "subject": "Informatika",
       "all_krs": [
-        "Informatika"
+        "Informatika",
+        "Ona tili"
       ],
       "classes": []
     },
     {
       "name": "AXMEDOV IZZAT KADAMBAYEVICH",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": []
@@ -21220,14 +19718,6 @@
       "subject": "Matematika",
       "all_krs": [
         "Matematika"
-      ],
-      "classes": []
-    },
-    {
-      "name": "BOBOJONOV BOYMUROD RAJABBOYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -21292,14 +19782,6 @@
       "classes": []
     },
     {
-      "name": "MADAMINOV G‘ULOM SAIDNAZAROVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "MADAMINOVA DILSHODA ALISHER QIZI",
       "subject": "English",
       "all_krs": [
@@ -21329,9 +19811,9 @@
     },
     {
       "name": "MASHARIPOVA GO‘ZAL QABULOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": [
         "8-B класс"
@@ -21339,9 +19821,10 @@
     },
     {
       "name": "MASHARIPOVA IQBOLOY ERKINOVNA",
-      "subject": "Tarix",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarix"
+        "Boshlang'ich ta'lim",
+        "Ona tili"
       ],
       "classes": []
     },
@@ -21369,19 +19852,13 @@
       "name": "MATYOQUBOVA UMIDAXON PANABOYEVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "English",
+        "Rus tili"
       ],
       "classes": [
         "3-B класс"
       ]
-    },
-    {
-      "name": "MAXMUDOVA ANAJON QURBONBOYEVNA",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     },
     {
       "name": "NIYAZMETOVA MANZURA KARIMOVNA",
@@ -21396,14 +19873,6 @@
       "subject": "Ona tili",
       "all_krs": [
         "Ona tili"
-      ],
-      "classes": []
-    },
-    {
-      "name": "OTABAYEV IKROMBEK SALAYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -21429,9 +19898,11 @@
     },
     {
       "name": "OTOBOYEVA DILDORA SALAYEVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
-        "Tasviriy san'at"
+        "Biologiya",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": [
         "5-V класс"
@@ -21449,9 +19920,12 @@
     },
     {
       "name": "OTOJONOVA NAZIRBIBI AXMEDOVNA",
-      "subject": "Matematika",
+      "subject": "Biologiya",
       "all_krs": [
-        "Matematika"
+        "Biologiya",
+        "Informatika",
+        "Matematika",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -21474,14 +19948,6 @@
       "classes": [
         "4-B класс"
       ]
-    },
-    {
-      "name": "QADAMOV SHODLIK HAMDAMBEK O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     },
     {
       "name": "QO‘CHQAROV OTANAZAR RAJABOVICH",
@@ -21538,14 +20004,6 @@
       ]
     },
     {
-      "name": "RO‘ZMETOV ILXAMBEK BOBOJONOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "RO‘ZMETOVA DILNOZA YO‘LDOSHBOYEVNA",
       "subject": "Matematika",
       "all_krs": [
@@ -21557,8 +20015,9 @@
     },
     {
       "name": "SABIROVA RISOLAT HAYITBOYEVNA",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": [
@@ -21637,8 +20096,15 @@
     },
     {
       "name": "TOJIYEVA GULISTON XAYITBOYEVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
+        "English",
+        "Informatika",
+        "Matematika",
+        "Ona tili",
+        "Rus tili",
+        "Tarix",
         "Tasviriy san'at"
       ],
       "classes": [
@@ -21681,8 +20147,9 @@
     },
     {
       "name": "YUSUBOVA ZULFIYA RAXIMBERGANOVNA",
-      "subject": "Fizika",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Fizika"
       ],
       "classes": [
@@ -21701,21 +20168,14 @@
     },
     {
       "name": "YUSUPOVA GULCHEXRA YULDOSHOVNA",
-      "subject": "Fizika",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Fizika"
       ],
       "classes": [
         "9-B класс"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "47-sonli maktab": [
@@ -21729,8 +20189,9 @@
     },
     {
       "name": "ALLABERGANOV MURODJON ATABOYEVICH",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": [
@@ -21749,8 +20210,9 @@
     },
     {
       "name": "BALTAYEVA GO‘ZAL SHANAZAROVNA",
-      "subject": "Fizika",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Fizika"
       ],
       "classes": [
@@ -21758,33 +20220,21 @@
       ]
     },
     {
-      "name": "BATIROV SUHROBJON KAHROMON O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "BATIROVA RISOLAT DAVRANBEKOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
-        "Tasviriy san'at"
-      ],
-      "classes": []
-    },
-    {
-      "name": "BEKCHANOVA SANOBAR RAXIMOVNA",
-      "subject": "Texnologiya",
-      "all_krs": [
+        "Biologiya",
+        "Tarbiya",
+        "Tasviriy san'at",
         "Texnologiya"
       ],
       "classes": []
     },
     {
       "name": "BOBOJONOV SARDORBEK ODILBEK O‘G‘LI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": []
@@ -21800,16 +20250,6 @@
       ]
     },
     {
-      "name": "BOTIROV SHUXRAT ASHIRBOYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "7-B класс"
-      ]
-    },
-    {
       "name": "BOTIROVA DILFUZA SHAVKATOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -21821,8 +20261,9 @@
     },
     {
       "name": "DAVLETOV SAN’ATBEK OZODBAYEVICH",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": [
@@ -21983,9 +20424,13 @@
     },
     {
       "name": "RAXIMOVA SAYYOTXON BEKTURDI QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
-        "Tasviriy san'at"
+        "Biologiya",
+        "Informatika",
+        "Matematika",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -22033,8 +20478,9 @@
     },
     {
       "name": "YAXSHIMOVA DILNOZA QADIRBERGANOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -22046,14 +20492,6 @@
       "subject": "Tasviriy san'at",
       "all_krs": [
         "Tasviriy san'at"
-      ],
-      "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     }
@@ -22097,8 +20535,9 @@
     },
     {
       "name": "ATAYEVA SANOBAR SHAROFADDINOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -22125,8 +20564,10 @@
     },
     {
       "name": "AZIMBOYEVA BIKAJON YUSUPBOY QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
+        "Tarbiya",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -22177,8 +20618,10 @@
     },
     {
       "name": "G‘AYIBOVA SHAROFAT QODAMBOYEVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
+        "Tarbiya",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -22202,7 +20645,7 @@
       "classes": []
     },
     {
-      "name": "HAYITBOYEVA MOHINUR RASHID  QIZI",
+      "name": "HAYITBOYEVA MOHINUR RASHID QIZI",
       "subject": "English",
       "all_krs": [
         "English"
@@ -22229,7 +20672,8 @@
       "name": "JIMALYAZOV SANJARBEK ORTIQOVICH",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -22262,28 +20706,10 @@
       ]
     },
     {
-      "name": "KURYAZOVA ZULXUMOR ILXOM QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "9-A класс"
-      ]
-    },
-    {
       "name": "MASHARIPOV ABROR RADJABBAYEVICH",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
-      "name": "MASHARIPOV RAMAT ABDUSHARIPOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -22299,8 +20725,9 @@
     },
     {
       "name": "MATNAZAROVA INTIZOR JUMANAZAROVNA",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": []
@@ -22360,14 +20787,6 @@
       "classes": [
         "8-B класс"
       ]
-    },
-    {
-      "name": "O‘TKIROV AKBARBEK ANVARBEK O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     },
     {
       "name": "POLVANOVA NILUFAR RO‘ZMETOVNA",
@@ -22439,8 +20858,9 @@
     },
     {
       "name": "RO‘ZMETOV SARDORBEK RAHIMBAYEVICH",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": []
@@ -22455,8 +20875,9 @@
     },
     {
       "name": "RUSTAMOVA MAXINA MARKSOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -22487,8 +20908,9 @@
     },
     {
       "name": "SOBIROVA DILFUZA RAXIMOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": [
@@ -22507,8 +20929,10 @@
     },
     {
       "name": "SOBIROVA SEVINCHOY DAVRONBEK QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
+        "Tarbiya",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -22534,26 +20958,10 @@
       ]
     },
     {
-      "name": "YOVBASAROV MARKS RUSTAMOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "YUSUPOVA MUXLISA QADAMBOY QIZI",
       "subject": "Informatika",
       "all_krs": [
         "Informatika"
-      ],
-      "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     }
@@ -22573,7 +20981,9 @@
       "name": "ALLABERGANOV MUZAFFAR ATANAZAROVICH",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya",
+        "Tarix"
       ],
       "classes": [
         "9-A sinf"
@@ -22583,7 +20993,8 @@
       "name": "BEKJONOV ANVARJON ERGASH O‘G‘LI",
       "subject": "Fizika",
       "all_krs": [
-        "Fizika"
+        "Fizika",
+        "Matematika"
       ],
       "classes": []
     },
@@ -22671,8 +21082,9 @@
     },
     {
       "name": "MATSADIQOVA GO‘ZALOY YO‘LDOSH QIZI",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": []
@@ -22686,14 +21098,6 @@
       "classes": [
         "9-B класс"
       ]
-    },
-    {
-      "name": "MAXMUDOV SIROJ AMATBOYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     },
     {
       "name": "NAZAROVA ELMIRA BAHODIR QIZI",
@@ -22780,18 +21184,11 @@
       ]
     },
     {
-      "name": "QALANDAROV TEMURBEK KENJA O‘G‘LI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "QURYOZOVA SOHIBA BOKIRBOYEVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -22805,9 +21202,9 @@
     },
     {
       "name": "RAJABOVA SANOBAR QARABAYEVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -22820,14 +21217,6 @@
       "classes": []
     },
     {
-      "name": "SAFAROVA LOBARXON OZODBOY QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "SAIDOVA ZILOLA PO‘LATOVNA",
       "subject": "Biologiya",
       "all_krs": [
@@ -22836,14 +21225,6 @@
       "classes": [
         "10-A sinf"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "4-IDUM": [
@@ -22852,14 +21233,6 @@
       "subject": "Rus tili",
       "all_krs": [
         "Rus tili"
-      ],
-      "classes": []
-    },
-    {
-      "name": "ABDULLAYEV INOYAT KADAMOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     },
@@ -22876,14 +21249,6 @@
       "subject": "Matematika",
       "all_krs": [
         "Matematika"
-      ],
-      "classes": []
-    },
-    {
-      "name": "ABDURAXMANOV ALISHER EGAMBERGANOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -22910,16 +21275,6 @@
         "Rus tili"
       ],
       "classes": []
-    },
-    {
-      "name": "ALLABERGANOV SARDORBEK ERKIN O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "6-D Sinf"
-      ]
     },
     {
       "name": "ALLABERGANOVA NILUFAR ILYOSOVNA",
@@ -23102,14 +21457,6 @@
       "classes": []
     },
     {
-      "name": "DO‘SCHONOVA GULLOLA OTAXON QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "DURDIYEVA DILAFRO‘Z SULTONBOY QIZI",
       "subject": "Rus tili",
       "all_krs": [
@@ -23173,8 +21520,9 @@
     },
     {
       "name": "JUMABOYEVA TO‘XTAPOSHSHA QAHRAMON QIZI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": []
@@ -23211,9 +21559,9 @@
     },
     {
       "name": "KENJAYEVA IQBOL RO‘ZMATOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -23241,7 +21589,8 @@
       "name": "KURBONBOYEVA IQBOLOY KOMILJONOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -23262,16 +21611,6 @@
         "Matematika"
       ],
       "classes": []
-    },
-    {
-      "name": "MADRAXIMOV OG‘ABOY MADRAXIMOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "9-B Sinf"
-      ]
     },
     {
       "name": "MADRAXIMOVA AYSHAJON ISMAILOVNA",
@@ -23328,20 +21667,12 @@
       "classes": []
     },
     {
-      "name": "MATYAKUBOVA CHAROSXON BOBOJONOVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "5-D Sinf"
-      ]
-    },
-    {
       "name": "MATYOQUBOVA MADINA XUSHNUDBEK QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Ona tili",
       "all_krs": [
-        "Tasviriy san'at"
+        "Ona tili",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -23561,7 +21892,9 @@
       "name": "QURBONBOYEVA GULBADANBEGIM VAFABOY QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Ona tili",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -23685,7 +22018,8 @@
       "name": "RUZMETOVA NARGIZA BAXTIYOROVNA",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Texnologiya"
       ],
       "classes": [
         "11-D класс"
@@ -23749,8 +22083,9 @@
     },
     {
       "name": "SAIDOVA NARGIZA AXMADJANOVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": []
@@ -23772,14 +22107,6 @@
       "classes": [
         "10-B Sinf"
       ]
-    },
-    {
-      "name": "SOBIROVA NODIRA DAVRONBEKOVNA",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     },
     {
       "name": "SODIQOVA LOBAR DAVRONBEK QIZI",
@@ -23809,9 +22136,13 @@
     },
     {
       "name": "TAJIBOYEVA LOBARXON MANSURBEK QIZI",
-      "subject": "Tarix",
+      "subject": "Biologiya",
       "all_krs": [
-        "Tarix"
+        "Biologiya",
+        "Informatika",
+        "Matematika",
+        "Tarbiya",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -23855,9 +22186,13 @@
     },
     {
       "name": "XASANOVA OLMAXON BEKTURDIYEVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
-        "Tasviriy san'at"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -23945,14 +22280,18 @@
       "name": "YAXSHIMURATOVA MUXABBAT DURDIBAYEVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya",
+        "Texnologiya"
       ],
       "classes": []
     },
     {
       "name": "YOVBOSAROVA O‘G‘ILJON ABDULLAYEVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": []
@@ -23974,16 +22313,6 @@
       "classes": []
     },
     {
-      "name": "YULDASHOV FURQAT PARXOD O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "7-G класс"
-      ]
-    },
-    {
       "name": "YULDOSHEVA MATLUBA O‘KTAMBOY QIZI",
       "subject": "Fizika",
       "all_krs": [
@@ -24001,17 +22330,9 @@
     },
     {
       "name": "YUSUPOVA MAXLIYO OYBEK QIZI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
+        "Tarbiya"
       ],
       "classes": []
     }
@@ -24021,7 +22342,8 @@
       "name": "ABDIKARIMOVA RANO ISMAILOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Ona tili"
       ],
       "classes": []
     },
@@ -24029,7 +22351,8 @@
       "name": "ABDULLAYEVA IQBOLOY SHAVKAT QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -24091,7 +22414,8 @@
       "name": "BOBOJANOV NODIRBEK RUSTAMOVICH",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -24123,9 +22447,9 @@
     },
     {
       "name": "DUSCHANOVA SURAYYA RUZIMBOYEVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -24187,8 +22511,9 @@
     },
     {
       "name": "MATCHANOVA BARNA RAXIMBERGANOVNA",
-      "subject": "Ona tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -24207,9 +22532,14 @@
     },
     {
       "name": "NURULLAYEVA NASIBA BAXTIYAROVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
-        "Tasviriy san'at"
+        "Biologiya",
+        "Boshlang'ich ta'lim",
+        "Matematika",
+        "Ona tili",
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -24235,9 +22565,10 @@
     },
     {
       "name": "QADAMOVA SURAYYO AMANBAYEVNA",
-      "subject": "Tarix",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarix"
+        "Boshlang'ich ta'lim",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -24281,21 +22612,15 @@
     },
     {
       "name": "RAXIMOVA ZAMIRA ERKAYEVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
+        "Boshlang'ich ta'lim",
+        "Informatika",
+        "Tarbiya",
         "Tasviriy san'at"
       ],
       "classes": []
-    },
-    {
-      "name": "RO‘ZMATOVA SHAHNOZA QADAMBOYEVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "7-A sinf"
-      ]
     },
     {
       "name": "RO‘ZMETOVA SHAHLO MUZAFFAR QIZI",
@@ -24314,14 +22639,6 @@
       "classes": []
     },
     {
-      "name": "RUSTAMBEKOV BEKZOD BAHROMBEK O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "SAIDOVA MEXRINISO RUSTAM QIZI",
       "subject": "Ona tili",
       "all_krs": [
@@ -24331,8 +22648,9 @@
     },
     {
       "name": "SALAYEVA DILBAR XUDARGANOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": []
@@ -24358,22 +22676,6 @@
       "subject": "Informatika",
       "all_krs": [
         "Informatika"
-      ],
-      "classes": []
-    },
-    {
-      "name": "SHOMUROTOV ABBOS YUSUPBOY O‘G‘LI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
-      "name": "SULTANOVA GULYOR JALOLIDDIN QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -24433,8 +22735,9 @@
     },
     {
       "name": "XO‘JAYEVA UMIDA OTABAYEVNA",
-      "subject": "Ona tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": []
@@ -24448,14 +22751,6 @@
       "classes": [
         "8-A sinf"
       ]
-    },
-    {
-      "name": "YADGAROV XUSHNIDDIN EGAMBERGANOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     },
     {
       "name": "YAKUBOVA ZIYNATOY SOLAYEVNA",
@@ -24523,8 +22818,9 @@
     },
     {
       "name": "BOLTAYEVA NIYOZJON BAXTIYOROVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": []
@@ -24615,8 +22911,9 @@
     },
     {
       "name": "OZOTOVA NORJOXON OTABEK QIZI",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": []
@@ -24633,9 +22930,10 @@
     },
     {
       "name": "PIRYAZOVA ANBARJON OTANAZAROVNA",
-      "subject": "Tarix",
+      "subject": "Ona tili",
       "all_krs": [
-        "Tarix"
+        "Ona tili",
+        "Tarbiya"
       ],
       "classes": [
         "6-A класс"
@@ -24663,21 +22961,14 @@
     },
     {
       "name": "QO‘CHQAROV ELYOR MADAMINOVICH",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": [
         "8-B класс"
       ]
-    },
-    {
-      "name": "QURYOZOV QADAMBOY JUMANIYOZOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     },
     {
       "name": "RAXIMOVA DILNOZA ERGASHBOYEVNA",
@@ -24733,9 +23024,10 @@
     },
     {
       "name": "SAIDOVA SHOHISTA RUSTAMOVNA",
-      "subject": "Tarix",
+      "subject": "Ona tili",
       "all_krs": [
-        "Tarix"
+        "Ona tili",
+        "Tarbiya"
       ],
       "classes": [
         "5-A класс"
@@ -24769,8 +23061,9 @@
     },
     {
       "name": "XAYITBAYEV RAXMATJON AZIMBOY O‘G‘LI",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": []
@@ -24820,14 +23113,6 @@
       ]
     },
     {
-      "name": "BEKCHANOV SHUHRAT MATRASULOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "BO‘TANBAYEVA DURDONA FURQATOVNA",
       "subject": "Kimyo",
       "all_krs": [
@@ -24847,7 +23132,8 @@
       "name": "IBRAGIMOVA TABASSUM G‘OYIBNAZAR QIZI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -24861,8 +23147,9 @@
     },
     {
       "name": "KARIMOVA BASHORAT QURANBOYEVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": [
@@ -24910,14 +23197,6 @@
       ]
     },
     {
-      "name": "OTABOYEV RUSTAMBEK NARIMBOYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "OTANAZAROVA FLYURA JUMANAZAR QIZI",
       "subject": "English",
       "all_krs": [
@@ -24945,8 +23224,9 @@
     },
     {
       "name": "RAXMANOVA MOHINUR MUZAFFAR QIZI",
-      "subject": "Matematika",
+      "subject": "Fizika",
       "all_krs": [
+        "Fizika",
         "Matematika"
       ],
       "classes": [
@@ -24999,7 +23279,8 @@
       "name": "XUDARGANOVA ZUMRAT IBRAGIMOVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Texnologiya"
       ],
       "classes": [
         "5-A sinf"
@@ -25014,14 +23295,6 @@
       "classes": [
         "3-A sinf"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     }
   ],
   "52-sonli maktab": [
@@ -25052,14 +23325,6 @@
       ]
     },
     {
-      "name": "BALTAYEV XAMRAZBEK BAXTIYAROVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "BAXTIYOROV FIRDAVSBEK SHODLIK O‘G‘LI",
       "subject": "Informatika",
       "all_krs": [
@@ -25071,7 +23336,9 @@
       "name": "BEKPO‘LATOV HUSAN DILMUROD O‘G‘LI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya",
+        "Tarix"
       ],
       "classes": []
     },
@@ -25089,7 +23356,8 @@
       "name": "BOLTAYEV TEMURBEK ERGASHBOY O‘G‘LI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarix"
       ],
       "classes": [
         "8-B класс"
@@ -25099,7 +23367,8 @@
       "name": "BOLTAYEVA GAVXAR KOMILOVNA",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Kimyo"
       ],
       "classes": []
     },
@@ -25107,7 +23376,8 @@
       "name": "DOSOVA MAXFUZA MANSUR QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": []
     },
@@ -25160,14 +23430,6 @@
       "classes": []
     },
     {
-      "name": "MASHARIPOV QUDRAT ATABAYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "MASHARIPOVA RA’NO O‘RINBOYEVNA",
       "subject": "Rus tili",
       "all_krs": [
@@ -25187,21 +23449,15 @@
     },
     {
       "name": "OLLABERGANOVA NASIBA ISMAYILOVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
-        "Geografiya"
+        "Biologiya",
+        "Geografiya",
+        "Kimyo"
       ],
       "classes": [
         "8-A sinf"
       ]
-    },
-    {
-      "name": "OTAJONOV SARVARBEK RAVSHONBEK O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     },
     {
       "name": "QALANDAROVA MAFTUNA BAXODIR QIZI",
@@ -25261,7 +23517,9 @@
       "name": "YOQUBOV MATYA’QUB SATIMBOY O‘G‘LI",
       "subject": "Fizika",
       "all_krs": [
-        "Fizika"
+        "Fizika",
+        "Geografiya",
+        "Matematika"
       ],
       "classes": []
     },
@@ -25272,25 +23530,9 @@
         "English"
       ],
       "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "53-sonli maktab": [
-    {
-      "name": "ESHANBAYEV HASANBOY DILSHOD O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
     {
       "name": "G‘AYIPOVA ZUBAYDA QO‘ZIYEVNA",
       "subject": "Texnologiya",
@@ -25382,16 +23624,6 @@
       "classes": []
     },
     {
-      "name": "NURMATOV BEKZOD YULDOSHBOY O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "8-A класс"
-      ]
-    },
-    {
       "name": "OTABOYEVA KOMILA RASULBEK QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
@@ -25401,8 +23633,9 @@
     },
     {
       "name": "OTABOYEVA MUHAYYO G‘AYRAT QIZI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": []
@@ -25455,8 +23688,9 @@
     },
     {
       "name": "QADAMOVA SOJIDA ERKABOY QIZI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": []
@@ -25473,7 +23707,8 @@
       "name": "QURBONBOYEV ALIJON RAHIMBOYEVICH",
       "subject": "Fizika",
       "all_krs": [
-        "Fizika"
+        "Fizika",
+        "Matematika"
       ],
       "classes": []
     },
@@ -25482,14 +23717,6 @@
       "subject": "Geografiya",
       "all_krs": [
         "Geografiya"
-      ],
-      "classes": []
-    },
-    {
-      "name": "RAJABOV ASILBEK SHERZOD O‘G‘LI",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     },
@@ -25520,14 +23747,6 @@
       "classes": [
         "3-A класс"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "54-sonli maktab": [
@@ -25629,9 +23848,9 @@
     },
     {
       "name": "IBROHIMOVA SURAYYO RAJABBOYEVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Tarix"
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -25639,7 +23858,8 @@
       "name": "JUMABOYEVA XUSNIYA SHADLIK QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -25709,14 +23929,16 @@
       "name": "NURJANOVA KOMILA XUSINBOY QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Tarbiya"
       ],
       "classes": []
     },
     {
       "name": "OG‘OJANOV SHOHRUXBEK ALISHER O‘G‘LI",
-      "subject": "Fizika",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Fizika"
       ],
       "classes": [
@@ -25735,14 +23957,17 @@
       "name": "OLLABERGANOVA SOHIBA MARKS QIZI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
     {
       "name": "OLLOQULIYEVA RUHSHONA QAHRAMON QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
+        "Tarbiya",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -25778,14 +24003,6 @@
       "subject": "Geografiya",
       "all_krs": [
         "Geografiya"
-      ],
-      "classes": []
-    },
-    {
-      "name": "RAJABOV SAN’AT OTAYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -25835,29 +24052,26 @@
     },
     {
       "name": "VAISOVA ZUMRAD BEKDURDIYEVNA",
-      "subject": "Tarix",
+      "subject": "Biologiya",
       "all_krs": [
-        "Tarix"
+        "Biologiya",
+        "Informatika",
+        "Matematika",
+        "Ona tili",
+        "Tarbiya"
       ],
       "classes": []
     },
     {
       "name": "XAJIBAYEVA SHAHNOZA DAVRONBEK QIZI",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": [
         "8-A класс"
       ]
-    },
-    {
-      "name": "XUDAYBERGANOV JAMOLADDIN AMINOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     },
     {
       "name": "YUSUPOVA MADINABONU DILSHODBEK QIZI",
@@ -25871,14 +24085,11 @@
     },
     {
       "name": "ВАКАНСИЯ",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Kimyo",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Kimyo"
       ],
-      "classes": [
-        "11-A класс",
-        "2-A класс"
-      ]
+      "classes": []
     }
   ],
   "55-sonli maktab": [
@@ -25886,7 +24097,8 @@
       "name": "ABDULLAYEVA DILDOR YULDASHEVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -25894,7 +24106,8 @@
       "name": "AKBAROVA MUSLIMAXON MO‘YDINJON QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at"
+        "Tasviriy san'at",
+        "Texnologiya"
       ],
       "classes": [
         "7-A синф"
@@ -25902,8 +24115,9 @@
     },
     {
       "name": "ALLABERGANOVA ANAMOY ATABAYEVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -25964,8 +24178,9 @@
     },
     {
       "name": "DJUMAMURATOVA NAFOSAT SHONAZAROVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Matematika",
       "all_krs": [
+        "Matematika",
         "Tasviriy san'at"
       ],
       "classes": [
@@ -25976,7 +24191,8 @@
       "name": "EGAMBERGANOVA MAXLIYO XAMIDJON QIZI",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -26064,7 +24280,8 @@
       "name": "NORBAYEVA ZEVARJON TANGRIBERGANOVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Kimyo"
       ],
       "classes": [
         "7-V класс"
@@ -26074,7 +24291,8 @@
       "name": "NORMETOVA DILFUZA QADOMBAYEVNA",
       "subject": "Informatika",
       "all_krs": [
-        "Informatika"
+        "Informatika",
+        "Texnologiya"
       ],
       "classes": [
         "8-A синф"
@@ -26107,17 +24325,10 @@
       ]
     },
     {
-      "name": "POLVANNAZAROVA SAIDA XUDAYBERGAN QIZI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "QO‘SHNAZAROVA MADINA SAPORBOY QIZI",
-      "subject": "Fizika",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Fizika"
       ],
       "classes": [
@@ -26154,8 +24365,9 @@
     },
     {
       "name": "RAXMANOVA SANOBAR RO‘ZMETOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Matematika",
       "all_krs": [
+        "Matematika",
         "Tasviriy san'at"
       ],
       "classes": [
@@ -26173,26 +24385,10 @@
       ]
     },
     {
-      "name": "SABIROV SHUXRATBEK ISMAILOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "SABIROVA MAXFUZA SHAVKAT QIZI",
       "subject": "Fransuz tili",
       "all_krs": [
         "Fransuz tili"
-      ],
-      "classes": []
-    },
-    {
-      "name": "SADULLAYEV SHERALI SHONAZAROVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -26269,22 +24465,6 @@
       "classes": [
         "5-V класс"
       ]
-    },
-    {
-      "name": "YAVBASAROVA MAVLUDA SAPARBOYEVNA",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "6-sonli maktab": [
@@ -26301,14 +24481,6 @@
       "subject": "Ona tili",
       "all_krs": [
         "Ona tili"
-      ],
-      "classes": []
-    },
-    {
-      "name": "ALLABERGANOV DONIYOR RAXIMOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -26334,7 +24506,8 @@
       "name": "ATAMURATOV JASURBEK YULDASHOVICH",
       "subject": "Informatika",
       "all_krs": [
-        "Informatika"
+        "Informatika",
+        "Kimyo"
       ],
       "classes": [
         "7-B класс"
@@ -26362,7 +24535,9 @@
       "name": "BOG‘BEKOVA LAYLOXON HURMATBEK QIZI",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Informatika",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -26400,8 +24575,9 @@
     },
     {
       "name": "IBRAGIMOV OTAMUROD G‘AYRAT O‘G‘LI",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": [
@@ -26426,8 +24602,9 @@
     },
     {
       "name": "MAYLIYEVA ZUBAYDA SAFAYOZOVNA",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
       ],
       "classes": [
@@ -26555,30 +24732,12 @@
       ]
     },
     {
-      "name": "RAXMANOV OTABEK ERKABOY O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "RAXMANOVA MAHLIYO ERKABOY QIZI",
       "subject": "English",
       "all_krs": [
         "English"
       ],
       "classes": []
-    },
-    {
-      "name": "RAXMONOV OG‘ABEK TO‘LIBOY O‘G‘LI",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "11-A класс"
-      ]
     },
     {
       "name": "RO‘ZIMATOVA DILNOZA ALISHER QIZI",
@@ -26628,9 +24787,9 @@
     },
     {
       "name": "SA’DULLAYEVA SAYYORA SA’DULLA QIZI",
-      "subject": "Tarix",
+      "subject": "Geografiya",
       "all_krs": [
-        "Tarix"
+        "Geografiya"
       ],
       "classes": []
     },
@@ -26682,8 +24841,9 @@
     },
     {
       "name": "SULTANOVA NARGISA IBODULLAYEVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -26692,8 +24852,9 @@
     },
     {
       "name": "SULTONOVA E’TIBOR ABDULLAYEVNA",
-      "subject": "Tarix",
+      "subject": "Tarbiya",
       "all_krs": [
+        "Tarbiya",
         "Tarix"
       ],
       "classes": [
@@ -26705,14 +24866,6 @@
       "subject": "Matematika",
       "all_krs": [
         "Matematika"
-      ],
-      "classes": []
-    },
-    {
-      "name": "TILLABAYEV ZAFARBEK AXMEDOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -26736,7 +24889,8 @@
       "name": "XO‘JAYEVA INOBAT MATYOQUBOVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarix"
       ],
       "classes": [
         "9-B класс"
@@ -26751,14 +24905,6 @@
       "classes": [
         "11-B класс"
       ]
-    },
-    {
-      "name": "YAQUBOV BOBOJON YUSUPOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     },
     {
       "name": "YULDASHEVA MAFTUNA DILSHOD QIZI",
@@ -26779,14 +24925,6 @@
       "classes": [
         "4-B класс"
       ]
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
     }
   ],
   "7-sonli maktab": [
@@ -26849,16 +24987,6 @@
       ]
     },
     {
-      "name": "BABADJANOV UMRBEK RAXIMBAYEVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": [
-        "6-A класс"
-      ]
-    },
-    {
       "name": "BOBAJONOVA FERUZA BEKPULATOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -26872,7 +25000,8 @@
       "name": "BOG‘BEKOVA ZEVAROY ABDUSHARIPOVNA",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Kimyo"
       ],
       "classes": [
         "11-A класс"
@@ -26898,9 +25027,10 @@
     },
     {
       "name": "NAZAROV SHOKIR XUDAYNAZAROVICH",
-      "subject": "Tarix",
+      "subject": "Geografiya",
       "all_krs": [
-        "Tarix"
+        "Geografiya",
+        "Texnologiya"
       ],
       "classes": [
         "8-A класс"
@@ -26949,14 +25079,6 @@
       ]
     },
     {
-      "name": "RAJABOVA DILFUZA KURANBOYEVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "RAXMANOVA MALIKA ATOJONOVNA",
       "subject": "Biologiya",
       "all_krs": [
@@ -26976,7 +25098,8 @@
       "name": "RO‘ZMETOVA INTIZOR OTABAYEVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": []
     },
@@ -26992,7 +25115,8 @@
       "name": "SHARIFOVA SOHIBA G‘AYRAT QIZI",
       "subject": "Fizika",
       "all_krs": [
-        "Fizika"
+        "Fizika",
+        "Matematika"
       ],
       "classes": []
     },
@@ -27005,26 +25129,11 @@
       "classes": []
     },
     {
-      "name": "YAMG‘IROV MARIMBOY SHARIPOVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "YAXSHIMOVA SANOBAR JUMANAZAROVNA",
-      "subject": "Matematika",
+      "subject": "Informatika",
       "all_krs": [
+        "Informatika",
         "Matematika"
-      ],
-      "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
       ],
       "classes": []
     }
@@ -27075,14 +25184,6 @@
       ]
     },
     {
-      "name": "BABADJANOVA NAVBAXOR ATABAYEVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
       "name": "BABAYEVA SABOHAT MUZAFFAR QIZI",
       "subject": "Ona tili",
       "all_krs": [
@@ -27109,14 +25210,6 @@
       "classes": [
         "11-A sinf"
       ]
-    },
-    {
-      "name": "JABBOROVA GULSHAN JUMANAZAROVNA",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
     },
     {
       "name": "JONIBEKOVA MANZURA DAVRONBEK QIZI",
@@ -27200,8 +25293,9 @@
     },
     {
       "name": "MATYAQUBOVA SHOIRA FAYZULLAYEVNA",
-      "subject": "Geografiya",
+      "subject": "Biologiya",
       "all_krs": [
+        "Biologiya",
         "Geografiya"
       ],
       "classes": [
@@ -27227,18 +25321,11 @@
       "classes": []
     },
     {
-      "name": "NOROV RASHIDBEK NORIMBOYEVICH",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "NURULLAYEVA MARHABO OMONBOYEVNA",
       "subject": "Huquq",
       "all_krs": [
-        "Huquq"
+        "Huquq",
+        "Tarbiya"
       ],
       "classes": [
         "9-A sinf"
@@ -27285,14 +25372,6 @@
       "subject": "English",
       "all_krs": [
         "English"
-      ],
-      "classes": []
-    },
-    {
-      "name": "RAXIMOV YASHNARBEK RUZIMATOVICH",
-      "subject": "Tarix",
-      "all_krs": [
-        "Tarix"
       ],
       "classes": []
     },
@@ -27406,8 +25485,9 @@
     },
     {
       "name": "YAVBASAROVA IKBAL KARIMBAYEVNA",
-      "subject": "Rus tili",
+      "subject": "Ona tili",
       "all_krs": [
+        "Ona tili",
         "Rus tili"
       ],
       "classes": [
@@ -27440,16 +25520,10 @@
     },
     {
       "name": "ZARIPOVA MUHAYYO SHAMURATOVNA",
-      "subject": "Tarix",
+      "subject": "Informatika",
       "all_krs": [
-        "Tarix"
-      ],
-      "classes": []
-    },
-    {
-      "name": "ВАКАНСИЯ",
-      "subject": "Texnologiya",
-      "all_krs": [
+        "Informatika",
+        "Tarbiya",
         "Texnologiya"
       ],
       "classes": []
