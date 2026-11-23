@@ -16,15 +16,15 @@ const GOOGLE_SHEET_SUBMIT_URL = window.GOOGLE_SHEET_SUBMIT_URL || "https://scrip
 
 const PIN_CONFIG = {
   salt: "umamatov_pedagog_2026",
-  masterPin: "2026"
+  masterPin: "1984"
 };
 
-// Remote Live Control Config
+// Remote Live Control Config (Google Sheet orqali boshqariladi)
 let remoteControl = {
-  pin: "2026",
+  pin: "9981",
   status: "Ochiq",
   notice: "Test tizimi ochiq va faol. Muvaffaqiyat tilaymiz!",
-  krsWeek1: "Ochiq"
+  masterPin: "1984"
 };
 
 const SESSION_STORAGE_KEY = 'pedagog_active_session_2026';
@@ -233,7 +233,7 @@ async function fetchLiveControlConfig() {
       if (dataRow[0]) remoteControl.pin = dataRow[0].trim();
       if (dataRow[1]) remoteControl.status = dataRow[1].trim();
       if (dataRow[2]) remoteControl.notice = dataRow[2].trim();
-      if (dataRow[3]) remoteControl.krsWeek1 = dataRow[3].trim();
+      if (dataRow[3]) remoteControl.masterPin = dataRow[3].trim();
     }
   } catch (err) {
     console.warn("Live Google Sheet sozlamalari yuklanmadi, zaxira parametrlardan foydalaniladi:", err);
@@ -1425,13 +1425,9 @@ async function handlePinSubmit() {
     const selectedSubject = state.teacherInfo?.subject || document.getElementById('subjectSelect')?.value || '';
 
     // 1. UNIVERSAL MASTER PIN (Bosh mutaxassis Umrbek Mamatov uchun)
-    // Ushbu maxfiy PIN-kod (1984 yoki 2026) bilan istalgan sana, istalgan fan va istalgan mashg'ulot (1-12) to'liq ochiladi:
-    const isMasterPin = (
-      pinVal === "1984" ||
-      pinVal === "2026" ||
-      pinVal === "7777" ||
-      pinVal === PIN_CONFIG.masterPin
-    );
+    // Google Jadval D2 katagidagi qiymat (yoki 1984). Jadvalda xohlagan payt qo'lda o'zgartirish mumkin!
+    const activeMasterPin = (remoteControl && remoteControl.masterPin) ? remoteControl.masterPin.trim() : "1984";
+    const isMasterPin = (pinVal === activeMasterPin || pinVal === "1984");
 
     if (isMasterPin) {
       closePinModal();
@@ -1440,7 +1436,7 @@ async function handlePinSubmit() {
       return;
     }
 
-    // 2. KUNLIK PIN KOD (O'qituvchilar uchun tekshiruv)
+    // 2. KUNLIK GRAFIK PIN KOD (O'qituvchilar uchun tekshiruv - faqat jadvaldagi grafik kodlari!)
     const todayStr = getTodayTashkentDate();
     let calculatedTodayPin = "";
     try {
@@ -1450,13 +1446,7 @@ async function handlePinSubmit() {
     const remotePin = remoteControl && remoteControl.pin ? String(remoteControl.pin).trim() : "";
     const isDailyPin = (
       (remotePin && pinVal === remotePin) ||
-      (calculatedTodayPin && pinVal === calculatedTodayPin) ||
-      pinVal === "9981" ||
-      pinVal === "1227" ||
-      pinVal === "9522" ||
-      pinVal === "1066" ||
-      pinVal === "2162" ||
-      pinVal === "5512"
+      (calculatedTodayPin && pinVal === calculatedTodayPin)
     );
 
     if (isDailyPin) {
