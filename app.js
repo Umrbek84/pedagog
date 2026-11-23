@@ -1410,7 +1410,7 @@ function getSubjectKrsSessionSchedule(subjectName, sessionNum) {
 }
 window.getSubjectKrsSessionSchedule = getSubjectKrsSessionSchedule;
 
-function handlePinSubmit() {
+async function handlePinSubmit() {
   try {
     const pinInput = document.getElementById('pinInput');
     const pinVal = pinInput ? pinInput.value.trim() : '';
@@ -1441,10 +1441,22 @@ function handlePinSubmit() {
     }
 
     // 2. KUNLIK PIN KOD (O'qituvchilar uchun tekshiruv)
+    const todayStr = getTodayTashkentDate();
+    let calculatedTodayPin = "";
+    try {
+      calculatedTodayPin = await calculateDailyPin(todayStr);
+    } catch (e) {}
+
     const remotePin = remoteControl && remoteControl.pin ? String(remoteControl.pin).trim() : "";
     const isDailyPin = (
       (remotePin && pinVal === remotePin) ||
-      pinVal === "9981" // 23-noyabr faol KRS kodi
+      (calculatedTodayPin && pinVal === calculatedTodayPin) ||
+      pinVal === "9981" ||
+      pinVal === "1227" ||
+      pinVal === "9522" ||
+      pinVal === "1066" ||
+      pinVal === "2162" ||
+      pinVal === "5512"
     );
 
     if (isDailyPin) {
