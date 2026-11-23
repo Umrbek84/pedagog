@@ -1381,6 +1381,35 @@ function closePinModal() {
 }
 window.closePinModal = closePinModal;
 
+// Fan va mashg'ulot bo'yicha KRS sanasini aniqlash (15-ilova jadvali)
+function getSubjectKrsSessionSchedule(subjectName, sessionNum) {
+  if (!subjectName) return null;
+  const num = parseInt(sessionNum) || 4;
+  const cleanSubject = String(subjectName).trim().toLowerCase();
+
+  if (typeof KRS_SCHEDULE !== 'undefined' && Array.isArray(KRS_SCHEDULE)) {
+    const matched = KRS_SCHEDULE.find(item => 
+      item.targetSubjects && item.targetSubjects.some(s => {
+        const cs = s.trim().toLowerCase();
+        return cleanSubject.includes(cs) || cs.includes(cleanSubject);
+      })
+    );
+    if (matched && Array.isArray(matched.dates)) {
+      const d = matched.dates.find(x => x.num === num);
+      if (d) {
+        return {
+          date: d.date,
+          label: d.label,
+          weekday: matched.weekday,
+          title: matched.title
+        };
+      }
+    }
+  }
+  return null;
+}
+window.getSubjectKrsSessionSchedule = getSubjectKrsSessionSchedule;
+
 function handlePinSubmit() {
   try {
     const pinInput = document.getElementById('pinInput');
@@ -1393,34 +1422,58 @@ function handlePinSubmit() {
 
     const sessionSelect = document.getElementById('sessionSelect');
     const selectedSession = parseInt(sessionSelect ? sessionSelect.value : (state.teacherInfo?.session || 4)) || 4;
+    const selectedSubject = state.teacherInfo?.subject || document.getElementById('subjectSelect')?.value || '';
 
     // 1. UNIVERSAL MASTER PIN (Bosh mutaxassis Umrbek Mamatov uchun)
-    // 2026, 1984 yoki masterPin kiritilganda istalgan mashg'ulot (1-12) va istalgan sana uchun to'liq ochiladi:
+    // Ushbu maxfiy PIN-kod (1984 yoki 2026) bilan istalgan sana, istalgan fan va istalgan mashg'ulot (1-12) to'liq ochiladi:
     const isMasterPin = (
-      pinVal === "2026" ||
       pinVal === "1984" ||
+      pinVal === "2026" ||
       pinVal === "7777" ||
       pinVal === PIN_CONFIG.masterPin
     );
 
-    // 2. KUNLIK PIN KOD (O'qituvchilar uchun)
+    if (isMasterPin) {
+      closePinModal();
+      console.log("👑 Universal Master PIN qabul qilindi. Barcha cheklovlar bekor qilindi (Bosh mutaxassis nazorat rejimi).");
+      startExamSession();
+      return;
+    }
+
+    // 2. KUNLIK PIN KOD (O'qituvchilar uchun tekshiruv)
     const remotePin = remoteControl && remoteControl.pin ? String(remoteControl.pin).trim() : "";
     const isDailyPin = (
       (remotePin && pinVal === remotePin) ||
       pinVal === "9981" // 23-noyabr faol KRS kodi
     );
 
-    if (isMasterPin) {
-      closePinModal();
-      console.log("👑 Universal Master PIN qabul qilindi. Barcha cheklovlar bekor qilindi.");
-      startExamSession();
-      return;
-    }
-
     if (isDailyPin) {
-      // O'qituvchilar uchun tekshiruv:
-      // O'tib ketgan mashg'ulotlar (1, 2, 3) va joriy (4) ochiq.
-      // Kuni kelmagan (5 dan 12 gacha) mashg'ulotlar qulflangan:
+      const todayStr = getTodayTashkentDate();
+      const sched = getSubjectKrsSessionSchedule(selectedSubject, selectedSession);
+
+      // A) O'tib ketgan mashg'ulotlar (1-, 2-, 3-mashg'ulot) — o'tib ketgan bo'lsa HAMMAGA OCHIQ:
+      if (selectedSession <= 3) {
+        closePinModal();
+        startExamSession();
+        return;
+      }
+
+      // B) Hali kuni kelmagan fan yoki mashg'ulot bo'lsa (KRS sanasi hali yetib kelmagan):
+      if (sched && sched.date > todayStr) {
+        alert(
+          `🔒 DIQQAT: ${selectedSubject} fani bo'yicha ${selectedSession}-mashg'ulot KRS kuni hali kelmagan!\n\n` +
+          `Ushbu fan bo'yicha test tasdiqlangan 15-ilova reja-grafigi bo'yicha ${sched.label} (${sched.weekday}) kuni o'tkaziladi.\n\n` +
+          `O'qituvchilar faqat o'z fanining KRS kuni yoki muddati o'tib ketgan mashg'ulotlar (1-, 2-, 3-mashg'ulot) testlarini topshirishlari mumkin.\n\n` +
+          `(Kelgusi fan va mashg'ulotlarni oldindan tekshirish faqat Bosh mutaxassis Universal PIN-kodi orqali amalga oshiriladi).`
+        );
+        if (pinInput) {
+          pinInput.value = '';
+          pinInput.focus();
+        }
+        return;
+      }
+
+      // C) Agar mashg'ulot raqami 4 dan katta bo'lsa (5..12) va sanasi kelmagan bo'lsa:
       if (selectedSession > 4) {
         alert(
           `🔒 DIQQAT: ${selectedSession}-mashg'ulot kuni hali kelmagan!\n\n` +
@@ -1435,12 +1488,13 @@ function handlePinSubmit() {
         return;
       }
 
-      // Agar tizim vaqtincha yopilgan bo'lsa:
+      // D) Agar tizim bosh mutaxassis tomonidan vaqtincha to'xtatilgan bo'lsa:
       if (remoteControl && remoteControl.status && remoteControl.status.toLowerCase() === 'yopiq') {
         alert("Bosh mutaxassis tomonidan test tizimi vaqtincha to'xtatilgan:\n" + (remoteControl.notice || "Hozirda test topshirish yopiq."));
         return;
       }
 
+      // Hammasi to'g'ri (bugungi fan yoki ochiq mashg'ulot)
       closePinModal();
       startExamSession();
       return;
