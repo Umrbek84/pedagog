@@ -666,8 +666,66 @@ function closeAntiCheatModal() {
   const modal = document.getElementById('antiCheatModal');
   if (modal) modal.classList.remove('open');
   state.awayStartTime = 0;
+  if (state.isExamActive && !state.isBlocked) {
+    applyExamBlurMask(false);
+  }
 }
 window.closeAntiCheatModal = closeAntiCheatModal;
+
+// HTML Escape Helper (Xavfsizlik va <teg> larning to'g'ri ko'rinishi uchun)
+function escapeHtml(str) {
+  if (str === null || str === undefined) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+window.escapeHtml = escapeHtml;
+
+// Test maydonidan chalg'ilganda savollarni xira qilish / yopish
+function applyExamBlurMask(isBlur) {
+  const examLayout = document.querySelector('.exam-layout');
+  let overlay = document.getElementById('examSecurityOverlay');
+
+  if (isBlur) {
+    if (examLayout) {
+      examLayout.classList.add('exam-blurred');
+    }
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.id = 'examSecurityOverlay';
+      overlay.className = 'exam-security-overlay';
+      overlay.innerHTML = `
+        <div class="exam-security-card">
+          <div style="font-size: 3rem; margin-bottom: 0.75rem;">🚨</div>
+          <h3 style="color: #ef4444; margin-bottom: 0.5rem; font-weight: 800; font-size: 1.3rem;">DIQQAT: TEST MAYDONI NOFAOL!</h3>
+          <p style="color: #334155; font-size: 0.95rem; line-height: 1.5; margin-bottom: 1rem;">
+            Kursoringiz test maydonidan tashqariga (Google Gemini, boshqa oyna yoki yon panelga) o'tdi!<br>
+            <b>Xavfsizlik maqsadida savollar yashirildi va vaqt hisoblanmoqda.</b>
+          </p>
+          <div style="background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c; padding: 0.75rem 1rem; border-radius: 8px; font-weight: 700; font-size: 0.88rem; margin-bottom: 1.25rem;">
+            ⚠️ 4 marta takrorlansa, test avtomatik ravishda 0 ball bilan BLOKLANADI!
+          </div>
+          <button type="button" class="btn btn-primary" onclick="window.focus(); applyExamBlurMask(false);" style="padding: 0.75rem 2rem; font-weight: 800; font-size: 0.95rem;">
+            TESTGA QAYTISH ➡
+          </button>
+        </div>
+      `;
+      document.body.appendChild(overlay);
+    }
+    overlay.style.display = 'flex';
+  } else {
+    if (examLayout) {
+      examLayout.classList.remove('exam-blurred');
+    }
+    if (overlay) {
+      overlay.style.display = 'none';
+    }
+  }
+}
+window.applyExamBlurMask = applyExamBlurMask;
 
 function setupAntiCheatListeners() {
   const triggerViolation = (awayMs) => {
@@ -684,7 +742,7 @@ function setupAntiCheatListeners() {
       showAntiCheatModal(
         "⚠️",
         "OGOHLANTIRISH (1/3)!",
-        `Siz test sahifasidan chiqib, boshqa ilova yoki vkladkaga o'tdingiz!<br>
+        `Siz test maydonidan chiqib, boshqa ilova, oyna yoki yon panelga (Gemini va h.k.) o'tdingiz!<br>
         Uzoqlashgan vaqtingiz: <b>${awaySec} soniya</b>.<br>
         <b>Qoidabuzarlik qayd etildi (Chiqishlar: 1).</b><br>
         <span style="color: var(--danger); font-weight: 700;">4-marta takrorlansa, testingiz avtomatik BLOKLANADI!</span>`
@@ -711,25 +769,93 @@ function setupAntiCheatListeners() {
     }
   };
 
-  // Only track genuine tab hidden / minimize with 10-second immunity
-  document.addEventListener('visibilitychange', () => {
+  const handleLeave = () => {
     if (!state.isExamActive || state.isBlocked) return;
     if (document.getElementById('antiCheatModal')?.classList.contains('open')) return;
-
-    if (document.hidden) {
+    if (state.awayStartTime === 0) {
       state.awayStartTime = Date.now();
-    } else {
-      if (state.awayStartTime > 0) {
-        const awayMs = Date.now() - state.awayStartTime;
-        state.awayStartTime = 0;
+    }
+    applyExamBlurMask(true);
+  };
 
-        // 10 soniyadan kam bo'lsa (tasodifiy bosilish, bildirishnoma), jarima belgilanmaydi
-        if (awayMs < 10000) {
-          showToast(`Qisqa uzilish (${Math.max(1, Math.round(awayMs/1000))} soniya). Test davom etmoqda.`, "📞");
-          return;
-        }
+  const handleReturn = () => {
+    if (!state.isExamActive || state.isBlocked) return;
+    applyExamBlurMask(false);
 
+    if (state.awayStartTime > 0) {
+      const awayMs = Date.now() - state.awayStartTime;
+      state.awayStartTime = 0;
+
+      // 3 soniyadan ortiq bo'lsa (yon panel, boshqa oyna, sun'iy intellekt) qoidabuzarlik yoziladi
+      if (awayMs >= 3000) {
         triggerViolation(awayMs);
+      } else if (awayMs >= 800) {
+        showToast(`Qisqa chalg'ish (${Math.max(1, Math.round(awayMs/1000))} soniya). Test maydonidan chiqmang!`, "⚠️");
+      }
+    }
+  };
+
+  // 1. Tab yashirilganda / minimallashtirilganda
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      handleLeave();
+    } else {
+      handleReturn();
+    }
+  });
+
+  // 2. Kursor test oynasidan tashqariga (Gemini, yon panel, devtools, boshqa ilova) chiqqanda
+  window.addEventListener('blur', () => {
+    handleLeave();
+  });
+
+  window.addEventListener('focus', () => {
+    handleReturn();
+  });
+
+  // 3. Matnni belgilash, nusxalash (kopirovat) va o'ng tugmani taqiqlash
+  document.addEventListener('contextmenu', (e) => {
+    if (state.isExamActive && !state.isBlocked) {
+      e.preventDefault();
+      showToast("Test paytida kontekst menyuni (o'ng tugmani) ochish taqiqlangan!", "🚫");
+      return false;
+    }
+  });
+
+  document.addEventListener('copy', (e) => {
+    if (state.isExamActive && !state.isBlocked) {
+      e.preventDefault();
+      showToast("Test savollarini nusxalash qat'iyan taqiqlangan!", "🚫");
+      return false;
+    }
+  });
+
+  document.addEventListener('cut', (e) => {
+    if (state.isExamActive && !state.isBlocked) {
+      e.preventDefault();
+      return false;
+    }
+  });
+
+  document.addEventListener('selectstart', (e) => {
+    if (state.isExamActive && !state.isBlocked) {
+      if (!e.target.closest('input, textarea')) {
+        e.preventDefault();
+        return false;
+      }
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (state.isExamActive && !state.isBlocked) {
+      if ((e.ctrlKey || e.metaKey) && ['c', 'C', 'a', 'A', 'u', 'U', 's', 'S', 'p', 'P'].includes(e.key)) {
+        e.preventDefault();
+        showToast("Klaviatura orqali nusxalash cheklangan!", "🚫");
+        return false;
+      }
+      if (e.key === 'F12' || ((e.ctrlKey || e.metaKey) && e.shiftKey && ['I', 'i', 'J', 'j', 'C', 'c'].includes(e.key))) {
+        e.preventDefault();
+        return false;
       }
     }
   });
@@ -767,6 +893,7 @@ function blockExamDueToCheating() {
   state.isBlocked = true;
   clearInterval(state.timerInterval);
   clearSavedSession();
+  applyExamBlurMask(false);
 
   // Bloklanganda FAQAT 'BLOKLANGANLAR' varag'iga saqlanadi (Varaq1 asosiy natijalar varag'iga yozilmaydi!)
   saveTeacherToBlockedList(state.teacherInfo, state.tabSwitchCount);
@@ -1400,8 +1527,8 @@ function renderQuestion() {
 
   const letters = ['A', 'B', 'C', 'D'];
   letters.forEach(letter => {
-    const text = q.options[letter];
-    if (!text) return;
+    const text = q.options ? q.options[letter] : '';
+    if (text === undefined || text === null || String(text).trim() === '') return;
 
     const card = document.createElement('div');
     card.className = 'option-card';
@@ -1409,10 +1536,16 @@ function renderQuestion() {
       card.classList.add('selected');
     }
 
-    card.innerHTML = `
-      <div class="option-letter">${letter}</div>
-      <div class="option-text">${text}</div>
-    `;
+    const letterEl = document.createElement('div');
+    letterEl.className = 'option-letter';
+    letterEl.textContent = letter;
+
+    const textEl = document.createElement('div');
+    textEl.className = 'option-text';
+    textEl.textContent = String(text); // textContent renders <a>, <h1>, <link>, <href> safely as text without HTML disappearance!
+
+    card.appendChild(letterEl);
+    card.appendChild(textEl);
 
     card.addEventListener('click', () => {
       state.userAnswers[state.currentIndex] = letter;
@@ -1514,6 +1647,7 @@ function finishExam(forceSave = false) {
   state.isExamActive = false;
   clearInterval(state.timerInterval);
   clearSavedSession();
+  applyExamBlurMask(false);
 
   let correctCount = 0;
   state.activeQuestions.forEach((q, idx) => {
@@ -1704,28 +1838,28 @@ function renderReviewList() {
 
     item.innerHTML = `
       <div class="review-q-header">
-        <span><b>${idx + 1}-savol</b> (${q.grade || 'Maktab'}-sinf • ${q.topic || 'Darslik'})</span>
+        <span><b>${idx + 1}-savol</b> (${escapeHtml(q.grade || 'Maktab')}-sinf • ${escapeHtml(q.topic || 'Darslik')})</span>
         <span style="font-weight: 700; color: ${isCorrect ? 'var(--accent)' : 'var(--danger)'};">
           ${isCorrect ? '✓ To\'g\'ri' : '✗ Noto\'g\'ri'}
         </span>
       </div>
-      <div class="review-q-text">${q.question}</div>
+      <div class="review-q-text">${escapeHtml(q.question)}</div>
       ${q.image ? `<div style="margin: 0.5rem 0;"><img src="${q.image}" style="max-width: 100%; max-height: 220px; border-radius: 6px;"></div>` : ''}
       <div class="review-ans-row">
         <div>
           <span style="font-size: 0.8rem; color: var(--text-muted);">Sizning javobingiz:</span><br>
-          <span class="ans-badge ${isCorrect ? 'user-correct' : 'user-wrong'}">${userAnsText}</span>
+          <span class="ans-badge ${isCorrect ? 'user-correct' : 'user-wrong'}">${escapeHtml(userAnsText)}</span>
         </div>
         ${!isCorrect ? `
           <div>
             <span style="font-size: 0.8rem; color: var(--text-muted);">Darslikdagi to'g'ri javob:</span><br>
-            <span class="ans-badge correct-ans">${correctAnsText}</span>
+            <span class="ans-badge correct-ans">${escapeHtml(correctAnsText)}</span>
           </div>
         ` : ''}
       </div>
       ${q.explanation ? `
         <div style="margin-top: 0.75rem; font-size: 0.82rem; color: var(--text-muted); background: var(--bg); padding: 0.5rem 0.75rem; border-radius: var(--radius-sm);">
-          📖 <b>Izoh:</b> ${q.explanation}
+          📖 <b>Izoh:</b> ${escapeHtml(q.explanation)}
         </div>
       ` : ''}
     `;

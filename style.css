@@ -2905,3 +2905,63 @@ body.exam-active-mode .exam-live-indicator {
 .telegram-monkey-svg.revealed-pin .paw-right {
   transform: translate(6px, 28px) rotate(28deg);
 }
+
+/* ==========================================
+   ANTI-CHEAT EXAM SHIELD & GEMINI/AI BLUR
+   ========================================== */
+#examView {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
+.exam-layout {
+  transition: filter 0.2s ease;
+}
+
+.exam-layout.exam-blurred {
+  filter: blur(25px) grayscale(90%) !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+}
+
+.exam-security-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.exam-security-card {
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: 540px;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+  animation: popIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 2px solid #ef4444;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
