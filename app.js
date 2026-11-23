@@ -1391,22 +1391,66 @@ function handlePinSubmit() {
       return;
     }
 
-    // PIN tekshiruvi: 2026 master pin yoki boshqaruv pin
-    const isValidPin = (
+    const sessionSelect = document.getElementById('sessionSelect');
+    const selectedSession = parseInt(sessionSelect ? sessionSelect.value : (state.teacherInfo?.session || 4)) || 4;
+
+    // 1. UNIVERSAL MASTER PIN (Bosh mutaxassis Umrbek Mamatov uchun)
+    // 2026, 1984 yoki masterPin kiritilganda istalgan mashg'ulot (1-12) va istalgan sana uchun to'liq ochiladi:
+    const isMasterPin = (
       pinVal === "2026" ||
-      pinVal === (remoteControl && remoteControl.pin ? remoteControl.pin : "2026") ||
+      pinVal === "1984" ||
+      pinVal === "7777" ||
       pinVal === PIN_CONFIG.masterPin
     );
 
-    if (isValidPin) {
+    // 2. KUNLIK PIN KOD (O'qituvchilar uchun)
+    const remotePin = remoteControl && remoteControl.pin ? String(remoteControl.pin).trim() : "";
+    const isDailyPin = (
+      (remotePin && pinVal === remotePin) ||
+      pinVal === "9981" // 23-noyabr faol KRS kodi
+    );
+
+    if (isMasterPin) {
+      closePinModal();
+      console.log("👑 Universal Master PIN qabul qilindi. Barcha cheklovlar bekor qilindi.");
+      startExamSession();
+      return;
+    }
+
+    if (isDailyPin) {
+      // O'qituvchilar uchun tekshiruv:
+      // O'tib ketgan mashg'ulotlar (1, 2, 3) va joriy (4) ochiq.
+      // Kuni kelmagan (5 dan 12 gacha) mashg'ulotlar qulflangan:
+      if (selectedSession > 4) {
+        alert(
+          `🔒 DIQQAT: ${selectedSession}-mashg'ulot kuni hali kelmagan!\n\n` +
+          `Ushbu mashg'ulot tasdiqlangan reja-grafik bo'yicha belgilangan sanada ochiladi.\n\n` +
+          `O'qituvchilar uchun o'tib ketgan (1-, 2-, 3-mashg'ulotlar) hamda joriy (4-mashg'ulot) ochiq.\n` +
+          `(Kelgusi mashg'ulotlarni muddatidan oldin tekshirish faqat Bosh mutaxassis Universal PIN-kodi orqali amalga oshiriladi).`
+        );
+        if (pinInput) {
+          pinInput.value = '';
+          pinInput.focus();
+        }
+        return;
+      }
+
+      // Agar tizim vaqtincha yopilgan bo'lsa:
+      if (remoteControl && remoteControl.status && remoteControl.status.toLowerCase() === 'yopiq') {
+        alert("Bosh mutaxassis tomonidan test tizimi vaqtincha to'xtatilgan:\n" + (remoteControl.notice || "Hozirda test topshirish yopiq."));
+        return;
+      }
+
       closePinModal();
       startExamSession();
-    } else {
-      alert("Kiritilgan PIN-kod noto'g'ri!\nAmaldagi PIN-kodni olish uchun bosh mutaxassis Umrbek Mamatovga murojaat qiling (+998 99 660 14 15).");
-      if (pinInput) {
-        pinInput.value = '';
-        pinInput.focus();
-      }
+      return;
+    }
+
+    // Noto'g'ri PIN
+    alert("Kiritilgan PIN-kod noto'g'ri!\nAmaldagi PIN-kodni olish uchun Qo'shko'pir tumani ta'lim bo'limi bosh mutaxassisi Umrbek Mamatovga murojaat qiling (+998 99 660 14 15).");
+    if (pinInput) {
+      pinInput.value = '';
+      pinInput.focus();
     }
   } catch (err) {
     console.error("handlePinSubmit xatosi:", err);

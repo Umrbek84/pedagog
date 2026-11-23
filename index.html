@@ -156,35 +156,25 @@
             <div class="form-group">
               <label class="form-label" for="sessionSelect">3. KRS Mashg'uloti (Mavzu / Bosqich) *</label>
                             <select id="sessionSelect" class="form-select" required>
-                <!-- O'tib ketgan mashg'ulotlar (Xira) -->
-                <option value="1" disabled style="color: #94a3b8; background: #f1f5f9;">
-                  🔒 1-mashg'ulot (12-oktabr) — O'tib ketgan
-                </option>
-                <option value="2" disabled style="color: #94a3b8; background: #f1f5f9;">
-                  🔒 2-mashg'ulot (26-oktabr) — O'tib ketgan
-                </option>
-                <option value="3" disabled style="color: #94a3b8; background: #f1f5f9;">
-                  🔒 3-mashg'ulot (09-noyabr) — O'tib ketgan
-                </option>
+                <!-- O'tib ketgan mashg'ulotlar (O'qituvchilar uchun Ochiq) -->
+                <option value="1">🟢 1-mashg'ulot (12-oktabr) — O'tib ketgan (Ochiq)</option>
+                <option value="2">🟢 2-mashg'ulot (26-oktabr) — O'tib ketgan (Ochiq)</option>
+                <option value="3">🟢 3-mashg'ulot (09-noyabr) — O'tib ketgan (Ochiq)</option>
 
-                <!-- Tayyor bo'lgan mashg'ulotlar (Barchasi Ochiq va Faol) -->
+                <!-- Joriy faol mashg'ulot -->
                 <option value="4" selected style="font-weight: 800; color: #047857; background: #ecfdf5;">
-                  🔥 4-mashg'ulot (23–28-noyabr) — ✅ FAOL / OCHIQ (25 ta savol)
-                </option>
-                <option value="5" style="font-weight: 800; color: #1e40af; background: #eff6ff;">
-                  📅 5-mashg'ulot (07–12-dekabr) — ✅ TAYYOR / OCHIQ (25 ta savol)
-                </option>
-                <option value="6" style="font-weight: 800; color: #1e40af; background: #eff6ff;">
-                  📅 6-mashg'ulot (21–26-dekabr) — ✅ TAYYOR / OCHIQ (25 ta savol)
+                  🔥 4-mashg'ulot (23–28-noyabr) — ⚡️ FAOL KRS KUNI (25 ta savol)
                 </option>
 
-                <!-- Reja bo'yicha keyingi mashg'ulotlar -->
-                <option value="7" disabled style="color: #cbd5e1;">7-mashg'ulot (04-yanvar) — 🔒 Reja bo'yicha</option>
-                <option value="8" disabled style="color: #cbd5e1;">8-mashg'ulot (18-yanvar) — 🔒 Reja bo'yicha</option>
-                <option value="9" disabled style="color: #cbd5e1;">9-mashg'ulot (01-fevral) — 🔒 Reja bo'yicha</option>
-                <option value="10" disabled style="color: #cbd5e1;">10-mashg'ulot (15-fevral) — 🔒 Reja bo'yicha</option>
-                <option value="11" disabled style="color: #cbd5e1;">11-mashg'ulot (01-mart) — 🔒 Reja bo'yicha</option>
-                <option value="12" disabled style="color: #cbd5e1;">12-mashg'ulot (29-mart) — 🔒 Reja bo'yicha</option>
+                <!-- Kelajakdagi mashg'ulotlar (Faqat Universal PIN bilan ochiladi) -->
+                <option value="5">🔒 5-mashg'ulot (07–12-dekabr) — Kuni kelmagan (Reja)</option>
+                <option value="6">🔒 6-mashg'ulot (21–26-dekabr) — Kuni kelmagan (Reja)</option>
+                <option value="7">🔒 7-mashg'ulot (04-yanvar) — Kuni kelmagan (Reja)</option>
+                <option value="8">🔒 8-mashg'ulot (18-yanvar) — Kuni kelmagan (Reja)</option>
+                <option value="9">🔒 9-mashg'ulot (01-fevral) — Kuni kelmagan (Reja)</option>
+                <option value="10">🔒 10-mashg'ulot (15-fevral) — Kuni kelmagan (Reja)</option>
+                <option value="11">🔒 11-mashg'ulot (01-mart) — Kuni kelmagan (Reja)</option>
+                <option value="12">🔒 12-mashg'ulot (29-mart) — Kuni kelmagan (Reja)</option>
               </select>
             </div>
 
@@ -972,7 +962,10 @@
           <a class="pin-contact-link" href="https://t.me/umrbek_mamatov" target="_blank" rel="noopener">✈️ Telegram: @umrbek_mamatov</a>
         </div>
       </div>
-      <div class="modal-actions" style="margin-top: 1.25rem;">
+      <div class="modal-actions" style="margin-top: 1.25rem; display: flex; flex-direction: column; gap: 8px;">
+        <button type="button" class="btn btn-primary btn-block" onclick="document.getElementById('systemClosedModal').classList.remove('open'); openPinModal();">
+          👑 Bosh mutaxassis (Universal PIN) orqali ochish
+        </button>
         <button type="button" class="btn btn-secondary btn-block" onclick="document.getElementById('systemClosedModal').classList.remove('open')">
           Tushundim, yopish
         </button>
