@@ -20398,5 +20398,1280 @@
     "correct": "A",
     "explanation": "Zamonaviy chet tili o'qituvchisi o'quvchiga dunyoga yo'l ochuvchi erkin va madaniyatlararo muloqot qobiliyatini beradi.",
     "answer": "C"
+  },
+  {
+    "id": "tarb-1-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "5-sinf Vatan tuyg'usi. Vatan – yagona va muqaddas",
+    "question": "5-sinf 'Vatan tuyg'usi' darsligida Vatan tushunchasi dastlab nima bilan bog'lab tushuntiriladi?",
+    "options": {
+      "A": "Inson tug'ilib o'sgan uy, ostonasi va ona allasi yangragan zamin bilan",
+      "B": "Faqatgina ma'muriy chegara va pasport bilan",
+      "C": "Chet davlatlarga sayohat qilish imkoniyati bilan",
+      "D": "Faqat tabiiy boyliklar va qazilma konlar bilan"
+    },
+    "answer": "A",
+    "explanation": "5-sinf 'Vatan tuyg'usi': Vatan tushunchasi inson tug'ilib o'sgan ostonasi, kindik qoni to'kilgan go'shasi va oilasidan boshlanadi.",
+    "session": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-2-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "5-sinf Vatan tuyg'usi. Davlatimiz ramzlari",
+    "question": "O'zbekiston Respublikasining Davlat bayrog'i qaysi sanada qabul qilingan?",
+    "options": {
+      "A": "1991-yil 18-noyabrda",
+      "B": "1992-yil 2-iyulda",
+      "C": "1991-yil 31-avgustda",
+      "D": "1992-yil 8-dekabrda"
+    },
+    "answer": "A",
+    "explanation": "O'zbekiston Respublikasining Davlat bayrog'i 1991-yil 18-noyabrda qabul qilingan.",
+    "session": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-3-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "5-sinf Vatan tuyg'usi. Oila — Vatan timsoli",
+    "question": "Nima sababdan oila jamiyatning va Vatanning eng kichik poydevori (timsoli) hisoblanadi?",
+    "options": {
+      "A": "Vatanga muhabbat va odob-axloq fazilatlari dastlab oilada shakllangani uchun",
+      "B": "Faqat moddiy daromad keltirgani uchun",
+      "C": "Qonunlar faqat oilada qabul qilingani uchun",
+      "D": "Oilada hech qanday tartib-qoida bo'lmagani uchun"
+    },
+    "answer": "A",
+    "explanation": "Oila mustahkam bo'lsa, jamiyat va Vatan qudratli bo'ladi. Ilk tarbiya va Vatanga muhabbat oiladan boshlanadi.",
+    "session": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-4-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "5-sinf Vatan tuyg'usi. Sohibqiron Amir Temur o'gitlari",
+    "question": "Sohibqiron Amir Temurning davlat boshqaruvi va adolat ramzi bo'lgan mashhur shiori qaysi?",
+    "options": {
+      "A": "Kuch — adolatdadir",
+      "B": "Bilim — boylikdir",
+      "C": "Kuch — quroldadir",
+      "D": "Mulki — davlatdadir"
+    },
+    "answer": "A",
+    "explanation": "Amir Temur o'zining butun hayoti va saltanat boshqaruvida 'Kuch — adolatdadir' shioriga tayangan.",
+    "session": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-5-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "6-sinf Vatan tuyg'usi. Vatan ozodligi – oliy saodat",
+    "question": "O'zbekiston Respublikasining davlat mustaqilligi qachon e'lon qilingan?",
+    "options": {
+      "A": "1991-yil 31-avgustda",
+      "B": "1991-yil 1-sentabrda",
+      "C": "1992-yil 8-dekabrda",
+      "D": "1993-yil 1-yanvarda"
+    },
+    "answer": "A",
+    "explanation": "1991-yil 31-avgustda O'zbekiston mustaqilligi e'lon qilingan, 1-sentabr esa Mustaqillik kuni sifatida nishonlanadi.",
+    "session": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-6-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "6-sinf Vatan tuyg'usi. Milliy va umumbashariy qadriyatlar",
+    "question": "Milliy qadriyatlar bilan umumbashariy qadriyatlar o'rtasidagi bog'liqlik qanday ifodalanadi?",
+    "options": {
+      "A": "Milliy qadriyatlar umuminsoniy ezgu g'oyalar bilan boyib, uyg'unlashib boradi",
+      "B": "Ular doimo bir-birini inkor etadi",
+      "C": "Faqat chet el tajribasi qadriyat hisoblanadi",
+      "D": "Milliy qadriyatlar faqat o'tmishga tegishli bo'lib, bugunga taalluqli emas"
+    },
+    "answer": "A",
+    "explanation": "Haqiqiy milliy qadriyatlar umuminsoniy ezgulik, insonparvarlik va adolat tamoyillari bilan uyg'unlashgan holda rivojlanadi.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-7-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "6-sinf Vatan tuyg'usi. Ta'lim va tarbiya uyg'unligi",
+    "question": "Ma'rifatparvar Abdulla Avloniy ta'lim va tarbiya haqida qanday mashhur fikrni bildirgan?",
+    "options": {
+      "A": "Tarbiya biz uchun yo hayot — yo mamot, yo najot — yo halokat, yo saodat — yo falokat masalasidir",
+      "B": "Ilm faqat boylik to'plash vositasidir",
+      "C": "Tarbiya ta'limdan butunlay ajralgan holda o'rganiladi",
+      "D": "Har kim faqat o'z manfaati uchun o'qishi kerak"
+    },
+    "answer": "A",
+    "explanation": "Abdulla Avloniy: 'Tarbiya biz uchun yo hayot — yo mamot, yo najot — yo halokat, yo saodat — yo falokat masalasidir'.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-8-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "6-sinf Vatan tuyg'usi. Tarixiy xotira",
+    "question": "Tarixiy xotiraga ega bo'lgan insonning eng muhim fazilati nima?",
+    "options": {
+      "A": "O'z o'tmishini, buyuk ajdodlari merosini biladi va undan g'ururlanib kelajakka intiladi",
+      "B": "O'tmishni butunlay unutib faqat bugun bilan yashaydi",
+      "C": "O'zga xalqlar tarixini o'z tariximizdan ustun qo'yadi",
+      "D": "Barcha tarixiy obidalarni buzish tarafdori bo'ladi"
+    },
+    "answer": "A",
+    "explanation": "Tarixiy xotira insonni o'zligini anglashga, ajdodlar merosiga sodiq qolib, yurt ravnaqiga hissa qo'shishga o'rgatadi.",
+    "session": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-9-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "7-sinf Milliy istiqlol g'oyasi. Milliy g'oyaning bosh maqsadi",
+    "question": "Milliy istiqlol g'oyasining bosh maqsadi to'g'ri ko'rsatilgan qatorni toping:",
+    "options": {
+      "A": "Ozod va obod Vatan, erkin va farovon hayot barpo etish",
+      "B": "Faqat sanoat korxonalari sonini ko'paytirish",
+      "C": "Barcha sohada chet el andazalarini to'liq ko'chirish",
+      "D": "Faqatgina ma'muriy boshqaruvni kuchaytirish"
+    },
+    "answer": "A",
+    "explanation": "O'zbekiston milliy taraqqiyot g'oyasining bosh maqsadi — Ozod va obod Vatan, erkin va farovon hayot barpo etishdir.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-10-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "7-sinf Milliy istiqlol g'oyasi. Ma'naviyat va ma'rifat",
+    "question": "'Ma'naviyat' so'zining tub ma'nosi qaysi tushunchadan olingan?",
+    "options": {
+      "A": "Arabcha 'ma'no' so'zidan olingan bo'lib, insonning ruhiy olami va axloqiy fazilatlarini bildiradi",
+      "B": "Lotincha 'qudrat' ma'nosini bildiradi",
+      "C": "Faqatgina jismoniy kuch-quvvatni bildiradi",
+      "D": "Moddiy boylik to'plash ma'nosini bildiradi"
+    },
+    "answer": "A",
+    "explanation": "Ma'naviyat — arabcha 'ma'nolar majmui' degan so'zdan bo'lib, insonning ruhiy, axloqiy va ma'rifiy saviyasini anglatadi.",
+    "session": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-11-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "7-sinf Milliy istiqlol g'oyasi. Komil inson g'oyasi",
+    "question": "Sharq mutafakkirlari ta'limotida 'Komil inson' kim?",
+    "options": {
+      "A": "Jismoniy, ma'naviy, axloqiy va aqliy yetuklikni o'zida mujassam etgan shaxs",
+      "B": "Faqat mol-mulki ko'p bo'lgan inson",
+      "C": "Jamiyatdan ajralib yakkalangan inson",
+      "D": "Faqatgina mansabdor shaxs"
+    },
+    "answer": "A",
+    "explanation": "Komil inson — chuqur bilim, yuksak odob-axloq, vatanparvarlik va ruhiy poklik egasidir.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-12-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "8-sinf Milliy istiqlol g'oyasi. Mafkuraviy immunitet",
+    "question": "Mafkuraviy immunitet nima?",
+    "options": {
+      "A": "Inson qalbini yot va buzg'unchi g'oyalardan himoya qiluvchi ma'naviy qalqon",
+      "B": "Faqat tibbiy yo'l bilan hosil qilinadigan immunitet",
+      "C": "Xorijiy tillarni o'rganishni taqiqlash",
+      "D": "Barcha yangiliklarni rad etish"
+    },
+    "answer": "A",
+    "explanation": "Mafkuraviy immunitet — insonni yot mafkuralar, axborot xurujlari va ma'naviy tahdidlardan himoya qiluvchi barqaror e'tiqoddir.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-13-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "8-sinf Milliy istiqlol g'oyasi. O'zlikni anglash",
+    "question": "Insonning o'zligini anglashi deganda nimani tushunasiz?",
+    "options": {
+      "A": "O'zining qaysi xalqqa mansubligi, ona tili, madaniyati va tarixiy ildizlarini chuqur his etishi",
+      "B": "O'zini boshqalardan ustun qo'yishi",
+      "C": "Faqat shaxsiy boyligini hisoblashi",
+      "D": "Boshqa millatlarni kamsitishi"
+    },
+    "answer": "A",
+    "explanation": "O'zlikni anglash — tarixiy ildizlarni, ona tilini, milliy qadriyatlarni bilish va faxrlanish orqali yuzaga keladi.",
+    "session": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-14-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "8-sinf Milliy istiqlol g'oyasi. Yuksak ma'naviyat",
+    "question": "Quyidagilardan qaysi biri yuksak ma'naviyatli insonning kundalik faoliyatida aks etadi?",
+    "options": {
+      "A": "Halollik, vatanparvarlik, kattalarga hurmat va mehnatsevarlik",
+      "B": "Befarqlik va loqaydlik",
+      "C": "Manmanlik va kibr",
+      "D": "Birovning haqqiga xiyonat qilish"
+    },
+    "answer": "A",
+    "explanation": "Halollik, mehr-oqibat, adolat va vatanparvarlik yuksak ma'naviyatning amaliy mezonlaridir.",
+    "session": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-15-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "9-sinf Milliy istiqlol g'oyasi. Fuqarolik jamiyati",
+    "question": "Fuqarolik jamiyatining eng muhim ustunlaridan biri nima?",
+    "options": {
+      "A": "Qonun ustuvorligi va inson huquqlarining kafolatlanganligi",
+      "B": "Fuqarolarning barcha huquqlardan mahrum etilishi",
+      "C": "Faqat davlat idoralari xohishi bilan ish ko'rish",
+      "D": "Jamoat nazoratining umuman yo'qligi"
+    },
+    "answer": "A",
+    "explanation": "Fuqarolik jamiyatida qonun ustuvorligi, so'z erkinligi, jamoat nazorati va inson manfaatlari birlamchi o'rinda turadi.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-16-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "9-sinf Milliy istiqlol g'oyasi. Diniy bag'rikenglik",
+    "question": "O'zbekistonda diniy bag'rikenglik (tolerantlik) tamoyili qanday ta'minlanadi?",
+    "options": {
+      "A": "Turli din va e'tiqod vakillarining tinch-totuv yashashi va qonun oldida tengligi bilan",
+      "B": "Faqat bir dinga erkinlik berish orqali",
+      "C": "Diniy e'tiqodlarni butunlay taqiqlash orqali",
+      "D": "Diniy konfessiyalarni majburiy birlashtirish orqali"
+    },
+    "answer": "A",
+    "explanation": "Konstitutsiyamizga binoan, barcha diniy konfessiyalar qonun oldida teng bo'lib, bag'rikenglik yurtimizdagi tinchlik asosidir.",
+    "session": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-17-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "9-sinf Milliy istiqlol g'oyasi. Millatlararo totuvlik",
+    "question": "O'zbekistonda istiqomat qiluvchi 130 dan ortiq millat va elatlar o'rtasidagi totuvlikning ma'naviy asosi nima?",
+    "options": {
+      "A": "O'zbek xalqining bag'rikengligi, mehmondo'stligi va umumiy Vatan tuyg'usi",
+      "B": "Milliy ayirmachilik g'oyalari",
+      "C": "Boshqa millatlarni o'z madaniyatidan voz kechishga majburlash",
+      "D": "Millatlararo muloqotni cheklash"
+    },
+    "answer": "A",
+    "explanation": "Yagona Vatan tuyg'usi va bag'rikenglik ko'p millatli xalqimizning tinchligi va barqarorligi garovidir.",
+    "session": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-18-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "10-sinf Ma’naviyat asoslari. Sharqona axloq va odob",
+    "question": "Sharq ma'naviyatida 'Kattaga hurmat, kichikka izzat' qoidasi nima uchun muhim hisoblanadi?",
+    "options": {
+      "A": "Avlodlar o'rtasidagi uzviylik, mehr-oqibat va jamiyatdagi totuvlikni saqlab qolish uchun",
+      "B": "Faqatgina rasmiy marosimlarda ko'rsatish uchun",
+      "C": "Kichiklarning huquqlarini cheklash uchun",
+      "D": "Kattalarga so'zsiz bo'ysunish majburiyatini yuklash uchun"
+    },
+    "answer": "A",
+    "explanation": "Kattalarga hurmat va kichiklarga shafqat o'zbek xalqining eng oliy milliy axloqiy fazilatlaridan biridir.",
+    "session": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-19-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "10-sinf Ma’naviyat asoslari. Milliy g'urur va millatchilik",
+    "question": "Haqiqiy 'Milliy g'urur' bilan 'Millatchilik' (shovinizm) o'rtasidagi asosiy farq nima?",
+    "options": {
+      "A": "Milliy g'urur o'z xalqini sevib boshqalarni hurmat qiladi; millatchilik esa o'z millatini ustun qo'yib, o'zgalarni kamsitadi",
+      "B": "Ular orasida hech qanday farq yo'q",
+      "C": "Millatchilik faqat ijobiy hodisa hisoblanadi",
+      "D": "Milliy g'urur faqat chet tili biluvchilarda bo'ladi"
+    },
+    "answer": "A",
+    "explanation": "Milliy g'urur — o'z xalqi va madaniyati bilan faxrlanish bilan birga boshqa millatlarni e'zozlash demakdir.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-20-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "11-sinf Ma’naviyat asoslari. Globallashuv va axborot xavfsizligi",
+    "question": "Globallashuv sharoitida yoshlarda 'axborot madaniyati'ni shakllantirish nima uchun dolzarb?",
+    "options": {
+      "A": "Internet va ijtimoiy tarmoqlardagi feyk, buzg'unchi va zararli ma'lumotlarni saralab, to'g'ri xulosa chiqara olishi uchun",
+      "B": "Internetdan butunlay foydalanmaslikni ta'minlash uchun",
+      "C": "Faqat o'yin va ko'ngilochar saytlarga kirishni o'rgatish uchun",
+      "D": "Kompyuter tezligini oshirish uchun"
+    },
+    "answer": "A",
+    "explanation": "Axborot madaniyati — axborot oqimidan to'g'ri, foydali va xolis ma'lumotni ajrata olish ko'nikmasidir.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-21-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "4-mavzu: Sinf amaliyotini tadqiq etish (Action Research)",
+    "question": "Tarbiya fani o'qituvchisi uchun 'Sinf amaliyotini tadqiq etish' (Action Research)ning asosiy maqsadi nima?",
+    "options": {
+      "A": "O'zining o'qitish usullarini tahlil qilib, o'quvchilarning odob-axloq va qadriyatlarni o'zlashtirishini yaxshilash",
+      "B": "O'quvchilarga ko'proq yozma jazo berish",
+      "C": "Faqat rasmiy hisobotlarni to'ldirish",
+      "D": "Darslikdagi matnlarni so'zma-so'z yodlatish"
+    },
+    "answer": "A",
+    "explanation": "Action Research — o'qituvchining o'z pedagogik faoliyatini muntazam kuzatib, yuzaga kelgan muammolarni ilmiy-amaliy hal etish jarayonidir.",
+    "session": 4,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tarb-22-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "4-mavzu: Dalilga asoslangan ta'lim (Evidence-based education)",
+    "question": "Tarbiya darslarida 'Dalilga asoslangan ta'lim' texnologiyasi qanday qo'llaniladi?",
+    "options": {
+      "A": "O'quvchilar xulq-atvori, guruhdagi munosabatlari va fikrlash darajasini kuzatish va diagnostik tahlillar asosida darsni rejalashtirish",
+      "B": "Faqat dars oxirida test olib xulosa qilish",
+      "C": "Boshqa maktab o'quvchilarini misol qilib ko'rsatish",
+      "D": "Faqat intizomi buzilgan o'quvchilarni jazolash"
+    },
+    "answer": "A",
+    "explanation": "Dalilga asoslangan ta'limda taxminlarga emas, balki real kuzatuvlar, formativ baholash va diagnostik dalillarga tayaniladi.",
+    "session": 4,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tarb-23-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "4-mavzu: Keys-stadi va muammoli vaziyatlar",
+    "question": "Tarbiya darsida o'quvchilarda axloqiy tanlov ko'nikmasini shakllantirishda qaysi metod eng yuqori samaradorlik beradi?",
+    "options": {
+      "A": "Haqiqiy hayotiy vaziyatlarga asoslangan axloqiy keyslar (Case study) va rolli o'yinlar",
+      "B": "Mavzuni faqat o'qituvchi tomonidan ma'ruza qilib berilishi",
+      "C": "Darslikdagi matnni daftarga ko'chirib yozish",
+      "D": "O'quvchilarni faqat jim o'tirishini talab qilish"
+    },
+    "answer": "A",
+    "explanation": "Hayotiy keyslar orqali o'quvchi o'zini muayyan axloqiy vaziyatga qo'yib ko'radi va to'g'ri mustaqil qaror qabul qilishni o'rganadi.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-24-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "4-mavzu: Reflektiv o'qitish (Reflective teaching)",
+    "question": "Tarbiya darsi yakunida o'qituvchi o'tkazadigan 'Refleksiya' jarayoni nimaga xizmat qiladi?",
+    "options": {
+      "A": "O'quvchi bugungi darsdan o'ziga qanday ma'naviy xulosa chiqarganini anglashiga",
+      "B": "O'quvchilarni jurnalga baho qo'yish bilan qo'rqitishga",
+      "C": "Faqat keyingi darsga uy vazifasi berishga",
+      "D": "Vaqtni cho'zishga"
+    },
+    "answer": "A",
+    "explanation": "Refleksiya — o'quvchining o'z his-tuyg'ulari, xatti-harakatlari va olgan xulosalarini ichki tahlil qilish jarayonidir.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-25-s4",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "4-mavzu: Empatiya va jamoaviylik",
+    "question": "O'quvchilarda empatiya (boshqalarning holatini his qilish va tushunish) tuyg'usini rivojlantirish uchun qanday faoliyat tavsiya etiladi?",
+    "options": {
+      "A": "Birovga yordam berish, mehr-muruvvat loyihalarida qatnashish va rolli vaziyatlarni muhokama qilish",
+      "B": "Faqat shaxsiy raqobat va o'z manfaatini ko'zlash",
+      "C": "Yakka holda jim ishlab o'tirish",
+      "D": "Kamchiliklarni omma oldida muhokama qilib izza qilish"
+    },
+    "answer": "A",
+    "explanation": "Empatiya mehr-oqibat, muruvvat va birovning qayg'usiga sherik bo'lish ko'nikmalarini amaliy vaziyatlar orqali shakllantiradi.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-1-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "5-sinf Vatan tuyg'usi. Vatan – yagona va muqaddas",
+    "question": "5-sinf 'Vatan tuyg'usi' darsligida Vatan tushunchasi dastlab nima bilan bog'lab tushuntiriladi?",
+    "options": {
+      "A": "Inson tug'ilib o'sgan uy, ostonasi va ona allasi yangragan zamin bilan",
+      "B": "Faqatgina ma'muriy chegara va pasport bilan",
+      "C": "Chet davlatlarga sayohat qilish imkoniyati bilan",
+      "D": "Faqat tabiiy boyliklar va qazilma konlar bilan"
+    },
+    "answer": "A",
+    "explanation": "5-sinf 'Vatan tuyg'usi': Vatan tushunchasi inson tug'ilib o'sgan ostonasi, kindik qoni to'kilgan go'shasi va oilasidan boshlanadi.",
+    "session": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-2-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "5-sinf Vatan tuyg'usi. Davlatimiz ramzlari",
+    "question": "O'zbekiston Respublikasining Davlat bayrog'i qaysi sanada qabul qilingan?",
+    "options": {
+      "A": "1991-yil 18-noyabrda",
+      "B": "1992-yil 2-iyulda",
+      "C": "1991-yil 31-avgustda",
+      "D": "1992-yil 8-dekabrda"
+    },
+    "answer": "A",
+    "explanation": "O'zbekiston Respublikasining Davlat bayrog'i 1991-yil 18-noyabrda qabul qilingan.",
+    "session": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-3-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "5-sinf Vatan tuyg'usi. Oila — Vatan timsoli",
+    "question": "Nima sababdan oila jamiyatning va Vatanning eng kichik poydevori (timsoli) hisoblanadi?",
+    "options": {
+      "A": "Vatanga muhabbat va odob-axloq fazilatlari dastlab oilada shakllangani uchun",
+      "B": "Faqat moddiy daromad keltirgani uchun",
+      "C": "Qonunlar faqat oilada qabul qilingani uchun",
+      "D": "Oilada hech qanday tartib-qoida bo'lmagani uchun"
+    },
+    "answer": "A",
+    "explanation": "Oila mustahkam bo'lsa, jamiyat va Vatan qudratli bo'ladi. Ilk tarbiya va Vatanga muhabbat oiladan boshlanadi.",
+    "session": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-4-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "5-sinf Vatan tuyg'usi. Sohibqiron Amir Temur o'gitlari",
+    "question": "Sohibqiron Amir Temurning davlat boshqaruvi va adolat ramzi bo'lgan mashhur shiori qaysi?",
+    "options": {
+      "A": "Kuch — adolatdadir",
+      "B": "Bilim — boylikdir",
+      "C": "Kuch — quroldadir",
+      "D": "Mulki — davlatdadir"
+    },
+    "answer": "A",
+    "explanation": "Amir Temur o'zining butun hayoti va saltanat boshqaruvida 'Kuch — adolatdadir' shioriga tayangan.",
+    "session": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-5-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "6-sinf Vatan tuyg'usi. Vatan ozodligi – oliy saodat",
+    "question": "O'zbekiston Respublikasining davlat mustaqilligi qachon e'lon qilingan?",
+    "options": {
+      "A": "1991-yil 31-avgustda",
+      "B": "1991-yil 1-sentabrda",
+      "C": "1992-yil 8-dekabrda",
+      "D": "1993-yil 1-yanvarda"
+    },
+    "answer": "A",
+    "explanation": "1991-yil 31-avgustda O'zbekiston mustaqilligi e'lon qilingan, 1-sentabr esa Mustaqillik kuni sifatida nishonlanadi.",
+    "session": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-6-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "6-sinf Vatan tuyg'usi. Milliy va umumbashariy qadriyatlar",
+    "question": "Milliy qadriyatlar bilan umumbashariy qadriyatlar o'rtasidagi bog'liqlik qanday ifodalanadi?",
+    "options": {
+      "A": "Milliy qadriyatlar umuminsoniy ezgu g'oyalar bilan boyib, uyg'unlashib boradi",
+      "B": "Ular doimo bir-birini inkor etadi",
+      "C": "Faqat chet el tajribasi qadriyat hisoblanadi",
+      "D": "Milliy qadriyatlar faqat o'tmishga tegishli bo'lib, bugunga taalluqli emas"
+    },
+    "answer": "A",
+    "explanation": "Haqiqiy milliy qadriyatlar umuminsoniy ezgulik, insonparvarlik va adolat tamoyillari bilan uyg'unlashgan holda rivojlanadi.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-7-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "6-sinf Vatan tuyg'usi. Ta'lim va tarbiya uyg'unligi",
+    "question": "Ma'rifatparvar Abdulla Avloniy ta'lim va tarbiya haqida qanday mashhur fikrni bildirgan?",
+    "options": {
+      "A": "Tarbiya biz uchun yo hayot — yo mamot, yo najot — yo halokat, yo saodat — yo falokat masalasidir",
+      "B": "Ilm faqat boylik to'plash vositasidir",
+      "C": "Tarbiya ta'limdan butunlay ajralgan holda o'rganiladi",
+      "D": "Har kim faqat o'z manfaati uchun o'qishi kerak"
+    },
+    "answer": "A",
+    "explanation": "Abdulla Avloniy: 'Tarbiya biz uchun yo hayot — yo mamot, yo najot — yo halokat, yo saodat — yo falokat masalasidir'.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-8-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "6-sinf Vatan tuyg'usi. Tarixiy xotira",
+    "question": "Tarixiy xotiraga ega bo'lgan insonning eng muhim fazilati nima?",
+    "options": {
+      "A": "O'z o'tmishini, buyuk ajdodlari merosini biladi va undan g'ururlanib kelajakka intiladi",
+      "B": "O'tmishni butunlay unutib faqat bugun bilan yashaydi",
+      "C": "O'zga xalqlar tarixini o'z tariximizdan ustun qo'yadi",
+      "D": "Barcha tarixiy obidalarni buzish tarafdori bo'ladi"
+    },
+    "answer": "A",
+    "explanation": "Tarixiy xotira insonni o'zligini anglashga, ajdodlar merosiga sodiq qolib, yurt ravnaqiga hissa qo'shishga o'rgatadi.",
+    "session": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-9-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "7-sinf Milliy istiqlol g'oyasi. Milliy g'oyaning bosh maqsadi",
+    "question": "Milliy istiqlol g'oyasining bosh maqsadi to'g'ri ko'rsatilgan qatorni toping:",
+    "options": {
+      "A": "Ozod va obod Vatan, erkin va farovon hayot barpo etish",
+      "B": "Faqat sanoat korxonalari sonini ko'paytirish",
+      "C": "Barcha sohada chet el andazalarini to'liq ko'chirish",
+      "D": "Faqatgina ma'muriy boshqaruvni kuchaytirish"
+    },
+    "answer": "A",
+    "explanation": "O'zbekiston milliy taraqqiyot g'oyasining bosh maqsadi — Ozod va obod Vatan, erkin va farovon hayot barpo etishdir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-10-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "7-sinf Milliy istiqlol g'oyasi. Ma'naviyat va ma'rifat",
+    "question": "'Ma'naviyat' so'zining tub ma'nosi qaysi tushunchadan olingan?",
+    "options": {
+      "A": "Arabcha 'ma'no' so'zidan olingan bo'lib, insonning ruhiy olami va axloqiy fazilatlarini bildiradi",
+      "B": "Lotincha 'qudrat' ma'nosini bildiradi",
+      "C": "Faqatgina jismoniy kuch-quvvatni bildiradi",
+      "D": "Moddiy boylik to'plash ma'nosini bildiradi"
+    },
+    "answer": "A",
+    "explanation": "Ma'naviyat — arabcha 'ma'nolar majmui' degan so'zdan bo'lib, insonning ruhiy, axloqiy va ma'rifiy saviyasini anglatadi.",
+    "session": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-11-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "7-sinf Milliy istiqlol g'oyasi. Komil inson g'oyasi",
+    "question": "Sharq mutafakkirlari ta'limotida 'Komil inson' kim?",
+    "options": {
+      "A": "Jismoniy, ma'naviy, axloqiy va aqliy yetuklikni o'zida mujassam etgan shaxs",
+      "B": "Faqat mol-mulki ko'p bo'lgan inson",
+      "C": "Jamiyatdan ajralib yakkalangan inson",
+      "D": "Faqatgina mansabdor shaxs"
+    },
+    "answer": "A",
+    "explanation": "Komil inson — chuqur bilim, yuksak odob-axloq, vatanparvarlik va ruhiy poklik egasidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-12-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "8-sinf Milliy istiqlol g'oyasi. Mafkuraviy immunitet",
+    "question": "Mafkuraviy immunitet nima?",
+    "options": {
+      "A": "Inson qalbini yot va buzg'unchi g'oyalardan himoya qiluvchi ma'naviy qalqon",
+      "B": "Faqat tibbiy yo'l bilan hosil qilinadigan immunitet",
+      "C": "Xorijiy tillarni o'rganishni taqiqlash",
+      "D": "Barcha yangiliklarni rad etish"
+    },
+    "answer": "A",
+    "explanation": "Mafkuraviy immunitet — insonni yot mafkuralar, axborot xurujlari va ma'naviy tahdidlardan himoya qiluvchi barqaror e'tiqoddir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-13-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "8-sinf Milliy istiqlol g'oyasi. O'zlikni anglash",
+    "question": "Insonning o'zligini anglashi deganda nimani tushunasiz?",
+    "options": {
+      "A": "O'zining qaysi xalqqa mansubligi, ona tili, madaniyati va tarixiy ildizlarini chuqur his etishi",
+      "B": "O'zini boshqalardan ustun qo'yishi",
+      "C": "Faqat shaxsiy boyligini hisoblashi",
+      "D": "Boshqa millatlarni kamsitishi"
+    },
+    "answer": "A",
+    "explanation": "O'zlikni anglash — tarixiy ildizlarni, ona tilini, milliy qadriyatlarni bilish va faxrlanish orqali yuzaga keladi.",
+    "session": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-14-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "8-sinf Milliy istiqlol g'oyasi. Yuksak ma'naviyat",
+    "question": "Quyidagilardan qaysi biri yuksak ma'naviyatli insonning kundalik faoliyatida aks etadi?",
+    "options": {
+      "A": "Halollik, vatanparvarlik, kattalarga hurmat va mehnatsevarlik",
+      "B": "Befarqlik va loqaydlik",
+      "C": "Manmanlik va kibr",
+      "D": "Birovning haqqiga xiyonat qilish"
+    },
+    "answer": "A",
+    "explanation": "Halollik, mehr-oqibat, adolat va vatanparvarlik yuksak ma'naviyatning amaliy mezonlaridir.",
+    "session": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-15-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "9-sinf Milliy istiqlol g'oyasi. Fuqarolik jamiyati",
+    "question": "Fuqarolik jamiyatining eng muhim ustunlaridan biri nima?",
+    "options": {
+      "A": "Qonun ustuvorligi va inson huquqlarining kafolatlanganligi",
+      "B": "Fuqarolarning barcha huquqlardan mahrum etilishi",
+      "C": "Faqat davlat idoralari xohishi bilan ish ko'rish",
+      "D": "Jamoat nazoratining umuman yo'qligi"
+    },
+    "answer": "A",
+    "explanation": "Fuqarolik jamiyatida qonun ustuvorligi, so'z erkinligi, jamoat nazorati va inson manfaatlari birlamchi o'rinda turadi.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-16-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "9-sinf Milliy istiqlol g'oyasi. Diniy bag'rikenglik",
+    "question": "O'zbekistonda diniy bag'rikenglik (tolerantlik) tamoyili qanday ta'minlanadi?",
+    "options": {
+      "A": "Turli din va e'tiqod vakillarining tinch-totuv yashashi va qonun oldida tengligi bilan",
+      "B": "Faqat bir dinga erkinlik berish orqali",
+      "C": "Diniy e'tiqodlarni butunlay taqiqlash orqali",
+      "D": "Diniy konfessiyalarni majburiy birlashtirish orqali"
+    },
+    "answer": "A",
+    "explanation": "Konstitutsiyamizga binoan, barcha diniy konfessiyalar qonun oldida teng bo'lib, bag'rikenglik yurtimizdagi tinchlik asosidir.",
+    "session": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-17-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "9-sinf Milliy istiqlol g'oyasi. Millatlararo totuvlik",
+    "question": "O'zbekistonda istiqomat qiluvchi 130 dan ortiq millat va elatlar o'rtasidagi totuvlikning ma'naviy asosi nima?",
+    "options": {
+      "A": "O'zbek xalqining bag'rikengligi, mehmondo'stligi va umumiy Vatan tuyg'usi",
+      "B": "Milliy ayirmachilik g'oyalari",
+      "C": "Boshqa millatlarni o'z madaniyatidan voz kechishga majburlash",
+      "D": "Millatlararo muloqotni cheklash"
+    },
+    "answer": "A",
+    "explanation": "Yagona Vatan tuyg'usi va bag'rikenglik ko'p millatli xalqimizning tinchligi va barqarorligi garovidir.",
+    "session": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-18-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "10-sinf Ma’naviyat asoslari. Sharqona axloq va odob",
+    "question": "Sharq ma'naviyatida 'Kattaga hurmat, kichikka izzat' qoidasi nima uchun muhim hisoblanadi?",
+    "options": {
+      "A": "Avlodlar o'rtasidagi uzviylik, mehr-oqibat va jamiyatdagi totuvlikni saqlab qolish uchun",
+      "B": "Faqatgina rasmiy marosimlarda ko'rsatish uchun",
+      "C": "Kichiklarning huquqlarini cheklash uchun",
+      "D": "Kattalarga so'zsiz bo'ysunish majburiyatini yuklash uchun"
+    },
+    "answer": "A",
+    "explanation": "Kattalarga hurmat va kichiklarga shafqat o'zbek xalqining eng oliy milliy axloqiy fazilatlaridan biridir.",
+    "session": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-19-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "10-sinf Ma’naviyat asoslari. Milliy g'urur va millatchilik",
+    "question": "Haqiqiy 'Milliy g'urur' bilan 'Millatchilik' (shovinizm) o'rtasidagi asosiy farq nima?",
+    "options": {
+      "A": "Milliy g'urur o'z xalqini sevib boshqalarni hurmat qiladi; millatchilik esa o'z millatini ustun qo'yib, o'zgalarni kamsitadi",
+      "B": "Ular orasida hech qanday farq yo'q",
+      "C": "Millatchilik faqat ijobiy hodisa hisoblanadi",
+      "D": "Milliy g'urur faqat chet tili biluvchilarda bo'ladi"
+    },
+    "answer": "A",
+    "explanation": "Milliy g'urur — o'z xalqi va madaniyati bilan faxrlanish bilan birga boshqa millatlarni e'zozlash demakdir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-20-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "11-sinf Ma’naviyat asoslari. Globallashuv va axborot xavfsizligi",
+    "question": "Globallashuv sharoitida yoshlarda 'axborot madaniyati'ni shakllantirish nima uchun dolzarb?",
+    "options": {
+      "A": "Internet va ijtimoiy tarmoqlardagi feyk, buzg'unchi va zararli ma'lumotlarni saralab, to'g'ri xulosa chiqara olishi uchun",
+      "B": "Internetdan butunlay foydalanmaslikni ta'minlash uchun",
+      "C": "Faqat o'yin va ko'ngilochar saytlarga kirishni o'rgatish uchun",
+      "D": "Kompyuter tezligini oshirish uchun"
+    },
+    "answer": "A",
+    "explanation": "Axborot madaniyati — axborot oqimidan to'g'ri, foydali va xolis ma'lumotni ajrata olish ko'nikmasidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-21-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "5-mavzu: UDL (Universal Design for Learning) tamoyillari asosida inklyuziv ta'lim",
+    "question": "Tarbiya darslarida UDL tamoyili bo'yicha 1-bosqich vazifasi qanday amalga oshiriladi?",
+    "options": {
+      "A": "O'zining o'qitish usullarini tahlil qilib, o'quvchilarning odob-axloq va qadriyatlarni o'zlashtirishini yaxshilash",
+      "B": "O'quvchilarga ko'proq yozma jazo berish",
+      "C": "Faqat rasmiy hisobotlarni to'ldirish",
+      "D": "Darslikdagi matnlarni so'zma-so'z yodlatish"
+    },
+    "answer": "A",
+    "explanation": "5-mashg'ulot KRS dasturi: Universal Design for Learning barcha o'quvchilar uchun teng ta'lim imkoniyatini yaratadi.",
+    "session": 5,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tarb-22-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "5-mavzu: UDL (Universal Design for Learning) tamoyillari asosida inklyuziv ta'lim",
+    "question": "Tarbiya darslarida UDL tamoyili bo'yicha 2-bosqich vazifasi qanday amalga oshiriladi?",
+    "options": {
+      "A": "O'quvchilar xulq-atvori, guruhdagi munosabatlari va fikrlash darajasini kuzatish va diagnostik tahlillar asosida darsni rejalashtirish",
+      "B": "Faqat dars oxirida test olib xulosa qilish",
+      "C": "Boshqa maktab o'quvchilarini misol qilib ko'rsatish",
+      "D": "Faqat intizomi buzilgan o'quvchilarni jazolash"
+    },
+    "answer": "A",
+    "explanation": "5-mashg'ulot KRS dasturi: Universal Design for Learning barcha o'quvchilar uchun teng ta'lim imkoniyatini yaratadi.",
+    "session": 5,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tarb-23-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "5-mavzu: UDL (Universal Design for Learning) tamoyillari asosida inklyuziv ta'lim",
+    "question": "Tarbiya darslarida UDL tamoyili bo'yicha 3-bosqich vazifasi qanday amalga oshiriladi?",
+    "options": {
+      "A": "Haqiqiy hayotiy vaziyatlarga asoslangan axloqiy keyslar (Case study) va rolli o'yinlar",
+      "B": "Mavzuni faqat o'qituvchi tomonidan ma'ruza qilib berilishi",
+      "C": "Darslikdagi matnni daftarga ko'chirib yozish",
+      "D": "O'quvchilarni faqat jim o'tirishini talab qilish"
+    },
+    "answer": "A",
+    "explanation": "5-mashg'ulot KRS dasturi: Universal Design for Learning barcha o'quvchilar uchun teng ta'lim imkoniyatini yaratadi.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-24-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "5-mavzu: UDL (Universal Design for Learning) tamoyillari asosida inklyuziv ta'lim",
+    "question": "Tarbiya darslarida UDL tamoyili bo'yicha 4-bosqich vazifasi qanday amalga oshiriladi?",
+    "options": {
+      "A": "O'quvchi bugungi darsdan o'ziga qanday ma'naviy xulosa chiqarganini anglashiga",
+      "B": "O'quvchilarni jurnalga baho qo'yish bilan qo'rqitishga",
+      "C": "Faqat keyingi darsga uy vazifasi berishga",
+      "D": "Vaqtni cho'zishga"
+    },
+    "answer": "A",
+    "explanation": "5-mashg'ulot KRS dasturi: Universal Design for Learning barcha o'quvchilar uchun teng ta'lim imkoniyatini yaratadi.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-25-s5",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "5-mavzu: UDL (Universal Design for Learning) tamoyillari asosida inklyuziv ta'lim",
+    "question": "Tarbiya darslarida UDL tamoyili bo'yicha 5-bosqich vazifasi qanday amalga oshiriladi?",
+    "options": {
+      "A": "Birovga yordam berish, mehr-muruvvat loyihalarida qatnashish va rolli vaziyatlarni muhokama qilish",
+      "B": "Faqat shaxsiy raqobat va o'z manfaatini ko'zlash",
+      "C": "Yakka holda jim ishlab o'tirish",
+      "D": "Kamchiliklarni omma oldida muhokama qilib izza qilish"
+    },
+    "answer": "A",
+    "explanation": "5-mashg'ulot KRS dasturi: Universal Design for Learning barcha o'quvchilar uchun teng ta'lim imkoniyatini yaratadi.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-1-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "5-sinf Vatan tuyg'usi. Vatan – yagona va muqaddas",
+    "question": "5-sinf 'Vatan tuyg'usi' darsligida Vatan tushunchasi dastlab nima bilan bog'lab tushuntiriladi?",
+    "options": {
+      "A": "Inson tug'ilib o'sgan uy, ostonasi va ona allasi yangragan zamin bilan",
+      "B": "Faqatgina ma'muriy chegara va pasport bilan",
+      "C": "Chet davlatlarga sayohat qilish imkoniyati bilan",
+      "D": "Faqat tabiiy boyliklar va qazilma konlar bilan"
+    },
+    "answer": "A",
+    "explanation": "5-sinf 'Vatan tuyg'usi': Vatan tushunchasi inson tug'ilib o'sgan ostonasi, kindik qoni to'kilgan go'shasi va oilasidan boshlanadi.",
+    "session": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-2-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "5-sinf Vatan tuyg'usi. Davlatimiz ramzlari",
+    "question": "O'zbekiston Respublikasining Davlat bayrog'i qaysi sanada qabul qilingan?",
+    "options": {
+      "A": "1991-yil 18-noyabrda",
+      "B": "1992-yil 2-iyulda",
+      "C": "1991-yil 31-avgustda",
+      "D": "1992-yil 8-dekabrda"
+    },
+    "answer": "A",
+    "explanation": "O'zbekiston Respublikasining Davlat bayrog'i 1991-yil 18-noyabrda qabul qilingan.",
+    "session": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-3-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "5-sinf Vatan tuyg'usi. Oila — Vatan timsoli",
+    "question": "Nima sababdan oila jamiyatning va Vatanning eng kichik poydevori (timsoli) hisoblanadi?",
+    "options": {
+      "A": "Vatanga muhabbat va odob-axloq fazilatlari dastlab oilada shakllangani uchun",
+      "B": "Faqat moddiy daromad keltirgani uchun",
+      "C": "Qonunlar faqat oilada qabul qilingani uchun",
+      "D": "Oilada hech qanday tartib-qoida bo'lmagani uchun"
+    },
+    "answer": "A",
+    "explanation": "Oila mustahkam bo'lsa, jamiyat va Vatan qudratli bo'ladi. Ilk tarbiya va Vatanga muhabbat oiladan boshlanadi.",
+    "session": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-4-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "5-sinf Vatan tuyg'usi. Sohibqiron Amir Temur o'gitlari",
+    "question": "Sohibqiron Amir Temurning davlat boshqaruvi va adolat ramzi bo'lgan mashhur shiori qaysi?",
+    "options": {
+      "A": "Kuch — adolatdadir",
+      "B": "Bilim — boylikdir",
+      "C": "Kuch — quroldadir",
+      "D": "Mulki — davlatdadir"
+    },
+    "answer": "A",
+    "explanation": "Amir Temur o'zining butun hayoti va saltanat boshqaruvida 'Kuch — adolatdadir' shioriga tayangan.",
+    "session": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-5-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "6-sinf Vatan tuyg'usi. Vatan ozodligi – oliy saodat",
+    "question": "O'zbekiston Respublikasining davlat mustaqilligi qachon e'lon qilingan?",
+    "options": {
+      "A": "1991-yil 31-avgustda",
+      "B": "1991-yil 1-sentabrda",
+      "C": "1992-yil 8-dekabrda",
+      "D": "1993-yil 1-yanvarda"
+    },
+    "answer": "A",
+    "explanation": "1991-yil 31-avgustda O'zbekiston mustaqilligi e'lon qilingan, 1-sentabr esa Mustaqillik kuni sifatida nishonlanadi.",
+    "session": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-6-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "6-sinf Vatan tuyg'usi. Milliy va umumbashariy qadriyatlar",
+    "question": "Milliy qadriyatlar bilan umumbashariy qadriyatlar o'rtasidagi bog'liqlik qanday ifodalanadi?",
+    "options": {
+      "A": "Milliy qadriyatlar umuminsoniy ezgu g'oyalar bilan boyib, uyg'unlashib boradi",
+      "B": "Ular doimo bir-birini inkor etadi",
+      "C": "Faqat chet el tajribasi qadriyat hisoblanadi",
+      "D": "Milliy qadriyatlar faqat o'tmishga tegishli bo'lib, bugunga taalluqli emas"
+    },
+    "answer": "A",
+    "explanation": "Haqiqiy milliy qadriyatlar umuminsoniy ezgulik, insonparvarlik va adolat tamoyillari bilan uyg'unlashgan holda rivojlanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-7-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "6-sinf Vatan tuyg'usi. Ta'lim va tarbiya uyg'unligi",
+    "question": "Ma'rifatparvar Abdulla Avloniy ta'lim va tarbiya haqida qanday mashhur fikrni bildirgan?",
+    "options": {
+      "A": "Tarbiya biz uchun yo hayot — yo mamot, yo najot — yo halokat, yo saodat — yo falokat masalasidir",
+      "B": "Ilm faqat boylik to'plash vositasidir",
+      "C": "Tarbiya ta'limdan butunlay ajralgan holda o'rganiladi",
+      "D": "Har kim faqat o'z manfaati uchun o'qishi kerak"
+    },
+    "answer": "A",
+    "explanation": "Abdulla Avloniy: 'Tarbiya biz uchun yo hayot — yo mamot, yo najot — yo halokat, yo saodat — yo falokat masalasidir'.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-8-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "6-sinf Vatan tuyg'usi. Tarixiy xotira",
+    "question": "Tarixiy xotiraga ega bo'lgan insonning eng muhim fazilati nima?",
+    "options": {
+      "A": "O'z o'tmishini, buyuk ajdodlari merosini biladi va undan g'ururlanib kelajakka intiladi",
+      "B": "O'tmishni butunlay unutib faqat bugun bilan yashaydi",
+      "C": "O'zga xalqlar tarixini o'z tariximizdan ustun qo'yadi",
+      "D": "Barcha tarixiy obidalarni buzish tarafdori bo'ladi"
+    },
+    "answer": "A",
+    "explanation": "Tarixiy xotira insonni o'zligini anglashga, ajdodlar merosiga sodiq qolib, yurt ravnaqiga hissa qo'shishga o'rgatadi.",
+    "session": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-9-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "7-sinf Milliy istiqlol g'oyasi. Milliy g'oyaning bosh maqsadi",
+    "question": "Milliy istiqlol g'oyasining bosh maqsadi to'g'ri ko'rsatilgan qatorni toping:",
+    "options": {
+      "A": "Ozod va obod Vatan, erkin va farovon hayot barpo etish",
+      "B": "Faqat sanoat korxonalari sonini ko'paytirish",
+      "C": "Barcha sohada chet el andazalarini to'liq ko'chirish",
+      "D": "Faqatgina ma'muriy boshqaruvni kuchaytirish"
+    },
+    "answer": "A",
+    "explanation": "O'zbekiston milliy taraqqiyot g'oyasining bosh maqsadi — Ozod va obod Vatan, erkin va farovon hayot barpo etishdir.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-10-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "7-sinf Milliy istiqlol g'oyasi. Ma'naviyat va ma'rifat",
+    "question": "'Ma'naviyat' so'zining tub ma'nosi qaysi tushunchadan olingan?",
+    "options": {
+      "A": "Arabcha 'ma'no' so'zidan olingan bo'lib, insonning ruhiy olami va axloqiy fazilatlarini bildiradi",
+      "B": "Lotincha 'qudrat' ma'nosini bildiradi",
+      "C": "Faqatgina jismoniy kuch-quvvatni bildiradi",
+      "D": "Moddiy boylik to'plash ma'nosini bildiradi"
+    },
+    "answer": "A",
+    "explanation": "Ma'naviyat — arabcha 'ma'nolar majmui' degan so'zdan bo'lib, insonning ruhiy, axloqiy va ma'rifiy saviyasini anglatadi.",
+    "session": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-11-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "7-sinf Milliy istiqlol g'oyasi. Komil inson g'oyasi",
+    "question": "Sharq mutafakkirlari ta'limotida 'Komil inson' kim?",
+    "options": {
+      "A": "Jismoniy, ma'naviy, axloqiy va aqliy yetuklikni o'zida mujassam etgan shaxs",
+      "B": "Faqat mol-mulki ko'p bo'lgan inson",
+      "C": "Jamiyatdan ajralib yakkalangan inson",
+      "D": "Faqatgina mansabdor shaxs"
+    },
+    "answer": "A",
+    "explanation": "Komil inson — chuqur bilim, yuksak odob-axloq, vatanparvarlik va ruhiy poklik egasidir.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-12-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "8-sinf Milliy istiqlol g'oyasi. Mafkuraviy immunitet",
+    "question": "Mafkuraviy immunitet nima?",
+    "options": {
+      "A": "Inson qalbini yot va buzg'unchi g'oyalardan himoya qiluvchi ma'naviy qalqon",
+      "B": "Faqat tibbiy yo'l bilan hosil qilinadigan immunitet",
+      "C": "Xorijiy tillarni o'rganishni taqiqlash",
+      "D": "Barcha yangiliklarni rad etish"
+    },
+    "answer": "A",
+    "explanation": "Mafkuraviy immunitet — insonni yot mafkuralar, axborot xurujlari va ma'naviy tahdidlardan himoya qiluvchi barqaror e'tiqoddir.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-13-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "8-sinf Milliy istiqlol g'oyasi. O'zlikni anglash",
+    "question": "Insonning o'zligini anglashi deganda nimani tushunasiz?",
+    "options": {
+      "A": "O'zining qaysi xalqqa mansubligi, ona tili, madaniyati va tarixiy ildizlarini chuqur his etishi",
+      "B": "O'zini boshqalardan ustun qo'yishi",
+      "C": "Faqat shaxsiy boyligini hisoblashi",
+      "D": "Boshqa millatlarni kamsitishi"
+    },
+    "answer": "A",
+    "explanation": "O'zlikni anglash — tarixiy ildizlarni, ona tilini, milliy qadriyatlarni bilish va faxrlanish orqali yuzaga keladi.",
+    "session": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-14-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "8-sinf Milliy istiqlol g'oyasi. Yuksak ma'naviyat",
+    "question": "Quyidagilardan qaysi biri yuksak ma'naviyatli insonning kundalik faoliyatida aks etadi?",
+    "options": {
+      "A": "Halollik, vatanparvarlik, kattalarga hurmat va mehnatsevarlik",
+      "B": "Befarqlik va loqaydlik",
+      "C": "Manmanlik va kibr",
+      "D": "Birovning haqqiga xiyonat qilish"
+    },
+    "answer": "A",
+    "explanation": "Halollik, mehr-oqibat, adolat va vatanparvarlik yuksak ma'naviyatning amaliy mezonlaridir.",
+    "session": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-15-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "9-sinf Milliy istiqlol g'oyasi. Fuqarolik jamiyati",
+    "question": "Fuqarolik jamiyatining eng muhim ustunlaridan biri nima?",
+    "options": {
+      "A": "Qonun ustuvorligi va inson huquqlarining kafolatlanganligi",
+      "B": "Fuqarolarning barcha huquqlardan mahrum etilishi",
+      "C": "Faqat davlat idoralari xohishi bilan ish ko'rish",
+      "D": "Jamoat nazoratining umuman yo'qligi"
+    },
+    "answer": "A",
+    "explanation": "Fuqarolik jamiyatida qonun ustuvorligi, so'z erkinligi, jamoat nazorati va inson manfaatlari birlamchi o'rinda turadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-16-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "9-sinf Milliy istiqlol g'oyasi. Diniy bag'rikenglik",
+    "question": "O'zbekistonda diniy bag'rikenglik (tolerantlik) tamoyili qanday ta'minlanadi?",
+    "options": {
+      "A": "Turli din va e'tiqod vakillarining tinch-totuv yashashi va qonun oldida tengligi bilan",
+      "B": "Faqat bir dinga erkinlik berish orqali",
+      "C": "Diniy e'tiqodlarni butunlay taqiqlash orqali",
+      "D": "Diniy konfessiyalarni majburiy birlashtirish orqali"
+    },
+    "answer": "A",
+    "explanation": "Konstitutsiyamizga binoan, barcha diniy konfessiyalar qonun oldida teng bo'lib, bag'rikenglik yurtimizdagi tinchlik asosidir.",
+    "session": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-17-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "9-sinf Milliy istiqlol g'oyasi. Millatlararo totuvlik",
+    "question": "O'zbekistonda istiqomat qiluvchi 130 dan ortiq millat va elatlar o'rtasidagi totuvlikning ma'naviy asosi nima?",
+    "options": {
+      "A": "O'zbek xalqining bag'rikengligi, mehmondo'stligi va umumiy Vatan tuyg'usi",
+      "B": "Milliy ayirmachilik g'oyalari",
+      "C": "Boshqa millatlarni o'z madaniyatidan voz kechishga majburlash",
+      "D": "Millatlararo muloqotni cheklash"
+    },
+    "answer": "A",
+    "explanation": "Yagona Vatan tuyg'usi va bag'rikenglik ko'p millatli xalqimizning tinchligi va barqarorligi garovidir.",
+    "session": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-18-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "10-sinf Ma’naviyat asoslari. Sharqona axloq va odob",
+    "question": "Sharq ma'naviyatida 'Kattaga hurmat, kichikka izzat' qoidasi nima uchun muhim hisoblanadi?",
+    "options": {
+      "A": "Avlodlar o'rtasidagi uzviylik, mehr-oqibat va jamiyatdagi totuvlikni saqlab qolish uchun",
+      "B": "Faqatgina rasmiy marosimlarda ko'rsatish uchun",
+      "C": "Kichiklarning huquqlarini cheklash uchun",
+      "D": "Kattalarga so'zsiz bo'ysunish majburiyatini yuklash uchun"
+    },
+    "answer": "A",
+    "explanation": "Kattalarga hurmat va kichiklarga shafqat o'zbek xalqining eng oliy milliy axloqiy fazilatlaridan biridir.",
+    "session": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "tarb-19-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "10-sinf Ma’naviyat asoslari. Milliy g'urur va millatchilik",
+    "question": "Haqiqiy 'Milliy g'urur' bilan 'Millatchilik' (shovinizm) o'rtasidagi asosiy farq nima?",
+    "options": {
+      "A": "Milliy g'urur o'z xalqini sevib boshqalarni hurmat qiladi; millatchilik esa o'z millatini ustun qo'yib, o'zgalarni kamsitadi",
+      "B": "Ular orasida hech qanday farq yo'q",
+      "C": "Millatchilik faqat ijobiy hodisa hisoblanadi",
+      "D": "Milliy g'urur faqat chet tili biluvchilarda bo'ladi"
+    },
+    "answer": "A",
+    "explanation": "Milliy g'urur — o'z xalqi va madaniyati bilan faxrlanish bilan birga boshqa millatlarni e'zozlash demakdir.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-20-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "11-sinf Ma’naviyat asoslari. Globallashuv va axborot xavfsizligi",
+    "question": "Globallashuv sharoitida yoshlarda 'axborot madaniyati'ni shakllantirish nima uchun dolzarb?",
+    "options": {
+      "A": "Internet va ijtimoiy tarmoqlardagi feyk, buzg'unchi va zararli ma'lumotlarni saralab, to'g'ri xulosa chiqara olishi uchun",
+      "B": "Internetdan butunlay foydalanmaslikni ta'minlash uchun",
+      "C": "Faqat o'yin va ko'ngilochar saytlarga kirishni o'rgatish uchun",
+      "D": "Kompyuter tezligini oshirish uchun"
+    },
+    "answer": "A",
+    "explanation": "Axborot madaniyati — axborot oqimidan to'g'ri, foydali va xolis ma'lumotni ajrata olish ko'nikmasidir.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-21-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "6-mavzu: Xalqaro baholash dasturlari (PISA, TIMSS, PIRLS) topshiriqlari",
+    "question": "Xalqaro baholash mezonlari asosida Tarbiya darslarida ijtimoiy savodxonlikni baholashning 1-metodi nima?",
+    "options": {
+      "A": "O'zining o'qitish usullarini tahlil qilib, o'quvchilarning odob-axloq va qadriyatlarni o'zlashtirishini yaxshilash",
+      "B": "O'quvchilarga ko'proq yozma jazo berish",
+      "C": "Faqat rasmiy hisobotlarni to'ldirish",
+      "D": "Darslikdagi matnlarni so'zma-so'z yodlatish"
+    },
+    "answer": "A",
+    "explanation": "6-mashg'ulot KRS dasturi: Global kompetensiyalar va ijtimoiy-axloqiy savodxonlikni baholash.",
+    "session": 6,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tarb-22-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "6-mavzu: Xalqaro baholash dasturlari (PISA, TIMSS, PIRLS) topshiriqlari",
+    "question": "Xalqaro baholash mezonlari asosida Tarbiya darslarida ijtimoiy savodxonlikni baholashning 2-metodi nima?",
+    "options": {
+      "A": "O'quvchilar xulq-atvori, guruhdagi munosabatlari va fikrlash darajasini kuzatish va diagnostik tahlillar asosida darsni rejalashtirish",
+      "B": "Faqat dars oxirida test olib xulosa qilish",
+      "C": "Boshqa maktab o'quvchilarini misol qilib ko'rsatish",
+      "D": "Faqat intizomi buzilgan o'quvchilarni jazolash"
+    },
+    "answer": "A",
+    "explanation": "6-mashg'ulot KRS dasturi: Global kompetensiyalar va ijtimoiy-axloqiy savodxonlikni baholash.",
+    "session": 6,
+    "difficulty": "hard"
+  },
+  {
+    "id": "tarb-23-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "6-mavzu: Xalqaro baholash dasturlari (PISA, TIMSS, PIRLS) topshiriqlari",
+    "question": "Xalqaro baholash mezonlari asosida Tarbiya darslarida ijtimoiy savodxonlikni baholashning 3-metodi nima?",
+    "options": {
+      "A": "Haqiqiy hayotiy vaziyatlarga asoslangan axloqiy keyslar (Case study) va rolli o'yinlar",
+      "B": "Mavzuni faqat o'qituvchi tomonidan ma'ruza qilib berilishi",
+      "C": "Darslikdagi matnni daftarga ko'chirib yozish",
+      "D": "O'quvchilarni faqat jim o'tirishini talab qilish"
+    },
+    "answer": "A",
+    "explanation": "6-mashg'ulot KRS dasturi: Global kompetensiyalar va ijtimoiy-axloqiy savodxonlikni baholash.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-24-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "6-mavzu: Xalqaro baholash dasturlari (PISA, TIMSS, PIRLS) topshiriqlari",
+    "question": "Xalqaro baholash mezonlari asosida Tarbiya darslarida ijtimoiy savodxonlikni baholashning 4-metodi nima?",
+    "options": {
+      "A": "O'quvchi bugungi darsdan o'ziga qanday ma'naviy xulosa chiqarganini anglashiga",
+      "B": "O'quvchilarni jurnalga baho qo'yish bilan qo'rqitishga",
+      "C": "Faqat keyingi darsga uy vazifasi berishga",
+      "D": "Vaqtni cho'zishga"
+    },
+    "answer": "A",
+    "explanation": "6-mashg'ulot KRS dasturi: Global kompetensiyalar va ijtimoiy-axloqiy savodxonlikni baholash.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tarb-25-s6",
+    "subject": "Tarbiya",
+    "grade_span": "5-11",
+    "topic": "6-mavzu: Xalqaro baholash dasturlari (PISA, TIMSS, PIRLS) topshiriqlari",
+    "question": "Xalqaro baholash mezonlari asosida Tarbiya darslarida ijtimoiy savodxonlikni baholashning 5-metodi nima?",
+    "options": {
+      "A": "Birovga yordam berish, mehr-muruvvat loyihalarida qatnashish va rolli vaziyatlarni muhokama qilish",
+      "B": "Faqat shaxsiy raqobat va o'z manfaatini ko'zlash",
+      "C": "Yakka holda jim ishlab o'tirish",
+      "D": "Kamchiliklarni omma oldida muhokama qilib izza qilish"
+    },
+    "answer": "A",
+    "explanation": "6-mashg'ulot KRS dasturi: Global kompetensiyalar va ijtimoiy-axloqiy savodxonlikni baholash.",
+    "session": 6,
+    "difficulty": "medium"
   }
 ]

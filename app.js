@@ -418,6 +418,10 @@ function setupSchoolSubjectTeacherFlow() {
 
     const allSchoolTeachers = state.teachersDb[schoolVal] || [];
     const matchedTeachers = allSchoolTeachers.filter(t => {
+      if (subjectVal.toLowerCase() === 'tarbiya') {
+        const s = (t.subject || '').toLowerCase();
+        return s === 'tarbiya' || s === 'tarix' || s === 'huquq';
+      }
       return t.subject && t.subject.toLowerCase() === subjectVal.toLowerCase();
     }).sort((a, b) => a.name.localeCompare(b.name));
 
