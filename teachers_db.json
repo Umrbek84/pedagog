@@ -12,10 +12,9 @@
     },
     {
       "name": "ABDISHARIFOVA GULSHAN UMARBEK QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -50,9 +49,11 @@
     },
     {
       "name": "ALIYEVA SHOIRA BOTIRBEKOVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Ona tili",
+        "Tarix"
       ],
       "classes": [
         "3-V класс"
@@ -90,6 +91,7 @@
       "name": "AVEZOVA MUXABBAT XUSHNUDOVNA",
       "subject": "Ona tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -100,6 +102,7 @@
       "name": "AVEZOVA SURAYYO BOTIROVNA",
       "subject": "Ona tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": []
@@ -126,6 +129,7 @@
       "name": "BOBOJONOVA XOLIDA OTABOYEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at",
         "Texnologiya"
       ],
@@ -179,9 +183,8 @@
     },
     {
       "name": "IBRAGIMOVA ADOLAT ZAKIRJONOVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "English",
       "all_krs": [
-        "Boshlang'ich ta'lim",
         "English"
       ],
       "classes": []
@@ -198,6 +201,7 @@
       "name": "ISMAILOVA DILFUZA ISAQOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at",
         "Texnologiya"
       ],
@@ -217,7 +221,8 @@
       "name": "JUMANIYAZOVA GUZAL RAJABBAYEVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Boshlang'ich ta'lim"
       ],
       "classes": [
         "11-A класс"
@@ -253,9 +258,11 @@
     },
     {
       "name": "KAMILOVA SAYYORA SHONAZAR QIZI",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Informatika",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Informatika",
+        "Matematika"
       ],
       "classes": [
         "3-G класс"
@@ -297,9 +304,11 @@
     },
     {
       "name": "MASHARIPOVA ZAYNAB SHARIPOVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Ona tili",
+        "Rus tili"
       ],
       "classes": [
         "4-A класс"
@@ -337,6 +346,7 @@
       "name": "NAZAROVA SAIDA BAKDURDIYEVNA",
       "subject": "Ona tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -420,9 +430,10 @@
     },
     {
       "name": "QOZOQOVA SAFARGUL NURULLAYEVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Ona tili"
       ],
       "classes": [
         "2-E класс"
@@ -472,6 +483,7 @@
       "name": "RAXIMOVA INOBAT KAMULDJANOVNA",
       "subject": "Ona tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": []
@@ -523,6 +535,7 @@
       "name": "RUZIMOVA NAFISA BAYMURATOVNA",
       "subject": "Ona tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -567,9 +580,9 @@
     },
     {
       "name": "TOJIBOYEV SHOHZODBEK SHODLIK O‘G‘LI",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -663,6 +676,7 @@
       "name": "YO‘LDOSHEVA SEVARA KAMOLADDIN QIZI",
       "subject": "Ona tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": []
@@ -671,6 +685,7 @@
       "name": "YUSUPOVA BIKAJON JUMANIYAZOVNA",
       "subject": "Ona tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": []
@@ -724,6 +739,7 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
+        "Boshlang'ich ta'lim",
         "English",
         "Informatika",
         "Matematika",
@@ -759,6 +775,7 @@
       "name": "BOBOJONOVA FARIDA JUMANIYAZOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -803,23 +820,24 @@
       "name": "ERKINOVA O‘G‘ILOY MIRZA QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
     },
     {
       "name": "IBADULLAYEVA OZADA XAMUTJANOVNA",
-      "subject": "Tarbiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "KALANDAROVA NADIRA YANGIBAYEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -835,6 +853,7 @@
       "name": "KARRIYEVA MOHIRA ADAMBOYEVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -859,9 +878,9 @@
     },
     {
       "name": "NARBOYEV RAXIMBAY SHERIPOVICH",
-      "subject": "Tasviriy san'at",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -869,6 +888,7 @@
       "name": "NAZAROVA SHAHNOZA RO‘ZIBOY QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -883,9 +903,9 @@
     },
     {
       "name": "NURMATOVA SOHIBA RUSTAMOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -930,6 +950,7 @@
       "name": "QABULOVA YOQUTJON QUVONDIQ QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -1086,11 +1107,9 @@
     },
     {
       "name": "TAXIROVA MOMOJON O‘TKIROVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tarbiya",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -1193,15 +1212,16 @@
       "name": "BALTAYEVA SAXIFA BATIRBAYEVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": []
     },
     {
       "name": "BALTAYEVA SHAXZADA SAPARBAYEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -1228,6 +1248,7 @@
       "name": "BEKCHANOVA ZULFIYA O‘RAZMETOVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -1238,6 +1259,7 @@
       "name": "BOLTABOYEVA MEHRINISO SHUHRAT QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -1274,9 +1296,9 @@
     },
     {
       "name": "JABBAROVA NUQULJON BATIROVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -1330,11 +1352,9 @@
     },
     {
       "name": "KURYAZOVA SHARKIYA KURANBAYEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -1352,6 +1372,7 @@
       "name": "MASHARIFOVA LAYLO SHAVKAT QIZI",
       "subject": "Informatika",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Informatika",
         "Tasviriy san'at"
       ],
@@ -1361,19 +1382,17 @@
     },
     {
       "name": "MASHARIPOVA NASIBA QURANBAYEVNA",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "MATKARIMOVA FERUZAXON MANSUR QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Matematika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -1406,7 +1425,7 @@
     },
     {
       "name": "ORTIQOVA MAVJUDA QADAMBOYEVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Rus tili",
       "all_krs": [
         "Boshlang'ich ta'lim",
         "Rus tili"
@@ -1438,17 +1457,16 @@
       "name": "PIRNAZAROV OMANBOY QADAMOVICH",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": []
     },
     {
       "name": "QUTLIMURATOVA MUBORAK NORBAYEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -1556,6 +1574,7 @@
       "name": "SHARIPOVA ONAXON SHODLIK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -1574,6 +1593,7 @@
       "name": "TILLAYEVA SADOQAT IKROMOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -1632,6 +1652,7 @@
       "name": "ABDIKARIMOVA BARCHINOY JUMABOYEVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -1656,8 +1677,8 @@
       "name": "AMINOVA SHAXLO SHOKIROVNA",
       "subject": "English",
       "all_krs": [
-        "English",
-        "Rus tili"
+        "Boshlang'ich ta'lim",
+        "English"
       ],
       "classes": []
     },
@@ -1692,6 +1713,7 @@
       "name": "JUMANIYOZOV RAVSHANBEK SOBIROVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -1700,8 +1722,8 @@
       "name": "JUMANIYOZOVA DILOROM QURONBOYEVNA",
       "subject": "Ona tili",
       "all_krs": [
-        "Ona tili",
-        "Tarbiya"
+        "Boshlang'ich ta'lim",
+        "Ona tili"
       ],
       "classes": []
     },
@@ -1717,9 +1739,9 @@
     },
     {
       "name": "JUMANIYOZOVA MOHIRA RAVSHANBEKOVNA",
-      "subject": "Biologiya",
+      "subject": "Tasviriy san'at",
       "all_krs": [
-        "Biologiya",
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -1750,9 +1772,9 @@
     },
     {
       "name": "KURYAZOVA RAXATOY AZADOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -1804,9 +1826,9 @@
     },
     {
       "name": "NAZAROVA MARHABO BOZORBOYEVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -1846,6 +1868,7 @@
       "name": "QURBANOVA GULNOZA BARIS QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -1934,9 +1957,9 @@
     },
     {
       "name": "RUZMETOVA FERUZA BEKCHANOVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -1960,10 +1983,9 @@
     },
     {
       "name": "SOLAYEVA NAFISA SHUXRATOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -2001,8 +2023,7 @@
       "name": "XAYITOVA IZZATOY MATYOQUBOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim",
-        "Rus tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": [
         "4-A класс"
@@ -2061,6 +2082,7 @@
       "name": "ABDULLAJONOVA GULRUH UMARJON QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -2121,9 +2143,9 @@
     },
     {
       "name": "EGAMOVA IQBOL EGAMBERGANOVNA",
-      "subject": "Tarbiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -2149,6 +2171,7 @@
       "name": "IBRAGIMOVA GULBAXOR UMAROVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -2230,9 +2253,9 @@
     },
     {
       "name": "NURMETOVA MAQSUDA BEYJANOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -2294,9 +2317,10 @@
     },
     {
       "name": "RAXIMOVA DILRABO O‘KTAMBOYEVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Tasviriy san'at",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Tasviriy san'at"
       ],
       "classes": [
         "4-B класс"
@@ -2340,9 +2364,9 @@
     },
     {
       "name": "SULTONNAZIROVA SUMBULOY POLVONNAZIR QIZI",
-      "subject": "Tarbiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -2416,6 +2440,7 @@
       "name": "ZARIPOV SANJAR AZATOVICH",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -2434,10 +2459,9 @@
   "14-sonli maktab": [
     {
       "name": "ATABAYEVA DILDORA KOMILOVNA",
-      "subject": "Tarbiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarbiya",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -2560,6 +2584,7 @@
       "name": "KOMILOVA YULDUZ SHONAZAR QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -2620,9 +2645,9 @@
     },
     {
       "name": "NURJONOVA SHAROFAT KARIMOVNA",
-      "subject": "Matematika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Matematika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -2673,9 +2698,9 @@
     },
     {
       "name": "RAJABOVA MAXSUNA USMON QIZI",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -2683,6 +2708,7 @@
       "name": "RAJAPOV MAXSUD AZAMATOVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -2793,8 +2819,7 @@
       "name": "RO‘ZMETOVA SHARIFA G‘ULOMJON QIZI",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -2876,10 +2901,9 @@
     },
     {
       "name": "SARIYEVA CHAROS KURANBOYEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -2895,21 +2919,17 @@
     },
     {
       "name": "SA’DULLAYEVA FERUZA RAJABOVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "SHAMURATOVA FARANGIZ MANSURBEK QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Boshlang'ich ta'lim",
-        "Informatika",
-        "Ona tili",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -2981,6 +3001,7 @@
       "name": "YUSUPOVA BONUXON UMARBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -2989,11 +3010,9 @@
   "15-sonli maktab": [
     {
       "name": "ALLABERGANOVA SHAXLO SHONAZAROVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -3092,9 +3111,9 @@
     },
     {
       "name": "QADIROVA IRODA SULTANOVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -3102,6 +3121,7 @@
       "name": "QALANDAROVA SANOBAR XXX",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -3175,6 +3195,7 @@
       "name": "SA’DULLAYEV XURSANDBEK OZADOVICH",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -3193,6 +3214,7 @@
       "name": "SA’DULLAYEVA MAXFUZA ERKINBOYEVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -3211,9 +3233,9 @@
     },
     {
       "name": "SA’DULLAYEVA ZILOLA QO‘ZIBOYEVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -3241,6 +3263,7 @@
       "name": "SOY MARINA ALEKSANDROVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -3399,6 +3422,7 @@
       "name": "MATYAQUBOV G‘ULOMJON KOMILOVICH",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -3442,6 +3466,7 @@
       "name": "RUZMETOV XURMAT MADRAXIMOVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -3489,6 +3514,7 @@
       "name": "ABDULLAYEVA SHAXLO RUSTAMOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -3539,6 +3565,7 @@
       "name": "ARTIQOVA SALOMAT RO‘ZMETOVNA",
       "subject": "Tarbiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tarbiya"
       ],
       "classes": []
@@ -3557,6 +3584,7 @@
       "name": "ATANIYAZOVA CHAROS MAJIDBEKOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -3617,6 +3645,7 @@
       "name": "IBRAGIMOVA MUYASSAR AZADOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -3625,6 +3654,7 @@
       "name": "ISMAILOVA IRINA KAMILOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -3917,9 +3947,9 @@
     },
     {
       "name": "RO‘ZMATOVA ADOLAT ATAXON QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -3975,10 +4005,9 @@
     },
     {
       "name": "SADULLAYEVA NAFISA ODILBEK QIZI",
-      "subject": "Tarbiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarbiya",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -3992,9 +4021,9 @@
     },
     {
       "name": "SAIDOVA GULMIRA RAMATOVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -4012,6 +4041,7 @@
       "name": "SAPAYEVA MUXABBAT QADAMBAYEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": [
@@ -4082,11 +4112,9 @@
     },
     {
       "name": "XASANBOYEVA MUHAYYO ULUG‘BEK QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -4125,6 +4153,7 @@
       "name": "ABDURAXMANOVA BARNO G‘AYIBNAZAROVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -4206,9 +4235,9 @@
     },
     {
       "name": "IBRAGIMOVA SHAXNOZA BAXTIYAROVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -4224,11 +4253,9 @@
     },
     {
       "name": "ISHCHANOVA NARGIZA ADILBEKOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -4236,8 +4263,8 @@
       "name": "JUMANIYOZOVA IRODA ISMAILOVNA",
       "subject": "Nemis tili",
       "all_krs": [
-        "Nemis tili",
-        "Rus tili"
+        "Boshlang'ich ta'lim",
+        "Nemis tili"
       ],
       "classes": []
     },
@@ -4356,6 +4383,7 @@
       "name": "QURYOZOV JALALIDDIN SABIROVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -4400,6 +4428,7 @@
       "name": "REJABOVA MUQADDAS XUDOYNAZAROVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -4484,9 +4513,9 @@
     },
     {
       "name": "YULDASHEVA DILAFRO‘Z UMIRBEK QIZI",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     }
@@ -4562,12 +4591,9 @@
     },
     {
       "name": "BOBOJONOVA GULJANOY UMIDBEK QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -4613,6 +4639,7 @@
       "name": "KARIMOV SHUXRAT ERKINOVICH",
       "subject": "Fransuz tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Fransuz tili",
         "Rus tili"
       ],
@@ -4685,9 +4712,9 @@
     },
     {
       "name": "OTAJONOV KUSHNAZAR JUMANAZAROVICH",
-      "subject": "Tasviriy san'at",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -4733,6 +4760,7 @@
       "name": "RO‘ZMETOVA SHOXIDA RAXIMBAYEVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": []
@@ -4741,6 +4769,7 @@
       "name": "SALAYEVA MOHINUR XOLMUROD QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -4759,6 +4788,7 @@
       "name": "SHAMURATOVA MATLUBA KENJAYEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -4783,6 +4813,7 @@
       "name": "XASANOVA RAYHON RAMANOVNA",
       "subject": "Fransuz tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Fransuz tili",
         "Rus tili"
       ],
@@ -4891,6 +4922,7 @@
       "name": "ABDULLAYEVA QUVONCHOY DAVRONBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -4945,11 +4977,9 @@
     },
     {
       "name": "ATAMURATOVA MAQSUDA ATANAZAROVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -5083,10 +5113,9 @@
     },
     {
       "name": "IBODULLAYEVA LATOFAT FARHOD QIZI",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika",
-        "Matematika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -5154,11 +5183,9 @@
     },
     {
       "name": "JUMANIYAZOVA DILDOR BEKDURDIYEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -5292,6 +5319,7 @@
       "name": "MATNAZAROVA BARNO OZODBOYEVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -5329,6 +5357,7 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
+        "Boshlang'ich ta'lim",
         "Tarbiya"
       ],
       "classes": [
@@ -5347,6 +5376,7 @@
       "name": "MAXMUDOVA NODIRA RAVSHONBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -5363,9 +5393,9 @@
     },
     {
       "name": "NARBOYEVA ROXAT TANGRIBERGANOVNA",
-      "subject": "Rus tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Rus tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -5409,6 +5439,7 @@
       "name": "OLLOMOVA QUVONCHOY DILSHODBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -5489,12 +5520,9 @@
     },
     {
       "name": "QURBANBAYEVA LENINZA KARIMBERGANOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -5518,9 +5546,9 @@
     },
     {
       "name": "QURONBAYEVA MUNIRA MARKS QIZI",
-      "subject": "Matematika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Matematika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -5548,6 +5576,7 @@
       "name": "RADJABOVA DILAFRO‘Z DAVRONBEKOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -5620,9 +5649,9 @@
     },
     {
       "name": "RAXIMOVA NILUFAR KOMULJON QIZI",
-      "subject": "Matematika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Matematika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -5668,6 +5697,7 @@
       "name": "RO‘ZMETOVA MUXAYYA AMINBOYEVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -5854,13 +5884,9 @@
     },
     {
       "name": "XODJANIYAZOVA SEVARA BAHTIYOROVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Matematika",
-        "Tarbiya",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -5876,11 +5902,9 @@
     },
     {
       "name": "XODJAYEVA SOHIBA OLIMJONOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -5888,6 +5912,7 @@
       "name": "XOLMETOVA SURAYYO DILSHOD QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -5916,6 +5941,7 @@
       "name": "XUDAYBERGANOVA CHAROSXON RUSTAM QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -6007,9 +6033,9 @@
     },
     {
       "name": "ABDULLAYEVA RA’NO O‘RINBOY QIZI",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -6043,6 +6069,7 @@
       "name": "ADAMBAYEVA SAYYORA KUSHIMOVNA",
       "subject": "Tarbiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tarbiya"
       ],
       "classes": [
@@ -6229,9 +6256,9 @@
     },
     {
       "name": "JUMABOYEVA MUNIRA NORBEK QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -6313,10 +6340,9 @@
     },
     {
       "name": "MATMUROTOVA DILFUZA SULTANOVNA",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -6324,6 +6350,7 @@
       "name": "MATNIYOZOVA YULDUZ SOBURJONOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -6446,6 +6473,7 @@
       "name": "OMONBOYEVA SHAHRIYABONU FURQAT QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -6464,15 +6492,16 @@
       "name": "OTABOYEVA NILUFAR SHONAZAROVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
     },
     {
       "name": "OTAMURATOVA MADINABONU OYBEK QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -6488,6 +6517,7 @@
       "name": "POLVANOVA HAYOTXON QAXRAMON QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -6535,6 +6565,7 @@
       "name": "QADAMOVA GULJAHON ERGASHBOY QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -6549,14 +6580,9 @@
     },
     {
       "name": "QURBANOVA SHAHNOZA AMONBAYEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Matematika",
-        "Ona tili",
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -6591,6 +6617,7 @@
       "name": "RAXIMOV OZODBOY JUMABOYEVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -6682,10 +6709,9 @@
     },
     {
       "name": "SHOMURATOVA NAFOSAT ERMAT QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -6703,6 +6729,7 @@
       "name": "SOBIROVA SURAYYOXON HURMAT QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -6733,19 +6760,17 @@
     },
     {
       "name": "XOLMUROTOVA XUSNIYABONU XUSANJON QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "XO‘JANIYOZOVA ONAJON MATKARIMOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -6771,9 +6796,9 @@
     },
     {
       "name": "XO‘SINOVA NILUFAR QURBONBOY QIZI",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -6837,6 +6862,7 @@
       "name": "ATYAZOVA SHAROFAT QO‘ZIBOYEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": [
@@ -6966,11 +6992,9 @@
     },
     {
       "name": "IBRAGIMOVA MUQADDAMXON NIZOMIDDIN QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -6978,6 +7002,7 @@
       "name": "ISKANDAROVA SHOIRA RAVSHONOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -6986,6 +7011,7 @@
       "name": "JUMANIYOZOVA IRODA SHANAZAROVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -7026,6 +7052,7 @@
       "name": "KARIMOV DONIYOR ABDUSHARIBOVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -7061,6 +7088,7 @@
       "name": "MATYAQUBOVA BARNO QALANDAROVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -7149,6 +7177,7 @@
       "name": "QABULOVA NARGIZA REYIMBERGANOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": [
@@ -7175,9 +7204,9 @@
     },
     {
       "name": "QO‘CHQAROVA SHOIRA POLVANNAZAROVNA",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -7285,12 +7314,9 @@
     },
     {
       "name": "SATTAROVA E’TIBOR OMONBOYEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -7485,6 +7511,7 @@
       "name": "OTABOYEV DAVRONBEK ABDULLAYEVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -7520,12 +7547,9 @@
     },
     {
       "name": "QURBONBOYEVA NAZAKATXON QURBONBOYEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tarbiya",
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -7685,6 +7709,7 @@
       "name": "BOBOJONOV RADIK HAYITBOYEVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -7704,6 +7729,7 @@
       "name": "DAVLETOVA FERUZA YUSUPOVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -7742,6 +7768,7 @@
       "name": "HO‘SINOVA SAYYOTXON BEKDURDIYEVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -7776,25 +7803,17 @@
     },
     {
       "name": "JUMANIYOZOVA MUSHARRAF HAMRO QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Boshlang'ich ta'lim",
-        "Informatika",
-        "Matematika",
-        "Ona tili",
-        "Rus tili",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "JUMYOZOVA XURSHIDAXON ULUG‘BEK QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -7820,6 +7839,7 @@
       "name": "MATKARIMOVA MUXABBAT SULTONNAZIROVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -7856,6 +7876,7 @@
       "name": "OLIMOVA DILNURA HURRAMBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -7967,6 +7988,7 @@
       "name": "SABIROVA HURRIYAT SHAXNAZAROVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -7975,6 +7997,7 @@
       "name": "SABIROVA SAXIBA OLEGOVNA",
       "subject": "English",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "English",
         "Rus tili"
       ],
@@ -7992,9 +8015,9 @@
     },
     {
       "name": "SAPAYEVA ZIYODA QADAMOVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -8022,6 +8045,7 @@
       "name": "XAYITBOYEVA SOHIBA OMANBOYEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -8093,9 +8117,9 @@
     },
     {
       "name": "ARSLANOVA JUMAGUL XUDAYOROVNA",
-      "subject": "Tarbiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -8151,6 +8175,7 @@
       "name": "BEKCHANOVA JUMAGUL XUSHNUDBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -8168,9 +8193,8 @@
     },
     {
       "name": "BOBONIYOZOVA SEZGIRA SHAVKATOVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
-        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": []
@@ -8217,22 +8241,16 @@
     },
     {
       "name": "GALDIYEV BOTIRBOY DURDIYEVICH",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Boshlang'ich ta'lim",
-        "Informatika",
-        "Matematika",
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "GALDIYEVA GULNAZA OLIMBAYEVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
-        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -8297,10 +8315,9 @@
     },
     {
       "name": "KENJAYEVA GULNORA YANGIBOY QIZI",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -8308,6 +8325,7 @@
       "name": "KENJAYEVA MATLUBA TIRKASH QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -8344,6 +8362,7 @@
       "name": "MATYOQUBOVA BAKPOSHSHA RAZZOQOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -8388,6 +8407,7 @@
       "name": "OLLABERGANOVA IQBOLOY XUSHNUDBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -8422,10 +8442,9 @@
     },
     {
       "name": "ORALLIYEVA HILOLA XUSAN QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -8465,11 +8484,9 @@
     },
     {
       "name": "RABBIMBERGANOVA ASALOY MANSURBEK QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -8483,9 +8500,9 @@
     },
     {
       "name": "RAXIMOVA MUNISAXON ASHIRBOY QIZI",
-      "subject": "Rus tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Rus tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -8576,13 +8593,9 @@
     },
     {
       "name": "TOJIBAYEVA ORTIQGUL XAYRULLO QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Boshlang'ich ta'lim",
-        "Ona tili",
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -8677,11 +8690,9 @@
     },
     {
       "name": "JUMANIYOZOVA NILUFAR EGAMBERGAN QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tarbiya",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -8689,6 +8700,7 @@
       "name": "JUMANIYOZOVA ZUBAYDA KOMUL QIZI",
       "subject": "Informatika",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Informatika"
       ],
       "classes": [
@@ -8715,9 +8727,9 @@
     },
     {
       "name": "KOMILOVA SEVARA XOLMUROD QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -8761,6 +8773,7 @@
       "name": "NIYAZMETOVA SHOXIDA RAIMBERGANOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -8826,6 +8839,7 @@
       "name": "RAXIMOVA GOZEL XXX",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -8834,6 +8848,7 @@
       "name": "RO‘ZIMOVA MAVJUDA BOYMUROTOVNA",
       "subject": "Huquq",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Huquq",
         "Tarbiya"
       ],
@@ -8843,6 +8858,7 @@
       "name": "SABIROVA HILOLA BEKMIRZO QIZI",
       "subject": "Informatika",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Informatika"
       ],
       "classes": []
@@ -8868,9 +8884,9 @@
     },
     {
       "name": "SHOMURODOVA UMIDA RAVSHONBEK QIZI",
-      "subject": "Rus tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Rus tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -9052,7 +9068,7 @@
     },
     {
       "name": "ISMAILOVA SADOQAT RO‘ZIMBOY QIZI",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Texnologiya",
       "all_krs": [
         "Boshlang'ich ta'lim",
         "Texnologiya"
@@ -9101,6 +9117,7 @@
       "name": "KARIMOVA MAXSUDA QURBONBOYEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at",
         "Texnologiya"
       ],
@@ -9112,6 +9129,7 @@
       "name": "KURBONTURDIYEVA XURSHIDA SHAVKAT QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -9159,6 +9177,7 @@
       "name": "OMANOV XUDAYNAZAR OTAYEVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -9173,9 +9192,8 @@
     },
     {
       "name": "OTAJONOV MARDONBEK MATYOQUBOVICH",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Kimyo",
       "all_krs": [
-        "Boshlang'ich ta'lim",
         "Kimyo"
       ],
       "classes": [
@@ -9262,23 +9280,10 @@
       ]
     },
     {
-      "name": "RUZIMOVA SHOHISTA QADAM QIZI",
+      "name": "SAIDOVA HILOLA PULATOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
         "Boshlang'ich ta'lim"
-      ],
-      "classes": []
-    },
-    {
-      "name": "SAIDOVA HILOLA PULATOVNA",
-      "subject": "Biologiya",
-      "all_krs": [
-        "Biologiya",
-        "Boshlang'ich ta'lim",
-        "Informatika",
-        "Matematika",
-        "Ona tili",
-        "Tarbiya"
       ],
       "classes": []
     },
@@ -9345,8 +9350,7 @@
       "name": "XUJAKULOVA ZILOLA ERALIYEVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya",
-        "Boshlang'ich ta'lim"
+        "Biologiya"
       ],
       "classes": [
         "5-A класс"
@@ -9365,9 +9369,10 @@
     },
     {
       "name": "YORMATOVA ZAMIRA HAYITBOYEVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Texnologiya",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Texnologiya"
       ],
       "classes": [
         "3-A класс"
@@ -9386,14 +9391,6 @@
       ]
     },
     {
-      "name": "ABDULLAYEVA ZEBOXON MAXSUDOVNA",
-      "subject": "Boshlang'ich ta'lim",
-      "all_krs": [
-        "Boshlang'ich ta'lim"
-      ],
-      "classes": []
-    },
-    {
       "name": "ALLAKULIYEV ADHAMBEK DAVLATNAZAR O‘G‘LI",
       "subject": "Informatika",
       "all_krs": [
@@ -9403,11 +9400,9 @@
     },
     {
       "name": "ASHIRBOYEVA MUAZZAM AZIZBEK QIZI",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika",
-        "Tarbiya",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -9433,6 +9428,7 @@
       "name": "BEKJONOVA ZARINA RASHID QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -9486,9 +9482,8 @@
     },
     {
       "name": "HASANOVA NAZOKAT BEKTURDIYEVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
-        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -9525,9 +9520,9 @@
     },
     {
       "name": "IBROHIMOVA YORQINOY OG‘AJONOVNA",
-      "subject": "Tarbiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -9535,6 +9530,7 @@
       "name": "JUMANAZAROVA NILUFAR SHOXNAZAR QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -9560,19 +9556,10 @@
       ]
     },
     {
-      "name": "MAMATOVA FAZILAT BEKTURDIYEVNA",
+      "name": "MAMATOVA SANOBAR BEKTURDIYEVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
         "Boshlang'ich ta'lim"
-      ],
-      "classes": []
-    },
-    {
-      "name": "MAMATOVA SANOBAR BEKTURDIYEVNA",
-      "subject": "Matematika",
-      "all_krs": [
-        "Matematika",
-        "Tarbiya"
       ],
       "classes": []
     },
@@ -9718,11 +9705,9 @@
     },
     {
       "name": "QALANDAROVA ADIBA RUSTAMOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -9749,6 +9734,7 @@
       "name": "QURYOZOV SODIQJON KOMILOVICH",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": [
@@ -9798,6 +9784,7 @@
       "name": "RAXIMOVA NOZIMA ODILBEKOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -9835,6 +9822,7 @@
       "name": "SABIROVA BAXTIGUL MAMATVAPAYEVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -9955,6 +9943,7 @@
       "name": "XUDAYBERGANOVA ZILOLA ANVAR QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": [
@@ -9963,10 +9952,9 @@
     },
     {
       "name": "XUDOYBERGANOVA ONAJON KARIMBOYEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -10043,6 +10031,7 @@
       "name": "AXMEDOVA LOBAR XAITBAYEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": [
@@ -10080,6 +10069,7 @@
       "name": "BOBOJONOV JO‘RABEK MUZAFFAR O‘G‘LI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -10116,6 +10106,7 @@
       "name": "IBROHIMOVA ZUBAYDA MARKS QIZI",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -10152,9 +10143,9 @@
     },
     {
       "name": "ISOQOVA CHAROS AZAMAT QIZI",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -10198,6 +10189,7 @@
       "name": "JUMANIYOZOVA IQBOL OTABOYEVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -10249,12 +10241,10 @@
     },
     {
       "name": "MATNAZAROVA MUBORAK XUDAYBERGANOVNA",
-      "subject": "Biologiya",
+      "subject": "Rus tili",
       "all_krs": [
-        "Biologiya",
-        "Rus tili",
-        "Tarbiya",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim",
+        "Rus tili"
       ],
       "classes": []
     },
@@ -10459,6 +10449,7 @@
       "name": "RO‘ZMETOVA ZULXUMOR NAZIROVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -10513,6 +10504,7 @@
       "name": "SOBIROVA SABINA DAVLATNAZAR QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -10529,16 +10521,16 @@
       "name": "SULTONOV ASADBEK SHAVKAT O‘G‘LI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
     },
     {
       "name": "TO‘RAYEVA KOMILA YULDASHEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -10572,22 +10564,17 @@
     },
     {
       "name": "ABDULLAYEVA SHIRINOY OTABOYEVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "BEKTURDIYEVA MASHHURAXON MAQSUDBEK QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Boshlang'ich ta'lim",
-        "Matematika",
-        "Ona tili",
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -10614,6 +10601,7 @@
       "name": "BOG‘BEKOVA DILOROM ISMOILOVNA",
       "subject": "Huquq",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Huquq",
         "Tarbiya"
       ],
@@ -10671,6 +10659,7 @@
       "name": "HAYITCHANOV MARAT OMONBOBAYEVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -10705,6 +10694,7 @@
       "name": "KARIMOVA GO‘ZAL QURBONBOYEVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -10779,6 +10769,7 @@
       "name": "OLLABERGANOVA NILUFAR MUROD QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -10807,6 +10798,7 @@
       "name": "OTANAZAROVA KLARA MUZAFFAR QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -10918,6 +10910,7 @@
       "name": "RAXIMOVA DILBARJON NARMAMATOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": [
@@ -10926,9 +10919,9 @@
     },
     {
       "name": "SAPAROVA NAZOKAT SAPAR QIZI",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -10956,6 +10949,7 @@
       "name": "SOBIROV MASHARIB QADAMOVICH",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -11110,15 +11104,15 @@
     },
     {
       "name": "BOLTAYEVA MAQSUDA MUHAMMATOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "DJABBAROVA NASIBA RUSTAMOVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
         "Boshlang'ich ta'lim",
         "Ona tili"
@@ -11186,11 +11180,9 @@
     },
     {
       "name": "KARIMOVA KOMILA SOPARBAYEVNA",
-      "subject": "Tarbiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarbiya",
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -11261,9 +11253,9 @@
     },
     {
       "name": "MATNIYAZOVA KAMOLA ALIMBAYEVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -11285,11 +11277,9 @@
     },
     {
       "name": "MATYUSUPOVA RISOLAT KOMILJONOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Boshlang'ich ta'lim",
-        "Ona tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -11305,9 +11295,8 @@
     },
     {
       "name": "MAXMUDOVA NAZOKAT SHONAZAROVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
-        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": []
@@ -11359,13 +11348,9 @@
     },
     {
       "name": "PALVANOVA FAROGAT ALLABERGANOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Boshlang'ich ta'lim",
-        "Matematika",
-        "Ona tili",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -11399,6 +11384,7 @@
       "name": "QUVAQOVA RUXSORA OLLAYOROVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -11505,6 +11491,7 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
+        "Boshlang'ich ta'lim",
         "Matematika",
         "Tasviriy san'at",
         "Texnologiya"
@@ -11533,15 +11520,15 @@
       "name": "SAPAYEVA ROZIYAJON BABAJANOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
     },
     {
       "name": "SHERMETOVA SALOMAT DAVLATOVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
-        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -11594,6 +11581,7 @@
       "name": "XAMRAYEVA NIGORA MATYOQUBOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at",
         "Texnologiya"
       ],
@@ -11627,6 +11615,7 @@
       "name": "XUDARGANOVA DILNOZA DUSHAMOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at",
         "Texnologiya"
       ],
@@ -11666,9 +11655,8 @@
     },
     {
       "name": "XUDAYBERGANOVA INTIZOR OLIMBOYEVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
-        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -11679,6 +11667,7 @@
       "name": "XUDAYBERGANOVA MAHBUBA BAXODIR QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -11695,6 +11684,7 @@
       "name": "XUDAYBERGANOVA UMIDA KAMILOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -11817,16 +11807,16 @@
       "name": "JUMABOYEVA IZZATXON YO‘LDOSHEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
     },
     {
       "name": "JUMABOYEVA NAZOKAT ZAFARBEK QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -11898,6 +11888,7 @@
       "name": "MATMURODOVA OYSHA JUMABOYEVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -11962,6 +11953,7 @@
       "name": "OLLAKOVA SAYYORA SA’DULLAYEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": [
@@ -11982,6 +11974,7 @@
       "name": "OTAJONOVA MUBORAK QADAMBOYEVNA",
       "subject": "Tarbiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tarbiya"
       ],
       "classes": [
@@ -12000,33 +11993,33 @@
     },
     {
       "name": "PANAYEVA MUNISXON FAXRIDDIN QIZI",
-      "subject": "Matematika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Matematika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "QADAMOVA DILASAL MAKSUDBEK QIZI",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "QADAMOVA RO‘ZA ZOKIR QIZI",
-      "subject": "Rus tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Rus tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "QADOMOVA SADOQAT G‘AYRATOVNA",
-      "subject": "Matematika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Matematika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -12096,6 +12089,7 @@
       "name": "RAXIMOVA MAXLIYO ALISHER QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -12158,6 +12152,7 @@
       "name": "SOBIROVA ZEBO NORBOYEVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": []
@@ -12191,6 +12186,7 @@
       "name": "XASANOVA ZEBOXON BEKPULATOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -12199,12 +12195,9 @@
     },
     {
       "name": "XO‘JAYEVA XURSHIDA HAJI QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -12250,6 +12243,7 @@
       "name": "YO‘LDOSHEVA MAHLIYO HUSAN QIZI",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": []
@@ -12306,6 +12300,7 @@
       "name": "BOBOJONOV BOTIR EGAMOVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -12316,15 +12311,16 @@
       "name": "BOBOJONOVA AZIZA BOTIR QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
     },
     {
       "name": "BOG‘IYEVA UG‘ILJON FARHODOVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -12412,12 +12408,9 @@
     },
     {
       "name": "MATKARIMOVA SHODIYA KENJABOY QIZI",
-      "subject": "Matematika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Matematika",
-        "Ona tili",
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -12441,9 +12434,9 @@
     },
     {
       "name": "MATYOZOVA FAZILAT OZODOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -12459,8 +12452,8 @@
       "name": "NURJONOVA ZUHRAJON UMIDJON QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim",
+        "Tasviriy san'at"
       ],
       "classes": []
     },
@@ -12513,15 +12506,9 @@
     },
     {
       "name": "OTAJANOVA GULZIRA OZADOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Boshlang'ich ta'lim",
-        "Informatika",
-        "Matematika",
-        "Ona tili",
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -12545,14 +12532,9 @@
     },
     {
       "name": "OZODOVA DILDORA HAMIDOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Boshlang'ich ta'lim",
-        "Informatika",
-        "Matematika",
-        "Ona tili",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -12580,9 +12562,7 @@
       "name": "QURBONOVA AZIZA BAXTIYAROVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim",
-        "Matematika",
-        "Ona tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -12626,6 +12606,7 @@
       "name": "RAJABOVA OZODA QADAMOVNA",
       "subject": "Huquq",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Huquq",
         "Tarbiya"
       ],
@@ -12643,13 +12624,9 @@
     },
     {
       "name": "RAXIMOVA GULASAL ALISHER QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Matematika",
-        "Ona tili",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -12763,6 +12740,7 @@
       "name": "XO‘JAYEVA NARGIZA MATYOQUBOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -12817,10 +12795,9 @@
     },
     {
       "name": "AXMEDOVA MUHBIRA KENJABOY QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -12842,9 +12819,9 @@
     },
     {
       "name": "BEKCHONOVA ZULXUMOR BOLTOBOYEVNA",
-      "subject": "Tarbiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -12852,6 +12829,7 @@
       "name": "EGAMBERGANOVA ZAXRO ALLABERGANOVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": []
@@ -12933,6 +12911,7 @@
       "name": "MADRAXIMOVA RO‘SKAJON SHOXNAZAROVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -12949,11 +12928,9 @@
     },
     {
       "name": "MATKARIMOVA DILAFRO‘Z YO‘LDOSH QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -13002,6 +12979,7 @@
       "name": "OTABOYEVA MADINA DAVRONBEK QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -13016,10 +12994,9 @@
     },
     {
       "name": "PIRNAFASOVA DURDONA QUZIBAYEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -13130,6 +13107,7 @@
       "name": "RO‘ZMETOVA SULTONPOSHSHA OCHILOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -13172,6 +13150,7 @@
       "name": "XUSINOVA MAMAJON RUZIMOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": [
@@ -13190,6 +13169,7 @@
       "name": "YO‘LDOSHEV MARATDURDI XUSAN O‘G‘LI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -13209,6 +13189,7 @@
       "name": "ADAMOVA MAXLIYO ERGASH QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -13367,11 +13348,9 @@
     },
     {
       "name": "MADAMINOVA GULZODA RUSTAMBEK QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -13379,6 +13358,7 @@
       "name": "MASHARIPOVA YULDUZ AMANOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at",
         "Texnologiya"
       ],
@@ -13417,6 +13397,7 @@
       "name": "OZODOVA MUXLISA TOHIR QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -13503,8 +13484,7 @@
       "name": "SAPARBAYEVA FERUZA ALIMBOY QIZI",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim",
-        "Ona tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -13512,8 +13492,8 @@
       "name": "SAPARDURDIYEV RUSLANBEK YO‘LDOSHEVICH",
       "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim",
+        "Tasviriy san'at"
       ],
       "classes": []
     },
@@ -13551,6 +13531,7 @@
       "name": "SHEROVA TOZAGUL RO‘ZIMOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -13661,9 +13642,9 @@
     },
     {
       "name": "ISMAILOVA SHOHISTA IKROMOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -13734,6 +13715,7 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
+        "Boshlang'ich ta'lim",
         "Informatika",
         "Matematika",
         "Ona tili",
@@ -13747,6 +13729,7 @@
       "name": "MADAMINOVA FAZILAT BAHODIROVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -13887,6 +13870,7 @@
       "name": "NURJONOVA NILUFAR OTABOY QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -13905,6 +13889,7 @@
       "name": "OTAJONOVA XURRIYAT KURVANNAZAROVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -13957,6 +13942,7 @@
       "name": "QURBONOVA MA’MURA ODAMBOYEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -13965,6 +13951,7 @@
       "name": "QURBONOVA MUNOJAT OLIMBOY QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -14046,6 +14033,7 @@
       "name": "ABDULLAYEVA GULINISO HAMIDJON QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": [
@@ -14056,6 +14044,7 @@
       "name": "ABDULLAYEVA GULPOSHSHA AXMEDOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -14157,15 +14146,16 @@
       "name": "DO‘SCHANOVA OYSHOJON UMIRBEK QIZI",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": []
     },
     {
       "name": "EGAMOVA SHODIYA SHODLIK QIZI",
-      "subject": "Rus tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Rus tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -14227,6 +14217,7 @@
       "name": "JUMANIYOZOVA DILNURA SHUHRAT QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -14380,6 +14371,7 @@
       "name": "QODIROVA SAODATJON MASHARIPOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -14396,6 +14388,7 @@
       "name": "RAJABBAYEVA GULI UMIRBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -14412,9 +14405,9 @@
     },
     {
       "name": "RAXIMOVA LOBARXON RAVSHANBEK QIZI",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -14661,9 +14654,9 @@
     },
     {
       "name": "AMINOVA NAZOKAT JUMANAZAROVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -14705,28 +14698,24 @@
     },
     {
       "name": "ATAMURATOVA DILFUZA QURVANDURDIYEVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "ATAMUROTOVA ZEBO OTABEKOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Matematika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "ATAMUROTOVA ZUBAYDA FARXODOVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
-        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -14737,6 +14726,7 @@
       "name": "BABAJANOV XAYRULLA ISKANDAROVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -14745,6 +14735,7 @@
       "name": "BABAJONOVA KAMOLA XAYRULLAYEVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -14826,8 +14817,7 @@
       "name": "IBRAGIMOVA SHAHNOZA KAXRAMONOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim",
-        "Ona tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -14871,9 +14861,8 @@
     },
     {
       "name": "KENJAYEVA DILFUZA RAJABBOYEVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
-        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -14928,9 +14917,9 @@
     },
     {
       "name": "OTOJONOVA ZULXUMAR YUSUPOVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -15008,20 +14997,17 @@
     },
     {
       "name": "RAXIMOVA ZULXUMAR RAJAPOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "RAXMANOVA MUQADDAS TO‘LIBOY QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Boshlang'ich ta'lim",
-        "Informatika",
-        "Ona tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -15052,11 +15038,9 @@
     },
     {
       "name": "SARIYEV QURONBOY SABIROVICH",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -15080,9 +15064,9 @@
     },
     {
       "name": "SOBIROV ILXOM OTABOYEVICH",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -15099,6 +15083,7 @@
       "name": "TANGRIBERGANOVA RAXIMAJON DAVLATOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -15125,6 +15110,7 @@
       "name": "USMONOVA YULDUZ RUSTAM QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -15153,6 +15139,7 @@
       "name": "XO‘JAYEV YUSUPBOY OTANAZAROVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -15176,14 +15163,6 @@
       "classes": [
         "2-B sinf"
       ]
-    },
-    {
-      "name": "YULDOSHOVA UMIDA OMONBOY QIZI",
-      "subject": "Boshlang'ich ta'lim",
-      "all_krs": [
-        "Boshlang'ich ta'lim"
-      ],
-      "classes": []
     }
   ],
   "37-sonli maktab": [
@@ -15309,14 +15288,9 @@
     },
     {
       "name": "JUMAMUROTOVA ZUMRAD XUSAINOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Boshlang'ich ta'lim",
-        "Matematika",
-        "Ona tili",
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -15338,9 +15312,9 @@
     },
     {
       "name": "JUMANIYOZOVA GULISTON RAJABOVNA",
-      "subject": "Tarbiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -15412,9 +15386,9 @@
     },
     {
       "name": "MATYOQUBOVA ZUXRA SOBIROVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -15440,9 +15414,9 @@
     },
     {
       "name": "NORBOYEVA MANZURA RAJABOVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -15464,10 +15438,9 @@
     },
     {
       "name": "OTABOYEVA FARANGIZ OMONBOYEVNA",
-      "subject": "Matematika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Matematika",
-        "Ona tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -15489,11 +15462,9 @@
     },
     {
       "name": "QADAMOVA DILASAL MAKSUDBEK QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Matematika",
-        "Ona tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -15570,14 +15541,9 @@
     },
     {
       "name": "SABIROVA SABOXAT RAXIMOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Boshlang'ich ta'lim",
-        "Matematika",
-        "Ona tili",
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -15621,6 +15587,7 @@
       "name": "SHODLIKOVA MOHINABONU ELBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -15637,6 +15604,7 @@
       "name": "SOBIROVA MUXAYYO QO‘ZIBOY QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -15652,9 +15620,9 @@
     },
     {
       "name": "SULTANOVA UMIDA FARXODOVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -15690,12 +15658,11 @@
     },
     {
       "name": "ВАКАНСИЯ",
-      "subject": "Informatika",
+      "subject": "Tarbiya",
       "all_krs": [
-        "Informatika",
+        "Boshlang'ich ta'lim",
         "Tarbiya",
-        "Tarix",
-        "Tasviriy san'at"
+        "Tarix"
       ],
       "classes": []
     }
@@ -15715,6 +15682,7 @@
       "name": "ABDULLAYEVA RO‘ZAGUL TO‘YLIBOY QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -15757,6 +15725,7 @@
       "name": "AXMADJONOVA MUXLISAXON REJABBOY QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -15838,10 +15807,9 @@
     },
     {
       "name": "KAMOLOVA MUNISA NORIMMAT QIZI",
-      "subject": "Tarbiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarbiya",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -15882,6 +15850,7 @@
       "name": "OTABOYEVA KUMUSH RAVSHANBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -15920,9 +15889,9 @@
     },
     {
       "name": "ROXIMOV JAMOLADDIN KAMOLADDINOVICH",
-      "subject": "Tarbiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -15930,6 +15899,7 @@
       "name": "RO‘ZMETOVA MA’RIFAT MATYAQUBOVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -15975,9 +15945,8 @@
     },
     {
       "name": "SHAMAYEVA OZODA KURBANBAYEVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
-        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -16136,6 +16105,7 @@
       "name": "AXMEDOVA NAVBAHOR ATAXONOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -16144,6 +16114,7 @@
       "name": "BAKIYEV PIRNAZAR OLIMBOY O‘G‘LI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -16162,6 +16133,7 @@
       "name": "BEKCHONOVA DONOGUL IBROHIM QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -16204,10 +16176,9 @@
     },
     {
       "name": "ESHMETOVA MAKSUDA QURYAZOVNA",
-      "subject": "Matematika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Matematika",
-        "Ona tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -16263,11 +16234,9 @@
     },
     {
       "name": "JUMANIYOZOVA SHAHLO ALIMBOYEVNA",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika",
-        "Ona tili",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -16329,9 +16298,8 @@
     },
     {
       "name": "MASHARIPOVA BAKPOSHSHA ABDULLA QIZI",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
-        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -16361,7 +16329,6 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
-        "Boshlang'ich ta'lim",
         "Geografiya"
       ],
       "classes": []
@@ -16424,6 +16391,7 @@
       "name": "OMONBOYEVA GULZODA G‘OFURJON QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -16450,6 +16418,7 @@
       "name": "PIRNAPASOVA OYSULTON OLIMBOY QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -16476,10 +16445,9 @@
     },
     {
       "name": "QURBONBOYEVA GULISTON MATYOQUBOVNA",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -16599,6 +16567,7 @@
       "name": "SAMANDAROVA GULIRA’NO OYBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -16637,14 +16606,9 @@
     },
     {
       "name": "SHAMURATOVA JAXANGUL MAQSUDOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Boshlang'ich ta'lim",
-        "Matematika",
-        "Tarbiya",
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -16652,6 +16616,7 @@
       "name": "SHERMETOVA SEVARA KAMILOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": [
@@ -16660,9 +16625,9 @@
     },
     {
       "name": "SOBIROVA MAVJUDA O‘TKIR QIZI",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -16763,6 +16728,7 @@
       "name": "ABDIRIMOVA TURSINOY YULDASHEVNA",
       "subject": "Tarbiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tarbiya",
         "Tarix"
       ],
@@ -16828,6 +16794,7 @@
       "name": "DAVLETOVA ADIBAXON IKROMBOY QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -16892,9 +16859,9 @@
     },
     {
       "name": "HAYITBOYEVA SARVINOZ BAHROMOVNA",
-      "subject": "Ona tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Ona tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -16962,6 +16929,7 @@
       "name": "KARIMOVA TOZAGUL YULDASH QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -16986,9 +16954,9 @@
     },
     {
       "name": "KURBONBOYEVA ZUXRA NARIMONOVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -16996,6 +16964,7 @@
       "name": "MATKARIMOVA LAYLO RO‘ZMATOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -17004,9 +16973,9 @@
     },
     {
       "name": "MATNAZAROVA SABOHAT G‘AYRATBOYEVNA",
-      "subject": "Ona tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Ona tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -17028,9 +16997,9 @@
     },
     {
       "name": "MATYOZOVA DILNAVOZ OTABEKOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -17065,6 +17034,7 @@
       "name": "OTAJONOVA ZILOLA HURMAT QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -17113,9 +17083,9 @@
     },
     {
       "name": "RO‘ZMATOVA MUNIRA ABDULLA QIZI",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -17133,6 +17103,7 @@
       "name": "RO‘ZMETOVA SANOBAR BAYMURATOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -17203,6 +17174,7 @@
       "name": "XASANOVA SADOKAT ATANAZAROVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -17231,6 +17203,7 @@
       "name": "YAQUBOV ADHAMJON G‘ANIJON O‘G‘LI",
       "subject": "Huquq",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Huquq",
         "Tarbiya"
       ],
@@ -17258,6 +17231,7 @@
       "name": "ZARIPBOYEVA XABIBA ZAFARBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -17310,10 +17284,9 @@
     },
     {
       "name": "JUMANAZAROVA SHOXINA UMARJON QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -17329,10 +17302,9 @@
     },
     {
       "name": "MAMATOV EGAMBOY OTANAZAROVICH",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -17350,6 +17322,7 @@
       "name": "MATKARIMOVA RAYXON ZARIPBAYEVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": []
@@ -17374,6 +17347,7 @@
       "name": "ODAMOVA XURSHIDA RO‘ZIMOVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": []
@@ -17382,6 +17356,7 @@
       "name": "OZODBOYEV ARTUR G‘AFUR O‘G‘LI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -17439,6 +17414,7 @@
       "name": "RAJABOVA SURAYYO SHONAZAROVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -17670,11 +17646,9 @@
     },
     {
       "name": "OLLABERGANOVA XAYITGUL RAVSHAN QIZI",
-      "subject": "Tarbiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarbiya",
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -17682,6 +17656,7 @@
       "name": "OLLABERGANOVA XURSHIDA SHUHRAT QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -17744,6 +17719,7 @@
       "name": "QURYOZOVA MATLUBA ILHOMBEKOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -17827,6 +17803,7 @@
       "name": "SHEROVA GULBAHOR DO‘SCHANOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at",
         "Texnologiya"
       ],
@@ -17874,6 +17851,7 @@
       "name": "XAKIMOVA SANAMJON IBODULLAYEVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -17890,9 +17868,7 @@
       "name": "XAYITBOYEVA MALOHAT OTANAZAR QIZI",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Boshlang'ich ta'lim",
-        "Matematika",
-        "Ona tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -17959,6 +17935,7 @@
       "name": "BOBOJONOV SHUXRAT OMONOVICH",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at",
         "Texnologiya"
       ],
@@ -17968,9 +17945,9 @@
     },
     {
       "name": "BOBOJONOVA DILFUZA RUSTAMOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -18004,6 +17981,7 @@
       "name": "ERKINOVA SEVINCHOY JASURBEK QIZI",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": []
@@ -18012,6 +17990,7 @@
       "name": "ESHCHONOVA SANOBAR OTABOYEVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -18058,6 +18037,7 @@
       "name": "MASHARIPOV G‘AYRAT OLIMBOY O‘G‘LI",
       "subject": "Huquq",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Huquq",
         "Tarbiya"
       ],
@@ -18119,9 +18099,9 @@
     },
     {
       "name": "NURMATOV RASUL ZARIPOVICH",
-      "subject": "Biologiya",
+      "subject": "Fizika",
       "all_krs": [
-        "Biologiya",
+        "Boshlang'ich ta'lim",
         "Fizika"
       ],
       "classes": []
@@ -18130,6 +18110,7 @@
       "name": "NURMATOVA NODIRA RAVSHANBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -18173,9 +18154,9 @@
     },
     {
       "name": "SAMANDAROVA ROBIYAJON SARDORBEK QIZI",
-      "subject": "Rus tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Rus tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -18225,6 +18206,7 @@
       "name": "ARTIKOVA NADEJDA GENNADIYEVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -18277,9 +18259,9 @@
     },
     {
       "name": "MATNIYOZOVA QUVONCH ARSLONOVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -18287,6 +18269,7 @@
       "name": "MATNIYOZOVA SHAXLO ARSLANOVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -18305,6 +18288,7 @@
       "name": "NURJANOVA QUMRI RAXIMOVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -18370,10 +18354,9 @@
     },
     {
       "name": "RAJABOVA GULRUX NIZOMATOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -18495,9 +18478,9 @@
     },
     {
       "name": "SOBIROVA MARTABA XAYRULLA QIZI",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -18505,6 +18488,7 @@
       "name": "TILLAYEVA MANZURA POLVANNAZIROVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -18527,9 +18511,9 @@
     },
     {
       "name": "YULDASHOVA MUBORAK RAXIMOVNA",
-      "subject": "Tarbiya",
+      "subject": "Tasviriy san'at",
       "all_krs": [
-        "Tarbiya",
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at",
         "Texnologiya"
       ],
@@ -18567,18 +18551,17 @@
     },
     {
       "name": "ABDIRIMOVA LAYLO OLLAZAROVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "ABDISHERIPOVA GULMIRA MADRAXIM QIZI",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -18630,9 +18613,9 @@
     },
     {
       "name": "ATAYEVA DURJONOY AXMEDOVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -18650,6 +18633,7 @@
       "name": "AZATOVA NODIRA BEKPO‘LAT QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -18714,6 +18698,7 @@
       "name": "BOBOJONOVA SHUKURJON EGAMBERGANOVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -18818,6 +18803,7 @@
       "name": "JUMANOVA SHAROFAT HAJIYEVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -18826,6 +18812,7 @@
       "name": "KURYAZOV BEKPO‘LAT AZATOVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -18854,6 +18841,7 @@
       "name": "MASHARIPOVA ZEVARJON OTABOYEVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -19009,6 +18997,7 @@
       "name": "RAXIMOV MURODBEK HAYITBAYEVICH",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -19118,6 +19107,7 @@
       "name": "SULTANOV BAXTIYOR QURANBAYEVICH",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -19134,6 +19124,7 @@
       "name": "XAJIBOYEVA MAVLUDA MUZAFFAR QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -19207,10 +19198,9 @@
     },
     {
       "name": "BAHODIROVA MAHBUBA JASURBEK QIZI",
-      "subject": "Tarbiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarbiya",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -19307,18 +19297,17 @@
     },
     {
       "name": "MATRASULOVA ZULFIYA YULDASHOVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "MATYOQUBOVA LATOFAT EGAMOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -19372,6 +19361,7 @@
       "name": "OCHILOVA MAFTUNA JAVLONBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -19444,15 +19434,16 @@
       "name": "QURBONBOYEV QAXRAMON JUMABOYEVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
     },
     {
       "name": "QURBONBOYEVA NAFOSAT O‘KTAMBOY QIZI",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -19536,9 +19527,9 @@
     },
     {
       "name": "SABIROVA SABOXAT RAXIMOVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -19563,10 +19554,9 @@
     },
     {
       "name": "SAIDOVA SHAHRIZODA QUVONDIQ QIZI",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -19656,8 +19646,8 @@
       "name": "ALLAZAROVA SADOQAT RAJABBOYEVNA",
       "subject": "Ona tili",
       "all_krs": [
-        "Ona tili",
-        "Rus tili"
+        "Boshlang'ich ta'lim",
+        "Ona tili"
       ],
       "classes": []
     },
@@ -19679,20 +19669,17 @@
     },
     {
       "name": "ASHIROVA SHOHISTA QUVONDIQ QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Ona tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "ASHIROVA XOLISA OTABEK QIZI",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika",
-        "Ona tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -19735,6 +19722,7 @@
       "name": "DJUMANIYAZOV ULUGBEK SABIROVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -19751,6 +19739,7 @@
       "name": "ESHCHANOV OTABEK XAYITBOYEVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -19803,6 +19792,7 @@
       "name": "MADRIMOVA NILUFAR RAHIMBERGANOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": [
@@ -19813,6 +19803,7 @@
       "name": "MASHARIPOVA GO‘ZAL QABULOVNA",
       "subject": "Tarbiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tarbiya"
       ],
       "classes": [
@@ -19821,9 +19812,8 @@
     },
     {
       "name": "MASHARIPOVA IQBOLOY ERKINOVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
-        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": []
@@ -19832,6 +19822,7 @@
       "name": "MASHARIPOVA MEXRIBON QABULOVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -19850,11 +19841,10 @@
     },
     {
       "name": "MATYOQUBOVA UMIDAXON PANABOYEVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "English",
       "all_krs": [
         "Boshlang'ich ta'lim",
-        "English",
-        "Rus tili"
+        "English"
       ],
       "classes": [
         "3-B класс"
@@ -19920,12 +19910,9 @@
     },
     {
       "name": "OTOJONOVA NAZIRBIBI AXMEDOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Matematika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -20064,6 +20051,7 @@
       "name": "SOBIROVA ZULXUMOR JUMYOZOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -20131,6 +20119,7 @@
       "name": "YOQUBOV SOBIR TONGRIBERGANOVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -20139,6 +20128,7 @@
       "name": "YUSUBOVA ZAMIRA RAXIMBERGANOVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -20221,12 +20211,9 @@
     },
     {
       "name": "BATIROVA RISOLAT DAVRANBEKOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tarbiya",
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -20243,6 +20230,7 @@
       "name": "BOTIROV DAVRONBEK JONIBEKOVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -20284,6 +20272,7 @@
       "name": "KENJAYEV OZAD MADRAXIMOVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -20292,6 +20281,7 @@
       "name": "KENJAYEVA ZULXUMMOR SHAHNAZAROVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": []
@@ -20416,21 +20406,17 @@
     },
     {
       "name": "RAMONOVA NARGIZA SHOMURATOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
     {
       "name": "RAXIMOVA SAYYOTXON BEKTURDI QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Matematika",
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -20564,11 +20550,9 @@
     },
     {
       "name": "AZIMBOYEVA BIKAJON YUSUPBOY QIZI",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika",
-        "Tarbiya",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -20584,6 +20568,7 @@
       "name": "BEKCHANOVA DURDIPOSHSHA RO‘ZMETOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -20612,17 +20597,16 @@
       "name": "G‘AIPOVA HILOLA HAMROBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
     },
     {
       "name": "G‘AYIBOVA SHAROFAT QODAMBOYEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tarbiya",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -20699,6 +20683,7 @@
       "name": "KURBANOV IZZATBEK KAMULJONOVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -20790,9 +20775,9 @@
     },
     {
       "name": "POLVANOVA NILUFAR RO‘ZMETOVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -20850,9 +20835,9 @@
     },
     {
       "name": "RAXIMQULIYEVA MOHIRA ERGASHOVNA",
-      "subject": "Rus tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Rus tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -20875,10 +20860,9 @@
     },
     {
       "name": "RUSTAMOVA MAXINA MARKSOVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -20929,11 +20913,9 @@
     },
     {
       "name": "SOBIROVA SEVINCHOY DAVRONBEK QIZI",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika",
-        "Tarbiya",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -21040,6 +21022,7 @@
       "name": "HAYITBOYEVA SEVARA ERKINBOYEVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -21050,6 +21033,7 @@
       "name": "ISKANDAROVA GO‘ZAL ULUG‘BEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -21121,6 +21105,7 @@
       "name": "OLLABERGANOVA NILUFAR SAN’AT QIZI",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": []
@@ -21185,10 +21170,9 @@
     },
     {
       "name": "QURYOZOVA SOHIBA BOKIRBOYEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -21202,9 +21186,9 @@
     },
     {
       "name": "RAJABOVA SANOBAR QARABAYEVNA",
-      "subject": "Tarbiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -21232,6 +21216,7 @@
       "name": "ABDISHARIPOVA NIGORA UMARBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -21286,9 +21271,9 @@
     },
     {
       "name": "ALLABERGANOVA O‘G‘ILJON MASHARIPOVNA",
-      "subject": "Rus tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Rus tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -21452,6 +21437,7 @@
       "name": "DAVLETOVA NARGIZA YUSUBOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -21460,6 +21446,7 @@
       "name": "DURDIYEVA DILAFRO‘Z SULTONBOY QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -21587,10 +21574,9 @@
     },
     {
       "name": "KURBONBOYEVA IQBOLOY KOMILJONOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -21668,11 +21654,9 @@
     },
     {
       "name": "MATYOQUBOVA MADINA XUSHNUDBEK QIZI",
-      "subject": "Ona tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Ona tili",
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -21890,11 +21874,9 @@
     },
     {
       "name": "QURBONBOYEVA GULBADANBEGIM VAFABOY QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Ona tili",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -22112,6 +22094,7 @@
       "name": "SODIQOVA LOBAR DAVRONBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -22136,13 +22119,9 @@
     },
     {
       "name": "TAJIBOYEVA LOBARXON MANSURBEK QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Matematika",
-        "Tarbiya",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -22186,13 +22165,9 @@
     },
     {
       "name": "XASANOVA OLMAXON BEKTURDIYEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya",
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -22278,12 +22253,9 @@
     },
     {
       "name": "YAXSHIMURATOVA MUXABBAT DURDIBAYEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -22308,6 +22280,7 @@
       "name": "YO‘LDOSHOVA YULDUZ RUSTAMBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -22340,19 +22313,17 @@
   "5-sonli maktab": [
     {
       "name": "ABDIKARIMOVA RANO ISMAILOVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
-        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": []
     },
     {
       "name": "ABDULLAYEVA IQBOLOY SHAVKAT QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -22485,6 +22456,7 @@
       "name": "JUMANIYAZOVA SANOBAR KADAMOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -22511,9 +22483,8 @@
     },
     {
       "name": "MATCHANOVA BARNA RAXIMBERGANOVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
-        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": [
@@ -22532,14 +22503,9 @@
     },
     {
       "name": "NURULLAYEVA NASIBA BAXTIYAROVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Boshlang'ich ta'lim",
-        "Matematika",
-        "Ona tili",
-        "Tasviriy san'at",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -22565,9 +22531,8 @@
     },
     {
       "name": "QADAMOVA SURAYYO AMANBAYEVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Texnologiya",
       "all_krs": [
-        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": []
@@ -22594,6 +22559,7 @@
       "name": "RAXIMBERGANOVA DURDONA ABDULLAJON QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -22612,13 +22578,9 @@
     },
     {
       "name": "RAXIMOVA ZAMIRA ERKAYEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Boshlang'ich ta'lim",
-        "Informatika",
-        "Tarbiya",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -22709,6 +22671,7 @@
       "name": "XOLBOYEVA BARNO XXX",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -22735,9 +22698,8 @@
     },
     {
       "name": "XO‘JAYEVA UMIDA OTABAYEVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Ona tili",
       "all_krs": [
-        "Boshlang'ich ta'lim",
         "Ona tili"
       ],
       "classes": []
@@ -22792,6 +22754,7 @@
       "name": "ALTAYEVA NILUFAR URAZALIYEVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -22847,6 +22810,7 @@
       "name": "JUMANIYAZOVA YORQINOY AMINBOYEVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -22953,6 +22917,7 @@
       "name": "PO‘LATOVA MASUFO MANSUR QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -23072,6 +23037,7 @@
       "name": "XUDAYBERGANOVA MAHLIYO ILHOMBEK QIZI",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": []
@@ -23080,6 +23046,7 @@
       "name": "YUSUFOVA ILMIRA KOMILJON QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -23141,6 +23108,7 @@
       "name": "ISMAILOV RAJABBOY YUSUPOVICH",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -23208,6 +23176,7 @@
       "name": "QADIROVA MAHLIYO SHERJONOVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": [
@@ -23280,6 +23249,7 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -23310,6 +23280,7 @@
       "name": "AZIZOVA NASIBA SULTONBOYEVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": []
@@ -23433,6 +23404,7 @@
       "name": "MASHARIPOVA RA’NO O‘RINBOYEVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -23463,6 +23435,7 @@
       "name": "QALANDAROVA MAFTUNA BAXODIR QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -23537,6 +23510,7 @@
       "name": "G‘AYIPOVA ZUBAYDA QO‘ZIYEVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -23609,6 +23583,7 @@
       "name": "MAXMUDOVA YULDUZ ARSLONBEK QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -23627,6 +23602,7 @@
       "name": "OTABOYEVA KOMILA RASULBEK QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -23830,6 +23806,7 @@
       "name": "EGAMBERGANOVA ROZIYAXON ALISHER QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -23856,10 +23833,9 @@
     },
     {
       "name": "JUMABOYEVA XUSNIYA SHADLIK QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -23911,6 +23887,7 @@
       "name": "MATYOQUBOVA LAYLO QODIRBERGAN QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -23927,10 +23904,9 @@
     },
     {
       "name": "NURJANOVA KOMILA XUSINBOY QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -23964,11 +23940,9 @@
     },
     {
       "name": "OLLOQULIYEVA RUHSHONA QAHRAMON QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Tarbiya",
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -24052,13 +24026,9 @@
     },
     {
       "name": "VAISOVA ZUMRAD BEKDURDIYEVNA",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Matematika",
-        "Ona tili",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -24533,11 +24503,9 @@
     },
     {
       "name": "BOG‘BEKOVA LAYLOXON HURMATBEK QIZI",
-      "subject": "Biologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Biologiya",
-        "Informatika",
-        "Tarbiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -24545,6 +24513,7 @@
       "name": "HAITBOYEVA MUHAYYO JAMOLIDDIN QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -24594,9 +24563,9 @@
     },
     {
       "name": "MAYLIBAYEVA SANOBAR BAXTIYOROVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Tasviriy san'at"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -24677,6 +24646,7 @@
       "name": "QO‘SHNAZAROVA KOMILA SHERMAT QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -24743,6 +24713,7 @@
       "name": "RO‘ZIMATOVA DILNOZA ALISHER QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -24781,6 +24752,7 @@
       "name": "SAIDOVA MAVLUDA ADILOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -24805,6 +24777,7 @@
       "name": "SHARIPBOYEVA SHOHISTA SHOKIRJON QIZI",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -24825,6 +24798,7 @@
       "name": "SHOMUROTOVA NASIBA YANGIBOYEVNA",
       "subject": "Texnologiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Texnologiya"
       ],
       "classes": [
@@ -24900,6 +24874,7 @@
       "name": "XUDAYBERGANOVA SAYYORA EGAMBERGANOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": [
@@ -24968,9 +24943,10 @@
     },
     {
       "name": "AMINOVA XUMORA QADAMBOY QIZI",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Kimyo",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Kimyo"
       ],
       "classes": [
         "2-A класс"
@@ -25029,6 +25005,7 @@
       "name": "NAZAROV SHOKIR XUDAYNAZAROVICH",
       "subject": "Geografiya",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Geografiya",
         "Texnologiya"
       ],
@@ -25107,6 +25084,7 @@
       "name": "RO‘ZMETOVA MAXLIYO ERGASH QIZI",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -25124,6 +25102,7 @@
       "name": "XASANOVA DILFUZA AMANBAYEVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -25159,6 +25138,7 @@
       "name": "ALLANAZAROVA BARNO ATAMURATOVNA",
       "subject": "Rus tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Rus tili"
       ],
       "classes": []
@@ -25287,6 +25267,7 @@
       "name": "MATYAQUBOVA DARMANDJAN RADJABBAYEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -25343,9 +25324,9 @@
     },
     {
       "name": "OLLABERGANOVA MUXLISAXON OMONBOY QIZI",
-      "subject": "Rus tili",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Rus tili"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -25487,6 +25468,7 @@
       "name": "YAVBASAROVA IKBAL KARIMBAYEVNA",
       "subject": "Ona tili",
       "all_krs": [
+        "Boshlang'ich ta'lim",
         "Ona tili",
         "Rus tili"
       ],
@@ -25496,9 +25478,9 @@
     },
     {
       "name": "YAVBASAROVA NARGISA FARXADOVNA",
-      "subject": "Texnologiya",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     },
@@ -25520,11 +25502,9 @@
     },
     {
       "name": "ZARIPOVA MUHAYYO SHAMURATOVNA",
-      "subject": "Informatika",
+      "subject": "Boshlang'ich ta'lim",
       "all_krs": [
-        "Informatika",
-        "Tarbiya",
-        "Texnologiya"
+        "Boshlang'ich ta'lim"
       ],
       "classes": []
     }
