@@ -3061,6 +3061,66 @@ const KRS_DIRECTIONS_MAP = {
   'Texnologiya': ['Texnologiya']
 };
 
+function getEligibleCountForSubject(subjectVal) {
+  if (!state.teachersDb || Object.keys(state.teachersDb).length === 0) return 0;
+  let allowedSubjects = [];
+  if (subjectVal === 'ALL') {
+    allowedSubjects = null;
+  } else if (KRS_DIRECTIONS_MAP[subjectVal]) {
+    allowedSubjects = KRS_DIRECTIONS_MAP[subjectVal];
+  } else {
+    allowedSubjects = [subjectVal];
+  }
+
+  let total = 0;
+  Object.values(state.teachersDb).forEach(allTeachers => {
+    if (!allowedSubjects) {
+      total += allTeachers.length;
+    } else {
+      const eligible = allTeachers.filter(t => {
+        if (allowedSubjects.includes(t.subject)) return true;
+        if (Array.isArray(t.all_krs) && t.all_krs.some(k => allowedSubjects.includes(k))) return true;
+        return false;
+      });
+      total += eligible.length;
+    }
+  });
+  return total;
+}
+
+function updateDavomatSubjectDropdownCounts() {
+  const sel = document.getElementById('davomatSubjectSelect');
+  if (!sel || !state.teachersDb || Object.keys(state.teachersDb).length === 0) return;
+
+  const currentVal = sel.value;
+
+  Array.from(sel.options).forEach(opt => {
+    const val = opt.value;
+    const count = getEligibleCountForSubject(val);
+    const countFormatted = count.toLocaleString('uz-UZ').replace(/\u00a0/g, ' ');
+
+    let baseText = opt.getAttribute('data-base-label');
+    if (!baseText) {
+      let clean = opt.textContent.trim();
+      clean = clean.replace(/\s*-\s*\d+[\s\d]*\s*nafar\)?$/i, '');
+      clean = clean.replace(/\s*\(\d+[\s\d]*\s*nafar\)$/i, '');
+      clean = clean.replace(/\)$/, '');
+      baseText = clean.trim();
+      opt.setAttribute('data-base-label', baseText);
+    }
+
+    if (val === 'ALL') {
+      opt.textContent = `${baseText} (${countFormatted} nafar)`;
+    } else if (KRS_DIRECTIONS_MAP[val]) {
+      opt.textContent = `${baseText} - ${countFormatted} nafar)`;
+    } else {
+      opt.textContent = `${baseText} (${countFormatted} nafar)`;
+    }
+  });
+
+  if (currentVal) sel.value = currentVal;
+}
+
 async function initOrRefreshDavomat(isManual = false) {
   if (!state.teachersDb || Object.keys(state.teachersDb).length === 0) {
     await loadTeachersDatabase();
@@ -3068,6 +3128,7 @@ async function initOrRefreshDavomat(isManual = false) {
   if (!lastLiveSubmissions || lastLiveSubmissions.length === 0) {
     await initOrRefreshMonitoringDashboard(false);
   }
+  updateDavomatSubjectDropdownCounts();
   renderDavomatReport();
   if (isManual) {
     showToast("Davomat ma'lumotlari yangilandi!", "🔄");

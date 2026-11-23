@@ -466,7 +466,7 @@
           <span>🕒 Oxirgi yangilanish: <b id="monLastUpdated">Yuklanmoqda...</b></span>
           <span>🏛️ Ta'lim muassasalari: <b>55 ta</b></span>
           <span>📚 Qamrab olingan fanlar: <b>16 ta</b></span>
-          <span>👥 Jami rejalashtirilgan pedagoglar: <b>3 088 nafar</b></span>
+          <span>👥 Jami rejalashtirilgan pedagoglar: <b>2 788 nafar</b></span>
         </div>
       </div>
 
@@ -476,7 +476,7 @@
           <div class="kpi-icon">👥</div>
           <div class="kpi-content">
             <div class="kpi-label">Jami Pedagoglar (Reja)</div>
-            <div class="kpi-value" id="kpiTotalTeachers">3 088</div>
+            <div class="kpi-value" id="kpiTotalTeachers">2 788</div>
             <div class="kpi-sub">55 ta maktab bo'yicha</div>
           </div>
         </div>
@@ -494,7 +494,7 @@
           <div class="kpi-icon">⏳</div>
           <div class="kpi-content">
             <div class="kpi-label">Hali topshirmadi</div>
-            <div class="kpi-value text-warning" id="kpiMissing">3 088</div>
+            <div class="kpi-value text-warning" id="kpiMissing">2 788</div>
             <div class="kpi-sub"><span id="kpiMissingPercent">100%</span> qolgan</div>
           </div>
         </div>
@@ -533,7 +533,7 @@
           <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--primary-dark); margin: 0;">
             🔍 Tahlil va Filtrlash Paneli
           </h3>
-          <span style="font-size: 0.85rem; color: var(--text-muted);" id="monFilterResultsCount">Barcha 3 088 nafar pedagog</span>
+          <span style="font-size: 0.85rem; color: var(--text-muted);" id="monFilterResultsCount">Barcha 2 788 nafar pedagog</span>
         </div>
         <div class="mon-filter-grid">
           <div class="filter-col">
@@ -592,7 +592,7 @@
             📚 Fanlar Kesimida Tahlil (16 ta)
           </button>
           <button type="button" class="mon-tab-btn" id="tabBtnTeachers" onclick="switchMonTab('teachers')">
-            👥 Pedagoglar Ro'yxati (<span id="tabTeachersCountBadge">3 088</span>)
+            👥 Pedagoglar Ro'yxati (<span id="tabTeachersCountBadge">2 788</span>)
           </button>
         </div>
 
@@ -667,7 +667,7 @@
         <div id="monTabTeachers" class="mon-tab-pane">
           <div class="table-toolbar">
             <div style="font-size: 0.9rem; color: var(--text-main);">
-              Ko'rsatilmoqda: <b id="teachersFilteredCount">3 088</b> nafar pedagog
+              Ko'rsatilmoqda: <b id="teachersFilteredCount">2 788</b> nafar pedagog
             </div>
             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
               <button type="button" class="btn btn-sm btn-outline-warning" onclick="filterOnlyMissingTeachers()">
@@ -749,32 +749,33 @@
             <label for="davomatSubjectSelect">2. Fan / Yo'nalish:</label>
             <select id="davomatSubjectSelect" class="form-select" onchange="renderDavomatReport()">
               <optgroup label="⚡ KRS Asosiy Yo'nalishlari">
-                <option value="ALL" selected>🌐 Barcha fanlar (Umumiy tuman - 3 088 nafar)</option>
-                <option value="Ijtimoiy fanlar">🏛️ Ijtimoiy fanlar (Tarix, Huquq, Tarbiya - 462 nafar)</option>
-                <option value="Filologiya">📚 Filologiya (Ona tili va adabiyot - 302 nafar)</option>
-                <option value="Tabiiy fanlar">🧬 Tabiiy fanlar (Biologiya, Kimyo, Fizika, Geografiya - 431 nafar)</option>
-                <option value="Aniq fanlar">📐 Aniq fanlar (Matematika, Informatika - 369 nafar)</option>
-                <option value="Xorijiy tillar">🇬🇧 Xorijiy tillar (Ingliz, Nemis, Fransuz - 343 nafar)</option>
-                <option value="Boshlang'ich ta'lim">🎒 Boshlang'ich ta'lim va San'at (679 nafar)</option>
-                <option value="Rus tili">🇷🇺 Rus tili (240 nafar)</option>
-                <option value="Texnologiya">🛠️ Texnologiya (262 nafar)</option>
+                <option value="Ijtimoiy fanlar" selected>🏛️ Ijtimoiy fanlar (Tarix, Huquq, Tarbiya - 245 nafar)</option>
+                <option value="ALL">🌐 Barcha fanlar (Umumiy tuman - 2 788 nafar)</option>
+                <option value="Filologiya">📚 Filologiya (Ona tili va adabiyot - 316 nafar)</option>
+                <option value="Tabiiy fanlar">🧬 Tabiiy fanlar (Biologiya, Kimyo, Fizika, Geografiya - 411 nafar)</option>
+                <option value="Aniq fanlar">📐 Aniq fanlar (Matematika, Informatika - 367 nafar)</option>
+                <option value="Xorijiy tillar">🇬🇧 Xorijiy tillar (Ingliz, Nemis, Fransuz - 351 nafar)</option>
+                <option value="Boshlang'ich ta'lim">🎒 Boshlang'ich ta'lim va San'at (1 028 nafar)</option>
+                <option value="Rus tili">🇷🇺 Rus tili (243 nafar)</option>
+                <option value="Texnologiya">🛠️ Texnologiya (159 nafar)</option>
               </optgroup>
               <optgroup label="🔍 Alohida fanlar kesimida">
-                <option value="Tarix">Tarix</option>
-                <option value="Huquq">Davlat va huquq asoslari</option>
-                <option value="Matematika">Matematika</option>
-                <option value="Informatika">Informatika</option>
-                <option value="Ona tili">Ona tili va adabiyot</option>
-                <option value="English">Ingliz tili</option>
-                <option value="Nemis tili">Nemis tili</option>
-                <option value="Fransuz tili">Fransuz tili</option>
-                <option value="Rus tili">Rus tili</option>
-                <option value="Biologiya">Biologiya</option>
-                <option value="Fizika">Fizika</option>
-                <option value="Kimyo">Kimyo</option>
-                <option value="Geografiya">Geografiya</option>
-                <option value="Texnologiya">Texnologiya</option>
-                <option value="Tasviriy san'at">Tasviriy san'at</option>
+                <option value="Tarix">Tarix (154 nafar)</option>
+                <option value="Huquq">Davlat va huquq asoslari (77 nafar)</option>
+                <option value="Tarbiya">Tarbiya (120 nafar)</option>
+                <option value="Matematika">Matematika (263 nafar)</option>
+                <option value="Informatika">Informatika (134 nafar)</option>
+                <option value="Ona tili">Ona tili va adabiyot (316 nafar)</option>
+                <option value="English">Ingliz tili (238 nafar)</option>
+                <option value="Nemis tili">Nemis tili (58 nafar)</option>
+                <option value="Fransuz tili">Fransuz tili (67 nafar)</option>
+                <option value="Rus tili">Rus tili (243 nafar)</option>
+                <option value="Biologiya">Biologiya (176 nafar)</option>
+                <option value="Fizika">Fizika (97 nafar)</option>
+                <option value="Kimyo">Kimyo (92 nafar)</option>
+                <option value="Geografiya">Geografiya (115 nafar)</option>
+                <option value="Texnologiya">Texnologiya (159 nafar)</option>
+                <option value="Tasviriy san'at">Tasviriy san'at (96 nafar)</option>
               </optgroup>
             </select>
           </div>
@@ -813,7 +814,7 @@
             <!-- Hujjat Tafsilotlari Metasi -->
             <div class="a4-meta-banner">
               <div class="a4-meta-left">
-                <div><b>📌 Yo'nalish:</b> <span id="a4DocSubjectTitle">Ijtimoiy fanlar (Tarix, Davlat va huquq asoslari)</span></div>
+                <div><b>📌 Yo'nalish:</b> <span id="a4DocSubjectTitle">Ijtimoiy fanlar (Tarix, Davlat va huquq asoslari, Tarbiya)</span></div>
                 <div><b>📅 Bosqich:</b> <span id="a4DocSessionTitle">4-mashg'ulot (23–28-noyabr)</span></div>
               </div>
               <div class="a4-meta-right">
@@ -826,7 +827,7 @@
           <!-- Tuman Umumiy KPI Ko'rsatkichlari (A4 formatdagi ixcham bloklar) -->
           <div class="a4-kpi-summary">
             <div class="a4-kpi-box a4-kpi-blue">
-              <span class="a4-kpi-num" id="a4KpiTotal">462</span>
+              <span class="a4-kpi-num" id="a4KpiTotal">245</span>
               <span class="a4-kpi-label">Jami Pedagog (Reja)</span>
             </div>
             <div class="a4-kpi-box a4-kpi-green">
@@ -834,7 +835,7 @@
               <span class="a4-kpi-label">Test Topshirdi</span>
             </div>
             <div class="a4-kpi-box a4-kpi-orange">
-              <span class="a4-kpi-num" id="a4KpiDebt">462</span>
+              <span class="a4-kpi-num" id="a4KpiDebt">245</span>
               <span class="a4-kpi-label">Topshirmagan (Qarz)</span>
             </div>
             <div class="a4-kpi-box a4-kpi-purple">
