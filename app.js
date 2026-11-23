@@ -684,12 +684,23 @@ function escapeHtml(str) {
 }
 window.escapeHtml = escapeHtml;
 
-// Test maydonidan chalg'ilganda savollarni xira qilish / yopish
+// Test maydonidan chalg'ilganda savollarni xira qilish VA DOM matnini butunlay tozalash (Gemini/AI o'qiy olmasligi uchun!)
 function applyExamBlurMask(isBlur) {
   const examLayout = document.querySelector('.exam-layout');
   let overlay = document.getElementById('examSecurityOverlay');
 
   if (isBlur) {
+    // 1. DOM matnini (savol va variantlarni) butunlay o'chirish — Chrome Gemini va kengaytmalar HTML koddan ham o'qiy olmaydi!
+    const qTextEl = document.getElementById('questionText');
+    const optsEl = document.getElementById('optionsContainer');
+    const topicEl = document.getElementById('currentQTopic');
+    const imgBoxEl = document.getElementById('questionImageBox');
+
+    if (qTextEl) qTextEl.textContent = "🔒 Xavfsizlik tizimi: Test maydoni nofaol bo'lgani uchun savol matni yashirildi.";
+    if (optsEl) optsEl.innerHTML = '';
+    if (topicEl) topicEl.textContent = "🔒 Yashirildi";
+    if (imgBoxEl) imgBoxEl.style.display = 'none';
+
     if (examLayout) {
       examLayout.classList.add('exam-blurred');
     }
@@ -703,7 +714,7 @@ function applyExamBlurMask(isBlur) {
           <h3 style="color: #ef4444; margin-bottom: 0.5rem; font-weight: 800; font-size: 1.3rem;">DIQQAT: TEST MAYDONI NOFAOL!</h3>
           <p style="color: #334155; font-size: 0.95rem; line-height: 1.5; margin-bottom: 1rem;">
             Kursoringiz test maydonidan tashqariga (Google Gemini, boshqa oyna yoki yon panelga) o'tdi!<br>
-            <b>Xavfsizlik maqsadida savollar yashirildi va vaqt hisoblanmoqda.</b>
+            <b>Xavfsizlik maqsadida savollar xotiradan yashirildi va vaqt hisoblanmoqda.</b>
           </p>
           <div style="background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c; padding: 0.75rem 1rem; border-radius: 8px; font-weight: 700; font-size: 0.88rem; margin-bottom: 1.25rem;">
             ⚠️ 4 marta takrorlansa, test avtomatik ravishda 0 ball bilan BLOKLANADI!
@@ -722,6 +733,10 @@ function applyExamBlurMask(isBlur) {
     }
     if (overlay) {
       overlay.style.display = 'none';
+    }
+    // 2. Testga qaytganda savol va variantlarni xotiradan darhol qayta tiklash
+    if (state.isExamActive && !state.isBlocked && typeof renderQuestion === 'function') {
+      renderQuestion();
     }
   }
 }
@@ -771,11 +786,12 @@ function setupAntiCheatListeners() {
 
   const handleLeave = () => {
     if (!state.isExamActive || state.isBlocked) return;
+    // DOM matnini har qanday holatda (hatto modal ochiq bo'lsa ham) darhol tozalaymiz!
+    applyExamBlurMask(true);
     if (document.getElementById('antiCheatModal')?.classList.contains('open')) return;
     if (state.awayStartTime === 0) {
       state.awayStartTime = Date.now();
     }
-    applyExamBlurMask(true);
   };
 
   const handleReturn = () => {
