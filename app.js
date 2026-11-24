@@ -2549,6 +2549,24 @@ function normalizePersonName(str) {
     .trim();
 }
 
+function isSameTeacher(dbName, testName) {
+  if (!dbName || !testName) return false;
+  const n1 = normalizePersonName(dbName);
+  const n2 = normalizePersonName(testName);
+  if (n1 === n2) return true;
+
+  // Split into components (Familiya, Ism, Sharif)
+  const p1 = n1.split(' ');
+  const p2 = n2.split(' ');
+  if (p1.length >= 2 && p2.length >= 2) {
+    // If Familiya and Ism match (e.g., 'ATAJANOVA NIYOZJON YULDASHEVNA' and 'ATAJANOVA NIYOZJON')
+    if (p1[0] === p2[0] && p1[1] === p2[1]) return true;
+    // In case user entered Ism Familiya order
+    if (p1[0] === p2[1] && p1[1] === p2[0]) return true;
+  }
+  return false;
+}
+
 function normalizeSchoolName(str) {
   if (!str) return '';
   return str.toLowerCase().replace(/[^a-z0-9]/gi, '');
@@ -2689,8 +2707,18 @@ async function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
       const normN = normalizePersonName(t.name);
       processedNames.add(normN);
 
-      const isBlk = blockedMap.has(normN);
-      const subRecord = liveResults.find(lr => lr.name === normN);
+      let isBlk = blockedMap.has(normN);
+      let blkRecord = blockedMap.get(normN);
+      if (!isBlk) {
+        for (const [blkKey, blkVal] of blockedMap.entries()) {
+          if (isSameTeacher(t.name, blkVal.rawName || blkKey)) {
+            isBlk = true;
+            blkRecord = blkVal;
+            break;
+          }
+        }
+      }
+      const subRecord = liveResults.find(lr => isSameTeacher(t.name, lr.rawName || lr.name));
 
       if (isBlk) {
         unifiedTeachers.push({
@@ -2702,7 +2730,7 @@ async function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
           score: 0,
           total: 25,
           scorePercent: 0,
-          switches: blockedMap.get(normN).switches || 4,
+          switches: (blkRecord && blkRecord.switches) || 4,
           statusText: '🚫 Bloklangan',
           gradeLevel: 'Qoniqarsiz'
         });
@@ -3524,6 +3552,16 @@ function renderDavomatReport() {
       const normN = normalizePersonName(t.name);
       if (submittedTeachers.has(normN)) {
         done++;
+      } else {
+        // Smart match: check if any submitted teacher matches this teacher (e.g. without patronymic)
+        let found = false;
+        for (const sName of submittedTeachers) {
+          if (isSameTeacher(t.name, sName)) {
+            done++;
+            found = true;
+            break;
+          }
+        }
       }
     });
 
