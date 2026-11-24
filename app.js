@@ -3205,12 +3205,16 @@ let lastDavomatSchoolList = [];
 const KRS_DIRECTIONS_MAP = {
   'Ijtimoiy fanlar': ['Tarix', 'Huquq', 'Tarbiya'],
   'Filologiya': ['Ona tili'],
-  'Tabiiy fanlar': ['Biologiya', 'Kimyo', 'Fizika', 'Geografiya'],
+  'Tabiiy fanlar': ['Biologiya', 'Kimyo', 'Fizika', 'Geografiya', 'Iqtisodiy bilim asoslari', 'Tadbirkorlik asoslari'],
   'Aniq fanlar': ['Matematika', 'Informatika'],
   'Xorijiy tillar': ['English', 'Nemis tili', 'Fransuz tili'],
-  "Boshlang'ich ta'lim": ["Boshlang'ich ta'lim", "Tasviriy san'at"],
+  "Boshlang'ich ta'lim": ["Boshlang'ich ta'lim"],
+  'Amaliy fanlar': ["Tasviriy san'at", "Chizmachilik", "Musiqa"],
   'Rus tili': ['Rus tili'],
-  'Texnologiya': ['Texnologiya']
+  'Texnologiya': ['Texnologiya'],
+  'Musiqa': ['Musiqa'],
+  'Iqtisodiy bilim asoslari': ['Iqtisodiy bilim asoslari'],
+  'Tadbirkorlik asoslari': ['Tadbirkorlik asoslari']
 };
 
 function getEligibleCountForSubject(subjectVal) {

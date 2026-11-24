@@ -355,9 +355,11 @@
     },
     {
       "name": "OGAY TATYANA GENADEVNA",
-      "subject": "Matematika",
+      "subject": "Iqtisodiy bilim asoslari",
       "all_krs": [
-        "Matematika"
+        "Iqtisodiy bilim asoslari",
+        "Matematika",
+        "Tadbirkorlik asoslari"
       ],
       "classes": [
         "7-V класс"
@@ -562,6 +564,14 @@
       "subject": "Matematika",
       "all_krs": [
         "Matematika"
+      ],
+      "classes": []
+    },
+    {
+      "name": "TOG‘ONOV JUMANAZAR SHARIPOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -839,6 +849,14 @@
       "classes": [
         "4-A класс"
       ]
+    },
+    {
+      "name": "MATYAKUBOV FARXOD BAYNAZAROVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
     },
     {
       "name": "NARBAYEVA DILDARA RAXIMBAYEVNA",
@@ -1551,7 +1569,8 @@
         "Biologiya",
         "Fizika",
         "Geografiya",
-        "Kimyo"
+        "Kimyo",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -1577,9 +1596,19 @@
     },
     {
       "name": "YAKUBOVA MUQADDAS XAKIMBOY QIZI",
-      "subject": "Matematika",
+      "subject": "Iqtisodiy bilim asoslari",
       "all_krs": [
-        "Matematika"
+        "Iqtisodiy bilim asoslari",
+        "Matematika",
+        "Tadbirkorlik asoslari"
+      ],
+      "classes": []
+    },
+    {
+      "name": "YAMG‘IROV MARIMBOY SHARIPOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -1614,6 +1643,14 @@
       "subject": "Matematika",
       "all_krs": [
         "Matematika"
+      ],
+      "classes": []
+    },
+    {
+      "name": "ABDULLAYEV SHERZOD ABDULLAYEVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -1939,8 +1976,9 @@
     },
     {
       "name": "SULTONOVA NODIRA IKROMBOY QIZI",
-      "subject": "Texnologiya",
+      "subject": "Tadbirkorlik asoslari",
       "all_krs": [
+        "Tadbirkorlik asoslari",
         "Texnologiya"
       ],
       "classes": [
@@ -1979,8 +2017,9 @@
     },
     {
       "name": "YAQUBOVA GAVXARJON MASHARIPOVNA",
-      "subject": "Texnologiya",
+      "subject": "Iqtisodiy bilim asoslari",
       "all_krs": [
+        "Iqtisodiy bilim asoslari",
         "Texnologiya"
       ],
       "classes": [
@@ -2235,6 +2274,14 @@
       ]
     },
     {
+      "name": "QURONBOYEV MAQSUD JUMANIYOZOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "RAJABOVA DONOGUL SHUHRAT QIZI",
       "subject": "Ona tili",
       "all_krs": [
@@ -2272,6 +2319,15 @@
       "classes": [
         "8-B Sinf"
       ]
+    },
+    {
+      "name": "SABIROV SABIR ALISHER O‘G‘LI",
+      "subject": "Iqtisodiy bilim asoslari",
+      "all_krs": [
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
+      ],
+      "classes": []
     },
     {
       "name": "SAPAYEVA SHIRINOY TELMANOVNA",
@@ -2378,6 +2434,14 @@
   ],
   "14-sonli maktab": [
     {
+      "name": "ALLABERGANOVA SHAXLO SHONAZAROVNA",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "ATABAYEVA DILDORA KOMILOVNA",
       "subject": "Texnologiya",
       "all_krs": [
@@ -2390,6 +2454,14 @@
       "subject": "Texnologiya",
       "all_krs": [
         "Texnologiya"
+      ],
+      "classes": []
+    },
+    {
+      "name": "BALTAYEV BOLTABOY SHERZOD O‘G‘LI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -2584,7 +2656,9 @@
       "name": "OLLAYOROV MATCHON ABDULLAYEVICH",
       "subject": "Fizika",
       "all_krs": [
-        "Fizika"
+        "Fizika",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -2953,6 +3027,14 @@
       ]
     },
     {
+      "name": "BOBOJONOV JO‘RABEK POLVONNAZIR O‘G‘LI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "DAVLETOVA KUMUSHOY MATYAQUBOVNA",
       "subject": "Ona tili",
       "all_krs": [
@@ -3053,8 +3135,10 @@
     },
     {
       "name": "RAXIMOV MUZAFFAR SAPARBOYEVICH",
-      "subject": "Tarbiya",
+      "subject": "Iqtisodiy bilim asoslari",
       "all_krs": [
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari",
         "Tarbiya",
         "Tarix"
       ],
@@ -3251,6 +3335,14 @@
       "classes": []
     },
     {
+      "name": "BOYJONOV JASURBEK ALISHER O‘G‘LI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "ERJONOVA MAVLUDA ILXOMBEKOVNA",
       "subject": "Ona tili",
       "all_krs": [
@@ -3283,7 +3375,9 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": [
         "7-A класс"
@@ -3639,7 +3733,8 @@
       "name": "KARIMOVA SHAXLO G‘AYIBNAZAROVNA",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari"
       ],
       "classes": []
     },
@@ -3935,7 +4030,8 @@
       "name": "SAMANDAROVA A’LOXON EGAMBERGANOVNA",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari"
       ],
       "classes": [
         "8-B класс"
@@ -3994,6 +4090,14 @@
       "classes": [
         "10-B класс"
       ]
+    },
+    {
+      "name": "VAFOYEV AZAMAT KAMOLADDINOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
     },
     {
       "name": "XAKIMOVA SHAHNOZA EGAMBERGANOVNA",
@@ -4247,6 +4351,14 @@
       ]
     },
     {
+      "name": "OLLAMOV FARRUHBEK MAQSUD O‘G‘LI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "OMONOVA YOQUTJON BAXTIYAROVNA",
       "subject": "Texnologiya",
       "all_krs": [
@@ -4296,6 +4408,15 @@
       "all_krs": [
         "Tarbiya",
         "Tarix"
+      ],
+      "classes": []
+    },
+    {
+      "name": "RAXIMOV MANSUR RUSTAMOVICH",
+      "subject": "Iqtisodiy bilim asoslari",
+      "all_krs": [
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -4510,6 +4631,14 @@
       ]
     },
     {
+      "name": "JUMANIYAZOVA YERKIN MASHORIPOVNA",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "JUMANIYOZOVA SHAXNOZA FARXODOVNA",
       "subject": "Ona tili",
       "all_krs": [
@@ -4535,7 +4664,8 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari"
       ],
       "classes": [
         "6-A класс"
@@ -4745,6 +4875,8 @@
       "all_krs": [
         "Biologiya",
         "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari",
         "Tarix"
       ],
       "classes": [
@@ -4842,6 +4974,16 @@
         "Biologiya"
       ],
       "classes": []
+    },
+    {
+      "name": "ASATOV SHAVKAT KOSIMOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": [
+        "7-A sinf"
+      ]
     },
     {
       "name": "ATADJANOVA XASIYATXAN MARKSOVNA",
@@ -5464,6 +5606,14 @@
       "classes": []
     },
     {
+      "name": "RAJABOV XUDOYBERGAN RAMATULLA O‘G‘LI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "RAVSHONOVA LAYLO RAVSHONOVNA",
       "subject": "English",
       "all_krs": [
@@ -5828,6 +5978,15 @@
       ]
     },
     {
+      "name": "XUDAYBERGANOVA NAZOKAT SHONAZAROVNA",
+      "subject": "Iqtisodiy bilim asoslari",
+      "all_krs": [
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
+      ],
+      "classes": []
+    },
+    {
       "name": "XUDAYBERGANOVA TOZAGUL ATANAZAROVNA",
       "subject": "Tarix",
       "all_krs": [
@@ -6007,6 +6166,14 @@
       "classes": [
         "2-B класс"
       ]
+    },
+    {
+      "name": "BOLTAYEVA QURVANOY RUSTAMBOYEVNA",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
     },
     {
       "name": "DAVLETOVA IQBOL BAXTIYOROVNA",
@@ -6456,7 +6623,9 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -6524,6 +6693,14 @@
       "subject": "English",
       "all_krs": [
         "English"
+      ],
+      "classes": []
+    },
+    {
+      "name": "SALIYEVA MAHBUBA BAXRAM QIZI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -6853,6 +7030,14 @@
       "classes": []
     },
     {
+      "name": "IBROHIMOV XUDOYSHUKUR BAHROMBEK O‘G‘LI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "ISKANDAROVA SHOIRA RAVSHONOVNA",
       "subject": "Rus tili",
       "all_krs": [
@@ -6884,7 +7069,8 @@
       "name": "JUMANIYOZOVA SHOXISTA FARXODOVNA",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari"
       ],
       "classes": [
         "6-A класс"
@@ -7376,6 +7562,14 @@
       ]
     },
     {
+      "name": "POLVONNAZIROV POLVONNAZIR HAMIDOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "QURBANBAYEVA MUHAYYO SHONAZAROVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -7429,7 +7623,9 @@
       "name": "RAXIMOVA MUHAYYO ARSLONOVNA",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -7498,6 +7694,14 @@
       "classes": [
         "6-A sinf"
       ]
+    },
+    {
+      "name": "ASHIROVA IRODA RUSTAMOVNA",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
     },
     {
       "name": "ATANAFASOVA MAHFUZA RAHMONOVNA",
@@ -7578,7 +7782,9 @@
       "name": "DAVLETOVA OZODA YUSUPOVNA",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -8129,6 +8335,14 @@
       ]
     },
     {
+      "name": "JUMANAZAROVA DILDORA ERKINBOY QIZI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "JUMAYAZOVA DILAFRUZ IKRAMJAN QIZI",
       "subject": "English",
       "all_krs": [
@@ -8399,7 +8613,9 @@
       "name": "SAPABAYEV BEKZOD FARXODOVICH",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -8506,7 +8722,9 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -8603,6 +8821,14 @@
       "subject": "Rus tili",
       "all_krs": [
         "Rus tili"
+      ],
+      "classes": []
+    },
+    {
+      "name": "OLLABERGANOVA LAYLO SHOMURATOVNA",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -9038,6 +9264,14 @@
       "classes": []
     },
     {
+      "name": "O‘RAZOV OTABOY QODIROVICH",
+      "subject": "Iqtisodiy bilim asoslari",
+      "all_krs": [
+        "Iqtisodiy bilim asoslari"
+      ],
+      "classes": []
+    },
+    {
       "name": "QADAMOVA ASAL MASHARIB QIZI",
       "subject": "English",
       "all_krs": [
@@ -9062,6 +9296,14 @@
       "classes": [
         "3-B класс"
       ]
+    },
+    {
+      "name": "RAHIMOV JAXONGIR BAXTIYOR O‘G‘LI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
     },
     {
       "name": "RAHIMOVA GULMIRA XUSHNUDBEK QIZI",
@@ -9222,7 +9464,9 @@
       "name": "BABADJANOVA UMIDA BEKTURDIYEVNA",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": [
         "8-D класс"
@@ -9403,6 +9647,14 @@
       "classes": [
         "7-B класс"
       ]
+    },
+    {
+      "name": "MATYOQUBOVA RUXSORAXON MANSURBEK QIZI",
+      "subject": "Iqtisodiy bilim asoslari",
+      "all_krs": [
+        "Iqtisodiy bilim asoslari"
+      ],
+      "classes": []
     },
     {
       "name": "MUSAYEVA SABOHAT RAVSHONBEKOVNA",
@@ -9665,6 +9917,14 @@
       "subject": "English",
       "all_krs": [
         "English"
+      ],
+      "classes": []
+    },
+    {
+      "name": "SAPAROV POLVANNAZAR MASHARIPOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -10226,7 +10486,9 @@
       "name": "RAVSHANBEKOVA MUATTAR MUZAFFAR QIZI",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -10326,6 +10588,14 @@
       "classes": []
     },
     {
+      "name": "XO‘SINOV QO‘ZIBOY RO‘ZMATOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "XUDAYOROVA NODIRA OTANAZAROVNA",
       "subject": "Ona tili",
       "all_krs": [
@@ -10358,6 +10628,14 @@
       "subject": "Texnologiya",
       "all_krs": [
         "Texnologiya"
+      ],
+      "classes": []
+    },
+    {
+      "name": "ALLABERGANOV RAVSHONBEK DAVLATOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -10632,7 +10910,9 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": [
         "9-A sinf"
@@ -11036,6 +11316,14 @@
       "classes": []
     },
     {
+      "name": "MATMUROTOV DAVRONBEK YO‘LDOSHEVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "MATNIYAZOVA KAMOLA ALIMBAYEVNA",
       "subject": "Tasviriy san'at",
       "all_krs": [
@@ -11169,6 +11457,15 @@
       "subject": "Rus tili",
       "all_krs": [
         "Rus tili"
+      ],
+      "classes": []
+    },
+    {
+      "name": "RAJABBOYEVA SEVINCHOY OYBEK QIZI",
+      "subject": "Iqtisodiy bilim asoslari",
+      "all_krs": [
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -11498,6 +11795,15 @@
       ]
     },
     {
+      "name": "BAYJANOVA MUQADDAS MATYOQUBOVNA",
+      "subject": "Iqtisodiy bilim asoslari",
+      "all_krs": [
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
+      ],
+      "classes": []
+    },
+    {
       "name": "BAYRAMOVA ZULXUMAR XAYITBOYEVNA",
       "subject": "Fizika",
       "all_krs": [
@@ -11770,6 +12076,14 @@
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
         "Boshlang'ich ta'lim"
+      ],
+      "classes": []
+    },
+    {
+      "name": "QAZOQOV AZIZBEK RO‘ZIMBOY O‘G‘LI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -12322,7 +12636,8 @@
       "name": "RAHIMOVA BIBIMARGAM KARIMOVNA",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari"
       ],
       "classes": [
         "5-B класс"
@@ -12437,6 +12752,14 @@
       "classes": []
     },
     {
+      "name": "SAPAROV IHLOSBEK SHERZOD O‘G‘LI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "SOBIROVA MUHABBAT OTABOYEVNA",
       "subject": "Biologiya",
       "all_krs": [
@@ -12467,7 +12790,9 @@
       "name": "USMONJANOVA OZODA TURG‘UN QIZI",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -12716,6 +13041,14 @@
       ]
     },
     {
+      "name": "OLLAZAROV KENJABOY XO‘JAYEVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "OTABOYEVA MADINA DAVRONBEK QIZI",
       "subject": "Tasviriy san'at",
       "all_krs": [
@@ -12783,6 +13116,15 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya"
+      ],
+      "classes": []
+    },
+    {
+      "name": "QURBONNAZIROVA LOBARXON QUVONDIQ QIZI",
+      "subject": "Iqtisodiy bilim asoslari",
+      "all_krs": [
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -13180,7 +13522,9 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": [
         "11-A sinf"
@@ -13257,6 +13601,14 @@
       "subject": "Rus tili",
       "all_krs": [
         "Rus tili"
+      ],
+      "classes": []
+    },
+    {
+      "name": "SOBIROV QUDRATBEK SAN’AT O‘G‘LI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -13369,6 +13721,14 @@
       "subject": "Tasviriy san'at",
       "all_krs": [
         "Tasviriy san'at"
+      ],
+      "classes": []
+    },
+    {
+      "name": "JUMABOYEV OXUNJON RAVSHANBEK O‘G‘LI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -13616,6 +13976,15 @@
       "classes": []
     },
     {
+      "name": "OTAXONOVA MASHHURA MANSUR QIZI",
+      "subject": "Iqtisodiy bilim asoslari",
+      "all_krs": [
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
+      ],
+      "classes": []
+    },
+    {
       "name": "OTAYEVA MUXLISA QUZIBOY QIZI",
       "subject": "Informatika",
       "all_krs": [
@@ -13755,6 +14124,15 @@
       "subject": "Rus tili",
       "all_krs": [
         "Rus tili"
+      ],
+      "classes": []
+    },
+    {
+      "name": "ABDURAXMANOV SARDORBEK ABDIKARIMOVICH",
+      "subject": "Iqtisodiy bilim asoslari",
+      "all_krs": [
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -14282,6 +14660,14 @@
       "classes": []
     },
     {
+      "name": "YUSUPOV DOSTONBEK ULUG‘BEK O‘G‘LI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "YUSUPOVA NAFISA BAXODIROVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -14308,7 +14694,9 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": [
         "11-A sinf"
@@ -14384,6 +14772,16 @@
         "Kimyo"
       ],
       "classes": []
+    },
+    {
+      "name": "ATAMURATOV QAXRAMON YULDASHOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": [
+        "9-B sinf"
+      ]
     },
     {
       "name": "ATAMURATOVA DILFUZA QURVANDURDIYEVNA",
@@ -15140,7 +15538,17 @@
       "name": "OZODOVA TABASSUM SHOMUROD QIZI",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
+      ],
+      "classes": []
+    },
+    {
+      "name": "QALANDAROVA ANAGUL YULDASHEVNA",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -15397,7 +15805,9 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": [
         "6-A класс"
@@ -15630,6 +16040,14 @@
       "classes": []
     },
     {
+      "name": "TAJIYEV ISLOMBEK SHOKIROVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "TANGRIBERGANOVA RA’NO RAXIMOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -15766,6 +16184,14 @@
       "subject": "Tasviriy san'at",
       "all_krs": [
         "Tasviriy san'at"
+      ],
+      "classes": []
+    },
+    {
+      "name": "BAKIYEV OLIMBOY PIRNAPASOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -15986,7 +16412,8 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari"
       ],
       "classes": []
     },
@@ -16115,6 +16542,15 @@
       "classes": [
         "9-A класс"
       ]
+    },
+    {
+      "name": "RAXIMOVA NILUFAR MASHARIPOVNA",
+      "subject": "Iqtisodiy bilim asoslari",
+      "all_krs": [
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
+      ],
+      "classes": []
     },
     {
       "name": "RAXIMOVA OYJONGUL ABDULLAYEVNA",
@@ -16433,6 +16869,16 @@
         "Informatika"
       ],
       "classes": []
+    },
+    {
+      "name": "BOBOJANOV ZAYNIDDIN OTANAZAROVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": [
+        "6-B sinf"
+      ]
     },
     {
       "name": "DAVLETOVA ADIBAXON IKROMBOY QIZI",
@@ -16763,7 +17209,9 @@
       "name": "SULTONOVA FAZILAT ABDULLAYEVNA",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -16880,8 +17328,9 @@
     },
     {
       "name": "JO‘SHIBBERGANOVA MOHICHEHRA SIROJIDDIN QIZI",
-      "subject": "Ona tili",
+      "subject": "Musiqa",
       "all_krs": [
+        "Musiqa",
         "Ona tili"
       ],
       "classes": []
@@ -16986,7 +17435,9 @@
       "name": "QADAMBOYEVA OYSULUV HAMID QIZI",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -17181,6 +17632,16 @@
       ]
     },
     {
+      "name": "MADRIMOVA MUYASSAR RAHIMBERGANOVNA",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": [
+        "6-B класс"
+      ]
+    },
+    {
       "name": "MADRIMOVA SALOMAT RAXIMBERGANOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -17195,6 +17656,14 @@
       "subject": "Matematika",
       "all_krs": [
         "Matematika"
+      ],
+      "classes": []
+    },
+    {
+      "name": "MATIYAQUBOV SAPARBOY KAMILOVICH",
+      "subject": "Tadbirkorlik asoslari",
+      "all_krs": [
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -17238,8 +17707,9 @@
     },
     {
       "name": "OLLABERGANOVA XAYITGUL RAVSHAN QIZI",
-      "subject": "Tasviriy san'at",
+      "subject": "Musiqa",
       "all_krs": [
+        "Musiqa",
         "Tasviriy san'at",
         "Texnologiya"
       ],
@@ -17319,7 +17789,8 @@
       "name": "RAXIMOVA BARCHINOY ERKINOVNA",
       "subject": "Biologiya",
       "all_krs": [
-        "Biologiya"
+        "Biologiya",
+        "Iqtisodiy bilim asoslari"
       ],
       "classes": [
         "5-A класс"
@@ -17391,8 +17862,9 @@
     },
     {
       "name": "SHEROVA GULBAHOR DO‘SCHANOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Musiqa",
       "all_krs": [
+        "Musiqa",
         "Tasviriy san'at",
         "Texnologiya"
       ],
@@ -17491,6 +17963,14 @@
       "subject": "Ona tili",
       "all_krs": [
         "Ona tili"
+      ],
+      "classes": []
+    },
+    {
+      "name": "ABDUSHARIFOV HUSNIDDIN JAMOLADDIN O‘G‘LI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -17756,7 +18236,9 @@
       "name": "SAPAYEVA MARGAMJON YUSUPOVNA",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": [
         "11-A класс"
@@ -17831,6 +18313,14 @@
       ]
     },
     {
+      "name": "MADAMINOV SAIDMUROD BOBOJONOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "MATNIYOZOVA QUVONCH ARSLONOVNA",
       "subject": "Texnologiya",
       "all_krs": [
@@ -17888,8 +18378,10 @@
     },
     {
       "name": "QODIROVA YORQINOY SULTANOVNA",
-      "subject": "Texnologiya",
+      "subject": "Iqtisodiy bilim asoslari",
       "all_krs": [
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari",
         "Texnologiya"
       ],
       "classes": [
@@ -18048,9 +18540,9 @@
     },
     {
       "name": "SOBIROVA MARTABA XAYRULLA QIZI",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Musiqa",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Musiqa"
       ],
       "classes": []
     },
@@ -18319,8 +18811,9 @@
     },
     {
       "name": "JAVAQOVA IBODA FURKATOVNA",
-      "subject": "Rus tili",
+      "subject": "Musiqa",
       "all_krs": [
+        "Musiqa",
         "Rus tili"
       ],
       "classes": []
@@ -18348,7 +18841,8 @@
       "subject": "Fizika",
       "all_krs": [
         "Fizika",
-        "Matematika"
+        "Matematika",
+        "Tadbirkorlik asoslari"
       ],
       "classes": [
         "6-B класс"
@@ -18548,6 +19042,14 @@
       ]
     },
     {
+      "name": "RAXIMBAYEV ASADBEK UMARBEK O‘G‘LI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "RAXIMBOYEVA GULNURA UMARBEKOVNA",
       "subject": "Informatika",
       "all_krs": [
@@ -18693,7 +19195,8 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
-        "Fizika"
+        "Fizika",
+        "Iqtisodiy bilim asoslari"
       ],
       "classes": [
         "5-D класс"
@@ -18964,6 +19467,14 @@
       "classes": []
     },
     {
+      "name": "QALANDAROV SARVAR YO‘LDOSHEVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "QALANDAROV YO‘LDOSH XXX",
       "subject": "Tarix",
       "all_krs": [
@@ -19033,8 +19544,9 @@
     },
     {
       "name": "RAXIMOVA XURSHIDA KAMILOVNA",
-      "subject": "Tasviriy san'at",
+      "subject": "Tadbirkorlik asoslari",
       "all_krs": [
+        "Tadbirkorlik asoslari",
         "Tasviriy san'at"
       ],
       "classes": []
@@ -19130,7 +19642,8 @@
       "name": "XUDAYAROVA DIYORA XASANBOY QIZI",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari"
       ],
       "classes": []
     },
@@ -19386,6 +19899,14 @@
       ]
     },
     {
+      "name": "MAXMUDOVA ANAJON QURBONBOYEVNA",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "NIYAZMETOVA MANZURA KARIMOVNA",
       "subject": "Texnologiya",
       "all_krs": [
@@ -19475,7 +19996,8 @@
       "name": "QO‘CHQAROV OTANAZAR RAJABOVICH",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -19524,6 +20046,14 @@
       "classes": [
         "1-A класс"
       ]
+    },
+    {
+      "name": "RO‘ZMETOV ILXAMBEK BOBOJONOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
     },
     {
       "name": "RO‘ZMETOVA DILNOZA YO‘LDOSHBOYEVNA",
@@ -19594,7 +20124,8 @@
       "name": "TAJIYEV NODIR RAJABBOYEVICH",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari"
       ],
       "classes": []
     },
@@ -19746,6 +20277,14 @@
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
         "Boshlang'ich ta'lim"
+      ],
+      "classes": []
+    },
+    {
+      "name": "BEKCHANOVA SANOBAR RAXIMOVNA",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -19996,7 +20535,9 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": [
         "5-A класс"
@@ -20225,6 +20766,14 @@
       "classes": []
     },
     {
+      "name": "MASHARIPOV RAMAT ABDUSHARIPOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "MATNAZAROVA HUSNIYA NURADDINOVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -20396,7 +20945,9 @@
       "name": "SABIROVA YULDUZXON ORSLONOVNA",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -20692,6 +21243,14 @@
       ]
     },
     {
+      "name": "QALANDAROV TEMURBEK KENJA O‘G‘LI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "QURYOZOVA SOHIBA BOKIRBOYEVNA",
       "subject": "Boshlang'ich ta'lim",
       "all_krs": [
@@ -20719,7 +21278,9 @@
       "name": "ROZZOQOVA SHOHISTA ZARIF QIZI",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -20740,6 +21301,14 @@
       "subject": "Rus tili",
       "all_krs": [
         "Rus tili"
+      ],
+      "classes": []
+    },
+    {
+      "name": "ABDULLAYEV INOYAT KADAMOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -20771,7 +21340,8 @@
       "name": "ALIYEVA SHAHLO OZODBOYEVNA",
       "subject": "English",
       "all_krs": [
-        "English"
+        "English",
+        "Musiqa"
       ],
       "classes": []
     },
@@ -21504,8 +22074,9 @@
     },
     {
       "name": "RUZMETOVA NARGIZA BAXTIYOROVNA",
-      "subject": "Texnologiya",
+      "subject": "Iqtisodiy bilim asoslari",
       "all_krs": [
+        "Iqtisodiy bilim asoslari",
         "Texnologiya"
       ],
       "classes": [
@@ -21594,6 +22165,14 @@
       "classes": [
         "10-B Sinf"
       ]
+    },
+    {
+      "name": "SOBIROVA NODIRA DAVRONBEKOVNA",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
     },
     {
       "name": "SODIQOVA LOBAR DAVRONBEK QIZI",
@@ -22127,10 +22706,27 @@
       "classes": []
     },
     {
+      "name": "SA’DULLAYEVA SAYYORA SA’DULLA QIZI",
+      "subject": "Iqtisodiy bilim asoslari",
+      "all_krs": [
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
+      ],
+      "classes": []
+    },
+    {
       "name": "SHOMURATOV DILRUX DILSHOD O‘G‘LI",
       "subject": "Informatika",
       "all_krs": [
         "Informatika"
+      ],
+      "classes": []
+    },
+    {
+      "name": "SHOMUROTOV ABBOS YUSUPBOY O‘G‘LI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -22351,7 +22947,9 @@
       "name": "OLLABERGANOV NAJMIDDIN ODILBEK O‘G‘LI",
       "subject": "Informatika",
       "all_krs": [
-        "Informatika"
+        "Informatika",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -22415,6 +23013,14 @@
       "classes": [
         "8-B класс"
       ]
+    },
+    {
+      "name": "QURYOZOV QADAMBOY JUMANIYOZOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
     },
     {
       "name": "RAXIMOVA DILNOZA ERGASHBOYEVNA",
@@ -22541,6 +23147,14 @@
       "classes": [
         "4-A sinf"
       ]
+    },
+    {
+      "name": "BEKCHANOV SHUHRAT MATRASULOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
     },
     {
       "name": "BO‘TANBAYEVA DURDONA FURQATOVNA",
@@ -22691,7 +23305,9 @@
       "name": "SOBIROVA GULRUH OLIMBAYEVNA",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -22753,6 +23369,14 @@
       "classes": [
         "10-A sinf"
       ]
+    },
+    {
+      "name": "BALTAYEV XAMRAZBEK BAXTIYAROVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
     },
     {
       "name": "BAXTIYOROV FIRDAVSBEK SHODLIK O‘G‘LI",
@@ -22948,7 +23572,9 @@
       "subject": "Fizika",
       "all_krs": [
         "Fizika",
-        "Matematika"
+        "Iqtisodiy bilim asoslari",
+        "Matematika",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -23145,7 +23771,17 @@
       "name": "QURBONBOYEVA OZODA OZODBOY QIZI",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
+      ],
+      "classes": []
+    },
+    {
+      "name": "RAJABOV ASILBEK SHERZOD O‘G‘LI",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
       ],
       "classes": []
     },
@@ -23191,9 +23827,10 @@
     },
     {
       "name": "ABDULLAYEVA SHOHISTA SULTONBOYEVNA",
-      "subject": "Boshlang'ich ta'lim",
+      "subject": "Musiqa",
       "all_krs": [
-        "Boshlang'ich ta'lim"
+        "Boshlang'ich ta'lim",
+        "Musiqa"
       ],
       "classes": [
         "4-B класс"
@@ -23416,6 +24053,15 @@
       ]
     },
     {
+      "name": "QURYAZOV BEKZOD G‘AYRATOVICH",
+      "subject": "Iqtisodiy bilim asoslari",
+      "all_krs": [
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
+      ],
+      "classes": []
+    },
+    {
       "name": "RAJABOVA LAYLO KOMILOVNA",
       "subject": "Ona tili",
       "all_krs": [
@@ -23554,6 +24200,15 @@
       "subject": "Fransuz tili",
       "all_krs": [
         "Fransuz tili"
+      ],
+      "classes": []
+    },
+    {
+      "name": "ASQAROVA ZUBAYDA QALANDAROVNA",
+      "subject": "Iqtisodiy bilim asoslari",
+      "all_krs": [
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
@@ -23846,6 +24501,14 @@
       "classes": [
         "5-V класс"
       ]
+    },
+    {
+      "name": "YAVBASAROVA MAVLUDA SAPARBOYEVNA",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
     }
   ],
   "6-sonli maktab": [
@@ -24140,7 +24803,8 @@
       "name": "RO‘ZMETOVA TUYMAGUL QUVONDIQ QIZI",
       "subject": "Geografiya",
       "all_krs": [
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari"
       ],
       "classes": [
         "10-A класс"
@@ -24215,7 +24879,8 @@
       "subject": "Biologiya",
       "all_krs": [
         "Biologiya",
-        "Geografiya"
+        "Geografiya",
+        "Iqtisodiy bilim asoslari"
       ],
       "classes": [
         "8-A класс"
@@ -24268,6 +24933,14 @@
       "classes": [
         "11-B класс"
       ]
+    },
+    {
+      "name": "YAQUBOV BOBOJON YUSUPOVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
     },
     {
       "name": "YULDASHEVA MAFTUNA DILSHOD QIZI",
@@ -24362,8 +25035,9 @@
     },
     {
       "name": "BOG‘BEKOVA ZEVAROY ABDUSHARIPOVNA",
-      "subject": "Kimyo",
+      "subject": "Iqtisodiy bilim asoslari",
       "all_krs": [
+        "Iqtisodiy bilim asoslari",
         "Kimyo"
       ],
       "classes": [
@@ -24382,8 +25056,9 @@
     },
     {
       "name": "NAZAROV SHOKIR XUDAYNAZAROVICH",
-      "subject": "Texnologiya",
+      "subject": "Tadbirkorlik asoslari",
       "all_krs": [
+        "Tadbirkorlik asoslari",
         "Texnologiya"
       ],
       "classes": [
@@ -24667,6 +25342,14 @@
       "classes": []
     },
     {
+      "name": "NOROV RASHIDBEK NORIMBOYEVICH",
+      "subject": "Musiqa",
+      "all_krs": [
+        "Musiqa"
+      ],
+      "classes": []
+    },
+    {
       "name": "NURULLAYEVA MARHABO OMONBOYEVNA",
       "subject": "Huquq",
       "all_krs": [
@@ -24692,6 +25375,15 @@
       "subject": "Rus tili",
       "all_krs": [
         "Rus tili"
+      ],
+      "classes": []
+    },
+    {
+      "name": "OZODOVA HOSILA ARSLONBEK QIZI",
+      "subject": "Iqtisodiy bilim asoslari",
+      "all_krs": [
+        "Iqtisodiy bilim asoslari",
+        "Tadbirkorlik asoslari"
       ],
       "classes": []
     },
