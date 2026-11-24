@@ -21673,5 +21673,3830 @@
     "explanation": "6-mashg'ulot KRS dasturi: Global kompetensiyalar va ijtimoiy-axloqiy savodxonlikni baholash.",
     "session": 6,
     "difficulty": "medium"
+  },
+  {
+    "id": "mus-1-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "1-7-sinf Musiqa: O'zbek milliy cholg'ulari",
+    "question": "O'zbek xalq cholg'ulari orasida torli-chertma cholg'ular guruhiga qaysi cholg'u kiradi?",
+    "options": {
+      "A": "Dutor",
+      "B": "G'ijjak",
+      "C": "Nay",
+      "D": "Doira"
+    },
+    "answer": "A",
+    "explanation": "Dutor — ikki torli, chertib chalinadigan an'anaviy o'zbek xalq cholg'usidir.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-2-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "6-sinf Musiqa: Shashmaqom asoslari",
+    "question": "Shashmaqom tarkibida nechta asosiy maqom mavjud?",
+    "options": {
+      "A": "6 ta",
+      "B": "12 ta",
+      "C": "7 ta",
+      "D": "4 ta"
+    },
+    "answer": "A",
+    "explanation": "Shashmaqom 'olti maqom' degan ma'noni anglatadi: Buzruk, Rost, Navo, Dugoh, Segoh, Iroq.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-3-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "5-sinf Musiqa: Musiqa savodi",
+    "question": "Musiqada tovushlarning baland-pastligi qanday ataladi?",
+    "options": {
+      "A": "Registr va diapazon",
+      "B": "Tempo",
+      "C": "Dinamika",
+      "D": "Tembr"
+    },
+    "answer": "A",
+    "explanation": "Tovushlarning past, o'rta yoki yuqori balandlikda joylashishi registr deb ataladi.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-4-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "5-sinf Musiqa: Musiqa ifoda vositalari",
+    "question": "Musiqiy asarda tovush kuchini (baland yoki past yangrashini) ifodalovchi atama qaysi?",
+    "options": {
+      "A": "Dinamika",
+      "B": "Metr",
+      "C": "Ritm",
+      "D": "Lad"
+    },
+    "answer": "A",
+    "explanation": "Dinamika (forte, piano) tovush kuchini belgilaydi.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-5-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "1-7-sinf Musiqa: Davlat ramzlari",
+    "question": "O'zbekiston Respublikasi Davlat madhiyasining musiqasini kim yaratgan?",
+    "options": {
+      "A": "Mutal Burhonov",
+      "B": "To'xtasin Jalilov",
+      "C": "Sulaymon Yudakov",
+      "D": "Manas Leviyev"
+    },
+    "answer": "A",
+    "explanation": "O'zbekiston Davlat madhiyasi musiqasi bastakor Mutal Burhonov tomonidan yozilgan.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-6-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "2-3-sinf Musiqa: Musiqa alifbosi",
+    "question": "Musiqada 7 ta asosiy pog'ona qaysi tovushlar bilan belgilanadi?",
+    "options": {
+      "A": "Do, Re, Mi, Fa, Sol, Lya, Si",
+      "B": "A, B, C, D, E, F, G",
+      "C": "Un, Do, Tre, Kvart, Kvint",
+      "D": "Prima, Sekunda, Tersiya"
+    },
+    "answer": "A",
+    "explanation": "7 ta asosiy tovush pog'onalari: Do, Re, Mi, Fa, Sol, Lya, Si.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-7-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "4-sinf Musiqa: Damli cholg'ular",
+    "question": "Damli cholg'ular guruhiga kiruvchi qadimgi o'zbek cholg'usini aniqlang.",
+    "options": {
+      "A": "Nay",
+      "B": "Chang",
+      "C": "Tanbur",
+      "D": "Rubob"
+    },
+    "answer": "A",
+    "explanation": "Nay — qamish yoki yog'ochdan yasalgan puflab chalinadigan damli cholg'u.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-8-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "5-sinf Musiqa: Musiqa jamoalari",
+    "question": "Katta ansambl yoki orkestrni boshqaruvchi shaxs kim?",
+    "options": {
+      "A": "Dirijyor",
+      "B": "Bastakor",
+      "C": "Solist",
+      "D": "Xormeyster"
+    },
+    "answer": "A",
+    "explanation": "Dirijyor orkestr, ansambl yoki xorni boshqaradi.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-9-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "5-sinf Musiqa: Musiqa sur'ati",
+    "question": "Musiqa asarining tezligi qaysi atama bilan yuritiladi?",
+    "options": {
+      "A": "Sur'at (temp)",
+      "B": "Melodiya",
+      "C": "Lad",
+      "D": "Garmoniya"
+    },
+    "answer": "A",
+    "explanation": "Temp (adagio, andante, allegro) asarning ijro tezligini bildiradi.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-10-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "3-sinf Musiqa: Zarbli cholg'ular",
+    "question": "O'zbek milliy zarbli cholg'usi qaysi?",
+    "options": {
+      "A": "Doira",
+      "B": "Qonun",
+      "C": "G'ijjak",
+      "D": "Sato"
+    },
+    "answer": "A",
+    "explanation": "Doira — teridan qoplangan asosiy milliy zarbli cholg'u.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-11-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "4-sinf Musiqa: Dinamik belgilar",
+    "question": "Musiqada 'forte' (f) belgisi nimani anglatadi?",
+    "options": {
+      "A": "Baland, jarangdor yangrashni",
+      "B": "Juda sekin yangrashni",
+      "C": "Tezlashishni",
+      "D": "To'xtashni"
+    },
+    "answer": "A",
+    "explanation": "Forte — italyancha so'z bo'lib, kuchli, baland ovozda ijro etishni bildiradi.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-12-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "4-sinf Musiqa: Dinamik belgilar",
+    "question": "Musiqada 'piano' (p) belgisi nimani bildiradi?",
+    "options": {
+      "A": "Sokin, past ovozda yangrashni",
+      "B": "Tez ijroni",
+      "C": "Keskin zarbni",
+      "D": "Baland jaranglashni"
+    },
+    "answer": "A",
+    "explanation": "Piano — musiqada mayin, sokin, past ovozda kuylash yoki chalish belgisidir.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-13-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "5-sinf Musiqa: Nota cho'zimlari",
+    "question": "Notaning uzunligini (cho'zimini) oshiruvchi belgi qaysi?",
+    "options": {
+      "A": "Nuqta (notaning o'ng tomonidagi)",
+      "B": "Bekar",
+      "C": "Diez",
+      "D": "Bemol"
+    },
+    "answer": "A",
+    "explanation": "Notaning yoniga qo'yilgan nuqta uning cho'zimini yarim barobar uzaytiradi.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-14-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "2-sinf Musiqa: Nota yo'li",
+    "question": "Besh qatordan iborat nota yoziladigan chiziqlar tizimi nima deb ataladi?",
+    "options": {
+      "A": "Nota yo'li (notonosets)",
+      "B": "Takt chizig'i",
+      "C": "Liga",
+      "D": "Pauza"
+    },
+    "answer": "A",
+    "explanation": "Nota yo'li (notonosets) 5 ta gorizontal parallel chiziqdan iborat.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-15-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "4-sinf Musiqa: Kamonli cholg'ular",
+    "question": "Torli-kamonli cholg'uni toping.",
+    "options": {
+      "A": "G'ijjak",
+      "B": "Dutor",
+      "C": "Nay",
+      "D": "Qo'shnay"
+    },
+    "answer": "A",
+    "explanation": "G'ijjak kamon yordamida chalinadigan torli cholg'udir.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-16-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "6-sinf Musiqa: Dostonchilik san'ati",
+    "question": "Xalq dostonlarini doira yoki do'mbira jo'rligida kuylab ijro etuvchi xalq ijrochisi kim?",
+    "options": {
+      "A": "Baxshi",
+      "B": "Hofiz",
+      "C": "Xonanda",
+      "D": "Maddoh"
+    },
+    "answer": "A",
+    "explanation": "Baxshi — dostonlarni yoddan kuylaydigan xalq san'atkori.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-17-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "3-sinf Musiqa: Nota cho'zimlari",
+    "question": "Yarimtaga teng bo'lgan nota cho'zimi qaysi?",
+    "options": {
+      "A": "Chorak nota",
+      "B": "Butun nota",
+      "C": "Nimchorak nota",
+      "D": "O'n oltilik nota"
+    },
+    "answer": "A",
+    "explanation": "Butun nota = 2 ta yarimta = 4 ta chorak.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-18-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "5-sinf Musiqa: Ijro turlari",
+    "question": "Yakka xonanda yoki sozandaning ijrosi nima deyiladi?",
+    "options": {
+      "A": "Solo",
+      "B": "Duet",
+      "C": "Trio",
+      "D": "Kvartet"
+    },
+    "answer": "A",
+    "explanation": "Solo — bir kishi tomonidan mustaqil ijro etiladigan kuy yoki qo'shiq.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-19-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "5-sinf Musiqa: Ijro shakllari",
+    "question": "Ikki nafar ijrochidan iborat ansambl qanday nomlanadi?",
+    "options": {
+      "A": "Duet",
+      "B": "Solo",
+      "C": "Trio",
+      "D": "Kvintet"
+    },
+    "answer": "A",
+    "explanation": "Duet — ikki sozanda yoki xonandaning birgalikdagi ijrosi.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-20-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "5-sinf Musiqa: Alteratsiya belgilari",
+    "question": "Musiqada tovush balandligini yarim ton ko'taruvchi alteratsiya belgisi nima?",
+    "options": {
+      "A": "Diez",
+      "B": "Bemol",
+      "C": "Bekar",
+      "D": "Aksent"
+    },
+    "answer": "A",
+    "explanation": "Diez (#) tovushni yarim tonga ko'taradi.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-21-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "5-sinf Musiqa: Alteratsiya belgilari",
+    "question": "Musiqada tovush balandligini yarim ton pasaytiruvchi belgi qaysi?",
+    "options": {
+      "A": "Bemol",
+      "B": "Diez",
+      "C": "Bekar",
+      "D": "Fermata"
+    },
+    "answer": "A",
+    "explanation": "Bemol (b) tovushni yarim tonga pasaytiradi.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-22-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "5-sinf Musiqa: Alteratsiya belgilari",
+    "question": "Diez yoki bemol belgisining ta'sirini bekor qiluvchi belgi qaysi?",
+    "options": {
+      "A": "Bekar",
+      "B": "Liga",
+      "C": "Pauza",
+      "D": "Repriza"
+    },
+    "answer": "A",
+    "explanation": "Bekar avvalgi alteratsiya belgilarini bekor qilib, tovushni o'z holiga qaytaradi.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-23-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Musiqali teatr",
+    "question": "Katta opera asarlarida orkestr tomonidan ijro etiladigan muqaddima musiqa qanday ataladi?",
+    "options": {
+      "A": "Uvertyura",
+      "B": "Ariya",
+      "C": "Romantika",
+      "D": "Sonata"
+    },
+    "answer": "A",
+    "explanation": "Uvertyura — opera, balet yoki musiqali drama boshlanishidagi kirish musiqasi.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-24-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "4-sinf Musiqa: Musiqa tuzilishi",
+    "question": "Musiqa asarida qism yoki butun asarning qayta ijro etilishini bildiruvchi belgi nima?",
+    "options": {
+      "A": "Repriza",
+      "B": "Pauza",
+      "C": "Sekvensiya",
+      "D": "Fermata"
+    },
+    "answer": "A",
+    "explanation": "Repriza — musiqiy parchaning takrorlanishini ko'rsatuvchi belgi.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-25-s4",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "2-sinf Musiqa: Mavsumiy marosim qo'shiqlari",
+    "question": "Qaysi o'zbek xalq qo'shig'i bahor fasli va Navro'z bayramiga bag'ishlanadi?",
+    "options": {
+      "A": "Boychechak",
+      "B": "Lapar",
+      "C": "Alla",
+      "D": "Yoryor"
+    },
+    "answer": "A",
+    "explanation": "Boychechak — Navro'z va bahor kelishini olqishlovchi an'anaviy mavsumiy qo'shiq.",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-1-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Opera XVI asr oxirida Italiyaning Florentsiya shahrida vujudga kelgan.",
+    "question": "Opera san'atining vatani qaysi mamlakat hisoblanadi?",
+    "options": {
+      "A": "Italiya",
+      "B": "Fransiya",
+      "C": "Germaniya",
+      "D": "Rossiya"
+    },
+    "answer": "A",
+    "explanation": "Opera XVI asr oxirida Italiyaning Florentsiya shahrida vujudga kelgan.: 6-sinf Musiqa: Jahon musiqasi",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-2-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Soprano — ayollar va bolalarning eng baland ovoz turidir.",
+    "question": "Ko'p ovozli xor san'atida ayollarning eng yuqori ovozi qanday ataladi?",
+    "options": {
+      "A": "Soprano",
+      "B": "Alt",
+      "C": "Tenor",
+      "D": "Bas"
+    },
+    "answer": "A",
+    "explanation": "Soprano — ayollar va bolalarning eng baland ovoz turidir.: 6-sinf Musiqa: Xor ovozlari",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-3-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Bas — erkaklar ovozining eng past va yo'g'on registriga to'g'ri keladi.",
+    "question": "Ko'p ovozli xor san'atida erkaklarning eng past ovozi qanday ataladi?",
+    "options": {
+      "A": "Bas",
+      "B": "Tenor",
+      "C": "Bariton",
+      "D": "Alt"
+    },
+    "answer": "A",
+    "explanation": "Bas — erkaklar ovozining eng past va yo'g'on registriga to'g'ri keladi.: 6-sinf Musiqa: Xor ovozlari",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-4-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "1939-yilda Muxtor Ashrafiy va Sergey Vasilenko tomonidan 'Bo'ron' operasi yaratilgan.",
+    "question": "O'zbekistonda yaratilgan birinchi milliy opera qaysi?",
+    "options": {
+      "A": "Bo'ron",
+      "B": "Tohir va Zuhra",
+      "C": "Maysaraning ishi",
+      "D": "Zaynab va Omon"
+    },
+    "answer": "A",
+    "explanation": "1939-yilda Muxtor Ashrafiy va Sergey Vasilenko tomonidan 'Bo'ron' operasi yaratilgan.: 7-sinf Musiqa: O'zbek operasi",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-5-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Ariya — operada qahramonning ichki kechinmalarini ifodalovchi yakkaxon qo'shiq.",
+    "question": "Musiqali dramada asosiy qahramonning o'z his-tuyg'ularini yakkaxon kuylashi nima deyiladi?",
+    "options": {
+      "A": "Ariya",
+      "B": "Uvertyura",
+      "C": "Xor",
+      "D": "Retsitativ"
+    },
+    "answer": "A",
+    "explanation": "Ariya — operada qahramonning ichki kechinmalarini ifodalovchi yakkaxon qo'shiq.: 7-sinf Musiqa: Opera tuzilishi",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-6-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Ikki tovush balandligi orasidagi masofa interval deb ataladi.",
+    "question": "Tovushlar orasidagi masofa musiqada nima deb ataladi?",
+    "options": {
+      "A": "Interval",
+      "B": "Akkord",
+      "C": "Lad",
+      "D": "Gammasi"
+    },
+    "answer": "A",
+    "explanation": "Ikki tovush balandligi orasidagi masofa interval deb ataladi.: 5-sinf Musiqa: Musiqa nazariyasi",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-7-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Akkord — kamida uchta turli balandlikdagi tovushlarning uyg'un yangrashi.",
+    "question": "Bir vaqtda yangraydigan uch va undan ortiq tovushlar birikmasi nima deb ataladi?",
+    "options": {
+      "A": "Akkord",
+      "B": "Interval",
+      "C": "Melodiya",
+      "D": "Sekvensiya"
+    },
+    "answer": "A",
+    "explanation": "Akkord — kamida uchta turli balandlikdagi tovushlarning uyg'un yangrashi.: 6-sinf Musiqa: Garmoniya asoslari",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-8-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Alla — o'zbek marosim qo'shiqlarining eng mayin va qadimiy turidir.",
+    "question": "Xalq og'zaki ijodida onalarning chaqaloqni uxlatish uchun aytadigan qo'shig'i nima?",
+    "options": {
+      "A": "Alla",
+      "B": "Lapar",
+      "C": "Yoryor",
+      "D": "Olan"
+    },
+    "answer": "A",
+    "explanation": "Alla — o'zbek marosim qo'shiqlarining eng mayin va qadimiy turidir.: 2-sinf Musiqa: Marosim qo'shiqlari",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-9-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Pauza musiqiy asardagi vaqtinchalik tanaffusni bildiradi.",
+    "question": "Musiqada jimlikni (tovush yangramaydigan vaqtni) bildiruvchi belgi qaysi?",
+    "options": {
+      "A": "Pauza",
+      "B": "Liga",
+      "C": "Nuqta",
+      "D": "Kalit"
+    },
+    "answer": "A",
+    "explanation": "Pauza musiqiy asardagi vaqtinchalik tanaffusni bildiradi.: 3-sinf Musiqa: Musiqa savodi",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-10-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Sol kaliti boshlanish nuqtasi 2-chiziqdan yoziladi va Sol notasini belgilaydi.",
+    "question": "Sol kaliti ikkinchi chiziqqa qaysi notani joylashtiradi?",
+    "options": {
+      "A": "Sol notasini",
+      "B": "Do notasini",
+      "C": "Mi notasini",
+      "D": "Lya notasini"
+    },
+    "answer": "A",
+    "explanation": "Sol kaliti boshlanish nuqtasi 2-chiziqdan yoziladi va Sol notasini belgilaydi.: 2-sinf Musiqa: Nota kalitlari",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-11-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Chang — maxsus cho'plar bilan urib chalinadigan ko'p torli urma cholg'udir.",
+    "question": "O'zbek milliy musiqa asboblarida 'torli-urma' cholg'u qaysi?",
+    "options": {
+      "A": "Chang",
+      "B": "Dutor",
+      "C": "Nay",
+      "D": "Qonun"
+    },
+    "answer": "A",
+    "explanation": "Chang — maxsus cho'plar bilan urib chalinadigan ko'p torli urma cholg'udir.: 4-sinf Musiqa: Milliy cholg'ular",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-12-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Lapar — xalq musiqasida aytishuv shaklidagi raqsbop qo'shiq.",
+    "question": "Raqsga tushib aytiladigan, ko'pincha yigit va qiz aytishuvi tarzida ijro etiladigan qo'shiq nima?",
+    "options": {
+      "A": "Lapar",
+      "B": "Alla",
+      "C": "Mars",
+      "D": "Gimn"
+    },
+    "answer": "A",
+    "explanation": "Lapar — xalq musiqasida aytishuv shaklidagi raqsbop qo'shiq.: 3-sinf Musiqa: Xalq qo'shiqlari",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-13-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Alpomish — o'zbek xalq qahramonlik eposining eng yuksak namunasidir.",
+    "question": "O'zbek xalq dostonchiligida eng mashhur doston qaysi?",
+    "options": {
+      "A": "Alpomish",
+      "B": "O'tkan kunlar",
+      "C": "Farhod va Shirin",
+      "D": "Mehrobdan chayon"
+    },
+    "answer": "A",
+    "explanation": "Alpomish — o'zbek xalq qahramonlik eposining eng yuksak namunasidir.: 6-sinf Musiqa: Dostonchilik",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-14-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Xor — ko'pchilikning birgalikda, bir ovozda yoki ko'p ovozda kuylashidir.",
+    "question": "Sinfda xor bo'lib birgalikda kuylash musiqada nima deb ataladi?",
+    "options": {
+      "A": "Xor ijrochiligi",
+      "B": "Solo ijro",
+      "C": "Kvartet",
+      "D": "Duet"
+    },
+    "answer": "A",
+    "explanation": "Xor — ko'pchilikning birgalikda, bir ovozda yoki ko'p ovozda kuylashidir.: 1-sinf Musiqa: Xor bo'lib kuylash",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-15-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Fortepiano klaviatura yordamida bolg'achalar torga urilishi natijasida tovush chiqaradi.",
+    "question": "Fortepiano cholg'usi qaysi cholg'ular turkumiga kiradi?",
+    "options": {
+      "A": "Klavishli-torli cholg'u",
+      "B": "Damli cholg'u",
+      "C": "Zarbli cholg'u",
+      "D": "Elektron cholg'u"
+    },
+    "answer": "A",
+    "explanation": "Fortepiano klaviatura yordamida bolg'achalar torga urilishi natijasida tovush chiqaradi.: 5-sinf Musiqa: Klavishli cholg'ular",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-16-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Allegro — italyancha 'tez, chaqqon, quvnoq' degan ma'noni anglatadi.",
+    "question": "Musiqiy asarda 'allegro' so'zi qanday sur'atni bildiradi?",
+    "options": {
+      "A": "Tez va quvnoq",
+      "B": "Sekin va vazmin",
+      "C": "O'rtacha",
+      "D": "Juda sekin"
+    },
+    "answer": "A",
+    "explanation": "Allegro — italyancha 'tez, chaqqon, quvnoq' degan ma'noni anglatadi.: 5-sinf Musiqa: Musiqiy atamalar",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-17-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Andante — sokin, vazmin qadam tezligidagi sur'at.",
+    "question": "Musiqiy asarda 'andante' so'zi qanday sur'atni bildiradi?",
+    "options": {
+      "A": "Vazmin, qadam tashlashdek o'rtacha",
+      "B": "Juda tez",
+      "C": "Yugurishdek tez",
+      "D": "Birdan to'xtash"
+    },
+    "answer": "A",
+    "explanation": "Andante — sokin, vazmin qadam tezligidagi sur'at.: 5-sinf Musiqa: Musiqiy atamalar",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-18-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Turg'un Alimatov — dutor, tanbur va sato ijrochiligining buyuk namoyandasi.",
+    "question": "O'zbekiston xalq artisti, mohir sozanda va bastakor, dutor ustasi kim?",
+    "options": {
+      "A": "Turg'un Alimatov",
+      "B": "Jaloliddin Manguberdi",
+      "C": "Alisher Navoiy",
+      "D": "Sobir Rahimov"
+    },
+    "answer": "A",
+    "explanation": "Turg'un Alimatov — dutor, tanbur va sato ijrochiligining buyuk namoyandasi.: 7-sinf Musiqa: O'zbek sozandalari",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-19-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Fermata nota cho'zimini erkin ravishda cho'zish huquqini beradi.",
+    "question": "Fermata belgisi musiqada nimani ko'rsatadi?",
+    "options": {
+      "A": "Notani ijrochi xohishiga ko'ra uzaytirib ushlashni",
+      "B": "Notani o'chirishni",
+      "C": "Sur'atni tezlatishni",
+      "D": "Tovushni pasaytirishni"
+    },
+    "answer": "A",
+    "explanation": "Fermata nota cho'zimini erkin ravishda cho'zish huquqini beradi.: 6-sinf Musiqa: Maxsus belgilar",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-20-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Nadim Norxo'jayev — O'zbekistonning mashhur bolalar bastakori.",
+    "question": "Bolalar uchun yozilgan 'Qo'g'irchog'im' qo'shig'ining muallifi bo'lgan bolalar bastakori kim?",
+    "options": {
+      "A": "Nadim Norxo'jayev",
+      "B": "Glinka",
+      "C": "Chaykovskiy",
+      "D": "Bethoven"
+    },
+    "answer": "A",
+    "explanation": "Nadim Norxo'jayev — O'zbekistonning mashhur bolalar bastakori.: 3-sinf Musiqa: Bolalar qo'shiqlari",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-21-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "2/4 o'lchovi har bir takt 2 hissa bo'lib, har bir hissa chorak notaga teng ekanini bildiradi.",
+    "question": "Bir taktda to'rtdan ikki (2/4) o'lchov nimani anglatadi?",
+    "options": {
+      "A": "Har bir taktda 2 ta chorak nota borligini",
+      "B": "2 ta butun nota borligini",
+      "C": "4 ta yarimta borligini",
+      "D": "Faqat pauza borligini"
+    },
+    "answer": "A",
+    "explanation": "2/4 o'lchovi har bir takt 2 hissa bo'lib, har bir hissa chorak notaga teng ekanini bildiradi.: 4-sinf Musiqa: O'lchovlar",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-22-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "To'g'ri vokal qoidasi — gavdani tik, erkin tutish va to'g'ri diafragma orqali nafas olishdir.",
+    "question": "Sinfxonasida xavfsiz va to'g'ri kuylash holati (vokal qoidasi) qaysi?",
+    "options": {
+      "A": "Gavdani tik tutib, erkin nafas olib kuylash",
+      "B": "Boshni egib, pastga qarab kuylash",
+      "C": "Qattiq baqirib kuylash",
+      "D": "Tez-tez yutinib kuylash"
+    },
+    "answer": "A",
+    "explanation": "To'g'ri vokal qoidasi — gavdani tik, erkin tutish va to'g'ri diafragma orqali nafas olishdir.: 1-4-sinf Musiqa: Kuylash malakasi",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-23-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Kontrabas simfonik orkestrning eng past ovozli va eng yirik kamonli cholg'usidir.",
+    "question": "Simfonik orkestr tarkibiga kiruvchi eng yirik torli-kamonli cholg'u qaysi?",
+    "options": {
+      "A": "Kontrabas",
+      "B": "Skripka",
+      "C": "Alt",
+      "D": "Violonchel"
+    },
+    "answer": "A",
+    "explanation": "Kontrabas simfonik orkestrning eng past ovozli va eng yirik kamonli cholg'usidir.: 6-sinf Musiqa: Simfonik orkestr",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-24-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Muxtor Ashrafiy mashhur 'Kashmir afsonasi' baleti muallifidir.",
+    "question": "Qaysi o'zbek bastakori 'Kashmir afsonasi' baletini yaratgan?",
+    "options": {
+      "A": "Muxtor Ashrafiy",
+      "B": "Yunus Rajabiy",
+      "C": "Habibulla Rahimov",
+      "D": "Doni Zokirov"
+    },
+    "answer": "A",
+    "explanation": "Muxtor Ashrafiy mashhur 'Kashmir afsonasi' baleti muallifidir.: 7-sinf Musiqa: Balet san'ati",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-25-s5",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "Yunus Rajabiy o'zbek xalq kuylari va Shashmaqomni notaga olib, avlodlarga qoldirgan buyuk arbobdir.",
+    "question": "O'zbek xalq musiqa merosini to'plab, 5 jildlik kitob holida nashr ettirgan akademik san'atkor kim?",
+    "options": {
+      "A": "Yunus Rajabiy",
+      "B": "Komiljon Otaniyozov",
+      "C": "To'xtasin Jalilov",
+      "D": "Fattohxon Mamadaliyev"
+    },
+    "answer": "A",
+    "explanation": "Yunus Rajabiy o'zbek xalq kuylari va Shashmaqomni notaga olib, avlodlarga qoldirgan buyuk arbobdir.: 6-sinf Musiqa: Musiqiy meros",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-1-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 1-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-2-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 2-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-3-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 3-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-4-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 4-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-5-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 5-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-6-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 6-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-7-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 7-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-8-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 8-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-9-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 9-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-10-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 10-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-11-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 11-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-12-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 12-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-13-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 13-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-14-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 14-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-15-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 15-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-16-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 16-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-17-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 17-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-18-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 18-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-19-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 19-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-20-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 20-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-21-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 21-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-22-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 22-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-23-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 23-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-24-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 24-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "mus-25-s6",
+    "subject": "Musiqa",
+    "grade_span": "1-7",
+    "topic": "7-sinf Musiqa: Jahon va milliy musiqa durdonalari",
+    "question": "Musiqa san'atida 25-mavzu: musiqiy asarlar shakli, lad xususiyatlari va ijro mahorati bo'yicha qaysi qoida to'g'ri hisoblanadi?",
+    "options": {
+      "A": "Musiqiy asar mazmuni uning kuyi, garmoniyasi va ritmik tuzilishi orqali ifodalanadi",
+      "B": "Musiqa faqat so'zlardan iborat bo'ladi",
+      "C": "Cholg'u musiqasida ritm bo'lmaydi",
+      "D": "Ladlar faqat bitta tovushdan tuziladi"
+    },
+    "answer": "A",
+    "explanation": "Musiqa ifoda vositalarining yaxlitligi musiqiy asarning badiiy obrazini tashkil etadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-1-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Iqtisodiyotning bosh muammosi cheklangan resurslar sharoitida insonlarning cheksiz ehtiyojlarini qondirishdir.",
+    "question": "Iqtisodiy fanning asosiy bosh muammosi nima?",
+    "options": {
+      "A": "Cheksiz ehtiyojlar va cheklangan resurslar o'rtasidagi ziddiyat",
+      "B": "Pulning yetishmasligi",
+      "C": "Korxonalarning ko'payishi",
+      "D": "Bozorda tovarlarning yo'qligi"
+    },
+    "answer": "A",
+    "explanation": "Iqtisodiyotning bosh muammosi cheklangan resurslar sharoitida insonlarning cheksiz ehtiyojlarini qondirishdir.: 8-sinf Iqtisod: 1-bob",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-2-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Ehtiyoj — insonning moddiy va ma'naviy ne'matlarga bo'lgan zaruriyatidir.",
+    "question": "Insonning yashashi va rivojlanishi uchun zarur bo'lgan narsalarga bo'lgan talabi nima deb ataladi?",
+    "options": {
+      "A": "Ehtiyoj",
+      "B": "Daromad",
+      "C": "Foyda",
+      "D": "Kredit"
+    },
+    "answer": "A",
+    "explanation": "Ehtiyoj — insonning moddiy va ma'naviy ne'matlarga bo'lgan zaruriyatidir.: 8-sinf Iqtisod: 1-bob",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-3-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Klassik iqtisodiyotda ishlab chiqarish omillari: yer, mehnat, kapital va tadbirkorlikdir.",
+    "question": "Ishlab chiqarish omillari (resurslar) an'anaviy ravishda nechta asosiy guruhga bo'linadi?",
+    "options": {
+      "A": "Yer, mehnat, kapital, tadbirkorlik qobiliyati",
+      "B": "Faqat pul va oltin",
+      "C": "Faqat mashinalar va binolar",
+      "D": "Tovar va xizmatlar"
+    },
+    "answer": "A",
+    "explanation": "Klassik iqtisodiyotda ishlab chiqarish omillari: yer, mehnat, kapital va tadbirkorlikdir.: 8-sinf Iqtisod: 2-bob",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-4-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Muqobil qiymat — bir qarorni qabul qilish evaziga eng yaxshi muqobil imkoniyatdan voz kechish qiymatidir.",
+    "question": "Biror ne'matni tanlash natijasida boshqa muqobil variantdan voz kechish qanday ataladi?",
+    "options": {
+      "A": "Muqobil qiymat (imkoniyat boy berilishi)",
+      "B": "Foyda marjasi",
+      "C": "Amortizatsiya",
+      "D": "Inflyatsiya"
+    },
+    "answer": "A",
+    "explanation": "Muqobil qiymat — bir qarorni qabul qilish evaziga eng yaxshi muqobil imkoniyatdan voz kechish qiymatidir.: 8-sinf Iqtisod: 2-bob",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-5-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Iqtisodiy tizimlar: an'anaviy, rejali (buyruqbozlik), bozor va aralash tizimlarga bo'linadi.",
+    "question": "Iqtisodiy tizimlarning asosiy to'rt turini ko'rsating.",
+    "options": {
+      "A": "An'anaviy, ma'muriy-buyruqbozlik, bozor va aralash iqtisodiyot",
+      "B": "Faqat davlat va xususiy",
+      "C": "Qishloq va shahar",
+      "D": "Monopol va erkin"
+    },
+    "answer": "A",
+    "explanation": "Iqtisodiy tizimlar: an'anaviy, rejali (buyruqbozlik), bozor va aralash tizimlarga bo'linadi.: 8-sinf Iqtisod: 3-bob",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-6-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Erkin raqobat va talab-taklif asosidagi erkin narx bozorning asosidir.",
+    "question": "Bozor iqtisodiyotining asosiy harakatlantiruvchi kuchi nima?",
+    "options": {
+      "A": "Raqobat va erkin narx belgilash",
+      "B": "Davlat buyrug'i",
+      "C": "Rejali taqsimot",
+      "D": "Soliq imtiyozlari"
+    },
+    "answer": "A",
+    "explanation": "Erkin raqobat va talab-taklif asosidagi erkin narx bozorning asosidir.: 8-sinf Iqtisod: 4-bob",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-7-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Talab — xaridorlarning muayyan narxda tovarlarni sotib olish istagi va qobiliyatidir.",
+    "question": "Iste'molchilarning ma'lum vaqtda va ma'lum narxlarda sotib olishga tayyor tovar miqdori nima?",
+    "options": {
+      "A": "Talab",
+      "B": "Taklif",
+      "C": "Tannarx",
+      "D": "Eksport"
+    },
+    "answer": "A",
+    "explanation": "Talab — xaridorlarning muayyan narxda tovarlarni sotib olish istagi va qobiliyatidir.: 8-sinf Iqtisod: 5-bob",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-8-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Talab qonuniga ko'ra, narx oshsa talab hajmi pasayadi, narx tushsa talab ortadi.",
+    "question": "Tovar narxi oshsa, unga bo'lgan talab hajmi qanday o'zgaradi (Talab qonuni)?",
+    "options": {
+      "A": "Talab hajmi kamayadi",
+      "B": "Talab hajmi ortadi",
+      "C": "O'zgarishsiz qoladi",
+      "D": "Cheksiz bo'ladi"
+    },
+    "answer": "A",
+    "explanation": "Talab qonuniga ko'ra, narx oshsa talab hajmi pasayadi, narx tushsa talab ortadi.: 8-sinf Iqtisod: 5-bob",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-9-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Taklif — sotuvchilar tomonidan sotuvga taklif qilingan tovar va xizmatlar hajmidir.",
+    "question": "Ishlab chiqaruvchilarning muayyan narxlarda bozorga chiqarishga tayyor tovar miqdori nima?",
+    "options": {
+      "A": "Taklif",
+      "B": "Talab",
+      "C": "Import",
+      "D": "Defitsit"
+    },
+    "answer": "A",
+    "explanation": "Taklif — sotuvchilar tomonidan sotuvga taklif qilingan tovar va xizmatlar hajmidir.: 8-sinf Iqtisod: 6-bob",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-10-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Bozor muvozanati talab va taklif kesishgan nuqtadagi narxda shakllanadi.",
+    "question": "Talab hajmi taklif hajmiga teng bo'lgan nuqtadagi narx qanday ataladi?",
+    "options": {
+      "A": "Muvozanatli narx (bozor narxi)",
+      "B": "Maksimal narx",
+      "C": "Monopol narx",
+      "D": "Tannarx"
+    },
+    "answer": "A",
+    "explanation": "Bozor muvozanati talab va taklif kesishgan nuqtadagi narxda shakllanadi.: 8-sinf Iqtisod: 6-bob",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-11-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Inflyatsiya — pul birligi xarid qobiliyatining pasayishi va narx-navoning ko'tarilishidir.",
+    "question": "Umumiy narxlar darajasining uzluksiz o'sishi va pulning xarid qobiliyati pasayishi nima?",
+    "options": {
+      "A": "Inflyatsiya",
+      "B": "Deflyatsiya",
+      "C": "Stagflatsiya",
+      "D": "Devalvatsiya"
+    },
+    "answer": "A",
+    "explanation": "Inflyatsiya — pul birligi xarid qobiliyatining pasayishi va narx-navoning ko'tarilishidir.: 9-sinf Iqtisod: Pul va banklar",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-12-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Davlat byudjeti — davlatning bir yillik daromad va xarajatlar balansidir.",
+    "question": "Davlatning asosiy daromadlari va xarajatlarining yillik moliyaviy rejasi nima?",
+    "options": {
+      "A": "Davlat byudjeti",
+      "B": "Kredit portfeli",
+      "C": "Milliy valyuta zaxirasi",
+      "D": "Biznes reja"
+    },
+    "answer": "A",
+    "explanation": "Davlat byudjeti — davlatning bir yillik daromad va xarajatlar balansidir.: 9-sinf Iqtisod: Moliya tizimi",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-13-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Soliqlar — jismoniy va yuridik shaxslardan byudjetga undiriladigan majburiy to'lovlar.",
+    "question": "Davlat byudjetining asosiy daromad manbai nima?",
+    "options": {
+      "A": "Soliqlar va to'lovlar",
+      "B": "Xayriyalar",
+      "C": "Kreditlar",
+      "D": "Zayomlar"
+    },
+    "answer": "A",
+    "explanation": "Soliqlar — jismoniy va yuridik shaxslardan byudjetga undiriladigan majburiy to'lovlar.: 9-sinf Iqtisod: Soliqlar",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-14-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Daromad — ish haqi, pensiya, stipendiya, foyda va boshqa barcha moliyaviy tushumlar yig'indisi.",
+    "question": "Aholining ma'lum bir davrda olgan barcha pul va moddiy tushumlari nima deyiladi?",
+    "options": {
+      "A": "Daromad",
+      "B": "Xarajat",
+      "C": "Soliq",
+      "D": "Foyda"
+    },
+    "answer": "A",
+    "explanation": "Daromad — ish haqi, pensiya, stipendiya, foyda va boshqa barcha moliyaviy tushumlar yig'indisi.: 8-sinf Iqtisod: Oila byudjeti",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-15-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Xarajat daromaddan oshsa defitsit, daromad xarajatdan oshsa profitsit deyiladi.",
+    "question": "Oila byudjetida xarajatlar daromaddan oshib ketsa, bu holat nima deb ataladi?",
+    "options": {
+      "A": "Byudjet taqchilligi (defitsit)",
+      "B": "Byudjet profitsiti",
+      "C": "Muvozanat",
+      "D": "Jamg'arma"
+    },
+    "answer": "A",
+    "explanation": "Xarajat daromaddan oshsa defitsit, daromad xarajatdan oshsa profitsit deyiladi.: 8-sinf Iqtisod: Oila byudjeti",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-16-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Pul tovarlar oldi-sotdisida muomala va ayirboshlash vositasi bo'lib xizmat qiladi.",
+    "question": "Pulning tovarlar ayirboshlashdagi asosiy vazifasi qaysi?",
+    "options": {
+      "A": "Muomala vositasi",
+      "B": "Qiymat o'lchovi",
+      "C": "Jamg'arma vositasi",
+      "D": "To'lov vositasi"
+    },
+    "answer": "A",
+    "explanation": "Pul tovarlar oldi-sotdisida muomala va ayirboshlash vositasi bo'lib xizmat qiladi.: 8-sinf Iqtisod: Pulning vazifalari",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-17-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Monopoliya — biror sohada yagona ishlab chiqaruvchi yoki sotuvchining ustunligi.",
+    "question": "Bozorda yagona sotuvchi hukmron bo'lgan va raqobat bo'lmagan holat nima?",
+    "options": {
+      "A": "Monopoliya",
+      "B": "Oligopoliya",
+      "C": "Monopsoniya",
+      "D": "Mukammal raqobat"
+    },
+    "answer": "A",
+    "explanation": "Monopoliya — biror sohada yagona ishlab chiqaruvchi yoki sotuvchining ustunligi.: 9-sinf Iqtisod: Bozor turlari",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-18-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Oligopoliya — bir necha yirik korxonalarning bozor ustidan nazorati.",
+    "question": "Bozorda bir nechta yirik ishlab chiqaruvchilar o'rtasidagi raqobat nima deb ataladi?",
+    "options": {
+      "A": "Oligopoliya",
+      "B": "Monopoliya",
+      "C": "Erkin bozor",
+      "D": "Monopsoniya"
+    },
+    "answer": "A",
+    "explanation": "Oligopoliya — bir necha yirik korxonalarning bozor ustidan nazorati.: 9-sinf Iqtisod: Bozor turlari",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-19-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Tannarx — mahsulotni yaratish va sotishga sarflangan xomashyo, ish haqi va boshqa xarajatlar.",
+    "question": "Mahsulot ishlab chiqarish uchun sarflangan barcha xarajatlar yig'indisi nima deyiladi?",
+    "options": {
+      "A": "Tannarx",
+      "B": "Foyda",
+      "C": "Daromad",
+      "D": "Marja"
+    },
+    "answer": "A",
+    "explanation": "Tannarx — mahsulotni yaratish va sotishga sarflangan xomashyo, ish haqi va boshqa xarajatlar.: 8-sinf Iqtisod: Korxona iqtisodiyoti",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-20-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Foyda = Umumiy daromad - Umumiy xarajatlar.",
+    "question": "Korxonaning umumiy tushumidan umumiy xarajatlarni ayirganda nima hosil bo'ladi?",
+    "options": {
+      "A": "Sof foyda",
+      "B": "Tannarx",
+      "C": "Zarar",
+      "D": "Aylanma mablag'"
+    },
+    "answer": "A",
+    "explanation": "Foyda = Umumiy daromad - Umumiy xarajatlar.: 8-sinf Iqtisod: Foyda va zarar",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-21-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Tijorat banklari aholi va korxonalardan omonat olib, kreditlar beradi.",
+    "question": "Tijorat banklarining asosiy faoliyati nimalardan iborat?",
+    "options": {
+      "A": "Omonatlar qabul qilish va kreditlar ajratish",
+      "B": "Faqat pul bosib chiqarish",
+      "C": "Soliq yig'ish",
+      "D": "Qonun qabul qilish"
+    },
+    "answer": "A",
+    "explanation": "Tijorat banklari aholi va korxonalardan omonat olib, kreditlar beradi.: 9-sinf Iqtisod: Bank tizimi",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-22-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Markaziy bank milliy valyutani chiqarish bo'yicha mutlaq davlat monopoliyasiga ega.",
+    "question": "O'zbekiston Respublikasida pul emissiyasi (muomalaga chiqarish) huquqiga kim ega?",
+    "options": {
+      "A": "O'zbekiston Respublikasi Markaziy banki",
+      "B": "Moliya vazirligi",
+      "C": "Xalq banki",
+      "D": "Tijorat banklari"
+    },
+    "answer": "A",
+    "explanation": "Markaziy bank milliy valyutani chiqarish bo'yicha mutlaq davlat monopoliyasiga ega.: 9-sinf Iqtisod: Markaziy bank",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-23-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "YaIM (VVP) — mamlakat ichidagi barcha yakuniy mahsulotlar qiymatining bosh ko'rsatkichidir.",
+    "question": "Mamlakatda bir yil davomida ishlab chiqarilgan barcha yakuniy tovar va xizmatlarning bozor qiymati nima?",
+    "options": {
+      "A": "Yalpi ichki mahsulot (YaIM)",
+      "B": "Yalpi milliy daromad",
+      "C": "Davlat byudjeti",
+      "D": "Sof eksport"
+    },
+    "answer": "A",
+    "explanation": "YaIM (VVP) — mamlakat ichidagi barcha yakuniy mahsulotlar qiymatining bosh ko'rsatkichidir.: 9-sinf Iqtisod: Makroiqtisodiyot",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-24-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Import — tashqi davlatlardan tovarlar keltirish, eksport esa chetga sotishdir.",
+    "question": "Chet eldan tovar va xizmatlarni mamlakatga olib kirish nima deb ataladi?",
+    "options": {
+      "A": "Import",
+      "B": "Eksport",
+      "C": "Reeksport",
+      "D": "Tranzit"
+    },
+    "answer": "A",
+    "explanation": "Import — tashqi davlatlardan tovarlar keltirish, eksport esa chetga sotishdir.: 9-sinf Iqtisod: Tashqi savdo",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-25-s4",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "Ishsizlik — mehnatga layoqatli bo'lib, munosib ish o'rniga ega bo'lmagan iqtisodiy holat.",
+    "question": "Aholining mehnat qilishga qobiliyatli va xohishi bo'lgan, ammo ish topa olmayotgan qismi nima deb ataladi?",
+    "options": {
+      "A": "Ishsizlar",
+      "B": "Iqtisodiy nofaol aholi",
+      "C": "Nafaqa oluvchilar",
+      "D": "Band aholi"
+    },
+    "answer": "A",
+    "explanation": "Ishsizlik — mehnatga layoqatli bo'lib, munosib ish o'rniga ega bo'lmagan iqtisodiy holat.: 9-sinf Iqtisod: Mehnat bozori",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-1-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 1-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-2-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 2-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-3-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 3-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-4-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 4-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-5-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 5-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-6-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 6-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-7-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 7-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-8-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 8-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-9-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 9-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-10-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 10-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-11-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 11-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-12-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 12-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-13-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 13-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-14-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 14-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-15-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 15-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-16-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 16-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-17-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 17-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-18-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 18-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-19-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 19-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-20-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 20-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-21-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 21-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-22-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 22-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-23-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 23-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-24-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 24-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-25-s5",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Moliya, soliq va xalqaro munosabatlar",
+    "question": "Iqtisodiyot nazariyasida 25-mavzu: bozor muvozanati, foiz stavkalari va investitsiya faolligi o'rtasidagi bog'liqlik bo'yicha qaysi qoida to'g'ri?",
+    "options": {
+      "A": "Investitsiyalar ishlab chiqarish quvvatlarini kengaytirish va iqtisodiy o'sishga xizmat qiladi",
+      "B": "Investitsiya faqat iste'mol xarajatlaridan iborat bo'ladi",
+      "C": "Foiz stavkasi oshsa investitsiya doimo keskin ortadi",
+      "D": "Kreditlar tekin taqsimlanadi"
+    },
+    "answer": "A",
+    "explanation": "Investitsiyalar — iqtisodiyotga foyda olish va ishlab chiqarishni kengaytirish maqsadida kiritiladigan mablag'lardir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-1-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 1-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-2-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 2-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-3-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 3-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-4-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 4-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-5-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 5-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-6-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 6-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-7-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 7-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-8-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 8-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-9-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 9-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-10-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 10-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-11-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 11-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-12-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 12-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-13-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 13-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-14-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 14-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-15-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 15-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-16-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 16-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-17-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 17-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-18-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 18-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-19-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 19-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-20-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 20-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-21-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 21-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-22-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 22-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-23-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 23-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-24-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 24-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "iqt-25-s6",
+    "subject": "Iqtisodiy bilim asoslari",
+    "grade_span": "8-9",
+    "topic": "9-sinf Iqtisod: Raqobatbardoshlik va barqaror iqtisodiy taraqqiyot",
+    "question": "Zamonaviy iqtisodiy taraqqiyotda 25-yo'nalish: innovatsiyalar, inson kapitali va bozor infratuzilmasining roli qanday belgilanadi?",
+    "options": {
+      "A": "Inson kapitali va innovatsiyalar mamlakatning raqobatbardoshligini oshiruvchi asosiy omildir",
+      "B": "Inson kapitali faqat jismoniy kuchdan iborat",
+      "C": "Texnologiyalar mahsulot tannarxini faqat oshiradi",
+      "D": "Infratuzilma ishlab chiqarishga ta'sir qilmaydi"
+    },
+    "answer": "A",
+    "explanation": "Bilim, innovatsiya va malaka zamonaviy iqtisodiyotda eng qimmatli resurs hisoblanadi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-1-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Tadbirkorlik — tavakkalchilikka asoslangan va foyda olishga qaratilgan mustaqil iqtisodiy faoliyatdir.",
+    "question": "Tadbirkorlik faoliyatining asosiy maqsadi nima?",
+    "options": {
+      "A": "Tavakkalchilik asosida qonuniy yo'l bilan foyda olish",
+      "B": "Faqat xayriya qilish",
+      "C": "Zarar bilan ishlash",
+      "D": "Davlat topshiriqlarini bajarish"
+    },
+    "answer": "A",
+    "explanation": "Tadbirkorlik — tavakkalchilikka asoslangan va foyda olishga qaratilgan mustaqil iqtisodiy faoliyatdir.: 11-sinf Tadbirkorlik: 1-mavzu",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-2-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Fuqaro yuridik shaxs tashkil etmasdan YaTT sifatida ro'yxatdan o'tib faoliyat yuritishi mumkin.",
+    "question": "Tadbirkorlik faoliyati bilan shug'ullanuvchi jismoniy shaxs qanday maqomda faoliyat yuritishi mumkin?",
+    "options": {
+      "A": "Yakka tartibdagi tadbirkor (YaTT)",
+      "B": "Aksiyador",
+      "C": "Xoldinq boshqaruvchisi",
+      "D": "Davlat xizmatchisi"
+    },
+    "answer": "A",
+    "explanation": "Fuqaro yuridik shaxs tashkil etmasdan YaTT sifatida ro'yxatdan o'tib faoliyat yuritishi mumkin.: 11-sinf Tadbirkorlik: 3-mavzu",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-3-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Oilaviy tadbirkorlik oila a'zolari mehnati va mulkiga asoslanadi.",
+    "question": "Bir oila a'zolari tomonidan birgalikda amalga oshiriladigan tadbirkorlik shakli nima?",
+    "options": {
+      "A": "Oilaviy tadbirkorlik",
+      "B": "Aksiyadorlik jamiyati",
+      "C": "Unitar korxona",
+      "D": "Transmilliy korporatsiya"
+    },
+    "answer": "A",
+    "explanation": "Oilaviy tadbirkorlik oila a'zolari mehnati va mulkiga asoslanadi.: 11-sinf Tadbirkorlik: 4-mavzu",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-4-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Biznes-reja — biznes loyihasining barcha bosqichlarini rejalashtiruvchi bosh hujjatdir.",
+    "question": "Bo'lajak biznesning maqsadlari, strategiyasi, moliyaviy hisob-kitoblari aks etgan asosiy hujjat nima?",
+    "options": {
+      "A": "Biznes-reja",
+      "B": "Nizom",
+      "C": "Guvohnoma",
+      "D": "Mehnat shartnomasi"
+    },
+    "answer": "A",
+    "explanation": "Biznes-reja — biznes loyihasining barcha bosqichlarini rejalashtiruvchi bosh hujjatdir.: 11-sinf Tadbirkorlik: Biznes-reja tuzish",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-5-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "MChJ — Mas'uliyati cheklangan jamiyat.",
+    "question": "Yuridik shaxs sifatida eng ko'p tarqalgan mas'uliyati cheklangan jamiyat qisqartmasi qanday?",
+    "options": {
+      "A": "MChJ",
+      "B": "YaTT",
+      "C": "AJ",
+      "D": "OK"
+    },
+    "answer": "A",
+    "explanation": "MChJ — Mas'uliyati cheklangan jamiyat.: 11-sinf Tadbirkorlik: Tashkiliy-huquqiy shakllar",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-6-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Startap — qisqa muddatda tez kengayish potentsialiga ega innovatsion biznes loyihadir.",
+    "question": "Tadbirkorlikda 'startap' (startup) tushunchasi nimani anglatadi?",
+    "options": {
+      "A": "Innovatsion g'oyaga asoslangan yangi, tez o'suvchi loyiha",
+      "B": "Eski zavodning qayta ochilishi",
+      "C": "Davlat idorasi",
+      "D": "Mavsumiy savdo do'koni"
+    },
+    "answer": "A",
+    "explanation": "Startap — qisqa muddatda tez kengayish potentsialiga ega innovatsion biznes loyihadir.: 11-sinf Tadbirkorlik: Innovatsion biznes",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-7-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Marketing miksining 4 ta ustuni: Mahsulot, Narx, Sotish joyi va Rag'batlantirishdir.",
+    "question": "Marketingning '4P' formulasiga qaysi to'rt unsur kiradi?",
+    "options": {
+      "A": "Product, Price, Place, Promotion (Mahsulot, Narx, Joy, Rag'bat)",
+      "B": "People, Profit, Paper, Power",
+      "C": "Plan, Pay, Purchase, Public",
+      "D": "Policy, Police, Party, Post"
+    },
+    "answer": "A",
+    "explanation": "Marketing miksining 4 ta ustuni: Mahsulot, Narx, Sotish joyi va Rag'batlantirishdir.: 11-sinf Tadbirkorlik: Marketing asoslari",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-8-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Boshlang'ich kapital — faoliyatni yo'lga qo'yish uchun kiritiladigan dastlabki mablag'dir.",
+    "question": "O'z biznesini boshlash uchun zarur bo'lgan dastlabki pul va mulkiy mablag' nima deyiladi?",
+    "options": {
+      "A": "Boshlang'ich kapital (ustav kapitali)",
+      "B": "Sof foyda",
+      "C": "Dividend",
+      "D": "Depozit foizi"
+    },
+    "answer": "A",
+    "explanation": "Boshlang'ich kapital — faoliyatni yo'lga qo'yish uchun kiritiladigan dastlabki mablag'dir.: 11-sinf Tadbirkorlik: Moliyaviy resurslar",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-9-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Marketing tadqiqotlari bozor talabi va xaridor xatti-harakatini o'rganadi.",
+    "question": "Iste'molchilar ehtiyojini o'rganish, raqobatchilarni tahlil qilish va bozor imkoniyatlarini baholash jarayoni nima?",
+    "options": {
+      "A": "Marketing tadqiqoti",
+      "B": "Buxgalteriya hisobi",
+      "C": "Audit tekshiruvi",
+      "D": "Kassatsiya"
+    },
+    "answer": "A",
+    "explanation": "Marketing tadqiqotlari bozor talabi va xaridor xatti-harakatini o'rganadi.: 11-sinf Tadbirkorlik: Bozor tahlili",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-10-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Franchayzing — tayyor brend va biznes modelidan shartnoma asosida foydalanish huquqi.",
+    "question": "Boshqa mashhur brendning nomi va texnologiyasi ostida biznes yuritish huquqi nima deb ataladi?",
+    "options": {
+      "A": "Franchayzing",
+      "B": "Lizing",
+      "C": "Faktoring",
+      "D": "Kliring"
+    },
+    "answer": "A",
+    "explanation": "Franchayzing — tayyor brend va biznes modelidan shartnoma asosida foydalanish huquqi.: 11-sinf Tadbirkorlik: Franchayzing",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-11-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Lizing — moliyaviy ijaraning qulay shaklidir.",
+    "question": "Uskuna va transport vositalarini uzoq muddatga ijaraga olib, keyinchalik sotib olish huquqini beruvchi moliyaviy xizmat nima?",
+    "options": {
+      "A": "Lizing",
+      "B": "Ipoteka",
+      "C": "Overdraft",
+      "D": "Veksel"
+    },
+    "answer": "A",
+    "explanation": "Lizing — moliyaviy ijaraning qulay shaklidir.: 11-sinf Tadbirkorlik: Moliyalashtirish",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-12-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Zararsizlik nuqtasida tushum jami xarajatlarga teng bo'ladi.",
+    "question": "Biznesda xarajatlarni to'liq qoplab, foyda ham, zarar ham ko'rmaydigan nuqta nima deyiladi?",
+    "options": {
+      "A": "Zararsizlik nuqtasi (rentabellik chegarasi)",
+      "B": "Maksimal foyda nuqtasi",
+      "C": "Likvidlik darajasi",
+      "D": "Defitsit nuqtasi"
+    },
+    "answer": "A",
+    "explanation": "Zararsizlik nuqtasida tushum jami xarajatlarga teng bo'ladi.: 11-sinf Tadbirkorlik: Moliyaviy tahlil",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-13-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Tovar belgisi korxona imidji va intellektual mulki hisoblanadi.",
+    "question": "Korxonaning o'z tovar va xizmatlarini boshqa raqobatchilardan ajratib turuvchi ramziy belgisi nima?",
+    "options": {
+      "A": "Tovar belgisi (brend/logotip)",
+      "B": "Litsenziya",
+      "C": "Sertifikat",
+      "D": "Faktura"
+    },
+    "answer": "A",
+    "explanation": "Tovar belgisi korxona imidji va intellektual mulki hisoblanadi.: 11-sinf Tadbirkorlik: Brend va tovar belgisi",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-14-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Tavakkalchilik — noaniqlik sharoitida qaror qabul qilish va natija uchun javobgarlikdir.",
+    "question": "Tadbirkorlik faoliyatida kutilmagan holatlar va zararlar ehtimoli qanday ataladi?",
+    "options": {
+      "A": "Tadbirkorlik tavakkalchiligi (riski)",
+      "B": "Kafolat",
+      "C": "Subsidiyalar",
+      "D": "Imtiyozlar"
+    },
+    "answer": "A",
+    "explanation": "Tavakkalchilik — noaniqlik sharoitida qaror qabul qilish va natija uchun javobgarlikdir.: 11-sinf Tadbirkorlik: Risk menejmenti",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-15-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Xodimlar bilan munosabatlar O'zbekiston Respublikasi Mehnat kodeksi bilan tartibga solinadi.",
+    "question": "Tadbirkor o'z xodimlariga mehnat sharoitlari yaratishda qaysi hujjatga amal qilishi shart?",
+    "options": {
+      "A": "Mehnat kodeksi",
+      "B": "Soliq kodeksi",
+      "C": "Bojxona kodeksi",
+      "D": "Jinoyat kodeksi"
+    },
+    "answer": "A",
+    "explanation": "Xodimlar bilan munosabatlar O'zbekiston Respublikasi Mehnat kodeksi bilan tartibga solinadi.: 11-sinf Tadbirkorlik: Mehnat munosabatlari",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-16-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "CRM tizimlari mijozlar bazasini boshqarishda qo'llaniladi.",
+    "question": "Mijozlar bilan aloqalarni boshqarish va sotuvni avtomatlashtirish tizimi qanday qisqartiriladi?",
+    "options": {
+      "A": "CRM (Customer Relationship Management)",
+      "B": "ERP",
+      "C": "GPS",
+      "D": "CPU"
+    },
+    "answer": "A",
+    "explanation": "CRM tizimlari mijozlar bazasini boshqarishda qo'llaniladi.: 11-sinf Tadbirkorlik: Raqamli biznes",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-17-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Elektron tijorat onlayn platformalar orqali oldi-sotdini ta'minlaydi.",
+    "question": "Elektron tijoratda tovarlarni internet tarmog'i orqali sotish shakli qanday nomlanadi?",
+    "options": {
+      "A": "E-tijorat (E-commerce)",
+      "B": "Offline savdo",
+      "C": "Birja savdosi",
+      "D": "Yarmarka"
+    },
+    "answer": "A",
+    "explanation": "Elektron tijorat onlayn platformalar orqali oldi-sotdini ta'minlaydi.: 11-sinf Tadbirkorlik: Elektron tijorat",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-18-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Kichik biznesga soliq imtiyozlari va soddalashtirilgan hisob-kitoblar qo'llaniladi.",
+    "question": "Kichik biznes subyektlariga davlat tomonidan qanday imtiyozlar berilishi mumkin?",
+    "options": {
+      "A": "Soliq va kredit imtiyozlari, soddalashtirilgan hisobot",
+      "B": "Faqat tekin mahsulot berish",
+      "C": "Tekshiruvlarni har kuni o'tkazish",
+      "D": "Narxni majburiy qilib qo'yish"
+    },
+    "answer": "A",
+    "explanation": "Kichik biznesga soliq imtiyozlari va soddalashtirilgan hisob-kitoblar qo'llaniladi.: 11-sinf Tadbirkorlik: Davlat qo'llab-quvvatlashi",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-19-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Sertifikat tovarning xavfsizlik va sifat standartlariga muvofiqligini tasdiqlaydi.",
+    "question": "Tadbirkorning mahsulot sifatini tasdiqlovchi rasmiy davlat hujjati nima?",
+    "options": {
+      "A": "Muvofiqlik sertifikati",
+      "B": "Pasport nusxasi",
+      "C": "Mehnat daftarchasi",
+      "D": "Bojxona deklaratsiyasi"
+    },
+    "answer": "A",
+    "explanation": "Sertifikat tovarning xavfsizlik va sifat standartlariga muvofiqligini tasdiqlaydi.: 11-sinf Tadbirkorlik: Standartlashtirish",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-20-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Menejment — maqsadga erishish uchun resurslar va jamoani samarali boshqarish tizimidir.",
+    "question": "Korxonada xodimlar ishini tashkil etish, rejalashtirish va boshqarish san'ati nima?",
+    "options": {
+      "A": "Menejment",
+      "B": "Logistika",
+      "C": "Marketing",
+      "D": "Dizayn"
+    },
+    "answer": "A",
+    "explanation": "Menejment — maqsadga erishish uchun resurslar va jamoani samarali boshqarish tizimidir.: 11-sinf Tadbirkorlik: Menejment asoslari",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-21-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "SWOT: Strengths, Weaknesses, Opportunities, Threats tahlilidir.",
+    "question": "Tadbirkorlik faoliyatida 'SWOT tahlil' nimalarni o'rganadi?",
+    "options": {
+      "A": "Kuchli, zaif tomonlar, imkoniyatlar va xavflarni",
+      "B": "Faqat daromad va xarajatni",
+      "C": "Faqat soliqlarni",
+      "D": "Faqat xodimlar sonini"
+    },
+    "answer": "A",
+    "explanation": "SWOT: Strengths, Weaknesses, Opportunities, Threats tahlilidir.: 11-sinf Tadbirkorlik: Strategik rejalashtirish",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-22-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Litsenziyalanadigan faoliyat turlari uchun maxsus litsenziya talab etiladi.",
+    "question": "Biror maxsus faoliyat turi bilan shug'ullanish uchun davlat tomonidan beriladigan maxsus ruxsatnoma nima?",
+    "options": {
+      "A": "Litsenziya",
+      "B": "Buyruq",
+      "C": "Tavsiyanoma",
+      "D": "Shartnoma"
+    },
+    "answer": "A",
+    "explanation": "Litsenziyalanadigan faoliyat turlari uchun maxsus litsenziya talab etiladi.: 11-sinf Tadbirkorlik: Huquqiy asoslar",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-23-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Logistika — tovarlar oqimini rejalashtirish va yetkazib berish zanjiridir.",
+    "question": "Tovarlarni ishlab chiqaruvchidan iste'molchiga yetkazib berish, saqlash va tashish tizimi nima?",
+    "options": {
+      "A": "Logistika",
+      "B": "Statistika",
+      "C": "Lingvistika",
+      "D": "Optika"
+    },
+    "answer": "A",
+    "explanation": "Logistika — tovarlar oqimini rejalashtirish va yetkazib berish zanjiridir.: 11-sinf Tadbirkorlik: Logistika",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-24-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Soliq to'lash har bir tadbirkorning qonuniy majburiyatidir.",
+    "question": "Tadbirkor o'z daromadlaridan kelib chiqib davlatga qaysi majburiy to'lovni to'laydi?",
+    "options": {
+      "A": "Soliqlarni",
+      "B": "Jarima",
+      "C": "Ijara haqi",
+      "D": "Kafillik to'lovi"
+    },
+    "answer": "A",
+    "explanation": "Soliq to'lash har bir tadbirkorning qonuniy majburiyatidir.: 11-sinf Tadbirkorlik: Soliqqa tortish",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-25-s4",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "Ijtimoiy tadbirkorlik jamiyat farovonligi va ijtimoiy muammolarni hal qilishga xizmat qiladi.",
+    "question": "Ijtimoiy muammolarni hal qilishga qaratilgan tadbirkorlik faoliyati qanday ataladi?",
+    "options": {
+      "A": "Ijtimoiy tadbirkorlik",
+      "B": "Xalqaro biznes",
+      "C": "Kriminal biznes",
+      "D": "Soyadagi iqtisodiyot"
+    },
+    "answer": "A",
+    "explanation": "Ijtimoiy tadbirkorlik jamiyat farovonligi va ijtimoiy muammolarni hal qilishga xizmat qiladi.: 11-sinf Tadbirkorlik: Ijtimoiy biznes",
+    "session": 4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-1-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 1-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-2-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 2-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-3-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 3-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-4-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 4-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-5-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 5-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-6-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 6-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-7-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 7-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-8-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 8-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-9-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 9-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-10-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 10-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-11-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 11-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-12-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 12-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-13-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 13-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-14-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 14-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-15-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 15-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-16-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 16-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-17-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 17-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-18-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 18-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-19-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 19-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-20-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 20-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-21-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 21-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-22-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 22-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-23-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 23-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-24-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 24-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-25-s5",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Moliyaviy reja, marketing va savdo strategiyasi",
+    "question": "Tadbirkorlik amaliyotida 25-tamoyil: mijozlar ehtiyojini qondirish va korxona rentabelligini oshirishda eng asosiy omil nima?",
+    "options": {
+      "A": "Sifatli mahsulot, to'g'ri narx siyosati va mijozlarga yuqori darajada xizmat ko'rsatish",
+      "B": "Narxlarni asossiz ravishda doimo ko'tarib borish",
+      "C": "Mijozlar fikrini e'tiborsiz qoldirish",
+      "D": "Mahsulot sifatini doimiy pasaytirish"
+    },
+    "answer": "A",
+    "explanation": "Mijozlar ishonchi va yuqori sifat tadbirkorlikning uzoq muddatli muvaffaqiyat garovidir.",
+    "session": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-1-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 1-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-2-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 2-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-3-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 3-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-4-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 4-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-5-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 5-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-6-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 6-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-7-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 7-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-8-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 8-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-9-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 9-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-10-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 10-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-11-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 11-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-12-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 12-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-13-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 13-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-14-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 14-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-15-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 15-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-16-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 16-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-17-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 17-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-18-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 18-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-19-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 19-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-20-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 20-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-21-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 21-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-22-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 22-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-23-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 23-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-24-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 24-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
+  },
+  {
+    "id": "tad-25-s6",
+    "subject": "Tadbirkorlik asoslari",
+    "grade_span": "11",
+    "topic": "11-sinf Tadbirkorlik: Innovatsiyalar, eksport va zamonaviy biznes modellar",
+    "question": "Tadbirkorlik faoliyatida 25-bosqich: biznesni kengaytirish, xalqaro bozorlarga chiqish va eksport salohiyatini oshirishning asosi nima?",
+    "options": {
+      "A": "Xalqaro standartlar, zamonaviy texnologiyalar va raqobatbardosh mahsulot ishlab chiqarish",
+      "B": "Faqat ichki bozor bilan cheklanish",
+      "C": "Texnologik yangiliklardan voz kechish",
+      "D": "Standartlashtirish talablarini bajarmaslik"
+    },
+    "answer": "A",
+    "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
+    "session": 6,
+    "difficulty": "medium"
   }
 ]
