@@ -1197,6 +1197,111 @@ function discardSavedSession() {
 // ==========================================
 // VALIDATION & LIVE PIN VERIFICATION
 // ==========================================
+// ==========================================
+// GEOFENCING & LOCATION DETECTION (MAKTAB HUDUDI NAZORATI)
+// ==========================================
+function calculateHaversineDistance(lat1, lon1, lat2, lon2) {
+  const R = 6371000; // Yer radiusi metrlarda
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+  const a = 
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
+    Math.sin(dLon / 2) * Math.sin(dLon / 2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return Math.round(R * c);
+}
+
+function isMobileUserAgent() {
+  const ua = navigator.userAgent || navigator.vendor || window.opera || '';
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua);
+}
+
+function detectTeacherLocation(schoolName) {
+  return new Promise((resolve) => {
+    // 1. Kompyuter (Desktop) aniqlash
+    if (!isMobileUserAgent()) {
+      resolve({
+        status: "💻 Kompyuter (Maktab xonasi)",
+        distance: 0,
+        coords: "Desktop PC"
+      });
+      return;
+    }
+
+    // 2. Mobil qurilma - Geolocation mavjudligini tekshirish
+    if (!navigator.geolocation) {
+      resolve({
+        status: "⚠️ GPS qo'llab-quvvatlanmaydi",
+        distance: -1,
+        coords: "No GPS"
+      });
+      return;
+    }
+
+    // Maktab koordinatasini aniqlash
+    let targetCoords = null;
+    if (window.SCHOOL_COORDINATES) {
+      const normSchool = (schoolName || '').trim().toLowerCase();
+      for (const [key, val] of Object.entries(window.SCHOOL_COORDINATES)) {
+        if (normSchool.includes(key.toLowerCase()) || key.toLowerCase().includes(normSchool)) {
+          targetCoords = val;
+          break;
+        }
+      }
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const uLat = pos.coords.latitude;
+        const uLon = pos.coords.longitude;
+        const coordStr = `${uLat.toFixed(5)}, ${uLon.toFixed(5)}`;
+
+        if (targetCoords) {
+          const dist = calculateHaversineDistance(uLat, uLon, targetCoords.lat, targetCoords.lng);
+          if (dist <= 250) {
+            resolve({
+              status: `✅ Maktabda (${dist}m)`,
+              distance: dist,
+              coords: coordStr
+            });
+          } else {
+            resolve({
+              status: `⚠️ Masofadan (${dist}m)`,
+              distance: dist,
+              coords: coordStr
+            });
+          }
+        } else {
+          resolve({
+            status: `📍 Mobil GPS aniqlandi`,
+            distance: -1,
+            coords: coordStr
+          });
+        }
+      },
+      (err) => {
+        let reason = "❌ GPS o'chirilgan";
+        if (err.code === 1) reason = "❌ GPS ruxsati berilmadi";
+        else if (err.code === 2) reason = "❌ GPS signali yo'q";
+        else if (err.code === 3) reason = "❌ GPS vaqti tugadi";
+
+        resolve({
+          status: reason,
+          distance: -1,
+          coords: "GPS_DENIED_OR_OFF"
+        });
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 6000,
+        maximumAge: 30000
+      }
+    );
+  });
+}
+window.detectTeacherLocation = detectTeacherLocation;
+
 async function handleValidateAndOpenPinModal(e) {
   if (e && e.preventDefault) e.preventDefault();
 
@@ -1261,7 +1366,19 @@ async function handleValidateAndOpenPinModal(e) {
     const sessionSelect = document.getElementById('sessionSelect');
     const session = parseInt(sessionSelect ? sessionSelect.value : 4) || 4;
 
-    state.teacherInfo = { name, school, subject, session };
+    // Joylashuvni aniqlash (fon rejimida 5 soniya)
+    if (startBtn) startBtn.textContent = '📍 Joylashuv tekshirilmoqda...';
+    const locInfo = await detectTeacherLocation(school);
+
+    state.teacherInfo = { 
+      name, 
+      school, 
+      subject, 
+      session,
+      locationStatus: locInfo.status,
+      distanceMeters: locInfo.distance,
+      coords: locInfo.coords
+    };
 
     if (remoteControl && remoteControl.status && remoteControl.status.toLowerCase() === 'yopiq') {
       const textEl = document.getElementById('systemClosedNoticeText');
@@ -1860,6 +1977,9 @@ function finishExam(forceSave = false) {
     total: total,
     percent: percent,
     timeSpent: timeFormatted,
+    locationStatus: state.teacherInfo.locationStatus || "💻 Kompyuter (Maktab xonasi)",
+    distanceMeters: state.teacherInfo.distanceMeters !== undefined ? state.teacherInfo.distanceMeters : 0,
+    coords: state.teacherInfo.coords || "Desktop PC",
     switches: state.tabSwitchCount,
     status: 'Muvaffaqiyatli topshirdi',
     timestamp: getTashkentDateTimeString()
@@ -1941,6 +2061,9 @@ function saveResultRecord(record) {
       total: record.total || 25,
       percent: record.percent || 0,
       timeSpent: record.timeSpent || '',
+      locationStatus: record.locationStatus || '💻 Kompyuter (Maktab xonasi)',
+      distanceMeters: record.distanceMeters !== undefined ? record.distanceMeters : 0,
+      coords: record.coords || '',
       switches: record.switches || 0,
       status: record.status || 'Muvaffaqiyatli topshirdi'
     });
@@ -2212,7 +2335,7 @@ function applyLeaderboardFilters() {
   if (list.length === 0) {
     tbody.innerHTML = `
       <tr>
-        <td colspan="8" style="text-align: center; padding: 2.5rem 1rem; color: var(--text-muted);">
+        <td colspan="10" style="text-align: center; padding: 2.5rem 1rem; color: var(--text-muted);">
           <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔍</div>
           <b>Tanlangan parametrlar bo'yicha natijalar topilmadi.</b><br>
           <span style="font-size: 0.85rem; color: #64748b;">Iltimos, boshqa sana, fan yoki maktabni tanlang.</span>
@@ -2256,12 +2379,30 @@ function applyLeaderboardFilters() {
       ? `<span style="color: var(--danger); font-weight: 600;">To'xtatildi</span>`
       : `<span style="font-weight: 700; color: #1e293b; font-size: 0.88rem;">${item.timeStr || '—'}</span>`;
 
+    let locBadge = `<span style="color: #64748b; font-size: 0.82rem;">—</span>`;
+    const locText = item.locationStatus || '';
+    if (locText.includes('Maktabda') || locText.includes('Kompyuter')) {
+      locBadge = `<span style="background: #ecfdf5; color: #065f46; font-size: 0.78rem; font-weight: 700; padding: 2px 7px; border-radius: 9999px; border: 1px solid #a7f3d0; display: inline-block;">${escapeHtml(locText)}</span>`;
+    } else if (locText.includes('Masofadan')) {
+      locBadge = `<span style="background: #fffbeb; color: #92400e; font-size: 0.78rem; font-weight: 700; padding: 2px 7px; border-radius: 9999px; border: 1px solid #fde68a; display: inline-block;">${escapeHtml(locText)}</span>`;
+    } else if (locText.includes('GPS') || locText.includes('rad') || locText.includes('o\'chirilgan')) {
+      locBadge = `<span style="background: #fef2f2; color: #991b1b; font-size: 0.78rem; font-weight: 700; padding: 2px 7px; border-radius: 9999px; border: 1px solid #fecaca; display: inline-block;">${escapeHtml(locText)}</span>`;
+    } else if (locText) {
+      locBadge = `<span style="font-size: 0.8rem; color: #475569;">${escapeHtml(locText)}</span>`;
+    }
+
+    const durationDisplay = item.timeSpent 
+      ? `<span style="font-weight: 700; color: #0369a1; font-size: 0.85rem;">⏱️ ${escapeHtml(item.timeSpent)}</span>`
+      : `<span style="color: #94a3b8; font-size: 0.82rem;">—</span>`;
+
     tr.innerHTML = `
       <td style="text-align: center;">${rankBadge}</td>
       <td><b>${item.name}</b> ${isBlocked ? '<br><small style="color: var(--danger); font-weight: 700;">[QOIDABUZARLIK TUFAYLI BLOKLANGAN]</small>' : ''}</td>
       <td><span style="font-weight: 600; color: #334155;">${item.school}</span></td>
       <td><span style="font-weight: 600; color: #0369a1;">${item.subject}</span></td>
       <td style="text-align: center;">${scoreDisplay}</td>
+      <td style="text-align: center;">${durationDisplay}</td>
+      <td style="text-align: center;">${locBadge}</td>
       <td style="text-align: center;">${timeDisplay}</td>
       <td style="text-align: center;">${switchDisplay}</td>
       <td style="text-align: center; color: #64748b; font-size: 0.82rem; font-weight: 600;">${item.date || 'Bugun'}</td>
@@ -2322,7 +2463,11 @@ async function loadLeaderboardFromSheet(isManual = false) {
           total: parseInt(r[6]) || 25,
           percent: parseInt(r[7]) || 0,
           switches: parseInt(r[8]) || 0,
-          status: r[9] || 'Muvaffaqiyatli topshirdi'
+          status: r[9] || 'Muvaffaqiyatli topshirdi',
+          timeSpent: r[10] || '',
+          locationStatus: r[11] || '',
+          distanceMeters: r[12] || '',
+          coords: r[13] || ''
         };
 
         const existingIdx = combinedRecords.findIndex(c => c.name.trim().toLowerCase() === normName);
