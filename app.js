@@ -342,13 +342,15 @@ async function loadTeachersDatabase() {
   if (typeof window !== 'undefined' && window.TEACHERS_DB && Object.keys(window.TEACHERS_DB).length > 0) {
     state.teachersDb = window.TEACHERS_DB;
     populateSchoolDropdown();
+    if (typeof refreshTeacherDropdown === 'function') refreshTeacherDropdown();
     return;
   }
   try {
-    const res = await fetch('teachers_db.json');
+    const res = await fetch('teachers_db.json?v=' + Date.now());
     if (res.ok) {
       state.teachersDb = await res.json();
       populateSchoolDropdown();
+      if (typeof refreshTeacherDropdown === 'function') refreshTeacherDropdown();
     }
   } catch (err) {
     console.warn("teachers_db.json yuklanmadi:", err);
@@ -416,12 +418,23 @@ function setupSchoolSubjectTeacherFlow() {
       return;
     }
 
-    const allSchoolTeachers = state.teachersDb[schoolVal] || [];
-    const matchedTeachers = allSchoolTeachers.filter(t => {
-      const sub = (subjectVal || '').toLowerCase();
-      const primarySub = (t.subject || '').toLowerCase();
-      const allSubs = Array.isArray(t.all_krs) ? t.all_krs.map(s => (s || '').toLowerCase()) : [];
-      return primarySub === sub || allSubs.includes(sub);
+    function normSub(s) {
+      if (!s) return '';
+      let res = s.toLowerCase();
+      res = res.replace(/['ʻ‘ʼ`\u02BC\u02BB]/g, "'");
+      res = res.replace(/ş/g, "sh").replace(/ç/g, "ch").replace(/ö/g, "o'").replace(/ğ/g, "g'");
+      res = res.replace(/[\u{1F300}-\u{1F9FF}]/gu, '');
+      res = res.replace(/\(.*?\)/g, "").trim();
+      return res;
+    }
+
+    const schoolDb = (state.teachersDb && (state.teachersDb[schoolVal] || state.teachersDb[schoolVal.trim()])) ||
+                     (typeof window !== 'undefined' && window.TEACHERS_DB && (window.TEACHERS_DB[schoolVal] || window.TEACHERS_DB[schoolVal.trim()])) || [];
+    const subNorm = normSub(subjectVal);
+    const matchedTeachers = schoolDb.filter(t => {
+      const primaryNorm = normSub(t.subject);
+      const allNorm = Array.isArray(t.all_krs) ? t.all_krs.map(normSub) : [];
+      return primaryNorm === subNorm || allNorm.includes(subNorm) || (primaryNorm && subNorm && (primaryNorm.includes(subNorm) || subNorm.includes(primaryNorm)));
     }).sort((a, b) => a.name.localeCompare(b.name));
 
     teacherSelect.disabled = false;

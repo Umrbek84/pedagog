@@ -1,5 +1,5 @@
 // Qo'shko'pir tumani maktablari o'qituvchilar bazasi (Tarifikatsiya asosida)
-const TEACHERS_DB = {
+window.TEACHERS_DB = {
   "1-sonli maktab": [
     {
       "name": "ABDIRIMOVA LENINZA XAYITBAYEVNA",
@@ -27718,3 +27718,5 @@ const TEACHERS_DB = {
     }
   ]
 };
+
+var TEACHERS_DB = window.TEACHERS_DB;
