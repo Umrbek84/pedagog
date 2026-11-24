@@ -1,4 +1,4 @@
-window.TEACHERS_DATABASE = {
+window.TEACHERS_DB = window.TEACHERS_DATABASE = {
   "1-sonli maktab": [
     {
       "name": "ABDIRIMOVA LENINZA XAYITBAYEVNA",

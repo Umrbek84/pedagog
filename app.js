@@ -33,7 +33,7 @@ const BLOCKED_STORAGE_KEY = 'pedagog_blocked_users_2026';
 
 // Global State
 const state = {
-  teachersDb: (typeof window !== 'undefined' && window.TEACHERS_DB) ? window.TEACHERS_DB : {},
+  teachersDb: (typeof window !== 'undefined' && (window.TEACHERS_DB || window.TEACHERS_DATABASE)) ? (window.TEACHERS_DB || window.TEACHERS_DATABASE) : {},
   allQuestions: (typeof window !== 'undefined' && window.QUESTIONS_DB) ? window.QUESTIONS_DB : [],
   activeQuestions: [],
   currentIndex: 0,
@@ -339,9 +339,13 @@ document.addEventListener('DOMContentLoaded', () => {
 // TEACHERS & SCHOOLS DATABASE LOGIC
 // ==========================================
 async function loadTeachersDatabase() {
-  if (typeof window !== 'undefined' && window.TEACHERS_DB && Object.keys(window.TEACHERS_DB).length > 0) {
-    state.teachersDb = window.TEACHERS_DB;
+  const tDbGlobal = (typeof window !== 'undefined' && (window.TEACHERS_DB || window.TEACHERS_DATABASE));
+  if (tDbGlobal && Object.keys(tDbGlobal).length > 0) {
+    state.teachersDb = tDbGlobal;
+    window.TEACHERS_DB = tDbGlobal;
+    window.TEACHERS_DATABASE = tDbGlobal;
     populateSchoolDropdown();
+    populateRatingSchoolDropdown();
     if (typeof refreshTeacherDropdown === 'function') refreshTeacherDropdown();
     return;
   }
@@ -349,12 +353,32 @@ async function loadTeachersDatabase() {
     const res = await fetch('teachers_db.json?v=' + Date.now());
     if (res.ok) {
       state.teachersDb = await res.json();
+      window.TEACHERS_DB = state.teachersDb;
+      window.TEACHERS_DATABASE = state.teachersDb;
       populateSchoolDropdown();
+      populateRatingSchoolDropdown();
       if (typeof refreshTeacherDropdown === 'function') refreshTeacherDropdown();
     }
   } catch (err) {
     console.warn("teachers_db.json yuklanmadi:", err);
   }
+}
+
+// Natural School Number Sorting Helper (Globally available)
+function getSchoolNumber(name) {
+  const match = (name || '').match(/\d+/);
+  return match ? parseInt(match[0], 10) : 999;
+}
+
+function compareSchoolsNatural(a, b) {
+  const numA = getSchoolNumber(a);
+  const numB = getSchoolNumber(b);
+  if (numA !== numB) return numA - numB;
+  const aIsSonli = (a || '').includes('sonli');
+  const bIsSonli = (b || '').includes('sonli');
+  if (aIsSonli && !bIsSonli) return -1;
+  if (!aIsSonli && bIsSonli) return 1;
+  return (a || '').localeCompare(b || '');
 }
 
 function populateSchoolDropdown() {
@@ -2248,15 +2272,24 @@ function populateRatingDateDropdown(records) {
 
 function populateRatingSchoolDropdown() {
   const schoolSelect = document.getElementById('ratingSchoolFilter');
-  if (!schoolSelect || schoolSelect.options.length > 2) return;
+  if (!schoolSelect) return;
+
+  // Agar allaqachon to'liq to'ldirilgan bo'lsa (50 dan ortiq maktab bo'lsa), qayta to'ldirmaymiz
+  if (schoolSelect.options.length > 10) return;
 
   const currentVal = schoolSelect.value || 'ALL';
-  schoolSelect.innerHTML = '<option value="ALL">🏫 Barcha maktablar (55 ta)</option>';
 
-  const db = (state && state.teachersDb && Object.keys(state.teachersDb).length > 0) ? state.teachersDb : 
-             (typeof window !== 'undefined' && window.TEACHERS_DB ? window.TEACHERS_DB : {});
-  
+  const db = (state && state.teachersDb && Object.keys(state.teachersDb).length > 0) 
+    ? state.teachersDb 
+    : (typeof window !== 'undefined' && (window.TEACHERS_DB || window.TEACHERS_DATABASE) 
+        ? (window.TEACHERS_DB || window.TEACHERS_DATABASE) 
+        : {});
+
   const schoolNames = Object.keys(db).sort(compareSchoolsNatural);
+  if (schoolNames.length === 0) return;
+
+  schoolSelect.innerHTML = `<option value="ALL">🏫 Barcha maktablar (${schoolNames.length} ta)</option>`;
+
   schoolNames.forEach(sch => {
     const opt = document.createElement('option');
     opt.value = sch;
