@@ -2081,9 +2081,218 @@ function extractDateTime(raw) {
   return { date: str.substring(0, 10), time: str.length > 11 ? str.substring(11).trim() : '—' };
 }
 
+let leaderboardRecordsCache = [];
+
+function populateRatingDateDropdown(records) {
+  const dateSelect = document.getElementById('ratingDateFilter');
+  if (!dateSelect) return;
+  const currentVal = dateSelect.value || 'ALL';
+
+  const dateSet = new Set();
+  records.forEach(r => {
+    if (r.date && r.date.length === 10) dateSet.add(r.date);
+    else if (r.rawDate && r.rawDate.length >= 10) dateSet.add(r.rawDate.substring(0, 10));
+  });
+
+  const sortedDates = Array.from(dateSet).sort().reverse();
+  const months = ["yanvar", "fevral", "mart", "aprel", "may", "iyun", "iyul", "avgust", "sentabr", "oktabr", "noyabr", "dekabr"];
+  const todayStr = getTashkentDateString ? getTashkentDateString() : '';
+
+  dateSelect.innerHTML = '<option value="ALL">🌟 Barcha sanalar (To\'liq)</option>';
+  sortedDates.forEach(dStr => {
+    const opt = document.createElement('option');
+    opt.value = dStr;
+    const parts = dStr.split('-');
+    let label = dStr;
+    if (parts.length === 3) {
+      const m = parseInt(parts[1], 10);
+      const d = parseInt(parts[2], 10);
+      if (m >= 1 && m <= 12) {
+        label = `${d}-${months[m - 1]} ${parts[0]}-yil`;
+      }
+    }
+    if (dStr === todayStr) {
+      label += ' (Bugun)';
+    }
+    opt.textContent = `📅 ${label}`;
+    dateSelect.appendChild(opt);
+  });
+
+  if (Array.from(dateSelect.options).some(o => o.value === currentVal)) {
+    dateSelect.value = currentVal;
+  }
+}
+
+function populateRatingSchoolDropdown() {
+  const schoolSelect = document.getElementById('ratingSchoolFilter');
+  if (!schoolSelect || schoolSelect.options.length > 2) return;
+
+  const currentVal = schoolSelect.value || 'ALL';
+  schoolSelect.innerHTML = '<option value="ALL">🏫 Barcha maktablar (55 ta)</option>';
+
+  const db = (state && state.teachersDb && Object.keys(state.teachersDb).length > 0) ? state.teachersDb : 
+             (typeof window !== 'undefined' && window.TEACHERS_DB ? window.TEACHERS_DB : {});
+  
+  const schoolNames = Object.keys(db).sort(compareSchoolsNatural);
+  schoolNames.forEach(sch => {
+    const opt = document.createElement('option');
+    opt.value = sch;
+    opt.textContent = sch;
+    schoolSelect.appendChild(opt);
+  });
+
+  if (Array.from(schoolSelect.options).some(o => o.value === currentVal)) {
+    schoolSelect.value = currentVal;
+  }
+}
+
+function applyLeaderboardFilters() {
+  const tbody = document.getElementById('krsLeaderboardBody');
+  const countBadge = document.getElementById('krsLeaderboardCountBadge');
+  if (!tbody) return;
+
+  const dateVal = document.getElementById('ratingDateFilter')?.value || 'ALL';
+  const subjectVal = document.getElementById('ratingSubjectFilter')?.value || 'ALL';
+  const schoolVal = document.getElementById('ratingSchoolFilter')?.value || 'ALL';
+  const searchVal = (document.getElementById('ratingSearchInput')?.value || '').trim().toLowerCase();
+
+  function normSubLocal(s) {
+    if (!s) return '';
+    let res = s.toLowerCase();
+    res = res.replace(/['ʻ‘ʼ`\u02BC\u02BB]/g, "'");
+    res = res.replace(/ş/g, "sh").replace(/ç/g, "ch").replace(/ö/g, "o'").replace(/ğ/g, "g'");
+    res = res.replace(/[\u{1F300}-\u{1F9FF}]/gu, '');
+    res = res.replace(/\(.*?\)/g, "").trim();
+    return res;
+  }
+
+  let list = (leaderboardRecordsCache || []).slice();
+
+  // 1. Sana filtri
+  if (dateVal !== 'ALL') {
+    list = list.filter(r => (r.date && r.date === dateVal) || (r.rawDate && r.rawDate.startsWith(dateVal)));
+  }
+
+  // 2. Fan filtri
+  if (subjectVal !== 'ALL') {
+    const targetNorm = normSubLocal(subjectVal);
+    list = list.filter(r => {
+      const subNorm = normSubLocal(r.subject);
+      return subNorm === targetNorm || subNorm.includes(targetNorm) || targetNorm.includes(subNorm);
+    });
+  }
+
+  // 3. Maktab filtri
+  if (schoolVal !== 'ALL') {
+    list = list.filter(r => (r.school || '').trim().toLowerCase() === schoolVal.trim().toLowerCase());
+  }
+
+  // 4. Qidiruv filtri (F.I.Sh.)
+  if (searchVal) {
+    list = list.filter(r => (r.name || '').toLowerCase().includes(searchVal));
+  }
+
+  // Sort: Non-blocked first by score descending, then by switches ascending, then earlier time
+  list.sort((a, b) => {
+    const aBlocked = (a.status || '').includes('Bloklangan');
+    const bBlocked = (b.status || '').includes('Bloklangan');
+    if (aBlocked && !bBlocked) return 1;
+    if (!aBlocked && bBlocked) return -1;
+    if (b.score !== a.score) return b.score - a.score;
+    if (a.switches !== b.switches) return a.switches - b.switches;
+    return (a.timeStr || '').localeCompare(b.timeStr || '');
+  });
+
+  if (countBadge) {
+    countBadge.innerHTML = `📊 Topshirganlar: <b>${list.length} nafar</b>`;
+  }
+
+  tbody.innerHTML = '';
+
+  if (list.length === 0) {
+    tbody.innerHTML = `
+      <tr>
+        <td colspan="8" style="text-align: center; padding: 2.5rem 1rem; color: var(--text-muted);">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔍</div>
+          <b>Tanlangan parametrlar bo'yicha natijalar topilmadi.</b><br>
+          <span style="font-size: 0.85rem; color: #64748b;">Iltimos, boshqa sana, fan yoki maktabni tanlang.</span>
+        </td>
+      </tr>
+    `;
+    return;
+  }
+
+  list.forEach((item, idx) => {
+    const isBlocked = (item.status || '').includes('Bloklangan');
+    const tr = document.createElement('tr');
+    if (isBlocked) {
+      tr.style.background = '#fef2f2';
+    }
+
+    let rankBadge = `<span class="rank-badge">${idx + 1}</span>`;
+    if (isBlocked) {
+      rankBadge = `<span class="rank-badge rank-blocked">🚫</span>`;
+    } else if (idx === 0) {
+      rankBadge = `<span class="rank-badge rank-1" style="font-weight: 800;">🥇 1</span>`;
+    } else if (idx === 1) {
+      rankBadge = `<span class="rank-badge rank-2" style="font-weight: 800;">🥈 2</span>`;
+    } else if (idx === 2) {
+      rankBadge = `<span class="rank-badge rank-3" style="font-weight: 800;">🥉 3</span>`;
+    } else if (idx < 10) {
+      rankBadge = `<span class="rank-badge" style="font-weight: 700; color: #0284c7;">🏅 ${idx + 1}</span>`;
+    }
+
+    const scoreDisplay = isBlocked
+      ? `<b style="color: var(--danger);">0 ball (0%)</b>`
+      : `<b style="color: #059669; font-weight: 800; font-size: 0.95rem;">${item.score} ball</b> <span style="color: #64748b; font-size: 0.82rem; font-weight: 600;">(${item.percent}%)</span>`;
+
+    const switchDisplay = isBlocked
+      ? `<span style="color: var(--danger); font-weight: 800;">4 ta (Cheklandi)</span>`
+      : (item.switches === 0 
+          ? `<span style="color: var(--accent); font-weight: 700;">0 (Halol)</span>` 
+          : `<span style="color: var(--warning); font-weight: 700;">${item.switches} ta</span>`);
+
+    const timeDisplay = isBlocked
+      ? `<span style="color: var(--danger); font-weight: 600;">To'xtatildi</span>`
+      : `<span style="font-weight: 700; color: #1e293b; font-size: 0.88rem;">${item.timeStr || '—'}</span>`;
+
+    tr.innerHTML = `
+      <td style="text-align: center;">${rankBadge}</td>
+      <td><b>${item.name}</b> ${isBlocked ? '<br><small style="color: var(--danger); font-weight: 700;">[QOIDABUZARLIK TUFAYLI BLOKLANGAN]</small>' : ''}</td>
+      <td><span style="font-weight: 600; color: #334155;">${item.school}</span></td>
+      <td><span style="font-weight: 600; color: #0369a1;">${item.subject}</span></td>
+      <td style="text-align: center;">${scoreDisplay}</td>
+      <td style="text-align: center;">${timeDisplay}</td>
+      <td style="text-align: center;">${switchDisplay}</td>
+      <td style="text-align: center; color: #64748b; font-size: 0.82rem; font-weight: 600;">${item.date || 'Bugun'}</td>
+    `;
+
+    tbody.appendChild(tr);
+  });
+}
+window.applyLeaderboardFilters = applyLeaderboardFilters;
+
+function resetLeaderboardFilters() {
+  const dEl = document.getElementById('ratingDateFilter');
+  const sEl = document.getElementById('ratingSubjectFilter');
+  const schEl = document.getElementById('ratingSchoolFilter');
+  const searchEl = document.getElementById('ratingSearchInput');
+  if (dEl) dEl.value = 'ALL';
+  if (sEl) sEl.value = 'ALL';
+  if (schEl) schEl.value = 'ALL';
+  if (searchEl) searchEl.value = '';
+  applyLeaderboardFilters();
+}
+window.resetLeaderboardFilters = resetLeaderboardFilters;
+
 async function loadLeaderboardFromSheet(isManual = false) {
   const tbody = document.getElementById('krsLeaderboardBody');
+  const countBadge = document.getElementById('krsLeaderboardCountBadge');
   if (!tbody) return;
+
+  if (countBadge) {
+    countBadge.innerHTML = '📊 Yuklanmoqda...';
+  }
 
   let combinedRecords = [];
   let sheetLoaded = false;
@@ -2139,7 +2348,6 @@ async function loadLeaderboardFromSheet(isManual = false) {
         const r = rowsB[i];
         if (!r[1]) continue;
         const ruxsat = (r[6] || '').trim().toLowerCase();
-        // Agar ruxsat Ochiq bo'lsa yoki pedagog allaqachon muvaffaqiyatli topshirgan bo'lsa, uni blok sifatida ko'rsatmaymiz
         if (ruxsat === 'ochiq') continue;
         if (combinedRecords.some(c => c.name.toLowerCase() === r[1].toLowerCase())) continue;
 
@@ -2163,89 +2371,20 @@ async function loadLeaderboardFromSheet(isManual = false) {
     console.warn("BLOKLANGANLAR varag'ini yuklashda xatolik:", err);
   }
 
-  if (isManual) {
+  if (isManual && typeof showToast === 'function') {
     showToast("Yetakchilar reytingi yangilandi!", "🔄");
   }
 
-  // If Google Sheet was fetched successfully and is empty (cleared by admin), sync local storage to empty!
-  if (sheetLoaded && combinedRecords.length === 0) {
-    try {
-      localStorage.removeItem(RESULTS_STORAGE_KEY);
-      localStorage.removeItem(BLOCKED_STORAGE_KEY);
-    } catch (e) {}
-  }
+  // Sync cache
+  leaderboardRecordsCache = combinedRecords;
+  window.leaderboardRecordsCache = combinedRecords;
 
-  if (combinedRecords.length === 0) {
-    tbody.innerHTML = `
-      <tr>
-        <td colspan="8" style="text-align: center; padding: 2.5rem 1rem; color: var(--text-muted);">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
-          <b>Hozircha test natijalari mavjud emas.</b><br>
-          Pedagoglar test topshirishi bilan natijalar avtomatik ravishda reyting jadvalida paydo bo'ladi.
-        </td>
-      </tr>
-    `;
-    return;
-  }
+  // Dropdownlarni to'ldirish
+  populateRatingDateDropdown(combinedRecords);
+  populateRatingSchoolDropdown();
 
-  // Sort: Non-blocked first by score descending, then by switches ascending, then blocked at the bottom
-  combinedRecords.sort((a, b) => {
-    const aBlocked = (a.status || '').includes('Bloklangan');
-    const bBlocked = (b.status || '').includes('Bloklangan');
-    if (aBlocked && !bBlocked) return 1;
-    if (!aBlocked && bBlocked) return -1;
-    if (b.score !== a.score) return b.score - a.score;
-    if (a.switches !== b.switches) return a.switches - b.switches;
-    return 0;
-  });
-
-  tbody.innerHTML = '';
-
-  combinedRecords.slice(0, 20).forEach((item, idx) => {
-    const isBlocked = (item.status || '').includes('Bloklangan');
-    const tr = document.createElement('tr');
-    if (isBlocked) {
-      tr.style.background = '#fef2f2';
-    }
-
-    let rankBadge = `<span class="rank-badge">${idx + 1}</span>`;
-    if (isBlocked) {
-      rankBadge = `<span class="rank-badge rank-blocked">🚫</span>`;
-    } else if (idx === 0) {
-      rankBadge = `<span class="rank-badge rank-1">🥇 1</span>`;
-    } else if (idx === 1) {
-      rankBadge = `<span class="rank-badge rank-2">🥈 2</span>`;
-    } else if (idx === 2) {
-      rankBadge = `<span class="rank-badge rank-3">🥉 3</span>`;
-    }
-
-    const scoreDisplay = isBlocked
-      ? `<b style="color: var(--danger);">0 ball (0%)</b>`
-      : `<b style="color: #059669; font-weight: 800; font-size: 0.95rem;">${item.score} ball</b> <span style="color: #64748b; font-size: 0.82rem; font-weight: 600;">(${item.percent}%)</span>`;
-
-    const switchDisplay = isBlocked
-      ? `<span style="color: var(--danger); font-weight: 800;">4 ta (Cheklandi)</span>`
-      : (item.switches === 0 
-          ? `<span style="color: var(--accent); font-weight: 700;">0 (Halol)</span>` 
-          : `<span style="color: var(--warning); font-weight: 700;">${item.switches} ta</span>`);
-
-    const timeDisplay = isBlocked
-      ? `<span style="color: var(--danger); font-weight: 600;">To'xtatildi</span>`
-      : `<span style="font-weight: 700; color: #1e293b; font-size: 0.88rem;">${item.timeStr || '—'}</span>`;
-
-    tr.innerHTML = `
-      <td style="text-align: center;">${rankBadge}</td>
-      <td><b>${item.name}</b> ${isBlocked ? '<br><small style="color: var(--danger); font-weight: 700;">[QOIDABUZARLIK TUFAYLI BLOKLANGAN]</small>' : ''}</td>
-      <td>${item.school}</td>
-      <td>${item.subject}</td>
-      <td style="text-align: center;">${scoreDisplay}</td>
-      <td style="text-align: center;">${timeDisplay}</td>
-      <td style="text-align: center;">${switchDisplay}</td>
-      <td style="text-align: center; color: #64748b; font-size: 0.82rem;">${item.date || 'Bugun'}</td>
-    `;
-
-    tbody.appendChild(tr);
-  });
+  // Filtrlarni qo'llab jadvalni chizish
+  applyLeaderboardFilters();
 }
 window.loadLeaderboardFromSheet = loadLeaderboardFromSheet;
 

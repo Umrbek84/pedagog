@@ -250,16 +250,86 @@
         </div>
       </div>
 
-      <!-- KRS LEADERBOARD (TOP 10 PEDAGOGLAR REYTINGI) -->
+      <!-- KRS LEADERBOARD (TOP PEDAGOGLAR REYTINGI VA SINOV NATIJALARI) -->
       <div class="card" id="krsSection">
-        <div class="section-head" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+        <div class="section-head" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1rem;">
           <div>
-            <h2 class="section-title">🏆 KRS (Kasbiy Rivojlanish Soati) — Hafta yetakchilari</h2>
-            <p class="section-desc">Darsliklar bo'yicha eng yuqori ko'rsatkich qayd etgan eng kuchli 10 ta pedagog reytingi</p>
+            <h2 class="section-title">🏆 KRS (Kasbiy Rivojlanish Soati) — Test Natijalari va Reyting</h2>
+            <p class="section-desc">Darsliklar bo'yicha KRS sinovlarida qatnashgan pedagoglarning rasmiy ballari va reytingi</p>
           </div>
-          <button type="button" class="btn btn-sm btn-secondary" onclick="loadLeaderboardFromSheet(true)">
-            🔄 Natijalarni yangilash
-          </button>
+          <div style="display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap;">
+            <span id="krsLeaderboardCountBadge" style="background: #e0f2fe; color: #0369a1; font-weight: 700; padding: 0.45rem 0.85rem; border-radius: 20px; font-size: 0.88rem; border: 1px solid #bae6fd;">
+              📊 Jami: Yuklanmoqda...
+            </span>
+            <button type="button" class="btn btn-sm btn-secondary" onclick="loadLeaderboardFromSheet(true)">
+              🔄 Natijalarni yangilash
+            </button>
+          </div>
+        </div>
+
+        <!-- INTERAKTIV FILTER PANELI (Sana, Fan, Maktab, Qidiruv) -->
+        <div class="krs-rating-filter-card" style="background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 1.1rem; margin-bottom: 1.25rem;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0.85rem; align-items: flex-end;">
+            <!-- 1. Sana / Bosqich -->
+            <div>
+              <label for="ratingDateFilter" style="display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 0.35rem;">
+                📅 1. KRS Kuni / Sana:
+              </label>
+              <select id="ratingDateFilter" class="form-select form-select-sm" style="width: 100%; border-radius: 8px; font-weight: 600; font-size: 0.88rem; padding: 0.55rem 0.75rem;" onchange="applyLeaderboardFilters()">
+                <option value="ALL">🌟 Barcha sanalar (To'liq)</option>
+              </select>
+            </div>
+
+            <!-- 2. Fan -->
+            <div>
+              <label for="ratingSubjectFilter" style="display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 0.35rem;">
+                📚 2. Fan / Yo'nalish:
+              </label>
+              <select id="ratingSubjectFilter" class="form-select form-select-sm" style="width: 100%; border-radius: 8px; font-weight: 600; font-size: 0.88rem; padding: 0.55rem 0.75rem;" onchange="applyLeaderboardFilters()">
+                <option value="ALL">🌐 Barcha fanlar</option>
+                <option value="Ona tili">📚 Ona tili va adabiyot</option>
+                <option value="Tarix">🏛️ Tarix</option>
+                <option value="Huquq">⚖️ Huquq</option>
+                <option value="Tarbiya">🌸 Tarbiya</option>
+                <option value="Biologiya">🧬 Biologiya</option>
+                <option value="Kimyo">⚗️ Kimyo</option>
+                <option value="Fizika">⚛️ Fizika</option>
+                <option value="Geografiya">🌍 Geografiya</option>
+                <option value="Matematika">📐 Matematika</option>
+                <option value="Informatika">💻 Informatika</option>
+                <option value="English">🇬🇧 Ingliz tili</option>
+                <option value="Nemis tili">🇩🇪 Nemis tili</option>
+                <option value="Fransuz tili">🇫🇷 Fransuz tili</option>
+                <option value="Rus tili">🇷🇺 Rus tili</option>
+                <option value="Texnologiya">🛠️ Texnologiya</option>
+                <option value="Tasviriy san'at">🎨 Tasviriy san'at</option>
+                <option value="Boshlang'ich ta'lim">🎒 Boshlang'ich ta'lim</option>
+              </select>
+            </div>
+
+            <!-- 3. Maktab -->
+            <div>
+              <label for="ratingSchoolFilter" style="display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 0.35rem;">
+                🏫 3. Ta'lim muassasasi:
+              </label>
+              <select id="ratingSchoolFilter" class="form-select form-select-sm" style="width: 100%; border-radius: 8px; font-weight: 600; font-size: 0.88rem; padding: 0.55rem 0.75rem;" onchange="applyLeaderboardFilters()">
+                <option value="ALL">🏫 Barcha maktablar (55 ta)</option>
+              </select>
+            </div>
+
+            <!-- 4. Qidiruv -->
+            <div>
+              <label for="ratingSearchInput" style="display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 0.35rem;">
+                🔍 4. Pedagog F.I.Sh.:
+              </label>
+              <div style="display: flex; gap: 0.4rem;">
+                <input type="text" id="ratingSearchInput" class="form-input form-input-sm" placeholder="Ism yoki familiya..." style="flex: 1; border-radius: 8px; font-size: 0.88rem; padding: 0.55rem 0.75rem;" oninput="applyLeaderboardFilters()">
+                <button type="button" class="btn btn-sm btn-light" title="Filtrlarni tozalash" onclick="resetLeaderboardFilters()" style="padding: 0.55rem 0.75rem; border: 1px solid #cbd5e1; border-radius: 8px;">
+                  ✕
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="krs-table-wrap">
@@ -1239,11 +1309,11 @@
   </footer>
 
   <script src="assets/html2canvas.min.js"></script>
-  <script src="krs_data.js?v=20261124_1245"></script>
-  <script src="teachers_db.js?v=20261124_1245"></script>
-  <script src="questions_db.js?v=20261124_1245"></script>
-  <script src="app.js?v=20261124_1245"></script>
-  <script src="qulaylik.js?v=20261124_1245"></script>
+  <script src="krs_data.js?v=20261124_1300"></script>
+  <script src="teachers_db.js?v=20261124_1300"></script>
+  <script src="questions_db.js?v=20261124_1300"></script>
+  <script src="app.js?v=20261124_1300"></script>
+  <script src="qulaylik.js?v=20261124_1300"></script>
 <script data-goatcounter="https://umamatov.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
