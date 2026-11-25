@@ -1,3 +1,25 @@
+// Telegram Bot Deep-Link generator for PIN code and Unblock requests
+function generateTelegramBotLink(type, data) {
+  try {
+    const jsonStr = JSON.stringify(data);
+    // UTF-8 encode and base64
+    const utf8Bytes = new TextEncoder().encode(jsonStr);
+    let binary = '';
+    for (let i = 0; i < utf8Bytes.length; i++) {
+      binary += String.fromCharCode(utf8Bytes[i]);
+    }
+    const b64 = btoa(binary)
+      .replace(/\+/g, '-')
+      .replace(/\//g, '_')
+      .replace(/=+$/, '');
+    return `https://t.me/zavuch_krs_bot?start=${type}_${b64}`;
+  } catch (e) {
+    console.error("Bot link yaratishda xatolik:", e);
+    return "https://t.me/zavuch_krs_bot";
+  }
+}
+window.generateTelegramBotLink = generateTelegramBotLink;
+
 /**
  * Pedagog.umamatov.uz — Pedagoglar Test Tizimi
  * JavaScript Application Logic with:
@@ -1378,11 +1400,23 @@ async function handleValidateAndOpenPinModal(e) {
       if (textEl) {
         textEl.innerHTML = `
           Hurmatli <b>${name}</b>!<br>
-          Siz avval ushbu qurilmada test topshirish jarayonida 4 marta qoidabuzarlik qilganingiz sababli tizim tomonidan chetlatilgansiz.<br>
-          <b>Sabab:</b> ${blockCheck.reason}<br>
-          Qayta test topshirishingiz uchun bosh mutaxassis Umrbek Mamatov tomonidan ruxsat berilishi kerak.
+          Siz test jarayonida 4 marta qoidabuzarlik qilganingiz sababli tizim tomonidan chetlatilgansiz.<br>
+          <b>Sabab:</b> ${blockCheck.reason}<br><br>
+          Qayta topshirish uchun quyidagi <b>'Bot orqali ruxsat olish'</b> tugmasini bosing yoki bosh mutaxassis Umrbek Mamatovga murojaat qiling.
         `;
       }
+
+      // Blokdan chiqarish tugmasini botga ulash
+      const unblockBtn = document.getElementById('unblockViaBotBtn');
+      if (unblockBtn) {
+        const payload = {
+          name: name,
+          school: school,
+          subject: subject
+        };
+        unblockBtn.href = generateTelegramBotLink('unblock', payload);
+      }
+
       document.getElementById('teacherBlockedModal')?.classList.add('open');
       return;
     }
@@ -1528,6 +1562,19 @@ function openPinModal() {
     pinInput.value = '';
   }
   updateMonkeyPinState(false);
+
+  // Botdan PIN-kod olish havolasini tayyorlash
+  const botBtn = document.getElementById('getPinFromBotBtn');
+  if (botBtn && state.teacherInfo) {
+    const payload = {
+      name: state.teacherInfo.name || '',
+      school: state.teacherInfo.school || '',
+      subject: state.teacherInfo.subject || '',
+      session: state.teacherInfo.session || 4
+    };
+    botBtn.href = generateTelegramBotLink('pin', payload);
+  }
+
   document.getElementById('pinModal').classList.add('open');
   setTimeout(() => pinInput?.focus(), 200);
 }

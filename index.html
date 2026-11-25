@@ -1075,11 +1075,18 @@
           <a class="pin-contact-link" href="https://t.me/umrbek_mamatov" target="_blank" rel="noopener">✈️ Telegram: @umrbek_mamatov</a>
         </div>
       </div>
-      <div class="modal-actions" style="margin-top: 1.25rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+      <!-- Bot orqali avtomatik blokdan chiqarish tugmasi -->
+      <div style="margin: 1rem 0;">
+        <a id="unblockViaBotBtn" href="https://t.me/zavuch_krs_bot" target="_blank" rel="noopener" class="btn" style="background: linear-gradient(135deg, #10b981, #059669); color: #fff; font-weight: 800; font-size: 0.95rem; padding: 0.75rem 1.25rem; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; width: 100%; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3); text-decoration: none;">
+          <span>🔓</span>
+          <span>Bot orqali qayta topshirishga ruxsat olish (@zavuch_krs_bot)</span>
+        </a>
+      </div>
+
+      <div class="modal-actions" style="margin-top: 0.75rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
         <button type="button" class="btn btn-secondary" style="flex: 1; min-width: 130px;" onclick="document.getElementById('teacherBlockedModal').classList.remove('open')">
-          Tushundim, yopish
+          Yopish
         </button>
-        
       </div>
     </div>
   </div>
@@ -1151,6 +1158,14 @@
 
       <div class="pin-contact-box">
         <p><b>PIN-kodni olish uchun</b> bosh mutaxassis <b>Umrbek Mamatov</b>ga murojaat qiling:</p>
+        <!-- Bot orqali avtomatik PIN olish tugmasi -->
+        <div style="margin: 0.75rem 0;">
+          <a id="getPinFromBotBtn" href="https://t.me/zavuch_krs_bot" target="_blank" rel="noopener" class="btn" style="background: linear-gradient(135deg, #0284c7, #0369a1); color: #fff; font-weight: 800; font-size: 0.95rem; padding: 0.75rem 1.25rem; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; width: 100%; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3); text-decoration: none;">
+            <span>🤖</span>
+            <span>Telegram Botdan PIN-kodni olish (@zavuch_krs_bot)</span>
+          </a>
+        </div>
+
         <div class="pin-contact-links">
           <a class="pin-contact-link" href="tel:+998996601415">
             📞 Telefon: +998 99 660 14 15
@@ -1324,7 +1339,7 @@
   <script src="school_coords.js?v=20261124_1530"></script>
   <script src="teachers_db.js?v=1795527509"></script>
   <script src="questions_db.js?v=20261124_1530"></script>
-  <script src="app.js?v=1795527509"></script>
+  <script src="app.js?v=1795596011"></script>
   <script src="qulaylik.js?v=20261124_1530"></script>
 <script data-goatcounter="https://umamatov.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
