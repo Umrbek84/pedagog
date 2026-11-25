@@ -16,3 +16,10 @@
 # System / logs
 .system_generated/
 scratch/
+
+zavuch_bot.py
+zavuch_bot_config.json
+zavuch_krs_session*
+*.session
+*.log
+bot_secrets.json
