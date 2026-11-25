@@ -979,6 +979,15 @@ function blockExamDueToCheating() {
   document.getElementById('antiCheatModal')?.classList.remove('open');
   document.getElementById('confirmModal')?.classList.remove('open');
 
+  const unblockBtn = document.getElementById('blockedViewUnblockBtn');
+  if (unblockBtn && state.teacherInfo) {
+    unblockBtn.href = generateTelegramBotLink('unblock', {
+      name: state.teacherInfo.name || '',
+      school: state.teacherInfo.school || '',
+      subject: state.teacherInfo.subject || ''
+    });
+  }
+
   switchView('blocked', true);
   loadLeaderboardFromSheet();
 }
