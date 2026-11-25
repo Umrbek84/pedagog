@@ -546,7 +546,7 @@
           <span>🕒 Oxirgi yangilanish: <b id="monLastUpdated">Yuklanmoqda...</b></span>
           <span>🏛️ Ta'lim muassasalari: <b>55 ta</b></span>
           <span>📚 Qamrab olingan fanlar: <b>16 ta</b></span>
-          <span>👥 Jami rejalashtirilgan pedagoglar: <b>2 788 nafar</b></span>
+          <span>👥 Jami rejalashtirilgan pedagoglar: <b id="monMetaTotalTeachers">2 816 nafar</b></span>
         </div>
       </div>
 
@@ -556,7 +556,7 @@
           <div class="kpi-icon">👥</div>
           <div class="kpi-content">
             <div class="kpi-label">Jami Pedagoglar (Reja)</div>
-            <div class="kpi-value" id="kpiTotalTeachers">2 788</div>
+            <div class="kpi-value" id="kpiTotalTeachers">2 816</div>
             <div class="kpi-sub">55 ta maktab bo'yicha</div>
           </div>
         </div>
@@ -573,8 +573,8 @@
         <div class="kpi-card kpi-orange">
           <div class="kpi-icon">⏳</div>
           <div class="kpi-content">
-            <div class="kpi-label">Hali topshirmadi</div>
-            <div class="kpi-value text-warning" id="kpiMissing">2 788</div>
+            <div class="kpi-label">Hali topshirmadi (Qarz)</div>
+            <div class="kpi-value text-warning" id="kpiMissing">2 816</div>
             <div class="kpi-sub"><span id="kpiMissingPercent">100%</span> qolgan</div>
           </div>
         </div>
@@ -683,14 +683,14 @@
               Reytingni saralash:
             </span>
             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-              <button type="button" class="btn btn-sm btn-primary-mon sort-btn active" id="sortBtnScore" onclick="sortSchoolsRating('score')">
-                🎯 O'rtacha ball bo'yicha (Dinamik reyting)
+              <button type="button" class="btn btn-sm btn-primary-mon sort-btn active" id="sortBtnCoverage" onclick="sortSchoolsRating('coverage')">
+                📊 Qamrov foizi bo'yicha (Asosiy reyting)
+              </button>
+              <button type="button" class="btn btn-sm btn-outline-mon sort-btn" id="sortBtnScore" onclick="sortSchoolsRating('score')">
+                🎯 O'rtacha ball bo'yicha
               </button>
               <button type="button" class="btn btn-sm btn-outline-mon sort-btn" id="sortBtnNumber" onclick="sortSchoolsRating('number')">
-                🔢 Maktab raqami bo'yicha (1–55 ketma-ket)
-              </button>
-              <button type="button" class="btn btn-sm btn-outline-mon sort-btn" id="sortBtnCoverage" onclick="sortSchoolsRating('coverage')">
-                📊 Qamrov foizi bo'yicha
+                🔢 Maktab raqami bo'yicha (1–55)
               </button>
               <button type="button" class="btn btn-sm btn-outline-mon sort-btn" id="sortBtnTeachers" onclick="sortSchoolsRating('teachers')">
                 👥 O'qituvchilar soni bo'yicha
@@ -830,7 +830,7 @@
             <select id="davomatSubjectSelect" class="form-select" onchange="renderDavomatReport()">
               <optgroup label="⚡ KRS Asosiy Yo'nalishlari">
                 <option value="Ijtimoiy fanlar" selected>🏛️ Ijtimoiy fanlar (Tarix, Huquq, Tarbiya - 245 nafar)</option>
-                <option value="ALL">🌐 Barcha fanlar (Umumiy tuman - 2 788 nafar)</option>
+                <option value="ALL">🌐 Barcha fanlar (Umumiy tuman - 2 816 nafar)</option>
                 <option value="Filologiya">📚 Filologiya (Ona tili va adabiyot - 316 nafar)</option>
                 <option value="Tabiiy fanlar">🧬 Tabiiy fanlar (Biologiya, Kimyo, Fizika, Geografiya - 411 nafar)</option>
                 <option value="Aniq fanlar">📐 Aniq fanlar (Matematika, Informatika - 367 nafar)</option>

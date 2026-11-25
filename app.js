@@ -2945,6 +2945,8 @@ function applyMonitoringFilters() {
   if (resCount) resCount.textContent = `${total.toLocaleString('uz-UZ')} nafar pedagog tahlil qilindi`;
   const tFilteredCount = document.getElementById('teachersFilteredCount');
   if (tFilteredCount) tFilteredCount.textContent = total.toLocaleString('uz-UZ');
+  const monMetaTot = document.getElementById('monMetaTotalTeachers');
+  if (monMetaTot) monMetaTot.textContent = `${total.toLocaleString('uz-UZ')} nafar`;
 
   renderSchoolsRatingTable(filtered);
   renderSubjectsAnalysisTable(filtered);
@@ -2967,7 +2969,7 @@ function compareSchoolsNatural(a, b) {
   return a.localeCompare(b);
 }
 
-let currentSchoolsSort = 'score'; // Default dynamic ranking by average score
+let currentSchoolsSort = 'coverage'; // Default: Qamrov darajasi va sifat balansi bo'yicha
 
 // TAB 1: Maktablar Reytingi Jadvali (Dinamik o'zgaruvchan reyting va raqami bo'yicha ketma-ketlik)
 function renderSchoolsRatingTable(teachers) {
@@ -3039,7 +3041,7 @@ function renderSchoolsRatingTable(teachers) {
 
   const list = Array.from(schoolMap.values());
 
-  // SORTING ALGORITHM
+  // SORTING ALGORITHM - Davomat va Reyting balansi
   list.sort((a, b) => {
     const doneA = a.participated + a.blocked;
     const doneB = b.participated + b.blocked;
@@ -3055,39 +3057,46 @@ function renderSchoolsRatingTable(teachers) {
       return compareSchoolsNatural(a.name, b.name);
     }
 
-    // 2. DYNAMIC QUALITY & SCORE RANKING (Default)
+    // 2. QAMROV VA NATIJA BO'YICHA ASOSIY REYTING (Default - Davomat bilan uyg'un)
+    if (currentSchoolsSort === 'coverage') {
+      // Qamrov foizi yuqori bo'lgan maktab oldinda
+      if (Math.abs(covB - covA) > 0.05) {
+        return covB - covA;
+      }
+      // Agar qamrov foizi teng bo'lsa (yoki 100% bo'lsa), o'rtacha ball yuqorisi
+      if (Math.abs(avgB - avgA) > 0.001) {
+        return avgB - avgA;
+      }
+      // Keyin sifat (a'lo) foizi
+      if (Math.abs(aloB - aloA) > 0.001) {
+        return aloB - aloA;
+      }
+      if (doneB !== doneA) {
+        return doneB - doneA;
+      }
+      return compareSchoolsNatural(a.name, b.name);
+    }
+
+    // 3. O'RTACHA BALL BO'YICHA REYTING (BALANSLANGAN)
     if (currentSchoolsSort === 'score') {
       const aHasDone = a.participated > 0;
       const bHasDone = b.participated > 0;
 
-      // Participating schools come first
       if (aHasDone && !bHasDone) return -1;
       if (!aHasDone && bHasDone) return 1;
 
-      // Both participated: rank by highest average score!
       if (aHasDone && bHasDone) {
-        if (Math.abs(avgB - avgA) > 0.001) {
-          return avgB - avgA; // Higher average score rises to 1st place!
+        // Balanslangan kompozit ball: O'rtacha ball (70%) + Qamrov (30%)
+        // Bu orqali 74 ta qarzdor maktab 1-o'ringa chiqib ololmaydi
+        const scoreWeightA = (avgA * 0.7) + ((covA / 100) * 25 * 0.3);
+        const scoreWeightB = (avgB * 0.7) + ((covB / 100) * 25 * 0.3);
+        if (Math.abs(scoreWeightB - scoreWeightA) > 0.001) {
+          return scoreWeightB - scoreWeightA;
         }
-        // Tie-breaker 1: Quality / A'lo percentage
-        if (Math.abs(aloB - aloA) > 0.001) {
-          return aloB - aloA;
-        }
-        // Tie-breaker 2: Coverage percentage
-        if (Math.abs(covB - covA) > 0.001) {
-          return covB - covA;
-        }
+        if (Math.abs(covB - covA) > 0.001) return covB - covA;
+        if (Math.abs(avgB - avgA) > 0.001) return avgB - avgA;
         return compareSchoolsNatural(a.name, b.name);
       }
-
-      // Neither participated: sort strictly in natural school number order (1, 2, 3...)
-      return compareSchoolsNatural(a.name, b.name);
-    }
-
-    // 3. COVERAGE ORDER
-    if (currentSchoolsSort === 'coverage') {
-      if (Math.abs(covB - covA) > 0.001) return covB - covA;
-      if (Math.abs(avgB - avgA) > 0.001) return avgB - avgA;
       return compareSchoolsNatural(a.name, b.name);
     }
 
