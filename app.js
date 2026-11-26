@@ -521,11 +521,17 @@ function setupSchoolSubjectTeacherFlow() {
   subjectSelect.addEventListener('change', () => {
     refreshTeacherDropdown();
     refreshSessionDropdown(subjectSelect.value);
-    updateQuestionCountForSubject(subjectSelect.value);
+    updateQuestionCountForSubject(subjectSelect.value, sessionSelect?.value);
     if (typeof checkSubjectKrsNotice === 'function') {
       checkSubjectKrsNotice(subjectSelect.value);
     }
   });
+
+  if (sessionSelect) {
+    sessionSelect.addEventListener('change', () => {
+      updateQuestionCountForSubject(subjectSelect.value, sessionSelect.value);
+    });
+  }
 
   teacherSelect.addEventListener('change', () => {
     if (teacherSelect.value === 'CUSTOM_TEACHER') {
@@ -540,7 +546,7 @@ function setupSchoolSubjectTeacherFlow() {
 
   // Initial call for session dropdown and question count
   refreshSessionDropdown(subjectSelect.value);
-  updateQuestionCountForSubject(subjectSelect.value);
+  updateQuestionCountForSubject(subjectSelect.value, sessionSelect?.value);
 }
 
 const CORE_12_SUBJECTS = [
@@ -554,11 +560,15 @@ function isCore12Subject(subjectName) {
   return CORE_12_SUBJECTS.some(sub => s.includes(sub));
 }
 
-function updateQuestionCountForSubject(subjectVal) {
+function updateQuestionCountForSubject(subjectVal, sessionVal) {
   const qSelect = document.getElementById('questionCount');
   if (!qSelect) return;
+  const sNum = parseInt(sessionVal || document.getElementById('sessionSelect')?.value || "4");
   const is12 = isCore12Subject(subjectVal);
-  if (is12) {
+  
+  // 4-mashg'ulot o'qituvchilar topshirib bo'lgani sababli qat'iy 25 ta savollik qoladi!
+  // 5, 6, 7-mashg'ulotlar esa 12 ta asosiy fan uchun 35 ta savol bo'ladi!
+  if (sNum >= 5 && is12) {
     qSelect.value = "35";
   } else {
     qSelect.value = "25";
@@ -1768,10 +1778,11 @@ async function startExamSession() {
     }
   }
 
-  const countRequested = parseInt(document.getElementById('questionCount')?.value) || (isCore12Subject(state.teacherInfo?.subject) ? 35 : 25);
-  state.timeLimitMinutes = parseInt(document.getElementById('timeLimit').value) || 30;
-
   const currentSession = parseInt(state.teacherInfo.session) || 4;
+  const is12 = isCore12Subject(state.teacherInfo?.subject);
+  const defaultCount = (currentSession >= 5 && is12) ? 35 : 25;
+  const countRequested = parseInt(document.getElementById('questionCount')?.value) || defaultCount;
+  state.timeLimitMinutes = parseInt(document.getElementById('timeLimit').value) || 30;
 
   let matched = state.allQuestions.filter(q => {
     return q.subject && 

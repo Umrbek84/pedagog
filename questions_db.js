@@ -25501,7 +25501,7 @@ window.QUESTIONS_DB = [
     "difficulty": "medium"
   },
   {
-    "id": "tm-mat-4-1",
+    "id": "tm-mat-5-1",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
@@ -25514,11 +25514,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "A",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
-    "session": 4,
+    "session": 5,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-mat-4-2",
+    "id": "tm-mat-5-2",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
@@ -25531,11 +25531,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "D",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
-    "session": 4,
+    "session": 5,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-mat-4-3",
+    "id": "tm-mat-5-3",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
@@ -25548,11 +25548,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "D",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
-    "session": 4,
+    "session": 5,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-mat-4-4",
+    "id": "tm-mat-5-4",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
@@ -25565,11 +25565,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "C",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
-    "session": 4,
+    "session": 5,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-mat-4-5",
+    "id": "tm-mat-5-5",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
@@ -25582,11 +25582,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
-    "session": 4,
+    "session": 5,
     "difficulty": "Qiyin"
   },
   {
-    "id": "tm-mat-4-6",
+    "id": "tm-mat-5-6",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
@@ -25599,11 +25599,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "A",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
-    "session": 4,
+    "session": 5,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-mat-4-7",
+    "id": "tm-mat-5-7",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
@@ -25616,11 +25616,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "D",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
-    "session": 4,
+    "session": 5,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-mat-4-8",
+    "id": "tm-mat-5-8",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
@@ -25633,11 +25633,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
-    "session": 4,
+    "session": 5,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-mat-4-9",
+    "id": "tm-mat-5-9",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
@@ -25650,11 +25650,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
-    "session": 4,
+    "session": 5,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-mat-4-10",
+    "id": "tm-mat-5-10",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
@@ -25667,11 +25667,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "D",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
-    "session": 4,
+    "session": 5,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-mat-5-1",
+    "id": "tm-mat-6-1",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
@@ -25684,11 +25684,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "A",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
-    "session": 5,
+    "session": 6,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-mat-5-2",
+    "id": "tm-mat-6-2",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
@@ -25701,11 +25701,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "C",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
-    "session": 5,
+    "session": 6,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-mat-5-3",
+    "id": "tm-mat-6-3",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
@@ -25718,11 +25718,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
-    "session": 5,
+    "session": 6,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-mat-5-4",
+    "id": "tm-mat-6-4",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
@@ -25735,11 +25735,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "D",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
-    "session": 5,
+    "session": 6,
     "difficulty": "Qiyin"
   },
   {
-    "id": "tm-mat-5-5",
+    "id": "tm-mat-6-5",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
@@ -25752,11 +25752,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "C",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
-    "session": 5,
+    "session": 6,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-mat-5-6",
+    "id": "tm-mat-6-6",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
@@ -25769,11 +25769,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
-    "session": 5,
+    "session": 6,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-mat-5-7",
+    "id": "tm-mat-6-7",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
@@ -25786,11 +25786,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "A",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
-    "session": 5,
+    "session": 6,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-mat-5-8",
+    "id": "tm-mat-6-8",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Algebraik ifodalar va ayniyatlar",
@@ -25803,11 +25803,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
-    "session": 5,
+    "session": 6,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-mat-5-9",
+    "id": "tm-mat-6-9",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Algebraik ifodalar va ayniyatlar",
@@ -25820,11 +25820,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "A",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
-    "session": 5,
+    "session": 6,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-mat-5-10",
+    "id": "tm-mat-6-10",
     "subject": "Matematika",
     "grade_span": "5-11",
     "topic": "Algebraik ifodalar va ayniyatlar",
@@ -25837,181 +25837,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "C",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
-    "session": 5,
-    "difficulty": "Qiyin"
-  },
-  {
-    "id": "tm-mat-6-1",
-    "subject": "Matematika",
-    "grade_span": "5-11",
-    "topic": "Algebraik ifodalar va ayniyatlar",
-    "question": "$x^3 - 7x + 6$ ni ko'paytuvchilarga ajrating.",
-    "options": {
-      "A": "$(x + 1)(x - 2)(x + 3)$",
-      "B": "$(x + 1)(x - 2)(x - 3)$",
-      "C": "$(x - 1)(x + 2)(x - 3)$",
-      "D": "$(x - 1)(x - 2)(x + 3)$"
-    },
-    "answer": "D",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
-    "session": 6,
-    "difficulty": "O'rta"
-  },
-  {
-    "id": "tm-mat-6-2",
-    "subject": "Matematika",
-    "grade_span": "5-11",
-    "topic": "Algebraik ifodalar va ayniyatlar",
-    "question": "Agar $a - b = 3$, $ab = 10$ bo'lsa, $a^3 - b^3$ ni toping.",
-    "options": {
-      "A": "$117$",
-      "B": "$99$",
-      "C": "$63$",
-      "D": "$27$"
-    },
-    "answer": "A",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
-    "session": 6,
-    "difficulty": "O'rta"
-  },
-  {
-    "id": "tm-mat-6-3",
-    "subject": "Matematika",
-    "grade_span": "5-11",
-    "topic": "Algebraik ifodalar va ayniyatlar",
-    "question": "$0,(27)$ davriy kasrni oddiy kasr ko'rinishida yozing.",
-    "options": {
-      "A": "$\\frac{3}{10}$",
-      "B": "$\\frac{27}{100}$",
-      "C": "$\\frac{1}{37}$",
-      "D": "$\\frac{3}{11}$"
-    },
-    "answer": "D",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
-    "session": 6,
-    "difficulty": "O'rta"
-  },
-  {
-    "id": "tm-mat-6-4",
-    "subject": "Matematika",
-    "grade_span": "5-11",
-    "topic": "Algebraik ifodalar va ayniyatlar",
-    "question": "$(a + b)^3$ ni yoying.",
-    "options": {
-      "A": "$a^3 + 3ab + b^3$",
-      "B": "$a^3 + 3a^2b + 3ab^2 + b^3$",
-      "C": "$a^3 + b^3$",
-      "D": "$a^3 + 2a^2b + 2ab^2 + b^3$"
-    },
-    "answer": "B",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
-    "session": 6,
-    "difficulty": "Oson"
-  },
-  {
-    "id": "tm-mat-6-5",
-    "subject": "Matematika",
-    "grade_span": "5-11",
-    "topic": "Algebraik ifodalar va ayniyatlar",
-    "question": "$x^2 - 3x + a < 0$ tengsizligining hech qanday yechimi yo'q bo'lishi uchun $a$ ning eng kichik butun qiymati qancha?",
-    "options": {
-      "A": "$3$",
-      "B": "$4$",
-      "C": "$2$",
-      "D": "$1$"
-    },
-    "answer": "A",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
     "session": 6,
     "difficulty": "Qiyin"
   },
   {
-    "id": "tm-mat-6-6",
-    "subject": "Matematika",
-    "grade_span": "5-11",
-    "topic": "Algebraik ifodalar va ayniyatlar",
-    "question": "$(5 + x)(5 - x)$ ni soddalashtiring.",
-    "options": {
-      "A": "$10 - x^2$",
-      "B": "$25 - x^2$",
-      "C": "$x^2 - 25$",
-      "D": "$25 + x^2$"
-    },
-    "answer": "B",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
-    "session": 6,
-    "difficulty": "Oson"
-  },
-  {
-    "id": "tm-mat-6-7",
-    "subject": "Matematika",
-    "grade_span": "5-11",
-    "topic": "Algebraik ifodalar va ayniyatlar",
-    "question": "$(2a - 3b)^3$ dagi $a^2b$ ning koeffitsientini toping.",
-    "options": {
-      "A": "$-36$",
-      "B": "$-12$",
-      "C": "$36$",
-      "D": "$12$"
-    },
-    "answer": "A",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
-    "session": 6,
-    "difficulty": "O'rta"
-  },
-  {
-    "id": "tm-mat-6-8",
-    "subject": "Matematika",
-    "grade_span": "5-11",
-    "topic": "Algebraik ifodalar va ayniyatlar",
-    "question": "$x^4 - 1$ ni to'liq ko'paytuvchilarga ajrating.",
-    "options": {
-      "A": "$(x - 1)(x + 1)(x^2 + 1)$",
-      "B": "$(x^2 + 1)^2$",
-      "C": "$(x - 1)^2(x + 1)^2$",
-      "D": "$(x^2 - 1)(x^2 + 1)$"
-    },
-    "answer": "A",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
-    "session": 6,
-    "difficulty": "Oson"
-  },
-  {
-    "id": "tm-mat-6-9",
-    "subject": "Matematika",
-    "grade_span": "5-11",
-    "topic": "Algebraik ifodalar va ayniyatlar",
-    "question": "$\\frac{a - b}{c - d} = \\frac{a + b}{c + d}$ bo'lsa, quyidagilardan qaysi biri to'g'ri?",
-    "options": {
-      "A": "$b = d$",
-      "B": "$ab = cd$",
-      "C": "$ad = bc$",
-      "D": "$a = c$"
-    },
-    "answer": "C",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
-    "session": 6,
-    "difficulty": "O'rta"
-  },
-  {
-    "id": "tm-mat-6-10",
-    "subject": "Matematika",
-    "grade_span": "5-11",
-    "topic": "Algebraik ifodalar va ayniyatlar",
-    "question": "$2x^2 + 7x + 3$ ni ko'paytuvchilarga ajrating.",
-    "options": {
-      "A": "$(2x + 1)(x + 3)$",
-      "B": "$(2x + 3)(x + 1)$",
-      "C": "$(2x + 3)(x - 1)$",
-      "D": "$(2x - 1)(x - 3)$"
-    },
-    "answer": "A",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
-    "session": 6,
-    "difficulty": "Oson"
-  },
-  {
-    "id": "tm-inf-4-1",
+    "id": "tm-inf-5-1",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26024,11 +25854,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "C",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 4,
+    "session": 5,
     "difficulty": "Qiyin"
   },
   {
-    "id": "tm-inf-4-2",
+    "id": "tm-inf-5-2",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26041,11 +25871,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "D",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 4,
+    "session": 5,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-inf-4-3",
+    "id": "tm-inf-5-3",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26058,11 +25888,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "D",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 4,
+    "session": 5,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-inf-4-4",
+    "id": "tm-inf-5-4",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26075,11 +25905,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "C",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 4,
+    "session": 5,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-inf-4-5",
+    "id": "tm-inf-5-5",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26092,11 +25922,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "A",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 4,
+    "session": 5,
     "difficulty": "Qiyin"
   },
   {
-    "id": "tm-inf-4-6",
+    "id": "tm-inf-5-6",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26109,11 +25939,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "C",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 4,
+    "session": 5,
     "difficulty": "Qiyin"
   },
   {
-    "id": "tm-inf-4-7",
+    "id": "tm-inf-5-7",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26126,11 +25956,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "C",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 4,
+    "session": 5,
     "difficulty": "Qiyin"
   },
   {
-    "id": "tm-inf-4-8",
+    "id": "tm-inf-5-8",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26143,11 +25973,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "A",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 4,
+    "session": 5,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-inf-4-9",
+    "id": "tm-inf-5-9",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26160,11 +25990,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "D",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 4,
+    "session": 5,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-inf-4-10",
+    "id": "tm-inf-5-10",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26177,11 +26007,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 4,
+    "session": 5,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-inf-5-1",
+    "id": "tm-inf-6-1",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26194,11 +26024,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "C",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 5,
+    "session": 6,
     "difficulty": "Qiyin"
   },
   {
-    "id": "tm-inf-5-2",
+    "id": "tm-inf-6-2",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26211,11 +26041,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 5,
+    "session": 6,
     "difficulty": "Qiyin"
   },
   {
-    "id": "tm-inf-5-3",
+    "id": "tm-inf-6-3",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26228,11 +26058,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "D",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 5,
+    "session": 6,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-inf-5-4",
+    "id": "tm-inf-6-4",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26245,11 +26075,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "C",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 5,
+    "session": 6,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-inf-5-5",
+    "id": "tm-inf-6-5",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26262,11 +26092,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "D",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 5,
+    "session": 6,
     "difficulty": "Qiyin"
   },
   {
-    "id": "tm-inf-5-6",
+    "id": "tm-inf-6-6",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26279,11 +26109,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 5,
+    "session": 6,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-inf-5-7",
+    "id": "tm-inf-6-7",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26296,11 +26126,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "A",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 5,
+    "session": 6,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-inf-5-8",
+    "id": "tm-inf-6-8",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26313,11 +26143,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 5,
+    "session": 6,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-inf-5-9",
+    "id": "tm-inf-6-9",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Ma'lumotlar tuzilmasi",
@@ -26330,11 +26160,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "C",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
-    "session": 5,
+    "session": 6,
     "difficulty": "Qiyin"
   },
   {
-    "id": "tm-inf-5-10",
+    "id": "tm-inf-6-10",
     "subject": "Informatika",
     "grade_span": "5-11",
     "topic": "Dasturlash asoslari",
@@ -26347,181 +26177,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "D",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
-    "session": 5,
-    "difficulty": "Oson"
-  },
-  {
-    "id": "tm-inf-6-1",
-    "subject": "Informatika",
-    "grade_span": "5-11",
-    "topic": "Dasturlash asoslari",
-    "question": "Python da mutable va immutable ob'ektlar o'rtasidagi farq funksiyaga argument sifatida berilganda qanday namoyon bo'ladi?",
-    "options": {
-      "A": "Mutable ob'ektlar (list, dict) funksiya ichida o'zgartirilsa, tashqaridagi asl ob'ekt ham o'zgaradi; immutable (int, str, tuple) o'zgartirilsa yangi ob'ekt yaratiladi, asl o'zgarmaydi",
-      "B": "Ikkalasi ham funksiya ichida o'zgartirilsa asl ob'ekt o'zgaradi",
-      "C": "Mutable ob'ektlar funksiyaga berilishi mumkin emas",
-      "D": "Ikkalasi ham funksiya ichida o'zgartirilsa asl ob'ekt o'zgarmaydi"
-    },
-    "answer": "A",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
-    "session": 6,
-    "difficulty": "Qiyin"
-  },
-  {
-    "id": "tm-inf-6-2",
-    "subject": "Informatika",
-    "grade_span": "5-11",
-    "topic": "Dasturlash asoslari",
-    "question": "Python da quyidagi kod natijasi nima?a = [1, 2, 3]b = ab.append(4)print(a)",
-    "options": {
-      "A": "[4]",
-      "B": "[1, 2, 3, 4]",
-      "C": "Xato",
-      "D": "[1, 2, 3]"
-    },
-    "answer": "B",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
-    "session": 6,
-    "difficulty": "O'rta"
-  },
-  {
-    "id": "tm-inf-6-3",
-    "subject": "Informatika",
-    "grade_span": "5-11",
-    "topic": "Dasturlash asoslari",
-    "question": "Python da quyidagi kod natijasi nima?print(type(3.14))",
-    "options": {
-      "A": "<class 'double'>",
-      "B": "<class 'string'>",
-      "C": "<class 'int'>",
-      "D": "<class 'float'>"
-    },
-    "answer": "D",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
-    "session": 6,
-    "difficulty": "O'rta"
-  },
-  {
-    "id": "tm-inf-6-4",
-    "subject": "Informatika",
-    "grade_span": "5-11",
-    "topic": "Dasturlash asoslari",
-    "question": "Python da ikki o'lchamli massiv (2D array) elementiga qanday murojaat qilinadi?",
-    "options": {
-      "A": "arr[i][j]",
-      "B": "arr{i}{j}",
-      "C": "arr(i)(j)",
-      "D": "arr[i, j]"
-    },
-    "answer": "A",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
-    "session": 6,
-    "difficulty": "O'rta"
-  },
-  {
-    "id": "tm-inf-6-5",
-    "subject": "Informatika",
-    "grade_span": "5-11",
-    "topic": "Dasturlash asoslari",
-    "question": "Kommentariya (comment) nima uchun ishlatiladi?",
-    "options": {
-      "A": "Dasturni to'xtatish uchun",
-      "B": "O'zgaruvchi e'lon qilish uchun",
-      "C": "Kod tezroq ishlashi uchun",
-      "D": "Kodga izoh qo'shish uchun — kompilyator/interpretator uni e'tiborsiz qoldiradi"
-    },
-    "answer": "D",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
     "session": 6,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-inf-6-6",
-    "subject": "Informatika",
-    "grade_span": "5-11",
-    "topic": "Dasturlash asoslari",
-    "question": "Python da quyidagi kod natijasi nima?matrix = [[i*j for j in range(1,4)] for i in range(1,4)]print(matrix[1][2])",
-    "options": {
-      "A": "4",
-      "B": "6",
-      "C": "2",
-      "D": "3"
-    },
-    "answer": "B",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
-    "session": 6,
-    "difficulty": "Qiyin"
-  },
-  {
-    "id": "tm-inf-6-7",
-    "subject": "Informatika",
-    "grade_span": "5-11",
-    "topic": "Dasturlash asoslari",
-    "question": "Python da quyidagi kod chiqishini aniqlang:def gen(): yield 1 yield 2 yield 3g = gen()print(next(g))print(next(g))",
-    "options": {
-      "A": "3 va 3",
-      "B": "Xato",
-      "C": "1 va 1",
-      "D": "1 va 2"
-    },
-    "answer": "D",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
-    "session": 6,
-    "difficulty": "Qiyin"
-  },
-  {
-    "id": "tm-inf-6-8",
-    "subject": "Informatika",
-    "grade_span": "5-11",
-    "topic": "Dasturlash asoslari",
-    "question": "Quyidagi Python kodida nima xato?for i in range(10):print(i)",
-    "options": {
-      "A": "for o'rniga while ishlatish kerak",
-      "B": "print(i) bloki if uchun indent (ichkirilish) qilinmagan",
-      "C": "range(10) noto'g'ri",
-      "D": "print ichida i yozilmasligi kerak"
-    },
-    "answer": "B",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
-    "session": 6,
-    "difficulty": "O'rta"
-  },
-  {
-    "id": "tm-inf-6-9",
-    "subject": "Informatika",
-    "grade_span": "5-11",
-    "topic": "Dasturlash asoslari",
-    "question": "Python da quyidagi kod nima chiqaradi?s = \"Informatika\"print(s[0:4])",
-    "options": {
-      "A": "Inform",
-      "B": "Infor",
-      "C": "Info",
-      "D": "nfor"
-    },
-    "answer": "C",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
-    "session": 6,
-    "difficulty": "O'rta"
-  },
-  {
-    "id": "tm-inf-6-10",
-    "subject": "Informatika",
-    "grade_span": "5-11",
-    "topic": "Dasturlash asoslari",
-    "question": "Python da quyidagi kod natijasi nima?def son(a, b, c=10): return a + b + cprint(son(1, 2))",
-    "options": {
-      "A": "12",
-      "B": "3",
-      "C": "Xato",
-      "D": "13"
-    },
-    "answer": "B",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
-    "session": 6,
-    "difficulty": "O'rta"
-  },
-  {
-    "id": "tm-bio-4-1",
+    "id": "tm-bio-5-1",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26534,11 +26194,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "A",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 4,
+    "session": 5,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-bio-4-2",
+    "id": "tm-bio-5-2",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26551,11 +26211,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 4,
+    "session": 5,
     "difficulty": "Qiyin"
   },
   {
-    "id": "tm-bio-4-3",
+    "id": "tm-bio-5-3",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26568,11 +26228,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 4,
+    "session": 5,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-bio-4-4",
+    "id": "tm-bio-5-4",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26585,11 +26245,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 4,
+    "session": 5,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-bio-4-5",
+    "id": "tm-bio-5-5",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26602,11 +26262,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 4,
+    "session": 5,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-bio-4-6",
+    "id": "tm-bio-5-6",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26619,11 +26279,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "C",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 4,
+    "session": 5,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-bio-4-7",
+    "id": "tm-bio-5-7",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26636,11 +26296,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "D",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 4,
+    "session": 5,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-bio-4-8",
+    "id": "tm-bio-5-8",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26653,11 +26313,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 4,
+    "session": 5,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-bio-4-9",
+    "id": "tm-bio-5-9",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26670,11 +26330,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 4,
+    "session": 5,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-bio-4-10",
+    "id": "tm-bio-5-10",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26687,11 +26347,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "A",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 4,
+    "session": 5,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-bio-5-1",
+    "id": "tm-bio-6-1",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26704,11 +26364,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "D",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 5,
+    "session": 6,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-bio-5-2",
+    "id": "tm-bio-6-2",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26721,11 +26381,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "C",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 5,
+    "session": 6,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-bio-5-3",
+    "id": "tm-bio-6-3",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26738,11 +26398,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 5,
+    "session": 6,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-bio-5-4",
+    "id": "tm-bio-6-4",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26755,11 +26415,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "C",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 5,
+    "session": 6,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-bio-5-5",
+    "id": "tm-bio-6-5",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26772,11 +26432,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "A",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 5,
+    "session": 6,
     "difficulty": "Qiyin"
   },
   {
-    "id": "tm-bio-5-6",
+    "id": "tm-bio-6-6",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26789,11 +26449,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "C",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 5,
+    "session": 6,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-bio-5-7",
+    "id": "tm-bio-6-7",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26806,11 +26466,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "A",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 5,
+    "session": 6,
     "difficulty": "O'rta"
   },
   {
-    "id": "tm-bio-5-8",
+    "id": "tm-bio-6-8",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26823,11 +26483,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "D",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 5,
+    "session": 6,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-bio-5-9",
+    "id": "tm-bio-6-9",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26840,11 +26500,11 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 5,
+    "session": 6,
     "difficulty": "Oson"
   },
   {
-    "id": "tm-bio-5-10",
+    "id": "tm-bio-6-10",
     "subject": "Biologiya",
     "grade_span": "5-11",
     "topic": "Hujayra biologiyasi va sitologiya",
@@ -26857,177 +26517,7 @@ window.QUESTIONS_DB = [
     },
     "answer": "B",
     "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
-    "session": 5,
-    "difficulty": "Qiyin"
-  },
-  {
-    "id": "tm-bio-6-1",
-    "subject": "Biologiya",
-    "grade_span": "5-11",
-    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "question": "Miyelin qobig'ining vazifasi nima?",
-    "options": {
-      "A": "Impulsni tezlashtirish va aksonni izolyatsiya qilish",
-      "B": "Sinapsis hosil qilish",
-      "C": "Neyronni ozuq berish",
-      "D": "Neytotransmitter saqlash"
-    },
-    "answer": "A",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "session": 6,
-    "difficulty": "Oson"
-  },
-  {
-    "id": "tm-bio-6-2",
-    "subject": "Biologiya",
-    "grade_span": "5-11",
-    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "question": "Insulin qaysi a'zoda ishlab chiqariladi?",
-    "options": {
-      "A": "Qalqonsimon bez",
-      "B": "Jigar",
-      "C": "Oshqozon osti bezi (pankreas) — beta hujayralar",
-      "D": "Buyrak"
-    },
-    "answer": "C",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "session": 6,
-    "difficulty": "Oson"
-  },
-  {
-    "id": "tm-bio-6-3",
-    "subject": "Biologiya",
-    "grade_span": "5-11",
-    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "question": "RNK tarkibidagi azotli asoslar qaysilar?",
-    "options": {
-      "A": "Guanin, Timin, Urasil, Adenin",
-      "B": "Adenin, Timin, Urasil, Sitozin",
-      "C": "Adenin, Guanin, Sitozin, Urasil",
-      "D": "Adenin, Guanin, Sitozin, Timin"
-    },
-    "answer": "C",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "session": 6,
-    "difficulty": "Oson"
-  },
-  {
-    "id": "tm-bio-6-4",
-    "subject": "Biologiya",
-    "grade_span": "5-11",
-    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "question": "Gipofiz (asosiy bez) qayerda joylashgan?",
-    "options": {
-      "A": "Bosh miyaning ensa qismida",
-      "B": "Qalqonsimon bez yonida",
-      "C": "Buyrak ustida",
-      "D": "Bosh miya asosida, Türk egari (sella turcica) da"
-    },
-    "answer": "D",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "session": 6,
-    "difficulty": "Oson"
-  },
-  {
-    "id": "tm-bio-6-5",
-    "subject": "Biologiya",
-    "grade_span": "5-11",
-    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "question": "Eukariot ribosomaning subbirliklari qaysilar?",
-    "options": {
-      "A": "50S va 70S",
-      "B": "20S va 40S",
-      "C": "40S va 60S",
-      "D": "30S va 50S"
-    },
-    "answer": "C",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "session": 6,
-    "difficulty": "Oson"
-  },
-  {
-    "id": "tm-bio-6-6",
-    "subject": "Biologiya",
-    "grade_span": "5-11",
-    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "question": "Plazmid membranasi va organoid membranalari o'rtasidagi vesikulyar transport (COPII, COPI, klatrin) qanday ishlaydi?",
-    "options": {
-      "A": "Barcha transportlar bir xil COPII oqsili orqali amalga oshadi",
-      "B": "Klatrin faqat mitoxondriyada ishlaydi",
-      "C": "COPII — EPT dan Goljiga anterograd transport; COPI — Golji ichida retrograd va Golji→EPT; Klatrin — Golji→lizosoma va endositoz. Har bir qopqoq sistemi o'z kargo tanish oqsillariga (SNARE, Rab GTPaza) ega",
-      "D": "COPI faqat tashqi membranadan ichkariga"
-    },
-    "answer": "C",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
     "session": 6,
     "difficulty": "Qiyin"
-  },
-  {
-    "id": "tm-bio-6-7",
-    "subject": "Biologiya",
-    "grade_span": "5-11",
-    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "question": "Aminokislotaning umumiy tuzilishida qaysi guruhlar majburiy ravishda mavjud?",
-    "options": {
-      "A": "Fosfat guruhi va qand",
-      "B": "Faqat amin guruhi (-NH$_2$)",
-      "C": "Faqat karboksil guruhi (-COOH)",
-      "D": "Amin guruhi (-NH$_2$), karboksil guruhi (-COOH), vodorod atomi va R-yon zanjir — barchasi bir alfa-uglerodga bog'liq"
-    },
-    "answer": "D",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "session": 6,
-    "difficulty": "O'rta"
-  },
-  {
-    "id": "tm-bio-6-8",
-    "subject": "Biologiya",
-    "grade_span": "5-11",
-    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "question": "DNK ning to'liq nomi nima?",
-    "options": {
-      "A": "Dezoksiribo nukleoprotein kislota",
-      "B": "Dezoksiribonuklein kislota",
-      "C": "Difosforibonuklein kislota",
-      "D": "Diribonuklein kislota"
-    },
-    "answer": "B",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "session": 6,
-    "difficulty": "Oson"
-  },
-  {
-    "id": "tm-bio-6-9",
-    "subject": "Biologiya",
-    "grade_span": "5-11",
-    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "question": "Sitrullintsikling yoki urea sikli qanday ishlaydi va qayerda sodir bo'ladi?",
-    "options": {
-      "A": "Urea sikli yog' oksidlanishi bilan bir xil",
-      "B": "Urea sikli — aminokislotalar katabolizmidan hosil bo'lgan toksik NH₃ ni zararssiz ureaga aylantiradi; asosan jigarda, qisman ichakda. Reaksiyalar: mitoxondriya (karbamoilfosfat sintezi, sitrullin) + sitozol (argininosuksinat, arginin, urea); jigar kasalligi → giperammoniyemiya → ensefalopatiya",
-      "C": "Faqat buyrakda sodir bo'ladi",
-      "D": "Glyukoza sintezi uchun; faqat sitozolda"
-    },
-    "answer": "B",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "session": 6,
-    "difficulty": "Qiyin"
-  },
-  {
-    "id": "tm-bio-6-10",
-    "subject": "Biologiya",
-    "grade_span": "5-11",
-    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "question": "Suvning yorug'lik ta'sirida parchalanish jarayoni qanday ataladi va u qaysi fotosistemada ro'y beradi?",
-    "options": {
-      "A": "Fotoliz, PS II",
-      "B": "Glikoliz, PS I",
-      "C": "Fotofosforlanish, PS I",
-      "D": "Karboksillanish, PS II"
-    },
-    "answer": "A",
-    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
-    "session": 6,
-    "difficulty": "O'rta"
   }
 ];
