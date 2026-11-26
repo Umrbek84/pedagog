@@ -525,6 +525,10 @@ function setupSchoolSubjectTeacherFlow() {
     if (typeof checkSubjectKrsNotice === 'function') {
       checkSubjectKrsNotice(subjectSelect.value);
     }
+    const subVal = subjectSelect.value;
+    document.querySelectorAll('.fan-card-item').forEach(el => {
+      el.classList.toggle('active-selected', el.dataset.subject === subVal);
+    });
   });
 
   if (sessionSelect) {
@@ -558,6 +562,31 @@ function isCore12Subject(subjectName) {
   if (!subjectName) return false;
   const s = String(subjectName).toLowerCase().trim();
   return CORE_12_SUBJECTS.some(sub => s.includes(sub));
+}
+
+function selectSubjectFromCard(subjectName) {
+  const selectEl = document.getElementById('subjectSelect');
+  if (!selectEl) return;
+  selectEl.value = subjectName;
+  selectEl.dispatchEvent(new Event('change'));
+
+  // Highlight active card
+  document.querySelectorAll('.fan-card-item').forEach(el => {
+    el.classList.toggle('active-selected', el.dataset.subject === subjectName);
+  });
+
+  // Smooth scroll up to school or teacher selection
+  const schoolSelect = document.getElementById('schoolSelect');
+  if (schoolSelect && !schoolSelect.value) {
+    schoolSelect.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    schoolSelect.focus();
+  } else {
+    const teacherSelect = document.getElementById('teacherSelect');
+    if (teacherSelect) {
+      teacherSelect.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      teacherSelect.focus();
+    }
+  }
 }
 
 function updateQuestionCountForSubject(subjectVal, sessionVal) {
