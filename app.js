@@ -339,14 +339,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   document.getElementById('restartBtn')?.addEventListener('click', handleRestart);
 
-  // Orqa fonda ma'lumotlarni yuklash (UI ni aslo qotirmaydi):
+  // Orqa fonda ma'lumotlarni yuklash:
   loadTeachersDatabase();
   loadQuestionsDatabase();
   fetchLiveControlConfig();
-  loadLeaderboardFromSheet();
 
   setInterval(fetchLiveControlConfig, 30000);
-  setInterval(loadLeaderboardFromSheet, 60000);
   document.getElementById('restartBtn')?.addEventListener('click', handleRestart);
 
   checkInterruptedSession();
