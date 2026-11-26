@@ -521,6 +521,7 @@ function setupSchoolSubjectTeacherFlow() {
   subjectSelect.addEventListener('change', () => {
     refreshTeacherDropdown();
     refreshSessionDropdown(subjectSelect.value);
+    updateQuestionCountForSubject(subjectSelect.value);
     if (typeof checkSubjectKrsNotice === 'function') {
       checkSubjectKrsNotice(subjectSelect.value);
     }
@@ -537,13 +538,39 @@ function setupSchoolSubjectTeacherFlow() {
     }
   });
 
-  // Initial call for session dropdown
+  // Initial call for session dropdown and question count
   refreshSessionDropdown(subjectSelect.value);
+  updateQuestionCountForSubject(subjectSelect.value);
+}
+
+const CORE_12_SUBJECTS = [
+  "matematika", "informatika", "biologiya", "fizika", "kimyo", 
+  "geografiya", "tarix", "huquq", "ona tili", "english", "rus tili", "boshlang'ich ta'lim"
+];
+
+function isCore12Subject(subjectName) {
+  if (!subjectName) return false;
+  const s = String(subjectName).toLowerCase().trim();
+  return CORE_12_SUBJECTS.some(sub => s.includes(sub));
+}
+
+function updateQuestionCountForSubject(subjectVal) {
+  const qSelect = document.getElementById('questionCount');
+  if (!qSelect) return;
+  const is12 = isCore12Subject(subjectVal);
+  if (is12) {
+    qSelect.value = "35";
+  } else {
+    qSelect.value = "25";
+  }
 }
 
 function refreshSessionDropdown(subjectVal) {
   const sessionSelect = document.getElementById('sessionSelect');
   if (!sessionSelect) return;
+
+  const is12 = isCore12Subject(subjectVal);
+  const qCountStr = is12 ? "35 ta savol" : "25 ta savol";
 
   let matchedDates = [];
   if (typeof KRS_SCHEDULE !== 'undefined') {
@@ -575,14 +602,14 @@ function refreshSessionDropdown(subjectVal) {
       opt.style.fontWeight = '800';
       opt.style.color = '#047857';
       opt.style.background = '#ecfdf5';
-      opt.textContent = `🔥 4-mashg'ulot${dateLabel} — ✅ FAOL / ISHLASHGA OCHIQ (25 ta savol)`;
+      opt.textContent = `🔥 4-mashg'ulot${dateLabel} — ✅ FAOL / ISHLASHGA OCHIQ (${qCountStr})`;
       if (String(prevVal) === "4" || !prevVal || parseInt(prevVal) < 4) {
         opt.selected = true;
       }
     } else if (num === 5 || num === 6) {
       opt.disabled = false;
       opt.style.color = '#1e293b';
-      opt.textContent = `📅 ${num}-mashg'ulot${dateLabel} — ⏳ Tayyor / Navbatdagi (25 ta savol)`;
+      opt.textContent = `📅 ${num}-mashg'ulot${dateLabel} — ⏳ Tayyor / Navbatdagi (${qCountStr})`;
       if (String(prevVal) === String(num)) {
         opt.selected = true;
       }
@@ -1741,7 +1768,7 @@ async function startExamSession() {
     }
   }
 
-  const countRequested = parseInt(document.getElementById('questionCount').value) || 25;
+  const countRequested = parseInt(document.getElementById('questionCount')?.value) || (isCore12Subject(state.teacherInfo?.subject) ? 35 : 25);
   state.timeLimitMinutes = parseInt(document.getElementById('timeLimit').value) || 30;
 
   const currentSession = parseInt(state.teacherInfo.session) || 4;

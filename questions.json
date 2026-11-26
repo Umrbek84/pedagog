@@ -25498,5 +25498,1535 @@
     "explanation": "Xalqaro ISO standartlari va ilg'or texnologiyalar eksportga chiqish imkonini beradi.",
     "session": 6,
     "difficulty": "medium"
+  },
+  {
+    "id": "tm-mat-4-1",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "question": "$\\frac{1}{2} + \\frac{1}{3} + \\frac{1}{6}$ ni hisoblang.",
+    "options": {
+      "A": "$1$",
+      "B": "$\\frac{2}{3}$",
+      "C": "$\\frac{3}{11}$",
+      "D": "$\\frac{5}{6}$"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "session": 4,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-mat-4-2",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "question": "$\\frac{1}{1 \\cdot 2} + \\frac{1}{2 \\cdot 3} + \\frac{1}{3 \\cdot 4} + \\frac{1}{4 \\cdot 5}$ ni hisoblang.",
+    "options": {
+      "A": "$\\frac{2}{5}$",
+      "B": "$\\frac{1}{5}$",
+      "C": "$\\frac{3}{5}$",
+      "D": "$\\frac{4}{5}$"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "session": 4,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-mat-4-3",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "question": "$\\frac{3}{5}$ ni o'nli kasr ko'rinishida yozing.",
+    "options": {
+      "A": "$0.3$",
+      "B": "$0.53$",
+      "C": "$0.35$",
+      "D": "$0.6$"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "session": 4,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-mat-4-4",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "question": "Yig‘indining oxirgi raqamini aniqlang: 15·63·19·51+44·58·57",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "9",
+      "D": "0"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "session": 4,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-mat-4-5",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "question": "Ko'phad $P(x) = x^{100} + x^{99} + ... + x + 1$ ni $(x - 1)$ ga bo'lgandagi qoldiqni toping.",
+    "options": {
+      "A": "$1$",
+      "B": "$101$",
+      "C": "$0$",
+      "D": "$100$"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "session": 4,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-mat-4-6",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "question": "$\\frac{a}{2} = \\frac{b}{3} = \\frac{c}{4}$ va $a^2 + b^2 + c^2 = 116$ bo'lsa ($a,b,c>0$), $a + b + c$ ni toping.",
+    "options": {
+      "A": "$18$",
+      "B": "$36$",
+      "C": "$9$",
+      "D": "$27$"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "session": 4,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-mat-4-7",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "question": "Mohinur 1 dan 31 gacha sonlarni yozib chiqdi. U 1 raqamini 3 raqamiga qaraganda qancha ko‘p yozgan?",
+    "options": {
+      "A": "teng",
+      "B": "8",
+      "C": "10",
+      "D": "9"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "session": 4,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-mat-4-8",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "question": "Hisoblang:((4550 – 234) : 2 – 888 : 37) ∙ 5 =",
+    "options": {
+      "A": "16020",
+      "B": "10670",
+      "C": "10650",
+      "D": "10640"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "session": 4,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-mat-4-9",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "question": "$\\frac{5}{7} - \\frac{2}{9} + \\frac{1}{63}$ ni hisoblang.",
+    "options": {
+      "A": "$\\frac{1}{2}$",
+      "B": "$\\frac{32}{63}$",
+      "C": "$\\frac{34}{63}$",
+      "D": "$\\frac{31}{63}$"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "session": 4,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-mat-4-10",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "question": "$3\\frac{1}{4} - 1\\frac{3}{4}$ ni hisoblang.",
+    "options": {
+      "A": "$2\\frac{1}{2}$",
+      "B": "$2$",
+      "C": "$1\\frac{1}{4}$",
+      "D": "$1\\frac{1}{2}$"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "session": 4,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-mat-5-1",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "question": "$45\\%$ ni o'nli kasr ko'rinishida yozing.",
+    "options": {
+      "A": "$0.45$",
+      "B": "$45.0$",
+      "C": "$0.045$",
+      "D": "$4.5$"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "session": 5,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-mat-5-2",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "question": "Agar $x = \\frac{2}{3}$ bo'lsa, $\\frac{x^2 + x}{x + 1}$ ni hisoblang.",
+    "options": {
+      "A": "$\\frac{2}{3}$",
+      "B": "$1$",
+      "C": "$\\frac{1}{3}$",
+      "D": "$\\frac{4}{9}$"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "session": 5,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-mat-5-3",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "question": "Teskari proporsiya: $xy = k$. Agar $x = 8$ da $y = 15$ bo'lsa, $x = 12$ da $y$ ni toping.",
+    "options": {
+      "A": "$15$",
+      "B": "$10$",
+      "C": "$8$",
+      "D": "$12$"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "session": 5,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-mat-5-4",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "question": "$a : b = 3 : 4$, $c : d = 5 : 6$ va $b : c = 2 : 3$ bo'lsa, $a : d$ ni toping.",
+    "options": {
+      "A": "$1 : 2$",
+      "B": "$3 : 8$",
+      "C": "$1 : 4$",
+      "D": "$5 : 12$"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "session": 5,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-mat-5-5",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "question": "Raqamlari yig‘indisi 3 ga teng bo‘lgan to‘rt xonali sonlar nechta?",
+    "options": {
+      "A": "9",
+      "B": "6",
+      "C": "10",
+      "D": "3"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "session": 5,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-mat-5-6",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "question": "Quyidagi fikrlarning qaysi biri notoʻgʻri?",
+    "options": {
+      "A": "Agar ikki qoʻshiluvchi 12 ga boʻlinsa, yigʻindi 6 ga boʻlinadi",
+      "B": "Agar berilgan son 4 ga va 2 ga boʻlinsa, bu son 8 ga ham boʻlinadi",
+      "C": "Koʻpaytmalari 3 ga boʻlinadigan ikki sondan kamida bittasi 3 ga boʻlinishi kerak",
+      "D": "Agar ikki koʻpaytuvchidan biri 13 ga boʻlinib, ikkinchisi boʻlinmasa ham koʻpaytma 13 ga boʻlinadi"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "session": 5,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-mat-5-7",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "question": "$\\frac{7}{12}$ kasrni aniq davriy o'nli kasr ko'rinishida yozing.",
+    "options": {
+      "A": "$0.58\\overline{3}$",
+      "B": "$0.712$",
+      "C": "$0.5\\overline{8}$",
+      "D": "$0.75$"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "session": 5,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-mat-5-8",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Algebraik ifodalar va ayniyatlar",
+    "question": "$2x^3 - 3x^2 - 11x + 6$ ni ko'paytuvchilarga ajrating.",
+    "options": {
+      "A": "$(x - 3)(x + 2)(2x + 1)$",
+      "B": "$(x - 3)(2x - 1)(x + 2)$",
+      "C": "$(x - 3)(2x + 1)(x - 2)$",
+      "D": "$(x + 3)(2x + 1)(x - 2)$"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
+    "session": 5,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-mat-5-9",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Algebraik ifodalar va ayniyatlar",
+    "question": "$\\frac{3^{n+2} - 3^n}{3^{n+1} + 3^n}$ ni soddalashtiring.",
+    "options": {
+      "A": "$2$",
+      "B": "$3$",
+      "C": "$\\frac{3}{2}$",
+      "D": "$\\frac{2}{3}$"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
+    "session": 5,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-mat-5-10",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Algebraik ifodalar va ayniyatlar",
+    "question": "$\\frac{a}{b} = \\frac{2}{3}$, $\\frac{c}{d} = \\frac{5}{7}$ va $b = 2d$ bo'lsa, $\\frac{3a + 2c}{3b + 2d}$ ni toping.",
+    "options": {
+      "A": "$\\frac{7}{10}$",
+      "B": "$\\frac{16}{23}$",
+      "C": "$\\frac{19}{28}$",
+      "D": "$\\frac{34}{49}$"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
+    "session": 5,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-mat-6-1",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Algebraik ifodalar va ayniyatlar",
+    "question": "$x^3 - 7x + 6$ ni ko'paytuvchilarga ajrating.",
+    "options": {
+      "A": "$(x + 1)(x - 2)(x + 3)$",
+      "B": "$(x + 1)(x - 2)(x - 3)$",
+      "C": "$(x - 1)(x + 2)(x - 3)$",
+      "D": "$(x - 1)(x - 2)(x + 3)$"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
+    "session": 6,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-mat-6-2",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Algebraik ifodalar va ayniyatlar",
+    "question": "Agar $a - b = 3$, $ab = 10$ bo'lsa, $a^3 - b^3$ ni toping.",
+    "options": {
+      "A": "$117$",
+      "B": "$99$",
+      "C": "$63$",
+      "D": "$27$"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
+    "session": 6,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-mat-6-3",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Algebraik ifodalar va ayniyatlar",
+    "question": "$0,(27)$ davriy kasrni oddiy kasr ko'rinishida yozing.",
+    "options": {
+      "A": "$\\frac{3}{10}$",
+      "B": "$\\frac{27}{100}$",
+      "C": "$\\frac{1}{37}$",
+      "D": "$\\frac{3}{11}$"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
+    "session": 6,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-mat-6-4",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Algebraik ifodalar va ayniyatlar",
+    "question": "$(a + b)^3$ ni yoying.",
+    "options": {
+      "A": "$a^3 + 3ab + b^3$",
+      "B": "$a^3 + 3a^2b + 3ab^2 + b^3$",
+      "C": "$a^3 + b^3$",
+      "D": "$a^3 + 2a^2b + 2ab^2 + b^3$"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
+    "session": 6,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-mat-6-5",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Algebraik ifodalar va ayniyatlar",
+    "question": "$x^2 - 3x + a < 0$ tengsizligining hech qanday yechimi yo'q bo'lishi uchun $a$ ning eng kichik butun qiymati qancha?",
+    "options": {
+      "A": "$3$",
+      "B": "$4$",
+      "C": "$2$",
+      "D": "$1$"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
+    "session": 6,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-mat-6-6",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Algebraik ifodalar va ayniyatlar",
+    "question": "$(5 + x)(5 - x)$ ni soddalashtiring.",
+    "options": {
+      "A": "$10 - x^2$",
+      "B": "$25 - x^2$",
+      "C": "$x^2 - 25$",
+      "D": "$25 + x^2$"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
+    "session": 6,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-mat-6-7",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Algebraik ifodalar va ayniyatlar",
+    "question": "$(2a - 3b)^3$ dagi $a^2b$ ning koeffitsientini toping.",
+    "options": {
+      "A": "$-36$",
+      "B": "$-12$",
+      "C": "$36$",
+      "D": "$12$"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
+    "session": 6,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-mat-6-8",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Algebraik ifodalar va ayniyatlar",
+    "question": "$x^4 - 1$ ni to'liq ko'paytuvchilarga ajrating.",
+    "options": {
+      "A": "$(x - 1)(x + 1)(x^2 + 1)$",
+      "B": "$(x^2 + 1)^2$",
+      "C": "$(x - 1)^2(x + 1)^2$",
+      "D": "$(x^2 - 1)(x^2 + 1)$"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
+    "session": 6,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-mat-6-9",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Algebraik ifodalar va ayniyatlar",
+    "question": "$\\frac{a - b}{c - d} = \\frac{a + b}{c + d}$ bo'lsa, quyidagilardan qaysi biri to'g'ri?",
+    "options": {
+      "A": "$b = d$",
+      "B": "$ab = cd$",
+      "C": "$ad = bc$",
+      "D": "$a = c$"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
+    "session": 6,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-mat-6-10",
+    "subject": "Matematika",
+    "grade_span": "5-11",
+    "topic": "Algebraik ifodalar va ayniyatlar",
+    "question": "$2x^2 + 7x + 3$ ni ko'paytuvchilarga ajrating.",
+    "options": {
+      "A": "$(2x + 1)(x + 3)$",
+      "B": "$(2x + 3)(x + 1)$",
+      "C": "$(2x + 3)(x - 1)$",
+      "D": "$(2x - 1)(x - 3)$"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Algebraik ifodalar va ayniyatlar",
+    "session": 6,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-inf-4-1",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "Red-Black daraxtida qanday invariantlar saqlanadi va ular nima uchun zarur?",
+    "options": {
+      "A": "Red-Black daraxtda ranglar faqat estetik maqsadda — algoritm uchun ahamiyati yo'q",
+      "B": "Faqat barg tugunlar qora; ichki tugunlar qizil bo'lishi kerak",
+      "C": "Har bir tugun qizil yoki qora; ildiz qora; qizil tugunning farzandlari qora; har bir yo'lda bir xil miqdordagi qora tugun — bu O(log n) balandlikni kafolatlaydi",
+      "D": "Barcha tugunlar qizil bo'lishi kerak — qora tugunlar taqiqlangan"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 4,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-inf-4-2",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "Daraxtning chuqurligi (depth) nima?",
+    "options": {
+      "A": "Daraxtdagi barg tugunlar soni",
+      "B": "Daraxtdagi qatlamlar soni",
+      "C": "Daraxtdagi tugunlar soni",
+      "D": "Ildizdan berilgan tugunga qadar bo'lgan qirralar soni"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 4,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-inf-4-3",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "Ikki tomonlama bog'langan ro'yxat (doubly linked list) oddiy ro'yxatdan qanday farqlanadi?",
+    "options": {
+      "A": "Faqat bitta tugundan iborat",
+      "B": "Har bir tugun faqat keyingi tugunga ko'rsatgich ushlaydigan",
+      "C": "Tugunlar xotirada ketma-ket joylashgan",
+      "D": "Har bir tugun ham keyingi, ham oldingi tugunga ko'rsatgich ushlaydigan — ikkala yo'nalishda harakatlanish mumkin"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 4,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-inf-4-4",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "Ikkilik qidiruv daraxti (BST — Binary Search Tree) qanday xususiyatga ega?",
+    "options": {
+      "A": "Har bir tugunning ikkita farzandi bo'lishi shart",
+      "B": "Barcha elementlar tartiblanmagan",
+      "C": "Chap farzand ota-tugundan kichik, o'ng farzand katta — qidiruv O(log n) da amalga oshadi",
+      "D": "Faqat barg tugunlarda qiymatlar saqlanadi"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 4,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-inf-4-5",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "Lock-free va wait-free ma'lumotlar tuzilmalari nima va ular parallel dasturlashda nima uchun muhim?",
+    "options": {
+      "A": "Lock-free — hech bo'lmaganda bitta ip oldinga boradi kafolati; wait-free — har bir ip cheklangan qadamda natijaga erishadi kafolati; mutex ishlatmasdan atomic operatsiyalar orqali amalga oshiriladi — deadlock va priority inversion muammolari yo'q",
+      "B": "Wait-free tuzilmalar mutex ishlatadi — bu ularni lock-free dan farqlaydi",
+      "C": "Bu tuzilmalar faqat apparat darajasida amalga oshirilishi mumkin",
+      "D": "Lock-free tuzilmalar faqat bitta ipda ishlaydi — parallel dasturlashda ishlatilmaydi"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 4,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-inf-4-6",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "Fibonacci heap boshqa heap turlaridan (binary heap, binomial heap) qanday ustunlikka ega?",
+    "options": {
+      "A": "Fibonacci heap amalda binary heapdan sekinroq — faqat nazariy afzallik bor",
+      "B": "Fibonacci heap barcha operatsiyalarda binary heapdan tez — hech qanday kamchiligi yo'q",
+      "C": "Decrease-key va merge operatsiyalari amortizatsiyalangan O(1) da — Dijkstra va Prim algoritmlarini binary heap bilan O((V+E)logV) dan Fibonacci heap bilan O(E + V logV) ga tushiradi",
+      "D": "Fibonacci heap faqat tartiblash uchun optimallashtirilgan"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 4,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-inf-4-7",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "AVL daraxtida muvozanat (balance) sharti qanday?",
+    "options": {
+      "A": "Har bir tugunning faqat bitta farzandi bo'lishi kerak",
+      "B": "Barcha barg tugunlar bir xil chuqurlikda joylashishi kerak",
+      "C": "Har bir tugunning chap va o'ng pastki daraxti balandligi ayirmasi mutlaq qiymati 1 dan oshmasligi kerak — aks holda rotatsiya bajariladi",
+      "D": "Har bir tugunning chap va o'ng pastki daraxti balandligi ayirmasi 0 ga teng bo'lishi kerak"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 4,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-inf-4-8",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "Hash collisions (to'qnashuvlar) nima va ular qanday hal qilinadi?",
+    "options": {
+      "A": "Turli kalitlar bir xil hash qiymatiga ega bo'lganda; chaining (zanjirli bog'lash) yoki open addressing orqali hal qilinadi",
+      "B": "Juda katta kalitlar ishlatilganda; kalitni qisqartirish orqali hal qilinadi",
+      "C": "Hash jadvali to'lib ketganda yuzaga keladi — yangi jadval yaratish orqali hal qilinadi",
+      "D": "Hash funksiya noto'g'ri ishlagan hollarda; funksiyani almashtirish orqali hal qilinadi"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 4,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-inf-4-9",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "Python da dictionary da kalit mavjudligini tekshirish qanday amalga oshiriladi?",
+    "options": {
+      "A": "lug'at.find(kalit)",
+      "B": "lug'at.exists(kalit)",
+      "C": "lug'at.has(kalit)",
+      "D": "kalit in lug'at"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 4,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-inf-4-10",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "Stek (stack) qanday ma'lumotlar tuzilmasi?",
+    "options": {
+      "A": "Faqat o'rtadan element olinadi",
+      "B": "Oxirgi kirgan — birinchi chiqadi (LIFO)",
+      "C": "Birinchi kirgan — birinchi chiqadi (FIFO)",
+      "D": "Tasodifiy tartibda chiqadi"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 4,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-inf-5-1",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "Persistent data structures (doimiy ma'lumotlar tuzilmalari) nima va ular qanday amalga oshiriladi?",
+    "options": {
+      "A": "Kompyuter o'chganda ham saqlanib qoladigan tuzilmalar — disk da saqlanadi",
+      "B": "Faqat bir marta yoziladigan tuzilmalar — o'chirib bo'lmaydi",
+      "C": "O'zgartirish kerak bo'lganda asl versiyani saqlab, yangi versiya yaratuvchi tuzilmalar — path copying yoki fat node usullari orqali; funktsional dasturlashda, version control tizimlarda qo'llaniladi",
+      "D": "Persistent tuzilmalar faqat ma'lumotlar bazasida qo'llaniladi"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 5,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-inf-5-2",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "KD-tree (K-dimensional tree) nima uchun ishlatiladi va uning afzalliklari qanday?",
+    "options": {
+      "A": "KD-tree faqat tartiblangan ma'lumotlarda ishlaydi",
+      "B": "Ko'p o'lchovli (k-dimensional) fazodagi nuqtalarni tashkil etish uchun — nearest neighbor qidiruvi, range search, k-NN algoritmlari uchun; o'rtacha O(log n) qidiruv; mashinali o'rganish, kompyuter grafika, geografik ma'lumotlarda qo'llaniladi",
+      "C": "KD-tree faqat 2D va 3D koordinatalar uchun — k 3 dan katta bo'lsa ishlamaydi",
+      "D": "KD-tree hash jadvalining ko'p o'lchovli versiyasi"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 5,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-inf-5-3",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "Stekdan element olish operatsiyasi qanday nomlanadi?",
+    "options": {
+      "A": "Delete",
+      "B": "Enqueue",
+      "C": "Push",
+      "D": "Pop"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 5,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-inf-5-4",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "Deque (ikki tomonlama navbat) nima?",
+    "options": {
+      "A": "Ikki stekdan iborat tuzilma",
+      "B": "Faqat bitta tomondan element qo'shish va olish mumkin bo'lgan navbat",
+      "C": "Har ikki tomondan ham element qo'shish va olish mumkin bo'lgan tuzilma",
+      "D": "Ikki navbatdan iborat tuzilma"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 5,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-inf-5-5",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "Amortizatsiyalangan tahlilda Dynamic array (masalan Python list) ning append() operatsiyasi nima uchun O(1) hisoblanadi?",
+    "options": {
+      "A": "append() har doim O(n) — faqat o'rtacha O(1) deyiladi",
+      "B": "Python interpreteri har doim O(1) da massivni kengaytiradi — maxsus optimallashtirish bor",
+      "C": "Dynamic array hech qachon kengaytirilmaydi — yangi massiv yaratiladi",
+      "D": "Massiv to'lganda ikki baravar kengaytiriladi — ko'chirish O(n) bo'lsa ham, n ta append uchun umumiy narx O(n), ya'ni amortizatsiyalangan narx O(1); geometric growing bu samaradorlikni ta'minlaydi"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 5,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-inf-5-6",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "BFS (Breadth-First Search) va DFS (Depth-First Search) qaysi ma'lumotlar tuzilmasini ishlatadi?",
+    "options": {
+      "A": "BFS — stek; DFS — navbat",
+      "B": "BFS — navbat; DFS — stek (yoki rekursiya)",
+      "C": "Ikkalasi ham navbat ishlatadi",
+      "D": "Ikkalasi ham faqat massiv ishlatadi"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 5,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-inf-5-7",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "Circular queue (doiraviy navbat) oddiy navbatdan qanday afzallikka ega?",
+    "options": {
+      "A": "Doiraviy navbatda massiv oxiriga yetilganda bosh qismidan qayta foydalaniladi — bo'sh joylar isrof bo'lmaydi; oddiy navbatda front oldinga siljiganda orqadagi joy isrof bo'ladi",
+      "B": "Doiraviy navbat cheksiz element saqlaydi",
+      "C": "Ular o'rtasida hech qanday farq yo'q",
+      "D": "Doiraviy navbat element qo'shishda doim O(1), oddiy navbat O(n)"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 5,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-inf-5-8",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "Adjacency matrix va adjacency list graf ifodalash usullari qanday farqlanadi va qaysi birini qachon tanlash kerak?",
+    "options": {
+      "A": "Adjacency list har doim afzal — xotira tejaydi",
+      "B": "Adjacency matrix — V×V massiv, O(1) qirra tekshiruvi lekin O(V²) xotira; adjacency list — O(V+E) xotira lekin qirra tekshiruvi O(degree); zichlashgan graflarda matrix, siyrak graflarda list afzal",
+      "C": "Adjacency matrix har doim afzal — qirra tekshiruvi O(1)",
+      "D": "Ular bir xil samaradorlikka ega"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 5,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-inf-5-9",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Ma'lumotlar tuzilmasi",
+    "question": "Interval tree va segment tree o'rtasidagi farq nima va interval tree qachon afzal?",
+    "options": {
+      "A": "Interval tree va segment tree bir xil — faqat turli ilovalar uchun ishlatiladi deyiladi",
+      "B": "Interval tree faqat sonlar oraliqlarini, segment tree esa matn oraliqlarini saqlaydi",
+      "C": "Interval tree — oraliqlarni saqlaydi va berilgan nuqtaga kesishuvchi oraliqlarni O(log n + k) da topadi; segment tree — massiv qiymatlari ustida oraliq so'rovlar; kalendarlar, geometriya muammolarida interval tree afzal",
+      "D": "Segment tree interval tree dan har doim tezroq — interval tree faqat ta'lim uchun"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Ma'lumotlar tuzilmasi",
+    "session": 5,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-inf-5-10",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Dasturlash asoslari",
+    "question": "Funksiya parametri (parameter) va argumenti (argument) o'rtasidagi farq nima?",
+    "options": {
+      "A": "Parametr faqat raqam, argument faqat matn",
+      "B": "Ular bir xil tushuncha",
+      "C": "Argument — funksiya ta'rifida; parametr — chaqirilganda beriladi",
+      "D": "Parametr — funksiya ta'rifida; argument — funksiya chaqirilganda beriladigan qiymat"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
+    "session": 5,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-inf-6-1",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Dasturlash asoslari",
+    "question": "Python da mutable va immutable ob'ektlar o'rtasidagi farq funksiyaga argument sifatida berilganda qanday namoyon bo'ladi?",
+    "options": {
+      "A": "Mutable ob'ektlar (list, dict) funksiya ichida o'zgartirilsa, tashqaridagi asl ob'ekt ham o'zgaradi; immutable (int, str, tuple) o'zgartirilsa yangi ob'ekt yaratiladi, asl o'zgarmaydi",
+      "B": "Ikkalasi ham funksiya ichida o'zgartirilsa asl ob'ekt o'zgaradi",
+      "C": "Mutable ob'ektlar funksiyaga berilishi mumkin emas",
+      "D": "Ikkalasi ham funksiya ichida o'zgartirilsa asl ob'ekt o'zgarmaydi"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
+    "session": 6,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-inf-6-2",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Dasturlash asoslari",
+    "question": "Python da quyidagi kod natijasi nima?a = [1, 2, 3]b = ab.append(4)print(a)",
+    "options": {
+      "A": "[4]",
+      "B": "[1, 2, 3, 4]",
+      "C": "Xato",
+      "D": "[1, 2, 3]"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
+    "session": 6,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-inf-6-3",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Dasturlash asoslari",
+    "question": "Python da quyidagi kod natijasi nima?print(type(3.14))",
+    "options": {
+      "A": "<class 'double'>",
+      "B": "<class 'string'>",
+      "C": "<class 'int'>",
+      "D": "<class 'float'>"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
+    "session": 6,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-inf-6-4",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Dasturlash asoslari",
+    "question": "Python da ikki o'lchamli massiv (2D array) elementiga qanday murojaat qilinadi?",
+    "options": {
+      "A": "arr[i][j]",
+      "B": "arr{i}{j}",
+      "C": "arr(i)(j)",
+      "D": "arr[i, j]"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
+    "session": 6,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-inf-6-5",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Dasturlash asoslari",
+    "question": "Kommentariya (comment) nima uchun ishlatiladi?",
+    "options": {
+      "A": "Dasturni to'xtatish uchun",
+      "B": "O'zgaruvchi e'lon qilish uchun",
+      "C": "Kod tezroq ishlashi uchun",
+      "D": "Kodga izoh qo'shish uchun — kompilyator/interpretator uni e'tiborsiz qoldiradi"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
+    "session": 6,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-inf-6-6",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Dasturlash asoslari",
+    "question": "Python da quyidagi kod natijasi nima?matrix = [[i*j for j in range(1,4)] for i in range(1,4)]print(matrix[1][2])",
+    "options": {
+      "A": "4",
+      "B": "6",
+      "C": "2",
+      "D": "3"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
+    "session": 6,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-inf-6-7",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Dasturlash asoslari",
+    "question": "Python da quyidagi kod chiqishini aniqlang:def gen(): yield 1 yield 2 yield 3g = gen()print(next(g))print(next(g))",
+    "options": {
+      "A": "3 va 3",
+      "B": "Xato",
+      "C": "1 va 1",
+      "D": "1 va 2"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
+    "session": 6,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-inf-6-8",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Dasturlash asoslari",
+    "question": "Quyidagi Python kodida nima xato?for i in range(10):print(i)",
+    "options": {
+      "A": "for o'rniga while ishlatish kerak",
+      "B": "print(i) bloki if uchun indent (ichkirilish) qilinmagan",
+      "C": "range(10) noto'g'ri",
+      "D": "print ichida i yozilmasligi kerak"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
+    "session": 6,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-inf-6-9",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Dasturlash asoslari",
+    "question": "Python da quyidagi kod nima chiqaradi?s = \"Informatika\"print(s[0:4])",
+    "options": {
+      "A": "Inform",
+      "B": "Infor",
+      "C": "Info",
+      "D": "nfor"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
+    "session": 6,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-inf-6-10",
+    "subject": "Informatika",
+    "grade_span": "5-11",
+    "topic": "Dasturlash asoslari",
+    "question": "Python da quyidagi kod natijasi nima?def son(a, b, c=10): return a + b + cprint(son(1, 2))",
+    "options": {
+      "A": "12",
+      "B": "3",
+      "C": "Xato",
+      "D": "13"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Dasturlash asoslari",
+    "session": 6,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-bio-4-1",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "Sklorenxima va kollenxima qaysi xususiyat bilan o‘xshash?",
+    "options": {
+      "A": "hujayra qobig‘ini tuzilishi bilan",
+      "B": "sitoplazma tarkibi bilan",
+      "C": "yadro shakli bilan",
+      "D": "o‘likva tirikxujayralarda umumiy xususiyat bo‘lmaydi"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 4,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-bio-4-2",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "Glikogen sintezi (glikogenogenez) va parchalanishi (glikogenoliz) qaysi organoidda amalga oshadi va bu jarayon qaysi gormonlar tomonidan boshqariladi?",
+    "options": {
+      "A": "Yadroda; tiroksin va paratgormon",
+      "B": "Sitozolda; sintezni insulin (glyukoza ko'p bo'lganda), parchalanishni glyukagon va adrenalin stimullashtiradi",
+      "C": "Golji apparatida; o'sish gormoni va prolaktin",
+      "D": "Mitoxondriyada; kortizol va aldosteron"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 4,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-bio-4-3",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "Hujayra massasining taxminan qancha qismi suvdan iborat?",
+    "options": {
+      "A": "10–20%",
+      "B": "70–80%",
+      "C": "90–95%",
+      "D": "40–50%"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 4,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-bio-4-4",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "Interfaza nima va qanday davrlarga bo'linadi?",
+    "options": {
+      "A": "Hujayra o'limi oldingi davr",
+      "B": "Bo'linmalar orasidagi davr: G1 (o'sish), S (DNK sintezi), G2 (bo'linishga tayyorgarlik)",
+      "C": "Bo'linish fazasi; profaza va metafazadan iborat",
+      "D": "Faqat DNK sintezi bosqichi"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 4,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-bio-4-5",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "Qaysi organoid hujayrani «energiya stantsiyasi» deb ataladi?",
+    "options": {
+      "A": "Lizosoma",
+      "B": "Mitoxondriya",
+      "C": "Ribosoma",
+      "D": "Golji apparati"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 4,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-bio-4-6",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "Sakkizoyoqning bosh miyasi qanday hosil bo’lgan",
+    "options": {
+      "A": "qorin nerv tuguni birlashib",
+      "B": "orqa miyaning old qismi o’zgarishidan",
+      "C": "nerv tugunidan hosil bo’lgan gangliylar birlashib",
+      "D": "nerv tugunlari birlashib"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 4,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-bio-4-7",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "Odam eritrotsitlarining asosiy vazifasi nima?",
+    "options": {
+      "A": "Gormon ishlab chiqarish",
+      "B": "Qon ivishini ta'minlash",
+      "C": "Immun himoya",
+      "D": "Kislorod va karbonat angidridni tashish"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 4,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-bio-4-8",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "O'simlik va hayvon hujayralarida sitokinez qanday farq qiladi?",
+    "options": {
+      "A": "Hayvon hujayrasida cell plate hosil bo'ladi",
+      "B": "Hayvon hujayrasida aktin-miozin halqasi (cleavage furrow) bo'g'ib ikki ga ajratadi; o'simlik hujayrasida Golji vezikullari ekvatorial tekislikda yig'ilib hujayra plakasini (cell plate) hosil qiladi — keyin sellyuloza devor quriladi",
+      "C": "O'simlik hujayrasida ham cleavage furrow ishlaydi",
+      "D": "Ikkalasida ham bir xil bo'ladi"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 4,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-bio-4-9",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "Markaziy nerv tizimi (MNT) qanday tuzilmalardan iborat?",
+    "options": {
+      "A": "Bosh miya, orqa miya va periferik nervlar",
+      "B": "Bosh miya va orqa miya",
+      "C": "Barcha nervlar va gangliyalar",
+      "D": "Faqat bosh miya"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 4,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-bio-4-10",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "MASALA: 2n=6 organizmda mitoz bo'lgandan so'ng qiz hujayralarning umumiy DNK miqdori boshlang'ich hujayraga nisbatan qanday?",
+    "options": {
+      "A": "Har bir qiz hujayrada boshlang'ich hujayra bilan bir xil (ikkisi birgalikda 2 barobar)",
+      "B": "Har bir qiz hujayrada 2 barobar ko'p",
+      "C": "Umumiy DNK miqdori o'zgarmaydi, ikki hujayraga bo'linadi",
+      "D": "Har bir qiz hujayrada yarmiga kamaygan"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 4,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-bio-5-1",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "Hujayra nazariyasining asosiy postulatlaridan biri qaysi?",
+    "options": {
+      "A": "Faqat o'simliklar hujayradan iborat",
+      "B": "Hujayralar faqat kimyoviy yo'l bilan hosil bo'ladi",
+      "C": "Barcha tirik organizmlar hujayrasiz ham yashay oladi",
+      "D": "Hujayra — tirik organizmlarning asosiy tuzilish va funksional birligi"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 5,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-bio-5-2",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "Fagotsitoz va pinositoz o'rtasidagi farq nima?",
+    "options": {
+      "A": "Fagotsitoz faqat bakteriyalar uchun; pinositoz faqat viruslar uchun",
+      "B": "Pinositoz ATF sarflaydi, fagotsitoz sarflamaydi",
+      "C": "Fagotsitoz — katta qattiq zarralar (<1mkm) yutilishi; pinositoz — suyuqlik tomchilarini yutish",
+      "D": "Ikkalasi ham bir xil — endositozning turlari"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 5,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-bio-5-3",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "Oqsil sintezi qaysi organoidda amalga oshadi?",
+    "options": {
+      "A": "Mitoxondriya",
+      "B": "Ribosoma",
+      "C": "Lizosoma",
+      "D": "Vakuol"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 5,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-bio-5-4",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "Piyoz hujayrasiga xos bo‘lmagan xususiyat",
+    "options": {
+      "A": "membranasida teshiklar bor",
+      "B": "xammasi xos xususiyatlar",
+      "C": "hujayra shakli silindirsimon",
+      "D": "yadrositoplazmatik membranaga tortilib turadi"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 5,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-bio-5-5",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "MASALA: Agar bitta hujayra har 24 soatda bir marta bo'linsa, 30 kundan so'ng nechta hujayra hosil bo'ladi (logarifm ko'rinishida)?",
+    "options": {
+      "A": "$2^{30} \\approx 1,07 \\times 10^9$ ta",
+      "B": "$2^{24} \\approx 1,6 \\times 10^7$ ta",
+      "C": "$30^2 = 900$ ta",
+      "D": "$2^{30} \\approx 10^9$ ta"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 5,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-bio-5-6",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "Hujayra yadrosini birinchi marta kim kashf etgan?",
+    "options": {
+      "A": "Robert Hooke",
+      "B": "Rudolf Virchow",
+      "C": "Robert Brown",
+      "D": "Theodor Schwann"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 5,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-bio-5-7",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "UPR (unfolded protein response — noto'g'ri katlanmagan oqsil javobi) qaysi organoidda boshlanadi va qanday sensorlar ishtirok etadi?",
+    "options": {
+      "A": "Donador EPT da; IRE1, PERK, ATF6 — uch sensor noto'g'ri katlanmagan oqsillar to'planishini sezadi va oqsil sintezini kamaytiradi, shaperonlarni ko'paytiradi",
+      "B": "Mitoxondriyada; sitoxrom-c sensorlari",
+      "C": "Lizosomada; katepsin sensorlari",
+      "D": "Yadroda; p53 sensori"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 5,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-bio-5-8",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "Mitozda bo'linish dugi (spindle) qaysi organoiddan hosil bo'ladi?",
+    "options": {
+      "A": "Ribosomadan",
+      "B": "Mitoxondriyadan",
+      "C": "Endoplazmatik to'rdan",
+      "D": "Sentrosoma (sentriolalar) dan chiquvchi mikrotubulalardan"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 5,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-bio-5-9",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "Metafazada nima sodir bo'ladi?",
+    "options": {
+      "A": "Xromosomalar kondensatsiyalanadi",
+      "B": "Xromosomalar hujayra ekvatorial tekisligiga (metafaza plastinkasi) tiziladi",
+      "C": "Sister xromatidalar ajraladi",
+      "D": "Yadro pardasi tiklanadi"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 5,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-bio-5-10",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Hujayra biologiyasi va sitologiya",
+    "question": "MASALA: Donador EPT da har daqiqada 1000 ta oqsil sintezlanadi. Ularning 60% lizosomaga, 30% ekzositozga, 10% membranaga yo'naltiriladi. Bir soatda lizosomaga nechta oqsil yetib boradi?",
+    "options": {
+      "A": "6000 ta",
+      "B": "36 000 ta",
+      "C": "18 000 ta",
+      "D": "60 000 ta"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Hujayra biologiyasi va sitologiya",
+    "session": 5,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-bio-6-1",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "question": "Miyelin qobig'ining vazifasi nima?",
+    "options": {
+      "A": "Impulsni tezlashtirish va aksonni izolyatsiya qilish",
+      "B": "Sinapsis hosil qilish",
+      "C": "Neyronni ozuq berish",
+      "D": "Neytotransmitter saqlash"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "session": 6,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-bio-6-2",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "question": "Insulin qaysi a'zoda ishlab chiqariladi?",
+    "options": {
+      "A": "Qalqonsimon bez",
+      "B": "Jigar",
+      "C": "Oshqozon osti bezi (pankreas) — beta hujayralar",
+      "D": "Buyrak"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "session": 6,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-bio-6-3",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "question": "RNK tarkibidagi azotli asoslar qaysilar?",
+    "options": {
+      "A": "Guanin, Timin, Urasil, Adenin",
+      "B": "Adenin, Timin, Urasil, Sitozin",
+      "C": "Adenin, Guanin, Sitozin, Urasil",
+      "D": "Adenin, Guanin, Sitozin, Timin"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "session": 6,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-bio-6-4",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "question": "Gipofiz (asosiy bez) qayerda joylashgan?",
+    "options": {
+      "A": "Bosh miyaning ensa qismida",
+      "B": "Qalqonsimon bez yonida",
+      "C": "Buyrak ustida",
+      "D": "Bosh miya asosida, Türk egari (sella turcica) da"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "session": 6,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-bio-6-5",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "question": "Eukariot ribosomaning subbirliklari qaysilar?",
+    "options": {
+      "A": "50S va 70S",
+      "B": "20S va 40S",
+      "C": "40S va 60S",
+      "D": "30S va 50S"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "session": 6,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-bio-6-6",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "question": "Plazmid membranasi va organoid membranalari o'rtasidagi vesikulyar transport (COPII, COPI, klatrin) qanday ishlaydi?",
+    "options": {
+      "A": "Barcha transportlar bir xil COPII oqsili orqali amalga oshadi",
+      "B": "Klatrin faqat mitoxondriyada ishlaydi",
+      "C": "COPII — EPT dan Goljiga anterograd transport; COPI — Golji ichida retrograd va Golji→EPT; Klatrin — Golji→lizosoma va endositoz. Har bir qopqoq sistemi o'z kargo tanish oqsillariga (SNARE, Rab GTPaza) ega",
+      "D": "COPI faqat tashqi membranadan ichkariga"
+    },
+    "answer": "C",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "session": 6,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-bio-6-7",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "question": "Aminokislotaning umumiy tuzilishida qaysi guruhlar majburiy ravishda mavjud?",
+    "options": {
+      "A": "Fosfat guruhi va qand",
+      "B": "Faqat amin guruhi (-NH$_2$)",
+      "C": "Faqat karboksil guruhi (-COOH)",
+      "D": "Amin guruhi (-NH$_2$), karboksil guruhi (-COOH), vodorod atomi va R-yon zanjir — barchasi bir alfa-uglerodga bog'liq"
+    },
+    "answer": "D",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "session": 6,
+    "difficulty": "O'rta"
+  },
+  {
+    "id": "tm-bio-6-8",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "question": "DNK ning to'liq nomi nima?",
+    "options": {
+      "A": "Dezoksiribo nukleoprotein kislota",
+      "B": "Dezoksiribonuklein kislota",
+      "C": "Difosforibonuklein kislota",
+      "D": "Diribonuklein kislota"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "session": 6,
+    "difficulty": "Oson"
+  },
+  {
+    "id": "tm-bio-6-9",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "question": "Sitrullintsikling yoki urea sikli qanday ishlaydi va qayerda sodir bo'ladi?",
+    "options": {
+      "A": "Urea sikli yog' oksidlanishi bilan bir xil",
+      "B": "Urea sikli — aminokislotalar katabolizmidan hosil bo'lgan toksik NH₃ ni zararssiz ureaga aylantiradi; asosan jigarda, qisman ichakda. Reaksiyalar: mitoxondriya (karbamoilfosfat sintezi, sitrullin) + sitozol (argininosuksinat, arginin, urea); jigar kasalligi → giperammoniyemiya → ensefalopatiya",
+      "C": "Faqat buyrakda sodir bo'ladi",
+      "D": "Glyukoza sintezi uchun; faqat sitozolda"
+    },
+    "answer": "B",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "session": 6,
+    "difficulty": "Qiyin"
+  },
+  {
+    "id": "tm-bio-6-10",
+    "subject": "Biologiya",
+    "grade_span": "5-11",
+    "topic": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "question": "Suvning yorug'lik ta'sirida parchalanish jarayoni qanday ataladi va u qaysi fotosistemada ro'y beradi?",
+    "options": {
+      "A": "Fotoliz, PS II",
+      "B": "Glikoliz, PS I",
+      "C": "Fotofosforlanish, PS I",
+      "D": "Karboksillanish, PS II"
+    },
+    "answer": "A",
+    "explanation": "TestMakon DTM milliy sertifikat bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "session": 6,
+    "difficulty": "O'rta"
   }
 ]
