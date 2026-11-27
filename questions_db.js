@@ -25504,7 +25504,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-5-1",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "topic": "DTM va Milliy standart: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
     "question": "$\\frac{1}{2} + \\frac{1}{3} + \\frac{1}{6}$ ni hisoblang.",
     "options": {
       "A": "$1$",
@@ -25513,7 +25513,7 @@ window.QUESTIONS_DB = [
       "D": "$\\frac{5}{6}$"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $1$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $1$",
     "session": 5,
     "difficulty": "medium"
   },
@@ -25521,7 +25521,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-5-2",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "topic": "DTM va Milliy standart: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
     "question": "$\\frac{1}{1 \\cdot 2} + \\frac{1}{2 \\cdot 3} + \\frac{1}{3 \\cdot 4} + \\frac{1}{4 \\cdot 5}$ ni hisoblang.",
     "options": {
       "A": "$\\frac{2}{5}$",
@@ -25530,7 +25530,7 @@ window.QUESTIONS_DB = [
       "D": "$\\frac{4}{5}$"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $\\frac{4}{5}$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $\\frac{4}{5}$",
     "session": 5,
     "difficulty": "medium"
   },
@@ -25538,7 +25538,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-5-3",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "topic": "DTM va Milliy standart: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
     "question": "$\\frac{3}{5}$ ni o'nli kasr ko'rinishida yozing.",
     "options": {
       "A": "$0.3$",
@@ -25547,7 +25547,7 @@ window.QUESTIONS_DB = [
       "D": "$0.6$"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $0.6$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $0.6$",
     "session": 5,
     "difficulty": "medium"
   },
@@ -25555,7 +25555,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-5-4",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "topic": "DTM va Milliy standart: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
     "question": "Yig‘indining oxirgi raqamini aniqlang: 15·63·19·51+44·58·57",
     "options": {
       "A": "4",
@@ -25564,7 +25564,7 @@ window.QUESTIONS_DB = [
       "D": "0"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: 9",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: 9",
     "session": 5,
     "difficulty": "medium"
   },
@@ -25572,7 +25572,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-5-5",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "topic": "DTM va Milliy standart: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
     "question": "Ko'phad $P(x) = x^{100} + x^{99} + ... + x + 1$ ni $(x - 1)$ ga bo'lgandagi qoldiqni toping.",
     "options": {
       "A": "$1$",
@@ -25581,7 +25581,7 @@ window.QUESTIONS_DB = [
       "D": "$100$"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $101$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $101$",
     "session": 5,
     "difficulty": "medium"
   },
@@ -25589,7 +25589,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-5-6",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "topic": "DTM va Milliy standart: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
     "question": "$\\frac{a}{2} = \\frac{b}{3} = \\frac{c}{4}$ va $a^2 + b^2 + c^2 = 116$ bo'lsa ($a,b,c>0$), $a + b + c$ ni toping.",
     "options": {
       "A": "$18$",
@@ -25598,7 +25598,7 @@ window.QUESTIONS_DB = [
       "D": "$27$"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $18$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $18$",
     "session": 5,
     "difficulty": "medium"
   },
@@ -25606,7 +25606,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-5-7",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "topic": "DTM va Milliy standart: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
     "question": "Mohinur 1 dan 31 gacha sonlarni yozib chiqdi. U 1 raqamini 3 raqamiga qaraganda qancha ko‘p yozgan?",
     "options": {
       "A": "teng",
@@ -25615,7 +25615,7 @@ window.QUESTIONS_DB = [
       "D": "9"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: 9",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: 9",
     "session": 5,
     "difficulty": "medium"
   },
@@ -25623,7 +25623,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-5-8",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "topic": "DTM va Milliy standart: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
     "question": "Hisoblang:((4550 – 234) : 2 – 888 : 37) ∙ 5 =",
     "options": {
       "A": "16020",
@@ -25632,7 +25632,7 @@ window.QUESTIONS_DB = [
       "D": "10640"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: 10670",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: 10670",
     "session": 5,
     "difficulty": "medium"
   },
@@ -25640,7 +25640,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-5-9",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "topic": "DTM va Milliy standart: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
     "question": "$\\frac{5}{7} - \\frac{2}{9} + \\frac{1}{63}$ ni hisoblang.",
     "options": {
       "A": "$\\frac{1}{2}$",
@@ -25649,7 +25649,7 @@ window.QUESTIONS_DB = [
       "D": "$\\frac{31}{63}$"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $\\frac{32}{63}$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $\\frac{32}{63}$",
     "session": 5,
     "difficulty": "medium"
   },
@@ -25657,7 +25657,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-5-10",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "topic": "DTM va Milliy standart: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
     "question": "$3\\frac{1}{4} - 1\\frac{3}{4}$ ni hisoblang.",
     "options": {
       "A": "$2\\frac{1}{2}$",
@@ -25666,7 +25666,7 @@ window.QUESTIONS_DB = [
       "D": "$1\\frac{1}{2}$"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $1\\frac{1}{2}$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $1\\frac{1}{2}$",
     "session": 5,
     "difficulty": "medium"
   },
@@ -25674,7 +25674,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-5-11",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "topic": "DTM va Milliy standart: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
     "question": "$45\\%$ ni o'nli kasr ko'rinishida yozing.",
     "options": {
       "A": "$0.45$",
@@ -25683,7 +25683,7 @@ window.QUESTIONS_DB = [
       "D": "$4.5$"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $0.45$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $0.45$",
     "session": 5,
     "difficulty": "medium"
   },
@@ -25691,7 +25691,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-5-12",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "topic": "DTM va Milliy standart: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
     "question": "Agar $x = \\frac{2}{3}$ bo'lsa, $\\frac{x^2 + x}{x + 1}$ ni hisoblang.",
     "options": {
       "A": "$\\frac{2}{3}$",
@@ -25700,7 +25700,7 @@ window.QUESTIONS_DB = [
       "D": "$\\frac{4}{9}$"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $\\frac{1}{3}$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $\\frac{1}{3}$",
     "session": 5,
     "difficulty": "medium"
   },
@@ -25708,7 +25708,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-5-13",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "topic": "DTM va Milliy standart: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
     "question": "Teskari proporsiya: $xy = k$. Agar $x = 8$ da $y = 15$ bo'lsa, $x = 12$ da $y$ ni toping.",
     "options": {
       "A": "$15$",
@@ -25717,7 +25717,7 @@ window.QUESTIONS_DB = [
       "D": "$12$"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $10$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $10$",
     "session": 5,
     "difficulty": "medium"
   },
@@ -25725,7 +25725,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-5-14",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "topic": "DTM va Milliy standart: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
     "question": "$a : b = 3 : 4$, $c : d = 5 : 6$ va $b : c = 2 : 3$ bo'lsa, $a : d$ ni toping.",
     "options": {
       "A": "$1 : 2$",
@@ -25734,7 +25734,7 @@ window.QUESTIONS_DB = [
       "D": "$5 : 12$"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $5 : 12$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $5 : 12$",
     "session": 5,
     "difficulty": "medium"
   },
@@ -25742,7 +25742,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-5-15",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "topic": "DTM va Milliy standart: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
     "question": "Raqamlari yig‘indisi 3 ga teng bo‘lgan to‘rt xonali sonlar nechta?",
     "options": {
       "A": "9",
@@ -25751,7 +25751,7 @@ window.QUESTIONS_DB = [
       "D": "3"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: 10",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: 10",
     "session": 5,
     "difficulty": "medium"
   },
@@ -25759,7 +25759,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-6-1",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "topic": "DTM va Milliy standart: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
     "question": "Quyidagi fikrlarning qaysi biri notoʻgʻri?",
     "options": {
       "A": "Agar ikki qoʻshiluvchi 12 ga boʻlinsa, yigʻindi 6 ga boʻlinadi",
@@ -25768,7 +25768,7 @@ window.QUESTIONS_DB = [
       "D": "Agar ikki koʻpaytuvchidan biri 13 ga boʻlinib, ikkinchisi boʻlinmasa ham koʻpaytma 13 ga boʻlinadi"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: Agar berilgan son 4 ga va 2 ga boʻlinsa, bu son 8 ga ham boʻlinadi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: Agar berilgan son 4 ga va 2 ga boʻlinsa, bu son 8 ga ham boʻlinadi",
     "session": 6,
     "difficulty": "medium"
   },
@@ -25776,7 +25776,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-6-2",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+    "topic": "DTM va Milliy standart: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
     "question": "$\\frac{7}{12}$ kasrni aniq davriy o'nli kasr ko'rinishida yozing.",
     "options": {
       "A": "$0.58\\overline{3}$",
@@ -25785,7 +25785,7 @@ window.QUESTIONS_DB = [
       "D": "$0.75$"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $0.58\\overline{3}$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar). To'g'ri javob: To'g'ri javob: $0.58\\overline{3}$",
     "session": 6,
     "difficulty": "medium"
   },
@@ -25793,7 +25793,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-6-3",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Algebraik ifodalar va ayniyatlar",
+    "topic": "DTM va Milliy standart: Algebraik ifodalar va ayniyatlar",
     "question": "$2x^3 - 3x^2 - 11x + 6$ ni ko'paytuvchilarga ajrating.",
     "options": {
       "A": "$(x - 3)(x + 2)(2x + 1)$",
@@ -25802,7 +25802,7 @@ window.QUESTIONS_DB = [
       "D": "$(x + 3)(2x + 1)(x - 2)$"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $(x - 3)(2x - 1)(x + 2)$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $(x - 3)(2x - 1)(x + 2)$",
     "session": 6,
     "difficulty": "medium"
   },
@@ -25810,7 +25810,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-6-4",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Algebraik ifodalar va ayniyatlar",
+    "topic": "DTM va Milliy standart: Algebraik ifodalar va ayniyatlar",
     "question": "$\\frac{3^{n+2} - 3^n}{3^{n+1} + 3^n}$ ni soddalashtiring.",
     "options": {
       "A": "$2$",
@@ -25819,7 +25819,7 @@ window.QUESTIONS_DB = [
       "D": "$\\frac{2}{3}$"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $2$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $2$",
     "session": 6,
     "difficulty": "medium"
   },
@@ -25827,7 +25827,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-6-5",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Algebraik ifodalar va ayniyatlar",
+    "topic": "DTM va Milliy standart: Algebraik ifodalar va ayniyatlar",
     "question": "$\\frac{a}{b} = \\frac{2}{3}$, $\\frac{c}{d} = \\frac{5}{7}$ va $b = 2d$ bo'lsa, $\\frac{3a + 2c}{3b + 2d}$ ni toping.",
     "options": {
       "A": "$\\frac{7}{10}$",
@@ -25836,7 +25836,7 @@ window.QUESTIONS_DB = [
       "D": "$\\frac{34}{49}$"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $\\frac{19}{28}$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $\\frac{19}{28}$",
     "session": 6,
     "difficulty": "medium"
   },
@@ -25844,7 +25844,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-6-6",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Algebraik ifodalar va ayniyatlar",
+    "topic": "DTM va Milliy standart: Algebraik ifodalar va ayniyatlar",
     "question": "$x^3 - 7x + 6$ ni ko'paytuvchilarga ajrating.",
     "options": {
       "A": "$(x + 1)(x - 2)(x + 3)$",
@@ -25853,7 +25853,7 @@ window.QUESTIONS_DB = [
       "D": "$(x - 1)(x - 2)(x + 3)$"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $(x - 1)(x - 2)(x + 3)$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $(x - 1)(x - 2)(x + 3)$",
     "session": 6,
     "difficulty": "medium"
   },
@@ -25861,7 +25861,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-6-7",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Algebraik ifodalar va ayniyatlar",
+    "topic": "DTM va Milliy standart: Algebraik ifodalar va ayniyatlar",
     "question": "Agar $a - b = 3$, $ab = 10$ bo'lsa, $a^3 - b^3$ ni toping.",
     "options": {
       "A": "$117$",
@@ -25870,7 +25870,7 @@ window.QUESTIONS_DB = [
       "D": "$27$"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $117$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $117$",
     "session": 6,
     "difficulty": "medium"
   },
@@ -25878,7 +25878,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-6-8",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Algebraik ifodalar va ayniyatlar",
+    "topic": "DTM va Milliy standart: Algebraik ifodalar va ayniyatlar",
     "question": "$0,(27)$ davriy kasrni oddiy kasr ko'rinishida yozing.",
     "options": {
       "A": "$\\frac{3}{10}$",
@@ -25887,7 +25887,7 @@ window.QUESTIONS_DB = [
       "D": "$\\frac{3}{11}$"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $\\frac{3}{11}$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $\\frac{3}{11}$",
     "session": 6,
     "difficulty": "medium"
   },
@@ -25895,7 +25895,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-6-9",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Algebraik ifodalar va ayniyatlar",
+    "topic": "DTM va Milliy standart: Algebraik ifodalar va ayniyatlar",
     "question": "$(a + b)^3$ ni yoying.",
     "options": {
       "A": "$a^3 + 3ab + b^3$",
@@ -25904,7 +25904,7 @@ window.QUESTIONS_DB = [
       "D": "$a^3 + 2a^2b + 2ab^2 + b^3$"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $a^3 + 3a^2b + 3ab^2 + b^3$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $a^3 + 3a^2b + 3ab^2 + b^3$",
     "session": 6,
     "difficulty": "medium"
   },
@@ -25912,7 +25912,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-6-10",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Algebraik ifodalar va ayniyatlar",
+    "topic": "DTM va Milliy standart: Algebraik ifodalar va ayniyatlar",
     "question": "$x^2 - 3x + a < 0$ tengsizligining hech qanday yechimi yo'q bo'lishi uchun $a$ ning eng kichik butun qiymati qancha?",
     "options": {
       "A": "$3$",
@@ -25921,7 +25921,7 @@ window.QUESTIONS_DB = [
       "D": "$1$"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $3$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $3$",
     "session": 6,
     "difficulty": "medium"
   },
@@ -25929,7 +25929,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-6-11",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Algebraik ifodalar va ayniyatlar",
+    "topic": "DTM va Milliy standart: Algebraik ifodalar va ayniyatlar",
     "question": "$(5 + x)(5 - x)$ ni soddalashtiring.",
     "options": {
       "A": "$10 - x^2$",
@@ -25938,7 +25938,7 @@ window.QUESTIONS_DB = [
       "D": "$25 + x^2$"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $25 - x^2$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $25 - x^2$",
     "session": 6,
     "difficulty": "medium"
   },
@@ -25946,7 +25946,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-6-12",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Algebraik ifodalar va ayniyatlar",
+    "topic": "DTM va Milliy standart: Algebraik ifodalar va ayniyatlar",
     "question": "$(2a - 3b)^3$ dagi $a^2b$ ning koeffitsientini toping.",
     "options": {
       "A": "$-36$",
@@ -25955,7 +25955,7 @@ window.QUESTIONS_DB = [
       "D": "$12$"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $-36$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $-36$",
     "session": 6,
     "difficulty": "medium"
   },
@@ -25963,7 +25963,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-6-13",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Algebraik ifodalar va ayniyatlar",
+    "topic": "DTM va Milliy standart: Algebraik ifodalar va ayniyatlar",
     "question": "$x^4 - 1$ ni to'liq ko'paytuvchilarga ajrating.",
     "options": {
       "A": "$(x - 1)(x + 1)(x^2 + 1)$",
@@ -25972,7 +25972,7 @@ window.QUESTIONS_DB = [
       "D": "$(x^2 - 1)(x^2 + 1)$"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $(x - 1)(x + 1)(x^2 + 1)$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $(x - 1)(x + 1)(x^2 + 1)$",
     "session": 6,
     "difficulty": "medium"
   },
@@ -25980,7 +25980,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-6-14",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Algebraik ifodalar va ayniyatlar",
+    "topic": "DTM va Milliy standart: Algebraik ifodalar va ayniyatlar",
     "question": "$\\frac{a - b}{c - d} = \\frac{a + b}{c + d}$ bo'lsa, quyidagilardan qaysi biri to'g'ri?",
     "options": {
       "A": "$b = d$",
@@ -25989,7 +25989,7 @@ window.QUESTIONS_DB = [
       "D": "$a = c$"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $ad = bc$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $ad = bc$",
     "session": 6,
     "difficulty": "medium"
   },
@@ -25997,7 +25997,7 @@ window.QUESTIONS_DB = [
     "id": "tm-mat-6-15",
     "subject": "Matematika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Algebraik ifodalar va ayniyatlar",
+    "topic": "DTM va Milliy standart: Algebraik ifodalar va ayniyatlar",
     "question": "$2x^2 + 7x + 3$ ni ko'paytuvchilarga ajrating.",
     "options": {
       "A": "$(2x + 1)(x + 3)$",
@@ -26006,7 +26006,7 @@ window.QUESTIONS_DB = [
       "D": "$(2x - 1)(x - 3)$"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $(2x + 1)(x + 3)$",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Algebraik ifodalar va ayniyatlar. To'g'ri javob: To'g'ri javob: $(2x + 1)(x + 3)$",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26014,7 +26014,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-5-1",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "Red-Black daraxtida qanday invariantlar saqlanadi va ular nima uchun zarur?",
     "options": {
       "A": "Red-Black daraxtda ranglar faqat estetik maqsadda — algoritm uchun ahamiyati yo'q",
@@ -26023,7 +26023,7 @@ window.QUESTIONS_DB = [
       "D": "Barcha tugunlar qizil bo'lishi kerak — qora tugunlar taqiqlangan"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Har bir tugun qizil yoki qora; ildiz qora; qizil tugunning farzandlari qora; har bir yo'lda bir xil miqdordagi qora tugun — bu O(log n) balandlikni kafolatlaydi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Har bir tugun qizil yoki qora; ildiz qora; qizil tugunning farzandlari qora; har bir yo'lda bir xil miqdordagi qora tugun — bu O(log n) balandlikni kafolatlaydi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26031,7 +26031,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-5-2",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "Daraxtning chuqurligi (depth) nima?",
     "options": {
       "A": "Daraxtdagi barg tugunlar soni",
@@ -26040,7 +26040,7 @@ window.QUESTIONS_DB = [
       "D": "Ildizdan berilgan tugunga qadar bo'lgan qirralar soni"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Ildizdan berilgan tugunga qadar bo'lgan qirralar soni",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Ildizdan berilgan tugunga qadar bo'lgan qirralar soni",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26048,7 +26048,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-5-3",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "Ikki tomonlama bog'langan ro'yxat (doubly linked list) oddiy ro'yxatdan qanday farqlanadi?",
     "options": {
       "A": "Faqat bitta tugundan iborat",
@@ -26057,7 +26057,7 @@ window.QUESTIONS_DB = [
       "D": "Har bir tugun ham keyingi, ham oldingi tugunga ko'rsatgich ushlaydigan — ikkala yo'nalishda harakatlanish mumkin"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Har bir tugun ham keyingi, ham oldingi tugunga ko'rsatgich ushlaydigan — ikkala yo'nalishda harakatlanish mumkin",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Har bir tugun ham keyingi, ham oldingi tugunga ko'rsatgich ushlaydigan — ikkala yo'nalishda harakatlanish mumkin",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26065,7 +26065,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-5-4",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "Ikkilik qidiruv daraxti (BST — Binary Search Tree) qanday xususiyatga ega?",
     "options": {
       "A": "Har bir tugunning ikkita farzandi bo'lishi shart",
@@ -26074,7 +26074,7 @@ window.QUESTIONS_DB = [
       "D": "Faqat barg tugunlarda qiymatlar saqlanadi"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Chap farzand ota-tugundan kichik, o'ng farzand katta — qidiruv O(log n) da amalga oshadi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Chap farzand ota-tugundan kichik, o'ng farzand katta — qidiruv O(log n) da amalga oshadi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26082,7 +26082,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-5-5",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "Lock-free va wait-free ma'lumotlar tuzilmalari nima va ular parallel dasturlashda nima uchun muhim?",
     "options": {
       "A": "Lock-free — hech bo'lmaganda bitta ip oldinga boradi kafolati; wait-free — har bir ip cheklangan qadamda natijaga erishadi kafolati; mutex ishlatmasdan atomic operatsiyalar orqali amalga oshiriladi — deadlock va priority inversion muammolari yo'q",
@@ -26091,7 +26091,7 @@ window.QUESTIONS_DB = [
       "D": "Lock-free tuzilmalar faqat bitta ipda ishlaydi — parallel dasturlashda ishlatilmaydi"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Lock-free — hech bo'lmaganda bitta ip oldinga boradi kafolati; wait-free — har bir ip cheklangan qadamda natijaga erishadi kafolati; mutex ishlatmasdan atomic operatsiyalar orqali amalga oshiriladi — deadlock va priority inversion muammolari yo'q",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Lock-free — hech bo'lmaganda bitta ip oldinga boradi kafolati; wait-free — har bir ip cheklangan qadamda natijaga erishadi kafolati; mutex ishlatmasdan atomic operatsiyalar orqali amalga oshiriladi — deadlock va priority inversion muammolari yo'q",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26099,7 +26099,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-5-6",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "Fibonacci heap boshqa heap turlaridan (binary heap, binomial heap) qanday ustunlikka ega?",
     "options": {
       "A": "Fibonacci heap amalda binary heapdan sekinroq — faqat nazariy afzallik bor",
@@ -26108,7 +26108,7 @@ window.QUESTIONS_DB = [
       "D": "Fibonacci heap faqat tartiblash uchun optimallashtirilgan"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Decrease-key va merge operatsiyalari amortizatsiyalangan O(1) da — Dijkstra va Prim algoritmlarini binary heap bilan O((V+E)logV) dan Fibonacci heap bilan O(E + V logV) ga tushiradi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Decrease-key va merge operatsiyalari amortizatsiyalangan O(1) da — Dijkstra va Prim algoritmlarini binary heap bilan O((V+E)logV) dan Fibonacci heap bilan O(E + V logV) ga tushiradi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26116,7 +26116,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-5-7",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "AVL daraxtida muvozanat (balance) sharti qanday?",
     "options": {
       "A": "Har bir tugunning faqat bitta farzandi bo'lishi kerak",
@@ -26125,7 +26125,7 @@ window.QUESTIONS_DB = [
       "D": "Har bir tugunning chap va o'ng pastki daraxti balandligi ayirmasi 0 ga teng bo'lishi kerak"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Har bir tugunning chap va o'ng pastki daraxti balandligi ayirmasi mutlaq qiymati 1 dan oshmasligi kerak — aks holda rotatsiya bajariladi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Har bir tugunning chap va o'ng pastki daraxti balandligi ayirmasi mutlaq qiymati 1 dan oshmasligi kerak — aks holda rotatsiya bajariladi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26133,7 +26133,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-5-8",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "Hash collisions (to'qnashuvlar) nima va ular qanday hal qilinadi?",
     "options": {
       "A": "Turli kalitlar bir xil hash qiymatiga ega bo'lganda; chaining (zanjirli bog'lash) yoki open addressing orqali hal qilinadi",
@@ -26142,7 +26142,7 @@ window.QUESTIONS_DB = [
       "D": "Hash funksiya noto'g'ri ishlagan hollarda; funksiyani almashtirish orqali hal qilinadi"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Turli kalitlar bir xil hash qiymatiga ega bo'lganda; chaining (zanjirli bog'lash) yoki open addressing orqali hal qilinadi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Turli kalitlar bir xil hash qiymatiga ega bo'lganda; chaining (zanjirli bog'lash) yoki open addressing orqali hal qilinadi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26150,7 +26150,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-5-9",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "Python da dictionary da kalit mavjudligini tekshirish qanday amalga oshiriladi?",
     "options": {
       "A": "lug'at.find(kalit)",
@@ -26159,7 +26159,7 @@ window.QUESTIONS_DB = [
       "D": "kalit in lug'at"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: kalit in lug'at",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: kalit in lug'at",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26167,7 +26167,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-5-10",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "Stek (stack) qanday ma'lumotlar tuzilmasi?",
     "options": {
       "A": "Faqat o'rtadan element olinadi",
@@ -26176,7 +26176,7 @@ window.QUESTIONS_DB = [
       "D": "Tasodifiy tartibda chiqadi"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Oxirgi kirgan — birinchi chiqadi (LIFO)",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Oxirgi kirgan — birinchi chiqadi (LIFO)",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26184,7 +26184,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-5-11",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "Persistent data structures (doimiy ma'lumotlar tuzilmalari) nima va ular qanday amalga oshiriladi?",
     "options": {
       "A": "Kompyuter o'chganda ham saqlanib qoladigan tuzilmalar — disk da saqlanadi",
@@ -26193,7 +26193,7 @@ window.QUESTIONS_DB = [
       "D": "Persistent tuzilmalar faqat ma'lumotlar bazasida qo'llaniladi"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: O'zgartirish kerak bo'lganda asl versiyani saqlab, yangi versiya yaratuvchi tuzilmalar — path copying yoki fat node usullari orqali; funktsional dasturlashda, version control tizimlarda qo'llaniladi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: O'zgartirish kerak bo'lganda asl versiyani saqlab, yangi versiya yaratuvchi tuzilmalar — path copying yoki fat node usullari orqali; funktsional dasturlashda, version control tizimlarda qo'llaniladi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26201,7 +26201,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-5-12",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "KD-tree (K-dimensional tree) nima uchun ishlatiladi va uning afzalliklari qanday?",
     "options": {
       "A": "KD-tree faqat tartiblangan ma'lumotlarda ishlaydi",
@@ -26210,7 +26210,7 @@ window.QUESTIONS_DB = [
       "D": "KD-tree hash jadvalining ko'p o'lchovli versiyasi"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Ko'p o'lchovli (k-dimensional) fazodagi nuqtalarni tashkil etish uchun — nearest neighbor qidiruvi, range search, k-NN algoritmlari uchun; o'rtacha O(log n) qidiruv; mashinali o'rganish, kompyuter grafika, geografik ma'lumotlarda qo'llaniladi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Ko'p o'lchovli (k-dimensional) fazodagi nuqtalarni tashkil etish uchun — nearest neighbor qidiruvi, range search, k-NN algoritmlari uchun; o'rtacha O(log n) qidiruv; mashinali o'rganish, kompyuter grafika, geografik ma'lumotlarda qo'llaniladi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26218,7 +26218,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-5-13",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "Stekdan element olish operatsiyasi qanday nomlanadi?",
     "options": {
       "A": "Delete",
@@ -26227,7 +26227,7 @@ window.QUESTIONS_DB = [
       "D": "Pop"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Pop",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Pop",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26235,7 +26235,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-5-14",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "Deque (ikki tomonlama navbat) nima?",
     "options": {
       "A": "Ikki stekdan iborat tuzilma",
@@ -26244,7 +26244,7 @@ window.QUESTIONS_DB = [
       "D": "Ikki navbatdan iborat tuzilma"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Har ikki tomondan ham element qo'shish va olish mumkin bo'lgan tuzilma",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Har ikki tomondan ham element qo'shish va olish mumkin bo'lgan tuzilma",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26252,7 +26252,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-5-15",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "Amortizatsiyalangan tahlilda Dynamic array (masalan Python list) ning append() operatsiyasi nima uchun O(1) hisoblanadi?",
     "options": {
       "A": "append() har doim O(n) — faqat o'rtacha O(1) deyiladi",
@@ -26261,7 +26261,7 @@ window.QUESTIONS_DB = [
       "D": "Massiv to'lganda ikki baravar kengaytiriladi — ko'chirish O(n) bo'lsa ham, n ta append uchun umumiy narx O(n), ya'ni amortizatsiyalangan narx O(1); geometric growing bu samaradorlikni ta'minlaydi"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Massiv to'lganda ikki baravar kengaytiriladi — ko'chirish O(n) bo'lsa ham, n ta append uchun umumiy narx O(n), ya'ni amortizatsiyalangan narx O(1); geometric growing bu samaradorlikni ta'minlaydi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Massiv to'lganda ikki baravar kengaytiriladi — ko'chirish O(n) bo'lsa ham, n ta append uchun umumiy narx O(n), ya'ni amortizatsiyalangan narx O(1); geometric growing bu samaradorlikni ta'minlaydi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26269,7 +26269,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-6-1",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "BFS (Breadth-First Search) va DFS (Depth-First Search) qaysi ma'lumotlar tuzilmasini ishlatadi?",
     "options": {
       "A": "BFS — stek; DFS — navbat",
@@ -26278,7 +26278,7 @@ window.QUESTIONS_DB = [
       "D": "Ikkalasi ham faqat massiv ishlatadi"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: BFS — navbat; DFS — stek (yoki rekursiya)",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: BFS — navbat; DFS — stek (yoki rekursiya)",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26286,7 +26286,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-6-2",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "Circular queue (doiraviy navbat) oddiy navbatdan qanday afzallikka ega?",
     "options": {
       "A": "Doiraviy navbatda massiv oxiriga yetilganda bosh qismidan qayta foydalaniladi — bo'sh joylar isrof bo'lmaydi; oddiy navbatda front oldinga siljiganda orqadagi joy isrof bo'ladi",
@@ -26295,7 +26295,7 @@ window.QUESTIONS_DB = [
       "D": "Doiraviy navbat element qo'shishda doim O(1), oddiy navbat O(n)"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Doiraviy navbatda massiv oxiriga yetilganda bosh qismidan qayta foydalaniladi — bo'sh joylar isrof bo'lmaydi; oddiy navbatda front oldinga siljiganda orqadagi joy isrof bo'ladi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Doiraviy navbatda massiv oxiriga yetilganda bosh qismidan qayta foydalaniladi — bo'sh joylar isrof bo'lmaydi; oddiy navbatda front oldinga siljiganda orqadagi joy isrof bo'ladi",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26303,7 +26303,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-6-3",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "Adjacency matrix va adjacency list graf ifodalash usullari qanday farqlanadi va qaysi birini qachon tanlash kerak?",
     "options": {
       "A": "Adjacency list har doim afzal — xotira tejaydi",
@@ -26312,7 +26312,7 @@ window.QUESTIONS_DB = [
       "D": "Ular bir xil samaradorlikka ega"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Adjacency matrix — V×V massiv, O(1) qirra tekshiruvi lekin O(V²) xotira; adjacency list — O(V+E) xotira lekin qirra tekshiruvi O(degree); zichlashgan graflarda matrix, siyrak graflarda list afzal",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Adjacency matrix — V×V massiv, O(1) qirra tekshiruvi lekin O(V²) xotira; adjacency list — O(V+E) xotira lekin qirra tekshiruvi O(degree); zichlashgan graflarda matrix, siyrak graflarda list afzal",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26320,7 +26320,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-6-4",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ma'lumotlar tuzilmasi",
+    "topic": "DTM va Milliy standart: Ma'lumotlar tuzilmasi",
     "question": "Interval tree va segment tree o'rtasidagi farq nima va interval tree qachon afzal?",
     "options": {
       "A": "Interval tree va segment tree bir xil — faqat turli ilovalar uchun ishlatiladi deyiladi",
@@ -26329,7 +26329,7 @@ window.QUESTIONS_DB = [
       "D": "Segment tree interval tree dan har doim tezroq — interval tree faqat ta'lim uchun"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Interval tree — oraliqlarni saqlaydi va berilgan nuqtaga kesishuvchi oraliqlarni O(log n + k) da topadi; segment tree — massiv qiymatlari ustida oraliq so'rovlar; kalendarlar, geometriya muammolarida interval tree afzal",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ma'lumotlar tuzilmasi. To'g'ri javob: To'g'ri javob: Interval tree — oraliqlarni saqlaydi va berilgan nuqtaga kesishuvchi oraliqlarni O(log n + k) da topadi; segment tree — massiv qiymatlari ustida oraliq so'rovlar; kalendarlar, geometriya muammolarida interval tree afzal",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26337,7 +26337,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-6-5",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dasturlash asoslari",
+    "topic": "DTM va Milliy standart: Dasturlash asoslari",
     "question": "Funksiya parametri (parameter) va argumenti (argument) o'rtasidagi farq nima?",
     "options": {
       "A": "Parametr faqat raqam, argument faqat matn",
@@ -26346,7 +26346,7 @@ window.QUESTIONS_DB = [
       "D": "Parametr — funksiya ta'rifida; argument — funksiya chaqirilganda beriladigan qiymat"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: Parametr — funksiya ta'rifida; argument — funksiya chaqirilganda beriladigan qiymat",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: Parametr — funksiya ta'rifida; argument — funksiya chaqirilganda beriladigan qiymat",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26354,7 +26354,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-6-6",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dasturlash asoslari",
+    "topic": "DTM va Milliy standart: Dasturlash asoslari",
     "question": "Python da mutable va immutable ob'ektlar o'rtasidagi farq funksiyaga argument sifatida berilganda qanday namoyon bo'ladi?",
     "options": {
       "A": "Mutable ob'ektlar (list, dict) funksiya ichida o'zgartirilsa, tashqaridagi asl ob'ekt ham o'zgaradi; immutable (int, str, tuple) o'zgartirilsa yangi ob'ekt yaratiladi, asl o'zgarmaydi",
@@ -26363,7 +26363,7 @@ window.QUESTIONS_DB = [
       "D": "Ikkalasi ham funksiya ichida o'zgartirilsa asl ob'ekt o'zgarmaydi"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: Mutable ob'ektlar (list, dict) funksiya ichida o'zgartirilsa, tashqaridagi asl ob'ekt ham o'zgaradi; immutable (int, str, tuple) o'zgartirilsa yangi ob'ekt yaratiladi, asl o'zgarmaydi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: Mutable ob'ektlar (list, dict) funksiya ichida o'zgartirilsa, tashqaridagi asl ob'ekt ham o'zgaradi; immutable (int, str, tuple) o'zgartirilsa yangi ob'ekt yaratiladi, asl o'zgarmaydi",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26371,7 +26371,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-6-7",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dasturlash asoslari",
+    "topic": "DTM va Milliy standart: Dasturlash asoslari",
     "question": "Python da quyidagi kod natijasi nima?a = [1, 2, 3]b = ab.append(4)print(a)",
     "options": {
       "A": "[4]",
@@ -26380,7 +26380,7 @@ window.QUESTIONS_DB = [
       "D": "[1, 2, 3]"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: [1, 2, 3, 4]",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: [1, 2, 3, 4]",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26388,7 +26388,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-6-8",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dasturlash asoslari",
+    "topic": "DTM va Milliy standart: Dasturlash asoslari",
     "question": "Python da quyidagi kod natijasi nima?print(type(3.14))",
     "options": {
       "A": "<class 'double'>",
@@ -26397,7 +26397,7 @@ window.QUESTIONS_DB = [
       "D": "<class 'float'>"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: <class 'float'>",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: <class 'float'>",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26405,7 +26405,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-6-9",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dasturlash asoslari",
+    "topic": "DTM va Milliy standart: Dasturlash asoslari",
     "question": "Python da ikki o'lchamli massiv (2D array) elementiga qanday murojaat qilinadi?",
     "options": {
       "A": "arr[i][j]",
@@ -26414,7 +26414,7 @@ window.QUESTIONS_DB = [
       "D": "arr[i, j]"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: arr[i][j]",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: arr[i][j]",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26422,7 +26422,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-6-10",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dasturlash asoslari",
+    "topic": "DTM va Milliy standart: Dasturlash asoslari",
     "question": "Kommentariya (comment) nima uchun ishlatiladi?",
     "options": {
       "A": "Dasturni to'xtatish uchun",
@@ -26431,7 +26431,7 @@ window.QUESTIONS_DB = [
       "D": "Kodga izoh qo'shish uchun — kompilyator/interpretator uni e'tiborsiz qoldiradi"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: Kodga izoh qo'shish uchun — kompilyator/interpretator uni e'tiborsiz qoldiradi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: Kodga izoh qo'shish uchun — kompilyator/interpretator uni e'tiborsiz qoldiradi",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26439,7 +26439,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-6-11",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dasturlash asoslari",
+    "topic": "DTM va Milliy standart: Dasturlash asoslari",
     "question": "Python da quyidagi kod natijasi nima?matrix = [[i*j for j in range(1,4)] for i in range(1,4)]print(matrix[1][2])",
     "options": {
       "A": "4",
@@ -26448,7 +26448,7 @@ window.QUESTIONS_DB = [
       "D": "3"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: 6",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: 6",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26456,7 +26456,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-6-12",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dasturlash asoslari",
+    "topic": "DTM va Milliy standart: Dasturlash asoslari",
     "question": "Python da quyidagi kod chiqishini aniqlang:def gen(): yield 1 yield 2 yield 3g = gen()print(next(g))print(next(g))",
     "options": {
       "A": "3 va 3",
@@ -26465,7 +26465,7 @@ window.QUESTIONS_DB = [
       "D": "1 va 2"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: 1 va 2",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: 1 va 2",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26473,7 +26473,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-6-13",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dasturlash asoslari",
+    "topic": "DTM va Milliy standart: Dasturlash asoslari",
     "question": "Quyidagi Python kodida nima xato?for i in range(10):print(i)",
     "options": {
       "A": "for o'rniga while ishlatish kerak",
@@ -26482,7 +26482,7 @@ window.QUESTIONS_DB = [
       "D": "print ichida i yozilmasligi kerak"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: print(i) bloki if uchun indent (ichkirilish) qilinmagan",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: print(i) bloki if uchun indent (ichkirilish) qilinmagan",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26490,7 +26490,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-6-14",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dasturlash asoslari",
+    "topic": "DTM va Milliy standart: Dasturlash asoslari",
     "question": "Python da quyidagi kod nima chiqaradi?s = \"Informatika\"print(s[0:4])",
     "options": {
       "A": "Inform",
@@ -26499,7 +26499,7 @@ window.QUESTIONS_DB = [
       "D": "nfor"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: Info",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: Info",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26507,7 +26507,7 @@ window.QUESTIONS_DB = [
     "id": "tm-inf-6-15",
     "subject": "Informatika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dasturlash asoslari",
+    "topic": "DTM va Milliy standart: Dasturlash asoslari",
     "question": "Python da quyidagi kod natijasi nima?def son(a, b, c=10): return a + b + cprint(son(1, 2))",
     "options": {
       "A": "12",
@@ -26515,8 +26515,8 @@ window.QUESTIONS_DB = [
       "C": "Xato",
       "D": "13"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: 13",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dasturlash asoslari. To'g'ri javob: To'g'ri javob: 13",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26524,7 +26524,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-5-1",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "Sklorenxima va kollenxima qaysi xususiyat bilan o‘xshash?",
     "options": {
       "A": "hujayra qobig‘ini tuzilishi bilan",
@@ -26533,7 +26533,7 @@ window.QUESTIONS_DB = [
       "D": "o‘likva tirikxujayralarda umumiy xususiyat bo‘lmaydi"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: hujayra qobig‘ini tuzilishi bilan",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: hujayra qobig‘ini tuzilishi bilan",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26541,7 +26541,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-5-2",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "Glikogen sintezi (glikogenogenez) va parchalanishi (glikogenoliz) qaysi organoidda amalga oshadi va bu jarayon qaysi gormonlar tomonidan boshqariladi?",
     "options": {
       "A": "Yadroda; tiroksin va paratgormon",
@@ -26550,7 +26550,7 @@ window.QUESTIONS_DB = [
       "D": "Mitoxondriyada; kortizol va aldosteron"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Sitozolda; sintezni insulin (glyukoza ko'p bo'lganda), parchalanishni glyukagon va adrenalin stimullashtiradi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Sitozolda; sintezni insulin (glyukoza ko'p bo'lganda), parchalanishni glyukagon va adrenalin stimullashtiradi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26558,7 +26558,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-5-3",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "Hujayra massasining taxminan qancha qismi suvdan iborat?",
     "options": {
       "A": "10–20%",
@@ -26567,7 +26567,7 @@ window.QUESTIONS_DB = [
       "D": "40–50%"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: 70–80%",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: 70–80%",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26575,7 +26575,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-5-4",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "Interfaza nima va qanday davrlarga bo'linadi?",
     "options": {
       "A": "Hujayra o'limi oldingi davr",
@@ -26584,7 +26584,7 @@ window.QUESTIONS_DB = [
       "D": "Faqat DNK sintezi bosqichi"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Bo'linmalar orasidagi davr: G1 (o'sish), S (DNK sintezi), G2 (bo'linishga tayyorgarlik)",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Bo'linmalar orasidagi davr: G1 (o'sish), S (DNK sintezi), G2 (bo'linishga tayyorgarlik)",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26592,7 +26592,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-5-5",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "Qaysi organoid hujayrani «energiya stantsiyasi» deb ataladi?",
     "options": {
       "A": "Lizosoma",
@@ -26601,7 +26601,7 @@ window.QUESTIONS_DB = [
       "D": "Golji apparati"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Mitoxondriya",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Mitoxondriya",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26609,7 +26609,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-5-6",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "Sakkizoyoqning bosh miyasi qanday hosil bo’lgan",
     "options": {
       "A": "qorin nerv tuguni birlashib",
@@ -26618,7 +26618,7 @@ window.QUESTIONS_DB = [
       "D": "nerv tugunlari birlashib"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: nerv tugunidan hosil bo’lgan gangliylar birlashib",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: nerv tugunidan hosil bo’lgan gangliylar birlashib",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26626,7 +26626,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-5-7",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "Odam eritrotsitlarining asosiy vazifasi nima?",
     "options": {
       "A": "Gormon ishlab chiqarish",
@@ -26635,7 +26635,7 @@ window.QUESTIONS_DB = [
       "D": "Kislorod va karbonat angidridni tashish"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Kislorod va karbonat angidridni tashish",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Kislorod va karbonat angidridni tashish",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26643,7 +26643,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-5-8",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "O'simlik va hayvon hujayralarida sitokinez qanday farq qiladi?",
     "options": {
       "A": "Hayvon hujayrasida cell plate hosil bo'ladi",
@@ -26652,7 +26652,7 @@ window.QUESTIONS_DB = [
       "D": "Ikkalasida ham bir xil bo'ladi"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Hayvon hujayrasida aktin-miozin halqasi (cleavage furrow) bo'g'ib ikki ga ajratadi; o'simlik hujayrasida Golji vezikullari ekvatorial tekislikda yig'ilib hujayra plakasini (cell plate) hosil qiladi — keyin sellyuloza devor quriladi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Hayvon hujayrasida aktin-miozin halqasi (cleavage furrow) bo'g'ib ikki ga ajratadi; o'simlik hujayrasida Golji vezikullari ekvatorial tekislikda yig'ilib hujayra plakasini (cell plate) hosil qiladi — keyin sellyuloza devor quriladi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26660,7 +26660,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-5-9",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "Markaziy nerv tizimi (MNT) qanday tuzilmalardan iborat?",
     "options": {
       "A": "Bosh miya, orqa miya va periferik nervlar",
@@ -26669,7 +26669,7 @@ window.QUESTIONS_DB = [
       "D": "Faqat bosh miya"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Bosh miya va orqa miya",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Bosh miya va orqa miya",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26677,7 +26677,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-5-10",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "MASALA: 2n=6 organizmda mitoz bo'lgandan so'ng qiz hujayralarning umumiy DNK miqdori boshlang'ich hujayraga nisbatan qanday?",
     "options": {
       "A": "Har bir qiz hujayrada boshlang'ich hujayra bilan bir xil (ikkisi birgalikda 2 barobar)",
@@ -26686,7 +26686,7 @@ window.QUESTIONS_DB = [
       "D": "Har bir qiz hujayrada yarmiga kamaygan"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Har bir qiz hujayrada boshlang'ich hujayra bilan bir xil (ikkisi birgalikda 2 barobar)",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Har bir qiz hujayrada boshlang'ich hujayra bilan bir xil (ikkisi birgalikda 2 barobar)",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26694,7 +26694,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-5-11",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "Hujayra nazariyasining asosiy postulatlaridan biri qaysi?",
     "options": {
       "A": "Faqat o'simliklar hujayradan iborat",
@@ -26703,7 +26703,7 @@ window.QUESTIONS_DB = [
       "D": "Hujayra — tirik organizmlarning asosiy tuzilish va funksional birligi"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Hujayra — tirik organizmlarning asosiy tuzilish va funksional birligi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Hujayra — tirik organizmlarning asosiy tuzilish va funksional birligi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26711,7 +26711,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-5-12",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "Fagotsitoz va pinositoz o'rtasidagi farq nima?",
     "options": {
       "A": "Fagotsitoz faqat bakteriyalar uchun; pinositoz faqat viruslar uchun",
@@ -26720,7 +26720,7 @@ window.QUESTIONS_DB = [
       "D": "Ikkalasi ham bir xil — endositozning turlari"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Fagotsitoz — katta qattiq zarralar (<1mkm) yutilishi; pinositoz — suyuqlik tomchilarini yutish",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Fagotsitoz — katta qattiq zarralar (<1mkm) yutilishi; pinositoz — suyuqlik tomchilarini yutish",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26728,7 +26728,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-5-13",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "Oqsil sintezi qaysi organoidda amalga oshadi?",
     "options": {
       "A": "Mitoxondriya",
@@ -26737,7 +26737,7 @@ window.QUESTIONS_DB = [
       "D": "Vakuol"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Ribosoma",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Ribosoma",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26745,7 +26745,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-5-14",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "Piyoz hujayrasiga xos bo‘lmagan xususiyat",
     "options": {
       "A": "membranasida teshiklar bor",
@@ -26754,7 +26754,7 @@ window.QUESTIONS_DB = [
       "D": "yadrositoplazmatik membranaga tortilib turadi"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: hujayra shakli silindirsimon",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: hujayra shakli silindirsimon",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26762,7 +26762,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-5-15",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "MASALA: Agar bitta hujayra har 24 soatda bir marta bo'linsa, 30 kundan so'ng nechta hujayra hosil bo'ladi (logarifm ko'rinishida)?",
     "options": {
       "A": "$2^{30} \\approx 1,07 \\times 10^9$ ta",
@@ -26771,7 +26771,7 @@ window.QUESTIONS_DB = [
       "D": "$2^{30} \\approx 10^9$ ta"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: $2^{30} \\approx 1,07 \\times 10^9$ ta",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: $2^{30} \\approx 1,07 \\times 10^9$ ta",
     "session": 5,
     "difficulty": "medium"
   },
@@ -26779,7 +26779,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-6-1",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "Hujayra yadrosini birinchi marta kim kashf etgan?",
     "options": {
       "A": "Robert Hooke",
@@ -26788,7 +26788,7 @@ window.QUESTIONS_DB = [
       "D": "Theodor Schwann"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Robert Brown",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Robert Brown",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26796,7 +26796,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-6-2",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "UPR (unfolded protein response — noto'g'ri katlanmagan oqsil javobi) qaysi organoidda boshlanadi va qanday sensorlar ishtirok etadi?",
     "options": {
       "A": "Donador EPT da; IRE1, PERK, ATF6 — uch sensor noto'g'ri katlanmagan oqsillar to'planishini sezadi va oqsil sintezini kamaytiradi, shaperonlarni ko'paytiradi",
@@ -26805,7 +26805,7 @@ window.QUESTIONS_DB = [
       "D": "Yadroda; p53 sensori"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Donador EPT da; IRE1, PERK, ATF6 — uch sensor noto'g'ri katlanmagan oqsillar to'planishini sezadi va oqsil sintezini kamaytiradi, shaperonlarni ko'paytiradi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Donador EPT da; IRE1, PERK, ATF6 — uch sensor noto'g'ri katlanmagan oqsillar to'planishini sezadi va oqsil sintezini kamaytiradi, shaperonlarni ko'paytiradi",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26813,7 +26813,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-6-3",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "Mitozda bo'linish dugi (spindle) qaysi organoiddan hosil bo'ladi?",
     "options": {
       "A": "Ribosomadan",
@@ -26822,7 +26822,7 @@ window.QUESTIONS_DB = [
       "D": "Sentrosoma (sentriolalar) dan chiquvchi mikrotubulalardan"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Sentrosoma (sentriolalar) dan chiquvchi mikrotubulalardan",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Sentrosoma (sentriolalar) dan chiquvchi mikrotubulalardan",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26830,7 +26830,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-6-4",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "Metafazada nima sodir bo'ladi?",
     "options": {
       "A": "Xromosomalar kondensatsiyalanadi",
@@ -26839,7 +26839,7 @@ window.QUESTIONS_DB = [
       "D": "Yadro pardasi tiklanadi"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Xromosomalar hujayra ekvatorial tekisligiga (metafaza plastinkasi) tiziladi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: Xromosomalar hujayra ekvatorial tekisligiga (metafaza plastinkasi) tiziladi",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26847,7 +26847,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-6-5",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Hujayra biologiyasi va sitologiya",
+    "topic": "DTM va Milliy standart: Hujayra biologiyasi va sitologiya",
     "question": "MASALA: Donador EPT da har daqiqada 1000 ta oqsil sintezlanadi. Ularning 60% lizosomaga, 30% ekzositozga, 10% membranaga yo'naltiriladi. Bir soatda lizosomaga nechta oqsil yetib boradi?",
     "options": {
       "A": "6000 ta",
@@ -26856,7 +26856,7 @@ window.QUESTIONS_DB = [
       "D": "60 000 ta"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: 36 000 ta",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Hujayra biologiyasi va sitologiya. To'g'ri javob: To'g'ri javob: 36 000 ta",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26864,7 +26864,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-6-6",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "topic": "DTM va Milliy standart: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
     "question": "Miyelin qobig'ining vazifasi nima?",
     "options": {
       "A": "Impulsni tezlashtirish va aksonni izolyatsiya qilish",
@@ -26873,7 +26873,7 @@ window.QUESTIONS_DB = [
       "D": "Neytotransmitter saqlash"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: Impulsni tezlashtirish va aksonni izolyatsiya qilish",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: Impulsni tezlashtirish va aksonni izolyatsiya qilish",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26881,7 +26881,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-6-7",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "topic": "DTM va Milliy standart: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
     "question": "Insulin qaysi a'zoda ishlab chiqariladi?",
     "options": {
       "A": "Qalqonsimon bez",
@@ -26890,7 +26890,7 @@ window.QUESTIONS_DB = [
       "D": "Buyrak"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: Oshqozon osti bezi (pankreas) — beta hujayralar",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: Oshqozon osti bezi (pankreas) — beta hujayralar",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26898,7 +26898,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-6-8",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "topic": "DTM va Milliy standart: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
     "question": "RNK tarkibidagi azotli asoslar qaysilar?",
     "options": {
       "A": "Guanin, Timin, Urasil, Adenin",
@@ -26907,7 +26907,7 @@ window.QUESTIONS_DB = [
       "D": "Adenin, Guanin, Sitozin, Timin"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: Adenin, Guanin, Sitozin, Urasil",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: Adenin, Guanin, Sitozin, Urasil",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26915,7 +26915,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-6-9",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "topic": "DTM va Milliy standart: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
     "question": "Gipofiz (asosiy bez) qayerda joylashgan?",
     "options": {
       "A": "Bosh miyaning ensa qismida",
@@ -26924,7 +26924,7 @@ window.QUESTIONS_DB = [
       "D": "Bosh miya asosida, Türk egari (sella turcica) da"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: Bosh miya asosida, Türk egari (sella turcica) da",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: Bosh miya asosida, Türk egari (sella turcica) da",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26932,7 +26932,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-6-10",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "topic": "DTM va Milliy standart: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
     "question": "Eukariot ribosomaning subbirliklari qaysilar?",
     "options": {
       "A": "50S va 70S",
@@ -26941,7 +26941,7 @@ window.QUESTIONS_DB = [
       "D": "30S va 50S"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: 40S va 60S",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: 40S va 60S",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26949,7 +26949,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-6-11",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "topic": "DTM va Milliy standart: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
     "question": "Plazmid membranasi va organoid membranalari o'rtasidagi vesikulyar transport (COPII, COPI, klatrin) qanday ishlaydi?",
     "options": {
       "A": "Barcha transportlar bir xil COPII oqsili orqali amalga oshadi",
@@ -26958,7 +26958,7 @@ window.QUESTIONS_DB = [
       "D": "COPI faqat tashqi membranadan ichkariga"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: COPII — EPT dan Goljiga anterograd transport; COPI — Golji ichida retrograd va Golji→EPT; Klatrin — Golji→lizosoma va endositoz. Har bir qopqoq sistemi o'z kargo tanish oqsillariga (SNARE, Rab GTPaza) ega",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: COPII — EPT dan Goljiga anterograd transport; COPI — Golji ichida retrograd va Golji→EPT; Klatrin — Golji→lizosoma va endositoz. Har bir qopqoq sistemi o'z kargo tanish oqsillariga (SNARE, Rab GTPaza) ega",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26966,7 +26966,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-6-12",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "topic": "DTM va Milliy standart: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
     "question": "Aminokislotaning umumiy tuzilishida qaysi guruhlar majburiy ravishda mavjud?",
     "options": {
       "A": "Fosfat guruhi va qand",
@@ -26975,7 +26975,7 @@ window.QUESTIONS_DB = [
       "D": "Amin guruhi (-NH$_2$), karboksil guruhi (-COOH), vodorod atomi va R-yon zanjir — barchasi bir alfa-uglerodga bog'liq"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: Amin guruhi (-NH$_2$), karboksil guruhi (-COOH), vodorod atomi va R-yon zanjir — barchasi bir alfa-uglerodga bog'liq",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: Amin guruhi (-NH$_2$), karboksil guruhi (-COOH), vodorod atomi va R-yon zanjir — barchasi bir alfa-uglerodga bog'liq",
     "session": 6,
     "difficulty": "medium"
   },
@@ -26983,7 +26983,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-6-13",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "topic": "DTM va Milliy standart: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
     "question": "DNK ning to'liq nomi nima?",
     "options": {
       "A": "Dezoksiribo nukleoprotein kislota",
@@ -26992,7 +26992,7 @@ window.QUESTIONS_DB = [
       "D": "Diribonuklein kislota"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: Dezoksiribonuklein kislota",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: Dezoksiribonuklein kislota",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27000,7 +27000,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-6-14",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "topic": "DTM va Milliy standart: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
     "question": "Sitrullintsikling yoki urea sikli qanday ishlaydi va qayerda sodir bo'ladi?",
     "options": {
       "A": "Urea sikli yog' oksidlanishi bilan bir xil",
@@ -27009,7 +27009,7 @@ window.QUESTIONS_DB = [
       "D": "Glyukoza sintezi uchun; faqat sitozolda"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: Urea sikli — aminokislotalar katabolizmidan hosil bo'lgan toksik NH₃ ni zararssiz ureaga aylantiradi; asosan jigarda, qisman ichakda. Reaksiyalar: mitoxondriya (karbamoilfosfat sintezi, sitrullin) + sitozol (argininosuksinat, arginin, urea); jigar kasalligi → giperammoniyemiya → ensefalopatiya",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: Urea sikli — aminokislotalar katabolizmidan hosil bo'lgan toksik NH₃ ni zararssiz ureaga aylantiradi; asosan jigarda, qisman ichakda. Reaksiyalar: mitoxondriya (karbamoilfosfat sintezi, sitrullin) + sitozol (argininosuksinat, arginin, urea); jigar kasalligi → giperammoniyemiya → ensefalopatiya",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27017,7 +27017,7 @@ window.QUESTIONS_DB = [
     "id": "tm-bio-6-15",
     "subject": "Biologiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+    "topic": "DTM va Milliy standart: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
     "question": "Suvning yorug'lik ta'sirida parchalanish jarayoni qanday ataladi va u qaysi fotosistemada ro'y beradi?",
     "options": {
       "A": "Fotoliz, PS II",
@@ -27026,7 +27026,7 @@ window.QUESTIONS_DB = [
       "D": "Karboksillanish, PS II"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: Fotoliz, PS II",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Molekulyar biologiya (oqsil, DNK, RNK, fermentlar). To'g'ri javob: To'g'ri javob: Fotoliz, PS II",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27034,7 +27034,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-5-1",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "Balandligi 75 m boʻlgan qoyadan tosh 10 m/s tezlik bilan rasmda koʻrsatilgandek yuqoriga otildi. Jism qancha vaqtdan soʻng (s) dengizga tushadi? (g = 10 m/s², havo qarshiligi hisobga olinmasin)",
     "options": {
       "A": "5",
@@ -27043,7 +27043,7 @@ window.QUESTIONS_DB = [
       "D": "6"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 5",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 5",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27051,7 +27051,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-5-2",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "l=1 m uzunlikdagi ipga osilgan jism muozanat vazyatidan og‘dirib qo‘yib yuborildi. Jism muozanat vazyatidan o‘tayotgan paytda jism kinetik energiyasi necha J ga teng? m=2 kg. g=10 m/s2",
     "options": {
       "A": "10",
@@ -27060,7 +27060,7 @@ window.QUESTIONS_DB = [
       "D": "20"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 20",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 20",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27068,7 +27068,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-5-3",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "Boshlang‘ich tezligi $v_0$ bo‘lgan jism tekis sekinlanuvchan harakatlanib, 6 s dan so‘ng to‘xtadi. Agar uning oxirgi 1 sekunddagi yo‘li 2 m ga teng bo‘lsa, boshlang‘ich tezlik qancha bo‘lgan (m/s)?",
     "options": {
       "A": "48",
@@ -27077,7 +27077,7 @@ window.QUESTIONS_DB = [
       "D": "12"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 24",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 24",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27085,7 +27085,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-5-4",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "Gorizontga burchak ostida otilgan jismning to‘la uchish vaqti 3 s ga teng bo‘lsa, bu jism maksimal qanday balandlikka (m) ko‘tariladi?",
     "options": {
       "A": "10",
@@ -27094,7 +27094,7 @@ window.QUESTIONS_DB = [
       "D": "11,25"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 11,25",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 11,25",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27102,7 +27102,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-5-5",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "Bir jism ikkinchi jismga ishqalansa nima hosil bo‘ladi?",
     "options": {
       "A": "Yorug‘lik",
@@ -27111,7 +27111,7 @@ window.QUESTIONS_DB = [
       "D": "Tovush"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: Elektr zaryadi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: Elektr zaryadi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27119,7 +27119,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-5-6",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "Tekis sekinlanuvchan harakat qilayotganjismning tezligi 3 m yo‘lda 2 marta kamaydi. Jism to‘liq to‘xtaguncha yana qancha yo‘l (m) bosib o‘tishi kerak?",
     "options": {
       "A": "1,5",
@@ -27128,7 +27128,7 @@ window.QUESTIONS_DB = [
       "D": "6"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 1",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 1",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27136,7 +27136,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-5-7",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "0,5 m/s2 tezlanish bilan harakatlanib, jism o‘z tezligini 60 m yo‘lda 4 marta oshirdi. Jismning boshlang‘ich tezligini toping (m/s).",
     "options": {
       "A": "5.",
@@ -27145,7 +27145,7 @@ window.QUESTIONS_DB = [
       "D": "3."
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 2.",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 2.",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27153,7 +27153,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-5-8",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "Chiziqli tezligi 10 m/s bo‘lgan jism 5 m radiusli aylana bo‘ylab tekis harakatlanmoqda. Davrning 1/3 qismida jism tezligi o‘zgarishining modulini toping? (m/s)",
     "options": {
       "A": "14,1",
@@ -27162,7 +27162,7 @@ window.QUESTIONS_DB = [
       "D": "20"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 17,3",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 17,3",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27170,7 +27170,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-5-9",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "Ikki jism bir-biriga nisbatan 60° burchak ostida 10m/s va 20 m/s tezliklar bilan harakatlanmoqda. 1- jismning 2- jismga nisbatan tezligi qanday (m/s)?",
     "options": {
       "A": "19",
@@ -27179,7 +27179,7 @@ window.QUESTIONS_DB = [
       "D": "12,4"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 17,3",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 17,3",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27187,7 +27187,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-5-10",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "Jism qanday tezlik bilan vertikal otilsa, u 6 s dan so‘ng otilgan joyiga qaytib tushadi (m/s)?",
     "options": {
       "A": "30",
@@ -27196,7 +27196,7 @@ window.QUESTIONS_DB = [
       "D": "35"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 30",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 30",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27204,7 +27204,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-5-11",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "Ancha balandda joylashgan bir nuqtadan, bir vaqtda birinchi jism gorizontal yo‘nalishda 6 m/s tezlik bilan, ikkinchisi vertikal yo‘nalishda 8m/s tezlik bilan otildi. Bu jismlar orasidagi masofa 2 s dan so‘ng nimaga teng bo‘ladi (m)?",
     "options": {
       "A": "20",
@@ -27213,7 +27213,7 @@ window.QUESTIONS_DB = [
       "D": "30"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 20",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 20",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27221,7 +27221,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-5-12",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "Jism balandligi 3 m va uzunligi 5 m bo‘lgan qiya tekislikdan sirpanib tushadi. Ishqalanish koeffitsiyenti 0.5. Jismning tezlanishini toping (m/s2). g=10 m/s2.",
     "options": {
       "A": "0,5",
@@ -27230,7 +27230,7 @@ window.QUESTIONS_DB = [
       "D": "2"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 2",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 2",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27238,7 +27238,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-5-13",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "Jism radiusi R=3 m bo‘lgan aylana bo‘ylab T=4 s davr bilan aylanmoqda. Harakat boshlangandan t=3 s vaqt o‘tgach jismning ko‘chishdagi o‘rtacha tezligini aniqlang (m/s) ?",
     "options": {
       "A": "1,41",
@@ -27247,7 +27247,7 @@ window.QUESTIONS_DB = [
       "D": "2,82"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 1,41",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 1,41",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27255,7 +27255,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-5-14",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "Harakat qilayotgan jismning ixtiyoriy ikki nuqtasidan o‘tkazilgan har qanday chiziq o‘ziga parallel ravishda ko‘chmoqda. Ushbu jismning harakati qaysi harakat turiga mansub?",
     "options": {
       "A": "Tebranma",
@@ -27264,7 +27264,7 @@ window.QUESTIONS_DB = [
       "D": "Aylanma"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: Ilgarilanma",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: Ilgarilanma",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27272,7 +27272,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-5-15",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "Grafikda yuqoriga tik otilgan jism tezligining vaqtga bog‘liqlik grafigi berilgan. Jismning 4 s paytdagi yo‘lining, ko‘chishiga nisbati topilsin. Havoning qarshiligini hisobga olmang.g=10 m/s2.",
     "options": {
       "A": "1,5",
@@ -27281,7 +27281,7 @@ window.QUESTIONS_DB = [
       "D": "2,1"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 2,1",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 2,1",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27289,7 +27289,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-6-1",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "10 m/s tezlik bilan 5 s harakatlangan jism qancha yo‘l bosadi?",
     "options": {
       "A": "15 m",
@@ -27298,7 +27298,7 @@ window.QUESTIONS_DB = [
       "D": "500 m"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 50 m",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 50 m",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27306,7 +27306,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-6-2",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "Tosh gorizontga burchak ostida $v_0=25$ m/s boshlang'ich tezlik bilan otildi. Otilgandan $1{,}2$ s o'tgach uning tezligi $17$ m/s ga teng bo'ldi. Tosh otilgan sathdan qanday maksimal balandlikka ko'tariladi? $g=10$ m/s² deb oling, havo qarshiligini hisobga olmang.",
     "options": {
       "A": "$11{,}25$ m",
@@ -27315,7 +27315,7 @@ window.QUESTIONS_DB = [
       "D": "$31{,}25$ m"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: $20$ m",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: $20$ m",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27323,7 +27323,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-6-3",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "H balandlikdan tik yuqoriga 10 m/s tezlik bilan sharcha otildi. Agar sharcha 3 sekunddan so‘ng yerga tushgan bo‘lsa, H necha metr? ( g=10 m/s²)",
     "options": {
       "A": "12",
@@ -27332,7 +27332,7 @@ window.QUESTIONS_DB = [
       "D": "23"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 15",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: 15",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27340,7 +27340,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-6-4",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kinematika (harakat, tezlik, tezlanish)",
+    "topic": "DTM va Milliy standart: Kinematika (harakat, tezlik, tezlanish)",
     "question": "Aylana bo‘ylab tekis harakatlanayotgan jismning burchak tezligi π marta kamayib, aylana radiusi 10 marta ortsa, jismning markazga intilma tezlanishi qanday o‘zgaradi? π2=10.",
     "options": {
       "A": "o‘zgarmaydi",
@@ -27349,7 +27349,7 @@ window.QUESTIONS_DB = [
       "D": "4 marta ortadi"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: o‘zgarmaydi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kinematika (harakat, tezlik, tezlanish). To'g'ri javob: To'g'ri javob: o‘zgarmaydi",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27357,7 +27357,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-6-5",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dinamika (Nyuton qonunlari, kuchlar)",
+    "topic": "DTM va Milliy standart: Dinamika (Nyuton qonunlari, kuchlar)",
     "question": "Lift yuqoriga 1,5 m/s2 tezlanish bilan tekis tezlanuvchan harakatlanmoqda. Undagi 60 kg massali odamning og‘irligini toping .(N) g =10m/s2",
     "options": {
       "A": "500",
@@ -27366,7 +27366,7 @@ window.QUESTIONS_DB = [
       "D": "320"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: 690",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: 690",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27374,7 +27374,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-6-6",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dinamika (Nyuton qonunlari, kuchlar)",
+    "topic": "DTM va Milliy standart: Dinamika (Nyuton qonunlari, kuchlar)",
     "question": "Inertsiya qonuni kim tomonidan ta’riflangan?",
     "options": {
       "A": "Galiley va Nyuton",
@@ -27383,7 +27383,7 @@ window.QUESTIONS_DB = [
       "D": "Tesla"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: Galiley va Nyuton",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: Galiley va Nyuton",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27391,7 +27391,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-6-7",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dinamika (Nyuton qonunlari, kuchlar)",
+    "topic": "DTM va Milliy standart: Dinamika (Nyuton qonunlari, kuchlar)",
     "question": "Vaznsiz blokning ikki tarafiga o‘zaro ip bilan bog‘langan 100 g va 300 g massali yuklar osilgan. Ipdagi taranglik kuchini (N) toping. ($g=10\\ \\text{m/s}^2$)",
     "options": {
       "A": "1,5",
@@ -27400,7 +27400,7 @@ window.QUESTIONS_DB = [
       "D": "1"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: 1,5",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: 1,5",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27408,7 +27408,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-6-8",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dinamika (Nyuton qonunlari, kuchlar)",
+    "topic": "DTM va Milliy standart: Dinamika (Nyuton qonunlari, kuchlar)",
     "question": "Marhabo Yerda ko‘pi bilan 5 kg massali yukni qo‘lida ushlab tura oladi. U Oyda ko‘pi bilan qanday massali (kg) yukni ko‘tara oladi? (Oyda erkin tushish tezlanishi Yerdagidan 6 marta kichik.)",
     "options": {
       "A": "25",
@@ -27417,7 +27417,7 @@ window.QUESTIONS_DB = [
       "D": "5"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: 30",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: 30",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27425,7 +27425,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-6-9",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dinamika (Nyuton qonunlari, kuchlar)",
+    "topic": "DTM va Milliy standart: Dinamika (Nyuton qonunlari, kuchlar)",
     "question": "Reaktiv dvigateldan har sekundda 12 kg gaz 3200 m/s tezlik bilan chiqmoqda. Dvigatelning tortish kuchi (kN) qanday?",
     "options": {
       "A": "38,4",
@@ -27434,7 +27434,7 @@ window.QUESTIONS_DB = [
       "D": "40,8"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: 38,4",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: 38,4",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27442,7 +27442,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-6-10",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dinamika (Nyuton qonunlari, kuchlar)",
+    "topic": "DTM va Milliy standart: Dinamika (Nyuton qonunlari, kuchlar)",
     "question": "Ipga osilgan massasi 3 kg bo‘lgan sharcha ip osilgan nuqta balandligigacha (ip tarang, gorizontal holatda) ko‘tarilib, tinch holatdan qo‘yib yuborildi. Sharcha trayektoriyaning eng quyi L nuqtasidan o‘tayotganda ipning taranglik kuchini toping (N). (g = 10 m/s²)",
     "options": {
       "A": "90",
@@ -27451,7 +27451,7 @@ window.QUESTIONS_DB = [
       "D": "50"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: 90",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: 90",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27459,7 +27459,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-6-11",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dinamika (Nyuton qonunlari, kuchlar)",
+    "topic": "DTM va Milliy standart: Dinamika (Nyuton qonunlari, kuchlar)",
     "question": "Ikkita o‘tkazgichni tarmoqqa ketma ket ulangandagi tok kuchi xuddi shu o‘tkazgichlarni parallel ulangandagi tok kuchidan 6,25 marta kam bo‘ladi. O‘tkazgichlarni qarshiliklari necha marta farq qiladi?",
     "options": {
       "A": "2",
@@ -27468,7 +27468,7 @@ window.QUESTIONS_DB = [
       "D": "4"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: 4",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: 4",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27476,7 +27476,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-6-12",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dinamika (Nyuton qonunlari, kuchlar)",
+    "topic": "DTM va Milliy standart: Dinamika (Nyuton qonunlari, kuchlar)",
     "question": "m massali jismga ta’sir etuvchi natijaviy kuch F bo‘lsa, uning tezlanishi qanday?",
     "options": {
       "A": "F/m",
@@ -27485,7 +27485,7 @@ window.QUESTIONS_DB = [
       "D": "g +F=m"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: F/m",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: F/m",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27493,7 +27493,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-6-13",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dinamika (Nyuton qonunlari, kuchlar)",
+    "topic": "DTM va Milliy standart: Dinamika (Nyuton qonunlari, kuchlar)",
     "question": "Dinamometr nimani o‘lchaydi?",
     "options": {
       "A": "Tezlikni",
@@ -27502,7 +27502,7 @@ window.QUESTIONS_DB = [
       "D": "Massani"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: Kuchni",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: Kuchni",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27510,7 +27510,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-6-14",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dinamika (Nyuton qonunlari, kuchlar)",
+    "topic": "DTM va Milliy standart: Dinamika (Nyuton qonunlari, kuchlar)",
     "question": "Qavariq ko‘prikning yuqori nuqtasidan doimiy tezlik bilan o‘tayotgan 1 t massali mashinaning og‘irligi 8 kN ga teng. Unga ta’sir qilayotgan natijaviy kuch (kN) qanday? g=10 m/s2.",
     "options": {
       "A": "2",
@@ -27519,7 +27519,7 @@ window.QUESTIONS_DB = [
       "D": "10"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: 2",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: 2",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27527,7 +27527,7 @@ window.QUESTIONS_DB = [
     "id": "tm-fiz-6-15",
     "subject": "Fizika",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Dinamika (Nyuton qonunlari, kuchlar)",
+    "topic": "DTM va Milliy standart: Dinamika (Nyuton qonunlari, kuchlar)",
     "question": "Parashutchi ochilgan parashutda doimiy tezlik bilan tushmoqda. Parashutchi vaznsizlik holatidami?",
     "options": {
       "A": "yo‘q",
@@ -27536,7 +27536,7 @@ window.QUESTIONS_DB = [
       "D": "t.j.y"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: yo‘q",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Dinamika (Nyuton qonunlari, kuchlar). To'g'ri javob: To'g'ri javob: yo‘q",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27544,7 +27544,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-5-1",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "Og'ir suv D₂¹⁶O (D — deyteriy, ²H) molekulasida jami nechta neytron bor?",
     "options": {
       "A": "8",
@@ -27553,7 +27553,7 @@ window.QUESTIONS_DB = [
       "D": "12"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 10",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 10",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27561,7 +27561,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-5-2",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "Quyidagi elementlardan qaysi biri III davrda joylashgan?",
     "options": {
       "A": "Ftor",
@@ -27570,7 +27570,7 @@ window.QUESTIONS_DB = [
       "D": "Natriy"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: Natriy",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: Natriy",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27578,7 +27578,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-5-3",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "Cl³⁺ kationidagi toq elektronlar soni P³⁺ kationidagi toq elektronlar sonidan nechtaga ko'p (qo'zg'algan holat hisobga olinmasin)?",
     "options": {
       "A": "1",
@@ -27587,7 +27587,7 @@ window.QUESTIONS_DB = [
       "D": "0"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 2",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 2",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27595,7 +27595,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-5-4",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "Ikkita elementning nisbiy atom massasi 2 ga farq qilsa, shu elementlarni ko‘rsating.",
     "options": {
       "A": "P, Si",
@@ -27604,7 +27604,7 @@ window.QUESTIONS_DB = [
       "D": "Cu, Zn"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: Bi, Pb",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: Bi, Pb",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27612,7 +27612,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-5-5",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "protonlar soni; 2) neytronlar soni; 3) elektronlar soni; 4) yadro zaryadlari; 5) atomlarning massasi",
     "options": {
       "A": "1, 3, 4",
@@ -27621,7 +27621,7 @@ window.QUESTIONS_DB = [
       "D": "1, 3, 5"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 1, 3, 5",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 1, 3, 5",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27629,7 +27629,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-5-6",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "X³⁻, Y, Z⁴⁺ va T²⁻ atom va ionlari o'zaro izoelektron bo'lib, ular tarkibidagi protonlar yig'indisi 71 ga teng bo'lsa, Y atomining tashqi qavat elektron konfiguratsiyasini ko'rsating.",
     "options": {
       "A": "3s23p5",
@@ -27638,7 +27638,7 @@ window.QUESTIONS_DB = [
       "D": "3s23p3"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 3s23p6",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 3s23p6",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27646,7 +27646,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-5-7",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "³²P³⁻ ioni uchun quyidagi xususiyatlardan qaysi biri noto'g'ri?",
     "options": {
       "A": "nuklon soni 32",
@@ -27655,7 +27655,7 @@ window.QUESTIONS_DB = [
       "D": "yadro zaryadi +15"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: elektron soni 12 ta",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: elektron soni 12 ta",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27663,7 +27663,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-5-8",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "Quydagi jadvaldan foydalanib X+2 ionidagi elektronlar sonini hisoblang.Ion N(p) N(n) Ar(X)X+2 a a+6 64",
     "options": {
       "A": "27",
@@ -27672,7 +27672,7 @@ window.QUESTIONS_DB = [
       "D": "30"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 27",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 27",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27680,7 +27680,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-5-9",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "Quyidagi ionlardan qaysi birida elektronlar soni Al³⁺ ionidagi elektronlar soniga teng?",
     "options": {
       "A": "Ca²⁺",
@@ -27689,7 +27689,7 @@ window.QUESTIONS_DB = [
       "D": "Cl⁻"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: Na⁺",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: Na⁺",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27697,7 +27697,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-5-10",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "Yadrosida 17 ta proton va 18 ta neytron bo'lgan izotopning massa soni qancha?",
     "options": {
       "A": "18",
@@ -27706,7 +27706,7 @@ window.QUESTIONS_DB = [
       "D": "34"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 35",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 35",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27714,7 +27714,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-5-11",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "QUOTE → QUOTE + xα + p + 2n yadro reaksiyasida A+B=405 bo‘lsa B ning qiymatini aniqlang.",
     "options": {
       "A": "190",
@@ -27723,7 +27723,7 @@ window.QUESTIONS_DB = [
       "D": "200"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 200",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 200",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27731,7 +27731,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-5-12",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "Neytronlar soni bir xil bo‘lgan elementlarni aniqlang.",
     "options": {
       "A": "79Se, 128Te",
@@ -27740,7 +27740,7 @@ window.QUESTIONS_DB = [
       "D": "75As, 79Se"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 32S, 31P",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 32S, 31P",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27748,7 +27748,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-5-13",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "Temirning kimyoviy belgisi qaysi?",
     "options": {
       "A": "Ir",
@@ -27756,8 +27756,8 @@ window.QUESTIONS_DB = [
       "C": "F",
       "D": "Fe"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: Fe",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: Fe",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27765,7 +27765,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-5-14",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "Izotopning massa soni 32, protonlar soni 16 bo'lsa, neytronlar soni qancha?",
     "options": {
       "A": "48",
@@ -27774,7 +27774,7 @@ window.QUESTIONS_DB = [
       "D": "14"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 16",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 16",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27782,7 +27782,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-5-15",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "Quyidagi jadvaldan foydalanib X atomining nisbiy atom massasini toping.Ion N(e) N(p) Ar(n)X2+ 24 a a + 4",
     "options": {
       "A": "55",
@@ -27791,7 +27791,7 @@ window.QUESTIONS_DB = [
       "D": "54"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 56",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 56",
     "session": 5,
     "difficulty": "medium"
   },
@@ -27799,7 +27799,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-6-1",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "4–pog‘onaning 27–elektroni uchun barcha kvant sonlari yig‘indisini aniqlang.",
     "options": {
       "A": "7,5",
@@ -27808,7 +27808,7 @@ window.QUESTIONS_DB = [
       "D": "6,5"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 5,5",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 5,5",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27816,7 +27816,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-6-2",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "Quyidagi jadvaldan foydalanib X2+ ionidagi elektronlar sonini hisoblang.Ion N(p) N(n) Ar(X)X2+ a a + 6 64",
     "options": {
       "A": "27",
@@ -27825,7 +27825,7 @@ window.QUESTIONS_DB = [
       "D": "26"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 26",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 26",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27833,7 +27833,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-6-3",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "Elektron konfiguratsiyasi ...3s² 3p¹ bo'lgan atom kimyoviy reaksiyalarda odatda qanday faollik namoyon qiladi?",
     "options": {
       "A": "3 ta elektron ajratib chiqaradi",
@@ -27842,7 +27842,7 @@ window.QUESTIONS_DB = [
       "D": "2 ta elektron qabul qiladi"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 3 ta elektron ajratib chiqaradi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: 3 ta elektron ajratib chiqaradi",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27850,7 +27850,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-6-4",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Atom tuzilishi va davriy qonun",
+    "topic": "DTM va Milliy standart: Atom tuzilishi va davriy qonun",
     "question": "X²⁺ ionidagi elektronlar soni Ni atomidagi elektronlar soniga teng bo'lsa, X elementni aniqlang.",
     "options": {
       "A": "Mn",
@@ -27859,7 +27859,7 @@ window.QUESTIONS_DB = [
       "D": "Cr"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: Zn",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Atom tuzilishi va davriy qonun. To'g'ri javob: To'g'ri javob: Zn",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27867,7 +27867,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-6-5",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kimyoviy bog'lanish va molekula tuzilishi",
+    "topic": "DTM va Milliy standart: Kimyoviy bog'lanish va molekula tuzilishi",
     "question": "Qum (1) va quruq muz (2) ning kristall panjaralarini aniqlang.a) atom; b) molekular.",
     "options": {
       "A": "1–a; 2–b",
@@ -27876,7 +27876,7 @@ window.QUESTIONS_DB = [
       "D": "1–b; 2–a"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: 1–a; 2–b",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: 1–a; 2–b",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27884,7 +27884,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-6-6",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kimyoviy bog'lanish va molekula tuzilishi",
+    "topic": "DTM va Milliy standart: Kimyoviy bog'lanish va molekula tuzilishi",
     "question": "Tarkibida umumiy bog‘lar soni 10 ga teng bo‘lgan birikmani aniqlang.",
     "options": {
       "A": "(Al(OH)2)3PO4",
@@ -27893,7 +27893,7 @@ window.QUESTIONS_DB = [
       "D": "AlOHSO4"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: (Al(OH)2)2SO4",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: (Al(OH)2)2SO4",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27901,7 +27901,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-6-7",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kimyoviy bog'lanish va molekula tuzilishi",
+    "topic": "DTM va Milliy standart: Kimyoviy bog'lanish va molekula tuzilishi",
     "question": "Jami bog‘lar soni 24 ta bo‘lib, σ- va π-bog‘lar soni ayirmasi 18 ga teng bo‘lgan modda formulasini ko‘rsating.",
     "options": {
       "A": "Al(H2PO4)3",
@@ -27910,7 +27910,7 @@ window.QUESTIONS_DB = [
       "D": "Al(HSO4)3"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: Al(HSO4)3",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: Al(HSO4)3",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27918,7 +27918,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-6-8",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kimyoviy bog'lanish va molekula tuzilishi",
+    "topic": "DTM va Milliy standart: Kimyoviy bog'lanish va molekula tuzilishi",
     "question": "Ammiak molekulasi tarkibidagi gibrid orbitallarda nechta elektron harakatlanadi?",
     "options": {
       "A": "4",
@@ -27927,7 +27927,7 @@ window.QUESTIONS_DB = [
       "D": "5"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: 5",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: 5",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27935,7 +27935,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-6-9",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kimyoviy bog'lanish va molekula tuzilishi",
+    "topic": "DTM va Milliy standart: Kimyoviy bog'lanish va molekula tuzilishi",
     "question": "qutubli kovalent; 2) qutubsiz kovalent; 3) ion; 4) vodorod; 5) donor akseptor.",
     "options": {
       "A": "1,5",
@@ -27944,7 +27944,7 @@ window.QUESTIONS_DB = [
       "D": "3"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: 2,5",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: 2,5",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27952,7 +27952,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-6-10",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kimyoviy bog'lanish va molekula tuzilishi",
+    "topic": "DTM va Milliy standart: Kimyoviy bog'lanish va molekula tuzilishi",
     "question": "Quyidagi berilgan birikmalarda bog‘ning qutbliligi qanday o‘zgaradi?a) ortadi; b) kamaydi",
     "options": {
       "A": "1-a; 2-b; 3-a",
@@ -27961,7 +27961,7 @@ window.QUESTIONS_DB = [
       "D": "1-b; 2-b; 3-b"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: 1-b; 2-a; 3-b",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: 1-b; 2-a; 3-b",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27969,7 +27969,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-6-11",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kimyoviy bog'lanish va molekula tuzilishi",
+    "topic": "DTM va Milliy standart: Kimyoviy bog'lanish va molekula tuzilishi",
     "question": "Quyidagi qatordagi moddalarda bog‘ uzunligi qanday o‘zagaradi:a) SO2, SeO2, TeO2; b) CBr4. CCl4, CF4: c) C2H6, C2H4, C2H2",
     "options": {
       "A": "a-ortadi; b-kamayadi; c-kamayadi",
@@ -27978,7 +27978,7 @@ window.QUESTIONS_DB = [
       "D": "a-ortadi; b-ortadi; c- ortadi"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: a-ortadi; b-kamayadi; c-kamayadi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: a-ortadi; b-kamayadi; c-kamayadi",
     "session": 6,
     "difficulty": "medium"
   },
@@ -27986,7 +27986,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-6-12",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kimyoviy bog'lanish va molekula tuzilishi",
+    "topic": "DTM va Milliy standart: Kimyoviy bog'lanish va molekula tuzilishi",
     "question": "Metanga nisbatan metanolning qaynash temperaturasi ancha yuqori bo'lishining asosiy sababi nima?",
     "options": {
       "A": "C–O bog'i C–H bog'iga nisbatan zaif",
@@ -27995,7 +27995,7 @@ window.QUESTIONS_DB = [
       "D": "metanoldagi –OH guruhi molekulalar orasida vodorod bog' hosil qiladi"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: metanoldagi –OH guruhi molekulalar orasida vodorod bog' hosil qiladi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: metanoldagi –OH guruhi molekulalar orasida vodorod bog' hosil qiladi",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28003,7 +28003,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-6-13",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kimyoviy bog'lanish va molekula tuzilishi",
+    "topic": "DTM va Milliy standart: Kimyoviy bog'lanish va molekula tuzilishi",
     "question": "Molekulasida 19 ta σ va 1 ta π bog‘ bo‘lgan moddani tanlang.",
     "options": {
       "A": "alyuminiy gidrofosfat.",
@@ -28012,7 +28012,7 @@ window.QUESTIONS_DB = [
       "D": "alyuminiy digidrofosfat."
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: alyuminiy gidroksoortofosfat.",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: alyuminiy gidroksoortofosfat.",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28020,7 +28020,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-6-14",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kimyoviy bog'lanish va molekula tuzilishi",
+    "topic": "DTM va Milliy standart: Kimyoviy bog'lanish va molekula tuzilishi",
     "question": "H–E birikmalarda E o'rnida F, Cl, Br, I qatori bo'ylab (F dan I ga) bog' uzunligi va bog' energiyasi qanday o'zgaradi?",
     "options": {
       "A": "ortadi, ortadi",
@@ -28029,7 +28029,7 @@ window.QUESTIONS_DB = [
       "D": "kamayadi, kamayadi"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: ortadi, kamayadi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: ortadi, kamayadi",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28037,7 +28037,7 @@ window.QUESTIONS_DB = [
     "id": "tm-kim-6-15",
     "subject": "Kimyo",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Kimyoviy bog'lanish va molekula tuzilishi",
+    "topic": "DTM va Milliy standart: Kimyoviy bog'lanish va molekula tuzilishi",
     "question": "molekulasidagi uglerod atomlari faqat sp3 gibridlangan.",
     "options": {
       "A": "3, 4, 5, 6, 7",
@@ -28046,7 +28046,7 @@ window.QUESTIONS_DB = [
       "D": "1, 2, 3, 4, 5"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: 1, 2, 4, 6, 7",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Kimyoviy bog'lanish va molekula tuzilishi. To'g'ri javob: To'g'ri javob: 1, 2, 4, 6, 7",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28054,7 +28054,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-5-1",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Yer o'z o'qi atrofida bir to'liq aylanishni qancha vaqtda amalga oshiradi?",
     "options": {
       "A": "24 soat",
@@ -28063,7 +28063,7 @@ window.QUESTIONS_DB = [
       "D": "365 soat"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: 24 soat",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: 24 soat",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28071,7 +28071,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-5-2",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Geografiya so'zi qaysi tildan olingan?",
     "options": {
       "A": "Lotin",
@@ -28079,8 +28079,8 @@ window.QUESTIONS_DB = [
       "C": "Yunon",
       "D": "Fransuz"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Yunon",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Yunon",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28088,7 +28088,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-5-3",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Yerning tashqi yadrosi asosan qanday moddadan iborat?",
     "options": {
       "A": "Qattiq temir",
@@ -28096,8 +28096,8 @@ window.QUESTIONS_DB = [
       "C": "Granit va bazalt",
       "D": "Suyuq temir va nikel"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Suyuq temir va nikel",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Suyuq temir va nikel",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28105,7 +28105,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-5-4",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Yerning ichki (endogen) energiyasi asosan nimadan hosil bo'ladi?",
     "options": {
       "A": "Atmosfera bosimidan",
@@ -28113,8 +28113,8 @@ window.QUESTIONS_DB = [
       "C": "Radioaktiv yemirilish va qoldiq issiqlikdan",
       "D": "Quyosh nurlanishidan"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Radioaktiv yemirilish va qoldiq issiqlikdan",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Radioaktiv yemirilish va qoldiq issiqlikdan",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28122,7 +28122,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-5-5",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Yer qaysi sayyoralar guruhiga kiradi va bu guruhga yana qaysi sayyoralar mansub?",
     "options": {
       "A": "Yerga o'xshash: Merkuriy, Venera, Mars",
@@ -28131,7 +28131,7 @@ window.QUESTIONS_DB = [
       "D": "Muz gigantlari: Uran, Neptun"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Yerga o'xshash: Merkuriy, Venera, Mars",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Yerga o'xshash: Merkuriy, Venera, Mars",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28139,7 +28139,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-5-6",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Yerning ichki tuzilishida kimyoviy tarkibi bo'yicha ajratiladigan eng yupqa va eng tashqi qatlam qaysi?",
     "options": {
       "A": "Litosfera",
@@ -28148,7 +28148,7 @@ window.QUESTIONS_DB = [
       "D": "Mantiya"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Yer po'sti",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Yer po'sti",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28156,7 +28156,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-5-7",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Qaysi fasl shimoliy yarim sharda dekabr-fevral oylarida kuzatiladi?",
     "options": {
       "A": "Qish",
@@ -28165,7 +28165,7 @@ window.QUESTIONS_DB = [
       "D": "Kuz"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Qish",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Qish",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28173,7 +28173,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-5-8",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Yer orbitasining Quyoshga eng yaqin nuqtasi (perigeliy) qaysi oyda o'tadi?",
     "options": {
       "A": "Oktyabr",
@@ -28182,7 +28182,7 @@ window.QUESTIONS_DB = [
       "D": "Aprel"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Yanvar",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Yanvar",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28190,7 +28190,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-5-9",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Geografiya fanining asoschisi kim hisoblanadi?",
     "options": {
       "A": "Ptolemey",
@@ -28198,8 +28198,8 @@ window.QUESTIONS_DB = [
       "C": "Eratosfen",
       "D": "Pifagor"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Eratosfen",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Eratosfen",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28207,7 +28207,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-5-10",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Materik (kontinental) tipidagi Yer po'stining o'rtacha qalinligi qancha?",
     "options": {
       "A": "5-10 km",
@@ -28215,8 +28215,8 @@ window.QUESTIONS_DB = [
       "C": "300-500 km",
       "D": "35-40 km"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: 35-40 km",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: 35-40 km",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28224,7 +28224,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-5-11",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Quyidagilardan qaysi biri geografik qobiqning xususiyati bo‘la olmaydi?",
     "options": {
       "A": "Geografik qobiqda organik hayotning, jumladan, insoniyat jamiyatining mavjudligi",
@@ -28232,8 +28232,8 @@ window.QUESTIONS_DB = [
       "C": "Modda va energiya almashinish jarayonining bo‘lib turishi",
       "D": "Geografik qobiq tarkibiy qismlarining bir-biridan mustaqil bo‘lib, o‘zaro aloqasi bo‘lmasligi"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Geografik qobiq tarkibiy qismlarining bir-biridan mustaqil bo‘lib, o‘zaro aloqasi bo‘lmasligi",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Geografik qobiq tarkibiy qismlarining bir-biridan mustaqil bo‘lib, o‘zaro aloqasi bo‘lmasligi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28241,7 +28241,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-5-12",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Quyosh sistemasida nechta asteroid mavjud?",
     "options": {
       "A": "1 mln",
@@ -28249,8 +28249,8 @@ window.QUESTIONS_DB = [
       "C": "160",
       "D": "4000"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: 40000",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: 40000",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28258,7 +28258,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-5-13",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Yer o‘qi Yerning orbita tekisligiga nisbatan necha gradus burchak ostida qiyalashgan?",
     "options": {
       "A": "23,5°",
@@ -28266,8 +28266,8 @@ window.QUESTIONS_DB = [
       "C": "45°",
       "D": "0°"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: 66,5°",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: 66,5°",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28275,7 +28275,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-5-14",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Mobilizm gipotezasini kim ishlab chiqqan?",
     "options": {
       "A": "Vegener",
@@ -28284,7 +28284,7 @@ window.QUESTIONS_DB = [
       "D": "Dekart"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Vegener",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Vegener",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28292,7 +28292,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-5-15",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Yerning o'z o'qi atrofida aylanishidagi chiziqli tezligi ekvatorda taxminan qancha (R = 6378 km, T = 23 soat 56 minut)?",
     "options": {
       "A": "465 m/s",
@@ -28301,7 +28301,7 @@ window.QUESTIONS_DB = [
       "D": "1000 m/s"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: 465 m/s",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: 465 m/s",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28309,7 +28309,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-6-1",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Yevropa Ittifoqining 'Destination Earth' (DestinE) tashabbusi nimani yaratishni maqsad qilgan?",
     "options": {
       "A": "Kosmosdagi doimiy meteorologik stansiyani",
@@ -28318,7 +28318,7 @@ window.QUESTIONS_DB = [
       "D": "Jahon kadastr ma'lumotlar bazasini"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Yerning raqamli egizagini (yuqori aniqlikdagi iqlim va ekotizim modelini)",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Yerning raqamli egizagini (yuqori aniqlikdagi iqlim va ekotizim modelini)",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28326,7 +28326,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-6-2",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Yerning eng ichki qatlami nima?",
     "options": {
       "A": "Yadro",
@@ -28334,8 +28334,8 @@ window.QUESTIONS_DB = [
       "C": "Astenosfera",
       "D": "Yer po'sti"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Yadro",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Yadro",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28343,7 +28343,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-6-3",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Yerning umumiy massasi taxminan qancha?",
     "options": {
       "A": "6 × 10²⁰ kg",
@@ -28351,8 +28351,8 @@ window.QUESTIONS_DB = [
       "C": "6 × 10²⁴ kg",
       "D": "6 × 10¹⁸ kg"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: 6 × 10²⁴ kg",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: 6 × 10²⁴ kg",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28360,7 +28360,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-6-4",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Geografik qobiq va Yer haqida umumiy ma'lumot",
+    "topic": "DTM va Milliy standart: Geografik qobiq va Yer haqida umumiy ma'lumot",
     "question": "Ichki yadro juda yuqori haroratga qaramay nima uchun qattiq holda qoladi?",
     "options": {
       "A": "Mantiya uni sovutib turadi",
@@ -28368,8 +28368,8 @@ window.QUESTIONS_DB = [
       "C": "Radioaktiv yemirilish uni sovitadi",
       "D": "Juda katta bosim erish haroratini oshiradi"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Juda katta bosim erish haroratini oshiradi",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Geografik qobiq va Yer haqida umumiy ma'lumot. To'g'ri javob: Juda katta bosim erish haroratini oshiradi",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28377,7 +28377,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-6-5",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Litosfera va relyef (tog' jinslari, geomorfologiya)",
+    "topic": "DTM va Milliy standart: Litosfera va relyef (tog' jinslari, geomorfologiya)",
     "question": "Qaysi tektonik jarayon Atlantika okeanini kengaytirib bormoqda?",
     "options": {
       "A": "Transformatsion siljish",
@@ -28385,8 +28385,8 @@ window.QUESTIONS_DB = [
       "C": "Subduksiya",
       "D": "O'rta Atlantika tizmasidagi spreding"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: O'rta Atlantika tizmasidagi spreding",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: O'rta Atlantika tizmasidagi spreding",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28394,7 +28394,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-6-6",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Litosfera va relyef (tog' jinslari, geomorfologiya)",
+    "topic": "DTM va Milliy standart: Litosfera va relyef (tog' jinslari, geomorfologiya)",
     "question": "O'rta okean tizmalari qanday hosil bo'ladi?",
     "options": {
       "A": "Plitalarning to'qnashuvidan",
@@ -28402,8 +28402,8 @@ window.QUESTIONS_DB = [
       "C": "Plitalar uzoqlashganda magma chiqib yangi po'st hosil bo'lishidan",
       "D": "Meteorit tushishidan"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Plitalar uzoqlashganda magma chiqib yangi po'st hosil bo'lishidan",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Plitalar uzoqlashganda magma chiqib yangi po'st hosil bo'lishidan",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28411,7 +28411,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-6-7",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Litosfera va relyef (tog' jinslari, geomorfologiya)",
+    "topic": "DTM va Milliy standart: Litosfera va relyef (tog' jinslari, geomorfologiya)",
     "question": "Gravimagnit qidiruv usuli konlarni topishda qaysi xususiyatga asoslanadi?",
     "options": {
       "A": "Jinslarning zichlik va magnit xususiyati farqi",
@@ -28419,8 +28419,8 @@ window.QUESTIONS_DB = [
       "C": "Atmosfera bosimi o'zgarishi",
       "D": "Konlarning seysmik to'lqinni to'xtatishi"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Jinslarning zichlik va magnit xususiyati farqi",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Jinslarning zichlik va magnit xususiyati farqi",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28428,7 +28428,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-6-8",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Litosfera va relyef (tog' jinslari, geomorfologiya)",
+    "topic": "DTM va Milliy standart: Litosfera va relyef (tog' jinslari, geomorfologiya)",
     "question": "Eroziya va akkumulyatsiya uzoq muddatda muvozanatlashgan, oqim kuchi cho'kindini olib o'tishga sarflanadigan daryo qanday ataladi?",
     "options": {
       "A": "Ko'milgan daryo",
@@ -28436,8 +28436,8 @@ window.QUESTIONS_DB = [
       "C": "Vaqtinchalik daryo",
       "D": "Gradatsiyalangan daryo"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Gradatsiyalangan daryo",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Gradatsiyalangan daryo",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28445,7 +28445,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-6-9",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Litosfera va relyef (tog' jinslari, geomorfologiya)",
+    "topic": "DTM va Milliy standart: Litosfera va relyef (tog' jinslari, geomorfologiya)",
     "question": "Sharqiy Antarktida G'arbiy Antarktidadan geologik tuzilishi bo'yicha qanday farq qiladi?",
     "options": {
       "A": "Sharqiy qism qadimiy qalqon, g'arbiy qism yosh tog'li",
@@ -28453,8 +28453,8 @@ window.QUESTIONS_DB = [
       "C": "G'arbiy qism cho'l, sharqiy qism o'rmon",
       "D": "Sharqiy qism vulqonli, g'arbiy qism cho'kindi"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Sharqiy qism qadimiy qalqon, g'arbiy qism yosh tog'li",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Sharqiy qism qadimiy qalqon, g'arbiy qism yosh tog'li",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28462,7 +28462,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-6-10",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Litosfera va relyef (tog' jinslari, geomorfologiya)",
+    "topic": "DTM va Milliy standart: Litosfera va relyef (tog' jinslari, geomorfologiya)",
     "question": "Muzlik erib, yuk kamaygan hududda (masalan, Skandinaviya) Yer po'sti izostaziya tufayli nima qiladi?",
     "options": {
       "A": "Sekin ko'tariladi",
@@ -28471,7 +28471,7 @@ window.QUESTIONS_DB = [
       "D": "O'zgarmaydi"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Sekin ko'tariladi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Sekin ko'tariladi",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28479,7 +28479,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-6-11",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Litosfera va relyef (tog' jinslari, geomorfologiya)",
+    "topic": "DTM va Milliy standart: Litosfera va relyef (tog' jinslari, geomorfologiya)",
     "question": "Abadiy muzloqning erishi natijasida yer yuzasi cho'kib, ko'l va botiqlar hosil bo'lish jarayoni nima deyiladi?",
     "options": {
       "A": "Karst",
@@ -28488,7 +28488,7 @@ window.QUESTIONS_DB = [
       "D": "Solifluksiya"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Termokarst",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Termokarst",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28496,7 +28496,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-6-12",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Litosfera va relyef (tog' jinslari, geomorfologiya)",
+    "topic": "DTM va Milliy standart: Litosfera va relyef (tog' jinslari, geomorfologiya)",
     "question": "Kraton (qadimgi platforma yadrosi) relyefi odatda qanday bo'ladi?",
     "options": {
       "A": "Yosh va baland tog'li",
@@ -28504,8 +28504,8 @@ window.QUESTIONS_DB = [
       "C": "Vulqon konuslari to'plami",
       "D": "Qadimiy, barqaror, tekis va past"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Qadimiy, barqaror, tekis va past",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Qadimiy, barqaror, tekis va past",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28513,7 +28513,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-6-13",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Litosfera va relyef (tog' jinslari, geomorfologiya)",
+    "topic": "DTM va Milliy standart: Litosfera va relyef (tog' jinslari, geomorfologiya)",
     "question": "Intruziv magma ohaktosh bilan kontaktda bo'lganda kimyoviy almashinuv natijasida hosil bo'ladigan va ko'pincha temir, mis, volfram rudalari bilan bog'liq jins qaysi?",
     "options": {
       "A": "Travertin",
@@ -28521,8 +28521,8 @@ window.QUESTIONS_DB = [
       "C": "Gneys",
       "D": "Skarn"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Skarn",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Skarn",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28530,7 +28530,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-6-14",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Litosfera va relyef (tog' jinslari, geomorfologiya)",
+    "topic": "DTM va Milliy standart: Litosfera va relyef (tog' jinslari, geomorfologiya)",
     "question": "Tog' jinslari kelib chiqishiga ko'ra qanday guruhlarga bo'linadi?",
     "options": {
       "A": "Magmatik, cho'kindi va metamorfik",
@@ -28538,8 +28538,8 @@ window.QUESTIONS_DB = [
       "C": "Qattiq va yumshoq",
       "D": "Eski va yangi"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Magmatik, cho'kindi va metamorfik",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Magmatik, cho'kindi va metamorfik",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28547,7 +28547,7 @@ window.QUESTIONS_DB = [
     "id": "tm-geo-6-15",
     "subject": "Geografiya",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Litosfera va relyef (tog' jinslari, geomorfologiya)",
+    "topic": "DTM va Milliy standart: Litosfera va relyef (tog' jinslari, geomorfologiya)",
     "question": "Avstraliya materigining (orollarsiz) eng baland nuqtasi qaysi?",
     "options": {
       "A": "Makdonnell tizmasi",
@@ -28556,7 +28556,7 @@ window.QUESTIONS_DB = [
       "D": "Blyu-Mauntinz"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Kosyushko tog'i",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Litosfera va relyef (tog' jinslari, geomorfologiya). To'g'ri javob: Kosyushko tog'i",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28564,7 +28564,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-5-1",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "Davan davlati hozirgi qaysi hududda joylashgan edi?",
     "options": {
       "A": "Farg’ona",
@@ -28573,7 +28573,7 @@ window.QUESTIONS_DB = [
       "D": "Baqtriya va So’g’diyona"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Farg’ona",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Farg’ona",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28581,7 +28581,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-5-2",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "O‘rta Osiydan topilgan eng qadimgi temirdan yasalgan buyumlar qaysi asrlarga oid?",
     "options": {
       "A": "miloddan avvalgi XI-X asrlar",
@@ -28590,7 +28590,7 @@ window.QUESTIONS_DB = [
       "D": "miloddan avvalgi IX-VIII asrlar"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: miloddan avvalgi IX-VIII asrlar",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: miloddan avvalgi IX-VIII asrlar",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28598,7 +28598,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-5-3",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "Qadimgi Baqtriya davlati qaysi hududda joylashgan edi?",
     "options": {
       "A": "Farg‘ona vodiysi",
@@ -28607,7 +28607,7 @@ window.QUESTIONS_DB = [
       "D": "Surxondaryo va Afg‘oniston shimoli"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Surxondaryo va Afg‘oniston shimoli",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Surxondaryo va Afg‘oniston shimoli",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28615,7 +28615,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-5-4",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "Quyidagi qaysi mashg’ulot ishlab chiqaruvchi xo’jalikka taalluqli?",
     "options": {
       "A": "ziroatchilik va termachilik",
@@ -28624,7 +28624,7 @@ window.QUESTIONS_DB = [
       "D": "chorvachilik va ovchilik"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: dehqonchilik va chorvachilik",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: dehqonchilik va chorvachilik",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28632,7 +28632,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-5-5",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "O‘zbekiston hududidagi eng qadimgi odam qoldiqlari qayerdan topilgan?",
     "options": {
       "A": "Jarqo‘ton",
@@ -28641,7 +28641,7 @@ window.QUESTIONS_DB = [
       "D": "Sopollitepa"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Teshiktosh g‘ori",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Teshiktosh g‘ori",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28649,7 +28649,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-5-6",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "Neolit davrida hunarmandchilik rivojiga zamin yaratgan omilni aniqlang.",
     "options": {
       "A": "toshga ishlov berishning silliqlash, arralash, sirlash va teshikchalar parmalashni o’rganib olishi.",
@@ -28658,7 +28658,7 @@ window.QUESTIONS_DB = [
       "D": "sopol idishlar yasashni o’rganib olishi."
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: sopol idishlar yasashni o’rganib olishi.",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: sopol idishlar yasashni o’rganib olishi.",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28666,7 +28666,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-5-7",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "Insoniyat tarixida 'Neolit inqilobi' nima?",
     "options": {
       "A": "Metallarning kashf etilishi",
@@ -28675,7 +28675,7 @@ window.QUESTIONS_DB = [
       "D": "O‘zlashtiruvchi xo‘jalikdan ishlab chiqaruvchi xo‘jalikka o‘tish"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: O‘zlashtiruvchi xo‘jalikdan ishlab chiqaruvchi xo‘jalikka o‘tish",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: O‘zlashtiruvchi xo‘jalikdan ishlab chiqaruvchi xo‘jalikka o‘tish",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28683,7 +28683,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-5-8",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "Kushon davlati madaniy yodgorliklarini aniqlang.",
     "options": {
       "A": "Xolchayon, Dalvarzintepa",
@@ -28692,7 +28692,7 @@ window.QUESTIONS_DB = [
       "D": "Zartepa, Qoratepa"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Yuqoridagilarning barchasi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Yuqoridagilarning barchasi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28700,7 +28700,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-5-9",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "To‘g‘ri ma’lumotni toping.",
     "options": {
       "A": "Kushon davlatining ilk hukmdori Kudzula Kadfiz hisoblanadi",
@@ -28709,7 +28709,7 @@ window.QUESTIONS_DB = [
       "D": "Kushon davlatida shaharsozlik boshlanishi mil.avv.VII asrga borib taqaladi"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Kushon davlatining ilk hukmdori Kudzula Kadfiz hisoblanadi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Kushon davlatining ilk hukmdori Kudzula Kadfiz hisoblanadi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28717,7 +28717,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-5-10",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "Insoniyat tarixining boshlang’ich davri bo’lib, barcha mehnat qurollari umumiy bo’lgan va hamma baravar ishlagan davr nima deb ataladi?",
     "options": {
       "A": "matriarxat",
@@ -28726,7 +28726,7 @@ window.QUESTIONS_DB = [
       "D": "eng qadimgi urug’chilik tuzumi"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: ibtidoiy jamoa tuzumi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: ibtidoiy jamoa tuzumi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28734,7 +28734,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-5-11",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "Erkak kishi jamiyat hayotida yetakchi mavqeiga ega bo’lib, qarindoshlik munosabatlari ota tomoniga qarab belgilanadigan davr nomini aniqlang.",
     "options": {
       "A": "harbiy demokratiya",
@@ -28743,7 +28743,7 @@ window.QUESTIONS_DB = [
       "D": "matriarxat"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: patriarxat",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: patriarxat",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28751,7 +28751,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-5-12",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "Hozirgi qiyofadagi odam suyak qoldiqlari dastlab jahonning qaysi hudidan topib o’rganilgan?",
     "options": {
       "A": "Germaniya",
@@ -28760,7 +28760,7 @@ window.QUESTIONS_DB = [
       "D": "Indoneziya"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Afrika",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Afrika",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28768,7 +28768,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-5-13",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "Bir-biriga mos ma’lumotlar berilgan qatorlarni belgilang.№ Davlat Voqea Hukmdor1 Qadimgi Misr Mamlakatdan ahamoniylarni haydab chiqardi Menes2 Somoniylar davlati Devonlar uchun maxsus bino qurdirdi Nuh II",
     "options": {
       "A": "1 Qadimgi Misr Mamlakatdan ahamoniylarni haydab chiqardi Menes",
@@ -28776,7 +28776,7 @@ window.QUESTIONS_DB = [
       "C": "№ Davlat Voqea Hukmdor"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: 1 Qadimgi Misr Mamlakatdan ahamoniylarni haydab chiqardi Menes",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: 1 Qadimgi Misr Mamlakatdan ahamoniylarni haydab chiqardi Menes",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28784,7 +28784,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-5-14",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "Eneolit davrida sodir bo’lgan voqealarni belgilang. 1) xom g’ishtdan ko’p xonali uylar qurila boshladi 2) g’ildirak kashf etildi 3) O’rta Osiyo janubida sug’orma dehqonchilik vujudga keldi 4) idishlarni pishirish uchun kulolchilik xumdonlaridan foydanila boshlandi 5) kulolchilik vujudga keldi 6) sopol idishlar hayvonlar naqshi bilan bezatila boshlandi 7) bronzadan mehnat qurollari yasala boshlandi 8) dehqonchilikdan chorvachilik ajralib chiqdi 9) Qadimgi Sharqda ilk shaharlar vujudga keldi",
     "options": {
       "A": "1, 3, 5, 7, 9",
@@ -28793,7 +28793,7 @@ window.QUESTIONS_DB = [
       "D": "2, 3, 5, 8"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: 1, 3, 4, 6, 9",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: 1, 3, 4, 6, 9",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28801,7 +28801,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-5-15",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "Qang’ davlati aholisini nima deb atashgan?",
     "options": {
       "A": "kankalar",
@@ -28810,7 +28810,7 @@ window.QUESTIONS_DB = [
       "D": "Qang’yuylar"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Qang’yuylar",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Qang’yuylar",
     "session": 5,
     "difficulty": "medium"
   },
@@ -28818,7 +28818,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-6-1",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "Mil avv. VI – IV asrlardagi yirik hunarmandlik maskanlarini aniqlang.",
     "options": {
       "A": "Barcha javoblar to’g’ri.",
@@ -28827,7 +28827,7 @@ window.QUESTIONS_DB = [
       "D": "Uzunqir, Afrosiyob"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Barcha javoblar to’g’ri.",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Barcha javoblar to’g’ri.",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28835,7 +28835,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-6-2",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "Ilk paleolitning dastlabki davrlarida yer yuzida iqlim iliq bo’lgan kezlarda eng qadimgi odamlar manzilgohlari qayerlarda joylashgan edi?",
     "options": {
       "A": "unumdor yerlar va o’rmonlar atrofida",
@@ -28844,7 +28844,7 @@ window.QUESTIONS_DB = [
       "D": "suvli jilg’alar va soylar atrofida"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: suvli jilg’alar va soylar atrofida",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: suvli jilg’alar va soylar atrofida",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28852,7 +28852,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-6-3",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
+    "topic": "DTM va Milliy standart: Ibtidoiy jamiyat va qadimgi O'rta Osiyo",
     "question": "Eski Termiz yodgorliklariga qaysi hududlar kiradi?",
     "options": {
       "A": "Xolchayon, Ayritom",
@@ -28861,7 +28861,7 @@ window.QUESTIONS_DB = [
       "D": "Qoratepa, Fayoztepa"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Qoratepa, Fayoztepa",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Ibtidoiy jamiyat va qadimgi O'rta Osiyo. To'g'ri javob: To'g'ri javob: Qoratepa, Fayoztepa",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28869,7 +28869,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-6-4",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
+    "topic": "DTM va Milliy standart: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
     "question": "Oltin O‘rda xonligi O‘zbekxon davlat o‘z ravnaqi cho‘qqisiga ko‘tarildi4 Usmonli davlati O‘rxon Bursa va uning atroflarini egalladi5 G‘aznaviylar davlati Sobuqtegin Davlatning siyosiy nufuzi ortib, somoniylar tomonidan e’tirof etildi6 Xorazmshohlar davlati Takash Kaspiy dengizidan Sirdaryoning o‘rta oqimigacha bo‘lgan hududda Xorazmshohlar davlatining poydevorini yaratdi",
     "options": {
       "A": "2, 3, 5",
@@ -28878,7 +28878,7 @@ window.QUESTIONS_DB = [
       "D": "1, 4, 6"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: 1, 4, 6",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: 1, 4, 6",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28886,7 +28886,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-6-5",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
+    "topic": "DTM va Milliy standart: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
     "question": "1040-yilda Xorazm davlati qaysi davlatga qaram bo‘lib qoldi",
     "options": {
       "A": "Saljuqiylar davlati",
@@ -28895,7 +28895,7 @@ window.QUESTIONS_DB = [
       "D": "Somoniylar davlati"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Saljuqiylar davlati",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Saljuqiylar davlati",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28903,7 +28903,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-6-6",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
+    "topic": "DTM va Milliy standart: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
     "question": "Qaysi hudud orqali buddaviylik O’rta Osiyo bo’ylab tarqaldi?",
     "options": {
       "A": "Toshkent vohasi orqali",
@@ -28912,7 +28912,7 @@ window.QUESTIONS_DB = [
       "D": "Zarafshon vodiylari orqali"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Zarafshon vodiylari orqali",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Zarafshon vodiylari orqali",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28920,7 +28920,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-6-7",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
+    "topic": "DTM va Milliy standart: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
     "question": "Somoniylar davlatiga qimmatbaho mo‘ynalar, chorva mollari va chorvachilik mahsulotlari keltirilgan hududda qaysi davlatlar manfaati to‘qnashgan? (XVI asr)",
     "options": {
       "A": "Buxoro-Eron",
@@ -28929,7 +28929,7 @@ window.QUESTIONS_DB = [
       "D": "Rossiya-Buyuk Britaniya"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Rossiya-Buxoro",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Rossiya-Buxoro",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28937,7 +28937,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-6-8",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
+    "topic": "DTM va Milliy standart: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
     "question": "To‘maris qaysi qabila malikasi bo‘lgan?",
     "options": {
       "A": "Baqtriyaliklar",
@@ -28946,7 +28946,7 @@ window.QUESTIONS_DB = [
       "D": "Saklar"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Massagetlar",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Massagetlar",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28954,7 +28954,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-6-9",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
+    "topic": "DTM va Milliy standart: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
     "question": "XII asrga oid to‘g‘ri ma’lumotni aniqlang.",
     "options": {
       "A": "Darvozayi Mansur mahallasida madrasa bunyod etildi ;",
@@ -28963,7 +28963,7 @@ window.QUESTIONS_DB = [
       "D": "Nuh I ga qarshi amakasi isyon ko‘tardi ;"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Darvozayi Mansur mahallasida madrasa bunyod etildi ;",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Darvozayi Mansur mahallasida madrasa bunyod etildi ;",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28971,7 +28971,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-6-10",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
+    "topic": "DTM va Milliy standart: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
     "question": "Buyuk ipak yo‘li qaysi asrlarda eng rivojlangan davrini boshdan kechirdi?",
     "options": {
       "A": "XIV-XV asrlar",
@@ -28980,7 +28980,7 @@ window.QUESTIONS_DB = [
       "D": "VII-VIII asrlar"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: IX-XII asrlar",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: IX-XII asrlar",
     "session": 6,
     "difficulty": "medium"
   },
@@ -28988,7 +28988,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-6-11",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
+    "topic": "DTM va Milliy standart: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
     "question": "Saljuqiylar hukmdori Malikshoh; 2) Xorazmshoh Alovuddin Muhammad; 3) xalifa Ma`mun;",
     "options": {
       "A": "Sobuqtegin;",
@@ -28997,7 +28997,7 @@ window.QUESTIONS_DB = [
       "D": "Anushtegin;"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Tohir ibn Husayn",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Tohir ibn Husayn",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29005,7 +29005,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-6-12",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
+    "topic": "DTM va Milliy standart: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
     "question": "Eronda poytaxt Tabrizdan Isfahonga ko‘chirilishi qaysi sulola davrida amalga oshirilgan ?",
     "options": {
       "A": "Safaviylar",
@@ -29014,7 +29014,7 @@ window.QUESTIONS_DB = [
       "D": "Pahlaviylar"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Safaviylar",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Safaviylar",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29022,7 +29022,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-6-13",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
+    "topic": "DTM va Milliy standart: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
     "question": "995-1221-yillarda Xorazmshohlar davlatining poytaxti qaysi shahar edi?",
     "options": {
       "A": "Urganch",
@@ -29031,7 +29031,7 @@ window.QUESTIONS_DB = [
       "D": "Xiva"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Urganch",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Urganch",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29039,7 +29039,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-6-14",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
+    "topic": "DTM va Milliy standart: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
     "question": "Qaysi Xorazmshoh o‘z hukmronligining so‘ngida “Davlat kengashi” ta’sis etadi?",
     "options": {
       "A": "Qutbiddin Muhammad.",
@@ -29048,7 +29048,7 @@ window.QUESTIONS_DB = [
       "D": "Jaloliddin Manguberdi."
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Alovuddin Muhammad.",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Alovuddin Muhammad.",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29056,7 +29056,7 @@ window.QUESTIONS_DB = [
     "id": "tm-tar-6-15",
     "subject": "Tarix",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
+    "topic": "DTM va Milliy standart: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar)",
     "question": "XIII asr boshida Xorazm juda keng maydonni egallagan davlatga aylangan edi. Uning janubi sharqiy chegaralari qaysi hududdan o‘tgan?",
     "options": {
       "A": "Kaspiy dengizi sohillaridan",
@@ -29065,7 +29065,7 @@ window.QUESTIONS_DB = [
       "D": "Dashti Qipchoqdan"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Yettisuvdan",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: O'rta asrlarda O'rta Osiyo (Somoniylar, Qoraxoniylar, Xorazmshohlar). To'g'ri javob: To'g'ri javob: Yettisuvdan",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29073,7 +29073,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-5-1",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Huquqiy atamalar",
+    "topic": "DTM va Milliy standart: Huquqiy atamalar",
     "question": "Quyidagi terminlardan qay biri fransuz tilidan kelib CHIQMAGAN?1) prolongatsiya;2) majoritar;3) suverenitet;4) promulgatsiya;5) parlament; 6) prezident.",
     "options": {
       "A": "2, 4",
@@ -29081,8 +29081,8 @@ window.QUESTIONS_DB = [
       "C": "4, 6",
       "D": "1, 5"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Huquqiy atamalar. To'g'ri javob: 4, 6",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Huquqiy atamalar. To'g'ri javob: 4, 6",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29090,7 +29090,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-5-2",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Huquqiy atamalar",
+    "topic": "DTM va Milliy standart: Huquqiy atamalar",
     "question": "\"Pantomima\" so'zining lug'aviy ma'nosini aniqlang.",
     "options": {
       "A": "so'zsiz xatti-harakat",
@@ -29098,8 +29098,8 @@ window.QUESTIONS_DB = [
       "C": "erkinlik",
       "D": "tenglik"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Huquqiy atamalar. To'g'ri javob: so'zsiz xatti-harakat",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Huquqiy atamalar. To'g'ri javob: so'zsiz xatti-harakat",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29107,7 +29107,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-5-3",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Huquqiy atamalar",
+    "topic": "DTM va Milliy standart: Huquqiy atamalar",
     "question": "Ushbu so'z arabcha so'z bo'lib, turli darajadagi ijro etuvchi hokimiyat organlarining eng keng tarqalgan atalishidir?",
     "options": {
       "A": "Kvorum",
@@ -29115,8 +29115,8 @@ window.QUESTIONS_DB = [
       "C": "Hokimiyat",
       "D": "Proletariat"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Huquqiy atamalar. To'g'ri javob: Ma'muriyat",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Huquqiy atamalar. To'g'ri javob: Ma'muriyat",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29124,7 +29124,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-5-4",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Huquqiy atamalar",
+    "topic": "DTM va Milliy standart: Huquqiy atamalar",
     "question": "Atamalarga mos ta'riflarni belgilang.1 Islohot2 Bitim3 Konferensiya4 Migratsiyaa) o'zaro kelishuvga olib keladigan harakatlar;b) yangilanish, o'zgarish, tuzatish;c) biron-bir masalani hal etish uchun tashkil etiladigan majlis, yig'ilish;d) aholining bir joydan ikkinchi joyga ko'chishi.",
     "options": {
       "A": "1-b, 2-a, 3-c, 4-d",
@@ -29133,7 +29133,7 @@ window.QUESTIONS_DB = [
       "D": "1-c, 2-a, 3-b, 4-d"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Huquqiy atamalar. To'g'ri javob: 1-b, 2-a, 3-c, 4-d",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Huquqiy atamalar. To'g'ri javob: 1-b, 2-a, 3-c, 4-d",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29141,7 +29141,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-5-5",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Huquqiy atamalar",
+    "topic": "DTM va Milliy standart: Huquqiy atamalar",
     "question": "Ushbu so'z lotincha so'z bo'lib, \"takrorlayman\" degan ma'noni anglatadi?",
     "options": {
       "A": "Prolongatsiya",
@@ -29149,8 +29149,8 @@ window.QUESTIONS_DB = [
       "C": "Dublikat",
       "D": "Sessiya"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Huquqiy atamalar. To'g'ri javob: Replika",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Huquqiy atamalar. To'g'ri javob: Replika",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29158,7 +29158,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-5-6",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Huquqiy atamalar",
+    "topic": "DTM va Milliy standart: Huquqiy atamalar",
     "question": "Lotin tilida \"rozilik, birdamlik\" ma'nosini bildiruvchi huquqiy atamani aniqlang.",
     "options": {
       "A": "konsensus",
@@ -29167,7 +29167,7 @@ window.QUESTIONS_DB = [
       "D": "konvensiya"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Huquqiy atamalar. To'g'ri javob: konsensus",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Huquqiy atamalar. To'g'ri javob: konsensus",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29175,7 +29175,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-5-7",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Huquqiy atamalar",
+    "topic": "DTM va Milliy standart: Huquqiy atamalar",
     "question": "Quyidagilardan qay biri lotin tilidan olingan EMAS?",
     "options": {
       "A": "Konvensiya",
@@ -29183,8 +29183,8 @@ window.QUESTIONS_DB = [
       "C": "Oferta",
       "D": "Suverenitet"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Huquqiy atamalar. To'g'ri javob: Suverenitet",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Huquqiy atamalar. To'g'ri javob: Suverenitet",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29192,7 +29192,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-5-8",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Huquqiy atamalar",
+    "topic": "DTM va Milliy standart: Huquqiy atamalar",
     "question": "Ovoz berishni o'tkazmasdan umumiy rozilik asosida qaror yoki shartnoma matnini qabul qilish usuli bu…",
     "options": {
       "A": "Akseptlash",
@@ -29200,8 +29200,8 @@ window.QUESTIONS_DB = [
       "C": "Konsensus",
       "D": "Referendum"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Huquqiy atamalar. To'g'ri javob: Konsensus",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Huquqiy atamalar. To'g'ri javob: Konsensus",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29209,7 +29209,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-5-9",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Huquqiy atamalar",
+    "topic": "DTM va Milliy standart: Huquqiy atamalar",
     "question": "Ushbu so'z fransuzcha so'z bo'lib, \"uzaytirish\" degan ma'noni anglatadi?",
     "options": {
       "A": "Promulgatsiya",
@@ -29217,8 +29217,8 @@ window.QUESTIONS_DB = [
       "C": "Kvorum",
       "D": "Prolongatsiya"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Huquqiy atamalar. To'g'ri javob: Prolongatsiya",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Huquqiy atamalar. To'g'ri javob: Prolongatsiya",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29226,7 +29226,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-5-10",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Huquqiy atamalar",
+    "topic": "DTM va Milliy standart: Huquqiy atamalar",
     "question": "….. ingliz tilidan olingan bo'lib, \"g'azna\" degan ma'noni anglatadi?",
     "options": {
       "A": "bank",
@@ -29235,7 +29235,7 @@ window.QUESTIONS_DB = [
       "D": "budjet"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Huquqiy atamalar. To'g'ri javob: budjet",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Huquqiy atamalar. To'g'ri javob: budjet",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29243,7 +29243,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-5-11",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Huquqiy atamalar",
+    "topic": "DTM va Milliy standart: Huquqiy atamalar",
     "question": "Quyidagi atamalar qatoridan lotin tilidan olinmaganini aniqlang.",
     "options": {
       "A": "Federatsiya, deputat, armiya",
@@ -29252,7 +29252,7 @@ window.QUESTIONS_DB = [
       "D": "Prezident, Agressiya, Appellatsiya"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Huquqiy atamalar. To'g'ri javob: Impichment, Budjet, Boykot",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Huquqiy atamalar. To'g'ri javob: Impichment, Budjet, Boykot",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29260,7 +29260,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-5-12",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Huquqiy atamalar",
+    "topic": "DTM va Milliy standart: Huquqiy atamalar",
     "question": "Quyidagilardan \"Konsensus\" atamasiga mos bo'lgan ta'rifni aniqlang.",
     "options": {
       "A": "Jinoiy ishga doir isbot-dalillarni olishga yo'naltirilgan tergov harakatlari",
@@ -29268,8 +29268,8 @@ window.QUESTIONS_DB = [
       "C": "Hali kuchga kirmagan sud qarori yoki hukm ustidan yuqori sudga shikoyat qilish",
       "D": "Xorijiy shaxsni uning arizasiga ko'ra fuqarolikka qabul qilish"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Huquqiy atamalar. To'g'ri javob: Ovoz berishni o'tkazmasdan umumiy rozilik asosida qaror yoki shartnoma matnini qabul qilish usuli",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Huquqiy atamalar. To'g'ri javob: Ovoz berishni o'tkazmasdan umumiy rozilik asosida qaror yoki shartnoma matnini qabul qilish usuli",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29277,7 +29277,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-5-13",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Huquqiy atamalar",
+    "topic": "DTM va Milliy standart: Huquqiy atamalar",
     "question": "Quyidagilar orasidan fashistik tartibotga tegishli BO'LMAGAN javobni belgilang.1) biror-bir irqning hukmronligi;2) yagona partiyaning hukmronligi;3) o'zgacha fikrlovchilarga qarshi kurash;4) boshqa hududlarni bosib olishga harakat qilish;5) muqobil nomzod bo'lmagan saylov tizimi.",
     "options": {
       "A": "2,3,5",
@@ -29285,8 +29285,8 @@ window.QUESTIONS_DB = [
       "C": "1,2,3",
       "D": "1,3,4"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Huquqiy atamalar. To'g'ri javob: 2,3,5",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Huquqiy atamalar. To'g'ri javob: 2,3,5",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29294,7 +29294,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-5-14",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Huquqiy atamalar",
+    "topic": "DTM va Milliy standart: Huquqiy atamalar",
     "question": "Jadvalni to'g'ri moslashtiring!1. Konferensiya2. Korrupsiya3. Xususiy mulk4. Suvereniteta) bu mulkni o'zlashtirishning xususiy usuliga asoslangan shakli;b) davlatning boshqa davlatlardan ichki va tashqi siyosatda mustaqilligi;c) shaxsning o'z mansab yoki xizmat mavqeyidan shaxsiy manfaatlarini yoxud o'zga shaxslarning manfaatlarini ko'zlab moddiy yoki nomoddiy naf olish maqsadida qonunga xilof ravishda foydalanishi, bunday nafni qonunga xilof ravishda taqdim etishi;d) biron-bir masalani hal etish uchun tashkil etiladigan majlis, yig'ilish.",
     "options": {
       "A": "1-d; 2- c; 3-a; 4-b",
@@ -29303,7 +29303,7 @@ window.QUESTIONS_DB = [
       "D": "1-a; 2- d; 3-c; 4-b"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Huquqiy atamalar. To'g'ri javob: 1-d; 2- c; 3-a; 4-b",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Huquqiy atamalar. To'g'ri javob: 1-d; 2- c; 3-a; 4-b",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29311,7 +29311,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-5-15",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Huquqiy atamalar",
+    "topic": "DTM va Milliy standart: Huquqiy atamalar",
     "question": "Quyidagilarning qaysi biri fransuz tilida \"ko'pchilik\" degan ma'noni anglatadi?",
     "options": {
       "A": "majoritar",
@@ -29319,8 +29319,8 @@ window.QUESTIONS_DB = [
       "C": "burch",
       "D": "kvorum"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Huquqiy atamalar. To'g'ri javob: majoritar",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Huquqiy atamalar. To'g'ri javob: majoritar",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29328,7 +29328,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-6-1",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Huquqiy atamalar",
+    "topic": "DTM va Milliy standart: Huquqiy atamalar",
     "question": "Quyidagilar orasidan «ozodlik, ruxsat berish, ixtiyor uchun beriladigan texnik hujjat» kabilarni anglatuvchi terminni aniqlang.",
     "options": {
       "A": "litsenziya",
@@ -29336,8 +29336,8 @@ window.QUESTIONS_DB = [
       "C": "ruxsatnoma",
       "D": "yashash guvohnomasi"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Huquqiy atamalar. To'g'ri javob: litsenziya",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Huquqiy atamalar. To'g'ri javob: litsenziya",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29345,7 +29345,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-6-2",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Huquqiy atamalar",
+    "topic": "DTM va Milliy standart: Huquqiy atamalar",
     "question": "Lotin tilidan tarjima qilinganda qaysi so'z «tobelikdan ozodlikka chiqish, huquqlarda tenglashish» ma'nosini anglatadi?",
     "options": {
       "A": "Emansipatsiyasi",
@@ -29353,8 +29353,8 @@ window.QUESTIONS_DB = [
       "C": "Ekspansiya",
       "D": "Apatrid"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Huquqiy atamalar. To'g'ri javob: Emansipatsiyasi",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Huquqiy atamalar. To'g'ri javob: Emansipatsiyasi",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29362,7 +29362,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-6-3",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Inson huquqlari institutlari",
+    "topic": "DTM va Milliy standart: Inson huquqlari institutlari",
     "question": "Ombudsmanning huquqlari to'g'ri berilgan javobni toping.1)shikoyatlarni ko'rib chiqish;2)ariza beruvchi o'z huquqlari, erkinliklari va qonuniy manfaatlarini himoya qilish uchun foydalanishi mumkin bo'lgan vositalar va yo'llarni ko'rsatish;3)shikoyat arizasini mohiyat yuzasidan hal qilish vakolati bo'lgan tashkilot yoki mansabdor shaxsga berish;4)ariza beruvchini huquq va qonuniy manfaatlariga daxl qiluvchi hujjatlar, qarorlar va boshqa materiallar bilan tanishtirish;5)rad etish sabablarini majburiy tarzda ko'rsatgan holda shikoyatni ko'rib chiqishni rad etish;6)qonunchilikka xilof bo'lmagan boshqacha choralar qo'llash;7)qonun loyihalarining umumxalq muhokamasida erkin ishtirok etish;",
     "options": {
       "A": "1,2,3,4,5,6",
@@ -29370,8 +29370,8 @@ window.QUESTIONS_DB = [
       "C": "2,3,4,5,6,7",
       "D": "1,2,3,4,5,6,7"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Inson huquqlari institutlari. To'g'ri javob: 1,2,3,4,5,6",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Inson huquqlari institutlari. To'g'ri javob: 1,2,3,4,5,6",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29379,7 +29379,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-6-4",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Inson huquqlari institutlari",
+    "topic": "DTM va Milliy standart: Inson huquqlari institutlari",
     "question": "Inson huquqlari sohasidagi normativ-huquqiy hujjatlarni takomillashtirish qaysi davlat tashkilotining asosiy vazifalaridan biri etib belgilangan?",
     "options": {
       "A": "Vazirlar Mahkamasi",
@@ -29388,7 +29388,7 @@ window.QUESTIONS_DB = [
       "D": "Ombudsman"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Inson huquqlari institutlari. To'g'ri javob: Inson huquqlari bo'yicha Milliy markaz",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Inson huquqlari institutlari. To'g'ri javob: Inson huquqlari bo'yicha Milliy markaz",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29396,7 +29396,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-6-5",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Inson huquqlari institutlari",
+    "topic": "DTM va Milliy standart: Inson huquqlari institutlari",
     "question": "Nuqtalar o'rniga mos so'zlarni qo'ying. «Ombudsman vakilining xulosasini olgan tashkilot yoki shaxs uni ko'rib chiqishi va ... ... oshmagan muddatda asoslangan javob jo'natishi lozim».",
     "options": {
       "A": "bir hafta",
@@ -29404,8 +29404,8 @@ window.QUESTIONS_DB = [
       "C": "o'n kun",
       "D": "bir oy"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Inson huquqlari institutlari. To'g'ri javob: bir oy",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Inson huquqlari institutlari. To'g'ri javob: bir oy",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29413,7 +29413,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-6-6",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Inson huquqlari institutlari",
+    "topic": "DTM va Milliy standart: Inson huquqlari institutlari",
     "question": "Ombudsman davlat organlari tomonidan inson huquqlariga rioya etilishi ustidan qanday nazoratni amalga oshiradi?",
     "options": {
       "A": "Oliy Majlis nazorati",
@@ -29421,8 +29421,8 @@ window.QUESTIONS_DB = [
       "C": "qonunchilik nazorati",
       "D": "Inson huquqlari monitoringi"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Inson huquqlari institutlari. To'g'ri javob: parlament nazorati",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Inson huquqlari institutlari. To'g'ri javob: parlament nazorati",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29430,7 +29430,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-6-7",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Inson huquqlari institutlari",
+    "topic": "DTM va Milliy standart: Inson huquqlari institutlari",
     "question": "Quyidagi ma'lumotlarni tahlil qilib, Eyler-Venn diagrammasiga mos keladigan javobni aniqlang.I. OmbudsmanII. Inson huquqlari bo'yicha milliy markazIII. Umumiy xususiyatlara) shikoyat arizasini mohiyat yuzasidan hal qilish vakolati bo'lgan tashkilot yoki mansabdor shaxsga berish; b) O'zbekiston Respublikasida inson huquqlariga rioya etilishi va himoya qilinishi bo'yicha milliy ma'ruzalar tayyorlash; c) inson huquqlari sohasidagi normativ-huquqiy hujjatlarni takomillashtirish, milliy qonunchilik hujjatlariga O'zbekiston Respublikasining inson huquqlariga oid xalqaro shartnomalarini qo'llashni ta'minlash bo'yicha takliflar tayyorlash; d) rad etish sabablarini majburiy tarzda ko'rsatgan holda shikoyatni ko'rib chiqishni rad etish; e) O'zbekiston mustaqil rivojlanish yillarida inson huquqlarini himoya qilish bo'yicha inson huquqlari himoyasi mexanizmini kengaytirishga yo'naltirilgan yangi milliy institutlar; f) 1991-yil tashkil etilgan.",
     "options": {
       "A": "I-b; II-c, a; III-f",
@@ -29438,8 +29438,8 @@ window.QUESTIONS_DB = [
       "C": "I-a, c; II-b, d; III-e",
       "D": "I-b, a; II-d; III-f"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Inson huquqlari institutlari. To'g'ri javob: I-a, d; II-b, c; III-e",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Inson huquqlari institutlari. To'g'ri javob: I-a, d; II-b, c; III-e",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29447,7 +29447,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-6-8",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Inson huquqlari institutlari",
+    "topic": "DTM va Milliy standart: Inson huquqlari institutlari",
     "question": "Inson huquqlari bo'yicha Milliy markaz qanday masalalar bo'yicha milliy ma'ruzalarni tayyorlaydi?",
     "options": {
       "A": "inson huquqlari bo'yicha mintaqalararo ma'ruzalar",
@@ -29455,8 +29455,8 @@ window.QUESTIONS_DB = [
       "C": "kelib tushgan shikoyatlar va ularni bartaraf etish yo'llari",
       "D": "inson huquqlariga rioya etilishi va himoya qilinishi"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Inson huquqlari institutlari. To'g'ri javob: inson huquqlariga rioya etilishi va himoya qilinishi",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Inson huquqlari institutlari. To'g'ri javob: inson huquqlariga rioya etilishi va himoya qilinishi",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29464,7 +29464,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-6-9",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Inson huquqlari institutlari",
+    "topic": "DTM va Milliy standart: Inson huquqlari institutlari",
     "question": "Qaysi davlat mansabdori davlat organlari tomonidan inson huquqlariga rioya etilishi ustidan parlament nazoratini amalga oshiradi?",
     "options": {
       "A": "Qonunchilik palatasi Spikeri",
@@ -29472,8 +29472,8 @@ window.QUESTIONS_DB = [
       "C": "Ombudsman",
       "D": "Bosh Vazir"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Inson huquqlari institutlari. To'g'ri javob: Ombudsman",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Inson huquqlari institutlari. To'g'ri javob: Ombudsman",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29481,7 +29481,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-6-10",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Inson huquqlari institutlari",
+    "topic": "DTM va Milliy standart: Inson huquqlari institutlari",
     "question": "Ma'lumotlarni o'zaro moslashtiring.a-Inson huquqlari bo'yicha Milliy markazning asosiy vazifalari;b-Inson huquqlari bo'yicha Vakillik instituti – Ombudsman1) shikoyat arizasini mohiyat yuzasidan hal qilish vakolati bo'lgan tashkilot yoki mansabdor shaxsga berish;2) inson huquqlari sohasidagi davlat siyosatini samarali amalga oshirishga, ushbu sohada O'zbekiston xalqaro majburiyatlarini bajarish bo'yicha davlat organlari faoliyatiga ko'maklashish;3) ariza beruvchini huquq va qonuniy manfaatlariga daxl qiluvchi hujjatlar, qarorlar va boshqa materiallar bilan tanishtirish;4) inson huquqlari sohasida xalqaro va mintaqaviy tashkilotlar bilan hamkorlik qilish",
     "options": {
       "A": "a-2, 4; b-1, 3",
@@ -29490,7 +29490,7 @@ window.QUESTIONS_DB = [
       "D": "a-2, 3; b-1, 4"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Inson huquqlari institutlari. To'g'ri javob: a-2, 4; b-1, 3",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Inson huquqlari institutlari. To'g'ri javob: a-2, 4; b-1, 3",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29498,7 +29498,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-6-11",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Inson huquqlari institutlari",
+    "topic": "DTM va Milliy standart: Inson huquqlari institutlari",
     "question": "Milliy Markaz inson huquqlarini himoya qilish bo'yicha qaysi subyektga O'zbekiston Respublikasining milliy ma'ruzalarini yuboradi? (Inson huquqlari bo'yicha O'zbekiston Respublikasi Milliy markazi to'g'risidagi nizom, 11-band)",
     "options": {
       "A": "Adliya vazirligi",
@@ -29506,8 +29506,8 @@ window.QUESTIONS_DB = [
       "C": "O'zbekiston Prezidenti",
       "D": "xalqaro tuzilmalar"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Inson huquqlari institutlari. To'g'ri javob: xalqaro tuzilmalar",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Inson huquqlari institutlari. To'g'ri javob: xalqaro tuzilmalar",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29515,7 +29515,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-6-12",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Inson huquqlari institutlari",
+    "topic": "DTM va Milliy standart: Inson huquqlari institutlari",
     "question": "Quyidagi ma'lumotlarning yakuniy xulosasi (to'g'ri/noto'g'ri) keltirilgan javobni aniqlang. (Inson huquqlari bo'yicha O'zbekiston Respublikasi Milliy markazi to'g'risidagi Nizom, 4-bob)I. Milliy markaz bo'lim boshliqlariga tibbiy xizmat ko'rsatish O'zbekiston Respublikasi Sog'liqni saqlash Vazirligi huzuridagi tibbiy muassasalarda amalga oshiriladi.II. Milliy Markaz xodimlari Markaz direktori tomonidan lavozimga tayinlanadi va lavozimdan ozod qilinadi.III. Milliy Markaz direktori tibbiy ta'minot sharoitlari bo'yicha hamda transport ta'minoti sharoitlari bo'yicha vazirga tenglashtiriladi.",
     "options": {
       "A": "I-noto'g'ri; II-to'g'ri; III-noto'g'ri",
@@ -29523,8 +29523,8 @@ window.QUESTIONS_DB = [
       "C": "I-to'g'ri; II-to'g'ri; III-to'g'ri",
       "D": "I-noto'g'ri; II-to'g'ri; III-to'g'ri"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Inson huquqlari institutlari. To'g'ri javob: I-noto'g'ri; II-to'g'ri; III-to'g'ri",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Inson huquqlari institutlari. To'g'ri javob: I-noto'g'ri; II-to'g'ri; III-to'g'ri",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29532,7 +29532,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-6-13",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Inson huquqlari institutlari",
+    "topic": "DTM va Milliy standart: Inson huquqlari institutlari",
     "question": "Nuqtalar o'rniga mos keluvchi ma'lumotlar to'g'ri ko'rsatilgan javobni belgilang.Inson huquqlari bo'yicha O'zbekiston Respublikasi Milliy markazi . . . .1) Oliy Majlis huzurida tashkil qilingan bo'lib, sudlovchi sanaladi; 2) inson huquqlarini himoya qilish va inson huquqlarini ro'yobga chiqarish bo'yicha davlat organlariga, fuqarolik jamiyati institutlariga va boshqa tashkilotlarga amaliy yordam ko'rsatadi; 3) inson huquqlari sohasida xalqaro va mintaqaviy tashkilotlar bilan hamkorlik qiladi; 4) davlat organlari tomonidan inson huquqlariga rioya etilishi ustidan parlament nazoratini amalga oshiradi.",
     "options": {
       "A": "1, 4",
@@ -29541,7 +29541,7 @@ window.QUESTIONS_DB = [
       "D": "2, 3"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Inson huquqlari institutlari. To'g'ri javob: 2, 3",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Inson huquqlari institutlari. To'g'ri javob: 2, 3",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29549,7 +29549,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-6-14",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Inson huquqlari institutlari",
+    "topic": "DTM va Milliy standart: Inson huquqlari institutlari",
     "question": "Nuqtalar o'rniga mos keluvchi ma'lumotlar to'g'ri ko'rsatilgan javobni belgilang.Inson huquqlari bo'yicha O'zbekiston Respublikasi Milliy markazi ... .1) Oliy Majlis huzurida tashkil qilingan bo'lib, sudlovchi sanalmaydi; 2) mamlakatda huquqni himoya qilish faoliyatini tashkil etuvchi davlat tashkiloti hisoblanadi; 3) davlat organlari tomonidan inson huquqlariga rioya etilishi ustidan parlament nazoratini amalga oshiradi; 4) inson huquqlarini himoya qilish bo'yicha xalqaro va mintaqaviy tuzilmalar tavsiyalarini amalga oshirish yuzasidan milliy harakatlar dasturlarini ishlab chiqadi.",
     "options": {
       "A": "2, 3",
@@ -29557,8 +29557,8 @@ window.QUESTIONS_DB = [
       "C": "1, 4",
       "D": "1, 3"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Inson huquqlari institutlari. To'g'ri javob: 2, 4",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Inson huquqlari institutlari. To'g'ri javob: 2, 4",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29566,7 +29566,7 @@ window.QUESTIONS_DB = [
     "id": "tm-huq-6-15",
     "subject": "Huquq",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Inson huquqlari institutlari",
+    "topic": "DTM va Milliy standart: Inson huquqlari institutlari",
     "question": "Mamlakatimizda aholi o'rtasida inson huquqlari sohasida huquqiy targ'ibot ishlarini olib borishga mas'ul davlat organini aniqlang.",
     "options": {
       "A": "Inson huquqlari bo'yicha Milliy markaz",
@@ -29574,8 +29574,8 @@ window.QUESTIONS_DB = [
       "C": "Fuqarolarni o'z-o'zini boshqarish organlari",
       "D": "Adliya vazirligi"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Inson huquqlari institutlari. To'g'ri javob: Inson huquqlari bo'yicha Milliy markaz",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Inson huquqlari institutlari. To'g'ri javob: Inson huquqlari bo'yicha Milliy markaz",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29583,7 +29583,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-5-1",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "Quyidagilardan qaysi biri jarangsiz undosh?",
     "options": {
       "A": "z",
@@ -29591,8 +29591,8 @@ window.QUESTIONS_DB = [
       "C": "p",
       "D": "b"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: p",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: p",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29600,7 +29600,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-5-2",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "O'zbek tilidagi uvular tovushlar (/q/ va /g'/) va ular qanday artikulyatsiya qilinadi?",
     "options": {
       "A": "Burun bo'shlig'i orqali hosil bo'ladi",
@@ -29608,8 +29608,8 @@ window.QUESTIONS_DB = [
       "C": "Til uchi bilan tish orqasida hosil bo'ladi",
       "D": "Til orqa qismining kichik til (uvula) yoki unga yaqin bo'g'iz devori bilan birikishi yordamida hosil bo'ladi; /q/ — uvular portlovchi jarangsiz, /g'/ — uvular sirg'aluvchi jarangli; bu tovushlar o'zbek tilini arab, mo'g'ul ta'sirida o'zlashtirilgan"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Til orqa qismining kichik til (uvula) yoki unga yaqin bo'g'iz devori bilan birikishi yordamida hosil bo'ladi; /q/ — uvular portlovchi jarangsiz, /g'/ — uvular sirg'aluvchi jarangli; bu tovushlar o'zbek tilini arab, mo'g'ul ta'sirida o'zlashtirilgan",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Til orqa qismining kichik til (uvula) yoki unga yaqin bo'g'iz devori bilan birikishi yordamida hosil bo'ladi; /q/ — uvular portlovchi jarangsiz, /g'/ — uvular sirg'aluvchi jarangli; bu tovushlar o'zbek tilini arab, mo'g'ul ta'sirida o'zlashtirilgan",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29617,7 +29617,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-5-3",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "\"Place of articulation\" jihatidan o'zbek tilidagi undoshlarni to'liq tasniflaganda nechta artikulyatsiya o'rni ajratiladi?",
     "options": {
       "A": "10 ta",
@@ -29625,8 +29625,8 @@ window.QUESTIONS_DB = [
       "C": "6-7 ta: labial (lab-lab va lab-tish), dental/alveolar (tish va tish milki), postalveolar, palatal, velar, uvular, glottal — har birida o'zbek tilidagi tovushlar mavjud",
       "D": "4 ta"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: 6-7 ta: labial (lab-lab va lab-tish), dental/alveolar (tish va tish milki), postalveolar, palatal, velar, uvular, glottal — har birida o'zbek tilidagi tovushlar mavjud",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: 6-7 ta: labial (lab-lab va lab-tish), dental/alveolar (tish va tish milki), postalveolar, palatal, velar, uvular, glottal — har birida o'zbek tilidagi tovushlar mavjud",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29634,7 +29634,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-5-4",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "Bo'g'inli qisqartmalarga (murakkab qisqartmalarning bir turi) to'g'ri misol keltirilgan qatorni toping.",
     "options": {
       "A": "Pedinstitut, UzAuto",
@@ -29642,8 +29642,8 @@ window.QUESTIONS_DB = [
       "C": "BMT, TDTU",
       "D": "O'zMU"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Pedinstitut, UzAuto",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Pedinstitut, UzAuto",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29651,7 +29651,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-5-5",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "O'zbek tilida bo'g'in ko'chirishda asosiy qoida qanday?",
     "options": {
       "A": "So'z o'rtasidan istalgan yerdan ajratsa bo'ladi",
@@ -29659,8 +29659,8 @@ window.QUESTIONS_DB = [
       "C": "Faqat ikki harfdan iborat qismlarni ko'chirish mumkin",
       "D": "Bo'g'inlar asosida ko'chiriladi: ikki unli orasidagi undosh keyingi bo'g'inga o'tadi; ikki undosh bo'lsa, biri oldingi, biri keyingi bo'g'inda qoladi; bitta harfli bo'g'in ko'chirilmaydi"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Bo'g'inlar asosida ko'chiriladi: ikki unli orasidagi undosh keyingi bo'g'inga o'tadi; ikki undosh bo'lsa, biri oldingi, biri keyingi bo'g'inda qoladi; bitta harfli bo'g'in ko'chirilmaydi",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Bo'g'inlar asosida ko'chiriladi: ikki unli orasidagi undosh keyingi bo'g'inga o'tadi; ikki undosh bo'lsa, biri oldingi, biri keyingi bo'g'inda qoladi; bitta harfli bo'g'in ko'chirilmaydi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29668,7 +29668,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-5-6",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "Yopiq bo'g'in qanday bo'g'in?",
     "options": {
       "A": "Unli bilan boshlanadigan bo'g'in",
@@ -29676,8 +29676,8 @@ window.QUESTIONS_DB = [
       "C": "Undosh bilan tugaydigan bo'g'in",
       "D": "Unli bilan tugaydigan bo'g'in"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Undosh bilan tugaydigan bo'g'in",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Undosh bilan tugaydigan bo'g'in",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29685,7 +29685,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-5-7",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "Quyidagi so'zda nechta harf va nechta tovush bor: \"yang'i\"?",
     "options": {
       "A": "6 harf, 5 tovush",
@@ -29693,8 +29693,8 @@ window.QUESTIONS_DB = [
       "C": "5 harf, 5 tovush",
       "D": "5 harf, 4 tovush"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: 5 harf, 5 tovush",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: 5 harf, 5 tovush",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29702,7 +29702,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-5-8",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "O'zbek tilida tovush orttirilishi hodisasi bilan yuzaga keladigan morfemik holat qaysi so'zda aks etgan?",
     "options": {
       "A": "Sarg'aydi",
@@ -29710,8 +29710,8 @@ window.QUESTIONS_DB = [
       "C": "Parvoyi",
       "D": "Barmog'i"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Parvoyi",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Parvoyi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29719,7 +29719,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-5-9",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "\"Resyllabification\" (qayta bo'g'inlanish) hodisasi qachon sodir bo'ladi?",
     "options": {
       "A": "Hech qachon sodir bo'lmaydi",
@@ -29728,7 +29728,7 @@ window.QUESTIONS_DB = [
       "D": "So'zlarga qo'shimcha qo'shilganda yoki so'zlar nutq oqimida birlashganda bo'g'in chegaralari o'zgaradi; masalan: \"ket\" + \"-ib\" = ke-tib (so'z ichidagi \"t\" qayta bo'g'inlanib keyingiga o'tadi)"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: So'zlarga qo'shimcha qo'shilganda yoki so'zlar nutq oqimida birlashganda bo'g'in chegaralari o'zgaradi; masalan: \"ket\" + \"-ib\" = ke-tib (so'z ichidagi \"t\" qayta bo'g'inlanib keyingiga o'tadi)",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: So'zlarga qo'shimcha qo'shilganda yoki so'zlar nutq oqimida birlashganda bo'g'in chegaralari o'zgaradi; masalan: \"ket\" + \"-ib\" = ke-tib (so'z ichidagi \"t\" qayta bo'g'inlanib keyingiga o'tadi)",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29736,7 +29736,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-5-10",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "Lab undoshlari qaysilar?",
     "options": {
       "A": "d, t, n",
@@ -29744,8 +29744,8 @@ window.QUESTIONS_DB = [
       "C": "k, g, ng",
       "D": "s, z, sh"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: b, p, m",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: b, p, m",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29753,7 +29753,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-5-11",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "Urg'u nima?",
     "options": {
       "A": "Gapning oxirida ovozni ko'tarish",
@@ -29761,8 +29761,8 @@ window.QUESTIONS_DB = [
       "C": "So'zdagi bir bo'g'inni boshqalariga nisbatan kuchliroq, cho'zib va balandroq aytish",
       "D": "So'zdagi barcha bo'g'inlarni bir xil kuchda aytish"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: So'zdagi bir bo'g'inni boshqalariga nisbatan kuchliroq, cho'zib va balandroq aytish",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: So'zdagi bir bo'g'inni boshqalariga nisbatan kuchliroq, cho'zib va balandroq aytish",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29770,7 +29770,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-5-12",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "\"Spirantizatsiya\" hodisasi nima va o'zbek tilida qanday namoyon bo'ladi?",
     "options": {
       "A": "Sonorning jarangsizlanishi",
@@ -29779,7 +29779,7 @@ window.QUESTIONS_DB = [
       "D": "Portlovchining kuchayishi"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Portlovchi undoshning sirg'aluvchiga aylanishi; tarixiy misollar: qadimgi turk tilida /g/ > /g'/ (g' — spirant); o'zbek shevalarida ba'zi pozitsiyalarda portlovchi undoshlar sirg'aluvchiga o'tishi kuzatiladi",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Portlovchi undoshning sirg'aluvchiga aylanishi; tarixiy misollar: qadimgi turk tilida /g/ > /g'/ (g' — spirant); o'zbek shevalarida ba'zi pozitsiyalarda portlovchi undoshlar sirg'aluvchiga o'tishi kuzatiladi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29787,7 +29787,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-5-13",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "Kishilarning qadrlisi saxovatli kishilardir. Saxovat go‘zallikdan ko‘ra afzalroq. Ushbu gap tarkibidagi faqat ochiq bo‘g‘inlardan iborat so‘z bilan bog‘liq noto‘g‘ri hukmni aniqlang.",
     "options": {
       "A": "Ushbu so‘zda ikkita ochiq bo‘g‘in bor.",
@@ -29795,8 +29795,8 @@ window.QUESTIONS_DB = [
       "C": "Ushbu so‘z vazifadosh ko‘makchi bo‘lib kelgan.",
       "D": "Ushbu so‘zdagi bitta jarangsiz undoshning jarangli jufti bor."
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Ushbu so‘z sof ko‘makchi sanaladi.",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Ushbu so‘z sof ko‘makchi sanaladi.",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29804,7 +29804,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-5-14",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "Qaysi gapda bosh harflarni qo'llash bilan bog'liq imloviy xatolik uchraydi?",
     "options": {
       "A": "Bulung'ur tuman hokimligi",
@@ -29812,8 +29812,8 @@ window.QUESTIONS_DB = [
       "C": "Temuriylar Tarixi Davlat muzeyi",
       "D": "Sog'liqni saqlash vazirligi"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Temuriylar Tarixi Davlat muzeyi",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Temuriylar Tarixi Davlat muzeyi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29821,7 +29821,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-5-15",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "Fonotaktika nima va o'zbek tilida so'z boshida undoshlar birikmasiga misol?",
     "options": {
       "A": "Fonemalarning yozuv tizimidagi o'rni",
@@ -29829,8 +29829,8 @@ window.QUESTIONS_DB = [
       "C": "Tovushlarning tarixini o'rganish",
       "D": "Tilda qaysi tovushlar qanday tartibda birika olishini belgilovchi qoidalar; o'zbek tilida tub so'zlar odatda undosh birikmasi bilan boshlanmaydi (\"shart\", \"brat\" kabi so'zlar o'zlashma), bu fonotaktik cheklov sanaladi"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Tilda qaysi tovushlar qanday tartibda birika olishini belgilovchi qoidalar; o'zbek tilida tub so'zlar odatda undosh birikmasi bilan boshlanmaydi (\"shart\", \"brat\" kabi so'zlar o'zlashma), bu fonotaktik cheklov sanaladi",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Tilda qaysi tovushlar qanday tartibda birika olishini belgilovchi qoidalar; o'zbek tilida tub so'zlar odatda undosh birikmasi bilan boshlanmaydi (\"shart\", \"brat\" kabi so'zlar o'zlashma), bu fonotaktik cheklov sanaladi",
     "session": 5,
     "difficulty": "medium"
   },
@@ -29838,7 +29838,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-6-1",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "\"Affrikat\" undosh tovushlar qaysilar va ularda qanday artikulyatsiya kuzatiladi?",
     "options": {
       "A": "p va b — labda to'siq hosil bo'ladi",
@@ -29847,7 +29847,7 @@ window.QUESTIONS_DB = [
       "D": "sh va s — sirg'aluvchi"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: ch va j — avval to'liq to'siq (portlama) hosil bo'lib, keyin asta sirg'alma tovushga o'tadi; ikki fazali artikulyatsiya",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: ch va j — avval to'liq to'siq (portlama) hosil bo'lib, keyin asta sirg'alma tovushga o'tadi; ikki fazali artikulyatsiya",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29855,7 +29855,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-6-2",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "Kasb-hunar so'zlari (professionalizmlar) va terminlarning asosiy farqi nimada?",
     "options": {
       "A": "Ular mutlaqo bir xil.",
@@ -29864,7 +29864,7 @@ window.QUESTIONS_DB = [
       "D": "Professionalizmlar qat'iy davlat standartlariga ega."
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Terminlar qat'iy me'yorga ega va rasmiy ilmiy sohada qo'llanadi, professionalizmlar ko'proq og'zaki nutqda va shevalarda yashaydi.",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Terminlar qat'iy me'yorga ega va rasmiy ilmiy sohada qo'llanadi, professionalizmlar ko'proq og'zaki nutqda va shevalarda yashaydi.",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29872,7 +29872,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-6-3",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "\"Singarmonizm\" qonuni nima va u o'zbek tilida qanday darajada saqlangan?",
     "options": {
       "A": "So'zlar orasidagi bog'liqlik qonuni",
@@ -29880,8 +29880,8 @@ window.QUESTIONS_DB = [
       "C": "Bo'g'inlarning tartibini belgilovchi qonun",
       "D": "Undoshlarning bir-biriga ta'siri qonuni"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Bir so'z ichidagi barcha unlillar ma'lum fonetik kategoriya (old-orqa, lab-labsiz) bo'yicha uyg'unlashishi qonuni; o'zbek tilida singarmonizm tarixan bo'lgan, lekin hozirgi adabiy tilda deyarli yo'qolgan — faqat ba'zi qo'shimchalarda (masalan, -lar/-lar yagona shakl) va shevalarda qoldiqlari bor",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Bir so'z ichidagi barcha unlillar ma'lum fonetik kategoriya (old-orqa, lab-labsiz) bo'yicha uyg'unlashishi qonuni; o'zbek tilida singarmonizm tarixan bo'lgan, lekin hozirgi adabiy tilda deyarli yo'qolgan — faqat ba'zi qo'shimchalarda (masalan, -lar/-lar yagona shakl) va shevalarda qoldiqlari bor",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29889,7 +29889,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-6-4",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "Assimilyatsiya hodisasi nima?",
     "options": {
       "A": "Bitta tovushning qo'shni tovushga o'xshab o'zgarishi (tovushlarning bir-biriga ta'siri)",
@@ -29898,7 +29898,7 @@ window.QUESTIONS_DB = [
       "D": "Tovushlarning o'rin almashinishi"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Bitta tovushning qo'shni tovushga o'xshab o'zgarishi (tovushlarning bir-biriga ta'siri)",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: Bitta tovushning qo'shni tovushga o'xshab o'zgarishi (tovushlarning bir-biriga ta'siri)",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29906,7 +29906,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-6-5",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
+    "topic": "DTM va Milliy standart: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u)",
     "question": "Qaysi qatorda fonetik arxaizm qatnashgan gap berilgan?",
     "options": {
       "A": "Mirshablar jinoyatchini ushlashdi.",
@@ -29915,7 +29915,7 @@ window.QUESTIONS_DB = [
       "D": "U yig'ochdan yasalgan eshikka boqdi."
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: U yig'ochdan yasalgan eshikka boqdi.",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Fonetika va orfoepiya (tovushlar, bo'g'in, urg'u). To'g'ri javob: U yig'ochdan yasalgan eshikka boqdi.",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29923,7 +29923,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-6-6",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Grafika va orfografiya (imlo qoidalari)",
+    "topic": "DTM va Milliy standart: Grafika va orfografiya (imlo qoidalari)",
     "question": "Qaysi gapda imloviy xatoga yo‘l qo‘yilgan?",
     "options": {
       "A": "Shoir o‘z qahramonini bejiz bunday atamaganini asosladi.",
@@ -29932,7 +29932,7 @@ window.QUESTIONS_DB = [
       "D": "Kim bilan do‘st tutinish mumkun?"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: Kim bilan do‘st tutinish mumkun?",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: Kim bilan do‘st tutinish mumkun?",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29940,7 +29940,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-6-7",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Grafika va orfografiya (imlo qoidalari)",
+    "topic": "DTM va Milliy standart: Grafika va orfografiya (imlo qoidalari)",
     "question": "\"Devkor\" so'zidagi \"v\" ning talaffuzida qanday hodisa kuzatiladi?",
     "options": {
       "A": "\"v\" cho'ziladi",
@@ -29948,8 +29948,8 @@ window.QUESTIONS_DB = [
       "C": "Hech qanday hodisa yo'q",
       "D": "\"v\" tez nutqda ba'zan tushib qoladi yoki \"u\" semivokaliga aylanadi — tovush zaiflashishi (lenisiya)"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: \"v\" tez nutqda ba'zan tushib qoladi yoki \"u\" semivokaliga aylanadi — tovush zaiflashishi (lenisiya)",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: \"v\" tez nutqda ba'zan tushib qoladi yoki \"u\" semivokaliga aylanadi — tovush zaiflashishi (lenisiya)",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29957,7 +29957,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-6-8",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Grafika va orfografiya (imlo qoidalari)",
+    "topic": "DTM va Milliy standart: Grafika va orfografiya (imlo qoidalari)",
     "question": "Barcha so‘zlar noto‘g‘ri yozilgan qatorni aniqlang.",
     "options": {
       "A": "himmat, sapsata, tag‘dim",
@@ -29965,8 +29965,8 @@ window.QUESTIONS_DB = [
       "C": "tassuf, gram, ta’sis",
       "D": "istiroxat, suiiste’mol, xayrixoh"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: muloqat, harsang, mukofat",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: muloqat, harsang, mukofat",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29974,7 +29974,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-6-9",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Grafika va orfografiya (imlo qoidalari)",
+    "topic": "DTM va Milliy standart: Grafika va orfografiya (imlo qoidalari)",
     "question": "O‘zbek alifbosida nechta harf bor?",
     "options": {
       "A": "32",
@@ -29983,7 +29983,7 @@ window.QUESTIONS_DB = [
       "D": "35"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: 29",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: 29",
     "session": 6,
     "difficulty": "medium"
   },
@@ -29991,7 +29991,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-6-10",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Grafika va orfografiya (imlo qoidalari)",
+    "topic": "DTM va Milliy standart: Grafika va orfografiya (imlo qoidalari)",
     "question": "Bo'g'in tuzilishi jihatidan \"CVC\" tuzilmasi nima? (C=undosh, V=unli)",
     "options": {
       "A": "Ochiq bo'g'in",
@@ -29999,8 +29999,8 @@ window.QUESTIONS_DB = [
       "C": "Yopiq bo'g'in — undosh+unli+undosh tuzilmasi, masalan: \"mak\", \"bor\", \"ket\"",
       "D": "Bitta tovushli bo'g'in"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: Yopiq bo'g'in — undosh+unli+undosh tuzilmasi, masalan: \"mak\", \"bor\", \"ket\"",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: Yopiq bo'g'in — undosh+unli+undosh tuzilmasi, masalan: \"mak\", \"bor\", \"ket\"",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30008,7 +30008,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-6-11",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Grafika va orfografiya (imlo qoidalari)",
+    "topic": "DTM va Milliy standart: Grafika va orfografiya (imlo qoidalari)",
     "question": "Ammam ko‘rpa-yostiq, amakim qozon-tovoq, boshqa tanish-bilishlar choynak-piyola deganday, har kim baholiqudrat qarashib, o‘sha hovliga ko‘chdik. (Abdulla Qahhor)Ushbu gapda imloviy jihatdan xato yozilgan so‘z qaysi gap bo‘lagi vazifasini bajargan?",
     "options": {
       "A": "Ushbu gapda imloviy jihatdan xato yozilgan so‘z qo‘llanmagan.",
@@ -30016,8 +30016,8 @@ window.QUESTIONS_DB = [
       "C": "hol",
       "D": "kesim"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: Ushbu gapda imloviy jihatdan xato yozilgan so‘z qo‘llanmagan.",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: Ushbu gapda imloviy jihatdan xato yozilgan so‘z qo‘llanmagan.",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30025,7 +30025,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-6-12",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Grafika va orfografiya (imlo qoidalari)",
+    "topic": "DTM va Milliy standart: Grafika va orfografiya (imlo qoidalari)",
     "question": "Qaysi gapda imloviy xatolikka yo‘l qo‘yilgan?",
     "options": {
       "A": "Ko‘ngilda til jarohati bitmas.",
@@ -30033,8 +30033,8 @@ window.QUESTIONS_DB = [
       "C": "Bir kishi qusur va qabohatini bo‘yniga olib uzr aytsa, afv qilar, kechirar.",
       "D": "Olov o‘tinni kuydirib kul qilgani kabi, hasad savob amallarni yeb tugatadi."
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: Biz gulning nafisligini, suvning zilolligini, oppoq tonglarning go‘zalligini, oydin tunlarning zavqbag‘shligini bilamiz-u, nima uchunligini chuqur sezavermaymiz.",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: Biz gulning nafisligini, suvning zilolligini, oppoq tonglarning go‘zalligini, oydin tunlarning zavqbag‘shligini bilamiz-u, nima uchunligini chuqur sezavermaymiz.",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30042,7 +30042,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-6-13",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Grafika va orfografiya (imlo qoidalari)",
+    "topic": "DTM va Milliy standart: Grafika va orfografiya (imlo qoidalari)",
     "question": "Orfoepiya nima?",
     "options": {
       "A": "So'zlarning ma'nosini izohlash",
@@ -30050,8 +30050,8 @@ window.QUESTIONS_DB = [
       "C": "Gapda tinish belgilarini to'g'ri ishlatish",
       "D": "Tovushlarni va so'zlarni adabiy til me'yoriga mos ravishda to'g'ri talaffuz qilish qoidalari"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: Tovushlarni va so'zlarni adabiy til me'yoriga mos ravishda to'g'ri talaffuz qilish qoidalari",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: Tovushlarni va so'zlarni adabiy til me'yoriga mos ravishda to'g'ri talaffuz qilish qoidalari",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30059,7 +30059,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-6-14",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Grafika va orfografiya (imlo qoidalari)",
+    "topic": "DTM va Milliy standart: Grafika va orfografiya (imlo qoidalari)",
     "question": "Qaysi qatorda taqsim son noto'g'ri yozilgan?",
     "options": {
       "A": "Besh-oltidan (chama-taqsim)",
@@ -30067,8 +30067,8 @@ window.QUESTIONS_DB = [
       "C": "Ikkiladan",
       "D": "Beshtadan"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: Ikkiladan",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: Ikkiladan",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30076,7 +30076,7 @@ window.QUESTIONS_DB = [
     "id": "tm-ona-6-15",
     "subject": "Ona tili",
     "grade_span": "5-11",
-    "topic": "DTM TestMakon: Grafika va orfografiya (imlo qoidalari)",
+    "topic": "DTM va Milliy standart: Grafika va orfografiya (imlo qoidalari)",
     "question": "Regressiv assimilyatsiya va progressiv assimilyatsiya o'rtasidagi farq?",
     "options": {
       "A": "Regressiv faqat so'z boshida kuzatiladi",
@@ -30084,8 +30084,8 @@ window.QUESTIONS_DB = [
       "C": "Ular bir xil hodisa",
       "D": "Regressiv assimilyatsiyada keyingi tovush oldingi tovushni o'zgartiradi; progressiv assimilyatsiyada oldingi tovush keyingiga ta'sir qiladi"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: Regressiv assimilyatsiyada keyingi tovush oldingi tovushni o'zgartiradi; progressiv assimilyatsiyada oldingi tovush keyingiga ta'sir qiladi",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Grafika va orfografiya (imlo qoidalari). To'g'ri javob: Regressiv assimilyatsiyada keyingi tovush oldingi tovushni o'zgartiradi; progressiv assimilyatsiyada oldingi tovush keyingiga ta'sir qiladi",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30093,7 +30093,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-4-1",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Tenses (verb tenses)",
+    "topic": "DTM va Milliy standart: Tenses (verb tenses)",
     "question": "She ___ her composure even though the interviewer ___ extremely provocative questions.",
     "options": {
       "A": "maintained / poses",
@@ -30101,8 +30101,8 @@ window.QUESTIONS_DB = [
       "C": "maintains / posed",
       "D": "maintained / posed"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Tenses (verb tenses). To'g'ri javob: maintained / posed",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Tenses (verb tenses). To'g'ri javob: maintained / posed",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30110,7 +30110,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-4-2",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Tenses (verb tenses)",
+    "topic": "DTM va Milliy standart: Tenses (verb tenses)",
     "question": "We ___ ___ ___ for the concert for months before it was cancelled.",
     "options": {
       "A": "was / been / preparing",
@@ -30118,8 +30118,8 @@ window.QUESTIONS_DB = [
       "C": "were / been / preparing",
       "D": "had / been / preparing"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Tenses (verb tenses). To'g'ri javob: had / been / preparing",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Tenses (verb tenses). To'g'ri javob: had / been / preparing",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30127,7 +30127,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-4-3",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Tenses (verb tenses)",
+    "topic": "DTM va Milliy standart: Tenses (verb tenses)",
     "question": "By the time the new regulations ______ fully in force, the industry will have been operating under interim rules for a decade.",
     "options": {
       "A": "will be",
@@ -30135,8 +30135,8 @@ window.QUESTIONS_DB = [
       "C": "were",
       "D": "would be"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Tenses (verb tenses). To'g'ri javob: are",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Tenses (verb tenses). To'g'ri javob: are",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30144,7 +30144,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-4-4",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Tenses (verb tenses)",
+    "topic": "DTM va Milliy standart: Tenses (verb tenses)",
     "question": "They ___ ___ ___ since 8 o'clock.",
     "options": {
       "A": "has / been / working",
@@ -30152,8 +30152,8 @@ window.QUESTIONS_DB = [
       "C": "are / been / working",
       "D": "were / been / working"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Tenses (verb tenses). To'g'ri javob: have / been / working",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Tenses (verb tenses). To'g'ri javob: have / been / working",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30161,7 +30161,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-4-5",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Tenses (verb tenses)",
+    "topic": "DTM va Milliy standart: Tenses (verb tenses)",
     "question": "He ___ his keys, so he ___ get into the house last night.",
     "options": {
       "A": "lost / couldn't",
@@ -30169,8 +30169,8 @@ window.QUESTIONS_DB = [
       "C": "loses / couldn't",
       "D": "lost / can't"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Tenses (verb tenses). To'g'ri javob: lost / couldn't",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Tenses (verb tenses). To'g'ri javob: lost / couldn't",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30178,7 +30178,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-4-6",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Tenses (verb tenses)",
+    "topic": "DTM va Milliy standart: Tenses (verb tenses)",
     "question": "I ___ never ___ such a compelling argument in all my years of practice.",
     "options": {
       "A": "did / encounter",
@@ -30186,8 +30186,8 @@ window.QUESTIONS_DB = [
       "C": "has / encountered",
       "D": "have / encountered"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Tenses (verb tenses). To'g'ri javob: have / encountered",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Tenses (verb tenses). To'g'ri javob: have / encountered",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30195,7 +30195,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-4-7",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Tenses (verb tenses)",
+    "topic": "DTM va Milliy standart: Tenses (verb tenses)",
     "question": "Have you told them the good news ... ?",
     "options": {
       "A": "last night",
@@ -30203,8 +30203,8 @@ window.QUESTIONS_DB = [
       "C": "never",
       "D": "yet"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Tenses (verb tenses). To'g'ri javob: yet",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Tenses (verb tenses). To'g'ri javob: yet",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30212,7 +30212,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-4-8",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Tenses (verb tenses)",
+    "topic": "DTM va Milliy standart: Tenses (verb tenses)",
     "question": "The price of oil ___ significantly since January, which ___ global supply chains.",
     "options": {
       "A": "rose / affects",
@@ -30220,8 +30220,8 @@ window.QUESTIONS_DB = [
       "C": "has risen / affects",
       "D": "has risen / has affected"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Tenses (verb tenses). To'g'ri javob: has risen / has affected",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Tenses (verb tenses). To'g'ri javob: has risen / has affected",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30229,7 +30229,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-4-9",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Tenses (verb tenses)",
+    "topic": "DTM va Milliy standart: Tenses (verb tenses)",
     "question": "What ___ increasingly apparent is that the ecosystem ___ at an unprecedented rate while policymakers ___ to act.",
     "options": {
       "A": "becomes / deteriorates / fail",
@@ -30237,8 +30237,8 @@ window.QUESTIONS_DB = [
       "C": "becomes / is deteriorating / fail",
       "D": "is becoming / is deteriorating / are failing"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Tenses (verb tenses). To'g'ri javob: is becoming / is deteriorating / are failing",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Tenses (verb tenses). To'g'ri javob: is becoming / is deteriorating / are failing",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30246,7 +30246,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-4-10",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Tenses (verb tenses)",
+    "topic": "DTM va Milliy standart: Tenses (verb tenses)",
     "question": "They ___ all the necessary documents, so the application ___ ready for review.",
     "options": {
       "A": "submitted / is",
@@ -30254,8 +30254,8 @@ window.QUESTIONS_DB = [
       "C": "have submitted / is",
       "D": "have submitted / has been"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Tenses (verb tenses). To'g'ri javob: have submitted / is",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Tenses (verb tenses). To'g'ri javob: have submitted / is",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30263,7 +30263,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-4-11",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Tenses (verb tenses)",
+    "topic": "DTM va Milliy standart: Tenses (verb tenses)",
     "question": "Every clause in this contract ___ to international trade law and ___ both parties equally.",
     "options": {
       "A": "conforms / bind",
@@ -30271,8 +30271,8 @@ window.QUESTIONS_DB = [
       "C": "conform / binds",
       "D": "conforms / binds"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Tenses (verb tenses). To'g'ri javob: conforms / binds",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Tenses (verb tenses). To'g'ri javob: conforms / binds",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30280,7 +30280,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-4-12",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Tenses (verb tenses)",
+    "topic": "DTM va Milliy standart: Tenses (verb tenses)",
     "question": "Research ___ that regular exercise ___ the risk of heart disease.",
     "options": {
       "A": "show / reduce",
@@ -30288,8 +30288,8 @@ window.QUESTIONS_DB = [
       "C": "show / reduces",
       "D": "shows / reduces"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Tenses (verb tenses). To'g'ri javob: shows / reduces",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Tenses (verb tenses). To'g'ri javob: shows / reduces",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30297,7 +30297,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-4-13",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Tenses (verb tenses)",
+    "topic": "DTM va Milliy standart: Tenses (verb tenses)",
     "question": "Where _____ Carla and Yuri on Saturday afternoon?",
     "options": {
       "A": "were",
@@ -30305,8 +30305,8 @@ window.QUESTIONS_DB = [
       "C": "we’re",
       "D": "was"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Tenses (verb tenses). To'g'ri javob: were",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Tenses (verb tenses). To'g'ri javob: were",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30314,7 +30314,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-4-14",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Tenses (verb tenses)",
+    "topic": "DTM va Milliy standart: Tenses (verb tenses)",
     "question": "Choose the appropriate answer.The firm ... cotton for 13 years by next October.",
     "options": {
       "A": "will export",
@@ -30323,7 +30323,7 @@ window.QUESTIONS_DB = [
       "D": "will have been exporting"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Tenses (verb tenses). To'g'ri javob: will have been exporting",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Tenses (verb tenses). To'g'ri javob: will have been exporting",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30331,7 +30331,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-4-15",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Tenses (verb tenses)",
+    "topic": "DTM va Milliy standart: Tenses (verb tenses)",
     "question": "By the time the new regulations come into force, manufacturers ___ ___ ___ ___ to adapt for at least 18 months.",
     "options": {
       "A": "will / have / been / struggling",
@@ -30339,8 +30339,8 @@ window.QUESTIONS_DB = [
       "C": "has / have / been / struggling",
       "D": "will / has / been / struggling"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Tenses (verb tenses). To'g'ri javob: will / have / been / struggling",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Tenses (verb tenses). To'g'ri javob: will / have / been / struggling",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30348,7 +30348,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-5-1",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Tenses (verb tenses)",
+    "topic": "DTM va Milliy standart: Tenses (verb tenses)",
     "question": "Choose the appropriate answer.The man ___ in the garden is listening to music.",
     "options": {
       "A": "worked",
@@ -30356,8 +30356,8 @@ window.QUESTIONS_DB = [
       "C": "to work",
       "D": "is working"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Tenses (verb tenses). To'g'ri javob: working",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Tenses (verb tenses). To'g'ri javob: working",
     "session": 5,
     "difficulty": "medium"
   },
@@ -30365,7 +30365,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-5-2",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "You ________ do any more training today. You look so tried. Take a break!",
     "options": {
       "A": "can’t",
@@ -30373,8 +30373,8 @@ window.QUESTIONS_DB = [
       "C": "should",
       "D": "shouldn't"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: shouldn't",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: shouldn't",
     "session": 5,
     "difficulty": "medium"
   },
@@ -30382,7 +30382,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-5-3",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "My advice is that you find another job. You can’t work with that awful boss any more.",
     "options": {
       "A": "should",
@@ -30390,8 +30390,8 @@ window.QUESTIONS_DB = [
       "C": "mustn’t",
       "D": "don’t have"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: should",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: should",
     "session": 5,
     "difficulty": "medium"
   },
@@ -30399,7 +30399,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-5-4",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "They to call at this time of night. It's very late.",
     "options": {
       "A": "may well",
@@ -30407,8 +30407,8 @@ window.QUESTIONS_DB = [
       "C": "’re unlikely",
       "D": "going"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: ’re unlikely",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: ’re unlikely",
     "session": 5,
     "difficulty": "medium"
   },
@@ -30416,7 +30416,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-5-5",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "He has lived alone for 15 years, so he ___ living alone.",
     "options": {
       "A": "has to",
@@ -30424,8 +30424,8 @@ window.QUESTIONS_DB = [
       "C": "would",
       "D": "is used to"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: is used to",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: is used to",
     "session": 5,
     "difficulty": "medium"
   },
@@ -30433,7 +30433,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-5-6",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "Choose the correct answer.My eyesight is still quite good, so I . . . wear glasses.",
     "options": {
       "A": "should",
@@ -30442,7 +30442,7 @@ window.QUESTIONS_DB = [
       "D": "couldn’t"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: don’t have to",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: don’t have to",
     "session": 5,
     "difficulty": "medium"
   },
@@ -30450,7 +30450,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-5-7",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "Jim sharing a flat but now he prefers to live on his own.",
     "options": {
       "A": "never use to like",
@@ -30458,8 +30458,8 @@ window.QUESTIONS_DB = [
       "C": "would like",
       "D": "never used to"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: used to like",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: used to like",
     "session": 5,
     "difficulty": "medium"
   },
@@ -30467,7 +30467,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-5-8",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "What is 'only' in 'I **only** saw him'?",
     "options": {
       "A": "Adverb",
@@ -30475,8 +30475,8 @@ window.QUESTIONS_DB = [
       "C": "Adjective",
       "D": "Noun"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: Adverb",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: Adverb",
     "session": 5,
     "difficulty": "medium"
   },
@@ -30484,7 +30484,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-5-9",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "Look at the clock! It's high time the children ___ in bed.",
     "options": {
       "A": "are",
@@ -30492,8 +30492,8 @@ window.QUESTIONS_DB = [
       "C": "had been",
       "D": "be"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: were",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: were",
     "session": 5,
     "difficulty": "medium"
   },
@@ -30501,7 +30501,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-5-10",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "The lights at Tom’s are off. He surely … to bed.",
     "options": {
       "A": "could have gone.",
@@ -30510,7 +30510,7 @@ window.QUESTIONS_DB = [
       "D": "may have gone."
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: must have gone.",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: must have gone.",
     "session": 5,
     "difficulty": "medium"
   },
@@ -30518,7 +30518,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-5-11",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "“Jill, could you give me a hand?”– “Sure. What can I do for you?”",
     "options": {
       "A": "help me",
@@ -30526,8 +30526,8 @@ window.QUESTIONS_DB = [
       "C": "talk to me",
       "D": "stop working"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: help me",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: help me",
     "session": 5,
     "difficulty": "medium"
   },
@@ -30535,7 +30535,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-5-12",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "That pizza was gigantic. I'm sure Mary ______ have eaten it all.",
     "options": {
       "A": "can’t",
@@ -30544,7 +30544,7 @@ window.QUESTIONS_DB = [
       "D": "mayn’t"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: can’t",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: can’t",
     "session": 5,
     "difficulty": "medium"
   },
@@ -30552,7 +30552,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-5-13",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "People smoke in public buildings. It is not allowed.",
     "options": {
       "A": "don’t have to",
@@ -30560,8 +30560,8 @@ window.QUESTIONS_DB = [
       "C": "shouldn’t",
       "D": "mustn’t"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: mustn’t",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: mustn’t",
     "session": 5,
     "difficulty": "medium"
   },
@@ -30569,7 +30569,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-5-14",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "Ahmadjan would rather his sister ... his clothes which he is going to wear it tonight.",
     "options": {
       "A": "washes",
@@ -30577,8 +30577,8 @@ window.QUESTIONS_DB = [
       "C": "has washed",
       "D": "washed"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: washed",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: washed",
     "session": 5,
     "difficulty": "medium"
   },
@@ -30586,7 +30586,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-5-15",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "Ann _____ speak English very well.",
     "options": {
       "A": "can to",
@@ -30594,8 +30594,8 @@ window.QUESTIONS_DB = [
       "C": "can",
       "D": "can do"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: can",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: can",
     "session": 5,
     "difficulty": "medium"
   },
@@ -30603,7 +30603,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-6-1",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "Andrew ..... eat five slices of pizza in just one meal.",
     "options": {
       "A": "can",
@@ -30612,7 +30612,7 @@ window.QUESTIONS_DB = [
       "D": "be able to"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: can",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: can",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30620,7 +30620,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-6-2",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "Where _____ you like to go tonight?",
     "options": {
       "A": "do",
@@ -30628,8 +30628,8 @@ window.QUESTIONS_DB = [
       "C": "can",
       "D": "would"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: would",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: would",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30637,7 +30637,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-6-3",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "They daren't ___ her what happened.",
     "options": {
       "A": "telling",
@@ -30645,8 +30645,8 @@ window.QUESTIONS_DB = [
       "C": "to tell",
       "D": "to telling"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: tell",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: tell",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30654,7 +30654,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-6-4",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Modal verbs",
+    "topic": "DTM va Milliy standart: Modal verbs",
     "question": "Choose the correct answer. He is broke but he is used ... money.",
     "options": {
       "A": "to having not a",
@@ -30662,8 +30662,8 @@ window.QUESTIONS_DB = [
       "C": "to have no",
       "D": "to having no"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Modal verbs. To'g'ri javob: to having no",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Modal verbs. To'g'ri javob: to having no",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30671,7 +30671,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-6-5",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Articles, nouns and quantifiers",
+    "topic": "DTM va Milliy standart: Articles, nouns and quantifiers",
     "question": "Choose the appropriate answer.Jane likes working at night because there isn’t ... noise where she lives.",
     "options": {
       "A": "enough",
@@ -30679,8 +30679,8 @@ window.QUESTIONS_DB = [
       "C": "a little",
       "D": "much"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Articles, nouns and quantifiers. To'g'ri javob: much",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Articles, nouns and quantifiers. To'g'ri javob: much",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30688,7 +30688,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-6-6",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Articles, nouns and quantifiers",
+    "topic": "DTM va Milliy standart: Articles, nouns and quantifiers",
     "question": "Choose the appropriate articles.... dinner we had yesterday was... very tasty one.",
     "options": {
       "A": "-/-",
@@ -30697,7 +30697,7 @@ window.QUESTIONS_DB = [
       "D": "a/the"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Articles, nouns and quantifiers. To'g'ri javob: the/a",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Articles, nouns and quantifiers. To'g'ri javob: the/a",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30705,7 +30705,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-6-7",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Articles, nouns and quantifiers",
+    "topic": "DTM va Milliy standart: Articles, nouns and quantifiers",
     "question": "I have got _____ car.",
     "options": {
       "A": "an comfortable",
@@ -30713,8 +30713,8 @@ window.QUESTIONS_DB = [
       "C": "comfortable",
       "D": "a comfortable"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Articles, nouns and quantifiers. To'g'ri javob: a comfortable",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Articles, nouns and quantifiers. To'g'ri javob: a comfortable",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30722,7 +30722,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-6-8",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Articles, nouns and quantifiers",
+    "topic": "DTM va Milliy standart: Articles, nouns and quantifiers",
     "question": "She has ___ friends in this city.",
     "options": {
       "A": "a few",
@@ -30730,8 +30730,8 @@ window.QUESTIONS_DB = [
       "C": "little",
       "D": "a little"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Articles, nouns and quantifiers. To'g'ri javob: a few",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Articles, nouns and quantifiers. To'g'ri javob: a few",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30739,7 +30739,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-6-9",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Articles, nouns and quantifiers",
+    "topic": "DTM va Milliy standart: Articles, nouns and quantifiers",
     "question": "I have two sisters. ___ of them are older than me.",
     "options": {
       "A": "Each",
@@ -30748,7 +30748,7 @@ window.QUESTIONS_DB = [
       "D": "All"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Articles, nouns and quantifiers. To'g'ri javob: Both",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Articles, nouns and quantifiers. To'g'ri javob: Both",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30756,7 +30756,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-6-10",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Articles, nouns and quantifiers",
+    "topic": "DTM va Milliy standart: Articles, nouns and quantifiers",
     "question": "Can I have ___ water, please?",
     "options": {
       "A": "few",
@@ -30764,8 +30764,8 @@ window.QUESTIONS_DB = [
       "C": "many",
       "D": "a few"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Articles, nouns and quantifiers. To'g'ri javob: some",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Articles, nouns and quantifiers. To'g'ri javob: some",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30773,7 +30773,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-6-11",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Articles, nouns and quantifiers",
+    "topic": "DTM va Milliy standart: Articles, nouns and quantifiers",
     "question": "The investigation found ______ evidence that the outlets had knowingly published false stories.",
     "options": {
       "A": "a few",
@@ -30781,8 +30781,8 @@ window.QUESTIONS_DB = [
       "C": "little",
       "D": "many"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Articles, nouns and quantifiers. To'g'ri javob: little",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Articles, nouns and quantifiers. To'g'ri javob: little",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30790,7 +30790,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-6-12",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Articles, nouns and quantifiers",
+    "topic": "DTM va Milliy standart: Articles, nouns and quantifiers",
     "question": "How _____ money have you got?",
     "options": {
       "A": "some",
@@ -30798,8 +30798,8 @@ window.QUESTIONS_DB = [
       "C": "much",
       "D": "many"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Articles, nouns and quantifiers. To'g'ri javob: much",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Articles, nouns and quantifiers. To'g'ri javob: much",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30807,7 +30807,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-6-13",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Articles, nouns and quantifiers",
+    "topic": "DTM va Milliy standart: Articles, nouns and quantifiers",
     "question": "___ datum alone ___ not constitute ___ proof; what ___ needed ___ corroborating data from ___ independent sources.",
     "options": {
       "A": "Single / do / a / are / are / many",
@@ -30816,7 +30816,7 @@ window.QUESTIONS_DB = [
       "D": "One / does / — / is / is / several"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Articles, nouns and quantifiers. To'g'ri javob: A single / does / — / is / is / multiple",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Articles, nouns and quantifiers. To'g'ri javob: A single / does / — / is / is / multiple",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30824,7 +30824,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-6-14",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Articles, nouns and quantifiers",
+    "topic": "DTM va Milliy standart: Articles, nouns and quantifiers",
     "question": "I bought ___ book yesterday. ___ book was very interesting.",
     "options": {
       "A": "a / A",
@@ -30832,8 +30832,8 @@ window.QUESTIONS_DB = [
       "C": "the / The",
       "D": "the / A"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Articles, nouns and quantifiers. To'g'ri javob: a / The",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Articles, nouns and quantifiers. To'g'ri javob: a / The",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30841,7 +30841,7 @@ window.QUESTIONS_DB = [
     "id": "tm-eng-6-15",
     "subject": "English",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Articles, nouns and quantifiers",
+    "topic": "DTM va Milliy standart: Articles, nouns and quantifiers",
     "question": "We don't have time to go on holiday.",
     "options": {
       "A": "enough of",
@@ -30849,8 +30849,8 @@ window.QUESTIONS_DB = [
       "C": "enough",
       "D": "several"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Articles, nouns and quantifiers. To'g'ri javob: enough",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Articles, nouns and quantifiers. To'g'ri javob: enough",
     "session": 6,
     "difficulty": "medium"
   },
@@ -30858,7 +30858,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-4-1",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 5 класс",
+    "topic": "DTM va Milliy standart: Русский язык 5 класс",
     "question": "Какое существительное относится к первому склонению?",
     "options": {
       "A": "слеза",
@@ -30866,8 +30866,8 @@ window.QUESTIONS_DB = [
       "C": "забор",
       "D": "топь"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 5 класс. To'g'ri javob: слеза",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 5 класс. To'g'ri javob: слеза",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30875,7 +30875,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-4-2",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 5 класс",
+    "topic": "DTM va Milliy standart: Русский язык 5 класс",
     "question": "Укажите слово с раздельным написанием.",
     "options": {
       "A": "(без)работица",
@@ -30884,7 +30884,7 @@ window.QUESTIONS_DB = [
       "D": "(за)крыл"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 5 класс. To'g'ri javob: (за)столом",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 5 класс. To'g'ri javob: (за)столом",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30892,7 +30892,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-4-3",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 5 класс",
+    "topic": "DTM va Milliy standart: Русский язык 5 класс",
     "question": "Укажи слово, состоящее из корня и окончания.",
     "options": {
       "A": "Постелька",
@@ -30901,7 +30901,7 @@ window.QUESTIONS_DB = [
       "D": "Пришкольный"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 5 класс. To'g'ri javob: Город",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 5 класс. To'g'ri javob: Город",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30909,7 +30909,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-4-4",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 5 класс",
+    "topic": "DTM va Milliy standart: Русский язык 5 класс",
     "question": "В каком предложении употреблено существительное мужского рода?",
     "options": {
       "A": "Лодка ждала рыбака на другой стороне озера.",
@@ -30918,7 +30918,7 @@ window.QUESTIONS_DB = [
       "D": "Яркая бабочка порхает над головой и крылом касается моего плеча."
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 5 класс. To'g'ri javob: Лодка ждала рыбака на другой стороне озера.",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 5 класс. To'g'ri javob: Лодка ждала рыбака на другой стороне озера.",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30926,7 +30926,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-4-5",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 5 класс",
+    "topic": "DTM va Milliy standart: Русский язык 5 класс",
     "question": "Укажите сложное предложение.",
     "options": {
       "A": "Пришла весна, зацвели мать-и-мачеха и незабудки.",
@@ -30934,8 +30934,8 @@ window.QUESTIONS_DB = [
       "C": "Тёплое солнце точно щурилось, улыбалось сквозь дымку в небе.",
       "D": "Радуги сверкают над дымной, сырой далью."
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 5 класс. To'g'ri javob: Пришла весна, зацвели мать-и-мачеха и незабудки.",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 5 класс. To'g'ri javob: Пришла весна, зацвели мать-и-мачеха и незабудки.",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30943,7 +30943,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-4-6",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 5 класс",
+    "topic": "DTM va Milliy standart: Русский язык 5 класс",
     "question": "Укажите глагол первого спряжения.",
     "options": {
       "A": "выходить",
@@ -30952,7 +30952,7 @@ window.QUESTIONS_DB = [
       "D": "обидеть"
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 5 класс. To'g'ri javob: ехать",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 5 класс. To'g'ri javob: ехать",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30960,7 +30960,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-4-7",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 5 класс",
+    "topic": "DTM va Milliy standart: Русский язык 5 класс",
     "question": "Грамматической основой в предложении «Она издавала резкий, скрипучий звук» является:",
     "options": {
       "A": "издавала резкий звук",
@@ -30968,8 +30968,8 @@ window.QUESTIONS_DB = [
       "C": "она издавала",
       "D": "резкий, скрипучий звук"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 5 класс. To'g'ri javob: она издавала",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 5 класс. To'g'ri javob: она издавала",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30977,7 +30977,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-4-8",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 5 класс",
+    "topic": "DTM va Milliy standart: Русский язык 5 класс",
     "question": "Укажите предложение со словом, в котором пропущена непроизносимая согласная.",
     "options": {
       "A": "Грачи — первые вес…ники весны.",
@@ -30985,8 +30985,8 @@ window.QUESTIONS_DB = [
       "C": "Из-за дождя отменили воскрес…ный поход в лес.",
       "D": "Вам подарили интерес…ную книгу."
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 5 класс. To'g'ri javob: Грачи — первые вес…ники весны.",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 5 класс. To'g'ri javob: Грачи — первые вес…ники весны.",
     "session": 4,
     "difficulty": "medium"
   },
@@ -30994,7 +30994,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-4-9",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 5 класс",
+    "topic": "DTM va Milliy standart: Русский язык 5 класс",
     "question": "В окончании какого слова пишется буква Е?",
     "options": {
       "A": "На ветв…",
@@ -31003,7 +31003,7 @@ window.QUESTIONS_DB = [
       "D": "В школьной тетрад…"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 5 класс. To'g'ri javob: В нашем магазин…",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 5 класс. To'g'ri javob: В нашем магазин…",
     "session": 4,
     "difficulty": "medium"
   },
@@ -31011,7 +31011,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-4-10",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 5 класс",
+    "topic": "DTM va Milliy standart: Русский язык 5 класс",
     "question": "Слово «по» является:",
     "options": {
       "A": "местоимением",
@@ -31019,8 +31019,8 @@ window.QUESTIONS_DB = [
       "C": "предлогом",
       "D": "глаголом"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 5 класс. To'g'ri javob: предлогом",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 5 класс. To'g'ri javob: предлогом",
     "session": 4,
     "difficulty": "medium"
   },
@@ -31028,7 +31028,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-4-11",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 5 класс",
+    "topic": "DTM va Milliy standart: Русский язык 5 класс",
     "question": "В каком слове ударение падает на второй слог?",
     "options": {
       "A": "звонит",
@@ -31036,8 +31036,8 @@ window.QUESTIONS_DB = [
       "C": "поняла",
       "D": "магазин"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 5 класс. To'g'ri javob: звонит",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 5 класс. To'g'ri javob: звонит",
     "session": 4,
     "difficulty": "medium"
   },
@@ -31045,7 +31045,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-4-12",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 5 класс",
+    "topic": "DTM va Milliy standart: Русский язык 5 класс",
     "question": "В каком слове на конце мягкий знак не пишется?",
     "options": {
       "A": "помощ…",
@@ -31053,8 +31053,8 @@ window.QUESTIONS_DB = [
       "C": "тиш…",
       "D": "мыш…"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 5 класс. To'g'ri javob: крепыш…",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 5 класс. To'g'ri javob: крепыш…",
     "session": 4,
     "difficulty": "medium"
   },
@@ -31062,7 +31062,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-4-13",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 5 класс",
+    "topic": "DTM va Milliy standart: Русский язык 5 класс",
     "question": "Отметь слово, в котором на конце звонкий согласный звук.",
     "options": {
       "A": "Пирог",
@@ -31070,8 +31070,8 @@ window.QUESTIONS_DB = [
       "C": "Газ",
       "D": "Поиск"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 5 класс. To'g'ri javob: Корабль",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 5 класс. To'g'ri javob: Корабль",
     "session": 4,
     "difficulty": "medium"
   },
@@ -31079,7 +31079,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-4-14",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Rus 8",
+    "topic": "DTM va Milliy standart: Rus 8",
     "question": "Укажите формообразующую частицу",
     "options": {
       "A": "всё-таки",
@@ -31087,8 +31087,8 @@ window.QUESTIONS_DB = [
       "C": "только",
       "D": "давай"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Rus 8. To'g'ri javob: давай",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Rus 8. To'g'ri javob: давай",
     "session": 4,
     "difficulty": "medium"
   },
@@ -31096,7 +31096,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-4-15",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Rus 8",
+    "topic": "DTM va Milliy standart: Rus 8",
     "question": "Какие слова НЕ пишутся с прописной буквы (если они не стоят в начале предложения)?",
     "options": {
       "A": "названия государств",
@@ -31104,8 +31104,8 @@ window.QUESTIONS_DB = [
       "C": "имена собственные",
       "D": "первое слово предложения"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Rus 8. To'g'ri javob: нарицательные имена существительные",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Rus 8. To'g'ri javob: нарицательные имена существительные",
     "session": 4,
     "difficulty": "medium"
   },
@@ -31113,7 +31113,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-5-1",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Rus 8",
+    "topic": "DTM va Milliy standart: Rus 8",
     "question": "Определи тип односоставного предложения: Собирай по ягодке – наберешь кузовок.",
     "options": {
       "A": "обобщённо-личное",
@@ -31121,8 +31121,8 @@ window.QUESTIONS_DB = [
       "C": "неопределённо-личное",
       "D": "безличное"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Rus 8. To'g'ri javob: обобщённо-личное",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Rus 8. To'g'ri javob: обобщённо-личное",
     "session": 5,
     "difficulty": "medium"
   },
@@ -31130,7 +31130,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-5-2",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Rus 8",
+    "topic": "DTM va Milliy standart: Rus 8",
     "question": "Укажите неопределённо-личное предложение.",
     "options": {
       "A": "Город и людей как будто подменили.",
@@ -31139,7 +31139,7 @@ window.QUESTIONS_DB = [
       "D": "Тихая звёздная ночь!"
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Rus 8. To'g'ri javob: Город и людей как будто подменили.",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Rus 8. To'g'ri javob: Город и людей как будто подменили.",
     "session": 5,
     "difficulty": "medium"
   },
@@ -31147,7 +31147,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-5-3",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Rus 8",
+    "topic": "DTM va Milliy standart: Rus 8",
     "question": "Укажите словосочетание с ошибкой в окончании причастия:",
     "options": {
       "A": "двигавшимся ртом",
@@ -31155,8 +31155,8 @@ window.QUESTIONS_DB = [
       "C": "о движущимся поезде",
       "D": "на цветущем лугу"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Rus 8. To'g'ri javob: о движущимся поезде",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Rus 8. To'g'ri javob: о движущимся поезде",
     "session": 5,
     "difficulty": "medium"
   },
@@ -31164,7 +31164,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-5-4",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Rus 8",
+    "topic": "DTM va Milliy standart: Rus 8",
     "question": "Какое из предложений является безличным?",
     "options": {
       "A": "Сухие листья под ногами.",
@@ -31173,7 +31173,7 @@ window.QUESTIONS_DB = [
       "D": "Умную голову почитают смолоду."
     },
     "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Rus 8. To'g'ri javob: Пахнет сеном над лугами.",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Rus 8. To'g'ri javob: Пахнет сеном над лугами.",
     "session": 5,
     "difficulty": "medium"
   },
@@ -31181,7 +31181,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-5-5",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Rus 8",
+    "topic": "DTM va Milliy standart: Rus 8",
     "question": "В каком ряду все частицы являются формообразующими?",
     "options": {
       "A": "разве, ли",
@@ -31189,8 +31189,8 @@ window.QUESTIONS_DB = [
       "C": "пусть, бы",
       "D": "даже, ни, же"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Rus 8. To'g'ri javob: пусть, бы",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Rus 8. To'g'ri javob: пусть, бы",
     "session": 5,
     "difficulty": "medium"
   },
@@ -31198,7 +31198,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-5-6",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Rus 8",
+    "topic": "DTM va Milliy standart: Rus 8",
     "question": "Определите тип односоставного предложения: «Зажгло грозой дерево».",
     "options": {
       "A": "безличное",
@@ -31206,8 +31206,8 @@ window.QUESTIONS_DB = [
       "C": "обобщённо-личное",
       "D": "определённо-личное"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Rus 8. To'g'ri javob: безличное",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Rus 8. To'g'ri javob: безличное",
     "session": 5,
     "difficulty": "medium"
   },
@@ -31215,7 +31215,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-5-7",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Rus 8",
+    "topic": "DTM va Milliy standart: Rus 8",
     "question": "Найдите словосочетание с главным словом причастием:",
     "options": {
       "A": "читающие дети",
@@ -31223,8 +31223,8 @@ window.QUESTIONS_DB = [
       "C": "шепчущий тростник",
       "D": "белеющим снегом"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Rus 8. To'g'ri javob: читающие вслух",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Rus 8. To'g'ri javob: читающие вслух",
     "session": 5,
     "difficulty": "medium"
   },
@@ -31232,7 +31232,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-5-8",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Rus 8",
+    "topic": "DTM va Milliy standart: Rus 8",
     "question": "Определите разряд частицы «даже» в предложении: «Память оживляет даже камни прошлого и даже в яд, выпитый некогда, подливает капли мёда».",
     "options": {
       "A": "усилительная",
@@ -31240,8 +31240,8 @@ window.QUESTIONS_DB = [
       "C": "указательная",
       "D": "уточняющая"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Rus 8. To'g'ri javob: усилительная",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Rus 8. To'g'ri javob: усилительная",
     "session": 5,
     "difficulty": "medium"
   },
@@ -31249,7 +31249,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-5-9",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Rus 8",
+    "topic": "DTM va Milliy standart: Rus 8",
     "question": "Действительное причастие настоящего времени нельзя образовать от глагола:",
     "options": {
       "A": "чувствовать",
@@ -31257,8 +31257,8 @@ window.QUESTIONS_DB = [
       "C": "пилить",
       "D": "сыграть"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Rus 8. To'g'ri javob: сыграть",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Rus 8. To'g'ri javob: сыграть",
     "session": 5,
     "difficulty": "medium"
   },
@@ -31266,7 +31266,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-5-10",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Rus 8",
+    "topic": "DTM va Milliy standart: Rus 8",
     "question": "В каком предложении на месте пропуска пишется частица НИ?",
     "options": {
       "A": "Н… у кого не спросили.",
@@ -31275,7 +31275,7 @@ window.QUESTIONS_DB = [
       "D": "Н… у кого брать."
     },
     "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Rus 8. To'g'ri javob: Н… у кого не спросили.",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Rus 8. To'g'ri javob: Н… у кого не спросили.",
     "session": 5,
     "difficulty": "medium"
   },
@@ -31283,7 +31283,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-5-11",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Rus 8",
+    "topic": "DTM va Milliy standart: Rus 8",
     "question": "От какого глагола нельзя образовать страдательное причастие настоящего времени?",
     "options": {
       "A": "ласкать",
@@ -31292,7 +31292,7 @@ window.QUESTIONS_DB = [
       "D": "видеть"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Rus 8. To'g'ri javob: смотреть",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Rus 8. To'g'ri javob: смотреть",
     "session": 5,
     "difficulty": "medium"
   },
@@ -31300,7 +31300,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-5-12",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Rus 8",
+    "topic": "DTM va Milliy standart: Rus 8",
     "question": "В каком ряду находятся выделительно-ограничительные частицы?",
     "options": {
       "A": "бы, б",
@@ -31308,8 +31308,8 @@ window.QUESTIONS_DB = [
       "C": "не, ни",
       "D": "даже, лишь"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Rus 8. To'g'ri javob: даже, лишь",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Rus 8. To'g'ri javob: даже, лишь",
     "session": 5,
     "difficulty": "medium"
   },
@@ -31317,7 +31317,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-5-13",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Rus 8",
+    "topic": "DTM va Milliy standart: Rus 8",
     "question": "Какое из предложений является неопределённо-личным?",
     "options": {
       "A": "А поворотись-ка, сын!",
@@ -31325,8 +31325,8 @@ window.QUESTIONS_DB = [
       "C": "В клубе пели и плясали.",
       "D": "Без букв и грамматики не научишься математике."
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Rus 8. To'g'ri javob: В клубе пели и плясали.",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Rus 8. To'g'ri javob: В клубе пели и плясали.",
     "session": 5,
     "difficulty": "medium"
   },
@@ -31334,7 +31334,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-5-14",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Rus 8",
+    "topic": "DTM va Milliy standart: Rus 8",
     "question": "Определите тип односоставного предложения: «Давай побеседуем вновь про радости и про страдания».",
     "options": {
       "A": "обобщённо-личное",
@@ -31342,8 +31342,8 @@ window.QUESTIONS_DB = [
       "C": "определённо-личное",
       "D": "неопределённо-личное"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Rus 8. To'g'ri javob: определённо-личное",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Rus 8. To'g'ri javob: определённо-личное",
     "session": 5,
     "difficulty": "medium"
   },
@@ -31351,7 +31351,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-5-15",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 4 класс",
+    "topic": "DTM va Milliy standart: Русский язык 4 класс",
     "question": "Укажите автора стихотворения «Я лежу, болею» :",
     "options": {
       "A": "А. Барто",
@@ -31360,7 +31360,7 @@ window.QUESTIONS_DB = [
       "D": "А. Наумов"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 4 класс. To'g'ri javob: А. Наумов",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 4 класс. To'g'ri javob: А. Наумов",
     "session": 5,
     "difficulty": "medium"
   },
@@ -31368,7 +31368,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-6-1",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 4 класс",
+    "topic": "DTM va Milliy standart: Русский язык 4 класс",
     "question": "Дополните предложение: «… вчера полил цветы».",
     "options": {
       "A": "Она",
@@ -31376,8 +31376,8 @@ window.QUESTIONS_DB = [
       "C": "Мы",
       "D": "Я"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 4 класс. To'g'ri javob: Я",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 4 класс. To'g'ri javob: Я",
     "session": 6,
     "difficulty": "medium"
   },
@@ -31385,7 +31385,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-6-2",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 4 класс",
+    "topic": "DTM va Milliy standart: Русский язык 4 класс",
     "question": "Отгадайте загадку: «Всех я вовремя бужу, хоть часов не завожу».",
     "options": {
       "A": "петух",
@@ -31393,8 +31393,8 @@ window.QUESTIONS_DB = [
       "C": "утка",
       "D": "курица"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 4 класс. To'g'ri javob: петух",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 4 класс. To'g'ri javob: петух",
     "session": 6,
     "difficulty": "medium"
   },
@@ -31402,7 +31402,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-6-3",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 4 класс",
+    "topic": "DTM va Milliy standart: Русский язык 4 класс",
     "question": "Кого мы поздравляем с праздником 8 Марта?",
     "options": {
       "A": "бабушку, маму, сестру",
@@ -31410,8 +31410,8 @@ window.QUESTIONS_DB = [
       "C": "дедушку, дядю",
       "D": "папу, брата, дядю"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 4 класс. To'g'ri javob: бабушку, маму, сестру",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 4 класс. To'g'ri javob: бабушку, маму, сестру",
     "session": 6,
     "difficulty": "medium"
   },
@@ -31419,7 +31419,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-6-4",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 4 класс",
+    "topic": "DTM va Milliy standart: Русский язык 4 класс",
     "question": "Кто учится в школе?",
     "options": {
       "A": "подруги",
@@ -31427,8 +31427,8 @@ window.QUESTIONS_DB = [
       "C": "ученики",
       "D": "студенты"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 4 класс. To'g'ri javob: ученики",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 4 класс. To'g'ri javob: ученики",
     "session": 6,
     "difficulty": "medium"
   },
@@ -31436,7 +31436,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-6-5",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 4 класс",
+    "topic": "DTM va Milliy standart: Русский язык 4 класс",
     "question": "Какую праздничную еду традиционно готовят 21 марта?",
     "options": {
       "A": "сумаляк",
@@ -31444,8 +31444,8 @@ window.QUESTIONS_DB = [
       "C": "торт",
       "D": "блины"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 4 класс. To'g'ri javob: сумаляк",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 4 класс. To'g'ri javob: сумаляк",
     "session": 6,
     "difficulty": "medium"
   },
@@ -31453,7 +31453,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-6-6",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 4 класс",
+    "topic": "DTM va Milliy standart: Русский язык 4 класс",
     "question": "Отгадайте загадку: «Он в берлоге спит зимой, под большущею сосной. А когда придёт весна, просыпается от сна».",
     "options": {
       "A": "обезьяна",
@@ -31462,7 +31462,7 @@ window.QUESTIONS_DB = [
       "D": "медведь"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 4 класс. To'g'ri javob: медведь",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 4 класс. To'g'ri javob: медведь",
     "session": 6,
     "difficulty": "medium"
   },
@@ -31470,7 +31470,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-6-7",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 4 класс",
+    "topic": "DTM va Milliy standart: Русский язык 4 класс",
     "question": "Где живёт дельфин?",
     "options": {
       "A": "в лесу",
@@ -31478,8 +31478,8 @@ window.QUESTIONS_DB = [
       "C": "в пустыне",
       "D": "в воде"
     },
-    "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 4 класс. To'g'ri javob: в воде",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 4 класс. To'g'ri javob: в воде",
     "session": 6,
     "difficulty": "medium"
   },
@@ -31487,7 +31487,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-6-8",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 4 класс",
+    "topic": "DTM va Milliy standart: Русский язык 4 класс",
     "question": "Где растут арбузы и дыни?",
     "options": {
       "A": "в огороде",
@@ -31496,7 +31496,7 @@ window.QUESTIONS_DB = [
       "D": "на бахче"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 4 класс. To'g'ri javob: на бахче",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 4 класс. To'g'ri javob: на бахче",
     "session": 6,
     "difficulty": "medium"
   },
@@ -31504,7 +31504,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-6-9",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 4 класс",
+    "topic": "DTM va Milliy standart: Русский язык 4 класс",
     "question": "Писать , читать , рисовать и петь нас учат ……….",
     "options": {
       "A": "дома",
@@ -31513,7 +31513,7 @@ window.QUESTIONS_DB = [
       "D": "в кружке"
     },
     "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 4 класс. To'g'ri javob: в кружке",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 4 класс. To'g'ri javob: в кружке",
     "session": 6,
     "difficulty": "medium"
   },
@@ -31521,7 +31521,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-6-10",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 4 класс",
+    "topic": "DTM va Milliy standart: Русский язык 4 класс",
     "question": "Отгадайте загадку: «Я не печка и не грею, но тепло хранить умею».",
     "options": {
       "A": "ведро",
@@ -31529,8 +31529,8 @@ window.QUESTIONS_DB = [
       "C": "зеркало",
       "D": "пальто"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 4 класс. To'g'ri javob: пальто",
+    "answer": "D",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 4 класс. To'g'ri javob: пальто",
     "session": 6,
     "difficulty": "medium"
   },
@@ -31538,7 +31538,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-6-11",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 4 класс",
+    "topic": "DTM va Milliy standart: Русский язык 4 класс",
     "question": "Когда происходит весеннее равноденствие?",
     "options": {
       "A": "1 июня",
@@ -31547,7 +31547,7 @@ window.QUESTIONS_DB = [
       "D": "8 марта"
     },
     "answer": "B",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 4 класс. To'g'ri javob: 21 марта",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 4 класс. To'g'ri javob: 21 марта",
     "session": 6,
     "difficulty": "medium"
   },
@@ -31555,7 +31555,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-6-12",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 4 класс",
+    "topic": "DTM va Milliy standart: Русский язык 4 класс",
     "question": "Продолжите пословицу: «Дерево сильно корнями, а человек — …».",
     "options": {
       "A": "руками",
@@ -31563,8 +31563,8 @@ window.QUESTIONS_DB = [
       "C": "трудом",
       "D": "глазами"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 4 класс. To'g'ri javob: трудом",
+    "answer": "C",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 4 класс. To'g'ri javob: трудом",
     "session": 6,
     "difficulty": "medium"
   },
@@ -31572,7 +31572,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-6-13",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 4 класс",
+    "topic": "DTM va Milliy standart: Русский язык 4 класс",
     "question": "Укажите осенние месяцы.",
     "options": {
       "A": "сентябрь, октябрь, ноябрь",
@@ -31580,8 +31580,8 @@ window.QUESTIONS_DB = [
       "C": "март, апрель, май",
       "D": "декабрь, январь, февраль"
     },
-    "answer": "C",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 4 класс. To'g'ri javob: сентябрь, октябрь, ноябрь",
+    "answer": "A",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 4 класс. To'g'ri javob: сентябрь, октябрь, ноябрь",
     "session": 6,
     "difficulty": "medium"
   },
@@ -31589,7 +31589,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-6-14",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 4 класс",
+    "topic": "DTM va Milliy standart: Русский язык 4 класс",
     "question": "Папа Азизы работает в больнице, а мама — в ресторане. Кем они работают?",
     "options": {
       "A": "журналистом, медсестрой",
@@ -31597,8 +31597,8 @@ window.QUESTIONS_DB = [
       "C": "инженером, таксистом",
       "D": "экономистом, учителем"
     },
-    "answer": "D",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 4 класс. To'g'ri javob: врачом, поваром",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 4 класс. To'g'ri javob: врачом, поваром",
     "session": 6,
     "difficulty": "medium"
   },
@@ -31606,7 +31606,7 @@ window.QUESTIONS_DB = [
     "id": "tm-rus-6-15",
     "subject": "Rus tili",
     "grade_span": "1-11",
-    "topic": "DTM TestMakon: Русский язык 4 класс",
+    "topic": "DTM va Milliy standart: Русский язык 4 класс",
     "question": "В каком веке появился первый карандаш",
     "options": {
       "A": "в XVIII веке",
@@ -31614,8 +31614,8 @@ window.QUESTIONS_DB = [
       "C": "в XV веке",
       "D": "в XVII веке"
     },
-    "answer": "A",
-    "explanation": "DTM TestMakon rasmiy bazasi: Русский язык 4 класс. To'g'ri javob: в XVI веке",
+    "answer": "B",
+    "explanation": "Davlat ta'lim standarti va DTM namunasi: Русский язык 4 класс. To'g'ri javob: в XVI веке",
     "session": 6,
     "difficulty": "medium"
   }
