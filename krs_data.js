@@ -157,13 +157,13 @@ const KRS_SCHEDULE = [
     ]
   },
   {
-    id: "amaliy-sanat",
-    title: "Amaliy fanlar (Tasviriy san'at va Musiqa)",
+    id: "amaliy-fanlar",
+    title: "Amaliy fanlar (Texnologiya, Tasviriy san'at, Musiqa)",
     category: "Amaliy fanlar",
-    targetSubjects: ["Tasviriy san'at", "Chizmachilik", "Musiqa"],
+    targetSubjects: ["Texnologiya", "Tasviriy san'at", "Chizmachilik", "Musiqa"],
     icon: "🎨",
-    audience: "Tasviriy san'at, Chizmachilik va Musiqa madaniyati pedagoglari",
-    description: "Tasviriy san'at (1-7), Chizmachilik (8-9), Musiqa madaniyati (1-7)",
+    audience: "Texnologiya, Tasviriy san'at, Chizmachilik va Musiqa madaniyati pedagoglari",
+    description: "Texnologiya va amaliy mehnat (1-9), Tasviriy san'at (1-7), Chizmachilik (8-9), Musiqa madaniyati (1-7)",
     allocatedHours: "3 soat",
     weekday: "Shanba",
     dates: [
@@ -204,31 +204,6 @@ const KRS_SCHEDULE = [
       { num: 10, krk: "23-fevral", date: "2027-03-02", label: "02-mart" },
       { num: 11, krk: "09-mart", date: "2027-03-16", label: "16-mart" },
       { num: 12, krk: "30-mart", date: "2027-04-06", label: "06-aprel" }
-    ]
-  },
-  {
-    id: "amaliy-texnologiya",
-    title: "Amaliy fanlar (Texnologiya)",
-    category: "Amaliy fanlar",
-    targetSubjects: ["Texnologiya"],
-    icon: "🛠️",
-    audience: "Texnologiya (Mehnat ta'limi) fani pedagoglari",
-    description: "Texnologiya va amaliy mehnat (1-9 sinflar)",
-    allocatedHours: "3 soat",
-    weekday: "Shanba",
-    dates: [
-      { num: 1, krk: "17-oktabr", date: "2026-10-24", label: "24-oktabr" },
-      { num: 2, krk: "31-oktabr", date: "2026-11-07", label: "07-noyabr" },
-      { num: 3, krk: "14-noyabr", date: "2026-11-21", label: "21-noyabr" },
-      { num: 4, krk: "28-noyabr", date: "2026-12-05", label: "05-dekabr" },
-      { num: 5, krk: "12-dekabr", date: "2026-12-19", label: "19-dekabr" },
-      { num: 6, krk: "26-dekabr", date: "2027-01-09", label: "09-yanvar" },
-      { num: 7, krk: "16-yanvar", date: "2027-01-23", label: "23-yanvar" },
-      { num: 8, krk: "30-yanvar", date: "2027-02-06", label: "06-fevral" },
-      { num: 9, krk: "13-fevral", date: "2027-02-20", label: "20-fevral" },
-      { num: 10, krk: "27-fevral", date: "2027-03-06", label: "06-mart" },
-      { num: 11, krk: "13-mart", date: "2027-03-20", label: "20-mart" },
-      { num: 12, krk: "27-mart", date: "2027-04-03", label: "03-aprel" }
     ]
   },
   {
@@ -460,8 +435,18 @@ function renderTopHeroKrsAlert() {
   const todaySubjects = getTodayKrsSubjects(todayStr);
 
   if (todaySubjects.length > 0) {
+    const titles = todaySubjects.map(s => `${s.icon} ${s.title}`).join(' hamda ');
     const s = todaySubjects[0];
     const status = calculateKrsStatus(s.dates, todayStr);
+    const sessionNum = status.todaySession ? status.todaySession.num : 4;
+    const sessionLabel = status.todaySession ? status.todaySession.label : todayStr;
+
+    const testButtons = todaySubjects.map(sub => `
+      <button type="button" class="btn btn-primary" onclick="selectKrsSubject('${sub.targetSubjects[0]}')">
+        ⚡️ ${sub.targetSubjects[0]} testini topshirish
+      </button>
+    `).join('');
+
     bannerContainer.innerHTML = `
       <div class="krs-live-alert">
         <div class="krs-live-alert-left">
@@ -470,14 +455,12 @@ function renderTopHeroKrsAlert() {
             <b>BUGUN KRS KUNI!</b>
           </div>
           <div class="krs-live-alert-text">
-            <h4>${s.icon} ${s.title} — ${status.todaySession ? status.todaySession.num : 4}-mashg'ulot (${status.todaySession ? status.todaySession.label : todayStr})</h4>
+            <h4>${titles} — ${sessionNum}-mashg'ulot (${sessionLabel})</h4>
             <p>Bugun ushbu fan o'qituvchilari uchun Kasbiy Rivojlanish Soati bo'lib o'tmoqda. 15-ilovaga muvofiq testni topshirib, reytingda yetakchilik qiling!</p>
           </div>
         </div>
-        <div class="krs-live-alert-right">
-          <button type="button" class="btn btn-primary" onclick="selectKrsSubject('${s.targetSubjects[0]}')">
-            ⚡️ Bugungi testni topshirish
-          </button>
+        <div class="krs-live-alert-right" style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+          ${testButtons}
           <button type="button" class="btn btn-secondary btn-sm" onclick="scrollToSection('krsGrafikSection')">
             📅 Reja-jadvalni ko'rish
           </button>
