@@ -594,52 +594,43 @@
 
     <!-- VIEW 5: KRS MONITORING & ADVANCED ANALYTICS DASHBOARD -->
     <section id="monitoringView" class="view-section">
-      <!-- Dashboard Top Header Card -->
+      <!-- Sarlavha -->
       <div class="mon-header-card">
         <div class="mon-header-content">
           <div class="mon-header-left">
             <span class="mon-live-badge"><span class="pulse-dot"></span> Jonli Tahlil</span>
             <h2 class="mon-title">📊 KRS Natijalari va Pedagoglar Monitoringi</h2>
-            <p class="mon-subtitle">
-              55 ta maktab va 16 ta fan kesimida pedagoglar ishtiroki, qamrov foizi va reyting tahlili
-            </p>
+            <p class="mon-subtitle" id="monSubtitle">Maktablar va fanlar kesimida pedagoglar ishtiroki, qamrov foizi va reyting tahlili</p>
           </div>
           <div class="mon-header-actions">
             <button type="button" class="btn btn-sm btn-outline-mon" id="monRefreshBtn" onclick="refreshMonitoringData()">
               🔄 Yangilash
             </button>
-            <button type="button" class="btn btn-sm btn-outline-mon" onclick="window.print()">
-              🖨️ Chop etish
-            </button>
             <button type="button" class="btn btn-sm btn-primary-mon" id="monExportJpgBtn" onclick="downloadMonitoringA4Jpg()">
-              🖼️ A4 formatda rasm (JPG) yuklab olish
+              🖼️ A4 formatda rasm (JPG)
             </button>
-            
           </div>
         </div>
         <div class="mon-meta-row">
           <span>🕒 Oxirgi yangilanish: <b id="monLastUpdated">Yuklanmoqda...</b></span>
-          <span>🏛️ Ta'lim muassasalari: <b>55 ta</b></span>
-          <span>📚 Qamrab olingan fanlar: <b>16 ta</b></span>
-          <span>👥 Jami rejalashtirilgan pedagoglar: <b id="monMetaTotalTeachers">2 816 nafar</b></span>
         </div>
       </div>
 
-      <!-- Top KPI Summary Cards Grid -->
+      <!-- KPI -->
       <div class="mon-kpi-grid">
         <div class="kpi-card kpi-blue">
           <div class="kpi-icon">👥</div>
           <div class="kpi-content">
-            <div class="kpi-label">Jami Pedagoglar (Reja)</div>
-            <div class="kpi-value" id="kpiTotalTeachers">2 816</div>
-            <div class="kpi-sub">55 ta maktab bo'yicha</div>
+            <div class="kpi-label">Jami pedagoglar (reja)</div>
+            <div class="kpi-value" id="kpiTotalTeachers">—</div>
+            <div class="kpi-sub">tanlangan filtr bo'yicha</div>
           </div>
         </div>
 
         <div class="kpi-card kpi-green">
           <div class="kpi-icon">✍️</div>
           <div class="kpi-content">
-            <div class="kpi-label">Testda qatnashdi</div>
+            <div class="kpi-label">Topshirdi</div>
             <div class="kpi-value text-success" id="kpiParticipated">0</div>
             <div class="kpi-sub"><span id="kpiCoveragePercent">0%</span> qamrov</div>
           </div>
@@ -648,27 +639,27 @@
         <div class="kpi-card kpi-orange">
           <div class="kpi-icon">⏳</div>
           <div class="kpi-content">
-            <div class="kpi-label">Hali topshirmadi (Qarz)</div>
-            <div class="kpi-value text-warning" id="kpiMissing">2 816</div>
-            <div class="kpi-sub"><span id="kpiMissingPercent">100%</span> qolgan</div>
+            <div class="kpi-label">Qoldi (topshirmagan)</div>
+            <div class="kpi-value text-warning" id="kpiMissing">—</div>
+            <div class="kpi-sub"><span id="kpiMissingPercent">0%</span> qolgan</div>
           </div>
         </div>
 
         <div class="kpi-card kpi-purple">
           <div class="kpi-icon">🎯</div>
           <div class="kpi-content">
-            <div class="kpi-label">O'rtacha Natija</div>
-            <div class="kpi-value" id="kpiAvgScore">0%</div>
-            <div class="kpi-sub" id="kpiAvgPercent">0% o'rtacha ball</div>
+            <div class="kpi-label">O'rtacha natija</div>
+            <div class="kpi-value" id="kpiAvgScore">—</div>
+            <div class="kpi-sub" id="kpiAvgPercent">ma'lumot yo'q</div>
           </div>
         </div>
 
         <div class="kpi-card kpi-gold">
           <div class="kpi-icon">🏆</div>
           <div class="kpi-content">
-            <div class="kpi-label">Sifat Ko'rsatkichi (A'lo)</div>
+            <div class="kpi-label">A'lo natija (86%+)</div>
             <div class="kpi-value" id="kpiQualityCount">0</div>
-            <div class="kpi-sub"><span id="kpiQualityPercent">0%</span> (80%+ a'lo)</div>
+            <div class="kpi-sub"><span id="kpiQualityPercent">0%</span> topshirganlardan</div>
           </div>
         </div>
 
@@ -677,98 +668,80 @@
           <div class="kpi-content">
             <div class="kpi-label">Bloklanganlar</div>
             <div class="kpi-value text-danger" id="kpiBlockedCount">0</div>
-            <div class="kpi-sub">Qoidabuzarlik tufayli</div>
+            <div class="kpi-sub">«Qoldi» tarkibida</div>
           </div>
         </div>
       </div>
 
-      <!-- Interactive Filters Section -->
+      <!-- Filtrlar -->
       <div class="card mon-filters-card">
         <div class="mon-filters-header">
           <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--primary-dark); margin: 0;">
-            🔍 Tahlil va Filtrlash Paneli
+            🔍 Filtrlar
           </h3>
-          <span style="font-size: 0.85rem; color: var(--text-muted);" id="monFilterResultsCount">Barcha 2 788 nafar pedagog</span>
+          <div style="display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;">
+            <span style="font-size: 0.85rem; color: var(--text-muted);" id="monFilterResultsCount">—</span>
+            <button type="button" class="btn btn-sm btn-outline-mon" onclick="resetMonitoringFilters()">♻️ Tozalash</button>
+          </div>
         </div>
         <div class="mon-filter-grid">
           <div class="filter-col">
             <label class="filter-label" for="monSchoolFilter">🏫 Maktab:</label>
             <select id="monSchoolFilter" class="form-select" onchange="applyMonitoringFilters()">
-              <option value="ALL">-- Barcha maktablar (55 ta) --</option>
+              <option value="ALL">-- Barcha maktablar --</option>
             </select>
           </div>
           <div class="filter-col">
-            <label class="filter-label" for="monSubjectFilter">📚 KRS Fani:</label>
+            <label class="filter-label" for="monSubjectFilter">📚 KRS fani:</label>
             <select id="monSubjectFilter" class="form-select" onchange="applyMonitoringFilters()">
-              <option value="ALL">-- Barcha fanlar (16 ta) --</option>
-              <option value="Boshlang'ich ta'lim">🎒 Boshlang'ich ta'lim</option>
-              <option value="Matematika">📐 Matematika</option>
-              <option value="Informatika">💻 Informatika</option>
-              <option value="Ona tili">📚 Ona tili va adabiyot</option>
-              <option value="English">🇬🇧 Ingliz tili</option>
-              <option value="Nemis tili">🇩🇪 Nemis tili</option>
-              <option value="Fransuz tili">🇫🇷 Fransuz tili</option>
-              <option value="Rus tili">🇷🇺 Rus tili</option>
-              <option value="Biologiya">🧬 Biologiya</option>
-              <option value="Fizika">⚛️ Fizika</option>
-              <option value="Kimyo">⚗️ Kimyo</option>
-              <option value="Geografiya">🌍 Geografiya</option>
-              <option value="Tarix">🏛️ Tarix</option>
-              <option value="Huquq">⚖️ Davlat va huquq asoslari</option>
-              <option value="Texnologiya">🛠️ Texnologiya</option>
-              <option value="Tasviriy san'at">🎨 Tasviriy san'at</option>
+              <option value="ALL">-- Barcha fanlar --</option>
             </select>
           </div>
           <div class="filter-col">
-            <label class="filter-label" for="monStatusFilter">🔘 Ishtirok Holati:</label>
+            <label class="filter-label" for="monStatusFilter">🔘 Ishtirok holati:</label>
             <select id="monStatusFilter" class="form-select" onchange="applyMonitoringFilters()">
-              <option value="ALL">Barchasi (Hammasi)</option>
-              <option value="PASSED">✅ Faqat topshirganlar</option>
-              <option value="MISSING">⏳ Faqat topshirmaganlar (Qarzdorlar)</option>
+              <option value="ALL">Barchasi</option>
+              <option value="PASSED">✅ Topshirganlar</option>
+              <option value="MISSING">⏳ Topshirmaganlar (qarzdorlar)</option>
               <option value="EXCELLENT">🏆 A'lo natija (86–100%)</option>
               <option value="LOW">⚠️ Qoniqarsiz (0–55%)</option>
               <option value="BLOCKED">🚫 Bloklanganlar</option>
             </select>
           </div>
           <div class="filter-col">
-            <label class="filter-label" for="monSearchInput">🔎 F.I.Sh. yoki Maktab qidiruvi:</label>
-            <input type="text" id="monSearchInput" class="form-input" placeholder="Ism yoki familiya kiriting..." oninput="applyMonitoringFilters()">
+            <label class="filter-label" for="monSearchInput">🔎 F.I.Sh. yoki maktab:</label>
+            <input type="text" id="monSearchInput" class="form-input" placeholder="Ism yoki familiya..." oninput="monSearchDebounced()">
           </div>
         </div>
       </div>
 
-      <!-- Tabbed Analytics: Maktablar Reytingi vs Fanlar Tahlili vs Pedagoglar Ro'yxati -->
+      <!-- Jadvallar -->
       <div class="card mon-tabs-card">
         <div class="mon-tab-nav">
           <button type="button" class="mon-tab-btn active" id="tabBtnSchools" onclick="switchMonTab('schools')">
-            🏫 Maktablar Reytingi (55 ta)
+            🏫 Maktablar reytingi
           </button>
           <button type="button" class="mon-tab-btn" id="tabBtnSubjects" onclick="switchMonTab('subjects')">
-            📚 Fanlar Kesimida Tahlil (16 ta)
+            📚 Fanlar kesimida
           </button>
           <button type="button" class="mon-tab-btn" id="tabBtnTeachers" onclick="switchMonTab('teachers')">
-            👥 Pedagoglar Ro'yxati (<span id="tabTeachersCountBadge">2 788</span>)
+            👥 Pedagoglar ro'yxati (<span id="tabTeachersCountBadge">0</span>)
           </button>
         </div>
 
-        <!-- TAB 1: Maktablar Reytingi -->
+        <!-- 1: Maktablar reytingi -->
         <div id="monTabSchools" class="mon-tab-pane active">
           <div class="table-toolbar">
-            <span style="font-size: 0.88rem; color: var(--text-muted); font-weight: 700;">
-              Reytingni saralash:
-            </span>
+            <span style="font-size: 0.88rem; color: var(--text-muted); font-weight: 700;">Saralash:</span>
             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
               <button type="button" class="btn btn-sm btn-primary-mon sort-btn active" id="sortBtnCoverage" onclick="sortSchoolsRating('coverage')">
-                📊 Qamrov foizi bo'yicha (Asosiy reyting)
+                📊 Qamrov foizi (asosiy reyting)
               </button>
               <button type="button" class="btn btn-sm btn-outline-mon sort-btn" id="sortBtnScore" onclick="sortSchoolsRating('score')">
-                🎯 O'rtacha ball bo'yicha
+                🎯 O'rtacha ball
               </button>
               <button type="button" class="btn btn-sm btn-outline-mon sort-btn" id="sortBtnNumber" onclick="sortSchoolsRating('number')">
-                🔢 Maktab raqami bo'yicha (1–55)
-              </button>
-              <button type="button" class="btn btn-sm btn-outline-mon sort-btn" id="sortBtnTeachers" onclick="sortSchoolsRating('teachers')">
-                👥 O'qituvchilar soni bo'yicha
+                🔢 Maktab raqami
               </button>
             </div>
           </div>
@@ -781,60 +754,47 @@
                   <th style="text-align: center;">Reja</th>
                   <th style="text-align: center;">Topshirdi</th>
                   <th style="text-align: center;">Qoldi</th>
-                  <th style="min-width: 140px;">Qamrov darajasi</th>
+                  <th style="min-width: 140px;">Qamrov</th>
                   <th style="text-align: center;">O'rtacha ball</th>
-                  <th style="text-align: center;">Sifat (A'lo)</th>
-                  <th style="text-align: center;">Holati</th>
+                  <th style="text-align: center;">A'lo (86%+)</th>
                 </tr>
               </thead>
-              <tbody id="schoolsRatingTableBody">
-                <!-- Dynamically populated -->
-              </tbody>
+              <tbody id="schoolsRatingTableBody"></tbody>
             </table>
           </div>
         </div>
 
-        <!-- TAB 2: Fanlar Kesimida Tahlil -->
+        <!-- 2: Fanlar kesimida -->
         <div id="monTabSubjects" class="mon-tab-pane">
           <div class="table-responsive">
             <table class="mon-table" id="subjectsAnalysisTable">
               <thead>
                 <tr>
                   <th style="width: 50px;">№</th>
-                  <th>KRS Fani</th>
-                  <th style="text-align: center;">Tuman bo'yicha reja</th>
-                  <th style="text-align: center;">Topshirganlar</th>
-                  <th style="text-align: center;">Topshirmaganlar</th>
-                  <th style="min-width: 140px;">Qamrov ko'rsatkichi</th>
+                  <th>KRS fani</th>
+                  <th style="text-align: center;">Reja</th>
+                  <th style="text-align: center;">Topshirdi</th>
+                  <th style="text-align: center;">Qoldi</th>
+                  <th style="min-width: 140px;">Qamrov</th>
                   <th style="text-align: center;">O'rtacha ball</th>
-                  <th style="text-align: center;">A'lo natija</th>
-                  <th style="text-align: center;">Faollik</th>
+                  <th style="text-align: center;">A'lo (86%+)</th>
                 </tr>
               </thead>
-              <tbody id="subjectsAnalysisTableBody">
-                <!-- Dynamically populated -->
-              </tbody>
+              <tbody id="subjectsAnalysisTableBody"></tbody>
             </table>
           </div>
+          <p id="monSubjectsNote" style="font-size: 0.82rem; color: var(--text-muted); margin: 0.75rem 0.25rem 0;"></p>
         </div>
 
-        <!-- TAB 3: Pedagoglar To'liq Ro'yxati -->
+        <!-- 3: Pedagoglar ro'yxati -->
         <div id="monTabTeachers" class="mon-tab-pane">
           <div class="table-toolbar">
             <div style="font-size: 0.9rem; color: var(--text-main);">
-              Ko'rsatilmoqda: <b id="teachersFilteredCount">2 788</b> nafar pedagog
+              Tanlangan: <b id="teachersFilteredCount">0</b> nafar pedagog
             </div>
-            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-              <button type="button" class="btn btn-sm btn-outline-warning" onclick="filterOnlyMissingTeachers()">
-                ⏳ Faqat topshirmaganlarni ko'rish
-              </button>
-              <button type="button" class="btn btn-sm btn-outline-success" onclick="filterOnlyPassedTeachers()">
-                ✅ Faqat topshirganlarni ko'rish
-              </button>
-              <button type="button" class="btn btn-sm btn-secondary" onclick="exportTeachersListCSV()">
-                📥 Ro'yxatni yuklash (CSV)
-              </button>
-            </div>
+            <button type="button" class="btn btn-sm btn-secondary" onclick="exportTeachersListCSV()">
+              📥 Ro'yxatni yuklash (CSV)
+            </button>
           </div>
           <div class="table-responsive">
             <table class="mon-table" id="teachersMonitoringTable">
@@ -844,20 +804,16 @@
                   <th>Pedagog F.I.Sh.</th>
                   <th>Ta'lim muassasasi</th>
                   <th>KRS fani</th>
-                  <th style="text-align: center;">Holati</th>
-                  <th style="text-align: center;">To'plangan ball</th>
+                  <th style="text-align: center;">Ball</th>
                   <th style="text-align: center;">Foiz</th>
                   <th style="text-align: center;">Qoidabuzarlik</th>
-                  <th style="text-align: center;">Baho / Daraja</th>
+                  <th style="text-align: center;">Natija</th>
                 </tr>
               </thead>
-              <tbody id="teachersMonitoringTableBody">
-                <!-- Dynamically populated -->
-              </tbody>
+              <tbody id="teachersMonitoringTableBody"></tbody>
             </table>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -1402,7 +1358,7 @@
   <script src="school_coords.js?v=20261124_1530"></script>
   <script src="teachers_db.js?v=1795527509"></script>
   <script src="questions_db.js?v=20261124_1530"></script>
-  <script src="app.js?v=1795596011"></script>
+  <script src="app.js?v=1795764316"></script>
   <script src="qulaylik.js?v=20261124_1530"></script>
 <script data-goatcounter="https://umamatov.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>

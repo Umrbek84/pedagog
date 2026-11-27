@@ -2756,364 +2756,426 @@ function switchMonTab(tabName) {
   });
 }
 
-function populateMonitoringSchoolFilter() {
-  const select = document.getElementById('monSchoolFilter');
-  if (!select) return;
-  const currentVal = select.value;
-  select.innerHTML = '<option value="ALL">-- Barcha maktablar (55 ta) --</option>';
+// ==========================================================
+// KRS MONITORING — yagona hisob-kitob mantiqi
+//  * Pedagog = bazadagi bitta qator (teachers_db). Natijalar F.I.Sh. (+maktab) va FAN bo'yicha bog'lanadi.
+//  * Topshirdi + Qoldi = Reja (hamma jadval va KPI shu qoidaga bo'ysunadi).
+//  * Bloklangan pedagog "Qoldi" tarkibida hisoblanadi, alohida ko'rsatkichi ham bor.
+//  * A'lo = 86–100%, Yaxshi 71–85%, Qoniqarli 56–70%, Qoniqarsiz 0–55% (hamma joyda bir xil).
+// ==========================================================
+const MON_SUBJECT_ORDER = [
+  "Boshlang'ich ta'lim", 'Matematika', 'Informatika', 'Ona tili', 'English', 'Nemis tili', 'Fransuz tili',
+  'Rus tili', 'Biologiya', 'Fizika', 'Kimyo', 'Geografiya', 'Tarix', 'Huquq', 'Tarbiya', 'Texnologiya',
+  "Tasviriy san'at", 'Musiqa', 'Iqtisodiy bilim asoslari', 'Tadbirkorlik asoslari'
+];
+const MON_SUBJECT_META = {
+  "Boshlang'ich ta'lim": ['🎒', "Boshlang'ich ta'lim"], 'Matematika': ['📐', 'Matematika'], 'Informatika': ['💻', 'Informatika'],
+  'Ona tili': ['📚', 'Ona tili va adabiyot'], 'English': ['🇬🇧', 'Ingliz tili'], 'Nemis tili': ['🇩🇪', 'Nemis tili'],
+  'Fransuz tili': ['🇫🇷', 'Fransuz tili'], 'Rus tili': ['🇷🇺', 'Rus tili'], 'Biologiya': ['🧬', 'Biologiya'],
+  'Fizika': ['⚛️', 'Fizika'], 'Kimyo': ['⚗️', 'Kimyo'], 'Geografiya': ['🌍', 'Geografiya'], 'Tarix': ['🏛️', 'Tarix'],
+  'Huquq': ['⚖️', 'Davlat va huquq asoslari'], 'Tarbiya': ['🌱', 'Tarbiya'], 'Texnologiya': ['🛠️', 'Texnologiya'],
+  "Tasviriy san'at": ['🎨', "Tasviriy san'at"], 'Musiqa': ['🎵', 'Musiqa'],
+  'Iqtisodiy bilim asoslari': ['💹', 'Iqtisodiy bilim asoslari'], 'Tadbirkorlik asoslari': ['🧾', 'Tadbirkorlik asoslari']
+};
+const MON_SUBJECT_ALIASES = {
+  'ingliz tili': 'English', 'english': 'English', 'davlat va huquq asoslari': 'Huquq',
+  'ona tili va adabiyot': 'Ona tili', 'ona tili va adabiyoti': 'Ona tili', 'rus tili va adabiyoti': 'Rus tili'
+};
+const MON_TEACHERS_PAGE = 250;
 
-  const schoolNames = Object.keys(state.teachersDb || {}).sort(compareSchoolsNatural);
-  schoolNames.forEach(sch => {
-    const opt = document.createElement('option');
-    opt.value = sch;
-    opt.textContent = `🏫 ${sch} (${(state.teachersDb[sch] || []).length} nafar)`;
-    select.appendChild(opt);
+let monSubjectNames = new Map();   // kalit -> asosiy nom
+let monTeachers = [];              // bazadagi pedagoglar (natijalar bilan bog'langan)
+let monitoringPairRows = [];       // (pedagog × fan) qatorlari — fanlar jadvali uchun
+let monLastSchoolRows = [];        // A4 hisobot uchun
+let monTeachersLimit = MON_TEACHERS_PAGE;
+let monLoadPromise = null;
+let monSearchTimer = null;
+
+function monKey(s) {
+  return (s || '').toLowerCase().replace(/[‘’ʻʼ`´']/g, '').replace(/\s+/g, ' ').trim();
+}
+function monEsc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+}
+function monCanonSubject(s) {
+  const x = (s || '').replace(/\(.*?\)/g, '').replace(/\s+/g, ' ').trim();
+  if (!x) return '';
+  const k = monKey(x);
+  return MON_SUBJECT_ALIASES[k] || monSubjectNames.get(k) || x;
+}
+function monSubjectLabel(sub) {
+  const m = MON_SUBJECT_META[sub];
+  return m ? m[1] : sub;
+}
+function monGrade(p) {
+  if (p >= 86) return "A'lo";
+  if (p >= 71) return 'Yaxshi';
+  if (p >= 56) return 'Qoniqarli';
+  return 'Qoniqarsiz';
+}
+function monPct(x) { return (Math.round(x * 10) / 10).toFixed(1) + '%'; }
+function monNum(n) { return Number(n || 0).toLocaleString('uz-UZ'); }
+
+function monBuildTeachers() {
+  monSubjectNames = new Map();
+  const db = state.teachersDb || {};
+  Object.values(db).forEach(arr => (arr || []).forEach(t => {
+    [t.subject].concat(Array.isArray(t.all_krs) ? t.all_krs : []).forEach(s => {
+      const c = (s || '').replace(/\(.*?\)/g, '').replace(/\s+/g, ' ').trim();
+      const k = monKey(c);
+      if (c && !MON_SUBJECT_ALIASES[k] && !monSubjectNames.has(k)) monSubjectNames.set(k, c);
+    });
+  }));
+  const list = [];
+  Object.entries(db).forEach(([school, arr]) => {
+    const schoolKey = normalizeSchoolName(school);
+    (arr || []).forEach(t => {
+      const subjects = [];
+      const keys = new Set();
+      [t.subject].concat(Array.isArray(t.all_krs) ? t.all_krs : []).forEach(s => {
+        const c = monCanonSubject(s);
+        const k = monKey(c);
+        if (c && !keys.has(k)) { keys.add(k); subjects.push(c); }
+      });
+      list.push({
+        name: t.name, school, schoolKey,
+        primary: subjects[0] || '', subjects, subjectKeys: keys,
+        records: new Map(), blocked: new Map()
+      });
+    });
   });
-
-  if (currentVal && schoolNames.includes(currentVal)) {
-    select.value = currentVal;
-  }
+  return list;
 }
 
-async function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
-  const updateEl = document.getElementById('monLastUpdated');
-  if (updateEl) {
-    const now = new Date();
-    updateEl.textContent = `${now.toLocaleTimeString('uz-UZ')}, ${now.toLocaleDateString('uz-UZ')}`;
-  }
-
-  if (!state.teachersDb || Object.keys(state.teachersDb).length === 0) {
-    await loadTeachersDatabase();
-  }
-  populateMonitoringSchoolFilter();
-
-  const liveResults = [];
-  let sheetFetchedResults = false;
-
-  // 1. TEZKOR JSON BAZA (results_db.json) - 50ms da bir zumda yuklanadi
-  try {
-    const jsonRes = await fetch('results_db.json?v=' + Date.now());
-    if (jsonRes.ok) {
-      const jsonRecords = await jsonRes.json();
-      sheetFetchedResults = true;
-      for (const item of jsonRecords) {
-        if (!item.name) continue;
-        const normN = normalizePersonName(item.name);
-        const record = {
-          date: (item.date || '').substring(0, 10),
-          name: normN,
-          rawName: item.name,
-          school: item.school || '',
-          cleanSchool: normalizeSchoolName(item.school),
-          subject: item.subject || '',
-          session: item.grade_or_session ? (parseInt(item.grade_or_session, 10) || 4) : 4,
-          score: parseFloat(item.score) || 0,
-          total: parseInt(item.total) || (parseFloat(item.score) > 25 ? 40 : 25),
-          percent: parseFloat(item.percent) || (item.total ? Math.round((parseFloat(item.score) / parseInt(item.total)) * 100) : 0),
-          switches: parseInt(item.switches) || 0,
-          status: item.status || 'Muvaffaqiyatli topshirdi',
-          isBlocked: false
-        };
-        const existingIdx = liveResults.findIndex(lr => lr.name === normN);
-        if (existingIdx >= 0) {
-          liveResults[existingIdx] = record;
-        } else {
-          liveResults.push(record);
-        }
-      }
+function monBuildIndex(teachers) {
+  const full = new Map(), two = new Map();
+  const add = (m, k, t) => { if (!m.has(k)) m.set(k, []); m.get(k).push(t); };
+  teachers.forEach(t => {
+    const tok = monKey(t.name).split(' ').filter(Boolean);
+    add(full, tok.join(' '), t);
+    if (tok.length >= 2) {
+      add(two, tok[0] + ' ' + tok[1], t);
+      add(two, tok[1] + ' ' + tok[0], t);
     }
-  } catch (jErr) {
-    console.warn("results_db.json fetch warning:", jErr);
-  }
+  });
+  return { full, two };
+}
 
-  // 2. LIVE GOOGLE SHEETS SINXRONIZATSIYA (Yangi qo'shilgan natijalarni birlashtiradi)
-  try {
-    const cacheUrl = RESULTS_SHEET_URL + '&_t=' + Date.now();
-    const res = await fetch(cacheUrl, { cache: 'no-store' });
-    if (res.ok) {
-      sheetFetchedResults = true;
-      const csvText = await res.text();
-      const rows = parseCsv(csvText);
+function monFindTeacher(idx, rawName, school) {
+  const tok = monKey(rawName).split(' ').filter(Boolean);
+  if (!tok.length) return null;
+  let c = idx.full.get(tok.join(' '));
+  if (!c && tok.length >= 2) c = idx.two.get(tok[0] + ' ' + tok[1]);
+  if (!c || !c.length) return null;
+  if (c.length > 1) {
+    const sk = normalizeSchoolName(school);
+    const same = c.filter(t => t.schoolKey === sk);
+    return same.length ? same[0] : null;
+  }
+  return c[0];
+}
+
+function monMakeResult(raw) {
+  const score = parseFloat(raw.score) || 0;
+  const total = parseInt(raw.total, 10) || (score > 25 ? 40 : 25);
+  let percent = parseFloat(raw.percent);
+  if (!(percent >= 0)) percent = total ? Math.round((score / total) * 100) : 0;
+  return {
+    date: (raw.date || '').substring(0, 19),
+    name: normalizePersonName(raw.name),
+    rawName: raw.name,
+    school: raw.school || '',
+    cleanSchool: normalizeSchoolName(raw.school),
+    subject: raw.subject || '',
+    session: raw.session ? (parseInt(raw.session, 10) || 4) : 4,
+    score, total, percent,
+    switches: parseInt(raw.switches, 10) || 0,
+    status: raw.status || 'Muvaffaqiyatli topshirdi',
+    isBlocked: false
+  };
+}
+
+async function monLoadSources() {
+  const get = async (u) => {
+    try {
+      const r = await fetch(u + (u.includes('?') ? '&' : '?') + '_t=' + Date.now(), { cache: 'no-store' });
+      return r.ok ? r : null;
+    } catch (e) { return null; }
+  };
+  const [jr, sr, jb, sb] = await Promise.all([
+    get('results_db.json'), get(RESULTS_SHEET_URL), get('blocked_db.json'), get(BLOCKED_SHEET_URL)
+  ]);
+
+  const results = [];
+  let resultsLoaded = false;
+  if (jr) {
+    try {
+      const arr = await jr.json();
+      resultsLoaded = true;
+      arr.forEach(it => { if (it && it.name) results.push(monMakeResult({ ...it, session: it.grade_or_session })); });
+    } catch (e) { console.warn('results_db.json:', e); }
+  }
+  if (sr) {
+    try {
+      const rows = parseCsv(await sr.text());
+      resultsLoaded = true;
       for (let i = 1; i < rows.length; i++) {
         const r = rows[i];
         if (!r[1]) continue;
-        const normN = normalizePersonName(r[1]);
-        const record = {
-          date: (r[0] || '').substring(0, 10),
-          name: normN,
-          rawName: r[1],
-          school: r[2] || '',
-          cleanSchool: normalizeSchoolName(r[2]),
-          subject: r[3] || '',
-          session: r[4] ? (parseInt(r[4], 10) || 4) : 4,
-          score: parseFloat(r[5]) || 0,
-          total: parseInt(r[6]) || (parseFloat(r[5]) > 25 ? 40 : 25),
-          percent: parseFloat(r[7]) || (parseInt(r[6]) ? Math.round((parseFloat(r[5]) / parseInt(r[6])) * 100) : 0),
-          switches: parseInt(r[8]) || 0,
-          status: r[9] || 'Muvaffaqiyatli topshirdi',
-          isBlocked: false
-        };
-
-        const existingIdx = liveResults.findIndex(lr => lr.name === normN);
-        if (existingIdx >= 0) {
-          liveResults[existingIdx] = record;
-        } else {
-          liveResults.push(record);
-        }
+        results.push(monMakeResult({
+          date: r[0], name: r[1], school: r[2], subject: r[3], session: r[4],
+          score: r[5], total: r[6], percent: r[7], switches: r[8], status: r[9]
+        }));
       }
-    }
-  } catch (err) {
-    console.warn("Live results fetch error:", err);
+    } catch (e) { console.warn('Natijalar jadvali:', e); }
   }
 
   const blockedMap = new Map();
-  let sheetFetchedBlocked = false;
-
-  // 1. Tezkor JSON blocked_db yuklash
-  try {
-    const bRes = await fetch('blocked_db.json?v=' + Date.now());
-    if (bRes.ok) {
-      const bList = await bRes.json();
-      for (const b of bList) {
-        if (!b.name) continue;
-        const normN = normalizePersonName(b.name);
-        blockedMap.set(normN, {
-          name: normN,
-          rawName: b.name,
-          school: b.school || '',
-          subject: b.subject || '',
-          switches: 4,
-          isBlocked: true,
-          status: '🚫 Bloklangan'
-        });
-      }
-    }
-  } catch (bErr) {}
-
-  // 2. Google Sheets orqali yangilash
-  try {
-    const cacheUrlB = BLOCKED_SHEET_URL + '&_t=' + Date.now();
-    const resB = await fetch(cacheUrlB, { cache: 'no-store' });
-    if (resB.ok) {
-      sheetFetchedBlocked = true;
-      const csvTextB = await resB.text();
-      const rowsB = parseCsv(csvTextB);
-      for (let i = 1; i < rowsB.length; i++) {
-        const r = rowsB[i];
+  let blockedLoaded = false;
+  const bKey = (name, subject) => monKey(name) + '|' + monKey(monCanonSubject(subject));
+  if (jb) {
+    try {
+      const arr = await jb.json();
+      blockedLoaded = true;
+      arr.forEach(b => {
+        if (!b || !b.name) return;
+        const subject = b.subject || b.reason || '';
+        blockedMap.set(bKey(b.name, subject), { name: b.name, school: b.school || '', subject, switches: 4 });
+      });
+    } catch (e) { console.warn('blocked_db.json:', e); }
+  }
+  if (sb) {
+    try {
+      const rows = parseCsv(await sb.text());
+      blockedLoaded = true;
+      for (let i = 1; i < rows.length; i++) {
+        const r = rows[i];
         if (!r[1]) continue;
-        const normN = normalizePersonName(r[1]);
-        const ruxsat = (r[6] || '').trim().toLowerCase();
-        // Agar admin Google Sheetda 'Ochiq' deb ruxsat ochgan bo'lsa, uni blok ro'yxatidan chiqaramiz
-        if (ruxsat === 'ochiq') {
-          blockedMap.delete(normN);
+        const subject = r[3] || '';
+        if ((r[6] || '').trim().toLowerCase() === 'ochiq') {
+          // Administrator ruxsat bergan — blokdan chiqariladi
+          if (subject) blockedMap.delete(bKey(r[1], subject));
+          else Array.from(blockedMap.keys()).forEach(k => { if (k.startsWith(monKey(r[1]) + '|')) blockedMap.delete(k); });
           continue;
         }
-        blockedMap.set(normN, {
-          name: normN,
-          rawName: r[1],
-          school: r[2] || '',
-          subject: r[3] || '',
-          switches: parseInt(r[4]) || 4,
-          isBlocked: true,
-          status: '🚫 Bloklangan'
-        });
+        blockedMap.set(bKey(r[1], subject), { name: r[1], school: r[2] || '', subject, switches: parseInt(r[4], 10) || 4 });
       }
+    } catch (e) { console.warn('Bloklanganlar jadvali:', e); }
+  }
+  return { results, blocked: Array.from(blockedMap.values()), resultsLoaded, blockedLoaded };
+}
+
+function monPopulateFilters(teachers) {
+  // Maktablar
+  const selS = document.getElementById('monSchoolFilter');
+  if (selS) {
+    const cur = selS.value;
+    const names = Object.keys(state.teachersDb || {}).sort(compareSchoolsNatural);
+    selS.innerHTML = `<option value="ALL">-- Barcha maktablar (${names.length} ta) --</option>` +
+      names.map(n => `<option value="${monEsc(n)}">🏫 ${monEsc(n)} (${(state.teachersDb[n] || []).length} nafar)</option>`).join('');
+    if (cur && names.includes(cur)) selS.value = cur;
+  }
+  // Fanlar
+  const selF = document.getElementById('monSubjectFilter');
+  if (selF) {
+    const cur = selF.value;
+    const counts = new Map();
+    teachers.forEach(t => t.subjects.forEach(s => counts.set(s, (counts.get(s) || 0) + 1)));
+    const subs = Array.from(counts.keys()).sort((a, b) => {
+      const ia = MON_SUBJECT_ORDER.indexOf(a), ib = MON_SUBJECT_ORDER.indexOf(b);
+      return (ia < 0 ? 999 : ia) - (ib < 0 ? 999 : ib) || a.localeCompare(b);
+    });
+    selF.innerHTML = `<option value="ALL">-- Barcha fanlar (${subs.length} ta) --</option>` +
+      subs.map(s => `<option value="${monEsc(s)}">${(MON_SUBJECT_META[s] || ['📘'])[0]} ${monEsc(monSubjectLabel(s))} (${counts.get(s)})</option>`).join('');
+    if (cur && subs.includes(cur)) selF.value = cur;
+  }
+  const schoolsCnt = Object.keys(state.teachersDb || {}).length;
+  const sub = document.getElementById('monSubtitle');
+  if (sub) {
+    const subjCnt = selF ? selF.options.length - 1 : 0;
+    sub.textContent = `${schoolsCnt} ta maktab va ${subjCnt} ta fan kesimida pedagoglar ishtiroki, qamrov foizi va reyting tahlili`;
+  }
+}
+
+async function monDoLoad() {
+  const btn = document.getElementById('monRefreshBtn');
+  if (btn) btn.disabled = true;
+  try {
+    if (!state.teachersDb || Object.keys(state.teachersDb).length === 0) {
+      await loadTeachersDatabase();
     }
-  } catch (err) {
-    console.warn("Blocked fetch error:", err);
-  }
+    const src = await monLoadSources();
 
-  // If Google Sheets is connected and empty (cleared by admin), ensure local storage is also cleared!
-  if (sheetFetchedResults && liveResults.length === 0) {
-    try { localStorage.removeItem(RESULTS_STORAGE_KEY); } catch (e) {}
-  }
-  if (sheetFetchedBlocked && blockedMap.size === 0) {
-    try { localStorage.removeItem(BLOCKED_STORAGE_KEY); } catch (e) {}
-  }
+    const teachers = monBuildTeachers();
+    const idx = monBuildIndex(teachers);
 
-  lastLiveSubmissions = liveResults;
-
-  // Build unified teacher list for all 3088 teachers
-  const unifiedTeachers = [];
-  const processedNames = new Set();
-
-  Object.entries(state.teachersDb || {}).forEach(([school, teachers]) => {
-    teachers.forEach(t => {
-      const normN = normalizePersonName(t.name);
-      processedNames.add(normN);
-
-      let isBlk = blockedMap.has(normN);
-      let blkRecord = blockedMap.get(normN);
-      if (!isBlk) {
-        for (const [blkKey, blkVal] of blockedMap.entries()) {
-          if (isSameTeacher(t.name, blkVal.rawName || blkKey)) {
-            isBlk = true;
-            blkRecord = blkVal;
-            break;
-          }
-        }
-      }
-      const subRecord = liveResults.find(lr => isSameTeacher(t.name, lr.rawName || lr.name));
-
-      if (isBlk) {
-        unifiedTeachers.push({
-          name: t.name,
-          school: school,
-          subject: t.subject || '',
-          hasParticipated: true,
-          isBlocked: true,
-          score: 0,
-          total: 25,
-          scorePercent: 0,
-          switches: (blkRecord && blkRecord.switches) || 4,
-          statusText: '🚫 Bloklangan',
-          gradeLevel: 'Qoniqarsiz'
-        });
-      } else if (subRecord) {
-        unifiedTeachers.push({
-          name: t.name,
-          school: school,
-          subject: t.subject || subRecord.subject || '',
-          all_krs: t.all_krs || [t.subject || ''],
-          hasParticipated: true,
-          isBlocked: false,
-          score: subRecord.score,
-          total: subRecord.total || 25,
-          scorePercent: subRecord.percent,
-          switches: subRecord.switches,
-          statusText: '✅ Topshirdi',
-          gradeLevel: subRecord.percent >= 86 ? "A'lo" : (subRecord.percent >= 71 ? "Yaxshi" : (subRecord.percent >= 56 ? "Qoniqarli" : "Qoniqarsiz"))
-        });
+    let seq = 0, unmatched = 0;
+    src.results.forEach(rec => {
+      const t = monFindTeacher(idx, rec.rawName, rec.school);
+      if (!t) { unmatched++; return; }
+      const sub = monCanonSubject(rec.subject) || t.primary;
+      const k = monKey(sub);
+      if (!t.subjectKeys.has(k)) { t.subjectKeys.add(k); t.subjects.push(sub); }
+      rec.sub = sub;
+      rec.seq = seq++;
+      t.records.set(k, rec);            // bir fan bo'yicha oxirgi natija hisoblanadi
+    });
+    src.blocked.forEach(b => {
+      const t = monFindTeacher(idx, b.name, b.school);
+      if (!t) return;
+      const sub = monCanonSubject(b.subject);
+      if (sub) {
+        const k = monKey(sub);
+        if (!t.subjectKeys.has(k)) { t.subjectKeys.add(k); t.subjects.push(sub); }
+        t.blocked.set(k, b);
       } else {
-        unifiedTeachers.push({
-          name: t.name,
-          school: school,
-          subject: t.subject || '',
-          all_krs: t.all_krs || [t.subject || ''],
-          hasParticipated: false,
-          isBlocked: false,
-          score: 0,
-          total: 25,
-          scorePercent: 0,
-          switches: 0,
-          statusText: '⏳ Topshirmagan',
-          gradeLevel: 'Topshirmagan'
-        });
+        t.blocked.set('*', b);
       }
     });
-  });
 
-  monitoringDataRaw = unifiedTeachers;
-  applyMonitoringFilters();
+    // Natijalar jadvali ham, JSON ham bo'sh bo'lsa — eski mahalliy keshni tozalaymiz
+    if (src.resultsLoaded && src.results.length === 0) {
+      try { localStorage.removeItem(RESULTS_STORAGE_KEY); } catch (e) {}
+    }
+    if (src.blockedLoaded && src.blocked.length === 0) {
+      try { localStorage.removeItem(BLOCKED_STORAGE_KEY); } catch (e) {}
+    }
+    if (!src.resultsLoaded) showToast("Natijalar bazasini yuklab bo'lmadi. Internetni tekshirib, «Yangilash» ni bosing.", "⚠️");
 
-  if (isManualRefresh) {
-    showToast("Monitoring ma'lumotlari muvaffaqiyatli yangilandi!", "🔄");
+    lastLiveSubmissions = src.results;     // Davomat bo'limi ham shu ro'yxatdan foydalanadi
+    monTeachers = teachers;
+    monitoringDataRaw = teachers;
+    console.info(`[Monitoring] pedagoglar: ${teachers.length}, natijalar: ${src.results.length}, bazaga bog'lanmagan: ${unmatched}`);
+
+    monPopulateFilters(teachers);
+    applyMonitoringFilters();
+
+    const updateEl = document.getElementById('monLastUpdated');
+    if (updateEl) {
+      const now = new Date();
+      updateEl.textContent = `${now.toLocaleTimeString('uz-UZ')}, ${now.toLocaleDateString('uz-UZ')}`;
+    }
+  } finally {
+    if (btn) btn.disabled = false;
   }
+}
+
+function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
+  if (!monLoadPromise) {
+    monLoadPromise = monDoLoad().finally(() => { monLoadPromise = null; });
+  }
+  return monLoadPromise.then(() => {
+    if (isManualRefresh) showToast("Monitoring ma'lumotlari yangilandi!", "🔄");
+  });
 }
 
 function refreshMonitoringData() {
   initOrRefreshMonitoringDashboard(true);
 }
 
-function applyMonitoringFilters() {
-  const schoolFilter = document.getElementById('monSchoolFilter')?.value || 'ALL';
-  const subjectFilter = document.getElementById('monSubjectFilter')?.value || 'ALL';
-  const statusFilter = document.getElementById('monStatusFilter')?.value || 'ALL';
-  const searchText = (document.getElementById('monSearchInput')?.value || '').toLowerCase().trim();
-
-  const filtered = monitoringDataRaw.filter(t => {
-    if (schoolFilter !== 'ALL' && t.school !== schoolFilter) return false;
-    if (subjectFilter !== 'ALL') {
-      const s1 = (t.subject || '').toLowerCase();
-      const s2 = subjectFilter.toLowerCase();
-      const hasKrs = Array.isArray(t.all_krs) && t.all_krs.some(k => (k || '').toLowerCase() === s2);
-      if (!s1.includes(s2) && !s2.includes(s1) && !hasKrs) return false;
-    }
-    if (statusFilter === 'PASSED' && (!t.hasParticipated || t.isBlocked)) return false;
-    if (statusFilter === 'MISSING' && t.hasParticipated) return false;
-    if (statusFilter === 'EXCELLENT' && (!t.hasParticipated || (t.score < 20 && t.scorePercent < 80))) return false;
-    if (statusFilter === 'LOW' && (!t.hasParticipated || t.scorePercent > 55 || t.isBlocked)) return false;
-    if (statusFilter === 'BLOCKED' && !t.isBlocked) return false;
-
-    if (searchText) {
-      const nameMatch = (t.name || '').toLowerCase().includes(searchText);
-      const schoolMatch = (t.school || '').toLowerCase().includes(searchText);
-      if (!nameMatch && !schoolMatch) return false;
-    }
-    return true;
-  });
-
-  monitoringFilteredList = filtered;
-
-  // Update KPI Cards
-  const total = filtered.length;
-  const participated = filtered.filter(t => t.hasParticipated && !t.isBlocked).length;
-  const blocked = filtered.filter(t => t.isBlocked).length;
-  const missing = filtered.filter(t => !t.hasParticipated).length;
-  const coveragePct = total > 0 ? (((participated + blocked) / total) * 100) : 0;
-  const missingPct = total > 0 ? ((missing / total) * 100) : 0;
-
-  const passedTeachers = filtered.filter(t => t.hasParticipated && !t.isBlocked);
-  const totalScoreSum = passedTeachers.reduce((acc, cur) => acc + (cur.score || 0), 0);
-  const totalMaxSum = passedTeachers.reduce((acc, cur) => acc + (cur.total || 25), 0);
-  const avgScore = passedTeachers.length > 0 ? (totalScoreSum / passedTeachers.length) : 0;
-  const avgPercent = passedTeachers.length > 0 
-    ? Math.round(passedTeachers.reduce((acc, cur) => acc + cur.scorePercent, 0) / passedTeachers.length) 
-    : 0;
-
-  // Sifat (A'lo) ko'rsatkichi: 80% yoki undan yuqori natija (40 talikda >=32, 25 talikda >=20)
-  const excellentCount = passedTeachers.filter(t => (t.scorePercent >= 80 || (t.total === 25 && t.score >= 20))).length;
-  const excellentPct = passedTeachers.length > 0 ? ((excellentCount / passedTeachers.length) * 100) : 0;
-
-  const kpiTot = document.getElementById('kpiTotalTeachers');
-  const kpiPart = document.getElementById('kpiParticipated');
-  const kpiCov = document.getElementById('kpiCoveragePercent');
-  const kpiMiss = document.getElementById('kpiMissing');
-  const kpiMissPct = document.getElementById('kpiMissingPercent');
-  const kpiAvg = document.getElementById('kpiAvgScore');
-  const kpiAvgPct = document.getElementById('kpiAvgPercent');
-  const kpiQual = document.getElementById('kpiQualityCount');
-  const kpiQualPct = document.getElementById('kpiQualityPercent');
-  const kpiBlk = document.getElementById('kpiBlockedCount');
-
-  if (kpiTot) kpiTot.textContent = total.toLocaleString('uz-UZ');
-  if (kpiPart) kpiPart.textContent = (participated + blocked).toLocaleString('uz-UZ');
-  if (kpiCov) kpiCov.textContent = `${coveragePct.toFixed(1)}%`;
-  if (kpiMiss) kpiMiss.textContent = missing.toLocaleString('uz-UZ');
-  if (kpiMissPct) kpiMissPct.textContent = `${missingPct.toFixed(1)}%`;
-  
-  if (kpiAvg) {
-    if (passedTeachers.length === 0) {
-      kpiAvg.textContent = '0%';
-    } else {
-      const all40 = passedTeachers.every(t => t.total === 40);
-      const all25 = passedTeachers.every(t => t.total === 25);
-      if (all40) {
-        kpiAvg.textContent = `${avgScore.toFixed(1)} / 40`;
-      } else if (all25) {
-        kpiAvg.textContent = `${avgScore.toFixed(1)} / 25`;
-      } else {
-        kpiAvg.textContent = `${avgPercent}%`;
-      }
+// Pedagog (subKey = null) yoki pedagog × fan (subKey = fan kaliti) uchun bitta qator
+function monMakeRow(t, subKey) {
+  let rec = null, blk = null, subject = t.primary;
+  if (subKey) {
+    rec = t.records.get(subKey) || null;
+    blk = t.blocked.get(subKey) || t.blocked.get('*') || null;
+    subject = t.subjects.find(s => monKey(s) === subKey) || t.primary;
+  } else {
+    t.records.forEach(r => { if (!rec || r.seq > rec.seq) rec = r; });
+    if (rec) {
+      blk = t.blocked.get(monKey(rec.sub)) || t.blocked.get('*') || null;
+      subject = rec.sub;
+    } else if (t.blocked.size) {
+      blk = t.blocked.values().next().value;
+      subject = (blk && monCanonSubject(blk.subject)) || t.primary;
     }
   }
-  if (kpiAvgPct) kpiAvgPct.textContent = `${avgPercent}% o'rtacha ball`;
-  if (kpiQual) kpiQual.textContent = excellentCount.toLocaleString('uz-UZ');
-  if (kpiQualPct) kpiQualPct.textContent = `${excellentPct.toFixed(1)}%`;
-  if (kpiBlk) kpiBlk.textContent = blocked.toLocaleString('uz-UZ');
+  const status = blk ? 'blocked' : (rec ? 'passed' : 'missing');
+  const passed = status === 'passed';
+  return {
+    t, name: t.name, school: t.school, subject, status,
+    hasParticipated: passed, isBlocked: status === 'blocked',
+    score: passed ? rec.score : 0,
+    total: rec ? rec.total : 25,
+    percent: passed ? rec.percent : 0,
+    scorePercent: passed ? rec.percent : 0,
+    switches: status === 'blocked' ? ((blk && blk.switches) || 4) : (rec ? rec.switches : 0),
+    grade: status === 'blocked' ? 'Bloklangan' : (passed ? monGrade(rec.percent) : 'Topshirmagan')
+  };
+}
 
-  const badgeCount = document.getElementById('tabTeachersCountBadge');
-  if (badgeCount) badgeCount.textContent = total.toLocaleString('uz-UZ');
-  const resCount = document.getElementById('monFilterResultsCount');
-  if (resCount) resCount.textContent = `${total.toLocaleString('uz-UZ')} nafar pedagog tahlil qilindi`;
-  const tFilteredCount = document.getElementById('teachersFilteredCount');
-  if (tFilteredCount) tFilteredCount.textContent = total.toLocaleString('uz-UZ');
-  const monMetaTot = document.getElementById('monMetaTotalTeachers');
-  if (monMetaTot) monMetaTot.textContent = `${total.toLocaleString('uz-UZ')} nafar`;
+function monStatusOk(row, st) {
+  switch (st) {
+    case 'PASSED': return row.status === 'passed';
+    case 'MISSING': return row.status !== 'passed';          // Qoldi = Reja − Topshirdi
+    case 'EXCELLENT': return row.status === 'passed' && row.percent >= 86;
+    case 'LOW': return row.status === 'passed' && row.percent < 56;
+    case 'BLOCKED': return row.status === 'blocked';
+    default: return true;
+  }
+}
 
-  renderSchoolsRatingTable(filtered);
-  renderSubjectsAnalysisTable(filtered);
-  renderTeachersMonitoringTable(filtered);
+function applyMonitoringFilters() {
+  const school = document.getElementById('monSchoolFilter')?.value || 'ALL';
+  const subject = document.getElementById('monSubjectFilter')?.value || 'ALL';
+  const status = document.getElementById('monStatusFilter')?.value || 'ALL';
+  const search = monKey(document.getElementById('monSearchInput')?.value || '');
+  const subKey = subject === 'ALL' ? null : monKey(subject);
+
+  const personRows = [];
+  const pairRows = [];
+  (monTeachers || []).forEach(t => {
+    if (school !== 'ALL' && t.school !== school) return;
+    if (search && !monKey(t.name).includes(search) && !monKey(t.school).includes(search)) return;
+    if (subKey) {
+      if (!t.subjectKeys.has(subKey)) return;
+      const r = monMakeRow(t, subKey);
+      if (monStatusOk(r, status)) { personRows.push(r); pairRows.push(r); }
+    } else {
+      const r = monMakeRow(t, null);
+      if (monStatusOk(r, status)) personRows.push(r);
+      t.subjects.forEach(s => {
+        const pr = monMakeRow(t, monKey(s));
+        if (monStatusOk(pr, status)) pairRows.push(pr);
+      });
+    }
+  });
+
+  monitoringFilteredList = personRows;
+  monitoringPairRows = pairRows;
+  monTeachersLimit = MON_TEACHERS_PAGE;
+
+  // KPI
+  const total = personRows.length;
+  const passedRows = personRows.filter(r => r.status === 'passed');
+  const passed = passedRows.length;
+  const blocked = personRows.filter(r => r.status === 'blocked').length;
+  const left = total - passed;
+  const covPct = total ? (passed / total) * 100 : 0;
+  const leftPct = total ? (left / total) * 100 : 0;
+  const avgPct = passed ? passedRows.reduce((a, r) => a + r.percent, 0) / passed : 0;
+  const avgScore = passed ? passedRows.reduce((a, r) => a + r.score, 0) / passed : 0;
+  const alo = passedRows.filter(r => r.percent >= 86).length;
+  const aloPct = passed ? (alo / passed) * 100 : 0;
+
+  const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+  set('kpiTotalTeachers', monNum(total));
+  set('kpiParticipated', monNum(passed));
+  set('kpiCoveragePercent', monPct(covPct));
+  set('kpiMissing', monNum(left));
+  set('kpiMissingPercent', monPct(leftPct));
+  set('kpiAvgScore', passed ? monPct(avgPct) : '—');
+  set('kpiAvgPercent', passed ? `${avgScore.toFixed(1)} ball (o'rtacha)` : "ma'lumot yo'q");
+  set('kpiQualityCount', monNum(alo));
+  set('kpiQualityPercent', monPct(aloPct));
+  set('kpiBlockedCount', monNum(blocked));
+  set('tabTeachersCountBadge', monNum(total));
+  set('teachersFilteredCount', monNum(total));
+  set('monFilterResultsCount', `${monNum(total)} nafar pedagog tanlandi`);
+
+  renderSchoolsRatingTable(personRows);
+  renderSubjectsAnalysisTable(pairRows, total);
+  renderTeachersMonitoringTable(personRows);
 }
 
 function getSchoolNumber(name) {
@@ -3132,218 +3194,113 @@ function compareSchoolsNatural(a, b) {
   return a.localeCompare(b);
 }
 
-let currentSchoolsSort = 'coverage'; // Default: Qamrov darajasi va sifat balansi bo'yicha
+let currentSchoolsSort = 'coverage';
 
-// TAB 1: Maktablar Reytingi Jadvali (Dinamik o'zgaruvchan reyting va raqami bo'yicha ketma-ketlik)
-function renderSchoolsRatingTable(teachers) {
+function monCoverageBar(cov) {
+  let color = '#10b981';
+  if (cov < 40) color = '#ef4444';
+  else if (cov < 70) color = '#f59e0b';
+  return `<div class="coverage-bar-wrapper">
+      <div class="coverage-bar-bg"><div class="coverage-bar-fill" style="width: ${cov.toFixed(0)}%; background: ${color};"></div></div>
+      <span style="font-size: 0.82rem; font-weight: 700; min-width: 45px; text-align: right;">${cov.toFixed(1)}%</span>
+    </div>`;
+}
+
+function monAggregateRows(rows, keyFn) {
+  const map = new Map();
+  rows.forEach(r => {
+    const k = keyFn(r);
+    if (!map.has(k)) map.set(k, { name: k, total: 0, passed: 0, blocked: 0, percentSum: 0, scoreSum: 0, alo: 0 });
+    const a = map.get(k);
+    a.total++;
+    if (r.status === 'passed') {
+      a.passed++; a.percentSum += r.percent; a.scoreSum += r.score;
+      if (r.percent >= 86) a.alo++;
+    } else if (r.status === 'blocked') {
+      a.blocked++;
+    }
+  });
+  return Array.from(map.values()).map(a => ({
+    ...a,
+    left: a.total - a.passed,
+    cov: a.total ? (a.passed / a.total) * 100 : 0,
+    avgPct: a.passed ? a.percentSum / a.passed : 0,
+    avgScore: a.passed ? a.scoreSum / a.passed : 0,
+    aloPct: a.passed ? (a.alo / a.passed) * 100 : 0
+  }));
+}
+
+function monAvgCell(a) {
+  return a.passed
+    ? `<div style="display:flex; flex-direction:column; align-items:center; gap:2px;">
+         <span style="font-size:1.05rem; font-weight:800; color:#059669;">${a.avgPct.toFixed(1)}%</span>
+         <span style="font-size:0.72rem; color:#64748b; font-weight:600;">(${a.avgScore.toFixed(1)} ball)</span>
+       </div>`
+    : `<span style="color:#94a3b8;">—</span>`;
+}
+function monAloCell(a) {
+  return a.alo > 0
+    ? `<span style="font-weight:700; color:#047857;">${a.aloPct.toFixed(1)}%</span> <small style="color:#64748b;">(${a.alo} nafar)</small>`
+    : `<span style="color:#94a3b8;">—</span>`;
+}
+function monLeftCell(a) {
+  return `${a.left}${a.blocked ? `<div style="font-size:0.7rem; font-weight:600; color:#b91c1c;">shundan ${a.blocked} ta blok</div>` : ''}`;
+}
+
+// TAB 1: Maktablar reytingi
+function renderSchoolsRatingTable(rows) {
   const tbody = document.getElementById('schoolsRatingTableBody');
   if (!tbody) return;
 
-  // Update Sort Button UI Active states
-  const btnScore = document.getElementById('sortBtnScore');
-  const btnNumber = document.getElementById('sortBtnNumber');
-  const btnCov = document.getElementById('sortBtnCoverage');
-  const btnTeachers = document.getElementById('sortBtnTeachers');
-
-  [btnScore, btnNumber, btnCov, btnTeachers].forEach(btn => {
-    if (btn) {
-      btn.classList.remove('btn-primary-mon', 'active');
-      btn.classList.add('btn-outline-mon');
-    }
+  const btns = { coverage: 'sortBtnCoverage', score: 'sortBtnScore', number: 'sortBtnNumber' };
+  Object.entries(btns).forEach(([mode, id]) => {
+    const b = document.getElementById(id);
+    if (!b) return;
+    const on = mode === currentSchoolsSort;
+    b.classList.toggle('btn-primary-mon', on);
+    b.classList.toggle('active', on);
+    b.classList.toggle('btn-outline-mon', !on);
   });
 
-  if (currentSchoolsSort === 'score' && btnScore) {
-    btnScore.classList.add('btn-primary-mon', 'active');
-    btnScore.classList.remove('btn-outline-mon');
-  } else if (currentSchoolsSort === 'number' && btnNumber) {
-    btnNumber.classList.add('btn-primary-mon', 'active');
-    btnNumber.classList.remove('btn-outline-mon');
-  } else if (currentSchoolsSort === 'coverage' && btnCov) {
-    btnCov.classList.add('btn-primary-mon', 'active');
-    btnCov.classList.remove('btn-outline-mon');
-  } else if (currentSchoolsSort === 'teachers' && btnTeachers) {
-    btnTeachers.classList.add('btn-primary-mon', 'active');
-    btnTeachers.classList.remove('btn-outline-mon');
-  }
-
-  // Aggregate stats for all 55 schools
-  const schoolMap = new Map();
-  const allSchools = Object.keys(state.teachersDb || {}).sort(compareSchoolsNatural);
-  
-  allSchools.forEach(sch => {
-    schoolMap.set(sch, {
-      name: sch,
-      total: (state.teachersDb[sch] || []).length,
-      participated: 0,
-      blocked: 0,
-      scoresSum: 0,
-      percentSum: 0,
-      aloCount: 0
-    });
-  });
-
-  teachers.forEach(t => {
-    if (!schoolMap.has(t.school)) {
-      schoolMap.set(t.school, {
-        name: t.school,
-        total: 0,
-        participated: 0,
-        blocked: 0,
-        scoresSum: 0,
-        percentSum: 0,
-        aloCount: 0
-      });
-    }
-    const item = schoolMap.get(t.school);
-    if (t.hasParticipated && !t.isBlocked) {
-      item.participated++;
-      item.scoresSum += (t.score || 0);
-      item.percentSum = (item.percentSum || 0) + (t.scorePercent || 0);
-      if (t.scorePercent >= 80 || (t.total === 25 && t.score >= 20)) item.aloCount++;
-    } else if (t.isBlocked) {
-      item.blocked++;
-    }
-  });
-
-  const list = Array.from(schoolMap.values());
-
-  // SORTING ALGORITHM - Davomat va Reyting balansi
+  const list = monAggregateRows(rows, r => r.school);
   list.sort((a, b) => {
-    const doneA = a.participated + a.blocked;
-    const doneB = b.participated + b.blocked;
-    const covA = a.total > 0 ? (doneA / a.total) * 100 : 0;
-    const covB = b.total > 0 ? (doneB / b.total) * 100 : 0;
-    const avgA = a.participated > 0 ? (a.percentSum / a.participated) : 0;
-    const avgB = b.participated > 0 ? (b.percentSum / b.participated) : 0;
-    const aloA = a.participated > 0 ? (a.aloCount / a.participated) * 100 : 0;
-    const aloB = b.participated > 0 ? (b.aloCount / b.participated) * 100 : 0;
-
-    // 1. STRICT NUMBER ORDER (1-55)
-    if (currentSchoolsSort === 'number') {
-      return compareSchoolsNatural(a.name, b.name);
-    }
-
-    // 2. QAMROV VA NATIJA BO'YICHA ASOSIY REYTING (Default - Davomat bilan uyg'un)
-    if (currentSchoolsSort === 'coverage') {
-      // Qamrov foizi yuqori bo'lgan maktab oldinda
-      if (Math.abs(covB - covA) > 0.05) {
-        return covB - covA;
-      }
-      // Agar qamrov foizi teng bo'lsa (yoki 100% bo'lsa), o'rtacha ball yuqorisi
-      if (Math.abs(avgB - avgA) > 0.001) {
-        return avgB - avgA;
-      }
-      // Keyin sifat (a'lo) foizi
-      if (Math.abs(aloB - aloA) > 0.001) {
-        return aloB - aloA;
-      }
-      if (doneB !== doneA) {
-        return doneB - doneA;
-      }
-      return compareSchoolsNatural(a.name, b.name);
-    }
-
-    // 3. O'RTACHA BALL BO'YICHA REYTING (BALANSLANGAN)
+    if (currentSchoolsSort === 'number') return compareSchoolsNatural(a.name, b.name);
     if (currentSchoolsSort === 'score') {
-      const aHasDone = a.participated > 0;
-      const bHasDone = b.participated > 0;
-
-      if (aHasDone && !bHasDone) return -1;
-      if (!aHasDone && bHasDone) return 1;
-
-      if (aHasDone && bHasDone) {
-        // Balanslangan kompozit ball: O'rtacha ball (70%) + Qamrov (30%)
-        // Bu orqali 74 ta qarzdor maktab 1-o'ringa chiqib ololmaydi
-        const scoreWeightA = (avgA * 0.7) + ((covA / 100) * 25 * 0.3);
-        const scoreWeightB = (avgB * 0.7) + ((covB / 100) * 25 * 0.3);
-        if (Math.abs(scoreWeightB - scoreWeightA) > 0.001) {
-          return scoreWeightB - scoreWeightA;
-        }
-        if (Math.abs(covB - covA) > 0.001) return covB - covA;
-        if (Math.abs(avgB - avgA) > 0.001) return avgB - avgA;
-        return compareSchoolsNatural(a.name, b.name);
-      }
+      if ((a.passed > 0) !== (b.passed > 0)) return a.passed > 0 ? -1 : 1;
+      if (Math.abs(b.avgPct - a.avgPct) > 0.001) return b.avgPct - a.avgPct;
+      if (Math.abs(b.cov - a.cov) > 0.001) return b.cov - a.cov;
       return compareSchoolsNatural(a.name, b.name);
     }
-
-    // 4. TEACHERS COUNT ORDER
-    if (currentSchoolsSort === 'teachers') {
-      if (b.total !== a.total) return b.total - a.total;
-      return compareSchoolsNatural(a.name, b.name);
-    }
-
+    // coverage (asosiy reyting): qamrov → o'rtacha ball → a'lo foizi
+    if (Math.abs(b.cov - a.cov) > 0.05) return b.cov - a.cov;
+    if (Math.abs(b.avgPct - a.avgPct) > 0.001) return b.avgPct - a.avgPct;
+    if (Math.abs(b.aloPct - a.aloPct) > 0.001) return b.aloPct - a.aloPct;
     return compareSchoolsNatural(a.name, b.name);
   });
+  monLastSchoolRows = list;
 
-  tbody.innerHTML = '';
-  list.forEach((sch, idx) => {
-    const total = sch.total;
-    const done = sch.participated + sch.blocked;
-    const missing = Math.max(0, total - done);
-    const covPct = total > 0 ? ((done / total) * 100) : 0;
-    const avg = sch.participated > 0 ? (sch.scoresSum / sch.participated) : 0;
-    const aloPct = sch.participated > 0 ? ((sch.aloCount / sch.participated) * 100) : 0;
+  if (!list.length) {
+    tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding:2rem; color:#64748b;">🔍 Tanlangan filtr bo'yicha ma'lumot topilmadi.</td></tr>`;
+    return;
+  }
 
-    let barColor = '#10b981';
-    if (covPct < 40) barColor = '#ef4444';
-    else if (covPct < 70) barColor = '#f59e0b';
-
-    let rankBadge = `<span class="rank-badge rank-default">${idx + 1}</span>`;
-    if (sch.participated > 0) {
-      if (idx === 0) rankBadge = `<span class="rank-badge rank-1" title="1-o'rin (Eng yuqori o'rtacha ball)">🥇 1</span>`;
-      else if (idx === 1) rankBadge = `<span class="rank-badge rank-2" title="2-o'rin">🥈 2</span>`;
-      else if (idx === 2) rankBadge = `<span class="rank-badge rank-3" title="3-o'rin">🥉 3</span>`;
-    }
-
-    let statusBadge = `<span class="status-badge status-missing">Kutilmoqda</span>`;
-    if (sch.participated > 0) {
-      if (covPct >= 80) {
-        statusBadge = `<span class="status-badge status-passed">Yuqori qamrov (${done} ta)</span>`;
-      } else {
-        statusBadge = `<span class="status-badge status-passed">Topshirmoqda (${done} ta)</span>`;
-      }
-    }
-
-    const avgScoreVal = sch.participated > 0 ? (sch.scoresSum / sch.participated) : 0;
-    const avgPctVal = sch.participated > 0 ? ((sch.percentSum || 0) / sch.participated) : 0;
-
-    const avgScoreDisplay = sch.participated > 0
-      ? `<div style="display: flex; flex-direction: column; align-items: center; gap: 2px;">
-           <span style="font-size: 1.05rem; font-weight: 800; color: #059669;">${avgPctVal.toFixed(1)}%</span>
-           <span style="font-size: 0.72rem; color: #64748b; font-weight: 600;">(${avgScoreVal.toFixed(1)} ball)</span>
-         </div>`
-      : `<span style="color: #94a3b8; font-weight: 500;">—</span>`;
-
-    const aloDisplay = aloPct > 0
-      ? `<span style="font-weight: 700; color: #047857;">${aloPct.toFixed(1)}%</span> <small style="color: #64748b;">(${sch.aloCount} nafar)</small>`
-      : `<span style="color: #94a3b8;">—</span>`;
-
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td style="text-align: center;">${rankBadge}</td>
-      <td>
-        <div style="display: inline-flex; align-items: center; gap: 0.4rem; white-space: nowrap;">
-          <b>${sch.name}</b>
-          ${idx === 0 && sch.participated > 0 ? '<span class="mon-live-badge" style="padding:0.12rem 0.45rem; font-size:0.7rem; white-space: nowrap;">🏆 Yetakchi</span>' : ''}
-        </div>
-      </td>
-      <td style="text-align: center; font-weight: 600;">${total}</td>
-      <td style="text-align: center; font-weight: 700; color: #059669;">${done}</td>
-      <td style="text-align: center; font-weight: 700; color: #d97706;">${missing}</td>
-      <td>
-        <div class="coverage-bar-wrapper">
-          <div class="coverage-bar-bg">
-            <div class="coverage-bar-fill" style="width: ${covPct.toFixed(0)}%; background: ${barColor};"></div>
-          </div>
-          <span style="font-size: 0.82rem; font-weight: 700; min-width: 45px; text-align: right;">${covPct.toFixed(1)}%</span>
-        </div>
-      </td>
-      <td style="text-align: center;">${avgScoreDisplay}</td>
-      <td style="text-align: center;">${aloDisplay}</td>
-      <td style="text-align: center;">${statusBadge}</td>
-    `;
-    tbody.appendChild(tr);
-  });
+  const medal = ['🥇 1', '🥈 2', '🥉 3'];
+  tbody.innerHTML = list.map((a, idx) => {
+    const ranked = currentSchoolsSort !== 'number' && a.passed > 0 && idx < 3;
+    const badge = ranked
+      ? `<span class="rank-badge rank-${idx + 1}">${medal[idx]}</span>`
+      : `<span class="rank-badge rank-default">${idx + 1}</span>`;
+    return `<tr>
+      <td style="text-align:center;">${badge}</td>
+      <td><b style="white-space:nowrap;">${monEsc(a.name)}</b></td>
+      <td style="text-align:center; font-weight:600;">${a.total}</td>
+      <td style="text-align:center; font-weight:700; color:#059669;">${a.passed}</td>
+      <td style="text-align:center; font-weight:700; color:#d97706;">${monLeftCell(a)}</td>
+      <td>${monCoverageBar(a.cov)}</td>
+      <td style="text-align:center;">${monAvgCell(a)}</td>
+      <td style="text-align:center;">${monAloCell(a)}</td>
+    </tr>`;
+  }).join('');
 }
 
 function sortSchoolsRating(criterion) {
@@ -3351,209 +3308,103 @@ function sortSchoolsRating(criterion) {
   renderSchoolsRatingTable(monitoringFilteredList);
 }
 
-
-// TAB 2: Fanlar Kesimida Tahlil Jadvali
-function renderSubjectsAnalysisTable(teachers) {
+// TAB 2: Fanlar kesimida tahlil (pedagog × fan)
+function renderSubjectsAnalysisTable(pairRows, personTotal) {
   const tbody = document.getElementById('subjectsAnalysisTableBody');
   if (!tbody) return;
 
-  const subjectOrder = [
-    "Boshlang'ich ta'lim", "Matematika", "Informatika", "Ona tili",
-    "English", "Nemis tili", "Fransuz tili", "Rus tili", "Biologiya", "Fizika", "Kimyo",
-    "Geografiya", "Tarix", "Huquq", "Texnologiya", "Tasviriy san'at"
-  ];
-
-  const subMap = new Map();
-  subjectOrder.forEach(sub => {
-    subMap.set(sub, {
-      name: sub,
-      total: 0,
-      participated: 0,
-      blocked: 0,
-      scoresSum: 0,
-      percentSum: 0,
-      aloCount: 0
-    });
+  const list = monAggregateRows(pairRows, r => r.subject).sort((a, b) => {
+    const ia = MON_SUBJECT_ORDER.indexOf(a.name), ib = MON_SUBJECT_ORDER.indexOf(b.name);
+    return (ia < 0 ? 999 : ia) - (ib < 0 ? 999 : ib) || a.name.localeCompare(b.name);
   });
 
-  teachers.forEach(t => {
-    let matchedSub = subjectOrder.find(s => (t.subject || '').toLowerCase().includes(s.toLowerCase()));
-    if (!matchedSub) matchedSub = t.subject || "Boshqa";
+  const note = document.getElementById('monSubjectsNote');
+  if (note) {
+    note.textContent = pairRows.length !== personTotal
+      ? `Eslatma: ayrim pedagoglar bir necha fan bo'yicha KRS topshiradi, shuning uchun fanlar kesimidagi jami (${monNum(pairRows.length)}) pedagoglar sonidan (${monNum(personTotal)}) ko'p bo'lishi mumkin.`
+      : '';
+  }
 
-    if (!subMap.has(matchedSub)) {
-      subMap.set(matchedSub, {
-        name: matchedSub,
-        total: 0,
-        participated: 0,
-        blocked: 0,
-        scoresSum: 0,
-        percentSum: 0,
-        aloCount: 0
-      });
-    }
-
-    const item = subMap.get(matchedSub);
-    item.total++;
-    if (t.hasParticipated && !t.isBlocked) {
-      item.participated++;
-      item.scoresSum += (t.score || 0);
-      item.percentSum = (item.percentSum || 0) + (t.scorePercent || 0);
-      if (t.scorePercent >= 80 || (t.total === 25 && t.score >= 20)) item.aloCount++;
-    } else if (t.isBlocked) {
-      item.blocked++;
-    }
-  });
-
-  const list = Array.from(subMap.values());
-  tbody.innerHTML = '';
-
-  list.forEach((sub, idx) => {
-    const total = sub.total;
-    const done = sub.participated + sub.blocked;
-    const missing = Math.max(0, total - done);
-    const covPct = total > 0 ? ((done / total) * 100) : 0;
-    const avg = sub.participated > 0 ? (sub.scoresSum / sub.participated) : 0;
-    const avgPct = sub.participated > 0 ? ((sub.percentSum || 0) / sub.participated) : 0;
-    const aloPct = sub.participated > 0 ? ((sub.aloCount / sub.participated) * 100) : 0;
-
-    let barColor = '#10b981';
-    if (covPct < 40) barColor = '#ef4444';
-    else if (covPct < 70) barColor = '#f59e0b';
-
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td style="text-align: center; font-weight: 700; color: #64748b;">${idx + 1}</td>
-      <td><b>${sub.name}</b></td>
-      <td style="text-align: center; font-weight: 600;">${total}</td>
-      <td style="text-align: center; font-weight: 700; color: #059669;">${done}</td>
-      <td style="text-align: center; font-weight: 700; color: #d97706;">${missing}</td>
-      <td>
-        <div class="coverage-bar-wrapper">
-          <div class="coverage-bar-bg">
-            <div class="coverage-bar-fill" style="width: ${covPct.toFixed(0)}%; background: ${barColor};"></div>
-          </div>
-          <span style="font-size: 0.82rem; font-weight: 700; min-width: 45px; text-align: right;">${covPct.toFixed(1)}%</span>
-        </div>
-      </td>
-      <td style="text-align: center; font-weight: 700;">${avgPct > 0 ? `<span style="color:#059669;">${avgPct.toFixed(1)}%</span> <small style="color:#64748b;">(${avg.toFixed(1)})</small>` : '-'}</td>
-      <td style="text-align: center; font-weight: 600;">${aloPct > 0 ? aloPct.toFixed(1) + '%' : '-'}</td>
-      <td style="text-align: center;">
-        <span class="status-badge ${covPct >= 50 ? 'status-passed' : 'status-missing'}">
-          ${covPct >= 50 ? 'Faol' : 'Past'}
-        </span>
-      </td>
-    `;
-    tbody.appendChild(tr);
-  });
+  if (!list.length) {
+    tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding:2rem; color:#64748b;">🔍 Tanlangan filtr bo'yicha ma'lumot topilmadi.</td></tr>`;
+    return;
+  }
+  tbody.innerHTML = list.map((a, idx) => `<tr>
+      <td style="text-align:center; font-weight:700; color:#64748b;">${idx + 1}</td>
+      <td><b>${monEsc(monSubjectLabel(a.name))}</b></td>
+      <td style="text-align:center; font-weight:600;">${a.total}</td>
+      <td style="text-align:center; font-weight:700; color:#059669;">${a.passed}</td>
+      <td style="text-align:center; font-weight:700; color:#d97706;">${monLeftCell(a)}</td>
+      <td>${monCoverageBar(a.cov)}</td>
+      <td style="text-align:center;">${monAvgCell(a)}</td>
+      <td style="text-align:center;">${monAloCell(a)}</td>
+    </tr>`).join('');
 }
 
-// TAB 3: Pedagoglar To'liq Monitoring Ro'yxati
-function renderTeachersMonitoringTable(teachers) {
+// TAB 3: Pedagoglar ro'yxati
+function monGradeBadge(r) {
+  if (r.status === 'blocked') return `<span class="status-badge status-blocked">🚫 Bloklangan</span>`;
+  if (r.status === 'missing') return `<span class="status-badge status-missing">⏳ Topshirmagan</span>`;
+  if (r.percent >= 86) return `<span class="status-badge status-passed">🏆 A'lo</span>`;
+  if (r.percent >= 71) return `<span class="status-badge" style="background:#eff6ff; color:#1d4ed8;">🌟 Yaxshi</span>`;
+  if (r.percent >= 56) return `<span class="status-badge" style="background:#fffbeb; color:#b45309;">👍 Qoniqarli</span>`;
+  return `<span class="status-badge status-blocked">⚠️ Qoniqarsiz</span>`;
+}
+
+function renderTeachersMonitoringTable(rows) {
   const tbody = document.getElementById('teachersMonitoringTableBody');
   if (!tbody) return;
 
-  if (teachers.length === 0) {
-    tbody.innerHTML = `
-      <tr>
-        <td colspan="9" style="text-align: center; padding: 2.5rem 1rem; color: #64748b;">
-          🔍 Tanlangan filtr bo'yicha hech qanday pedagog topilmadi.
-        </td>
-      </tr>
-    `;
+  if (!rows.length) {
+    tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding:2.5rem 1rem; color:#64748b;">🔍 Tanlangan filtr bo'yicha hech qanday pedagog topilmadi.</td></tr>`;
     return;
   }
 
-  const renderLimit = 250;
-  const displayList = teachers.slice(0, renderLimit);
+  const sorted = rows.slice().sort((a, b) =>
+    compareSchoolsNatural(a.school, b.school) || a.name.localeCompare(b.name, 'uz'));
+  const shown = sorted.slice(0, monTeachersLimit);
 
-  tbody.innerHTML = '';
-  displayList.forEach((t, idx) => {
-    const tr = document.createElement('tr');
-    if (t.isBlocked) {
-      tr.style.background = '#fef2f2';
-    }
+  let html = shown.map((r, idx) => {
+    const passed = r.status === 'passed';
+    const sw = r.status === 'blocked'
+      ? `<b style="color:#ef4444;">${r.switches} ta</b>`
+      : (passed ? (r.switches === 0 ? `<span style="color:#059669; font-weight:700;">0</span>` : `<span style="color:#d97706; font-weight:700;">${r.switches} ta</span>`) : '-');
+    return `<tr${r.status === 'blocked' ? ' style="background:#fef2f2;"' : ''}>
+      <td style="text-align:center; color:#64748b; font-size:0.82rem;">${idx + 1}</td>
+      <td><b>${monEsc(r.name)}</b></td>
+      <td>${monEsc(r.school)}</td>
+      <td>${monEsc(monSubjectLabel(r.subject))}</td>
+      <td style="text-align:center;">${passed ? `<b style="color:#059669;">${r.score} / ${r.total}</b>` : '-'}</td>
+      <td style="text-align:center;">${passed ? `<b style="color:#059669;">${Math.round(r.percent)}%</b>` : '-'}</td>
+      <td style="text-align:center;">${sw}</td>
+      <td style="text-align:center;">${monGradeBadge(r)}</td>
+    </tr>`;
+  }).join('');
 
-    let statusHtml = `<span class="status-badge status-missing">⏳ Topshirmagan</span>`;
-    let scoreDisplay = `-`;
-    let pctDisplay = `-`;
-    let switchDisplay = `<span style="color:#64748b;">-</span>`;
-    let gradeBadge = `<span style="color:#64748b;">-</span>`;
-
-    if (t.isBlocked) {
-      statusHtml = `<span class="status-badge status-blocked">🚫 Bloklangan</span>`;
-      scoreDisplay = `<b style="color: #ef4444;">0 / ${t.total || 25}</b>`;
-      pctDisplay = `<b style="color: #ef4444;">0%</b>`;
-      switchDisplay = `<b style="color: #ef4444;">${t.switches} ta (Cheklandi)</b>`;
-      gradeBadge = `<span class="status-badge status-blocked">Qoniqarsiz</span>`;
-    } else if (t.hasParticipated) {
-      statusHtml = `<span class="status-badge status-passed">✅ Topshirdi</span>`;
-      scoreDisplay = `<b style="color: #059669;">${t.score} / ${t.total}</b>`;
-      pctDisplay = `<b style="color: #059669;">${t.scorePercent}%</b>`;
-      switchDisplay = t.switches === 0 
-        ? `<span style="color: #059669; font-weight: 700;">0 (Halol)</span>` 
-        : `<span style="color: #d97706; font-weight: 700;">${t.switches} ta</span>`;
-
-      if (t.scorePercent >= 86) {
-        gradeBadge = `<span class="status-badge status-passed">🏆 A'lo</span>`;
-      } else if (t.scorePercent >= 71) {
-        gradeBadge = `<span class="status-badge" style="background:#eff6ff; color:#1d4ed8;">🌟 Yaxshi</span>`;
-      } else if (t.scorePercent >= 56) {
-        gradeBadge = `<span class="status-badge" style="background:#fffbeb; color:#b45309;">👍 Qoniqarli</span>`;
-      } else {
-        gradeBadge = `<span class="status-badge status-blocked">⚠️ Qoniqarsiz</span>`;
-      }
-    }
-
-    tr.innerHTML = `
-      <td style="text-align: center; color: #64748b; font-size: 0.82rem;">${idx + 1}</td>
-      <td><b>${t.name}</b></td>
-      <td>${t.school}</td>
-      <td>${t.subject}</td>
-      <td style="text-align: center;">${statusHtml}</td>
-      <td style="text-align: center;">${scoreDisplay}</td>
-      <td style="text-align: center;">${pctDisplay}</td>
-      <td style="text-align: center;">${switchDisplay}</td>
-      <td style="text-align: center;">${gradeBadge}</td>
-    `;
-    tbody.appendChild(tr);
-  });
-
-  if (teachers.length > renderLimit) {
-    const trMore = document.createElement('tr');
-    trMore.innerHTML = `
-      <td colspan="9" style="text-align: center; padding: 1rem; background: #f8fafc; color: #475569; font-size: 0.88rem;">
-        ℹ️ Jami <b>${teachers.length.toLocaleString('uz-UZ')}</b> nafar pedagogdan dastlabki <b>${renderLimit}</b> nafari ko'rsatildi. 
-        Barcha pedagoglarni yuklab olish uchun yuqoridagi <b>"Ro'yxatni yuklash (CSV)"</b> tugmasidan foydalaning.
-      </td>
-    `;
-    tbody.appendChild(trMore);
+  if (sorted.length > shown.length) {
+    html += `<tr><td colspan="8" style="text-align:center; padding:1rem; background:#f8fafc; color:#475569; font-size:0.88rem;">
+      Jami <b>${monNum(sorted.length)}</b> nafardan <b>${monNum(shown.length)}</b> nafari ko'rsatildi.
+      <button type="button" class="btn btn-sm btn-outline-mon" style="margin-left:0.75rem;" onclick="monShowMoreTeachers()">Yana ${MON_TEACHERS_PAGE} ta ko'rsatish</button>
+      </td></tr>`;
   }
+  tbody.innerHTML = html;
 }
 
-// Quick Filter Helpers
+function monShowMoreTeachers() {
+  monTeachersLimit += MON_TEACHERS_PAGE;
+  renderTeachersMonitoringTable(monitoringFilteredList);
+}
+
+function monSearchDebounced() {
+  clearTimeout(monSearchTimer);
+  monSearchTimer = setTimeout(applyMonitoringFilters, 200);
+}
+
 function resetMonitoringFilters() {
-  const sSchool = document.getElementById('monSchoolFilter');
-  const sSub = document.getElementById('monSubjectFilter');
-  const sStatus = document.getElementById('monStatusFilter');
-  const sSearch = document.getElementById('monSearchInput');
-  if (sSchool) sSchool.value = 'ALL';
-  if (sSub) sSub.value = 'ALL';
-  if (sStatus) sStatus.value = 'ALL';
-  if (sSearch) sSearch.value = '';
-  applyMonitoringFilters();
-}
-
-function filterOnlyMissingTeachers() {
-  const sStatus = document.getElementById('monStatusFilter');
-  if (sStatus) sStatus.value = 'MISSING';
-  switchMonTab('teachers');
-  applyMonitoringFilters();
-}
-
-function filterOnlyPassedTeachers() {
-  const sStatus = document.getElementById('monStatusFilter');
-  if (sStatus) sStatus.value = 'PASSED';
-  switchMonTab('teachers');
+  const ids = ['monSchoolFilter', 'monSubjectFilter', 'monStatusFilter'];
+  ids.forEach(id => { const el = document.getElementById(id); if (el) el.value = 'ALL'; });
+  const s = document.getElementById('monSearchInput');
+  if (s) s.value = '';
   applyMonitoringFilters();
 }
 
@@ -3570,75 +3421,21 @@ function downloadCSVFile(filename, csvContent) {
   document.body.removeChild(link);
 }
 
-function exportMonitoringReportCSV() {
-  if (!monitoringDataRaw || monitoringDataRaw.length === 0) {
-    showToast("Eksport qilish uchun ma'lumot mavjud emas", "⚠️");
-    return;
-  }
-
-  const schoolMap = new Map();
-  Object.keys(state.teachersDb || {}).forEach(sch => {
-    schoolMap.set(sch, {
-      name: sch,
-      total: (state.teachersDb[sch] || []).length,
-      participated: 0,
-      blocked: 0,
-      scoresSum: 0,
-      aloCount: 0
-    });
-  });
-
-  monitoringFilteredList.forEach(t => {
-    if (!schoolMap.has(t.school)) {
-      schoolMap.set(t.school, { name: t.school, total: 0, participated: 0, blocked: 0, scoresSum: 0, aloCount: 0 });
-    }
-    const item = schoolMap.get(t.school);
-    if (t.hasParticipated && !t.isBlocked) {
-      item.participated++;
-      item.scoresSum += (t.score || 0);
-      if (t.score >= 20 || t.scorePercent >= 80) item.aloCount++;
-    } else if (t.isBlocked) {
-      item.blocked++;
-    }
-  });
-
-  let csv = "O'rin,Ta'lim muassasasi,Rejalashtirilgan pedagoglar,Topshirganlar,Topshirmaganlar (Qarzdor),Qamrov foizi,O'rtacha ball,A'lo natija foizi\n";
-  const list = Array.from(schoolMap.values());
-  list.sort((a, b) => {
-    const covA = a.total > 0 ? (((a.participated + a.blocked) / a.total) * 100) : 0;
-    const covB = b.total > 0 ? (((b.participated + b.blocked) / b.total) * 100) : 0;
-    return covB - covA;
-  });
-
-  list.forEach((sch, idx) => {
-    const total = sch.total;
-    const done = sch.participated + sch.blocked;
-    const missing = Math.max(0, total - done);
-    const covPct = total > 0 ? ((done / total) * 100).toFixed(1) : "0.0";
-    const avg = sch.participated > 0 ? (sch.scoresSum / sch.participated).toFixed(1) : "0.0";
-    const aloPct = sch.participated > 0 ? ((sch.aloCount / sch.participated) * 100).toFixed(1) : "0.0";
-    csv += `"${idx + 1}","${sch.name}","${total}","${done}","${missing}","${covPct}%","${avg}","${aloPct}%"\n`;
-  });
-
-  const dateStr = new Date().toISOString().substring(0, 10);
-  downloadCSVFile(`KRS_Monitoring_Maktablar_Reytingi_${dateStr}.csv`, csv);
-  showToast("Maktablar reytingi CSV formatida yuklab olindi", "📥");
-}
-
 function exportTeachersListCSV() {
   if (!monitoringFilteredList || monitoringFilteredList.length === 0) {
     showToast("Eksport qilish uchun ma'lumot mavjud emas", "⚠️");
     return;
   }
-
-  let csv = "№,Pedagog F.I.Sh.,Ta'lim muassasasi,KRS Fani,Holati,To'plangan ball,Foiz,Qoidabuzarlik,Baho darajasi\n";
-  monitoringFilteredList.forEach((t, idx) => {
-    const scoreText = t.hasParticipated ? `${t.score}/${t.total}` : "-";
-    const pctText = t.hasParticipated ? `${t.scorePercent}%` : "-";
-    const switchText = t.isBlocked ? "4 ta (Bloklangan)" : (t.hasParticipated ? `${t.switches} ta` : "-");
-    csv += `"${idx + 1}","${t.name}","${t.school}","${t.subject}","${t.statusText}","${scoreText}","${pctText}","${switchText}","${t.gradeLevel}"\n`;
+  const q = v => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"';
+  let csv = "№,Pedagog F.I.Sh.,Ta'lim muassasasi,KRS fani,To'plangan ball,Foiz,Qoidabuzarlik,Natija\n";
+  monitoringFilteredList.slice().sort((a, b) =>
+    compareSchoolsNatural(a.school, b.school) || a.name.localeCompare(b.name, 'uz')
+  ).forEach((r, idx) => {
+    const passed = r.status === 'passed';
+    csv += [idx + 1, r.name, r.school, monSubjectLabel(r.subject),
+      passed ? `${r.score}/${r.total}` : '-', passed ? Math.round(r.percent) + '%' : '-',
+      r.status === 'blocked' ? r.switches + ' ta' : (passed ? r.switches + ' ta' : '-'), r.grade].map(q).join(',') + '\n';
   });
-
   const dateStr = new Date().toISOString().substring(0, 10);
   downloadCSVFile(`KRS_Pedagoglar_Monitoring_Royxati_${dateStr}.csv`, csv);
   showToast("Pedagoglar ro'yxati CSV formatida yuklab olindi", "📥");
@@ -4118,14 +3915,28 @@ async function downloadMonitoringA4Jpg() {
 
   const schFilter = document.getElementById('monSchoolFilter')?.value || 'ALL';
   const subFilter = document.getElementById('monSubjectFilter')?.value || 'ALL';
-  let filterText = "Barcha 55 ta maktab va 16 ta fan bo'yicha tuman umumiy monitoringi";
-  if (schFilter !== 'ALL' || subFilter !== 'ALL') {
-    filterText = `Filtr: ${schFilter !== 'ALL' ? schFilter : 'Barcha maktablar'} • ${subFilter !== 'ALL' ? subFilter : 'Barcha fanlar'}`;
+  const statusSel = document.getElementById('monStatusFilter');
+  const stFilter = statusSel ? statusSel.value : 'ALL';
+  const nSchools = Object.keys(state.teachersDb || {}).length;
+  const nSubjects = Math.max(0, (document.getElementById('monSubjectFilter')?.options.length || 1) - 1);
+  let filterText = `Barcha ${nSchools} ta maktab va ${nSubjects} ta fan bo'yicha tuman umumiy monitoringi`;
+  if (schFilter !== 'ALL' || subFilter !== 'ALL' || stFilter !== 'ALL') {
+    filterText = `Filtr: ${schFilter !== 'ALL' ? schFilter : 'Barcha maktablar'} • ${subFilter !== 'ALL' ? monSubjectLabel(subFilter) : 'Barcha fanlar'}` +
+      (stFilter !== 'ALL' ? ` • ${statusSel.options[statusSel.selectedIndex].text.replace(/^[^\wA-Za-z]+\s*/, '')}` : '');
   }
 
   // Maktablar reytingi qatorlari
-  const tbodySrc = document.getElementById('schoolsRatingTableBody');
-  const tableRowsHtml = tbodySrc ? tbodySrc.innerHTML : '';
+  const tdS = 'padding: 5px 8px; border: 1px solid #cbd5e1;';
+  const tableRowsHtml = (monLastSchoolRows || []).map((s, i) => `<tr style="${i % 2 ? 'background:#f8fafc;' : ''}">
+      <td style="${tdS} text-align:center;">${i + 1}</td>
+      <td style="${tdS} font-weight:700;">${monEsc(s.name)}</td>
+      <td style="${tdS} text-align:center;">${s.total}</td>
+      <td style="${tdS} text-align:center; font-weight:700; color:#059669;">${s.passed}</td>
+      <td style="${tdS} text-align:center; font-weight:700; color:#d97706;">${s.left}</td>
+      <td style="${tdS} text-align:center;">${s.cov.toFixed(1)}%</td>
+      <td style="${tdS} text-align:center;">${s.passed ? s.avgPct.toFixed(1) + '%' : '—'}</td>
+      <td style="${tdS} text-align:center;">${s.alo ? s.aloPct.toFixed(1) + '%' : '—'}</td>
+    </tr>`).join('');
 
   container.innerHTML = `
     <!-- Rasmiy A4 Sarlavha -->
@@ -4169,7 +3980,7 @@ async function downloadMonitoringA4Jpg() {
       </div>
       <div style="background: #fff7ed; border: 1.5px solid #fed7aa; border-radius: 8px; padding: 0.6rem 0.4rem; text-align: center;">
         <div style="font-size: 1.2rem; font-weight: 900; color: #c2410c;">${quality}</div>
-        <div style="font-size: 0.72rem; font-weight: 700; color: #ea580c;">Sifat (80%+ a'lo) (${qualPct})</div>
+        <div style="font-size: 0.72rem; font-weight: 700; color: #ea580c;">A'lo 86%+ (${qualPct})</div>
       </div>
       <div style="background: #fef2f2; border: 1.5px solid #fecaca; border-radius: 8px; padding: 0.6rem 0.4rem; text-align: center;">
         <div style="font-size: 1.2rem; font-weight: 900; color: #b91c1c;">${blocked}</div>
@@ -4177,7 +3988,7 @@ async function downloadMonitoringA4Jpg() {
       </div>
     </div>
 
-    <!-- Maktablar Reytingi Jadvali (55 ta maktab) -->
+    <!-- Maktablar Reytingi Jadvali -->
     <div style="margin-bottom: 1.25rem;">
       <table class="a4-davomat-table" style="width: 100%; border-collapse: collapse; font-size: 0.78rem;">
         <thead>
@@ -4189,12 +4000,11 @@ async function downloadMonitoringA4Jpg() {
             <th style="padding: 6px 8px; border: 1px solid #1e3a8a; text-align: center; width: 60px;">Qoldi</th>
             <th style="padding: 6px 8px; border: 1px solid #1e3a8a; text-align: center; width: 75px;">Qamrov</th>
             <th style="padding: 6px 8px; border: 1px solid #1e3a8a; text-align: center; width: 85px;">O'rtacha ball</th>
-            <th style="padding: 6px 8px; border: 1px solid #1e3a8a; text-align: center; width: 80px;">Sifat (A'lo)</th>
-            <th style="padding: 6px 8px; border: 1px solid #1e3a8a; text-align: center; width: 80px;">Holati</th>
+            <th style="padding: 6px 8px; border: 1px solid #1e3a8a; text-align: center; width: 80px;">A'lo (86%+)</th>
           </tr>
         </thead>
         <tbody>
-          ${tableRowsHtml || '<tr><td colspan="9" style="text-align:center; padding: 1rem;">Ma\'lumotlar yuklanmoqda...</td></tr>'}
+          ${tableRowsHtml || '<tr><td colspan="8" style="text-align:center; padding: 1rem;">Ma\'lumotlar yuklanmoqda...</td></tr>'}
         </tbody>
       </table>
     </div>
