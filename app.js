@@ -2840,7 +2840,7 @@ function monBuildTeachers() {
       list.push({
         name: t.name, school, schoolKey,
         primary: subjects[0] || '', subjects, subjectKeys: keys,
-        records: new Map(), blocked: new Map()
+        records: new Map(), blocked: new Map(), allRecs: []
       });
     });
   });
@@ -3019,6 +3019,7 @@ async function monDoLoad() {
       rec.sub = sub;
       rec.seq = seq++;
       t.records.set(k, rec);            // bir fan bo'yicha oxirgi natija hisoblanadi
+      t.allRecs.push(rec);              // Davomat uchun: mashg'ulot (session) bo'yicha
     });
     src.blocked.forEach(b => {
       const t = monFindTeacher(idx, b.name, b.school);
@@ -3462,35 +3463,17 @@ const KRS_DIRECTIONS_MAP = {
 };
 
 function getEligibleCountForSubject(subjectVal) {
-  if (!state.teachersDb || Object.keys(state.teachersDb).length === 0) return 0;
-  let allowedSubjects = [];
-  if (subjectVal === 'ALL') {
-    allowedSubjects = null;
-  } else if (KRS_DIRECTIONS_MAP[subjectVal]) {
-    allowedSubjects = KRS_DIRECTIONS_MAP[subjectVal];
-  } else {
-    allowedSubjects = [subjectVal];
+  if (!monTeachers || monTeachers.length === 0) return 0;
+  let allowed = null;
+  if (subjectVal !== 'ALL') {
+    allowed = (KRS_DIRECTIONS_MAP[subjectVal] || [subjectVal]).map(monKey);
   }
-
-  let total = 0;
-  Object.values(state.teachersDb).forEach(allTeachers => {
-    if (!allowedSubjects) {
-      total += allTeachers.length;
-    } else {
-      const eligible = allTeachers.filter(t => {
-        if (allowedSubjects.includes(t.subject)) return true;
-        if (Array.isArray(t.all_krs) && t.all_krs.some(k => allowedSubjects.includes(k))) return true;
-        return false;
-      });
-      total += eligible.length;
-    }
-  });
-  return total;
+  return monTeachers.filter(t => !allowed || allowed.some(k => t.subjectKeys.has(k))).length;
 }
 
 function updateDavomatSubjectDropdownCounts() {
   const sel = document.getElementById('davomatSubjectSelect');
-  if (!sel || !state.teachersDb || Object.keys(state.teachersDb).length === 0) return;
+  if (!sel || !monTeachers || monTeachers.length === 0) return;
 
   const currentVal = sel.value;
 
@@ -3525,7 +3508,7 @@ async function initOrRefreshDavomat(isManual = false) {
   if (!state.teachersDb || Object.keys(state.teachersDb).length === 0) {
     await loadTeachersDatabase();
   }
-  if (!lastLiveSubmissions || lastLiveSubmissions.length === 0) {
+  if (!monTeachers || monTeachers.length === 0) {
     await initOrRefreshMonitoringDashboard(false);
   }
   updateDavomatSubjectDropdownCounts();
@@ -3580,22 +3563,21 @@ function renderDavomatReport() {
     allowedSubjects = [subjectVal];
   }
 
-  // 3. Prepare Submissions for the chosen session
-  const submittedTeachers = new Set();
-  (lastLiveSubmissions || []).forEach(sub => {
-    let subSession = 4;
-    if (sub.session) subSession = parseInt(sub.session, 10);
-    else {
-      const match = (sub.subject || '').match(/(\d+)-mashg/i);
-      if (match) subSession = parseInt(match[1], 10);
-    }
-
-    if (subSession === sessionVal) {
-      submittedTeachers.add(normalizePersonName(sub.name));
-    }
+  // 3-4. Monitoring bilan bir xil hisob: pedagog × fan; bloklanganlar topshirgan hisoblanmaydi
+  const allowedKeys = allowedSubjects ? allowedSubjects.map(monKey) : null;
+  const isEligible = t => !allowedKeys || allowedKeys.some(k => t.subjectKeys.has(k));
+  const isDone = t => (t.allRecs || []).some(r => {
+    const k = monKey(r.sub);
+    if (allowedKeys && !allowedKeys.includes(k)) return false;
+    if (r.session !== sessionVal) return false;
+    return !(t.blocked.get(k) || t.blocked.get('*'));
+  });
+  const bySchool = new Map();
+  (monTeachers || []).forEach(t => {
+    if (!bySchool.has(t.school)) bySchool.set(t.school, []);
+    bySchool.get(t.school).push(t);
   });
 
-  // 4. Calculate per-school quotas & submissions
   const allSchoolNames = Object.keys(state.teachersDb || {}).sort(compareSchoolsNatural);
   const schoolRows = [];
 
@@ -3603,38 +3585,9 @@ function renderDavomatReport() {
   let grandDone = 0;
 
   allSchoolNames.forEach(schName => {
-    const allTeachers = state.teachersDb[schName] || [];
-    let eligibleTeachers = [];
-
-    if (!allowedSubjects) {
-      eligibleTeachers = allTeachers;
-    } else {
-      eligibleTeachers = allTeachers.filter(t => {
-        if (allowedSubjects.includes(t.subject)) return true;
-        if (Array.isArray(t.all_krs) && t.all_krs.some(k => allowedSubjects.includes(k))) return true;
-        return false;
-      });
-    }
-
+    const eligibleTeachers = (bySchool.get(schName) || []).filter(isEligible);
     const total = eligibleTeachers.length;
-    let done = 0;
-
-    eligibleTeachers.forEach(t => {
-      const normN = normalizePersonName(t.name);
-      if (submittedTeachers.has(normN)) {
-        done++;
-      } else {
-        // Smart match: check if any submitted teacher matches this teacher (e.g. without patronymic)
-        let found = false;
-        for (const sName of submittedTeachers) {
-          if (isSameTeacher(t.name, sName)) {
-            done++;
-            found = true;
-            break;
-          }
-        }
-      }
-    });
+    const done = eligibleTeachers.filter(isDone).length;
 
     const debt = Math.max(0, total - done);
     const pct = total > 0 ? ((done / total) * 100) : 0;
