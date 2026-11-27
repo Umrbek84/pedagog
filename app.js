@@ -2789,6 +2789,44 @@ async function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
 
   const liveResults = [];
   let sheetFetchedResults = false;
+
+  // 1. TEZKOR JSON BAZA (results_db.json) - 50ms da bir zumda yuklanadi
+  try {
+    const jsonRes = await fetch('results_db.json?v=' + Date.now());
+    if (jsonRes.ok) {
+      const jsonRecords = await jsonRes.json();
+      sheetFetchedResults = true;
+      for (const item of jsonRecords) {
+        if (!item.name) continue;
+        const normN = normalizePersonName(item.name);
+        const record = {
+          date: (item.date || '').substring(0, 10),
+          name: normN,
+          rawName: item.name,
+          school: item.school || '',
+          cleanSchool: normalizeSchoolName(item.school),
+          subject: item.subject || '',
+          session: item.grade_or_session ? (parseInt(item.grade_or_session, 10) || 4) : 4,
+          score: parseFloat(item.score) || 0,
+          total: parseInt(item.total) || (parseFloat(item.score) > 25 ? 40 : 25),
+          percent: parseFloat(item.percent) || (item.total ? Math.round((parseFloat(item.score) / parseInt(item.total)) * 100) : 0),
+          switches: parseInt(item.switches) || 0,
+          status: item.status || 'Muvaffaqiyatli topshirdi',
+          isBlocked: false
+        };
+        const existingIdx = liveResults.findIndex(lr => lr.name === normN);
+        if (existingIdx >= 0) {
+          liveResults[existingIdx] = record;
+        } else {
+          liveResults.push(record);
+        }
+      }
+    }
+  } catch (jErr) {
+    console.warn("results_db.json fetch warning:", jErr);
+  }
+
+  // 2. LIVE GOOGLE SHEETS SINXRONIZATSIYA (Yangi qo'shilgan natijalarni birlashtiradi)
   try {
     const cacheUrl = RESULTS_SHEET_URL + '&_t=' + Date.now();
     const res = await fetch(cacheUrl, { cache: 'no-store' });
@@ -2808,9 +2846,9 @@ async function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
           cleanSchool: normalizeSchoolName(r[2]),
           subject: r[3] || '',
           session: r[4] ? (parseInt(r[4], 10) || 4) : 4,
-          score: parseInt(r[5]) || 0,
-          total: parseInt(r[6]) || 25,
-          percent: parseInt(r[7]) || 0,
+          score: parseFloat(r[5]) || 0,
+          total: parseInt(r[6]) || (parseFloat(r[5]) > 25 ? 40 : 25),
+          percent: parseFloat(r[7]) || (parseInt(r[6]) ? Math.round((parseFloat(r[5]) / parseInt(r[6])) * 100) : 0),
           switches: parseInt(r[8]) || 0,
           status: r[9] || 'Muvaffaqiyatli topshirdi',
           isBlocked: false
@@ -2830,6 +2868,29 @@ async function initOrRefreshMonitoringDashboard(isManualRefresh = false) {
 
   const blockedMap = new Map();
   let sheetFetchedBlocked = false;
+
+  // 1. Tezkor JSON blocked_db yuklash
+  try {
+    const bRes = await fetch('blocked_db.json?v=' + Date.now());
+    if (bRes.ok) {
+      const bList = await bRes.json();
+      for (const b of bList) {
+        if (!b.name) continue;
+        const normN = normalizePersonName(b.name);
+        blockedMap.set(normN, {
+          name: normN,
+          rawName: b.name,
+          school: b.school || '',
+          subject: b.subject || '',
+          switches: 4,
+          isBlocked: true,
+          status: '🚫 Bloklangan'
+        });
+      }
+    }
+  } catch (bErr) {}
+
+  // 2. Google Sheets orqali yangilash
   try {
     const cacheUrlB = BLOCKED_SHEET_URL + '&_t=' + Date.now();
     const resB = await fetch(cacheUrlB, { cache: 'no-store' });
@@ -2994,12 +3055,14 @@ function applyMonitoringFilters() {
 
   const passedTeachers = filtered.filter(t => t.hasParticipated && !t.isBlocked);
   const totalScoreSum = passedTeachers.reduce((acc, cur) => acc + (cur.score || 0), 0);
+  const totalMaxSum = passedTeachers.reduce((acc, cur) => acc + (cur.total || 25), 0);
   const avgScore = passedTeachers.length > 0 ? (totalScoreSum / passedTeachers.length) : 0;
   const avgPercent = passedTeachers.length > 0 
     ? Math.round(passedTeachers.reduce((acc, cur) => acc + cur.scorePercent, 0) / passedTeachers.length) 
     : 0;
 
-  const excellentCount = passedTeachers.filter(t => (t.score >= 20 || t.scorePercent >= 80)).length;
+  // Sifat (A'lo) ko'rsatkichi: 80% yoki undan yuqori natija (40 talikda >=32, 25 talikda >=20)
+  const excellentCount = passedTeachers.filter(t => (t.scorePercent >= 80 || (t.total === 25 && t.score >= 20))).length;
   const excellentPct = passedTeachers.length > 0 ? ((excellentCount / passedTeachers.length) * 100) : 0;
 
   const kpiTot = document.getElementById('kpiTotalTeachers');
@@ -3018,8 +3081,23 @@ function applyMonitoringFilters() {
   if (kpiCov) kpiCov.textContent = `${coveragePct.toFixed(1)}%`;
   if (kpiMiss) kpiMiss.textContent = missing.toLocaleString('uz-UZ');
   if (kpiMissPct) kpiMissPct.textContent = `${missingPct.toFixed(1)}%`;
-  if (kpiAvg) kpiAvg.textContent = `${avgScore.toFixed(1)} / 25`;
-  if (kpiAvgPct) kpiAvgPct.textContent = `${avgPercent}%`;
+  
+  if (kpiAvg) {
+    if (passedTeachers.length === 0) {
+      kpiAvg.textContent = '0%';
+    } else {
+      const all40 = passedTeachers.every(t => t.total === 40);
+      const all25 = passedTeachers.every(t => t.total === 25);
+      if (all40) {
+        kpiAvg.textContent = `${avgScore.toFixed(1)} / 40`;
+      } else if (all25) {
+        kpiAvg.textContent = `${avgScore.toFixed(1)} / 25`;
+      } else {
+        kpiAvg.textContent = `${avgPercent}%`;
+      }
+    }
+  }
+  if (kpiAvgPct) kpiAvgPct.textContent = `${avgPercent}% o'rtacha ball`;
   if (kpiQual) kpiQual.textContent = excellentCount.toLocaleString('uz-UZ');
   if (kpiQualPct) kpiQualPct.textContent = `${excellentPct.toFixed(1)}%`;
   if (kpiBlk) kpiBlk.textContent = blocked.toLocaleString('uz-UZ');
@@ -3099,6 +3177,7 @@ function renderSchoolsRatingTable(teachers) {
       participated: 0,
       blocked: 0,
       scoresSum: 0,
+      percentSum: 0,
       aloCount: 0
     });
   });
@@ -3111,6 +3190,7 @@ function renderSchoolsRatingTable(teachers) {
         participated: 0,
         blocked: 0,
         scoresSum: 0,
+        percentSum: 0,
         aloCount: 0
       });
     }
@@ -3118,7 +3198,8 @@ function renderSchoolsRatingTable(teachers) {
     if (t.hasParticipated && !t.isBlocked) {
       item.participated++;
       item.scoresSum += (t.score || 0);
-      if (t.score >= 20 || t.scorePercent >= 80) item.aloCount++;
+      item.percentSum = (item.percentSum || 0) + (t.scorePercent || 0);
+      if (t.scorePercent >= 80 || (t.total === 25 && t.score >= 20)) item.aloCount++;
     } else if (t.isBlocked) {
       item.blocked++;
     }
@@ -3132,8 +3213,8 @@ function renderSchoolsRatingTable(teachers) {
     const doneB = b.participated + b.blocked;
     const covA = a.total > 0 ? (doneA / a.total) * 100 : 0;
     const covB = b.total > 0 ? (doneB / b.total) * 100 : 0;
-    const avgA = a.participated > 0 ? (a.scoresSum / a.participated) : 0;
-    const avgB = b.participated > 0 ? (b.scoresSum / b.participated) : 0;
+    const avgA = a.participated > 0 ? (a.percentSum / a.participated) : 0;
+    const avgB = b.participated > 0 ? (b.percentSum / b.participated) : 0;
     const aloA = a.participated > 0 ? (a.aloCount / a.participated) * 100 : 0;
     const aloB = b.participated > 0 ? (b.aloCount / b.participated) * 100 : 0;
 
@@ -3223,8 +3304,14 @@ function renderSchoolsRatingTable(teachers) {
       }
     }
 
-    const avgScoreDisplay = avg > 0
-      ? `<span style="font-size: 1.05rem; font-weight: 800; color: #059669;">${avg.toFixed(1)} ball</span>`
+    const avgScoreVal = sch.participated > 0 ? (sch.scoresSum / sch.participated) : 0;
+    const avgPctVal = sch.participated > 0 ? ((sch.percentSum || 0) / sch.participated) : 0;
+
+    const avgScoreDisplay = sch.participated > 0
+      ? `<div style="display: flex; flex-direction: column; align-items: center; gap: 2px;">
+           <span style="font-size: 1.05rem; font-weight: 800; color: #059669;">${avgPctVal.toFixed(1)}%</span>
+           <span style="font-size: 0.72rem; color: #64748b; font-weight: 600;">(${avgScoreVal.toFixed(1)} ball)</span>
+         </div>`
       : `<span style="color: #94a3b8; font-weight: 500;">—</span>`;
 
     const aloDisplay = aloPct > 0
@@ -3284,6 +3371,7 @@ function renderSubjectsAnalysisTable(teachers) {
       participated: 0,
       blocked: 0,
       scoresSum: 0,
+      percentSum: 0,
       aloCount: 0
     });
   });
@@ -3299,6 +3387,7 @@ function renderSubjectsAnalysisTable(teachers) {
         participated: 0,
         blocked: 0,
         scoresSum: 0,
+        percentSum: 0,
         aloCount: 0
       });
     }
@@ -3308,7 +3397,8 @@ function renderSubjectsAnalysisTable(teachers) {
     if (t.hasParticipated && !t.isBlocked) {
       item.participated++;
       item.scoresSum += (t.score || 0);
-      if (t.score >= 20 || t.scorePercent >= 80) item.aloCount++;
+      item.percentSum = (item.percentSum || 0) + (t.scorePercent || 0);
+      if (t.scorePercent >= 80 || (t.total === 25 && t.score >= 20)) item.aloCount++;
     } else if (t.isBlocked) {
       item.blocked++;
     }
@@ -3323,6 +3413,7 @@ function renderSubjectsAnalysisTable(teachers) {
     const missing = Math.max(0, total - done);
     const covPct = total > 0 ? ((done / total) * 100) : 0;
     const avg = sub.participated > 0 ? (sub.scoresSum / sub.participated) : 0;
+    const avgPct = sub.participated > 0 ? ((sub.percentSum || 0) / sub.participated) : 0;
     const aloPct = sub.participated > 0 ? ((sub.aloCount / sub.participated) * 100) : 0;
 
     let barColor = '#10b981';
@@ -3344,7 +3435,7 @@ function renderSubjectsAnalysisTable(teachers) {
           <span style="font-size: 0.82rem; font-weight: 700; min-width: 45px; text-align: right;">${covPct.toFixed(1)}%</span>
         </div>
       </td>
-      <td style="text-align: center; font-weight: 700;">${avg > 0 ? avg.toFixed(1) : '-'}</td>
+      <td style="text-align: center; font-weight: 700;">${avgPct > 0 ? `<span style="color:#059669;">${avgPct.toFixed(1)}%</span> <small style="color:#64748b;">(${avg.toFixed(1)})</small>` : '-'}</td>
       <td style="text-align: center; font-weight: 600;">${aloPct > 0 ? aloPct.toFixed(1) + '%' : '-'}</td>
       <td style="text-align: center;">
         <span class="status-badge ${covPct >= 50 ? 'status-passed' : 'status-missing'}">
@@ -3390,7 +3481,7 @@ function renderTeachersMonitoringTable(teachers) {
 
     if (t.isBlocked) {
       statusHtml = `<span class="status-badge status-blocked">🚫 Bloklangan</span>`;
-      scoreDisplay = `<b style="color: #ef4444;">0 / 25</b>`;
+      scoreDisplay = `<b style="color: #ef4444;">0 / ${t.total || 25}</b>`;
       pctDisplay = `<b style="color: #ef4444;">0%</b>`;
       switchDisplay = `<b style="color: #ef4444;">${t.switches} ta (Cheklandi)</b>`;
       gradeBadge = `<span class="status-badge status-blocked">Qoniqarsiz</span>`;
@@ -4015,7 +4106,7 @@ async function downloadMonitoringA4Jpg() {
   const covPct = document.getElementById('kpiCoveragePercent')?.textContent || '0%';
   const miss = document.getElementById('kpiMissing')?.textContent || '3 088';
   const missPct = document.getElementById('kpiMissingPercent')?.textContent || '100%';
-  const avgScore = document.getElementById('kpiAvgScore')?.textContent || '0 / 25';
+  const avgScore = document.getElementById('kpiAvgScore')?.textContent || '0%';
   const avgPct = document.getElementById('kpiAvgPercent')?.textContent || '0%';
   const quality = document.getElementById('kpiQualityCount')?.textContent || '0';
   const qualPct = document.getElementById('kpiQualityPercent')?.textContent || '0%';
@@ -4078,7 +4169,7 @@ async function downloadMonitoringA4Jpg() {
       </div>
       <div style="background: #fff7ed; border: 1.5px solid #fed7aa; border-radius: 8px; padding: 0.6rem 0.4rem; text-align: center;">
         <div style="font-size: 1.2rem; font-weight: 900; color: #c2410c;">${quality}</div>
-        <div style="font-size: 0.72rem; font-weight: 700; color: #ea580c;">Sifat (20-25 ball) (${qualPct})</div>
+        <div style="font-size: 0.72rem; font-weight: 700; color: #ea580c;">Sifat (80%+ a'lo) (${qualPct})</div>
       </div>
       <div style="background: #fef2f2; border: 1.5px solid #fecaca; border-radius: 8px; padding: 0.6rem 0.4rem; text-align: center;">
         <div style="font-size: 1.2rem; font-weight: 900; color: #b91c1c;">${blocked}</div>
