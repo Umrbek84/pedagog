@@ -13,9 +13,19 @@
 *.pdf
 *.part
 
-# System / logs
-.system_generated/
-scratch/
+# Data vaults and scrapers
+TestMakon_Barcha_Fanlar.*
+Milliy_Sertifikat_Barcha_Fanlar.*
+*.xlsx
+*.sqlite3
+*.zip
+scrape_*.py
+*harvester*.py
+update_questions_db.py
+populate_40_questions.py
+inspect_db.py
+testmakon_full_scraper.py
+__pycache__/
 
 zavuch_bot.py
 zavuch_bot_config.json
