@@ -535,6 +535,18 @@ function setupSchoolSubjectTeacherFlow() {
     });
   }
 
+  const questionCountSelect = document.getElementById('questionCount');
+  const timeLimitSelect = document.getElementById('timeLimit');
+  if (questionCountSelect && timeLimitSelect) {
+    questionCountSelect.addEventListener('change', () => {
+      if (questionCountSelect.value === "40") {
+        timeLimitSelect.value = "50";
+      } else {
+        timeLimitSelect.value = "30";
+      }
+    });
+  }
+
   teacherSelect.addEventListener('change', () => {
     if (teacherSelect.value === 'CUSTOM_TEACHER') {
       customTeacherInput.style.display = 'block';
@@ -553,7 +565,7 @@ function setupSchoolSubjectTeacherFlow() {
 
 const CORE_12_SUBJECTS = [
   "matematika", "informatika", "biologiya", "fizika", "kimyo", 
-  "geografiya", "tarix", "huquq", "ona tili", "english", "rus tili", "boshlang'ich ta'lim"
+  "geografiya", "tarix", "huquq", "ona tili", "english", "rus tili", "adabiyot"
 ];
 
 function isCore12Subject(subjectName) {
@@ -589,16 +601,21 @@ function selectSubjectFromCard(subjectName) {
 
 function updateQuestionCountForSubject(subjectVal, sessionVal) {
   const qSelect = document.getElementById('questionCount');
+  const tSelect = document.getElementById('timeLimit');
   if (!qSelect) return;
   const sNum = parseInt(sessionVal || document.getElementById('sessionSelect')?.value || "4");
   const is12 = isCore12Subject(subjectVal);
   
-  // 4-mashg'ulot o'qituvchilar topshirib bo'lgani sababli qat'iy 25 ta savollik qoladi!
-  // 5, 6, 7-mashg'ulotlar esa 12 ta asosiy fan uchun 35 ta savol bo'ladi!
-  if (sNum >= 5 && is12) {
-    qSelect.value = "35";
+  // Bugun (27-noyabr) Ingliz tili 4-mashg'ulot topshiradi (yoki kelgusi haftada Rus tili)
+  const isSpecialSession4 = (subjectVal === 'English' || subjectVal === 'Rus tili') && sNum === 4;
+  const is40Q = is12 && (sNum >= 5 || isSpecialSession4);
+  
+  if (is40Q) {
+    qSelect.value = "40";
+    if (tSelect) tSelect.value = "50"; // 40 ta savolga 50 daqiqa
   } else {
     qSelect.value = "25";
+    if (tSelect) tSelect.value = "30"; // 25 ta savolga 30 daqiqa
   }
 }
 
@@ -607,7 +624,7 @@ function refreshSessionDropdown(subjectVal) {
   if (!sessionSelect) return;
 
   const is12 = isCore12Subject(subjectVal);
-  const qCountStr = is12 ? "35 ta savol" : "25 ta savol";
+  const isSpecialSession4 = (subjectVal === 'English' || subjectVal === 'Rus tili');
 
   let matchedDates = [];
   if (typeof KRS_SCHEDULE !== 'undefined') {
@@ -639,14 +656,16 @@ function refreshSessionDropdown(subjectVal) {
       opt.style.fontWeight = '800';
       opt.style.color = '#047857';
       opt.style.background = '#ecfdf5';
-      opt.textContent = `🔥 4-mashg'ulot${dateLabel} — ✅ FAOL / ISHLASHGA OCHIQ (${qCountStr})`;
+      const qCountStr4 = (is12 && isSpecialSession4) ? "40 ta savol" : "25 ta savol";
+      opt.textContent = `🔥 4-mashg'ulot${dateLabel} — ✅ FAOL / ISHLASHGA OCHIQ (${qCountStr4})`;
       if (String(prevVal) === "4" || !prevVal || parseInt(prevVal) < 4) {
         opt.selected = true;
       }
     } else if (num === 5 || num === 6) {
       opt.disabled = false;
       opt.style.color = '#1e293b';
-      opt.textContent = `📅 ${num}-mashg'ulot${dateLabel} — ⏳ Tayyor / Navbatdagi (${qCountStr})`;
+      const qCountStr56 = is12 ? "40 ta savol" : "25 ta savol";
+      opt.textContent = `📅 ${num}-mashg'ulot${dateLabel} — ⏳ Tayyor / Navbatdagi (${qCountStr56})`;
       if (String(prevVal) === String(num)) {
         opt.selected = true;
       }
@@ -1807,9 +1826,10 @@ async function startExamSession() {
 
   const currentSession = parseInt(state.teacherInfo.session) || 4;
   const is12 = isCore12Subject(state.teacherInfo?.subject);
-  const defaultCount = (currentSession >= 5 && is12) ? 35 : 25;
+  const isSpecialSession4 = (state.teacherInfo?.subject === 'English' || state.teacherInfo?.subject === 'Rus tili') && currentSession === 4;
+  const defaultCount = (is12 && (currentSession >= 5 || isSpecialSession4)) ? 40 : 25;
   const countRequested = parseInt(document.getElementById('questionCount')?.value) || defaultCount;
-  state.timeLimitMinutes = parseInt(document.getElementById('timeLimit').value) || 30;
+  state.timeLimitMinutes = parseInt(document.getElementById('timeLimit')?.value) || (countRequested === 40 ? 50 : 30);
 
   let matched = state.allQuestions.filter(q => {
     return q.subject && 
