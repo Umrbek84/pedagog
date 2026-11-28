@@ -17017,14 +17017,6 @@ window.TEACHERS_DB = {
       ]
     },
     {
-      "name": "KURBONBOYEVA ZUXRA NARIMONOVNA",
-      "subject": "Texnologiya",
-      "all_krs": [
-        "Texnologiya"
-      ],
-      "classes": []
-    },
-    {
       "name": "MATKARIMOVA LAYLO RO‘ZMATOVNA",
       "subject": "Rus tili",
       "all_krs": [
