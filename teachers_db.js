@@ -1,4 +1,4 @@
-window.TEACHERS_DB = window.TEACHERS_DATABASE = {
+window.TEACHERS_DB = {
   "1-sonli maktab": [
     {
       "name": "ABDIRIMOVA LENINZA XAYITBAYEVNA",
@@ -16827,14 +16827,6 @@ window.TEACHERS_DB = window.TEACHERS_DATABASE = {
       ]
     },
     {
-      "name": "AMATJONOVA LOBARXON RASULBEK QIZI",
-      "subject": "Fransuz tili",
-      "all_krs": [
-        "Fransuz tili"
-      ],
-      "classes": []
-    },
-    {
       "name": "ARTIKOVA ZUXRA NE’MATOVNA",
       "subject": "English",
       "all_krs": [
@@ -23126,6 +23118,14 @@ window.TEACHERS_DB = window.TEACHERS_DATABASE = {
       "subject": "Tasviriy san'at",
       "all_krs": [
         "Tasviriy san'at"
+      ],
+      "classes": []
+    },
+    {
+      "name": "AMATJONOVA LOBARXON RASULBEK QIZI",
+      "subject": "Fransuz tili",
+      "all_krs": [
+        "Fransuz tili"
       ],
       "classes": []
     }
