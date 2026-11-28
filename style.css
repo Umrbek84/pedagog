@@ -3184,3 +3184,10 @@ body.exam-active-mode .exam-live-indicator {
   color: #334155;
   font-weight: 700;
 }
+
+@media (min-width: 992px) {
+  .header-container {
+    padding-right: 210px !important;
+    box-sizing: border-box !important;
+  }
+}
