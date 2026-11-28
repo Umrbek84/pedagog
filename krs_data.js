@@ -142,18 +142,18 @@ const KRS_SCHEDULE = [
     allocatedHours: "3 soat",
     weekday: "Shanba",
     dates: [
-      { num: 1, krk: "10-oktabr", date: "2026-10-17", label: "17-oktabr" },
-      { num: 2, krk: "24-oktabr", date: "2026-10-31", label: "31-oktabr" },
-      { num: 3, krk: "07-noyabr", date: "2026-11-14", label: "14-noyabr" },
-      { num: 4, krk: "21-noyabr", date: "2026-11-28", label: "28-noyabr" },
-      { num: 5, krk: "05-dekabr", date: "2026-12-12", label: "12-dekabr" },
-      { num: 6, krk: "19-dekabr", date: "2026-12-26", label: "26-dekabr" },
-      { num: 7, krk: "09-yanvar", date: "2027-01-16", label: "16-yanvar" },
-      { num: 8, krk: "23-yanvar", date: "2027-01-30", label: "30-yanvar" },
-      { num: 9, krk: "06-fevral", date: "2027-02-13", label: "13-fevral" },
-      { num: 10, krk: "20-fevral", date: "2027-02-27", label: "27-fevral" },
-      { num: 11, krk: "06-mart", date: "2027-03-13", label: "13-mart" },
-      { num: 12, krk: "20-mart", date: "2027-03-27", label: "27-mart" }
+      { num: 1, krk: "17-oktabr", date: "2026-10-24", label: "24-oktabr" },
+      { num: 2, krk: "31-oktabr", date: "2026-11-07", label: "07-noyabr" },
+      { num: 3, krk: "14-noyabr", date: "2026-11-21", label: "21-noyabr" },
+      { num: 4, krk: "28-noyabr", date: "2026-12-05", label: "05-dekabr" },
+      { num: 5, krk: "12-dekabr", date: "2026-12-19", label: "19-dekabr" },
+      { num: 6, krk: "26-dekabr", date: "2027-01-09", label: "09-yanvar" },
+      { num: 7, krk: "16-yanvar", date: "2027-01-23", label: "23-yanvar" },
+      { num: 8, krk: "30-yanvar", date: "2027-02-06", label: "06-fevral" },
+      { num: 9, krk: "13-fevral", date: "2027-02-20", label: "20-fevral" },
+      { num: 10, krk: "27-fevral", date: "2027-03-06", label: "06-mart" },
+      { num: 11, krk: "13-mart", date: "2027-03-20", label: "20-mart" },
+      { num: 12, krk: "27-mart", date: "2027-04-03", label: "03-aprel" }
     ]
   },
   {
