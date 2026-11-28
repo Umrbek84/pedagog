@@ -1052,17 +1052,30 @@
 <script>
 function umReturnToPortal(e) {
   if (e) e.preventDefault();
-  // Agar boshqa tab/oyna orqali ochilgan bo'lsa:
-  try {
-    if (window.opener && !window.opener.closed) {
-      window.opener.location.href = 'https://umamatov.uz/';
-      window.opener.focus();
-      window.close();
-      return;
-    }
-  } catch(err) {}
   
-  // Oyna yopilmasa yoki bevosita ochilgan bo'lsa:
+  // 1. Agar oldingi vkladka (bosh sahifa) ochiq bo'lsa:
+  if (window.opener && !window.opener.closed) {
+    try {
+      window.opener.focus();
+      window.close(); // Ushbu vkladkani o'chirib/yopib yuboramiz!
+      
+      // Agar brauzer yopilishini kechiktirsa yoki bloklasa:
+      setTimeout(function() {
+        if (!window.closed) {
+          window.location.href = 'https://umamatov.uz/';
+        }
+      }, 200);
+      return;
+    } catch(err) {
+      try {
+        window.close();
+        return;
+      } catch(e2) {}
+    }
+  }
+  
+  // 2. Agar oldingi vkladka yopilgan bo'lsa yoki to'g'ridan-to'g'ri ochilgan bo'lsa:
+  // Shu vkladkaning o'zida bosh sahifani ochamiz:
   window.location.href = 'https://umamatov.uz/';
 }
 </script>
