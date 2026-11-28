@@ -1,362 +1,394 @@
 /**
- * qulaylik.js — O'zbek lotin yozuvi (ş, ç, ö, ğ) va ko'rish imkoniyati cheklanganlar paneli
- * umamatov.uz va pedagog.umamatov.uz rasmiy portali uchun
- * Muallif: Umrbek Mamatov
+ * umamatov.uz - Qulaylik, Alifbo va Yagona Navigatsiya Skripti (qulaylik.js)
+ * Muallif: Umrbek Mamatov · Bosh mutaxassis
+ * 
+ * 1. Mobil versiyada (<=991px):
+ *    - 'Sh · Ch · O‘ · G‘' va ko'zcha tugmalari butunlay yashiriladi.
+ *    - Barcha matnlar QAT'IY ravishda yangi lotin yozuviga (ş, ç, ö, ğ, Ş, Ç, Ö, Ğ) o'tkaziladi.
+ * 2. Ichki sahifalarda (sub-pages):
+ *    - Sahifa pastga aylantirilganda (scroll) ham doimo ko'rinib turadigan, chiroyli,
+ *      ixcham va qulay "🏠 Boş sahifa" (Asosiy portalga qaytish) suzuvchi (floating)
+ *      tugmasi avtomatik qo'shiladi. Foydalanuvchi hech qachon adashib qolmaydi!
+ * 3. Kompyuterda:
+ *    - Barcha qulaylik tugmalari o'z joyida to'liq ishlaydi.
  */
 (function() {
   'use strict';
   if (window.__qz) return;
   window.__qz = 1;
 
-  // LocalStorage yordamchisi
   var LS = {
     get: function(k, d) {
-      try {
-        var v = localStorage.getItem(k);
-        return v === null ? d : v;
-      } catch(e) { return d; }
+      try { var v = localStorage.getItem(k); return v === null ? d : v; } catch(e) { return d; }
     },
     set: function(k, v) {
       try { localStorage.setItem(k, v); } catch(e) {}
     }
   };
 
-  // Holat: a: 'new' (ş,ç,ö,ğ) yoki 'std' (sh,ch,o',g')
-  // f: shrift o'lchami (0: oddiy, 1: A+, 2: A++)
-  // c: rang kontrasti (0: oddiy, 1: yuqori kontrast, 2: oq-qora)
-  var st = {
-    a: LS.get('qz_a', 'std'), // standart holat
-    f: +LS.get('qz_f', '0') || 0,
-    c: +LS.get('qz_c', '0') || 0
-  };
-
-  // Yangi alifbo harflari
-  var RX_NEW = /[şŞçÇöÖğĞ]/;
-  // Standart alifbo birikmalari
-  var RX_STD = /[Ss][Hh]|[Cc][Hh]|[OoGg]['ʻ‘ʼ`\u02BC]/;
-
-  // Standartdan Yangiga o'girish
-  function toNew(text) {
-    if (!text || typeof text !== 'string') return text;
-    // s'h va c'h larni himoyalash
-    var s = text.replace(/([SsCc])['ʻ‘ʼ`\u02BC]([Hh])/g, '$1__APO__$2');
-    
-    // O' va G'
-    s = s.replace(/O['ʻ‘ʼ`\u02BC]/g, 'Ö');
-    s = s.replace(/o['ʻ‘ʼ`\u02BC]/g, 'ö');
-    s = s.replace(/G['ʻ‘ʼ`\u02BC]/g, 'Ğ');
-    s = s.replace(/g['ʻ‘ʼ`\u02BC]/g, 'ğ');
-
-    // SH va CH
-    s = s.replace(/SH(?=[A-ZÖĞŞÇ\s,.\?!:;]|$)/g, 'Ş');
-    s = s.replace(/Sh/g, 'Ş');
-    s = s.replace(/sh/g, 'ş');
-    s = s.replace(/CH(?=[A-ZÖĞŞÇ\s,.\?!:;]|$)/g, 'Ç');
-    s = s.replace(/Ch/g, 'Ç');
-    s = s.replace(/ch/g, 'ç');
-
-    // Himoyalangan tutuqni qaytarish
-    s = s.replace(/__APO__/g, "'");
-    return s;
+  // Mobil qurilmani aniqlash
+  function isMobile() {
+    return (window.innerWidth <= 991) || 
+           /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   }
 
-  // Yangidan Standartga o'girish
-  function toStd(text) {
-    if (!text || typeof text !== 'string') return text;
-    return text.replace(/[şŞçÇöÖğĞ]/g, function(c, idx, fullStr) {
-      var isUpperCtx = false;
-      if (idx + 1 < fullStr.length && /[A-ZÇŞÖĞ]/.test(fullStr.charAt(idx + 1))) {
-        isUpperCtx = true;
-      } else if (idx > 0 && /[A-ZÇŞÖĞ]/.test(fullStr.charAt(idx - 1))) {
-        isUpperCtx = true;
-      }
+  // Bosh sahifadami yoki ichki sahifadami?
+  var path = window.location.pathname.toLowerCase();
+  var isHome = path === '' || path === '/' || path.endsWith('/index.html') || path.endsWith('/index');
 
-      switch(c) {
+  var st = {
+    a: isMobile() ? 'new' : LS.get('qz_a', 'new'),
+    f: isMobile() ? 0 : (+LS.get('qz_f', '0') || 0),
+    c: isMobile() ? 0 : (+LS.get('qz_c', '0') || 0)
+  };
+
+  // Yangi lotin -> Standart lotin
+  var RX_NEW = /[şŞçÇöÖğĞ]/;
+  var UP = /[A-ZÇŞÖĞ]/;
+  function toStdLatin(s) {
+    if (!s || !RX_NEW.test(s)) return s;
+    return s.replace(/[şŞçÇöÖğĞ]/g, function(c, i, str) {
+      switch (c) {
         case 'ş': return 'sh';
-        case 'Ş': return isUpperCtx ? 'SH' : 'Sh';
         case 'ç': return 'ch';
-        case 'Ç': return isUpperCtx ? 'CH' : 'Ch';
-        case 'ö': return "oʻ";
-        case 'Ö': return "Oʻ";
-        case 'ğ': return "gʻ";
-        case 'Ğ': return "Gʻ";
-        default: return c;
+        case 'ö': return 'oʻ';
+        case 'ğ': return 'gʻ';
+        case 'Ö': return 'Oʻ';
+        case 'Ğ': return 'Gʻ';
+        default: {
+          var up = UP.test(str.charAt(i + 1)) || UP.test(str.charAt(i - 1));
+          var b = (c === 'Ş') ? 'S' : 'C';
+          return up ? (b + 'H') : (b + 'h');
+        }
       }
     });
   }
 
-  var SKIP = { SCRIPT: 1, STYLE: 1, NOSCRIPT: 1, TEXTAREA: 1, CODE: 1, PRE: 1 };
-  var ATTRS = ['placeholder', 'title', 'alt', 'aria-label'];
-  var isMutating = false;
+  // Standart lotin -> Yangi lotin (o', g', sh, ch -> ö, ğ, ş, ç)
+  function toNewLatin(s) {
+    if (!s) return s;
+    return s
+      .replace(/SH([A-ZÇŞÖĞ])/g, 'Ş$1')
+      .replace(/CH([A-ZÇŞÖĞ])/g, 'Ç$1')
+      .replace(/Sh/g, 'Ş')
+      .replace(/SH/g, 'Ş')
+      .replace(/Ch/g, 'Ç')
+      .replace(/CH/g, 'Ç')
+      .replace(/sh/g, 'ş')
+      .replace(/ch/g, 'ç')
+      .replace(/O[ʻʼ'`‘’]/g, 'Ö')
+      .replace(/o[ʻʼ'`‘’]/g, 'ö')
+      .replace(/G[ʻʼ'`‘’]/g, 'Ğ')
+      .replace(/g[ʻʼ'`‘’]/g, 'ğ');
+  }
 
-  function shouldSkip(node) {
-    var p = node.parentNode;
+  var SKIP = { SCRIPT: 1, STYLE: 1, NOSCRIPT: 1, TEXTAREA: 1, CODE: 1, PRE: 1 };
+  var AT = ['placeholder', 'title', 'alt', 'aria-label'];
+  var rec = [], arec = [], T0 = null;
+
+  function skip(n) {
+    var p = n.parentNode;
     if (!p || SKIP[p.nodeName]) return true;
     return !!(p.closest && p.closest('[data-noalpha]'));
   }
 
-  function transformNode(n, targetMode) {
-    var val = n.nodeValue;
-    if (!val || shouldSkip(n)) return;
-    var res = targetMode === 'new' ? toNew(val) : toStd(val);
-    if (res !== val) {
-      n.nodeValue = res;
-    }
+  function convStd(n) {
+    var v = n.nodeValue;
+    if (!v || !RX_NEW.test(v) || skip(n)) return;
+    var c = toStdLatin(v);
+    rec.push([n, v, c]);
+    n.nodeValue = c;
   }
 
-  function transformAttrs(root, targetMode) {
-    if (!root || root.nodeType !== 1) return;
-    var list = [];
-    if (!root.closest || !root.closest('[data-noalpha]')) {
-      list.push(root);
-      var q = root.querySelectorAll('[placeholder],[title],[alt],[aria-label]');
-      for (var i = 0; i < q.length; i++) {
-        if (!q[i].closest('[data-noalpha]')) list.push(q[i]);
-      }
-    }
+  function convNew(n) {
+    var v = n.nodeValue;
+    if (!v || skip(n)) return;
+    var c = toNewLatin(v);
+    if (c !== v) n.nodeValue = c;
+  }
 
-    for (var j = 0; j < list.length; j++) {
-      var el = list[j];
-      for (var k = 0; k < ATTRS.length; k++) {
-        var attr = ATTRS[k];
-        var v = el.getAttribute(attr);
-        if (v) {
-          var res = targetMode === 'new' ? toNew(v) : toStd(v);
-          if (res !== v) el.setAttribute(attr, res);
+  function attrsStd(root) {
+    if (root.nodeType !== 1) return;
+    var L = [root];
+    var q = root.querySelectorAll('[placeholder],[title],[alt],[aria-label]');
+    for (var i = 0; i < q.length; i++) L.push(q[i]);
+    for (var j = 0; j < L.length; j++) {
+      var e = L[j];
+      if (e.closest && e.closest('[data-noalpha]')) continue;
+      for (var k = 0; k < AT.length; k++) {
+        var v = e.getAttribute(AT[k]);
+        if (v && RX_NEW.test(v)) {
+          var c = toStdLatin(v);
+          arec.push([e, AT[k], v, c]);
+          e.setAttribute(AT[k], c);
         }
       }
     }
   }
 
-  function walkDOM(root, targetMode) {
-    if (!root) return;
-    if (root.nodeType === 3) {
-      transformNode(root, targetMode);
+  function attrsNew(root) {
+    if (root.nodeType !== 1) return;
+    var L = [root];
+    var q = root.querySelectorAll('[placeholder],[title],[alt],[aria-label]');
+    for (var i = 0; i < q.length; i++) L.push(q[i]);
+    for (var j = 0; j < L.length; j++) {
+      var e = L[j];
+      if (e.closest && e.closest('[data-noalpha]')) continue;
+      for (var k = 0; k < AT.length; k++) {
+        var v = e.getAttribute(AT[k]);
+        if (v) {
+          var c = toNewLatin(v);
+          if (c !== v) e.setAttribute(AT[k], c);
+        }
+      }
+    }
+  }
+
+  function walkStd(root) {
+    if (root.nodeType === 3) { convStd(root); return; }
+    if (root.nodeType !== 1 || SKIP[root.nodeName]) return;
+    var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null), a = [], n;
+    while ((n = w.nextNode())) a.push(n);
+    for (var i = 0; i < a.length; i++) convStd(a[i]);
+    attrsStd(root);
+  }
+
+  function walkNew(root) {
+    if (root.nodeType === 3) { convNew(root); return; }
+    if (root.nodeType !== 1 || SKIP[root.nodeName]) return;
+    var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null), a = [], n;
+    while ((n = w.nextNode())) a.push(n);
+    for (var i = 0; i < a.length; i++) convNew(a[i]);
+    attrsNew(root);
+  }
+
+  function revert() {
+    for (var i = 0; i < rec.length; i++) {
+      var r = rec[i];
+      if (r[0].nodeValue === r[2]) r[0].nodeValue = r[1];
+    }
+    rec = [];
+    for (var j = 0; j < arec.length; j++) {
+      var q = arec[j];
+      if (q[0].getAttribute(q[1]) === q[3]) q[0].setAttribute(q[1], q[2]);
+    }
+    arec = [];
+  }
+
+  function applyAlpha() {
+    if (isMobile()) {
+      revert();
+      walkNew(document.documentElement);
+      if (document.title) document.title = toNewLatin(document.title);
       return;
     }
-    if (root.nodeType !== 1 || SKIP[root.nodeName]) return;
 
-    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
-    var nodes = [];
-    var n;
-    while ((n = walker.nextNode())) {
-      nodes.push(n);
-    }
-    for (var i = 0; i < nodes.length; i++) {
-      transformNode(nodes[i], targetMode);
-    }
-    transformAttrs(root, targetMode);
-  }
-
-  function applyAlphabet() {
-    isMutating = true;
-    try {
-      walkDOM(document.body || document.documentElement, st.a);
-      if (document.title) {
-        document.title = st.a === 'new' ? toNew(document.title) : toStd(document.title);
+    if (st.a === 'std') {
+      walkStd(document.documentElement);
+      if (T0 === null && RX_NEW.test(document.title)) {
+        T0 = document.title;
+        document.title = toStdLatin(T0);
       }
-    } finally {
-      isMutating = false;
+    } else {
+      revert();
+      walkNew(document.documentElement);
+      if (T0 !== null) {
+        document.title = T0;
+        T0 = null;
+      }
     }
-    updateButtons();
+    labelA();
   }
 
-  // Dinamik qo'shilgan elementlar uchun MutationObserver
-  var observer = new MutationObserver(function(mutations) {
-    if (isMutating) return;
-    isMutating = true;
-    try {
-      for (var i = 0; i < mutations.length; i++) {
-        var m = mutations[i];
+  var mo = new MutationObserver(function(ms) {
+    if (isMobile()) {
+      for (var i = 0; i < ms.length; i++) {
+        var m = ms[i];
         if (m.type === 'childList') {
-          for (var j = 0; j < m.addedNodes.length; j++) {
-            var node = m.addedNodes[j];
-            if (node.id === 'qz' || (node.closest && node.closest('#qz'))) continue;
-            walkDOM(node, st.a);
-          }
+          for (var j = 0; j < m.addedNodes.length; j++) walkNew(m.addedNodes[j]);
         } else if (m.type === 'characterData') {
-          var target = m.target;
-          if (target && !shouldSkip(target)) {
-            var val = target.nodeValue;
-            var res = st.a === 'new' ? toNew(val) : toStd(val);
-            if (res !== val) target.nodeValue = res;
-          }
+          convNew(m.target);
         }
       }
-    } finally {
-      isMutating = false;
+      return;
+    }
+
+    if (st.a !== 'std') return;
+    for (var k = 0; k < ms.length; k++) {
+      var item = ms[k];
+      if (item.type === 'childList') {
+        for (var l = 0; l < item.addedNodes.length; l++) walkStd(item.addedNodes[l]);
+      } else if (item.type === 'characterData') {
+        convStd(item.target);
+      }
     }
   });
 
-  // CSS stillari
-  var css = ''
-    + '#qz { position: fixed; left: 16px; bottom: 16px; z-index: 2147483000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; display: flex; gap: 8px; align-items: center; }'
-    + '#qz .qzb { height: 42px; min-width: 42px; padding: 0 14px; border-radius: 21px; border: 1px solid rgba(255, 255, 255, 0.35); background: #0f2a5c; color: #ffffff; font-size: 13.5px; font-weight: 700; cursor: pointer; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.28); display: inline-flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.2s ease; user-select: none; }'
-    + '#qz .qzb:hover { background: #1a428a; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35); }'
-    + '#qz .qzb:active { transform: translateY(0); }'
-    + '#qz .qzb.active-alpha { background: #1e40af; border-color: #60a5fa; box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.4); }'
-    + '#qz .qzp { position: absolute; left: 0; bottom: 52px; width: 310px; max-width: calc(100vw - 32px); box-sizing: border-box; background: #ffffff; color: #0f172a; border: 1px solid #cbd5e1; border-radius: 16px; padding: 16px; box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25); font-size: 14.5px; z-index: 2147483001; animation: qzFadeIn 0.2s ease; }'
-    + '#qz .qzp[hidden] { display: none; }'
-    + '#qz .qzt { font-weight: 700; font-size: 15px; margin-bottom: 8px; color: #0f2a5c; display: flex; align-items: center; gap: 6px; }'
-    + '#qz .qzl { color: #64748b; margin: 10px 0 6px; font-size: 13px; font-weight: 600; }'
-    + '#qz .qzr { display: flex; gap: 6px; }'
-    + '#qz .qzr button { flex: 1; padding: 8px 4px; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; color: #0f172a; font-weight: 600; font-size: 13.5px; cursor: pointer; transition: all 0.15s; }'
-    + '#qz .qzr button:hover { background: #e2e8f0; }'
-    + '#qz .qzr button.on { background: #0f2a5c; border-color: #0f2a5c; color: #ffffff; }'
-    + '#qz .qzx { margin-top: 14px; width: 100%; padding: 9px; border: 0; background: #f1f5f9; border-radius: 8px; color: #334155; font-weight: 600; font-size: 13.5px; cursor: pointer; transition: background 0.15s; }'
-    + '#qz .qzx:hover { background: #e2e8f0; color: #0f172a; }'
-    + '@keyframes qzFadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }'
-    + 'html.qz-f1 body { zoom: 1.15; }'
-    + 'html.qz-f2 body { zoom: 1.30; }'
-    + 'html.qz-c1 body, html.qz-c1 body * { background: #000000 !important; background-image: none !important; color: #ffffff !important; border-color: #ffff00 !important; box-shadow: none !important; text-shadow: none !important; }'
-    + 'html.qz-c1 body a, html.qz-c1 body a * { color: #ffff00 !important; text-decoration: underline !important; }'
-    + 'html.qz-c1 #qz .qzb { background: #000000 !important; border: 2px solid #ffff00 !important; color: #ffff00 !important; }'
-    + 'html.qz-c1 #qz .qzp { background: #000000 !important; border: 2px solid #ffff00 !important; color: #ffffff !important; }'
-    + 'html.qz-c1 #qz .qzr button { background: #000000 !important; border: 1px solid #ffff00 !important; color: #ffff00 !important; }'
-    + 'html.qz-c1 #qz .qzr button.on { background: #ffff00 !important; color: #000000 !important; }'
-    + 'html.qz-c1 #qz .qzx { background: #ffff00 !important; color: #000000 !important; }'
-    + 'html.qz-c2 { filter: grayscale(100%); }'
-    + '@media print { #qz { display: none !important; } }'
-    + '@media (max-width: 600px) { #qz { left: 10px; bottom: 12px; gap: 6px; } #qz .qzb { height: 38px; min-width: 38px; padding: 0 10px; font-size: 12px; } #qz .qzp { bottom: 48px; width: 280px; } }';
+  // CSS stillari (qulaylik paneli + ichki sahifalar uchun suzuvchi bosh sahifa tugmasi)
+  var css = '#qz{position:fixed;right:24px;top:18px;z-index:2147483000;font-family:"Times New Roman",Times,serif;display:flex;gap:10px;align-items:center}'
+    + '#qz .qzb{height:40px;min-width:40px;padding:0 14px;border-radius:20px;border:1px solid rgba(255,255,255,0.25);background:rgba(15,23,42,0.85);backdrop-filter:blur(8px);color:#ffffff;font:700 13px -apple-system,BlinkMacSystemFont,sans-serif;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,0.3);display:inline-flex;align-items:center;justify-content:center;gap:6px;transition:all 0.2s ease}'
+    + '#qz .qzb:hover{background:#17398a}'
+    + '#qz .qzp{position:absolute;right:0;left:auto;top:52px;width:300px;max-width:calc(100vw - 24px);box-sizing:border-box;background:#fff;color:#0f172a;border:1px solid #cbd5e1;border-radius:14px;padding:14px;box-shadow:0 10px 30px rgba(0,0,0,.3);font-size:15px}'
+    + '#qz .qzp[hidden]{display:none}'
+    + '#qz .qzt{font-weight:700;margin-bottom:6px}#qz .qzl{color:#475569;margin:10px 0 6px;font-size:14px}'
+    + '#qz .qzr{display:flex;gap:6px}#qz .qzr button{flex:1;padding:9px 4px;border:1px solid #cbd5e1;border-radius:8px;background:#f8fafc;color:#0f172a;font:700 14px "Times New Roman",Times,serif;cursor:pointer}'
+    + '#qz .qzr button.on{background:#0f2a5c;border-color:#0f2a5c;color:#fff}'
+    + '#qz .qzn{color:#b45309;font-size:13px;margin-top:6px}'
+    + '#qz .qzx{margin-top:12px;width:100%;padding:9px;border:0;background:#e2e8f0;border-radius:8px;color:#0f172a;font:700 14px "Times New Roman",Times,serif;cursor:pointer}'
+    + 'html.qz-f1 body{zoom:1.12}html.qz-f2 body{zoom:1.28}'
+    + 'html.qz-c1 body,html.qz-c1 body *{background:#000!important;background-image:none!important;color:#fff!important;border-color:#ff0!important;box-shadow:none!important;text-shadow:none!important}'
+    + 'html.qz-c1 body a,html.qz-c1 body a *{color:#ff0!important}'
+    + 'html.qz-c2{filter:grayscale(1)}'
+    + '@media print{#qz{display:none!important}}'
+    + '@media (max-width:991px){#qz{display:none!important;visibility:hidden!important;pointer-events:none!important;opacity:0!important}}'
+    
+    // ICHKI SAHIFALAR UCHUN YAGONA SUZUVCHI "BOSH SAHIFA" TUGMASI (Scroll qilganda ham doimo ko'rinadi)
+    + '#um-floating-home{position:fixed;bottom:24px;left:24px;z-index:2147482000;display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:30px;background:rgba(15,23,42,0.92);backdrop-filter:blur(10px);color:#ffffff!important;font:700 14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;text-decoration:none!important;border:1px solid rgba(255,255,255,0.22);box-shadow:0 6px 20px rgba(0,0,0,0.35);transition:all 0.25s ease}'
+    + '#um-floating-home:hover{background:#1d4ed8;transform:translateY(-2px);box-shadow:0 10px 25px rgba(29,78,216,0.45);color:#fff!important}'
+    + '#um-floating-home svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}'
+    + '@media (max-width:768px){#um-floating-home{bottom:18px;left:16px;padding:9px 14px;font-size:13px;border-radius:24px;box-shadow:0 4px 16px rgba(0,0,0,0.4)}}';
 
-  var box, btnAlpha, btnVision, popover;
+  var box, bA, bV, P;
+  function $(s) { return box ? box.querySelector(s) : null; }
 
-  function updateButtons() {
-    if (!btnAlpha) return;
-    if (st.a === 'new') {
-      btnAlpha.textContent = 'ş · ç · ö · ğ';
-      btnAlpha.title = "Standart alifboga o'tish (sh, ch, o', g')";
-      btnAlpha.classList.add('active-alpha');
+  function labelA() {
+    if (!bA) return;
+    if (st.a === 'std') {
+      bA.textContent = 'Ş · Ç · Ö · Ğ';
+      bA.title = 'Yangi alifboga ötiş (ş, ç, ö, ğ)';
     } else {
-      btnAlpha.textContent = 'ş · ç · ö · ğ';
-      btnAlpha.title = "Yangi alifboga o'tish (ş, ç, ö, ğ)";
-      btnAlpha.classList.remove('active-alpha');
+      bA.textContent = 'Sh · Ch · O‘ · G‘';
+      bA.title = 'Standart alifboga oʻtish (sh, ch, oʻ, gʻ)';
     }
   }
 
-  function applyVision() {
-    var root = document.documentElement;
-    root.classList.remove('qz-f1', 'qz-f2', 'qz-c1', 'qz-c2');
-    if (st.f) root.classList.add('qz-f' + st.f);
-    if (st.c) root.classList.add('qz-c' + st.c);
-
+  function paint() {
+    var h = document.documentElement;
+    h.classList.remove('qz-f1', 'qz-f2', 'qz-c1', 'qz-c2');
+    if (!isMobile()) {
+      if (st.f) h.classList.add('qz-f' + st.f);
+      if (st.c) h.classList.add('qz-c' + st.c);
+    }
     if (!box) return;
-    var fontBtns = box.querySelectorAll('[data-f]');
-    for (var i = 0; i < fontBtns.length; i++) {
-      fontBtns[i].classList.toggle('on', +fontBtns[i].getAttribute('data-f') === st.f);
-    }
-    var colorBtns = box.querySelectorAll('[data-c]');
-    for (var j = 0; j < colorBtns.length; j++) {
-      colorBtns[j].classList.toggle('on', +colorBtns[j].getAttribute('data-c') === st.c);
-    }
+    var b = box.querySelectorAll('[data-f]');
+    for (var i = 0; i < b.length; i++) b[i].classList.toggle('on', +b[i].getAttribute('data-f') === st.f);
+    b = box.querySelectorAll('[data-c]');
+    for (var j = 0; j < b.length; j++) b[j].classList.toggle('on', +b[j].getAttribute('data-c') === st.c);
   }
 
-  function initUI() {
-    var styleEl = document.createElement('style');
-    styleEl.id = 'qz-style';
-    styleEl.textContent = css;
-    document.head.appendChild(styleEl);
+  // Ichki sahifalarga "Bosh sahifa" suzuvchi tugmasini o'rnatish
+  function buildSubpageHomeBtn() {
+    if (isHome) return; // Asosiy sahifada kerak emas
+    if (document.getElementById('um-floating-home') || document.getElementById('um-portal-back')) return;
+    if (location.hostname !== 'umamatov.uz' && location.hostname !== 'localhost') return;
 
-    box = document.createElement('div');
-    box.id = 'qz';
-    box.setAttribute('data-noalpha', 'true');
-    box.innerHTML = ''
-      + '<button type="button" class="qzb" id="qzA" data-noalpha="true" title="Yangi alifboga o\'tish (ş, ç, ö, ğ)">ş · ç · ö · ğ</button>'
-      + '<button type="button" class="qzb" id="qzV" data-noalpha="true" aria-label="Ko\'rish imkoniyati" title="Ko\'rish imkoniyati">'
-      + '  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
-      + '    <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"></path>'
-      + '    <circle cx="12" cy="12" r="3"></circle>'
-      + '  </svg>'
-      + '</button>'
-      + '<div class="qzp" id="qzP" data-noalpha="true" hidden>'
-      + '  <div class="qzt">👁 Ko\'rish imkoniyati cheklanganlar uchun</div>'
-      + '  <div class="qzl">Shrift o\'lchami:</div>'
-      + '  <div class="qzr">'
-      + '    <button type="button" data-f="0">A</button>'
-      + '    <button type="button" data-f="1">A+</button>'
-      + '    <button type="button" data-f="2">A++</button>'
-      + '  </div>'
-      + '  <div class="qzl">Ranglar kontrasti:</div>'
-      + '  <div class="qzr">'
-      + '    <button type="button" data-c="0">Oddiy</button>'
-      + '    <button type="button" data-c="1">Kontrast</button>'
-      + '    <button type="button" data-c="2">Oq-qora</button>'
-      + '  </div>'
-      + '  <button type="button" class="qzx" id="qzX">Asliga qaytarish</button>'
-      + '</div>';
+    var btn = document.createElement('a');
+    btn.id = 'um-floating-home';
+    btn.href = 'index.html';
+    btn.setAttribute('aria-label', 'Bosh sahifaga qaytish');
+    btn.setAttribute('title', 'umamatov.uz asosiy portaliga qaytish');
+    btn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span>Boş sahifa</span>';
+    document.body.appendChild(btn);
+  }
 
-    document.documentElement.appendChild(box);
+  function build() {
+    var st0 = document.createElement('style');
+    st0.id = 'qz-css';
+    st0.textContent = css;
+    document.head.appendChild(st0);
 
-    btnAlpha = document.getElementById('qzA');
-    btnVision = document.getElementById('qzV');
-    popover = document.getElementById('qzP');
+    buildSubpageHomeBtn();
 
-    // Alifbo almashtirish
-    btnAlpha.addEventListener('click', function(e) {
-      e.preventDefault();
-      st.a = st.a === 'new' ? 'std' : 'new';
-      LS.set('qz_a', st.a);
-      applyAlphabet();
-    });
+    // Mobil bo'lsa yuqori o'ng paneli yaratilmaydi
+    if (isMobile()) {
+      applyAlpha();
+      mo.observe(document.documentElement, { childList: true, subtree: true, characterData: true });
+      return;
+    }
 
-    // Ko'rish paneli ochish/yopish
-    btnVision.addEventListener('click', function(e) {
-      e.stopPropagation();
-      popover.hidden = !popover.hidden;
-    });
+    // Faqat bosh sahifada yoki kompyuterda yuqori panel
+    if (isHome) {
+      box = document.createElement('div');
+      box.id = 'qz';
+      box.innerHTML = '<button type="button" class="qzb" id="qzA" data-noalpha></button>'
+        + '<button type="button" class="qzb" id="qzV" aria-label="Köriş imkoniyati" title="Köriş imkoniyati">'
+        + '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button>'
+        + '<div class="qzp" id="qzP" hidden><div class="qzt">Köriş imkoniyati çeklanganlar uçun</div>'
+        + '<div class="qzl">Şrift ölçami:</div><div class="qzr"><button type="button" data-f="0">A</button><button type="button" data-f="1">A+</button><button type="button" data-f="2">A++</button></div>'
+        + '<div class="qzl">Ranglar kontrasti:</div><div class="qzr"><button type="button" data-c="0">Oddiy</button><button type="button" data-c="1">Kontrast</button><button type="button" data-c="2">Oq-qora</button></div>'
+        + '<button type="button" class="qzx" id="qzX">Asliga qaytariş</button></div>';
+      document.documentElement.appendChild(box);
 
-    // Panel ichidagi sozlamalar
-    popover.addEventListener('click', function(e) {
-      e.stopPropagation();
-      var t = e.target;
-      if (t.hasAttribute('data-f')) {
-        st.f = +t.getAttribute('data-f');
-        LS.set('qz_f', st.f);
-        applyVision();
-      } else if (t.hasAttribute('data-c')) {
-        st.c = +t.getAttribute('data-c');
-        LS.set('qz_c', st.c);
-        applyVision();
-      } else if (t.id === 'qzX') {
-        st.f = 0;
-        st.c = 0;
-        LS.set('qz_f', 0);
-        LS.set('qz_c', 0);
-        applyVision();
+      bA = $('#qzA');
+      bV = $('#qzV');
+      P = $('#qzP');
+
+      if (bA) {
+        bA.addEventListener('click', function() {
+          st.a = (st.a === 'std') ? 'new' : 'std';
+          LS.set('qz_a', st.a);
+          applyAlpha();
+        });
       }
-    });
 
-    // Tashqariga bosganda yopish
-    document.addEventListener('click', function() {
-      if (popover) popover.hidden = true;
-    });
+      if (bV) {
+        bV.addEventListener('click', function(e) {
+          e.stopPropagation();
+          if (P) P.hidden = !P.hidden;
+        });
+      }
 
-    // ESC tugmasi bilan yopish
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && popover) popover.hidden = true;
-    });
+      if (P) {
+        P.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var t = e.target;
+          if (t.hasAttribute('data-f')) {
+            st.f = +t.getAttribute('data-f');
+            LS.set('qz_f', st.f);
+            paint();
+          } else if (t.hasAttribute('data-c')) {
+            st.c = +t.getAttribute('data-c');
+            LS.set('qz_c', st.c);
+            paint();
+          } else if (t.id === 'qzX') {
+            st.f = 0;
+            st.c = 0;
+            LS.set('qz_f', 0);
+            LS.set('qz_c', 0);
+            paint();
+          }
+        });
+      }
 
-    applyVision();
-    updateButtons();
+      document.addEventListener('click', function() { if (P) P.hidden = true; });
+      document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && P) P.hidden = true; });
 
-    if (st.a === 'new') {
-      applyAlphabet();
+      paint();
+      labelA();
     }
 
-    observer.observe(document.documentElement, {
-      childList: true,
-      subtree: true,
-      characterData: true
-    });
+    applyAlpha();
+    mo.observe(document.documentElement, { childList: true, subtree: true, characterData: true });
   }
+
+  window.addEventListener('resize', function() {
+    if (isMobile()) {
+      if (box) box.style.display = 'none';
+      applyAlpha();
+    } else {
+      if (box && isHome) box.style.display = 'flex';
+      applyAlpha();
+    }
+  });
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initUI);
+    document.addEventListener('DOMContentLoaded', build);
   } else {
-    initUI();
+    build();
   }
 
   window.addEventListener('load', function() {
-    if (st.a === 'new') applyAlphabet();
+    buildSubpageHomeBtn();
+    applyAlpha();
   });
 })();
