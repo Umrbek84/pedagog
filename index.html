@@ -9,7 +9,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=20261128_1340">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
-  </head>
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet">
+<!-- um-theme-fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=Manrope:wght@600;700;800;900&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#090e1f">
+</head>
 <body>
 
   <!-- Header -->
@@ -1453,5 +1466,253 @@ function umReturnToPortal(e) {
 }
 </script>
 
+<style id="um-theme">
+@media screen {
+  :root {
+    --um-bg: #080e1e;
+    --um-card-bg: rgba(15, 23, 42, 0.75);
+    --um-card-border: rgba(255, 255, 255, 0.08);
+    --um-text: #f1f5f9;
+    --um-text-muted: #94a3b8;
+    --um-gold: #f59e0b;
+    --um-gold-hover: #d97706;
+
+    /* Override subdomain root variables */
+    --bg: #080e1e !important;
+    --card: rgba(15, 23, 42, 0.75) !important;
+    --surface: rgba(15, 23, 42, 0.75) !important;
+    --ink: #f1f5f9 !important;
+    --ink-2: #94a3b8 !important;
+    --text-main: #f1f5f9 !important;
+    --text-muted: #94a3b8 !important;
+    --text-light: #64748b !important;
+    --line: rgba(255, 255, 255, 0.08) !important;
+    --border: rgba(255, 255, 255, 0.08) !important;
+    --gold: #f59e0b !important;
+    --navy: #090e1f !important;
+    --navy2: #1e293b !important;
+    --teal: #38bdf8 !important;
+    --teal2: #0284c7 !important;
+    --brand: #6366f1 !important;
+    --brand-2: #818cf8 !important;
+    --primary: #3b82f6 !important;
+    --primary-light: #60a5fa !important;
+    --primary-dark: #1d4ed8 !important;
+    --primary-subtle: rgba(30, 58, 138, 0.35) !important;
+  }
+
+  /* Global typography & background */
+  html, body {
+    background-color: #080e1e !important;
+    background-image: 
+      radial-gradient(1000px 500px at 80% -10%, #1e40af 0%, transparent 60%),
+      radial-gradient(900px 500px at 15% 100%, #0369a1 0%, transparent 55%),
+      radial-gradient(600px 400px at 50% 50%, rgba(124, 58, 237, 0.15) 0%, transparent 70%),
+      radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px) !important;
+    background-size: auto, auto, auto, 32px 32px !important;
+    background-attachment: fixed !important;
+    color: #f1f5f9 !important;
+    font-family: 'Lexend', system-ui, -apple-system, sans-serif !important;
+  }
+
+  *, *::before, *::after {
+    font-family: 'Lexend', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Headings with Manrope font */
+  h1, h2, h3, h4, h5, h6, 
+  .brand, .brand-text, .brand-text h1, .brand-text h2,
+  .title, .hero h1, .section-title, .banner h1, .modal-title, .section-head h2,
+  .krs-card-title {
+    font-family: 'Manrope', 'Lexend', sans-serif !important;
+    color: #ffffff !important;
+  }
+
+  /* Gradient Heading Accent (#38bdf8 -> #818cf8 -> #c084fc) */
+  .hero h1, .hero-title, .banner h1, .section-head h2, .glow-title, 
+  .hero .glow-text, .nx-glow-text, .app-header .brand-text h1,
+  .c-fan, .highlight-title {
+    background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    display: inline-block;
+  }
+
+  /* Eyebrows, kickers & badges */
+  .eyebrow, .kicker, .badge, .pill, .chip, .tag, .bhead {
+    background: rgba(30, 58, 138, 0.45) !important;
+    border: 1px solid rgba(147, 197, 253, 0.25) !important;
+    color: #93c5fd !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+  }
+
+  /* Header & Navigation */
+  header, .app-header, .header, .nav-wrap, .bbar {
+    background: rgba(9, 14, 31, 0.85) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    color: #f1f5f9 !important;
+  }
+  .nav a, .nav-link, .nav a.link, .brand, .brand-text p {
+    color: #cbd5e1 !important;
+  }
+  .nav a:hover, .nav-link:hover, .nav a.link:hover {
+    color: #38bdf8 !important;
+  }
+
+  /* Cards & Semi-transparent Containers */
+  .card, .test-card, .box, .cbox, .filter-bar, .info-box, .stat-card, 
+  .a4-preview-card, .proctor-notice, .system-status-banner, .section-card,
+  .hero-box, .subject-card, .q-card, .board, .brow, .result-card,
+  .item-card, .grade-card, .setup-box, .exam-box, .rules-box,
+  .fcard, .gc, .krs-card, .krs-section, .step-card, .krs-grid, .content-box,
+  .tab-pane, .card-center, .exam-view-card {
+    background: rgba(15, 23, 42, 0.75) !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 16px !important;
+    color: #f1f5f9 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
+  }
+
+  /* Text & Labels (Legibility - No dark on dark) */
+  p, span, li, label, .desc, .section-desc, .sub, .mut, .text-muted, .text-light, .c-school, .c-date,
+  .krs-card p, .krs-card span, .proctor-notice div, .proctor-notice span {
+    color: #cbd5e1 !important;
+  }
+  strong, b, .val, .name, .f-name {
+    color: #ffffff !important;
+  }
+
+  /* Form Elements: Inputs, Selects, Options */
+  input[type="text"], input[type="password"], input[type="number"], input[type="search"], 
+  input[type="tel"], select, textarea, .form-control, .input-field, .search-box input {
+    background: rgba(15, 23, 42, 0.85) !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+  }
+  input::placeholder, textarea::placeholder {
+    color: #64748b !important;
+  }
+  input:focus, select:focus, textarea:focus {
+    border-color: #38bdf8 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25) !important;
+  }
+  select option {
+    background: #0f172a !important;
+    color: #ffffff !important;
+  }
+
+  /* Primary Button (#f59e0b) */
+  .btn-gold, .btn.gold, .btn-primary, .btn.primary, .btn-main, 
+  .btn:not(.btn-ghost):not(.btn-danger):not(.ghost):not(.danger):not(.cquit):not(.cstay),
+  button.submit-btn, button.start-btn {
+    background: #f59e0b !important;
+    color: #0b1120 !important;
+    font-weight: 700 !important;
+    border: none !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 14px rgba(245, 158, 11, 0.25) !important;
+    transition: all 0.2s ease !important;
+  }
+  .btn-gold:hover, .btn.gold:hover, .btn-primary:hover, .btn.primary:hover, .btn-main:hover,
+  .btn:not(.btn-ghost):not(.btn-danger):not(.ghost):not(.danger):not(.cquit):not(.cstay):hover,
+  button.submit-btn:hover, button.start-btn:hover {
+    background: #d97706 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4) !important;
+    color: #000000 !important;
+  }
+
+  /* Ghost / Secondary Button */
+  .btn-ghost, .btn.ghost, .cstay {
+    background: rgba(255, 255, 255, 0.06) !important;
+    color: #e2e8f0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    border-radius: 12px !important;
+  }
+  .btn-ghost:hover, .btn.ghost:hover, .cstay:hover {
+    background: rgba(255, 255, 255, 0.12) !important;
+    color: #ffffff !important;
+  }
+
+  /* Danger Button */
+  .btn.danger, .btn-danger, .cquit {
+    background: #ef4444 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 12px !important;
+  }
+
+  /* Modals, Popups, Dialogs */
+  .modal, .modal-backdrop, .overlay, .popup-overlay, #confirmModal, #pinModal, .modal-wrap {
+    background: rgba(5, 10, 24, 0.8) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+  }
+  .modal-dialog, .modal-content, .dialog-box, .popup-content, .cbox, .confirm-box {
+    background: #0d152a !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 18px !important;
+    color: #f1f5f9 !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6) !important;
+  }
+
+  /* Test Questions & Answer Choices (olimpiada, test, pedagog, krk) */
+  .option, .variant, .answer-label, .q-option, .choice, .test-option {
+    background: rgba(15, 23, 42, 0.65) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px !important;
+    color: #e2e8f0 !important;
+    transition: all 0.2s ease !important;
+  }
+  .option:hover, .variant:hover, .answer-label:hover, .q-option:hover, .choice:hover, .test-option:hover {
+    background: rgba(30, 58, 138, 0.35) !important;
+    border-color: #38bdf8 !important;
+  }
+  .option.selected, .variant.selected, .choice.active, .test-option.selected {
+    background: rgba(37, 99, 235, 0.3) !important;
+    border-color: #38bdf8 !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2) !important;
+  }
+
+  /* Tables & Lists */
+  table {
+    color: #e2e8f0 !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+  }
+  th {
+    background: rgba(30, 41, 59, 0.8) !important;
+    color: #93c5fd !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+  }
+  td {
+    border-color: rgba(255, 255, 255, 0.06) !important;
+    color: #cbd5e1 !important;
+  }
+  tr:hover td {
+    background: rgba(255, 255, 255, 0.04) !important;
+  }
+
+  /* Footer */
+  footer, .app-footer, .f-top, .footer {
+    background: rgba(6, 10, 22, 0.95) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    color: #94a3b8 !important;
+  }
+  footer a, .f-links a {
+    color: #cbd5e1 !important;
+  }
+  footer a:hover, .f-links a:hover {
+    color: #38bdf8 !important;
+  }
+}
+</style>
 </body>
 </html>
