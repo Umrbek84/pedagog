@@ -198,23 +198,31 @@
             </div>
           </div>
 
-          <!-- Settings Box -->
+          <!-- Settings Box (Avtomatik belgilangan standart mezon) -->
           <div class="settings-grid">
             <div class="form-group">
-              <label class="form-label" for="questionCount">Savollar soni:</label>
-              <select id="questionCount" class="form-select">
-                <option value="25" selected>25 ta savol (Standart KRS: 20 darslik + 5 mavzu)</option>
-                <option value="40">40 ta savol (12 Asosiy fan: 25 darslik + 15 DTM savol)</option>
+              <label class="form-label" for="questionCount">
+                <i class="fas fa-lock text-warning me-1"></i> Savollar soni:
+              </label>
+              <select id="questionCount" class="form-select" disabled style="background-color: #f1f5f9; cursor: not-allowed; font-weight: 600; color: #1e293b;">
+                <option value="25" selected>25 ta savol (Standart KRS)</option>
+                <option value="40">40 ta savol (12 Asosiy fan: 25 darslik + 15 DTM)</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label class="form-label" for="timeLimit">Ajratiladigan vaqt:</label>
-              <select id="timeLimit" class="form-select">
+              <label class="form-label" for="timeLimit">
+                <i class="fas fa-lock text-warning me-1"></i> Ajratilgan vaqt:
+              </label>
+              <select id="timeLimit" class="form-select" disabled style="background-color: #f1f5f9; cursor: not-allowed; font-weight: 600; color: #1e293b;">
                 <option value="30" selected>30 daqiqa (25 ta savol uchun)</option>
-                <option value="50">50 daqiqa (40 ta savol uchun standart)</option>
-                <option value="60">60 daqiqa (1 soat - kengaytirilgan)</option>
+                <option value="50">50 daqiqa (40 ta savol uchun)</option>
               </select>
+            </div>
+            <div style="grid-column: 1 / -1; margin-top: -0.25rem;">
+              <small class="text-muted" style="font-size: 0.8rem;">
+                ℹ️ <i>Savollar soni va vaqt fan yo'nalishiga qarab vazirlik mezonlari asosida avtomatik belgilanadi (12 ta asosiy fanga 40 ta savol / 50 daqiqa, qolgan fanlarga 25 ta savol / 30 daqiqa). Foydalanuvchi tomonidan o'zgartirilmaydi.</i>
+              </small>
             </div>
           </div>
 

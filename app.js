@@ -564,13 +564,22 @@ function setupSchoolSubjectTeacherFlow() {
 }
 
 const CORE_12_SUBJECTS = [
-  "matematika", "informatika", "biologiya", "fizika", "kimyo", 
-  "geografiya", "tarix", "huquq", "ona tili", "english", "rus tili", "adabiyot"
+  "matematika", "algebra", "geometriya", "informatika", "biologiya", "fizika", "kimyo", 
+  "geografiya", "tarix", "huquq", "ona tili", "english", "ingliz", "rus tili", "adabiyot",
+  "nemis", "fransuz", "o'zbek tili"
 ];
 
 function isCore12Subject(subjectName) {
   if (!subjectName) return false;
   const s = String(subjectName).toLowerCase().trim();
+  // Qolgan fanlar qat'iy 25 talik mezonida qoladi
+  if (s.includes("boshlang'ich") || s.includes("boshlangich") || 
+      s.includes("tarbiya") || s.includes("texnologiya") || 
+      s.includes("tasviriy") || s.includes("chizmachilik") || 
+      s.includes("musiqa") || s.includes("jismoniy") || 
+      s.includes("harbiy") || s.includes("chqbt") || s.includes("iqtisod") || s.includes("tadbirkor")) {
+    return false;
+  }
   return CORE_12_SUBJECTS.some(sub => s.includes(sub));
 }
 
@@ -606,7 +615,7 @@ function updateQuestionCountForSubject(subjectVal, sessionVal) {
   const sNum = parseInt(sessionVal || document.getElementById('sessionSelect')?.value || "4");
   const is12 = isCore12Subject(subjectVal);
   
-  // Bugun (27-noyabr) Ingliz tili 4-mashg'ulot topshiradi (yoki kelgusi haftada Rus tili)
+  // 12 ta asosiy fanlar 40 talik (50 daqiqa), qolgan fanlar (boshlang'ich, amaliy, tarbiya...) 25 talik (30 daqiqa)
   const isSpecialSession4 = (subjectVal === 'English' || subjectVal === 'Rus tili') && sNum === 4;
   const is40Q = is12 && (sNum >= 5 || isSpecialSession4);
   
@@ -617,6 +626,9 @@ function updateQuestionCountForSubject(subjectVal, sessionVal) {
     qSelect.value = "25";
     if (tSelect) tSelect.value = "30"; // 25 ta savolga 30 daqiqa
   }
+  // Qat'iy qulf: o'qituvchi o'zgartira olmaydi
+  qSelect.disabled = true;
+  if (tSelect) tSelect.disabled = true;
 }
 
 function refreshSessionDropdown(subjectVal) {
@@ -1827,9 +1839,10 @@ async function startExamSession() {
   const currentSession = parseInt(state.teacherInfo.session) || 4;
   const is12 = isCore12Subject(state.teacherInfo?.subject);
   const isSpecialSession4 = (state.teacherInfo?.subject === 'English' || state.teacherInfo?.subject === 'Rus tili') && currentSession === 4;
-  const defaultCount = (is12 && (currentSession >= 5 || isSpecialSession4)) ? 40 : 25;
-  const countRequested = parseInt(document.getElementById('questionCount')?.value) || defaultCount;
-  state.timeLimitMinutes = parseInt(document.getElementById('timeLimit')?.value) || (countRequested === 40 ? 50 : 30);
+  const is40Q = is12 && (currentSession >= 5 || isSpecialSession4);
+  // Qat'iy mezon: 12 ta asosiy fanga 40 ta savol / 50 daqiqa, qolgan fanlarga 25 ta savol / 30 daqiqa (Foydalanuvchi tanlay olmaydi!)
+  const countRequested = is40Q ? 40 : 25;
+  state.timeLimitMinutes = is40Q ? 50 : 30;
 
   let matched = state.allQuestions.filter(q => {
     return q.subject && 
