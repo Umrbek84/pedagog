@@ -996,5 +996,76 @@
       });
     });
   </script>
+
+<!-- Asosiy portal (umamatov.uz) ga qaytish tugmasi -->
+<style>
+#um-portal-back {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 2147482000;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 30px;
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(10px);
+  color: #ffffff !important;
+  font: 700 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  text-decoration: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+#um-portal-back:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(29, 78, 216, 0.45);
+  color: #fff !important;
+}
+#um-portal-back svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+@media (max-width: 768px) {
+  #um-portal-back {
+    bottom: 18px;
+    left: 16px;
+    padding: 9px 14px;
+    font-size: 13px;
+    border-radius: 24px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  }
+}
+</style>
+<a id="um-portal-back" href="https://umamatov.uz/" title="Asosiy portal (umamatov.uz) ga qaytish" onclick="umReturnToPortal(event)">
+  <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+  <span>Asosiy portal</span>
+</a>
+<script>
+function umReturnToPortal(e) {
+  if (e) e.preventDefault();
+  // Agar boshqa tab/oyna orqali ochilgan bo'lsa:
+  try {
+    if (window.opener && !window.opener.closed) {
+      window.opener.location.href = 'https://umamatov.uz/';
+      window.opener.focus();
+      window.close();
+      return;
+    }
+  } catch(err) {}
+  
+  // Oyna yopilmasa yoki bevosita ochilgan bo'lsa:
+  window.location.href = 'https://umamatov.uz/';
+}
+</script>
+
 </body>
 </html>
